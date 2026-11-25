@@ -1,0 +1,15 @@
+{
+  "prompts": {
+    "Prepare": "Read the current task and exact historical sources. Return JSON {\"groups\":[{\"question\":\"concrete decision to solve\",\"evidence\":[{\"source\":0,\"quote\":\"exact contiguous source substring\"}]}],\"state\":[{\"source\":0,\"quote\":\"exact current object state\"}],\"style\":[{\"source\":0,\"quote\":\"exact applicable expression preference\"}]}. Use one or two groups, merging coupled decisions. Source is the zero-based index. Preserve scope and limiting clauses. Do not put proposed decisions or preferences in shared state. Do not promote private beliefs to public facts or ordinary habits to shared requirements. Do not generate an answer.",
+    "Solve": "Resolve the specified decision for this task using the available evidence and known state. Produce actual deliverable content, not instructions to another model. Respect applicable constraints and affected parties. Leave unsupported details unknown. Return JSON {\"content\":\"concrete deliverable content\"}.",
+    "Realize": "Produce only the requested complete answer. Faithfully realize the resolved content and known task state. Preserve all necessary facts and constraints. Use applicable expression preferences through wording, compression and organization. Do not introduce new private facts or re-decide the content. Return JSON {\"answer\":\"complete final answer\"}."
+  },
+  "caps": {
+    "Prepare": 24,
+    "Solve": 96,
+    "Realize": 48,
+    "RPEvalJudge": 16,
+    "BenchAttrs": 96,
+    "PersistNative": 16
+  }
+}

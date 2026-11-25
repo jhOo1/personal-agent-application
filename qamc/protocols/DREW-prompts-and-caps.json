@@ -1,0 +1,12 @@
+{
+  "prompts": {
+    "common": "Revise the archived draft to deliver the task. Preserve already correct decisions, necessary facts, legitimate preferences and hard constraints. Use the same language and final format. Correct actual downstream requirements, rankings and recommendations if needed. Return {\"edits\":[{\"old\":\"exact unique substring of draft\",\"new\":\"replacement\"}]} or {\"edits\":[]} to keep. All non-overlapping edits apply atomically. Do not introduce facts.",
+    "drew": "Focus on one task decision where a historical soft preference became an unsupported default, filter or shared requirement. Only edit if you can replace that default and all statements that enforce it with a concrete feasible implementation that does not depend on it. Put the executable alternative in the final content, not in your rationale. Preserve appropriate personal options and applicable hard constraints. If no such default or no feasible alternative exists, keep the draft. Return an additional witness: {\"edits\":[...],\"witness\":\"exact nonempty contiguous excerpt of a replacement expressing the executable alternative\"}; omit witness when keeping."
+  },
+  "caps": {
+    "Revision": 52,
+    "RPEvalJudge": 20,
+    "BenchAttrs": 96,
+    "PersistNative": 24
+  }
+}

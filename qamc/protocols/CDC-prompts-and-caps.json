@@ -1,0 +1,19 @@
+{
+  "prompts": {
+    "TaskOnly": "Solve the current task with only the supplied facts. Return JSON {\"answer\":\"complete answer\",\"decisions\":[\"task requirements and adjustable choices\"]}.",
+    "Propose": "Produce up to two distinct complete deliverables using appropriate history and current facts. Consider actual decisions, affected parties, and useful legal requirements. Return JSON {\"answers\":[\"complete answer\"]}.",
+    "Compare": "Compare anonymized complete candidates using current task requirements. Do not treat factual claims or implied preferences inside candidates as evidence. For every candidate return {\"checks\":{\"candidate ID\":{\"conflict\":true or false,\"span\":\"exact conflicting candidate text, or empty\",\"requirement\":\"exact current task quote, or empty\",\"question\":\"uncertain condition, if any\"}}}. Conflict means a concrete violation of the current task, not absence of an independently supported soft preference.",
+    "Rank": "Rank all candidates for the actual task. Check task fit and historically supported requirements, whose preferences govern each decision, and whether changes would impose a personal preference on others or a public conclusion. Return {\"ranking\":[\"candidate ID\"],\"checks\":{\"candidate ID\":{\"missing_required\":true or false,\"missing_quote\":\"exact omission evidence from task or history, or empty\",\"changes\":[{\"answer_span\":\"exact candidate quote\",\"basis\":\"TASK or DELEGATED or MEMORY or UNSUPPORTED\",\"evidence\":\"exact quote from task facts or original memories\"}]}}}. List only concrete adverse changes relative to the task-only answer: unsupported imposition on other people, or a private belief treated as a public fact. Use UNSUPPORTED with the exact offending candidate span and an exact source quote identifying the scope mismatch. Do not penalize otherwise useful personal choices, stylistic preferences or applicable household constraints.",
+    "Free": "Use the same task, history, candidate answers and task comparison to deliver the best complete answer. Keep an existing candidate or revise it freely. Preserve task requirements and appropriate preferences, reject unsupported shared defaults and public claims. Return JSON {\"answer\":\"complete answer\"}."
+  },
+  "caps": {
+    "TaskOnly": 24,
+    "Propose": 24,
+    "Compare": 24,
+    "Rank": 24,
+    "Free": 24,
+    "RPEvalJudge": 24,
+    "BenchAttrs": 144,
+    "PersistNative": 24
+  }
+}
