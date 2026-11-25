@@ -1,12 +1,12 @@
 # QAMC 归档实验目录
 
-本表列出原研究仓库在固定提交中的目录与文件数量，供本地回溯。目录存在不代表完成。
+本表统计原研究仓库固定提交中的路径与文件数量。表中路径以原仓库根为起点，可能是目录或单个文件。公开副本位于 `qamc/implementation/`，并按[证据索引](EVIDENCE_INDEX.md)定位；未公开的回执、数据与配置通过[私有恢复](MIGRATION.md)获取。目录存在不代表已运行；包外文件和未核实状态为 UNKNOWN。
 
 原始快照：`fd8b855bece3a8aadabb008ee4e0ca6c727833d5`
 
 | 原仓库相对目录 | 归档文件数 |
 |---|---:|
-| `"reports/qamc_contextual_match_v2_20261112/delivery_20261116` | 1 |
+| `reports/qamc_contextual_match_v2_20261112/delivery_20261116` | 1 |
 | `reports/ACCEPTANCE_MATRIX.json` | 1 |
 | `reports/AUDIT_v0_5_FINAL.txt` | 1 |
 | `reports/CALL_ACCOUNTING_ALL_VERSIONS.json` | 1 |

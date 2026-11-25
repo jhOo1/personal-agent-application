@@ -23,6 +23,12 @@
 
 近期实验的完整提示与请求上限见 [CDC](protocols/CDC-prompts-and-caps.json)、[DCR](protocols/DCR-prompts-and-caps.json)、[DREW](protocols/DREW-prompts-and-caps.json)。程序验真只覆盖实际请求可见性、锚点和字面见证，语义适用性需看对应终答。
 
+## IPE-C 的请求和分支
+
+1. 给 RP-Reasoner 重建版的估计器传当前任务和固定来源。MLE 与 IPE 分别输出每条来源的 A/B/C 排序；有史 RP 端点融合两套排序，使用项目复现的生成合同。见[估计与 Actor 请求构造](implementation/src/qamc/contextual_match/rpr_appendix.py)。
+2. IPE-C 路由单看 IPE 排序首位。如果至少一条来源首位为 C，选择原 RP 成稿路径。否则选择同 Actor 系统、同 Query、上下文和事实但历史与策略数组为空的路径。它不会只拿首位为 C 的记忆提交给 Actor，也不读取作者标注。见[实际分支与旧决策核对](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_full_exposed_panel_v1/replay_panel.py#L59)。
+3. 结果审计使用已存 RP Actor 和分数，重建并比对 task-only 请求哈希；回答精确相同仍需核对评分报文及协议，失败旧回执保留。见[端点补齐程序](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_two_endpoint_completion_v1/complete_endpoints.py)。
+
 ## 三基准可核实数字
 
 | 开发同题对照 | 归档强稿 | 对照 | 候选 |
