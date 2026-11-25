@@ -4,7 +4,7 @@ from incremental_panel import prior, read, sha, saved_drafts
 from freeze_roster import RPE_ROUTES
 
 
-def prepare():
+def prepare(*, include_archive=False):
     panel = read(OUT)
     if panel != build():
         raise ValueError("Frozen challenge drift")
@@ -29,6 +29,9 @@ def prepare():
                 or len(sources) != len(root["original_sources"])):
             raise ValueError("Challenge baseline or sources drifted")
         inputs[uid] = {"task": root["public_task"], "anchor": anchor, "sources": sources}
+        if include_archive:
+            inputs[uid].update(root=root, group=entry["group"],
+                               base={"answer": anchor, "grade": grade["grade"]})
     return inputs
 
 
