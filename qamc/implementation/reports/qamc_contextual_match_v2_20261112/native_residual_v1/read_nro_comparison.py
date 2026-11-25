@@ -1,4 +1,5 @@
 """Read matched search and validation metrics from the private run directory."""
+import argparse
 from collections import Counter, defaultdict
 import json
 
@@ -41,7 +42,11 @@ def summarize(result, baseline):
 
 
 def main():
-    root = HERE / "comparison_v1"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--feedback", action="store_true",
+                        help="read the saved, search-only feedback pair")
+    feedback = parser.parse_args().feedback
+    root = (HERE / "feedback_proposals_v1" if feedback else HERE) / "comparison_v1"
     output = {}
     baselines = {}
     for path in sorted(root.glob("*/RESULTS.json")):
@@ -49,9 +54,10 @@ def main():
         if split not in baselines:
             _, baselines[split] = prepare((), split)
         output[path.parent.name] = summarize(probe.read(path), baselines[split])
-    winners = root / "WINNERS.json"
+    verdict = (root.parent / "SEARCH_ELIGIBILITY.json") if feedback else (root / "WINNERS.json")
+    name = "search_eligibility" if feedback else "winners"
     print(json.dumps({"completed": output,
-                      "winners": probe.read(winners) if winners.is_file() else None},
+                      name: probe.read(verdict) if verdict.is_file() else None},
                      ensure_ascii=False, indent=2))
 
 
