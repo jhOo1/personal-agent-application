@@ -19,3 +19,5 @@ RPEval 同一已曝光开发面板，274 题、1462 位都有三个端点的严�
 [首次生成策略的请求级验收](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/PREFLIGHT.md)
 
 [按来源和画像隔离的开发面板](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/ROSTER.md)
+
+[首次生成试运行与原强稿对照](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/PILOT.md)
