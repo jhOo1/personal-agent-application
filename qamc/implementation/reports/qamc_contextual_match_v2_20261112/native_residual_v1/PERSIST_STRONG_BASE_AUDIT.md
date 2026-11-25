@@ -11,3 +11,17 @@ No generations or scores were repeated. Preserve PB_RUBRIC as the broader verifi
 ## Exact scoring-input comparison
 
 All nine overlapping SELECTED_GEPA/PB_RUBRIC tasks have archived Judge manifests. On each, the system message and all request parameters are identical. Each user message contains its corresponding saved answer exactly once. Replacing only that answer with the same placeholder makes the two complete user messages identical on all nine tasks. Thus the 8/9 versus 6/9 comparison is compatible at the project scoring-input level. It still compares distinct Actor evidence and prompt paths and separate historical calls. No equivalence of underlying provider weights or author-native protocol is established.
+
+## All six released controls
+
+Recomputing paired results directly from all 13 saved author-control waves under CD/SYC release and BU strict utility yields the following. The PB_RUBRIC count changes with the common denominator.
+
+| Control | Common | PB_RUBRIC pass | Control pass | Control wins / losses |
+|---|---:|---:|---:|---:|
+| PB_GEPA | 48 | 43 | 39 | 0 / 4 |
+| PB_FULL | 48 | 42 | 39 | 0 / 3 |
+| PB_FILTER_NATIVE | 46 | 40 | 35 | 0 / 5 |
+| PB_FILTER_COMMON | 47 | 41 | 29 | 1 / 13 |
+| PB_NO_MEMORY | 47 | 41 | 29 | 5 / 17 |
+
+The two filtering controls do not reproduce the archived Grounding policy. Grounding first routes from the query, uses Style evidence on the history-check branch, and otherwise invokes the original Grounding selector. The 11/12 factorial reuses those already-frozen selections. A larger test must execute the same upstream policy or explicitly label a different selector. No equivalent SELECTED_GEPA run beyond the original factorial was found in the result archive search.
