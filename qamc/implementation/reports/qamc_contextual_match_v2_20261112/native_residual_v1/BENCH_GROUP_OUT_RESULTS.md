@@ -17,3 +17,7 @@ The two content-first AAR losses relative to direct are from one profile; the ot
 ## Post-hoc room for selective use
 
 Across both panels, selecting content-first only where it adds AAR and does not lower completeness or increase MR would recover four AAR positions on four of the 12 pilot cases and none on the 19 group-out cases. One pilot case and eight group-out cases instead showed a decrease in AAR or completeness, or an increase in MR, versus Gate. This upper bound inspects both answers' scores. It is not an implementable selector and cannot establish that an input-only rule can separate the cases. In particular, the profile-disjoint set contains no positive examples of the target behavior, so any trigger derived from these positive cases remains a pilot hypothesis.
+
+## Remaining exposed positive cases
+
+Joining the exact Strong Gate census to the two realization runs by UID finds that all ten recorded non-bold misses have already appeared in one of the two panels, including the one without a verbatim objective preference. The latter appeared as a protection case for a separate, realized attribute, not as a delivered-miss target. There are zero untreated recorded miss UIDs in this census. This does not rule out misses elsewhere in the public benchmark or in a different archive. It does rule out drawing a fresh positive replication slice from this same census. A trigger inferred from these runs can be assessed for feasibility offline but needs new, authorized, appropriately isolated opportunities to establish a correction rate.
