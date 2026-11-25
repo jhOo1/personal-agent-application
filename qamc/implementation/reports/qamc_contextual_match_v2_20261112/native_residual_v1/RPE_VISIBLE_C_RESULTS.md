@@ -12,3 +12,14 @@ Eight exposed source groups were selected by deterministic hash among nonperfect
 Three roots improved by one Match each, one lost one Match, and four tied. OPB was unchanged in aggregate but increased on two roots and decreased on two. All 16 physical requests succeeded (eight Actor, eight Judge), with 42,124 reported tokens. No retries or sealed data.
 
 This is an author-label-conditioned development diagnostic with a historical single-draw baseline. It establishes score movement under the policy edit on this panel, with sampling variation and scorer inconsistencies still possible. It does not measure deployable selection. Inspect individual changes, verify the promoted constraint in each answer, and compare against a matched B-control rerun if needed before training an intervention chooser.
+
+## Behavior audit of the four Match changes
+
+The saved request comparison confirms exactly one B-to-C policy change on all eight roots, with identical source evidence. In the four non-ties:
+
+- Dining-room layout (implicit/139): neither draft recommends plants, the promoted target. The new grade improves by one while still citing other preferences. No target repair was established.
+- Office-worker meals (explicit/006): both drafts avoid seafood and seafood-derived seasonings. Promotion changes avoidance into an explicit hard rule, but the new grade loses one Match. The grader acknowledges the target restriction.
+- Family outing (explicit/073): the old draft already recommends walk-in stops and avoiding queues. The new draft adds a specific instruction to switch destinations instead of waiting if crowded. This is a verified operational strengthening of the target; the new Judge explanation assigns inconsistent descriptions to position two, so the Match increase cannot be attributed cleanly to that strengthening.
+- Dinner recipe (explicit/097): the old draft explicitly excludes chili and pepper. The new Judge rationale contradicts the recorded CAACAA labels and treats cooked fish and shrimp as raw-food use. The one-point increase cannot establish repair of the promoted spice restriction.
+
+Only the family outing shows an unambiguous new contingency tied to the target among the three improved grades. Do not treat the observed +2 as a verified behavioral improvement or use these four outcomes as clean supervision without additional checks.
