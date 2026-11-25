@@ -25,4 +25,4 @@ RPEval 使用各方法整题 Match，只能量化各题最好的归档答复距�
 
 旧阶段的外部评审消息在固定会话中可读到标题。此记录的数字、案例归因和选择依据来自本地回放。没有把会话标题当作方法批准，也没有把开发表现当成 SOTA。
 
-[共同有效盘点](INVENTORY.json) · [归档原文、任务、成稿与来源哈希](WITNESSES.json)
+共同有效盘点（原仓库 `reports/qamc_contextual_match_v2_20261112/strong_opponent_opportunity_v1/INVENTORY.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)） · 归档原文、任务、成稿与来源哈希（原仓库 `reports/qamc_contextual_match_v2_20261112/strong_opponent_opportunity_v1/WITNESSES.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)）

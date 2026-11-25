@@ -9,8 +9,10 @@
 ```sh
 shasum -a 256 -c SHA256SUMS
 git init qamc-recovered
-git -C qamc-recovered fetch ../qamc-head.bundle HEAD
+git -C qamc-recovered bundle verify "$(pwd)/qamc-head.bundle"
+git -C qamc-recovered fetch "$(pwd)/qamc-head.bundle" HEAD
 git -C qamc-recovered switch -c recovered FETCH_HEAD
+git -C qamc-recovered rev-parse HEAD  # expected fd8b855bece3a8aadabb008ee4e0ca6c727833d5
 tar -xzf workspace-overlay.tar.gz -C qamc-recovered
 ```
 
@@ -23,3 +25,10 @@ tar -xzf workspace-overlay.tar.gz -C qamc-recovered
 - 归档强基线为 IPE-C、Strong Gate、PB_RUBRIC。历史请求、已有答案、已结算分数及失败保留在实验目录与账本中。
 - DREW 已结算并关闭通用版。下一窗口是强基线首次生成的共享策略优化，尚未发出请求。详见 [DREW 结果](reports/DREW-RESULTS.md)。
 - 首先离线读取冻结方案与结果，再检查新环境的 API 与评分协议。已有有效实验直接复用。保留交付未知记录，避免误重发。
+
+## 交接验收记录（2026-11-25）
+
+- 公开材料在只含 Git 暂存内容的独立目录中验收。79 个本地 Markdown 目标可解析，CDC、DCR、DREW 的 Prompt 与预算 JSON 可读，恢复分支和证据入口可定位。此为无会话依赖的文件验收。
+- 原始结算记录只读核验了三轮各 24 个分派根，以及 214、132、161 个真实请求记录。无实验请求、无补评分。
+- 两个私有包的 SHA-256 均通过。bundle 验证及独立检出指向 `fd8b855be`。另读取完 overlay 目录，确认含依赖锁、DREW 结果及原始 SQLite。此次未完整解包到目标机，未验收依赖安装或远端网关。
+- 原实验工作区核验时有 96 个暂存新增和 5 个已跟踪修改，均保留。包内补丁用于恢复该快照对应状态；包之外的工作区、外部资源和未核实历史分支为 UNKNOWN。

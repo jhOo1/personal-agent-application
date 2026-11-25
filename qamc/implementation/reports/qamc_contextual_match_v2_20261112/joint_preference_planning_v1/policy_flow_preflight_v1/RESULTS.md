@@ -50,4 +50,4 @@ RPEval 先生成 Query，再按不同意图反向构造偏好。多偏好设置�
 
 重编译可以减少合法性未经核验的显式作用，在旧规划中主要改变了输入文字。当前优先验证作用判别是否能取得独立证据，再决定是否值得派发联合规划消融的 199 个新 Actor。此报告没有新的端到端分数。RP、原联合规划及原生评分归档继续作为固定参考。
 
-[策略重编译逐题结果](POLICY_FLOW_REPLAY.json) · [候选集合依赖逐组证据](CANDIDATE_SET_REPLAY.json) · [RP 局部修订终态](../../rp_seed_minimal_revision_rpeval_v1/NATIVE_RESULTS.md)
+策略重编译逐题结果（原仓库 `reports/qamc_contextual_match_v2_20261112/joint_preference_planning_v1/policy_flow_preflight_v1/POLICY_FLOW_REPLAY.json`，见[恢复索引](../../../../../EVIDENCE_INDEX.md)） · 候选集合依赖逐组证据（原仓库 `reports/qamc_contextual_match_v2_20261112/joint_preference_planning_v1/policy_flow_preflight_v1/CANDIDATE_SET_REPLAY.json`，见[恢复索引](../../../../../EVIDENCE_INDEX.md)） · RP 局部修订终态（原仓库 `reports/qamc_contextual_match_v2_20261112/rp_seed_minimal_revision_rpeval_v1/NATIVE_RESULTS.md`，见[恢复索引](../../../../../EVIDENCE_INDEX.md)）

@@ -31,4 +31,4 @@ RPEval 两臂整题全对均 0/4。四道共同题上，强 Gate Match 7/22、RP
 
 保留代码与结果，停止扩展本结构。可证伪的核心判断已经失败：同一公共草稿下，程序固定一部分段落仍会留下**通过选项改变外部论点**和**在狭窄决策位置遗漏多个合法条件**两种错误。后续算法需要能区分这些终端行为，现有结果不足以支持新一轮仅靠加类型或加更多段落的变体。
 
-[结果及账本](RESULTS.json) · [逐指标共同分母](SUMMARY.json) · [实验协议](PROTOCOL.md)
+结果及账本（原仓库 `reports/qamc_contextual_match_v2_20261112/authority_compilation_v1/RESULTS.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)） · 逐指标共同分母（原仓库 `reports/qamc_contextual_match_v2_20261112/authority_compilation_v1/SUMMARY.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)） · 实验协议（原仓库 `reports/qamc_contextual_match_v2_20261112/authority_compilation_v1/PROTOCOL.md`，见[恢复索引](../../../../EVIDENCE_INDEX.md)）

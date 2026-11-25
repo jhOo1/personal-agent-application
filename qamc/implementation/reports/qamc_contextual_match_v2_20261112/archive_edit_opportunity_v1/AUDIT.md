@@ -15,4 +15,4 @@
 
 首先考虑修订一个被个人软偏好覆盖的默认选择，并同步修改依赖它的实际安排。该想法已送指定评审质疑。跨来源重复的是可观察的默认过度收缩；仍需对照验证同一修订操作的原生增益。不要将只删除一条来源、保留原稿或不同改稿生成策略冒充该操作的独立增量。
 
-归档依据：[强对手机会盘点](../strong_opponent_opportunity_v1/READOUT.md)、[Persist 局部修订](../persist_effect_preserving_revision_v1/READOUT.md)、[Bench 收件人风格](../recipient_style_preservation_v1/READOUT.md)。
+归档依据：[强对手机会盘点](../strong_opponent_opportunity_v1/READOUT.md)、Persist 局部修订（原仓库 `reports/qamc_contextual_match_v2_20261112/persist_effect_preserving_revision_v1/READOUT.md`，见[恢复索引](../../../../EVIDENCE_INDEX.md)）、[Bench 收件人风格](../recipient_style_preservation_v1/READOUT.md)。

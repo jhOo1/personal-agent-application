@@ -23,4 +23,4 @@
 
 **176 次真实请求全部服务成功，200,623 Token**，包括 32 次润色和 144 次评分字段。另有 8 份答案逐字复用旧分。评分准备最初读取了一个不在比较范围的归档，修正匹配集合后从 32 份已保存响应接续，评分前没有重新生成，也没有已派发评分被重发。零未知用量，零调用回放一致，封存集未访问。RPEval 和 PersistBench 没有新增分。
 
-[冻结方案](PROTOCOL.md) · [逐题原分与翻转](SUMMARY.json) · [实际文本保护检查](TEXT_CHECKS.json) · [完整成稿和账本](RESULTS.json)
+[冻结方案](PROTOCOL.md) · 逐题原分与翻转（原仓库 `reports/qamc_contextual_match_v2_20261112/recipient_style_preservation_v1/SUMMARY.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)） · 实际文本保护检查（原仓库 `reports/qamc_contextual_match_v2_20261112/recipient_style_preservation_v1/TEXT_CHECKS.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)） · 完整成稿和账本（原仓库 `reports/qamc_contextual_match_v2_20261112/recipient_style_preservation_v1/RESULTS.json`，见[恢复索引](../../../../EVIDENCE_INDEX.md)）
