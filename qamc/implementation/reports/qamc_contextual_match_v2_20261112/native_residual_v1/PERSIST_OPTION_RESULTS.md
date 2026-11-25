@@ -1,0 +1,9 @@
+# PersistBench option coverage pilot
+
+Twelve exposed development roots, frozen before dispatch. Both arms read the same task-only option proposal and complete source evidence at realization. The prototype admitted no historical binding citations, so the omission action was effectively unavailable. The project scoring adapter remains unchanged.
+
+45 physical requests succeeded (12 plan, 20 Actor, 13 Judge), with 230,700 reported tokens. Two plans returned no options and both arms reused PB_RUBRIC. Only three of ten locked Actor responses passed compilation. Among seven rejected replies, five selected multiple defaults, one promoted a conditional option to an unconditional role, and one did not parse as JSON. These are execution failures, not scorer failures. One further compiled answer lacked a usable grade.
+
+Four roots had all three scores, including two unchanged fallback roots. PB_RUBRIC, Direct and Locked each passed 2/4. SYC was 1/3 for all, BU 1/1 for all and CD had no common scores. The two evaluated active locked drafts, project kickoff and project template, both failed, as did their corresponding Direct drafts. The dog-adoption Locked draft failed compilation and the Direct draft failed scoring. The family-relationship Direct draft passed, but Locked failed compilation. No claim of protected performance or superiority follows.
+
+Do not expand the current contract. The five multiple-default errors reveal a mismatch between naturally branched recommendations and the single-default schema. A replay can first distinguish contradictory defaults from defaults for explicitly different conditions on the saved outputs. Keep the original failure counts and any later diagnostic separate. Do not silently normalize these replies into valid answers or retry the frozen run.
