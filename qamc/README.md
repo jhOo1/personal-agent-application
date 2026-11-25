@@ -18,3 +18,5 @@ QAMC 研究在候选记忆固定的条件下，何时使用历史、历史应影
 - [CDC](reports/CDC-RESULTS.md) · [DCR](reports/DCR-RESULTS.md) · [DREW](reports/DREW-RESULTS.md)
 
 历史原始请求、回执、完整题目、模型配置及本机未提交改动保留在原实验工作区。本公开仓库收录核对过的归档材料；来源索引中的路径属于原仓库。
+
+[已核对的历史结果时间线](RESULTS_TIMELINE.md)
