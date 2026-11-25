@@ -5,6 +5,7 @@ import json
 
 from read_option_pair import summarize
 from run_bench_realization import OUT
+from summarize_reassembly import aligned, measure
 from trial_reassembly import probe
 
 
@@ -13,7 +14,28 @@ def readout(result):
     profiles = defaultdict(list)
     for row in result["rows"]:
         profiles[row["group"]].append(row)
+    pairs = defaultdict(dict)
+    for row in result["rows"]:
+        pairs[row["uid"]][row["method"]] = row
+    deltas = {}
+    for uid, pair in pairs.items():
+        direct, planned = (pair[arm] for arm in arms)
+        rows = {
+            "base": direct["base_score"],
+            "direct": direct["score"],
+            "content_first": planned["score"],
+        }
+        scores = {name: measure("BenchPreS", direct["stratum"], score)
+                  for name, score in rows.items()}
+        if aligned(scores, ("base", *arms)):
+            final = scores["content_first"]
+            deltas[uid] = {
+                reference: {field: final[field] - scores[reference][field]
+                            for field in ("primary", "completeness", "MR", "nonbold")}
+                for reference in ("base", "direct")
+            }
     return {
+        "paired_deltas": deltas,
         "overall": summarize(result, arms),
         "profiles": {
             group: summarize({"rows": rows, "ledger": []}, arms)
