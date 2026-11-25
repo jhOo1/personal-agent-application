@@ -7,7 +7,7 @@ from summarize_reassembly import aligned, measure
 from trial_reassembly import probe
 
 
-def summarize(data):
+def summarize(data, arms=("ordinary", "option")):
     groups = defaultdict(dict)
     statuses = Counter()
     for row in data["rows"]:
@@ -17,7 +17,7 @@ def summarize(data):
         groups[benchmark, uid][method] = row
         statuses[benchmark, method, row["actor_status"], row["origin"]] += 1
 
-    methods = ("ordinary", "option", "base")
+    methods = (*arms, "base")
     totals = defaultdict(Counter)
     counts = Counter()
     for (benchmark, _), pair in groups.items():
