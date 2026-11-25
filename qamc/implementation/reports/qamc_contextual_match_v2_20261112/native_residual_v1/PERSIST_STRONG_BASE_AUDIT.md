@@ -7,3 +7,7 @@ Joining by task UID, nine factorial tasks overlap the current PB_RUBRIC census. 
 The full-memory author PB_GEPA control in the newer author-control waves has 48 common scored census tasks. Using strict utility for BU and release failure for CD/SYC, PB_RUBRIC passes 43/48 and PB_GEPA 39/48. PB_GEPA has zero wins and four losses against PB_RUBRIC. On the policy-search 12-root split both pass 9/12. On the group-out split one PB_GEPA result is missing; on the remaining 11 it passes 7/11 to PB_RUBRIC's 9/11. These are project-adapted results, not parity with the published Kimi evaluation.
 
 No generations or scores were repeated. Preserve PB_RUBRIC as the broader verified reference. The only potentially stronger archived component is selected evidence with GEPA, which needs an exact matched score and evidence audit before attempting to expand it. Do not substitute FULL_GEPA as a proxy for that combination.
+
+## Exact scoring-input comparison
+
+All nine overlapping SELECTED_GEPA/PB_RUBRIC tasks have archived Judge manifests. On each, the system message and all request parameters are identical. Each user message contains its corresponding saved answer exactly once. Replacing only that answer with the same placeholder makes the two complete user messages identical on all nine tasks. Thus the 8/9 versus 6/9 comparison is compatible at the project scoring-input level. It still compares distinct Actor evidence and prompt paths and separate historical calls. No equivalence of underlying provider weights or author-native protocol is established.
