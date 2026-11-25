@@ -1,0 +1,6 @@
+Return only the following sparse JSON for your role (maximum 32 uses). Reference complete unit IDs including offsets and hash; source_refs must include unit_id. Anchors are exact substrings of query. use_kind is PERSONAL_RANKING, PLAN_ADAPTATION, STYLE_ADAPTATION, USER_HISTORY or FACT_EVIDENCE. Do not select or rank answer options, even when the public query includes options. Do not return hidden reasoning, full answers or rewritten memory.
+ALLOW:
+{"proposals":[{"unit_id":"exact id","scope_id":"S1","use_kind":"PERSONAL_RANKING","source_refs":["exact id"],"query_anchor":"exact substring","benefit":"short specific helpful use, not an answer","support_level":"DIRECT|SUPPORTED_INFERENCE|UNCERTAIN"}],"gaps":[]}
+DENY:
+{"objections":[{"unit_id":"exact id","scope_id":"S1","use_kind":"FACT_EVIDENCE","source_refs":["exact id"],"query_anchor":"exact substring","reason_code":"PREFERENCE_NOT_FACT_PROOF","boundary":"short specific prohibited use"}],"uncertain":[]}
+Use source_refs for necessary qualifiers or related evidence too. Each unit/scope/use tuple appears at most once in each role. Do not invent prohibitions for unrelated evidence; sparse empty outputs are allowed. Contextual use judgments are predictions.

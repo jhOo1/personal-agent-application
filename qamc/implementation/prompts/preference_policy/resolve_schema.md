@@ -1,0 +1,2 @@
+Return {"decisions":[{"unit_id":"exact id","scope_id":"S1","use_kind":"PERSONAL_RANKING","action":"APPLY|LIMITED|OMIT|UNRESOLVED","source_refs":["exact id"],"boundary":"short explicit permitted/restricted scope"}],"material_gaps":[]}.
+Decide every provided conflicting UseKey exactly once. Do not change any nonconflicting key or add new proposals. Material gaps may remain unresolved. Do not produce final task answers. For LIMITED state the concrete allowed influence; UNRESOLVED is not a semantic failure label.
