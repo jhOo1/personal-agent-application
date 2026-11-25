@@ -14,3 +14,7 @@ Each archived scoring request and response was verified against its receipt. Rep
 There were 56 physical requests, 14 per stage, all successful, zero retries, and 284,773 reported tokens. All 14 pairs were scored. No sealed samples were used. The published report excludes raw messages and responses, which remain in the original repository's execution archive.
 
 Retain this bundle as the current PersistBench development candidate. The panel intentionally includes all three eligible archived sycophancy failures, so the aggregate is not a population estimate or a held-out result. No promotion to a three-benchmark unified method or SOTA claim follows. A fair next comparison should include a contemporary equal-compute control with common inputs and scoring, and a panel frozen without reference to outcomes in the candidate arm.
+
+## Verified evidence exposure on paired wins
+
+Replaying successful router and selector receipts after checking their request hashes shows that all three paired wins used Grounding and selected **zero** original memory sources. Their candidate histories contained 10, 15 and 9 entries. The observed sycophancy gains on this panel are consistent with selective abstention from history. They do not demonstrate finer-grained retention of useful evidence inside those winning cases. Separating the abstention decision from the GEPA Actor and contrasting it against full history with the same selection signal is the purpose of the matched PB_RUBRIC exposure experiment.
