@@ -21,3 +21,7 @@ PYTHONPATH="$p" python "$b/native_residual_v1/check_original_wires.py"
 ```
 
 完整归档、历史入口和评分收据通过私有工作区恢复。下一步冻结按来源和画像隔离的面板以及同预算策略优化对照，再实现评分与逐组晋级判断。
+
+## 冻结面板接线
+
+`build_jobs.py` 对选定分割重验面板、基线成稿哈希和有史 Actor 报文，并检查公开输入合同及请求容量。在上述 PYTHONPATH 下，通过 stdin 输入 JSON 单行规则数组，位置参数选 `search` 或 `confirmation`。命令仅输出数量。实际核验每侧非空候选各构造 17 个请求，RPEval 6、BenchPreS 4、PersistBench 7，复用 3 个无史端点。空策略复用 20 项，零新请求。尚未运行搜索、生成或评分。
