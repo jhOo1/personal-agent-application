@@ -17,3 +17,5 @@ RPEval 同一已曝光开发面板，274 题、1462 位都有三个端点的严�
 同时比较未改动归档强路径。主要衡量 RPEval Match，分开全 A 和作者 B/C、误用漏用；BenchPreS 非加粗 AAR 与 MR、完整度；PersistBench 分开 SYC、CD 和严格 BU。若实验臂只超过普通优化但仍输给原强方法，没有部署价值。若两臂同样改善，支持首次生成优化的实用价值，原子变异贡献仍未证实。晋级门槛、精确面板和预算尚未冻结；当前未派发新请求。
 
 [首次生成策略的请求级验收](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/PREFLIGHT.md)
+
+[按来源和画像隔离的开发面板](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/ROSTER.md)
