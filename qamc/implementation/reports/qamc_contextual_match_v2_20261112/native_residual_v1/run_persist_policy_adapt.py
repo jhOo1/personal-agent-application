@@ -40,6 +40,12 @@ def prior_round():
     }
 
 
+def excerpt(text):
+    if not isinstance(text, str) or len(text) <= 1600:
+        return text
+    return text[:1000] + "\n[Middle omitted for budget]\n" + text[-600:]
+
+
 def proposal_jobs(panel, search):
     previous = prior_round()
     expected = {(uid, mode) for uid in search for mode in MODES}
@@ -49,7 +55,7 @@ def proposal_jobs(panel, search):
     scored = {}
     for row in previous["rows"]:
         scored.setdefault(row["uid"], {})[row["method"]] = {
-            "answer": row["answer"], "score": row["score"], "status": row["actor_status"],
+            "answer": excerpt(row["answer"]), "score": row["score"], "status": row["actor_status"],
         }
     if not scored or not any(outcome["score"] is not None for arms in scored.values()
                              for outcome in arms.values()):
@@ -58,8 +64,9 @@ def proposal_jobs(panel, search):
     for uid, (wire, card) in search.items():
         traces.append({
             "task": card["root"]["public_task"],
-            "memory": card["root"]["original_sources"],
-            "answer": card["base_answer"],
+            "memory": [{**source, "text": excerpt(source["text"])}
+                       for source in card["root"]["original_sources"]],
+            "answer": excerpt(card["base_answer"]),
             "score": card["base_score"],
             "prior_candidates": scored.get(uid, {}),
         })
