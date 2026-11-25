@@ -1,0 +1,7 @@
+# RPEval source projection diagnostic
+
+Three exposed, previously tested hidden-B roots reused the archived whole-source Actor and scorer outcomes. For each, a developer selected one contiguous, exact user statement that retains the relevant preference and its local conditions. The source ID, policy, other request fields and grading protocol were fixed. This is a label-assisted diagnostic, not automatic span selection. There was no length-matched ordinary compression or concurrent resampling arm. The raw spans and requests remain local.
+
+Two roots have valid Match in both arms. On those ten positions, whole input scored 3/10 and projection 7/10. All four additional Match positions are from solo exhibition (implicit/071), 1/5 to 5/5. Its new answer retains the preference for unfamiliar exhibits and explicitly recommends solo-compatible venues. The older answer already offers solo venues and adds previously enjoyed hands-on options. This demonstrates a difference in topics and use of remembered episodes, not verified recovery of all four judged positions. Colleague dinner (implicit/066) stays at 2/5. Total OPB on these two roots goes 4 to 0 and UPB 5 to 3, under the same contested project Judge.
+
+The dinner-for-two Judge returned a Match denominator/range error. Its partial fields are archived and excluded from the paired Match. Six actual requests succeeded at transport, 7,373 reported tokens, no retries. No sealed data used. The single-root gain merits a matched compression and behavior test before developing an online policy.
