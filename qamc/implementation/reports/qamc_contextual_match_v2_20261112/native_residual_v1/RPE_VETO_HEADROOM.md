@@ -11,3 +11,9 @@ Earlier literal-veto work edited selected source policies while keeping history 
 A four-fold replay trained an L2 logistic classifier on two source-group folds, calibrated on a third, and predicted on the fourth. It used character bigrams, query/source overlap and the archived per-source policy action. It vetoed a task only if every source scored below the lowest maximum applicability on calibration tasks containing B/C. Outcomes and case IDs did not enter the model.
 
 One hundred history-route tasks with verified complete source inventories and common scores contribute 596 positions. The veto fired on eight tasks, two all-A and six containing B/C. Match remained 345/596. Thus this lexical classifier fails the legal-memory protection objective despite zero such observed errors on each calibration fold. No online requests were made. The result is a negative baseline for these features, not a test of frozen semantic embeddings or a claim about all one-way interventions.
+
+## Frozen multilingual encoder control
+
+The same folds and threshold rule were used with mean-pooled frozen mDeBERTa-v3-base-mnli-xnli hidden states (snapshot 8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c). Query/source vectors, absolute differences, elementwise products, cosine and the original policy action fed the same logistic classifier. Inputs were truncated to 256 model tokens and 574 unique texts were encoded locally. No model weights were updated.
+
+The semantic variant vetoed four of the same 100 tasks. All four had legitimate B/C. It found no all-A opportunity, and Match fell from 345/596 to 344/596. No remote requests or sealed data. Neither baseline qualifies as a deployable veto. This tests one fixed encoder and feature construction; both negative replays support moving on from the current supervised veto rather than tuning thresholds against these results.
