@@ -13,3 +13,7 @@ The content-first prompt did not reproduce its pilot advantage. All 19 exposed c
 The two content-first AAR losses relative to direct are from one profile; the other six tie. Strong Gate was already saturated on appropriate attributes. This panel tests regression and provides no AAR headroom against Gate. The previous enriched panel's improvement remains valid as a development observation. This replication does not support replacing Strong Gate with the content-first suffix. A successor needs a reliable trigger for unrecovered style or an actual improvement in both task content and realization.
 
 266 actual requests, all successful (38 Actor and 228 scores), 451,126 reported tokens, no unknown usage or retries. All references use the same project-adapted scoring, not the official DeepSeek-R1 protocol. Neither pilot nor replication accessed sealed evaluation.
+
+## Post-hoc room for selective use
+
+Across both panels, selecting content-first only where it adds AAR and does not lower completeness or increase MR would recover four AAR positions on four of the 12 pilot cases and none on the 19 group-out cases. One pilot case and eight group-out cases instead showed a decrease in AAR or completeness, or an increase in MR, versus Gate. This upper bound inspects both answers' scores. It is not an implementable selector and cannot establish that an input-only rule can separate the cases. In particular, the profile-disjoint set contains no positive examples of the target behavior, so any trigger derived from these positive cases remains a pilot hypothesis.
