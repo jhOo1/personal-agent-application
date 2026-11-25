@@ -24,3 +24,5 @@ QAMC 研究在候选记忆固定的条件下，何时使用历史、历史应影
 [新环境恢复说明](MIGRATION.md)
 
 [代码与提示快照](implementation/README.md)
+
+[强方法与论文对照索引](STRONG_METHODS.md)
