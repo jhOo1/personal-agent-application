@@ -29,3 +29,5 @@ QAMC 研究在候选记忆固定的条件下，何时使用历史、历史应影
 [代码与提示快照](implementation/README.md)
 
 [强方法与论文对照索引](STRONG_METHODS.md)
+
+[当前研究判断与下一次机制对照](CURRENT_DECISION.md)
