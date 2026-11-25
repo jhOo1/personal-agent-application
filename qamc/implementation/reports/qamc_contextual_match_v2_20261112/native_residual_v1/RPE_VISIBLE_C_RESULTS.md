@@ -23,3 +23,7 @@ The saved request comparison confirms exactly one B-to-C policy change on all ei
 - Dinner recipe (explicit/097): the old draft explicitly excludes chili and pepper. The new Judge rationale contradicts the recorded CAACAA labels and treats cooked fish and shrimp as raw-food use. The one-point increase cannot establish repair of the promoted spice restriction.
 
 Only the family outing shows an unambiguous new contingency tied to the target among the three improved grades. Do not treat the observed +2 as a verified behavioral improvement or use these four outcomes as clean supervision without additional checks.
+
+## Additional B-control sample
+
+A separately logged draw reused the exact original B-policy requests on the same eight roots and the same grading implementation. This draw was collected after the promotion result, without randomized temporal interleaving. Match was 36/56 for both the new B draw and C promotion, versus 34/56 for the archived B draw. C won one root and lost one against the new B draw. OPB was 12 for new B versus 15 for C, UPB 7 versus 4, and FM 1 versus 0. The original two-point Match gain is reproduced by unchanged inputs, so the pilot provides no demonstrated Match advantage for promotion over resampling. The positive family-outing behavior remains a case-level observation. Sixteen new requests succeeded, with 33,021 reported tokens. All old results and the sealed boundary were preserved.
