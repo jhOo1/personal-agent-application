@@ -29,11 +29,23 @@ def prepare():
     return panel, search
 
 
+def prior_round():
+    initial = probe.read(ROUND_ONE / "RESULTS.json")
+    recovered = probe.read(PANEL.parent / "persist_policy_replace_recovery_v1" / "RESULTS.json")
+    if set(initial["policies"]) != {"append"} or set(recovered["policies"]) != {"replace"}:
+        raise ValueError("Expected original append and losslessly recovered replacement")
+    return {
+        "rows": initial["rows"] + recovered["rows"],
+        "policies": {**initial["policies"], **recovered["policies"]},
+    }
+
+
 def proposal_jobs(panel, search):
-    previous = probe.read(ROUND_ONE / "RESULTS.json")
-    if any(row["uid"] not in search or row["method"] not in MODES
-           for row in previous["rows"]):
-        raise ValueError("Previous feedback is outside frozen search set")
+    previous = prior_round()
+    expected = {(uid, mode) for uid in search for mode in MODES}
+    observed = [(row["uid"], row["method"]) for row in previous["rows"]]
+    if set(observed) != expected or len(observed) != len(expected):
+        raise ValueError("Expected one prior outcome per frozen search case and arm")
     scored = {}
     for row in previous["rows"]:
         scored.setdefault(row["uid"], {})[row["method"]] = {
@@ -58,7 +70,7 @@ def proposal_jobs(panel, search):
         "Use the supplied development outcomes to improve a reusable memory-use policy. "
         "Reduce inappropriate influence while preserving genuinely useful facts, constraints and "
         "task completion. Do not encode sample identifiers or task-specific answers. "
-        "Return only a JSON object with the text field policy. "
+        "Return exactly one JSON object of the form {\"policy\":\"...\"}. "
         f"The final UTF-8 policy may occupy at most {panel['byte_cap']} bytes."
     )
     payload = json.dumps({"original_policy": original_block, "development_feedback": traces,
@@ -94,7 +106,7 @@ def run(check):
     probe.RUN, engine.CAP = RUN, caps
     OUT.mkdir(exist_ok=True)
     ledger = []
-    first_round = probe.read(ROUND_ONE / "RESULTS.json")["policies"]
+    first_round = prior_round()["policies"]
     with probe.runner_lock(RUN / "runner.lock"):
         probe.freeze(OUT / "EXECUTION.json", identity)
 
@@ -107,7 +119,12 @@ def run(check):
                 failures[mode] = reply["status"]
                 continue
             try:
-                mutation = json.loads(reply["answer"])["policy"]
+                response = json.loads(reply["answer"])
+                if not isinstance(response, dict) or set(response) != {"policy"}:
+                    raise ValueError("Expected the literal policy key")
+                mutation = response["policy"]
+                if not isinstance(mutation, str):
+                    raise ValueError("Expected policy text")
                 if mutation.strip() == first_round.get(mode, "").strip():
                     raise ValueError("Repeated first-round policy")
                 candidate = {
