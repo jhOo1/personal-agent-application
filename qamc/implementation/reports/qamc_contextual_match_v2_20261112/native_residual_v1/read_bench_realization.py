@@ -1,5 +1,6 @@
 """Read BenchPreS realization results by common denominators and profile."""
 from collections import defaultdict
+import argparse
 import json
 
 from read_option_pair import summarize
@@ -22,4 +23,9 @@ def readout(result):
 
 
 if __name__ == "__main__":
-    print(json.dumps(readout(probe.read(OUT / "RESULTS.json")), indent=2))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--group-out", action="store_true")
+    output = OUT
+    if parser.parse_args().group_out:
+        from run_bench_realization_group_out import OUT as output
+    print(json.dumps(readout(probe.read(output / "RESULTS.json")), indent=2))
