@@ -2,7 +2,7 @@
 
 The [working PDF](paper.pdf) uses the official ACL style in preprint mode. The author field is a working-draft placeholder. [Editable source](paper.tex) · [References](references.bib)
 
-The manuscript keeps the three benchmarks on separate scoring protocols. Its tables are from matched development comparisons. The current PersistBench repeat deployment and author-score bridge are separate tracks. No unfinished experiment contributes a result to this draft.
+The manuscript keeps the three benchmarks on separate scoring protocols. Its tables are from matched development comparisons. The completed PersistBench repeat-deployment result uses the project grader. An author-score bridge remains a separate, unrun evaluation. No unfinished experiment contributes a result to this draft.
 
 | Evidence | Authoritative project report |
 |---|---|
@@ -10,6 +10,7 @@ The manuscript keeps the three benchmarks on separate scoring protocols. Its tab
 | RPEval equal-rate controls and second backbone | [Equal-rate comparisons](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_rate_matched_controls_v1/READOUT.md) · [GPT-4.1 matched subset](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_second_backbone_v1/READOUT.md) |
 | RPEval explicit/implicit inputs and original memories | [Release identity and formats](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/RPE_RELEASE_IDENTITY_AND_FORMAT.md) |
 | PersistBench comparisons, 49-pair allocation and caveats | [Selected GEPA comparison](../implementation/reports/qamc_contextual_match_v2_20261112/persist_selected_gepa_completion_v1/READOUT.md) |
+| PersistBench repeated deployments and equal-cap mechanism check | [Completed three deployments](../implementation/reports/qamc_contextual_match_v2_20261112/persist_repeated_deployment_v1/READOUT.md) · [Equal-cap check](../implementation/reports/qamc_contextual_match_v2_20261112/persist_repeated_deployment_v1/EQUAL_CAP_LEGACY.md) |
 | BenchPreS published-control adaptation and renderer comparison | [Raw/Selectivity/Gate](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/BENCH_RAW_COMMON_BRIDGE.md) · [Matched message generation](../implementation/reports/qamc_contextual_match_v2_20261112/bench_speech_act_renderer_v1/READOUT.md) |
 | Group-level score sensitivity | [Paired source stability](../implementation/reports/qamc_contextual_match_v2_20261112/paired_source_stability_v1/READOUT.md) |
 
