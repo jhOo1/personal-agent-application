@@ -6,6 +6,8 @@
 
 语言适配完整本地对照有 286 道有效。逐题匹配英文保留量时，英文排序的 B 曝光 50→58、C 52→84、A 410→370。直接迁移默认阈值，合法 B/C 曝光从 241 降至 142。英文普通余弦排序在 168 道混合标签题上也提高区分度，且高于英文 MemGate。局部排序改善还需要终答验证。[语言适配结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/WIDE_READOUT.md)
 
+同 Actor 的等保留量终答验证已冻结，24 个已曝光来源组，比较英文门控、英文余弦、中文门控三个排序。每题固定条数，仍将完整中文原文交给 Actor，旧对照原分复用。三臂 72 个逻辑位置构造 56 个唯一请求，其中 5 个精确复用。英文门控与英文余弦实际选择不同的有 10 道，6 道同时落在所选原文字符量差距不超过 10% 的范围。终答待结算。[预检与协议](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/PREFLIGHT.md)
+
 ## RPEval 单偏好的外部对照
 
 24 道已曝光单偏好题中，22 道同题有效，IPE-C 15/22，RP 17/22，Des2Gen 与 MemAdapter 各 18/22。与空史同题的 21 道为 14/21 对 10/21。两道输 RP 的作者 C 均被 IPE 预测为 B 并走空史。多偏好旧账本中的 138 个作者 B 且 IPE 预测 B 的位置，68 个隐藏，70 个因另一条预测 C 进入 Actor。当前支持在多偏好场景继续研究启用策略，并保留单偏好保护缺口。单偏好评分是历史 Qwen 详细模板适配。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/READOUT.md)

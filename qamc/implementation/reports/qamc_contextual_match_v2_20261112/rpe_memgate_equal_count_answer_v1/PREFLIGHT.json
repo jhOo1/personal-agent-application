@@ -1,0 +1,19 @@
+{
+  "all_three_distinct": 8,
+  "conditional_eligible_by_format": {
+    "explicit": 79,
+    "implicit": 101
+  },
+  "logical_actors": 72,
+  "new_actor_cap": 51,
+  "new_requests_dispatched": 0,
+  "planned_tasks": 24,
+  "possible_grades_before_cache": 55,
+  "private_plan_sha256": "57544a38e21b9ba58ab0af8ff4025314adef0d83b2b75d3c8794c10230eba459",
+  "reused_exact_actors": {
+    "ARCHIVED_EXACT": 4,
+    "DIRECT_ZH_FIXED": 1
+  },
+  "searched_journals": 1338,
+  "unique_actors": 56
+}
