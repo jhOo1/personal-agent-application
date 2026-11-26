@@ -1,0 +1,45 @@
+{
+  "complete_actor_cells_by_unique_texts": {
+    "GEPA_SELECTED_BOUNDS": {
+      "3_distinct_of_3": 28
+    },
+    "PAPER_SELECTIVITY": {
+      "3_distinct_of_3": 32
+    }
+  },
+  "logical_output_origins": {
+    "generation": {
+      "INDEPENDENT_SAMPLING_UNIT": 183
+    },
+    "grading": {
+      "CURRENT_STAGE": 1092
+    }
+  },
+  "model_calls_added": 0,
+  "observed_next_start_after_failed_response_seconds": [
+    60.00630211830139
+  ],
+  "physical_calls": 1275,
+  "recorded_max_overlap": 8,
+  "recorded_minimum_start_gap_seconds": 3.1933202743530273,
+  "reported_model_alias_on_success": {
+    "GEPA_SELECTED_BOUNDS/actor": {
+      "qwen3.8-flash": 86
+    },
+    "GEPA_SELECTED_BOUNDS/judge": {
+      "qwen3.8-flash": 516
+    },
+    "PAPER_SELECTIVITY/actor": {
+      "qwen3.8-flash": 96
+    },
+    "PAPER_SELECTIVITY/judge": {
+      "qwen3.8-flash": 576
+    }
+  },
+  "waves": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

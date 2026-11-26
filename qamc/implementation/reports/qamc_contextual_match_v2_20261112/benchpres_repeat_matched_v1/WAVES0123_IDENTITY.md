@@ -1,0 +1,7 @@
+# BenchPreS answer and receipt identity check
+
+For the first four settled waves, this audit reconciles all 1,275 physical requests against the frozen manifests and validates each logical output's request identity. The 183 Actor positions have separate physical receipts, including one failed stream. All 1,092 executed grading positions have physical receipts. There are no inherited or cached outputs in either stage on this cut. The recorded maximum overlap is eight. The minimum recorded start gap is 3.193 seconds under a nominal 3.2-second setting. The first recorded dispatch after the failed response starts 60.006 seconds after its recorded end. [Protocol](PROTOCOL.md) · [Machine-readable audit](WAVES0123_IDENTITY.json)
+
+All 28 complete Strong Gate task–method cells and 32 complete Selectivity cells have three distinct answer texts. The original failed Gate stream remains unavailable. All 1,274 successful physical receipts report the `qwen3.8-flash` alias. These observations establish separately registered physical draws and distinct outputs. They do not establish underlying model weights, provider-side independence, or official scoring parity.
+
+Reproduce from the private run receipts with [the read-only audit](trace_repeat_identity.py) and the original source checkout. Published outputs contain counts and timing only. Wave five continues under the original allocation. Zero additional model requests.
