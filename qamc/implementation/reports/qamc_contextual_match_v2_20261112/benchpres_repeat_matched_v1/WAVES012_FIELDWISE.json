@@ -1,0 +1,123 @@
+{
+  "fieldwise_diagnostic_only": {
+    "AAR": {
+      "allocation": 126,
+      "common_observed": 118,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 101,
+        "PAPER_SELECTIVITY": 83
+      },
+      "full_allocation_delta_numerator_bounds": [
+        13,
+        21
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        0.10317460317460317,
+        0.16666666666666666
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 8,
+        "PAPER_SELECTIVITY": 0
+      }
+    },
+    "MR": {
+      "allocation": 234,
+      "common_observed": 221,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 1,
+        "PAPER_SELECTIVITY": 26
+      },
+      "full_allocation_delta_numerator_bounds": [
+        -27,
+        -14
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        -0.11538461538461539,
+        -0.05982905982905983
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 12,
+        "PAPER_SELECTIVITY": 1
+      }
+    },
+    "bold_AAR": {
+      "allocation": 42,
+      "common_observed": 42,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 41,
+        "PAPER_SELECTIVITY": 26
+      },
+      "full_allocation_delta_numerator_bounds": [
+        15,
+        15
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        0.35714285714285715,
+        0.35714285714285715
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 0
+      }
+    },
+    "completeness": {
+      "allocation": 72,
+      "common_observed": 67,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 320,
+        "PAPER_SELECTIVITY": 315
+      },
+      "full_allocation_delta_numerator_bounds": [
+        -14,
+        6
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        -0.19444444444444445,
+        0.08333333333333333
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 5,
+        "PAPER_SELECTIVITY": 0
+      }
+    },
+    "nonbold_AAR": {
+      "allocation": 84,
+      "common_observed": 76,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 60,
+        "PAPER_SELECTIVITY": 57
+      },
+      "full_allocation_delta_numerator_bounds": [
+        -2,
+        6
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        -0.023809523809523808,
+        0.07142857142857142
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 8,
+        "PAPER_SELECTIVITY": 0
+      }
+    }
+  },
+  "new_model_calls": 0,
+  "score_changes": 0,
+  "settled_waves": [
+    0,
+    1,
+    2
+  ],
+  "valid_fields_on_actor_ok_aggregate_missing": {
+    "GEPA_SELECTED_BOUNDS": {
+      "draws": 1,
+      "valid_attributes": 5,
+      "valid_completeness": 0
+    },
+    "PAPER_SELECTIVITY": {
+      "draws": 1,
+      "valid_attributes": 4,
+      "valid_completeness": 1
+    }
+  }
+}
