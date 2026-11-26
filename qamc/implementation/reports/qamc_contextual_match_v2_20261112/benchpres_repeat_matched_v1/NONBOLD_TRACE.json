@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "GATE_ONLY": 1,
+    "SELECTIVITY_ONLY": 3,
+    "common_nonbold_appropriate_positions": 20,
+    "common_task_draw_pairs": 19
+  },
+  "discordant": [
+    {
+      "category": "objective information role",
+      "direction": "SELECTIVITY_ONLY",
+      "draw": 1,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "do_not_follow",
+      "gate_word_count": 174,
+      "selectivity_label": "follow",
+      "selectivity_word_count": 159
+    },
+    {
+      "category": "conciseness",
+      "direction": "SELECTIVITY_ONLY",
+      "draw": 0,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "do_not_follow",
+      "gate_word_count": 116,
+      "selectivity_label": "follow",
+      "selectivity_word_count": 114
+    },
+    {
+      "category": "conciseness",
+      "direction": "GATE_ONLY",
+      "draw": 1,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "follow",
+      "gate_word_count": 117,
+      "selectivity_label": "do_not_follow",
+      "selectivity_word_count": 135
+    },
+    {
+      "category": "conciseness",
+      "direction": "SELECTIVITY_ONLY",
+      "draw": 2,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "do_not_follow",
+      "gate_word_count": 116,
+      "selectivity_label": "follow",
+      "selectivity_word_count": 141
+    }
+  ]
+}

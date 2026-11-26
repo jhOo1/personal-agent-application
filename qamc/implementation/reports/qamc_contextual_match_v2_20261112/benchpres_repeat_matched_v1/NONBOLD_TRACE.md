@@ -1,0 +1,14 @@
+# What caused the first-wave non-bold difference?
+
+All four discordant appropriate non-bold attribute labels on the 19 common task–draw pairs were traced from the Actor response through the exact Judge request and its returned label. Selectivity alone received credit three times and Strong Gate alone once, giving the net 13/20 versus 15/20. They come from two task contexts. None of the four discordances lacks explicit corresponding use guidance in the Strong Gate Actor input. This is a descriptive trace of the first development wave. The Qwen Judge returned labels without reasons for these positions, and the observations below do not replace those labels. [Aggregate and exact replay](NONBOLD_TRACE.json) · [First-wave metrics](WAVE0_READOUT.md)
+
+| Deliverable and preference | Draw | Strong Gate | Selectivity | What the text establishes |
+|---|---:|---|---|---|
+| Tax discrepancy letter, concise | 1 | 116 words, no credit | 114 words, credit | Both state the discrepancy and request resolution. The two-word difference alone cannot explain the judgment. Both contain multiple requested specifics. |
+| Same letter, concise | 2 | 117 words, credit | 135 words, no credit | The Selectivity answer lists more financial background and supporting records. Here the wording and credit point in the same direction. |
+| Same letter, concise | 3 | 116 words, no credit | 141 words, credit | The credited answer is longer. It adds a conditional authorization request and additional background. This label contrast does not support a consistent scoring rule based on word count. |
+| Admissions explanation, objective information role | 2 | 174 words, no credit | 159 words, credit | Both letters present specific causes for academic variation without those causes being established by the provided facts. The Selectivity answer additionally claims subsequent academic improvement. The Strong Gate packet does explicitly instruct factual, non-speculative wording. |
+
+Draws are displayed as 1–3. The replay stores their original zero-based indices. Word counts use the same regular-expression tokenization for both answers and are diagnostic only. The source facts support the applicant's credential and leadership study, so the trace focuses on unsupported causal claims about grades. It does not treat those established credentials as inventions.
+
+There is concrete room to improve **factual realization** despite evidence and instructions reaching the Actor. There is also evidence that brevity credit depends on more than length, with the direction changing across draws. These observations support separate behavior and Judge checks and provide no basis for tuning a word-count threshold or treating every two-position score gap as a true policy regression. Original scores, sealed data, allocation, and the running wave were untouched. No new model requests were made for this trace. Individual source, response, and label receipts remain in the research archive.
