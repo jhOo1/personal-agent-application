@@ -6,7 +6,7 @@
 
 语言适配完整本地对照有 286 道有效。逐题匹配英文保留量时，英文排序的 B 曝光 50→58、C 52→84、A 410→370。直接迁移默认阈值，合法 B/C 曝光从 241 降至 142。英文普通余弦排序在 168 道混合标签题上也提高区分度，且高于英文 MemGate。局部排序改善还需要终答验证。[语言适配结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/WIDE_READOUT.md)
 
-同 Actor 的等保留量终答验证已冻结，24 个已曝光来源组，比较英文门控、英文余弦、中文门控三个排序。每题固定条数，仍将完整中文原文交给 Actor，旧对照原分复用。三臂 72 个逻辑位置构造 56 个唯一请求，其中 5 个精确复用。英文门控与英文余弦实际选择不同的有 10 道，6 道同时落在所选原文字符量差距不超过 10% 的范围。终答待结算。[预检与协议](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/PREFLIGHT.md)
+同 Actor、逐题等保留量终答对照已结算。24 个已曝光分歧来源组，英文门控、英文余弦、中文门控分别 78、68、63/125。英文门控与 IPE-C 共同 22 题为 73/114 对 67/114，但可行性严重度从 4 升至 14，真实遗漏包括选择助眠白噪音和晚餐加辣椒粉。保留为有潜力的对照，暂不替换 IPE-C。102 次新增请求均成功，188,770 Token。[结算及行为核验](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/READOUT.md)
 
 ## RPEval 单偏好的外部对照
 

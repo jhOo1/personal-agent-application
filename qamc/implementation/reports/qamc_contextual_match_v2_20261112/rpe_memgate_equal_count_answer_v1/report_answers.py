@@ -39,7 +39,8 @@ def match(cell, n):
 
 
 def compare(rows, first, second):
-    outcomes, clean, length = Counter(), Counter(), Counter()
+    outcomes, clean, length, changed = Counter(), Counter(), Counter(), Counter()
+    changed_length = defaultdict(Counter)
     by_stratum = defaultdict(Counter)
     severity = defaultdict(Counter)
     lower = upper = 0
@@ -60,13 +61,21 @@ def compare(rows, first, second):
             clean.update(count)
         if first in ARMS and second in ARMS:
             ca, cb = (row["arms"][arm]["original_characters"] for arm in (first, second))
-            if abs(ca - cb) * 10 <= max(ca, cb):
+            balanced = abs(ca - cb) * 10 <= max(ca, cb)
+            if balanced:
                 length.update(count)
+            wire_a, wire_b = (row["arms"][arm]["request_sha256"] for arm in (first, second))
+            if wire_a != wire_b:
+                changed.update(count)
+                if balanced:
+                    changed_length["within_10pct"].update(count)
+                changed_length["first_shorter" if ca < cb else "first_equal_or_longer"].update(count)
         for key in METRICS:
             if key in a["grade"] and key in b["grade"]:
                 severity[key].update(tasks=1, first=a["grade"][key], second=b["grade"][key])
     return {"match": outcomes, "by_task_stratum": by_stratum, "severity": severity,
             "flag_excluded": clean, "character_balanced": length,
+            "different_actor_wires": changed, "different_wires_by_characters": changed_length,
             "all_allocated_match_difference_bounds": [lower, upper],
             "allocation": {"tasks": len(rows), "positions": sum(len(r["labels"]) for r in rows)}}
 

@@ -1,0 +1,1138 @@
+{
+  "arm_status": {
+    "EN_COSINE": {
+      "OK": 24
+    },
+    "EN_GATE": {
+      "OK": 24
+    },
+    "ZH_GATE": {
+      "OK": 24
+    }
+  },
+  "comparisons": {
+    "EN_COSINE/DIRECT_ZH": {
+      "all_allocated_match_difference_bounds": [
+        -2,
+        9
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 21,
+          "tasks": 8,
+          "ties": 6,
+          "wins": 1
+        },
+        "CONTAINS_C": {
+          "first": 33,
+          "losses": 1,
+          "positions": 54,
+          "second": 29,
+          "tasks": 10,
+          "ties": 7,
+          "wins": 2
+        },
+        "ONLY_B": {
+          "first": 9,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 36,
+        "losses": 0,
+        "positions": 68,
+        "second": 29,
+        "tasks": 13,
+        "ties": 11,
+        "wins": 2
+      },
+      "match": {
+        "first": 63,
+        "losses": 2,
+        "positions": 114,
+        "second": 59,
+        "tasks": 22,
+        "ties": 17,
+        "wins": 3
+      },
+      "severity": {
+        "FM": {
+          "first": 15,
+          "second": 7,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 30,
+          "second": 34,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 22,
+          "second": 18,
+          "tasks": 22
+        }
+      }
+    },
+    "EN_COSINE/EN_GATE": {
+      "all_allocated_match_difference_bounds": [
+        -10,
+        -10
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 35,
+          "losses": 2,
+          "positions": 60,
+          "second": 37,
+          "tasks": 11,
+          "ties": 9,
+          "wins": 0
+        },
+        "ONLY_B": {
+          "first": 12,
+          "losses": 1,
+          "positions": 23,
+          "second": 15,
+          "tasks": 5,
+          "ties": 3,
+          "wins": 1
+        }
+      },
+      "character_balanced": {
+        "first": 57,
+        "losses": 2,
+        "positions": 103,
+        "second": 66,
+        "tasks": 20,
+        "ties": 18,
+        "wins": 0
+      },
+      "different_actor_wires": {
+        "first": 22,
+        "losses": 4,
+        "positions": 56,
+        "second": 32,
+        "tasks": 10,
+        "ties": 5,
+        "wins": 1
+      },
+      "different_wires_by_characters": {
+        "first_equal_or_longer": {
+          "first": 9,
+          "losses": 1,
+          "positions": 19,
+          "second": 10,
+          "tasks": 3,
+          "ties": 2,
+          "wins": 0
+        },
+        "first_shorter": {
+          "first": 13,
+          "losses": 3,
+          "positions": 37,
+          "second": 22,
+          "tasks": 7,
+          "ties": 3,
+          "wins": 1
+        },
+        "within_10pct": {
+          "first": 11,
+          "losses": 2,
+          "positions": 34,
+          "second": 20,
+          "tasks": 6,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "flag_excluded": {
+        "first": 43,
+        "losses": 2,
+        "positions": 81,
+        "second": 48,
+        "tasks": 15,
+        "ties": 13,
+        "wins": 0
+      },
+      "match": {
+        "first": 68,
+        "losses": 4,
+        "positions": 125,
+        "second": 78,
+        "tasks": 24,
+        "ties": 19,
+        "wins": 1
+      },
+      "severity": {
+        "FM": {
+          "first": 19,
+          "second": 16,
+          "tasks": 24
+        },
+        "OPB": {
+          "first": 32,
+          "second": 26,
+          "tasks": 24
+        },
+        "UPB": {
+          "first": 27,
+          "second": 21,
+          "tasks": 24
+        }
+      }
+    },
+    "EN_COSINE/IPE_C": {
+      "all_allocated_match_difference_bounds": [
+        -10,
+        1
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 33,
+          "losses": 1,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 8,
+          "wins": 1
+        },
+        "ONLY_B": {
+          "first": 9,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 34,
+        "losses": 0,
+        "positions": 57,
+        "second": 32,
+        "tasks": 11,
+        "ties": 10,
+        "wins": 1
+      },
+      "match": {
+        "first": 63,
+        "losses": 2,
+        "positions": 114,
+        "second": 67,
+        "tasks": 22,
+        "ties": 19,
+        "wins": 1
+      },
+      "severity": {
+        "FM": {
+          "first": 15,
+          "second": 4,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 30,
+          "second": 24,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 22,
+          "second": 23,
+          "tasks": 22
+        }
+      }
+    },
+    "EN_COSINE/RPR_PAPER_FULL": {
+      "all_allocated_match_difference_bounds": [
+        -8,
+        -2
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 33,
+          "losses": 1,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 8,
+          "wins": 1
+        },
+        "ONLY_B": {
+          "first": 12,
+          "losses": 0,
+          "positions": 23,
+          "second": 12,
+          "tasks": 5,
+          "ties": 5,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 32,
+        "losses": 0,
+        "positions": 60,
+        "second": 30,
+        "tasks": 11,
+        "ties": 10,
+        "wins": 1
+      },
+      "match": {
+        "first": 66,
+        "losses": 2,
+        "positions": 119,
+        "second": 70,
+        "tasks": 23,
+        "ties": 20,
+        "wins": 1
+      },
+      "severity": {
+        "FM": {
+          "first": 15,
+          "second": 4,
+          "tasks": 23
+        },
+        "OPB": {
+          "first": 31,
+          "second": 32,
+          "tasks": 23
+        },
+        "UPB": {
+          "first": 24,
+          "second": 21,
+          "tasks": 23
+        }
+      }
+    },
+    "EN_COSINE/ZH_GATE": {
+      "all_allocated_match_difference_bounds": [
+        5,
+        5
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 0,
+          "positions": 42,
+          "second": 21,
+          "tasks": 8,
+          "ties": 8,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 35,
+          "losses": 0,
+          "positions": 60,
+          "second": 31,
+          "tasks": 11,
+          "ties": 8,
+          "wins": 3
+        },
+        "ONLY_B": {
+          "first": 12,
+          "losses": 0,
+          "positions": 23,
+          "second": 11,
+          "tasks": 5,
+          "ties": 4,
+          "wins": 1
+        }
+      },
+      "character_balanced": {
+        "first": 34,
+        "losses": 0,
+        "positions": 71,
+        "second": 32,
+        "tasks": 13,
+        "ties": 12,
+        "wins": 1
+      },
+      "different_actor_wires": {
+        "first": 66,
+        "losses": 0,
+        "positions": 112,
+        "second": 61,
+        "tasks": 22,
+        "ties": 18,
+        "wins": 4
+      },
+      "different_wires_by_characters": {
+        "first_equal_or_longer": {
+          "first": 31,
+          "losses": 0,
+          "positions": 60,
+          "second": 28,
+          "tasks": 12,
+          "ties": 10,
+          "wins": 2
+        },
+        "first_shorter": {
+          "first": 35,
+          "losses": 0,
+          "positions": 52,
+          "second": 33,
+          "tasks": 10,
+          "ties": 8,
+          "wins": 2
+        },
+        "within_10pct": {
+          "first": 32,
+          "losses": 0,
+          "positions": 58,
+          "second": 30,
+          "tasks": 11,
+          "ties": 10,
+          "wins": 1
+        }
+      },
+      "flag_excluded": {
+        "first": 45,
+        "losses": 0,
+        "positions": 84,
+        "second": 42,
+        "tasks": 15,
+        "ties": 13,
+        "wins": 2
+      },
+      "match": {
+        "first": 68,
+        "losses": 0,
+        "positions": 125,
+        "second": 63,
+        "tasks": 24,
+        "ties": 20,
+        "wins": 4
+      },
+      "severity": {
+        "FM": {
+          "first": 19,
+          "second": 23,
+          "tasks": 24
+        },
+        "OPB": {
+          "first": 32,
+          "second": 25,
+          "tasks": 24
+        },
+        "UPB": {
+          "first": 27,
+          "second": 36,
+          "tasks": 24
+        }
+      }
+    },
+    "EN_GATE/DIRECT_ZH": {
+      "all_allocated_match_difference_bounds": [
+        8,
+        19
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 26,
+          "losses": 0,
+          "positions": 42,
+          "second": 21,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 1
+        },
+        "CONTAINS_C": {
+          "first": 34,
+          "losses": 0,
+          "positions": 54,
+          "second": 29,
+          "tasks": 10,
+          "ties": 8,
+          "wins": 2
+        },
+        "ONLY_B": {
+          "first": 13,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 3,
+          "wins": 1
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 45,
+        "losses": 0,
+        "positions": 73,
+        "second": 34,
+        "tasks": 14,
+        "ties": 11,
+        "wins": 3
+      },
+      "match": {
+        "first": 73,
+        "losses": 0,
+        "positions": 114,
+        "second": 59,
+        "tasks": 22,
+        "ties": 18,
+        "wins": 4
+      },
+      "severity": {
+        "FM": {
+          "first": 14,
+          "second": 7,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 25,
+          "second": 34,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 16,
+          "second": 18,
+          "tasks": 22
+        }
+      }
+    },
+    "EN_GATE/IPE_C": {
+      "all_allocated_match_difference_bounds": [
+        0,
+        11
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 26,
+          "losses": 0,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 8,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 34,
+          "losses": 0,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 9,
+          "wins": 1
+        },
+        "ONLY_B": {
+          "first": 13,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 3,
+          "wins": 1
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 43,
+        "losses": 0,
+        "positions": 62,
+        "second": 37,
+        "tasks": 12,
+        "ties": 10,
+        "wins": 2
+      },
+      "match": {
+        "first": 73,
+        "losses": 0,
+        "positions": 114,
+        "second": 67,
+        "tasks": 22,
+        "ties": 20,
+        "wins": 2
+      },
+      "severity": {
+        "FM": {
+          "first": 14,
+          "second": 4,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 25,
+          "second": 24,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 16,
+          "second": 23,
+          "tasks": 22
+        }
+      }
+    },
+    "EN_GATE/RPR_PAPER_FULL": {
+      "all_allocated_match_difference_bounds": [
+        2,
+        8
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 26,
+          "losses": 0,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 8,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 34,
+          "losses": 0,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 9,
+          "wins": 1
+        },
+        "ONLY_B": {
+          "first": 15,
+          "losses": 1,
+          "positions": 23,
+          "second": 12,
+          "tasks": 5,
+          "ties": 3,
+          "wins": 1
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 41,
+        "losses": 0,
+        "positions": 65,
+        "second": 35,
+        "tasks": 12,
+        "ties": 10,
+        "wins": 2
+      },
+      "match": {
+        "first": 75,
+        "losses": 1,
+        "positions": 119,
+        "second": 70,
+        "tasks": 23,
+        "ties": 20,
+        "wins": 2
+      },
+      "severity": {
+        "FM": {
+          "first": 15,
+          "second": 4,
+          "tasks": 23
+        },
+        "OPB": {
+          "first": 25,
+          "second": 32,
+          "tasks": 23
+        },
+        "UPB": {
+          "first": 19,
+          "second": 21,
+          "tasks": 23
+        }
+      }
+    },
+    "EN_GATE/ZH_GATE": {
+      "all_allocated_match_difference_bounds": [
+        15,
+        15
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 26,
+          "losses": 0,
+          "positions": 42,
+          "second": 21,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 1
+        },
+        "CONTAINS_C": {
+          "first": 37,
+          "losses": 0,
+          "positions": 60,
+          "second": 31,
+          "tasks": 11,
+          "ties": 6,
+          "wins": 5
+        },
+        "ONLY_B": {
+          "first": 15,
+          "losses": 0,
+          "positions": 23,
+          "second": 11,
+          "tasks": 5,
+          "ties": 4,
+          "wins": 1
+        }
+      },
+      "character_balanced": {
+        "first": 38,
+        "losses": 0,
+        "positions": 65,
+        "second": 31,
+        "tasks": 12,
+        "ties": 10,
+        "wins": 2
+      },
+      "different_actor_wires": {
+        "first": 78,
+        "losses": 0,
+        "positions": 125,
+        "second": 63,
+        "tasks": 24,
+        "ties": 17,
+        "wins": 7
+      },
+      "different_wires_by_characters": {
+        "first_equal_or_longer": {
+          "first": 51,
+          "losses": 0,
+          "positions": 87,
+          "second": 37,
+          "tasks": 17,
+          "ties": 11,
+          "wins": 6
+        },
+        "first_shorter": {
+          "first": 27,
+          "losses": 0,
+          "positions": 38,
+          "second": 26,
+          "tasks": 7,
+          "ties": 6,
+          "wins": 1
+        },
+        "within_10pct": {
+          "first": 38,
+          "losses": 0,
+          "positions": 65,
+          "second": 31,
+          "tasks": 12,
+          "ties": 10,
+          "wins": 2
+        }
+      },
+      "flag_excluded": {
+        "first": 48,
+        "losses": 0,
+        "positions": 82,
+        "second": 40,
+        "tasks": 15,
+        "ties": 11,
+        "wins": 4
+      },
+      "match": {
+        "first": 78,
+        "losses": 0,
+        "positions": 125,
+        "second": 63,
+        "tasks": 24,
+        "ties": 17,
+        "wins": 7
+      },
+      "severity": {
+        "FM": {
+          "first": 16,
+          "second": 23,
+          "tasks": 24
+        },
+        "OPB": {
+          "first": 26,
+          "second": 25,
+          "tasks": 24
+        },
+        "UPB": {
+          "first": 21,
+          "second": 36,
+          "tasks": 24
+        }
+      }
+    },
+    "ZH_GATE/DIRECT_ZH": {
+      "all_allocated_match_difference_bounds": [
+        -7,
+        4
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 21,
+          "tasks": 8,
+          "ties": 6,
+          "wins": 1
+        },
+        "CONTAINS_C": {
+          "first": 29,
+          "losses": 3,
+          "positions": 54,
+          "second": 29,
+          "tasks": 10,
+          "ties": 6,
+          "wins": 1
+        },
+        "ONLY_B": {
+          "first": 9,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 38,
+        "losses": 0,
+        "positions": 74,
+        "second": 33,
+        "tasks": 14,
+        "ties": 13,
+        "wins": 1
+      },
+      "match": {
+        "first": 59,
+        "losses": 4,
+        "positions": 114,
+        "second": 59,
+        "tasks": 22,
+        "ties": 16,
+        "wins": 2
+      },
+      "severity": {
+        "FM": {
+          "first": 18,
+          "second": 7,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 24,
+          "second": 34,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 30,
+          "second": 18,
+          "tasks": 22
+        }
+      }
+    },
+    "ZH_GATE/IPE_C": {
+      "all_allocated_match_difference_bounds": [
+        -15,
+        -4
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 29,
+          "losses": 3,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 7,
+          "wins": 0
+        },
+        "ONLY_B": {
+          "first": 9,
+          "losses": 0,
+          "positions": 18,
+          "second": 9,
+          "tasks": 4,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 32,
+        "losses": 0,
+        "positions": 57,
+        "second": 32,
+        "tasks": 11,
+        "ties": 11,
+        "wins": 0
+      },
+      "match": {
+        "first": 59,
+        "losses": 4,
+        "positions": 114,
+        "second": 67,
+        "tasks": 22,
+        "ties": 18,
+        "wins": 0
+      },
+      "severity": {
+        "FM": {
+          "first": 18,
+          "second": 4,
+          "tasks": 22
+        },
+        "OPB": {
+          "first": 24,
+          "second": 24,
+          "tasks": 22
+        },
+        "UPB": {
+          "first": 30,
+          "second": 23,
+          "tasks": 22
+        }
+      }
+    },
+    "ZH_GATE/RPR_PAPER_FULL": {
+      "all_allocated_match_difference_bounds": [
+        -13,
+        -7
+      ],
+      "allocation": {
+        "positions": 125,
+        "tasks": 24
+      },
+      "by_task_stratum": {
+        "ALL_A": {
+          "first": 21,
+          "losses": 1,
+          "positions": 42,
+          "second": 26,
+          "tasks": 8,
+          "ties": 7,
+          "wins": 0
+        },
+        "CONTAINS_C": {
+          "first": 29,
+          "losses": 3,
+          "positions": 54,
+          "second": 32,
+          "tasks": 10,
+          "ties": 7,
+          "wins": 0
+        },
+        "ONLY_B": {
+          "first": 11,
+          "losses": 1,
+          "positions": 23,
+          "second": 12,
+          "tasks": 5,
+          "ties": 4,
+          "wins": 0
+        }
+      },
+      "character_balanced": {},
+      "different_actor_wires": {},
+      "different_wires_by_characters": {},
+      "flag_excluded": {
+        "first": 30,
+        "losses": 0,
+        "positions": 60,
+        "second": 30,
+        "tasks": 11,
+        "ties": 11,
+        "wins": 0
+      },
+      "match": {
+        "first": 61,
+        "losses": 5,
+        "positions": 119,
+        "second": 70,
+        "tasks": 23,
+        "ties": 18,
+        "wins": 0
+      },
+      "severity": {
+        "FM": {
+          "first": 19,
+          "second": 4,
+          "tasks": 23
+        },
+        "OPB": {
+          "first": 24,
+          "second": 32,
+          "tasks": 23
+        },
+        "UPB": {
+          "first": 33,
+          "second": 21,
+          "tasks": 23
+        }
+      }
+    }
+  },
+  "exact_shared": {
+    "EN_GATE/EN_COSINE": 14,
+    "ZH_GATE/EN_COSINE": 2
+  },
+  "exposure": {
+    "EN_COSINE": {
+      "A_available": 103,
+      "A_visible": 37,
+      "B_available": 9,
+      "B_visible": 3,
+      "C_available": 13,
+      "C_visible": 6
+    },
+    "EN_GATE": {
+      "A_available": 103,
+      "A_visible": 35,
+      "B_available": 9,
+      "B_visible": 4,
+      "C_available": 13,
+      "C_visible": 7
+    },
+    "ZH_GATE": {
+      "A_available": 103,
+      "A_visible": 43,
+      "B_available": 9,
+      "B_visible": 1,
+      "C_available": 13,
+      "C_visible": 2
+    }
+  },
+  "new_physical_requests": {
+    "EqualCountActor": 51,
+    "EqualCountJudge": 51
+  },
+  "original_selected_characters": {
+    "EN_COSINE": {
+      "median": 307.5,
+      "total": 13737
+    },
+    "EN_GATE": {
+      "median": 317.5,
+      "total": 13915
+    },
+    "ZH_GATE": {
+      "median": 324.5,
+      "total": 13475
+    }
+  },
+  "physical_actor_input_tokens_by_arm": {
+    "EN_COSINE": {
+      "reported_tasks": 21,
+      "total": 13085
+    },
+    "EN_GATE": {
+      "reported_tasks": 21,
+      "total": 13189
+    },
+    "ZH_GATE": {
+      "reported_tasks": 22,
+      "total": 12209
+    }
+  },
+  "reported_tokens": 188770,
+  "request_status": {
+    "OK": 102
+  },
+  "unknown_usage": 0
+}
