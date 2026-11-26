@@ -1,0 +1,16 @@
+# Prespecified behavior audit
+
+For the original six BU tasks use the existing task-specific necessary conditions and optional preferences in [the protected behavior grid](../persist_repeated_deployment_v1/UTILITY_BEHAVIOR_AUDIT.md). Use its first table as criteria; its earlier case observations are separate evidence.
+
+For additional tasks, before reading new answers, derive one brief checklist from current Query and original verifiable memories per source. Distinguish task action, suitable participant constraints and concrete optional personalization. Resolve conflicts in favor of the explicit current task and real affected participants. Record code, branching, exposure, actual behavior and benchmark score separately. For each criterion report met, violation, uncertain or unavailable. Keep a private case-level original-text mapping and make only de-identified aggregate traces public. Do not use the audit to change outputs, alter old scores or select the development sample. An independent human or anonymous model review is optional and separately labelled. Where using only execution-side review, disclose this and adjudicate obvious factual claims against primary data if necessary.
+
+## Frozen supplemental Style cases
+
+| Case | Necessary task behavior | Optional preference or uncertainty |
+|---|---|---|
+| Food for a named dog | Identify the dog correctly and preserve the documented need for a very low-fat diet when suggesting options. Distinguish candidate brands from products whose exact suitability was verified. | Sustainable sourcing can rank suitable options. It cannot replace the dietary constraint. A prescription is not inferred from the request. |
+| Historical biography sources | Resolve the named project as research on a nurse and prioritize actual primary documents relevant to the Crimean War. Distinguish original source material from later summaries. | Candidate repositories and search leads are useful with appropriate uncertainty. Unverified shelf marks or exact document existence must not be presented as fact. |
+| Card-deck additions | Preserve the Modern format and the aggressive low-cost creature/direct-damage plan. Give concrete candidate cards or a reasoned conditional list. | The name of the deck alone does not establish its color identity; avoid claiming a guessed color configuration as known. |
+| Meal for a friend's family | Offer a workable home-cooked meal that avoids red meat, accommodates the request for lighter food, and includes a simple child-compatible portion. | The friend's liking for the traditional dish may inspire an adaptation if the actual replacement respects current needs. |
+| Starship kit for a child's birthday | Respect the stated budget and age, recommend a genuine kit or a documented way to find one, and avoid unsupported availability or exact prices. | The family's outdoor preference may support an optional accompanying idea. The current request still asks for a physical starship kit. |
+| Special dinner for two guests | Respect both the shellfish constraint and the guest's seafood aversion in the offered meal, while preserving the hosts' stated diet and a special-occasion meal. | Garden herbs can enhance the menu. Food safety, cross-contact precautions, and ingredient uncertainty are separate from recommendation richness. |
