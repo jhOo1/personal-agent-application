@@ -1,0 +1,175 @@
+{
+  "archives": {
+    "persist_counterfactual_stance_v1": {
+      "matched": 12,
+      "missing_score": 1,
+      "unbound_or_reused_score": 23
+    },
+    "persist_criteria_v1": {
+      "matched": 23,
+      "missing_score": 1
+    },
+    "persist_memadapter_alignment_v1": {
+      "matched": 55,
+      "missing_score": 3,
+      "no_author_envelope": 2
+    },
+    "persist_performance_v1": {
+      "matched": 36,
+      "missing_score": 4
+    },
+    "persist_query_premise_v1": {
+      "matched": 12,
+      "missing_score": 1,
+      "unbound_or_reused_score": 11
+    },
+    "persist_switch_execution_v1": {
+      "matched": 19,
+      "missing_score": 1,
+      "unbound_or_reused_score": 8
+    },
+    "qamc_persistbench_actor_factorial": {
+      "matched": 9,
+      "unbound_or_reused_score": 3
+    },
+    "selected_gepa_expansion_v1": {
+      "matched": 14
+    },
+    "selected_rubric_exposure_v1": {
+      "matched": 28
+    }
+  },
+  "comparisons": {
+    "all/PB_NO_MEMORY": {
+      "base_pass": 41,
+      "common": 47,
+      "losses": 17,
+      "other_pass": 29,
+      "wins": 5
+    },
+    "all/SELECTED_GEPA": {
+      "base_pass": 36,
+      "common": 42,
+      "losses": 1,
+      "other_pass": 40,
+      "wins": 5
+    },
+    "beneficial_memory_usage/PB_NO_MEMORY": {
+      "base_pass": 18,
+      "common": 18,
+      "losses": 16,
+      "other_pass": 2,
+      "wins": 0
+    },
+    "beneficial_memory_usage/SELECTED_GEPA": {
+      "base_pass": 14,
+      "common": 14,
+      "losses": 0,
+      "other_pass": 14,
+      "wins": 0
+    },
+    "cross_domain/PB_NO_MEMORY": {
+      "base_pass": 16,
+      "common": 17,
+      "losses": 1,
+      "other_pass": 16,
+      "wins": 1
+    },
+    "cross_domain/SELECTED_GEPA": {
+      "base_pass": 17,
+      "common": 18,
+      "losses": 1,
+      "other_pass": 17,
+      "wins": 1
+    },
+    "sycophancy/PB_NO_MEMORY": {
+      "base_pass": 7,
+      "common": 12,
+      "losses": 0,
+      "other_pass": 11,
+      "wins": 4
+    },
+    "sycophancy/SELECTED_GEPA": {
+      "base_pass": 5,
+      "common": 10,
+      "losses": 0,
+      "other_pass": 9,
+      "wins": 4
+    }
+  },
+  "counts": {
+    "all": {
+      "base_pass": 44,
+      "common": 50,
+      "missing_base": 10,
+      "with_author_non_memory_pass": 5,
+      "with_consistent_passing_endpoint": 5,
+      "without_consistent_passing_endpoint": 1
+    },
+    "beneficial_memory_usage": {
+      "base_pass": 18,
+      "common": 18
+    },
+    "cross_domain": {
+      "base_pass": 19,
+      "common": 20,
+      "with_author_non_memory_pass": 1,
+      "with_consistent_passing_endpoint": 1
+    },
+    "sycophancy": {
+      "base_pass": 7,
+      "common": 12,
+      "with_author_non_memory_pass": 4,
+      "with_consistent_passing_endpoint": 4,
+      "without_consistent_passing_endpoint": 1
+    }
+  },
+  "new_requests": 0,
+  "remaining": {
+    "already_planned_or_issued": {
+      "cross_domain": 1
+    },
+    "unattempted_in_named_manifests": {
+      "beneficial_memory_usage": 4,
+      "cross_domain": 1,
+      "sycophancy": 2
+    }
+  },
+  "source_hashes": {
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_criteria_v1/PersistNative_MANIFEST.json": "092bdc7c68e58aeeda2ce594ecaca930f4351402731eb4400775a15a806f5047",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_criteria_v1/RESULTS.json": "dc4c85d7e35e66648f0dde883e7e81fc4998d9e6e42f8a975cc4d0d31baf2269",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_memadapter_alignment_v1/PersistNative_MANIFEST.json": "886a652f13266070509b8888328760a1c62c835d2e964c402ca3e95981485dce",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_memadapter_alignment_v1/RESULTS.json": "5a5f4d044a565a1bdd4022e150607f2fc0b06713e0ec9e1b303d4123ff8593f4",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_performance_v1/FinalActor_MANIFEST.json": "01530d81d886c6e08647a2d072e438a5b53eef3e4faaa85016decda5fd61e5a3",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_performance_v1/PersistNative_MANIFEST.json": "741f814b04306a7aa597a16b0cbbf20cc238bd3a83b44388c9bc7ead9bceae68",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_performance_v1/RESULTS.json": "6f2b727534e95671e23ce815a51fb50be231e0d697e3889a981d99ac2da6989f",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_query_premise_v1/PersistNative_MANIFEST.json": "f0aaca59098f61f565adf3a39b21f97d15adaf5c7e751bf5f29027d55a80b9ca",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_query_premise_v1/RESULTS.json": "6c6d048442f94b7536612fd30f21a140e88c36be7f32005355c574f74572f114",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_switch_execution_v1/PersistNative_MANIFEST.json": "59109929d27716f6a7139b8fe36e566d8e13a8ed96b205c67cec37753f1c1297",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/persist_switch_execution_v1/RESULTS.json": "39005b89638f45cc2b0b2dd243846c1088cf08600df36cf54eac41c78ce5ce74",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/selected_gepa_expansion_v1/FinalActor_MANIFEST.json": "108e8c2d95f476d08a3085e54e231b4cbe064a853b34966f110a1f5c17b1a011",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/selected_gepa_expansion_v1/PersistNative_MANIFEST.json": "6fb61ec50e853a062e73d3af9cc986a5d434b9179dff1e27f12f9bde8c9c8107",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/selected_gepa_expansion_v1/RESULTS.json": "e066bf51125e5df80061e8eb1a1604fc8a5b180ffdad6cf18d501e638550445e",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/selected_rubric_exposure_v1/PersistNative_MANIFEST.json": "4bb2f85245c5e76db4d3b2f6e6bd3537dfd9a51852f461bca8e87e809ceb0d17",
+    "reports/qamc_contextual_match_v2_20261112/native_residual_v1/selected_rubric_exposure_v1/RESULTS.json": "85056ea6535dbc718b4e200bcc0ff2df38461705cc4a8765588c072bae52a928",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/PLAN.json": "c18003a4a00262fda7f38f4e86944f51569f0afab81a7eb11a45a2c000b9f9ff",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/00.json": "0c18c7323642d9ba1f11ee8bf9f30abc2082c3481d49ec1a5bff90a0c9c2d665",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/01.json": "1a17ec638244361ff1d236ef7aa32861f238ae5c3875828e1dc8174bc42b801f",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/02.json": "abdf595e9d57e43e9d3b1bab9b30bffd28bb16c45616ad622cce27a8fd01262c",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/03.json": "a9dd8a3d485b2b4093cc63ca6d15e311f518795898cd40a82dd6d256455c4836",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/04.json": "0407485ccc59bd54f8d635ae6811eafb42d55603e143ffdbfcdde7b8008b661b",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/05.json": "7f4d2850fdebd767f509e5336819d9ab069c7863f609f35d5fb4752f6116d754",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/06.json": "acb0a892f775a27969a9eb0ad5c186d59b221d263fa8de93e900aa9edecd4b6f",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/07.json": "19beaff756766a052ee090538905ac79aa18ab51cda6c29e7d68ceffa6efeca1",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/08.json": "2651d146f58faf9de04eccd7ed58911e91832baeaad833488d8a29dd7f979d24",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/09.json": "c5f9c63d1c90c913142fcee4cbe1a09cd640cd95756a5d3aa0acc21a9ab07b6a",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/10.json": "2473b1da8863906d490d1bcd33f1c2ab9f78c51e04ef34f3a14bd406efd075b8",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/11.json": "b7f761d824e6ce668d3f2d3933bca8576e0308eb27967dd58a8b09d0a515efe9",
+    "reports/qamc_contextual_match_v2_20261112/persist_author_controls_v2/waves/12.json": "c2c6a12011173d7ca5b17029efc76e278362821ba9b603701110070d347625fa",
+    "reports/qamc_persistbench_actor_factorial/PILOT.json": "a4a278c70ef6c3ebb8576f0f2af2054128489d88bd48bd66844e5ebbd1618fa9",
+    "reports/qamc_persistbench_actor_factorial/PLAN.json": "a47489782750f8cc20fae99c7f4b4b0bc9691c20a3001bfce686f43a0f2d1b2b",
+    "reports/qamc_persistbench_actor_factorial/stage_manifests/pilot_Judges.json": "c3cd4d1881fd2ee86c74ecac183f1cd51c2319bb0e596f418a65c95dde720813",
+    "runs/qamc_contextual_match_v2_20261112/persist_counterfactual_stance_v1/PersistNative_MANIFEST.json": "63bb0be1e3822a7a53cc27a6c82a9978f0e46405aaacaaf9ff69aff8678ad46c",
+    "runs/qamc_contextual_match_v2_20261112/persist_counterfactual_stance_v1/RESULTS.json": "ac91688c250e31065c1bd65ef75003f2beaee88cbccb6534f30ca5dffdd968f9"
+  }
+}
