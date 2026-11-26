@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## 多需求集合覆盖先导
+
+固定 MemGate 原曝光数量，用自动生成的任务需求分别重算分数。13 个有效任务中，独立排序与集合覆盖均未改变任何原证据集；晚餐题发生流错误。事后只改打分输入边界的离线诊断恢复了宠物粮证据，两种算法均恢复，未达到两个来源与独立增量的门槛。没有新增终答或评分。[资格先导结算](implementation/reports/qamc_contextual_match_v2_20261112/persist_demand_coverage_gate_v1/READOUT.md)
+
 ## 发布版 MemGate 的同 Actor 对照
 
 固定 GEPA Actor、8192 上限和适配裁判。MemGate 在已曝光风险面板与 ROUTED 的 10 个 SYC 共同有效任务同结果，1 道评分缺失；CD 8/8 与空史共享样本。SYC 每题都保留了一部分历史，项目模板和启动邮件例显示可以排除有害因素同时保留其他证据。严格 BU 与 FULL 的 11 个共同有效任务中输两道。路由相对效用非劣仍未建立。保留发布版 MemGate 作为外部强参照，当前不替换路由。[完整比较与恢复路径](implementation/reports/qamc_contextual_match_v2_20261112/persist_memgate_matched_actor_v1/READOUT.md)

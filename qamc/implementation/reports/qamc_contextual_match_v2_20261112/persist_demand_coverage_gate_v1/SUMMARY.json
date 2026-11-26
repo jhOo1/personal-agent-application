@@ -1,0 +1,69 @@
+{
+  "cases": {
+    "0613beea": {
+      "budget": 11,
+      "intersection": {
+        "base": 0,
+        "cover": 0,
+        "independent": 0
+      },
+      "purpose": "RISK",
+      "required_count": 2
+    },
+    "9a0a7438": {
+      "budget": 6,
+      "intersection": {
+        "base": 0,
+        "cover": 0,
+        "independent": 0
+      },
+      "purpose": "RISK",
+      "required_count": 2
+    },
+    "a3e8272d": {
+      "budget": 4,
+      "intersection": {
+        "base": 0,
+        "cover": 0,
+        "independent": 0
+      },
+      "purpose": "BU",
+      "required_count": 1
+    },
+    "dbcf603f": {
+      "budget": 6,
+      "intersection": {
+        "base": 0,
+        "cover": 0,
+        "independent": 0
+      },
+      "purpose": "BU",
+      "required_count": 2
+    }
+  },
+  "changed_selection": {
+    "cover": 0,
+    "independent": 0
+  },
+  "complete_recovery": {
+    "cover": [],
+    "independent": []
+  },
+  "different_selection": 0,
+  "need_counts": {
+    "4": 13
+  },
+  "physical_requests": 14,
+  "reported_tokens": 7353,
+  "retries": 0,
+  "risk_reexposure": {
+    "cover": [],
+    "independent": []
+  },
+  "roster": 14,
+  "statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "OK": 13
+  },
+  "unknown_usage": 1
+}
