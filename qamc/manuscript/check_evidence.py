@@ -151,7 +151,20 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(tuple(pair), public_bench[metric], f"BenchPreS {metric}")
         seen_metrics.add(metric)
     require(seen_metrics, public_bench.keys(), "BenchPreS metrics")
-    return 5 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+
+    group_out = (root / "native_residual_v1/BENCH_GROUP_OUT_RESULTS.md").read_text()
+    allocation = re.search(r"All (\d+) exposed cases across seven profiles were common\.", group_out)
+    controls = {r[0]: r[1:] for r in markdown_rows(group_out) if r[0] in ("Direct generation", "Content-first")}
+    direct, content = controls["Direct generation"], controls["Content-first"]
+    claim = re.search(
+        r"replication on (\d+) tasks across seven profiles .*?realization from (\d+/\d+) to (\d+/\d+)"
+        r" and total completeness from (\d+/\d+) to (\d+/\d+)\. Both versions have (\d+/\d+) misapplications",
+        paper,
+    )
+    require(direct[2], content[2], "BenchPreS replication matched MR")
+    expected = (allocation[1], direct[1], content[1], direct[3], content[3], direct[2])
+    require(claim.groups() if claim else None, expected, "BenchPreS profile-disjoint replication")
+    return 6 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
