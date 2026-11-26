@@ -1,0 +1,16 @@
+{
+  "author_template_commit": "d2ded18be6d15ebb14008d081a44bd03c20670e4",
+  "plan_sha256": "04251f2021b8170fd39d4c14e3bab3ed3699c1ad96cb26c171515d0e631c3b70",
+  "totals": {
+    "gate_json_value_current_context": 86,
+    "gate_json_value_fixed_facts": 381549,
+    "gate_json_value_query": 9634,
+    "gate_json_value_selected_memory_use_guidance": 20258,
+    "gate_memory_xml": 5257,
+    "gate_static_system": 959760,
+    "gate_user": 415096,
+    "paired_roots": 43,
+    "selectivity_user": 389076
+  },
+  "units": "utf8_message_content_bytes"
+}
