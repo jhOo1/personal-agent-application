@@ -11,6 +11,8 @@
   },
   "external_requests": 0,
   "groups": 18,
+  "historical_only_groups": 6,
+  "historical_only_groups_in_known_equal_cap_factorial": 1,
   "historical_pairs": 18,
   "uid_overlap_current_complete_pairs": 6,
   "uid_overlap_current_plan": 12

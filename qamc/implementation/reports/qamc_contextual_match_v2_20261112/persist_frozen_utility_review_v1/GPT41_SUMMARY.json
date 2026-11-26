@@ -1,0 +1,68 @@
+{
+  "allocated_pairs": 6,
+  "complete_review_pairs": 0,
+  "independent_human_reviewers": 0,
+  "new_actor_requests": 0,
+  "new_native_scores": 0,
+  "observed_necessary_gains": 0,
+  "observed_necessary_losses": 0,
+  "paired_check_status_routed_then_full": {
+    "deliverable": {},
+    "factual_reliability": {},
+    "necessary": {},
+    "optional_preference": {}
+  },
+  "per_arm_check_status": {
+    "FULL": {
+      "deliverable": {
+        "MET": 2,
+        "UNAVAILABLE": 4
+      },
+      "factual_reliability": {
+        "MET": 1,
+        "UNAVAILABLE": 4,
+        "UNCERTAIN": 1
+      },
+      "necessary": {
+        "MET": 1,
+        "UNAVAILABLE": 4,
+        "VIOLATED": 1
+      },
+      "optional_preference": {
+        "MET": 1,
+        "NOT_APPLICABLE": 1,
+        "UNAVAILABLE": 4
+      }
+    },
+    "ROUTED": {
+      "deliverable": {
+        "UNAVAILABLE": 6
+      },
+      "factual_reliability": {
+        "UNAVAILABLE": 6
+      },
+      "necessary": {
+        "UNAVAILABLE": 6
+      },
+      "optional_preference": {
+        "UNAVAILABLE": 6
+      }
+    }
+  },
+  "physical_review_requests": 12,
+  "planned_tasks": 12,
+  "reported_tokens": 29620,
+  "request_errors": {},
+  "review_request_statuses": {
+    "OK": 12
+  },
+  "review_statuses": {
+    "INVALID_REVIEW": 10,
+    "OK": 2
+  },
+  "routed_and_full_answers_with_native_scores": {
+    "FULL": 11,
+    "ROUTED": 6
+  },
+  "unknown_usage": 0
+}

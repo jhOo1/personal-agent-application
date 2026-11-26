@@ -88,7 +88,11 @@ def audit():
     rows_current = latest["read"](latest["RUN"] / "RESULTS.json")["rows"]
     ready = {arm: {r["uid"] for r in rows_current if r["arm"] == arm and r["score"] is not None}
              for arm in ("ROUTED", "FULL")}
+    secondary_groups = eligible - pin["cohort"].keys()
+    older_equal_cap = secondary_groups & prior_plan["jobs"].keys()
     return {"historical_pairs": len(eligible), "groups": len({cases[u]["group_id"] for u in eligible}),
+            "historical_only_groups": len(secondary_groups),
+            "historical_only_groups_in_known_equal_cap_factorial": len(older_equal_cap),
             "uid_overlap_current_plan": len(eligible & pin["cohort"].keys()),
             "uid_overlap_current_complete_pairs": len(eligible & ready["ROUTED"] & ready["FULL"]),
             "contract_checks": counters, "external_requests": 0}

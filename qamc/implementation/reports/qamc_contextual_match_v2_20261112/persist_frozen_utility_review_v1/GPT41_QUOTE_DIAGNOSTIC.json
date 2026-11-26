@@ -1,0 +1,32 @@
+{
+  "fully_usable_diagnostic_pairs": 3,
+  "paired_diagnostic_status_routed_then_full": {
+    "deliverable": {
+      "MET/MET": 6
+    },
+    "factual_reliability": {
+      "MET/UNCERTAIN": 1,
+      "UNAVAILABLE/UNAVAILABLE": 1,
+      "UNCERTAIN/MET": 2,
+      "UNCERTAIN/UNAVAILABLE": 1,
+      "UNCERTAIN/UNCERTAIN": 1
+    },
+    "necessary": {
+      "MET/MET": 5,
+      "MET/VIOLATED": 1
+    },
+    "optional_preference": {
+      "NOT_APPLICABLE/NOT_APPLICABLE": 3,
+      "UNAVAILABLE/MET": 1,
+      "UNCERTAIN/UNCERTAIN": 1,
+      "VIOLATED/VIOLATED": 1
+    }
+  },
+  "post_hoc_diagnostic": true,
+  "quote_checks": {
+    "EXACT": 20,
+    "NO_QUOTE": 12,
+    "PRESENTATION_OR_ELISION": 12,
+    "UNBOUND": 4
+  }
+}

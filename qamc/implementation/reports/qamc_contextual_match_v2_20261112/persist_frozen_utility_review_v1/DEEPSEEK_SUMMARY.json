@@ -1,0 +1,68 @@
+{
+  "allocated_pairs": 6,
+  "complete_review_pairs": 0,
+  "independent_human_reviewers": 0,
+  "new_actor_requests": 0,
+  "new_native_scores": 0,
+  "observed_necessary_gains": 0,
+  "observed_necessary_losses": 0,
+  "paired_check_status_routed_then_full": {
+    "deliverable": {},
+    "factual_reliability": {},
+    "necessary": {},
+    "optional_preference": {}
+  },
+  "per_arm_check_status": {
+    "FULL": {
+      "deliverable": {
+        "MET": 1,
+        "UNAVAILABLE": 5
+      },
+      "factual_reliability": {
+        "UNAVAILABLE": 5,
+        "UNCERTAIN": 1
+      },
+      "necessary": {
+        "UNAVAILABLE": 5,
+        "VIOLATED": 1
+      },
+      "optional_preference": {
+        "UNAVAILABLE": 5,
+        "VIOLATED": 1
+      }
+    },
+    "ROUTED": {
+      "deliverable": {
+        "UNAVAILABLE": 6
+      },
+      "factual_reliability": {
+        "UNAVAILABLE": 6
+      },
+      "necessary": {
+        "UNAVAILABLE": 6
+      },
+      "optional_preference": {
+        "UNAVAILABLE": 6
+      }
+    }
+  },
+  "physical_review_requests": 12,
+  "planned_tasks": 12,
+  "reported_tokens": 3275,
+  "request_errors": {
+    "stream_in_band_error": 11
+  },
+  "review_request_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 11,
+    "OK": 1
+  },
+  "review_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 11,
+    "OK": 1
+  },
+  "routed_and_full_answers_with_native_scores": {
+    "FULL": 11,
+    "ROUTED": 6
+  },
+  "unknown_usage": 11
+}
