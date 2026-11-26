@@ -8,6 +8,8 @@
 
 同 Actor、逐题等保留量终答对照已结算。24 个已曝光分歧来源组，英文门控、英文余弦、中文门控分别 78、68、63/125。英文门控与 IPE-C 共同 22 题为 73/114 对 67/114，但可行性严重度从 4 升至 14，真实遗漏包括选择助眠白噪音和晚餐加辣椒粉。保留为有潜力的对照，暂不替换 IPE-C。102 次新增请求均成功，188,770 Token。[结算及行为核验](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/READOUT.md)
 
+已用现有 IPE 与融合策略确认的遗漏预留一个来源位。286 道已曝光题中触发 34 道，不改原入选集合。新来源中作者 C 为 30 条，对照按英文得分顺延一位为 10 条。两个全 A 误触发保留为反例。34 道同 Actor 终答对照已冻结，比较原英文门控和两个等量补入规则，最多新增 84 次生成和 84 次评分。[预检与已核验来源信号](implementation/reports/qamc_contextual_match_v2_20261112/rpe_constraint_reservation_v1/QUALIFICATION.md)
+
 ## RPEval 单偏好的外部对照
 
 24 道已曝光单偏好题中，22 道同题有效，IPE-C 15/22，RP 17/22，Des2Gen 与 MemAdapter 各 18/22。与空史同题的 21 道为 14/21 对 10/21。两道输 RP 的作者 C 均被 IPE 预测为 B 并走空史。多偏好旧账本中的 138 个作者 B 且 IPE 预测 B 的位置，68 个隐藏，70 个因另一条预测 C 进入 Actor。当前支持在多偏好场景继续研究启用策略，并保留单偏好保护缺口。单偏好评分是历史 Qwen 详细模板适配。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/READOUT.md)

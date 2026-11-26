@@ -1,0 +1,16 @@
+{
+  "actor_cache_origins": {
+    "FROZEN_EN_GATE": 5,
+    "FROZEN_ZH_GATE": 1
+  },
+  "cloud_requests": 0,
+  "different_expansion_wires": 22,
+  "judge_cap": 84,
+  "new_actor_cap": 84,
+  "old_equal_count_overlap": 5,
+  "private_plan_sha256": "64b56ae5038a393733a288faf00653e8182aa4182d359479d57d3db8c9c7339c",
+  "searched_journals": 1340,
+  "triggered_source_groups": 21,
+  "triggered_tasks": 34,
+  "unique_actors": 90
+}

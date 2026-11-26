@@ -1,0 +1,79 @@
+{
+  "group_comparison_among_different_choices": {
+    "all/BC": {
+      "groups": 16,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 13
+    },
+    "all/C": {
+      "groups": 16,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 14
+    },
+    "other_exposed/BC": {
+      "groups": 13,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 11
+    },
+    "other_exposed/C": {
+      "groups": 13,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 11
+    },
+    "previous_trial/BC": {
+      "groups": 3,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 2
+    },
+    "previous_trial/C": {
+      "groups": 3,
+      "net_reservation_losses": 0,
+      "net_reservation_wins": 3
+    }
+  },
+  "new_cloud_requests": 0,
+  "plans": 286,
+  "selection_sha256": "c781cef19882ed90930fbe39f787c2dd0a98967269023ae4f25c958cf0461ec4",
+  "summary": {
+    "all": {
+      "all_a": 118,
+      "changed_vs_top": 22,
+      "eligible": 286,
+      "originally_empty": 65,
+      "reserved_A": 2,
+      "reserved_B": 2,
+      "reserved_C": 30,
+      "top_A": 21,
+      "top_B": 3,
+      "top_C": 10,
+      "triggered": 34,
+      "triggered_all_a": 2
+    },
+    "other_exposed": {
+      "all_a": 110,
+      "changed_vs_top": 19,
+      "eligible": 262,
+      "originally_empty": 65,
+      "reserved_A": 2,
+      "reserved_B": 2,
+      "reserved_C": 25,
+      "top_A": 19,
+      "top_B": 2,
+      "top_C": 8,
+      "triggered": 29,
+      "triggered_all_a": 2
+    },
+    "previous_trial": {
+      "all_a": 8,
+      "changed_vs_top": 3,
+      "eligible": 24,
+      "originally_empty": 0,
+      "reserved_C": 5,
+      "top_A": 2,
+      "top_B": 1,
+      "top_C": 2,
+      "triggered": 5,
+      "triggered_all_a": 0
+    }
+  }
+}
