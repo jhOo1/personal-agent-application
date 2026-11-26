@@ -60,6 +60,27 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         seen_external.add(source_name)
     require(seen_external, public_external.keys(), "RPEval comparison methods")
 
+    reservation = json.loads((root / "rpe_constraint_reservation_v1/SUMMARY.json").read_text())
+    reserved = reservation["comparisons"]["RESERVED/TOP_NEXT"]["all"]
+    positions = reserved["match"]["positions"]
+    primary = (
+        reserved["allocation"]["tasks"], reserved["match"]["first"], positions,
+        reserved["match"]["second"], positions, reserved["match"]["tasks"],
+        reserved["severity"]["FM"]["second"], reserved["severity"]["FM"]["first"],
+        reserved["severity"]["OPB"]["second"], reserved["severity"]["OPB"]["first"],
+    )
+    reservation_pattern = (
+        r"On (\d+) triggered tasks, .* obtains (\d+)/(\d+) vs\.\\ (\d+)/(\d+) Match on "
+        r"(\d+) pairs, lowering feasibility severity from (\d+) to (\d+) while increasing "
+        r"overuse from (\d+) to (\d+)\."
+    )
+    match = re.search(reservation_pattern, paper)
+    require(tuple(map(count, match.groups())) if match else None, primary, "RPEval reserved slot")
+    reserved_ipe = reservation["comparisons"]["RESERVED/IPE_C"]["all"]["match"]
+    match = re.search(r"IPE-C scores (\d+)/(\d+) on these pairs\.", paper)
+    require(tuple(map(count, match.groups())) if match else None,
+            (reserved_ipe["second"], reserved_ipe["positions"]), "RPEval reserved-slot IPE-C control")
+
     tracks = {"Overall": "all", "Sycophancy": "sycophancy", "Cross-domain": "cross_domain",
               "Strict beneficial use": "beneficial_memory_usage"}
     seen_tracks = set()
@@ -96,8 +117,8 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(tuple(pair), public_bench[metric], f"BenchPreS {metric}")
         seen_metrics.add(metric)
     require(seen_metrics, public_bench.keys(), "BenchPreS metrics")
-    return sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    return 2 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
-    print(f"Verified {check()} manuscript rows against the public evidence")
+    print(f"Verified {check()} manuscript comparisons against the public evidence")
