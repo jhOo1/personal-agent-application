@@ -60,6 +60,27 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         seen_external.add(source_name)
     require(seen_external, public_external.keys(), "RPEval comparison methods")
 
+    whole_task = json.loads((root / "paper_rpe_paired_uncertainty_v1/SUMMARY.json").read_text())
+    overall = whole_task["subsets"]["overall"]
+    match = re.search(
+        r"Whole-task Match is (\d+)/(\d+), versus (\d+)/(\d+) without history and (\d+)/(\d+) with full history\.",
+        paper,
+    )
+    expected = tuple(v for label in ("IPE_C", "TASK_ONLY", "RPR_PAPER_FULL")
+                     for v in (overall["scores"][label]["exact_all_positions"], overall["tasks"]))
+    require(tuple(map(count, match.groups())) if match else None, expected, "RPEval whole-task abstract")
+    full = overall["paired"]["RPR_PAPER_FULL"]["micro"]
+    match = re.search(
+        r"Neither endpoint is exact on (\d+) of the (\d+) tasks\..*?\[([\d.]+), ([\d.]+)\] percentage "
+        r"points \((\d+) observed groups\).*? between (\d+) and (\d+) positions\.",
+        paper,
+        re.S,
+    )
+    expected = (overall["exact_endpoint_opportunities"]["neither_exact"], overall["tasks"],
+                *[round(x, 2) for x in full["resampled_source_group_interval_pp"]], full["group_count"],
+                *whole_task["missing_sensitivity_delta_count"]["RPR_PAPER_FULL"]["micro"])
+    require(tuple(map(float, match.groups())) if match else None, expected, "RPEval source sensitivity")
+
     reservation = json.loads((root / "rpe_constraint_reservation_v1/SUMMARY.json").read_text())
     reserved = reservation["comparisons"]["RESERVED/TOP_NEXT"]["all"]
     positions = reserved["match"]["positions"]
@@ -117,7 +138,7 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(tuple(pair), public_bench[metric], f"BenchPreS {metric}")
         seen_metrics.add(metric)
     require(seen_metrics, public_bench.keys(), "BenchPreS metrics")
-    return 2 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    return 4 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
