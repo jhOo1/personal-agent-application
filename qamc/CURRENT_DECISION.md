@@ -8,7 +8,7 @@
 
 同 Actor、逐题等保留量终答对照已结算。24 个已曝光分歧来源组，英文门控、英文余弦、中文门控分别 78、68、63/125。英文门控与 IPE-C 共同 22 题为 73/114 对 67/114，但可行性严重度从 4 升至 14，真实遗漏包括选择助眠白噪音和晚餐加辣椒粉。保留为有潜力的对照，暂不替换 IPE-C。102 次新增请求均成功，188,770 Token。[结算及行为核验](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/READOUT.md)
 
-已用现有 IPE 与融合策略确认的遗漏预留一个来源位。286 道已曝光题中触发 34 道，不改原入选集合。新来源中作者 C 为 30 条，对照按英文得分顺延一位为 10 条。两个全 A 误触发保留为反例。34 道同 Actor 终答对照已冻结，比较原英文门控和两个等量补入规则，最多新增 84 次生成和 84 次评分。[预检与已核验来源信号](implementation/reports/qamc_contextual_match_v2_20261112/rpe_constraint_reservation_v1/QUALIFICATION.md)
+用 IPE 与 RP 融合预测，为英文门控补入一条被遗漏的高强度候选。34 道已曝光触发题中，同题相对顺延一位 Match 116/199 对 106/199，FM 严重度 8 对 30，OPB 57 对 40；相对 IPE-C 的 Match 为 116/199 对 120/199。助眠、双人晚餐修复实际约束，家庭出游仍将个人长走偏好写成主行程。168 次真实请求，报告 360,749 Token，一次评分交付未知。该规则保留为等量对照，本轮不晋级。[结果和失败分母](implementation/reports/qamc_contextual_match_v2_20261112/rpe_constraint_reservation_v1/READOUT.md)
 
 ## RPEval 单偏好的外部对照
 

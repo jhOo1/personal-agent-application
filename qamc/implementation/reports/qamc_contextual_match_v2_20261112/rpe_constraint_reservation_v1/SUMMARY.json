@@ -1,0 +1,1829 @@
+{
+  "comparisons": {
+    "RESERVED/GATE_BASE": {
+      "ALL_A": {
+        "allocation": {
+          "positions": 9,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "flags_excluded": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 8,
+            "second": 8,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 0,
+            "second": 0,
+            "tasks": 2
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "allocation": {
+          "positions": 196,
+          "tasks": 30
+        },
+        "bound_of_match_difference": [
+          -12,
+          25
+        ],
+        "distinct_wires": {
+          "first": 109,
+          "loss": 2,
+          "positions": 175,
+          "second": 103,
+          "tasks": 27,
+          "tie": 16,
+          "win": 9
+        },
+        "flags_excluded": {
+          "first": 73,
+          "loss": 1,
+          "positions": 117,
+          "second": 67,
+          "tasks": 16,
+          "tie": 7,
+          "win": 8
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 11,
+          "win": 6
+        },
+        "match": {
+          "first": 109,
+          "loss": 2,
+          "positions": 175,
+          "second": 103,
+          "tasks": 27,
+          "tie": 16,
+          "win": 9
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 6,
+            "second": 39,
+            "tasks": 27
+          },
+          "OPB": {
+            "first": 46,
+            "second": 32,
+            "tasks": 27
+          },
+          "UPB": {
+            "first": 25,
+            "second": 49,
+            "tasks": 27
+          }
+        }
+      },
+      "ONLY_B": {
+        "allocation": {
+          "positions": 10,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 4,
+          "loss": 0,
+          "positions": 10,
+          "second": 4,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "flags_excluded": {
+          "first": 2,
+          "loss": false,
+          "positions": 6,
+          "second": 2,
+          "tasks": 1,
+          "tie": true,
+          "win": false
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 4,
+          "loss": 0,
+          "positions": 10,
+          "second": 4,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 6,
+            "second": 5,
+            "tasks": 2
+          }
+        }
+      },
+      "all": {
+        "allocation": {
+          "positions": 215,
+          "tasks": 34
+        },
+        "bound_of_match_difference": [
+          -12,
+          25
+        ],
+        "distinct_wires": {
+          "first": 113,
+          "loss": 2,
+          "positions": 194,
+          "second": 107,
+          "tasks": 31,
+          "tie": 20,
+          "win": 9
+        },
+        "flags_excluded": {
+          "first": 75,
+          "loss": 1,
+          "positions": 132,
+          "second": 69,
+          "tasks": 19,
+          "tie": 10,
+          "win": 8
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 14,
+          "win": 6
+        },
+        "match": {
+          "first": 113,
+          "loss": 2,
+          "positions": 194,
+          "second": 107,
+          "tasks": 31,
+          "tie": 20,
+          "win": 9
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 39,
+            "tasks": 31
+          },
+          "OPB": {
+            "first": 55,
+            "second": 41,
+            "tasks": 31
+          },
+          "UPB": {
+            "first": 31,
+            "second": 54,
+            "tasks": 31
+          }
+        }
+      },
+      "other_exposed": {
+        "allocation": {
+          "positions": 188,
+          "tasks": 29
+        },
+        "bound_of_match_difference": [
+          -13,
+          24
+        ],
+        "distinct_wires": {
+          "first": 95,
+          "loss": 2,
+          "positions": 167,
+          "second": 90,
+          "tasks": 26,
+          "tie": 16,
+          "win": 8
+        },
+        "flags_excluded": {
+          "first": 75,
+          "loss": 1,
+          "positions": 132,
+          "second": 69,
+          "tasks": 19,
+          "tie": 10,
+          "win": 8
+        },
+        "group_counts": {
+          "loss": 1,
+          "tie": 11,
+          "win": 6
+        },
+        "match": {
+          "first": 95,
+          "loss": 2,
+          "positions": 167,
+          "second": 90,
+          "tasks": 26,
+          "tie": 16,
+          "win": 8
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 29,
+            "tasks": 26
+          },
+          "OPB": {
+            "first": 46,
+            "second": 37,
+            "tasks": 26
+          },
+          "UPB": {
+            "first": 27,
+            "second": 45,
+            "tasks": 26
+          }
+        }
+      },
+      "previous_trial": {
+        "allocation": {
+          "positions": 27,
+          "tasks": 5
+        },
+        "bound_of_match_difference": [
+          1,
+          1
+        ],
+        "distinct_wires": {
+          "first": 18,
+          "loss": 0,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 4,
+          "win": 1
+        },
+        "flags_excluded": {},
+        "group_counts": {
+          "loss": 0,
+          "tie": 4,
+          "win": 1
+        },
+        "match": {
+          "first": 18,
+          "loss": 0,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 4,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 0,
+            "second": 10,
+            "tasks": 5
+          },
+          "OPB": {
+            "first": 9,
+            "second": 4,
+            "tasks": 5
+          },
+          "UPB": {
+            "first": 4,
+            "second": 9,
+            "tasks": 5
+          }
+        }
+      }
+    },
+    "RESERVED/IPE_C": {
+      "ALL_A": {
+        "allocation": {
+          "positions": 9,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 8,
+            "second": 8,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 0,
+            "second": 0,
+            "tasks": 2
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "allocation": {
+          "positions": 196,
+          "tasks": 30
+        },
+        "bound_of_match_difference": [
+          -8,
+          8
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 77,
+          "loss": 1,
+          "positions": 123,
+          "second": 79,
+          "tasks": 17,
+          "tie": 15,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 1,
+          "tie": 16,
+          "win": 0
+        },
+        "match": {
+          "first": 112,
+          "loss": 2,
+          "positions": 180,
+          "second": 114,
+          "tasks": 28,
+          "tie": 24,
+          "win": 2
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 6,
+            "second": 6,
+            "tasks": 28
+          },
+          "OPB": {
+            "first": 48,
+            "second": 45,
+            "tasks": 28
+          },
+          "UPB": {
+            "first": 25,
+            "second": 18,
+            "tasks": 28
+          }
+        }
+      },
+      "ONLY_B": {
+        "allocation": {
+          "positions": 10,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          -2,
+          -2
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 2,
+          "loss": true,
+          "positions": 6,
+          "second": 4,
+          "tasks": 1,
+          "tie": false,
+          "win": false
+        },
+        "group_counts": {
+          "loss": 1,
+          "tie": 1,
+          "win": 0
+        },
+        "match": {
+          "first": 4,
+          "loss": 1,
+          "positions": 10,
+          "second": 6,
+          "tasks": 2,
+          "tie": 1,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 1,
+            "second": 2,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 6,
+            "second": 1,
+            "tasks": 2
+          }
+        }
+      },
+      "all": {
+        "allocation": {
+          "positions": 215,
+          "tasks": 34
+        },
+        "bound_of_match_difference": [
+          -10,
+          6
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 79,
+          "loss": 2,
+          "positions": 138,
+          "second": 83,
+          "tasks": 20,
+          "tie": 17,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 2,
+          "tie": 18,
+          "win": 0
+        },
+        "match": {
+          "first": 116,
+          "loss": 3,
+          "positions": 199,
+          "second": 120,
+          "tasks": 32,
+          "tie": 27,
+          "win": 2
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 7,
+            "tasks": 32
+          },
+          "OPB": {
+            "first": 57,
+            "second": 55,
+            "tasks": 32
+          },
+          "UPB": {
+            "first": 31,
+            "second": 19,
+            "tasks": 32
+          }
+        }
+      },
+      "other_exposed": {
+        "allocation": {
+          "positions": 188,
+          "tasks": 29
+        },
+        "bound_of_match_difference": [
+          -11,
+          5
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 79,
+          "loss": 2,
+          "positions": 138,
+          "second": 83,
+          "tasks": 20,
+          "tie": 17,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 3,
+          "tie": 15,
+          "win": 0
+        },
+        "match": {
+          "first": 98,
+          "loss": 3,
+          "positions": 172,
+          "second": 103,
+          "tasks": 27,
+          "tie": 23,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 6,
+            "tasks": 27
+          },
+          "OPB": {
+            "first": 48,
+            "second": 51,
+            "tasks": 27
+          },
+          "UPB": {
+            "first": 27,
+            "second": 12,
+            "tasks": 27
+          }
+        }
+      },
+      "previous_trial": {
+        "allocation": {
+          "positions": 27,
+          "tasks": 5
+        },
+        "bound_of_match_difference": [
+          1,
+          1
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {},
+        "group_counts": {
+          "loss": 0,
+          "tie": 4,
+          "win": 1
+        },
+        "match": {
+          "first": 18,
+          "loss": 0,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 4,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 0,
+            "second": 1,
+            "tasks": 5
+          },
+          "OPB": {
+            "first": 9,
+            "second": 4,
+            "tasks": 5
+          },
+          "UPB": {
+            "first": 4,
+            "second": 7,
+            "tasks": 5
+          }
+        }
+      }
+    },
+    "RESERVED/RPR_PAPER_FULL": {
+      "ALL_A": {
+        "allocation": {
+          "positions": 9,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 8,
+            "second": 8,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 0,
+            "second": 0,
+            "tasks": 2
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "allocation": {
+          "positions": 196,
+          "tasks": 30
+        },
+        "bound_of_match_difference": [
+          -8,
+          8
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 77,
+          "loss": 1,
+          "positions": 123,
+          "second": 79,
+          "tasks": 17,
+          "tie": 15,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 1,
+          "tie": 16,
+          "win": 0
+        },
+        "match": {
+          "first": 112,
+          "loss": 2,
+          "positions": 180,
+          "second": 114,
+          "tasks": 28,
+          "tie": 24,
+          "win": 2
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 6,
+            "second": 6,
+            "tasks": 28
+          },
+          "OPB": {
+            "first": 48,
+            "second": 45,
+            "tasks": 28
+          },
+          "UPB": {
+            "first": 25,
+            "second": 18,
+            "tasks": 28
+          }
+        }
+      },
+      "ONLY_B": {
+        "allocation": {
+          "positions": 10,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          -2,
+          -2
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 2,
+          "loss": true,
+          "positions": 6,
+          "second": 4,
+          "tasks": 1,
+          "tie": false,
+          "win": false
+        },
+        "group_counts": {
+          "loss": 1,
+          "tie": 1,
+          "win": 0
+        },
+        "match": {
+          "first": 4,
+          "loss": 1,
+          "positions": 10,
+          "second": 6,
+          "tasks": 2,
+          "tie": 1,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 1,
+            "second": 2,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 6,
+            "second": 1,
+            "tasks": 2
+          }
+        }
+      },
+      "all": {
+        "allocation": {
+          "positions": 215,
+          "tasks": 34
+        },
+        "bound_of_match_difference": [
+          -10,
+          6
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 79,
+          "loss": 2,
+          "positions": 138,
+          "second": 83,
+          "tasks": 20,
+          "tie": 17,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 2,
+          "tie": 18,
+          "win": 0
+        },
+        "match": {
+          "first": 116,
+          "loss": 3,
+          "positions": 199,
+          "second": 120,
+          "tasks": 32,
+          "tie": 27,
+          "win": 2
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 7,
+            "tasks": 32
+          },
+          "OPB": {
+            "first": 57,
+            "second": 55,
+            "tasks": 32
+          },
+          "UPB": {
+            "first": 31,
+            "second": 19,
+            "tasks": 32
+          }
+        }
+      },
+      "other_exposed": {
+        "allocation": {
+          "positions": 188,
+          "tasks": 29
+        },
+        "bound_of_match_difference": [
+          -11,
+          5
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 79,
+          "loss": 2,
+          "positions": 138,
+          "second": 83,
+          "tasks": 20,
+          "tie": 17,
+          "win": 1
+        },
+        "group_counts": {
+          "loss": 3,
+          "tie": 15,
+          "win": 0
+        },
+        "match": {
+          "first": 98,
+          "loss": 3,
+          "positions": 172,
+          "second": 103,
+          "tasks": 27,
+          "tie": 23,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 2,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 6,
+            "tasks": 27
+          },
+          "OPB": {
+            "first": 48,
+            "second": 51,
+            "tasks": 27
+          },
+          "UPB": {
+            "first": 27,
+            "second": 12,
+            "tasks": 27
+          }
+        }
+      },
+      "previous_trial": {
+        "allocation": {
+          "positions": 27,
+          "tasks": 5
+        },
+        "bound_of_match_difference": [
+          1,
+          1
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {},
+        "group_counts": {
+          "loss": 0,
+          "tie": 4,
+          "win": 1
+        },
+        "match": {
+          "first": 18,
+          "loss": 0,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 4,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 0,
+            "second": 1,
+            "tasks": 5
+          },
+          "OPB": {
+            "first": 9,
+            "second": 4,
+            "tasks": 5
+          },
+          "UPB": {
+            "first": 4,
+            "second": 7,
+            "tasks": 5
+          }
+        }
+      }
+    },
+    "RESERVED/TOP_NEXT": {
+      "ALL_A": {
+        "allocation": {
+          "positions": 9,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 0,
+          "loss": false,
+          "positions": 5,
+          "second": 0,
+          "tasks": 1,
+          "tie": true,
+          "win": false
+        },
+        "flags_excluded": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 2,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 8,
+            "second": 8,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 0,
+            "second": 0,
+            "tasks": 2
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "allocation": {
+          "positions": 196,
+          "tasks": 30
+        },
+        "bound_of_match_difference": [
+          -6,
+          26
+        ],
+        "distinct_wires": {
+          "first": 77,
+          "loss": 1,
+          "positions": 123,
+          "second": 67,
+          "tasks": 19,
+          "tie": 10,
+          "win": 8
+        },
+        "flags_excluded": {
+          "first": 79,
+          "loss": 1,
+          "positions": 128,
+          "second": 70,
+          "tasks": 18,
+          "tie": 10,
+          "win": 7
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 11,
+          "win": 6
+        },
+        "match": {
+          "first": 112,
+          "loss": 1,
+          "positions": 180,
+          "second": 102,
+          "tasks": 28,
+          "tie": 19,
+          "win": 8
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 2
+        },
+        "severity": {
+          "FM": {
+            "first": 6,
+            "second": 27,
+            "tasks": 28
+          },
+          "OPB": {
+            "first": 48,
+            "second": 31,
+            "tasks": 28
+          },
+          "UPB": {
+            "first": 25,
+            "second": 48,
+            "tasks": 28
+          }
+        }
+      },
+      "ONLY_B": {
+        "allocation": {
+          "positions": 10,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {},
+        "flags_excluded": {
+          "first": 2,
+          "loss": false,
+          "positions": 6,
+          "second": 2,
+          "tasks": 1,
+          "tie": true,
+          "win": false
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 4,
+          "loss": 0,
+          "positions": 10,
+          "second": 4,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 6,
+            "second": 6,
+            "tasks": 2
+          }
+        }
+      },
+      "all": {
+        "allocation": {
+          "positions": 215,
+          "tasks": 34
+        },
+        "bound_of_match_difference": [
+          -6,
+          26
+        ],
+        "distinct_wires": {
+          "first": 77,
+          "loss": 1,
+          "positions": 128,
+          "second": 67,
+          "tasks": 20,
+          "tie": 11,
+          "win": 8
+        },
+        "flags_excluded": {
+          "first": 81,
+          "loss": 1,
+          "positions": 143,
+          "second": 72,
+          "tasks": 21,
+          "tie": 13,
+          "win": 7
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 14,
+          "win": 6
+        },
+        "match": {
+          "first": 116,
+          "loss": 1,
+          "positions": 199,
+          "second": 106,
+          "tasks": 32,
+          "tie": 23,
+          "win": 8
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 2
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 30,
+            "tasks": 32
+          },
+          "OPB": {
+            "first": 57,
+            "second": 40,
+            "tasks": 32
+          },
+          "UPB": {
+            "first": 31,
+            "second": 54,
+            "tasks": 32
+          }
+        }
+      },
+      "other_exposed": {
+        "allocation": {
+          "positions": 188,
+          "tasks": 29
+        },
+        "bound_of_match_difference": [
+          -7,
+          25
+        ],
+        "distinct_wires": {
+          "first": 66,
+          "loss": 1,
+          "positions": 112,
+          "second": 57,
+          "tasks": 17,
+          "tie": 9,
+          "win": 7
+        },
+        "flags_excluded": {
+          "first": 81,
+          "loss": 1,
+          "positions": 143,
+          "second": 72,
+          "tasks": 21,
+          "tie": 13,
+          "win": 7
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 13,
+          "win": 5
+        },
+        "match": {
+          "first": 98,
+          "loss": 1,
+          "positions": 172,
+          "second": 89,
+          "tasks": 27,
+          "tie": 19,
+          "win": 7
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 2
+        },
+        "severity": {
+          "FM": {
+            "first": 8,
+            "second": 25,
+            "tasks": 27
+          },
+          "OPB": {
+            "first": 48,
+            "second": 35,
+            "tasks": 27
+          },
+          "UPB": {
+            "first": 27,
+            "second": 45,
+            "tasks": 27
+          }
+        }
+      },
+      "previous_trial": {
+        "allocation": {
+          "positions": 27,
+          "tasks": 5
+        },
+        "bound_of_match_difference": [
+          1,
+          1
+        ],
+        "distinct_wires": {
+          "first": 11,
+          "loss": 0,
+          "positions": 16,
+          "second": 10,
+          "tasks": 3,
+          "tie": 2,
+          "win": 1
+        },
+        "flags_excluded": {},
+        "group_counts": {
+          "loss": 0,
+          "tie": 4,
+          "win": 1
+        },
+        "match": {
+          "first": 18,
+          "loss": 0,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 4,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 0,
+            "second": 5,
+            "tasks": 5
+          },
+          "OPB": {
+            "first": 9,
+            "second": 5,
+            "tasks": 5
+          },
+          "UPB": {
+            "first": 4,
+            "second": 9,
+            "tasks": 5
+          }
+        }
+      }
+    },
+    "TOP_NEXT/GATE_BASE": {
+      "ALL_A": {
+        "allocation": {
+          "positions": 9,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "flags_excluded": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 0,
+          "loss": 0,
+          "positions": 9,
+          "second": 0,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 2,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 8,
+            "second": 8,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 0,
+            "second": 0,
+            "tasks": 2
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "allocation": {
+          "positions": 196,
+          "tasks": 30
+        },
+        "bound_of_match_difference": [
+          -22,
+          15
+        ],
+        "distinct_wires": {
+          "first": 99,
+          "loss": 6,
+          "positions": 175,
+          "second": 103,
+          "tasks": 27,
+          "tie": 18,
+          "win": 3
+        },
+        "flags_excluded": {
+          "first": 64,
+          "loss": 4,
+          "positions": 117,
+          "second": 67,
+          "tasks": 16,
+          "tie": 10,
+          "win": 2
+        },
+        "group_counts": {
+          "loss": 4,
+          "tie": 11,
+          "win": 2
+        },
+        "match": {
+          "first": 99,
+          "loss": 6,
+          "positions": 175,
+          "second": 103,
+          "tasks": 27,
+          "tie": 18,
+          "win": 3
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 27,
+            "second": 39,
+            "tasks": 27
+          },
+          "OPB": {
+            "first": 30,
+            "second": 32,
+            "tasks": 27
+          },
+          "UPB": {
+            "first": 47,
+            "second": 49,
+            "tasks": 27
+          }
+        }
+      },
+      "ONLY_B": {
+        "allocation": {
+          "positions": 10,
+          "tasks": 2
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 4,
+          "loss": 0,
+          "positions": 10,
+          "second": 4,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "flags_excluded": {
+          "first": 2,
+          "loss": false,
+          "positions": 6,
+          "second": 2,
+          "tasks": 1,
+          "tie": true,
+          "win": false
+        },
+        "group_counts": {
+          "loss": 0,
+          "tie": 2,
+          "win": 0
+        },
+        "match": {
+          "first": 4,
+          "loss": 0,
+          "positions": 10,
+          "second": 4,
+          "tasks": 2,
+          "tie": 2,
+          "win": 0
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 1,
+            "second": 0,
+            "tasks": 2
+          },
+          "OPB": {
+            "first": 1,
+            "second": 1,
+            "tasks": 2
+          },
+          "UPB": {
+            "first": 6,
+            "second": 5,
+            "tasks": 2
+          }
+        }
+      },
+      "all": {
+        "allocation": {
+          "positions": 215,
+          "tasks": 34
+        },
+        "bound_of_match_difference": [
+          -22,
+          15
+        ],
+        "distinct_wires": {
+          "first": 103,
+          "loss": 6,
+          "positions": 194,
+          "second": 107,
+          "tasks": 31,
+          "tie": 22,
+          "win": 3
+        },
+        "flags_excluded": {
+          "first": 66,
+          "loss": 4,
+          "positions": 132,
+          "second": 69,
+          "tasks": 19,
+          "tie": 13,
+          "win": 2
+        },
+        "group_counts": {
+          "loss": 4,
+          "tie": 14,
+          "win": 2
+        },
+        "match": {
+          "first": 103,
+          "loss": 6,
+          "positions": 194,
+          "second": 107,
+          "tasks": 31,
+          "tie": 22,
+          "win": 3
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 30,
+            "second": 39,
+            "tasks": 31
+          },
+          "OPB": {
+            "first": 39,
+            "second": 41,
+            "tasks": 31
+          },
+          "UPB": {
+            "first": 53,
+            "second": 54,
+            "tasks": 31
+          }
+        }
+      },
+      "other_exposed": {
+        "allocation": {
+          "positions": 188,
+          "tasks": 29
+        },
+        "bound_of_match_difference": [
+          -22,
+          15
+        ],
+        "distinct_wires": {
+          "first": 86,
+          "loss": 5,
+          "positions": 167,
+          "second": 90,
+          "tasks": 26,
+          "tie": 19,
+          "win": 2
+        },
+        "flags_excluded": {
+          "first": 66,
+          "loss": 4,
+          "positions": 132,
+          "second": 69,
+          "tasks": 19,
+          "tie": 13,
+          "win": 2
+        },
+        "group_counts": {
+          "loss": 4,
+          "tie": 12,
+          "win": 2
+        },
+        "match": {
+          "first": 86,
+          "loss": 5,
+          "positions": 167,
+          "second": 90,
+          "tasks": 26,
+          "tie": 19,
+          "win": 2
+        },
+        "missing": {
+          "both": 2,
+          "first": 2,
+          "second": 3
+        },
+        "severity": {
+          "FM": {
+            "first": 25,
+            "second": 29,
+            "tasks": 26
+          },
+          "OPB": {
+            "first": 34,
+            "second": 37,
+            "tasks": 26
+          },
+          "UPB": {
+            "first": 44,
+            "second": 45,
+            "tasks": 26
+          }
+        }
+      },
+      "previous_trial": {
+        "allocation": {
+          "positions": 27,
+          "tasks": 5
+        },
+        "bound_of_match_difference": [
+          0,
+          0
+        ],
+        "distinct_wires": {
+          "first": 17,
+          "loss": 1,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 3,
+          "win": 1
+        },
+        "flags_excluded": {},
+        "group_counts": {
+          "loss": 1,
+          "tie": 3,
+          "win": 1
+        },
+        "match": {
+          "first": 17,
+          "loss": 1,
+          "positions": 27,
+          "second": 17,
+          "tasks": 5,
+          "tie": 3,
+          "win": 1
+        },
+        "missing": {
+          "both": 0,
+          "first": 0,
+          "second": 0
+        },
+        "severity": {
+          "FM": {
+            "first": 5,
+            "second": 10,
+            "tasks": 5
+          },
+          "OPB": {
+            "first": 5,
+            "second": 4,
+            "tasks": 5
+          },
+          "UPB": {
+            "first": 9,
+            "second": 9,
+            "tasks": 5
+          }
+        }
+      }
+    }
+  },
+  "input_original_source_length": {
+    "GATE_BASE": {
+      "characters": 16208,
+      "sources": 63
+    },
+    "RESERVED": {
+      "characters": 24097,
+      "sources": 97
+    },
+    "TOP_NEXT": {
+      "characters": 23495,
+      "sources": 97
+    }
+  },
+  "physical_requests": {
+    "EqualCountActor": 84,
+    "EqualCountJudge": 84
+  },
+  "reported_tokens": 360749,
+  "request_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "OK": 167
+  },
+  "statuses": {
+    "GATE_BASE": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "INVALID_MATCH": 2,
+      "OK": 31
+    },
+    "RESERVED": {
+      "INVALID_MATCH": 2,
+      "OK": 32
+    },
+    "TOP_NEXT": {
+      "INVALID_MATCH": 2,
+      "OK": 32
+    }
+  },
+  "unknown_usage": 1
+}

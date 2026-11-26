@@ -102,6 +102,8 @@ Under the same RP Actor, direct Chinese MemGate scores 816/1,477 versus IPE-C's 
 
 On 24 development groups selected for a language-dependent change in admission, we set each task's budget to the English gate's retained count and serve only the selected original Chinese text. Match is 78/125 for the translated gate, 68/125 for English cosine and 63/125 for Chinese gate ranking. English cosine uses the gate's count. The translated gate leads IPE-C at 73 vs.\ 67 of 114 common positions but raises feasibility severity from 4 to 14. It omits constraints and recommends white noise and chili where the relevant histories rule them out. This comparison measures an effect conditional on changed source sets, and same count does not fix input length.
 
+On 34 triggered tasks, we add one omitted history when its IPE top rank and fused policy agree on C. Compared with the next-ranked addition, this obtains 116/199 vs.\ 106/199 Match on 32 pairs, lowering feasibility severity from 30 to 8 while increasing overuse from 40 to 57. It removes actual white-noise and chili recommendations, but can let personal preferences shape a shared plan. IPE-C scores 120/199 on these pairs. The one-slot rule is retained as a control.
+
 \paragraph{Single-preference limits.}
 Under a separate Qwen rubric adaptation, IPE-C scores 15/22, RP 17/22, and Des2Gen and MemAdapter 18/22 each. IPE-C withholds history on all nine author-B tasks, including seven ranked B. In the verified multi-preference routes, 70/138 author-B positions ranked B reach the Actor because a different prediction is C. Rank and exposure are distinct.
 
