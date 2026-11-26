@@ -1,0 +1,161 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{booktabs}
+
+\title{When Should an Assistant Use Its History?\\Task-Level Memory Activation and the Limits of Preference Realization}
+\author{Anonymous working manuscript}
+
+\begin{document}
+\maketitle
+\raggedbottom
+
+\begin{abstract}
+A personalized assistant can retrieve the right history and still apply it to the wrong task or person. We distinguish activating history for a task from realizing an applicable preference in the final answer. With fixed candidate memory, we test a training-free rule that activates history when an intent estimator predicts at least one decision-driving preference. On 274 commonly scored tasks from RPEval's released multi-preference roster, the rule matches 953 of 1,462 positions, versus 874 when always excluding history and 824 when always including it. Gains over full history are concentrated in all-ignore tasks. On a separate PersistBench development panel, a task-conditioned selection and generation pipeline passes 47 of 49 tasks versus 43 for a rubric-guided full-history baseline, with both passing all 18 strict beneficial-use tasks. On BenchPreS, a source gate lowers inappropriate preference application, while non-bold preference realization remains comparable to the adapted Selectivity control. These are matched development results under documented grader adaptations. Case analysis finds that even when applicable history is visible and an answer passes automatic scoring, the actual decision can still violate a necessary constraint.
+\end{abstract}
+
+\section{Introduction}
+
+Persistent memory can make an assistant more useful when a request depends on a stable constraint. The same memory can alter a decision over which the user has no exclusive authority. In a group outing, a personal preference for quiet need not determine the number of participants. In a room shared with a partner, a documented no-fabric restriction can legitimately constrain the design. The challenge persists after all candidate memories have already been retrieved.
+
+We study two distinct decisions. \emph{Activation} determines whether history is delivered to the generator for a task. \emph{Realization} determines how applicable history changes the delivered answer. Activation changes the evidence available to a generator. Realization requires that the generator carry its relevant effects into the right action, recipient, or part of the output. A system can succeed at the first decision and fail at the second.
+
+Our main comparison tests a single task-level switching rule against two fixed answer paths on the complete released allocation of a multi-preference benchmark. Paired comparisons also locate gains relative to reconstructed external methods and characterize soft preference and hard constraint protection. Two complementary benchmarks test how far this evidence extends. PersistBench tests suppression of historical influence under different generation strategies. BenchPreS tests whether lower misuse can coexist with better realization in third-party messages.
+
+\section{Related Work}
+
+RPEval distinguishes ignored, supporting, and decision-driving uses of personal evidence, and its RP-Reasoner uses pragmatic intent inference to select among those uses \citep{feng2026rpeval}. Our primary intervention reuses its intent estimator and changes which complete generation path is run. The fixed-endpoint comparison tests the incremental value of that activation decision. BenchPreS targets the appropriateness of preferences in socially and institutionally governed communication \citep{yoon2026benchpres}. PersistBench explicitly separates cross-domain leakage, memory-induced sycophancy and beneficial use \citep{pulipaka2026persistbench}. We use those separate metrics to distinguish suppressing harmful influence from realizing legitimate use.
+
+MemGate learns a query-conditioned gate between retrieval and generation \citep{zhang2026memgate}. MemAdapter instead estimates and regulates the influence of retrieved memories through counterfactual induction, reflection, and evidence-based generation \citep{ning2026memadapter}. Our main route reuses the existing strategy estimator and changes task-level exposure. Its fixed-endpoint comparison tests when this simple decision is sufficient. In PersistBench comparisons, GEPA's reflection-based prompt optimization is an existing source of generation guidance \citep{agrawal2026gepa}. We use its frozen downstream prompt to compare full and selected original evidence.
+
+\section{Methods}
+
+\paragraph{Fixed-evidence setting.}
+The observed inputs are request $q$, current task information $x$, and a fixed sequence of original memory items $M=(m_1,\dots,m_n)$. The systems do not update model weights or write to persistent memory. No task's author labels or grader reasoning enter its generation requests.
+
+\paragraph{IPE-C.}
+The intent-preference estimator ranks three strategies per item: A for ignoring, B for supporting, and C for decision-driving use. Let $\widehat{s}_i$ be its highest-ranked strategy for item $i$. The system enables history if $\exists i:\widehat{s}_i=\mathrm{C}$. When enabled, the RP reconstruction ranks and fuses preference strategies and sends the Actor all original candidate memories with the inferred use policy. When disabled, the same Actor system receives the original task with empty evidence and use policy. For archived evaluation, the rule selects the exact saved answer for its chosen path. In deployment it needs the intent estimate and the chosen path's calls. The estimator predicts individual strategies, while the switch operates on the entire task and leaves an enabled Actor free to see all candidates.
+
+\paragraph{Complementary implementations.}
+PersistBench uses SELECTED\_GEPA, a separate task-conditioned system. A Query-only router selects a Style or Grounding selector. That selector returns a subset of original memories, possibly empty, which goes to the GEPA Actor. The full-history comparison keeps the GEPA generation strategy and passes all original memory. SELECTED\_GEPA uses three generation-side calls per deployment. Each full-history control answers with one. The alternate PB\_RUBRIC baseline applies author-released rubric guidance to all-history generation. For BenchPreS, Strong Gate chooses original sources and use guidance before generating the third-party message. These implementations share the goal of controlling history influence, with different generation interfaces and distinct claims.
+
+\section{Evaluation}
+
+\paragraph{RPEval.}
+We verify all 300 released multi-preference inputs against author release \texttt{0f8bce80}. Generation uses the project Qwen 3.8 Flash alias. Evaluation uses a GPT-4.1 adaptation of the detailed rubric. Match counts positions where observed use of the final answer matches the author-designated strategy. We report the aggregate rubric severity fields OPB, UPB, and FM separately from Match. We compare on strict common valid positions and retain missing cases in the allocation record. The author's public short scorer did not provide Match in a replay. The RP-Reasoner reconstruction and paper-reported RP system are distinct controls.
+
+\paragraph{BenchPreS and PersistBench.}
+BenchPreS measures misapplication (MR), appropriate application (AAR), and task completeness. We also report AAR excluding author references specifically for bold typography. The Selectivity comparison adapts the paper's control to the local Qwen single-draw evaluation, whereas the paper uses three generations at temperature 1 and DeepSeek-R1 attribute judging. PersistBench uses the GPT-4.1 rubric adaptation, one score per saved answer, and strict beneficial-use thresholds. The recommended Inspect configuration instead uses Kimi K2 Thinking with a specified provider, three draws for cross-domain and sycophancy, and one for beneficial use. We report the benchmarks separately and preserve each comparison's true denominator.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Stratum & Pos. & IPE-C & Task & Memory\\
+\midrule
+Overall (274) & 1,462 & \textbf{953} & 874 & 824\\
+All A (116) & 512 & 400 & \textbf{426} & 267\\
+Only B (48) & 278 & 145 & 142 & \textbf{147}\\
+Contains C (110) & 672 & 408 & 306 & \textbf{410}\\
+Unflagged (184) & 1,022 & \textbf{701} & 655 & 592\\
+\bottomrule
+\end{tabular}
+\caption{RPEval. Number of matched positions under the adapted detailed scorer. Parentheses give task counts. The unflagged subset excludes recorded grading anomalies symmetrically.}
+\label{tab:rpe}
+\end{table}
+
+\section{Results}
+
+\subsection{Task-level activation improves RPEval Match}
+
+On the 274-task three-path intersection, IPE-C improves over both fixed paths (Table~\ref{tab:rpe}). Against full history, it gains 129 positions: 133 in all-A and loses two in each applicable stratum. Against task-only, most gains come from the C-bearing stratum (+102), with an all-A loss of 26. OPB is 247, 80, and 371 for IPE-C, task-only, and full history, respectively. The corresponding UPB totals are 248, 515, and 227, and FM totals are 51, 250, and 55.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & Match & A & B & C\\
+\midrule
+IPE-C & \textbf{751} & 334 & \textbf{106} & 311\\
+Always-Task & 691 & \textbf{363} & 103 & 225\\
+RP-Reasoner reconstructed & 643 & 228 & 102 & \textbf{313}\\
+Des2Gen reconstructed & 529 & 125 & 92 & 312\\
+MemAdapter adapted & 501 & 86 & 104 & 311\\
+Strong Gate & 503 & 107 & 92 & 304\\
+\bottomrule
+\end{tabular}
+\caption{Adapted RPEval comparison among six methods on 211 jointly valid tasks and 1,124 positions. Columns A, B, and C denote task strata (all A, only B, and contains C), with 426, 185, and 513 positions.}
+\label{tab:external}
+\end{table}
+
+The comparison to RP alone has 280 common tasks and 1,504 positions (970 vs.\ 841). The more restrictive six-method intersection retains the same qualitative pattern (Table~\ref{tab:external}). There, 106 of the 108 gained positions relative to RP come from all-A tasks. On 128 exact explicit--implicit counterparts with all four scores valid, IPE-C and RP obtain 469 and 402 on the 693 explicit positions, and 438 and 384 on the implicit positions. The only-B direction differs across formats. This offers little support for a reliable gain on appropriate supporting preferences.
+
+A study holding the strategy predictions, policy and Actor fixed compared whole-history activation with giving the Actor only original entries predicted B/C. The two exposure conditions tie at 41/71 Match and the narrower arm increases OPB from 12 to 16. In an actual music-lesson recommendation, the narrow arm sees the relevant music preference but extends it from choosing a class to the route and relaxation routine. The Judge's rationale does not attribute misuse to the excluded entries. With one draw per condition this identifies a plausible route for failure, without isolating a causal effect for that case.
+
+\subsection{PersistBench improves under adapted scoring}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Track & PB\_RUBRIC & SELECTED\_GEPA\\
+\midrule
+Cross-domain & 18/19 & 18/19\\
+Sycophancy & 7/12 & \textbf{11/12}\\
+Strict beneficial use & 18/18 & 18/18\\
+Overall & 43/49 & \textbf{47/49}\\
+\bottomrule
+\end{tabular}
+\caption{Strict task passes on 49 same-task PersistBench development pairs, one answer per method and adapted GPT-4.1 grading.}
+\label{tab:persist}
+\end{table}
+
+Table~\ref{tab:persist} gives the matched result, with five wins, one loss and 43 ties. On separate exact intersections SELECTED\_GEPA also exceeds full-history GEPA (45/47 vs.\ 38/47) and the saved complete MemAdapter adaptation (46/48 vs.\ 37/48). Neither intersection provides an official rank. The three original wins in a failure-enriched 14-case cohort all gave the Actor zero original memories. Under an identical OFF instruction, physically withholding history and leaving it visible gave identical ordinal ratings on all five valid OFF pairs. In a project-template task both OFF conditions avoid making Waterfall the mandatory default. The gain is therefore compatible with suppressing influence, and the current evidence does not isolate a benefit from per-item selection itself.
+
+\subsection{BenchPreS reveals a realization gap}
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Metric & Selectivity & Strong Gate\\
+\midrule
+MR $\downarrow$ & 13/132 & \textbf{1/132}\\
+AAR $\uparrow$ & 54/68 & \textbf{58/68}\\
+Non-bold AAR $\uparrow$ & \textbf{36/45} & 35/45\\
+Mean completeness $\uparrow$ & 4.875 & 4.875\\
+\bottomrule
+\end{tabular}
+\caption{BenchPreS on 40 jointly scored tasks. The two methods use project-adapted scoring.}
+\label{tab:bench}
+\end{table}
+
+On a 38-task intersection, unfiltered, Selectivity, and Strong Gate misapply 78, 12, and one of 126 inappropriate preferences, respectively. The non-bold slice of the larger 40-task panel still does not improve over Selectivity (Table~\ref{tab:bench}). This is notable because several missing legitimate preferences are already present in the strong Actor's input.
+
+On 11 scored exposed cases, an ordered renderer and Direct generation each realize 16/23 non-bold preferences. The renderer's completeness total is 48 to Direct's 49, and Content-first reaches 17/23 with completeness 51. All have 0/28 misapplications. The renderer gives the main request an explicit first position. In an insurance appeal, the rendered message leads with reconsideration and is substantially shorter, yet loses two completeness points relative to Direct. Imposing that structure did not reliably improve the joint outcome.
+
+\section{Diagnosing Activation and Realization Errors}
+
+\paragraph{Memory presence does not imply a valid action.}
+In a board-game planning task, SELECTED\_GEPA restores information about guests' color-vision and cat-allergy constraints. Its answer still uses a home with a cat as the main venue. It passes the adapted strict utility score. A separate book-club pilot similarly restores allergy evidence without eliciting a cat-free location. An answer can fail even with the correct item visible, and automated scoring can fail to detect that error. The evidence distinguishes recall, execution, and grading faults at particular stages.
+
+\paragraph{Stability across recorded source groups.}
+Pairwise group resampling gives IPE-C overall Match gains of 8.82 points over Always-Memory (95\% percentile range 3.09 to 14.86) and 5.40 over Always-Task (2.37 to 8.34). Removing any one group preserves both overall gains, whereas the sign for only-B can change. BenchPreS Strong Gate's MR change against Selectivity is $-8.73$ points ($-12.00$ to $-4.39$), while its non-bold effect is $-2.33$ ($-9.62$ to 6.06). PersistBench SELECTED\_GEPA improves by 8.16 points against PB\_RUBRIC (0.00 to 18.37). These ranges describe sensitivity on exposed panels and use recorded conservative source groups.
+
+\section{Limitations}
+
+The experiments use exposed development data. PersistBench includes previously failure-enriched development batches. Generation model aliases and scoring adaptations affect comparability. Automated judges sometimes assign contradictory position and severity results or pass an answer that violates an exposed constraint. No independent confirmation or author-matched leaderboard claim follows. The benchmarks use different scoring units, with separate complete-case intersections. The three implementations support a shared research question while leaving a unified policy untested. Whole-task gating can also discard supporting preferences and cannot independently constrain execution of every retained item. The evidence is stronger for reducing inappropriate use than for faithfully realizing applicable preferences.
+
+\section{Conclusion}
+
+A fixed-memory assistant can benefit from deciding when historical preferences should enter the generation path. In these development comparisons, task-level activation captures complementary benefits of the two fixed endpoints: avoiding irrelevant history and preserving useful constraints on tasks where it matters. Additional end-to-end controls show that passing relevant memory to the generator leaves an unresolved execution problem. Benchmark evaluation of these systems needs measures of both decisions and case-level verification of actual actions.
+
+\bibliography{references}
+\end{document}

@@ -14,8 +14,9 @@ QAMC 研究在候选记忆固定的条件下，何时使用历史、历史应影
 | IPE-C、强 Gate、PB_RUBRIC | 当前按基准保留三个强参照。IPE-C 在 RPEval 按任务在历史启用和仅任务端点间选择。Strong Gate 在 BenchPreS 先筛适用历史。PB_RUBRIC 在 PersistBench 用作者规则提示生成。三者不是已验证的统一 SOTA。 |
 | AIR、身份绑定、引用指针、局部策略及候选路由 | 探索主体错配、历史曝光与选择。字面引文核验不能证明语义归属，旧稿路由也无法创造此前没有的合法实现。具体实验目录见索引。 |
 | CDC、DCR、DREW | 三个完整开发对照。CDC 否决无增量；DCR 局部与共享证据持平，均弱于强稿；DREW 仅在项目生命周期一处获得 PersistBench 净收益，未达到跨来源晋级门槛。 |
-| 当前后续方向 | 检验共享策略能否在强方法首次生成时改善真实终答。计划比较原子规则优化与同预算普通整块优化，按来源组隔离搜索和验证。该方向尚无新实验成绩。 |
+| 当前后续方向 | 以固定端点对照解释 RPEval 的任务级历史启用，检验 PersistBench 的完整流程重复部署，并核对作者评分协议。BenchPreS 用来检验合法偏好落实的边界。 |
 
+- [ACL 排版论文工作稿与构建说明](manuscript/README.md)
 - [全部归档目录索引](EXPERIMENT_CATALOG.md)
 - [IPE-C 端点对照](reports/IPE-C-READOUT.md)
 - [CDC](reports/CDC-RESULTS.md) · [DCR](reports/DCR-RESULTS.md) · [DREW](reports/DREW-RESULTS.md)
