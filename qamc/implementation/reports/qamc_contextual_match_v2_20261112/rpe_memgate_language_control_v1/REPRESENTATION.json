@@ -1,0 +1,82 @@
+{
+  "counted_rows": 11,
+  "coverage": {
+    "EN/memory": {
+      "texts": 63,
+      "truncated_texts": 0,
+      "unknown_visible_tokens": 0,
+      "visible_tokens": 4414
+    },
+    "EN/query": {
+      "texts": 11,
+      "truncated_texts": 0,
+      "unknown_visible_tokens": 0,
+      "visible_tokens": 271
+    },
+    "ZH/memory": {
+      "texts": 63,
+      "truncated_texts": 28,
+      "unknown_visible_tokens": 5800,
+      "visible_tokens": 8810
+    },
+    "ZH/query": {
+      "texts": 11,
+      "truncated_texts": 0,
+      "unknown_visible_tokens": 244,
+      "visible_tokens": 375
+    }
+  },
+  "encoder_weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "input_limit_including_special_tokens": 256,
+  "macro_within_task_auc": {
+    "BC_vs_A/EN/cosine": {
+      "macro": 0.733333,
+      "roots": 6
+    },
+    "BC_vs_A/EN/gated": {
+      "macro": 0.780556,
+      "roots": 6
+    },
+    "BC_vs_A/ZH/cosine": {
+      "macro": 0.545635,
+      "roots": 6
+    },
+    "BC_vs_A/ZH/gated": {
+      "macro": 0.483333,
+      "roots": 6
+    },
+    "B_vs_A/EN/cosine": {
+      "macro": 0.5,
+      "roots": 3
+    },
+    "B_vs_A/EN/gated": {
+      "macro": 0.527778,
+      "roots": 3
+    },
+    "B_vs_A/ZH/cosine": {
+      "macro": 0.707937,
+      "roots": 3
+    },
+    "B_vs_A/ZH/gated": {
+      "macro": 0.866667,
+      "roots": 3
+    },
+    "C_vs_A/EN/cosine": {
+      "macro": 0.825,
+      "roots": 4
+    },
+    "C_vs_A/EN/gated": {
+      "macro": 0.9,
+      "roots": 4
+    },
+    "C_vs_A/ZH/cosine": {
+      "macro": 0.4375,
+      "roots": 4
+    },
+    "C_vs_A/ZH/gated": {
+      "macro": 0.175,
+      "roots": 4
+    }
+  },
+  "new_cloud_requests": 0
+}

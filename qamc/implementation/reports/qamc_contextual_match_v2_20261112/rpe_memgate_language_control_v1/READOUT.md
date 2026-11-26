@@ -10,6 +10,8 @@ Eleven of 12 fixed development contracts yielded selection scores on both inputs
 
 Task-macro within-task AUC for distinguishing C from A moves 0.175 → 0.900 (four mixed roots), while B from A moves 0.867 → 0.528 (three). No threshold or translation was chosen using author labels. The original Chinese results reproduce the frozen decisions on every valid task. The observed C gain at equal item count cannot be explained by fewer records, although ordering may also be affected by translations or token coverage. QAMC has no new end-to-end result from this diagnostic.
 
+The paired tokenizer diagnostic finds no unknown tokens in the English views and no truncation across these 63 records, compared with 5,800/8,810 visible memory tokens unknown and 28/63 records truncated in Chinese. This does not mean the English representation preserves the underlying statements. Unmasked cosine on the same fixed encoder also improves C-vs-A rank separation from 0.438 to 0.825. Most of the pilot's direction therefore also appears before the learned mask. [Tokenizer and ungated score diagnostics](REPRESENTATION.json)
+
 ## Inspecting unchanged source IDs with changed scores
 
 - **Decorating a child's bedroom.** At the English cut size, English ranking retains the source prohibiting all cartoon patterns in the child's room and replaces an author-A source. The translated source preserves both the no-cartoon condition and its intended room. The cardinality-matched Chinese ranking omits it.
