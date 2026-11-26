@@ -4,6 +4,8 @@
 
 在冻结的 300 道多偏好开发题上比较发布版 MemGate 与 IPE-C、始终用史和始终不用史。保持原 RP Actor 和评分器，仅按发布阈值改变它实际看到的原文与对应已有策略。预检核实 295 道完整合同，136 道直接复用冻结端点和评分，另有 2 份子集成稿可精确复用。上限为 157 个新增生成和 159 个评分，本条为冻结协议和预检，最终分数待结算。[预检与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/PREFLIGHT.md) · [原发布编码器的中文覆盖](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/ENCODER_COVERAGE.md)
 
+发布版英文编码器的语言适配先导已完成。12 个已曝光来源组，11 个有效。逐题匹配原中文保留量后，英文排序把作者 C 的实际曝光从 2/4 提高到 4/4，作者 B 保持 5/5。直接用英文默认阈值只保留 13/63 条，中文原版为 53/63 条，合法 B 由 5/5 降为 1/5。部分译文丢了关键否定或饮食对象。完整 295 合同本地复核已开始，先导结论仅涉及选中原文，尚无新增终答性能。[先导结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/READOUT.md)
+
 ## RPEval 单偏好的外部对照
 
 24 道已曝光单偏好题中，22 道同题有效，IPE-C 15/22，RP 17/22，Des2Gen 与 MemAdapter 各 18/22。与空史同题的 21 道为 14/21 对 10/21。两道输 RP 的作者 C 均被 IPE 预测为 B 并走空史。多偏好旧账本中的 138 个作者 B 且 IPE 预测 B 的位置，68 个隐藏，70 个因另一条预测 C 进入 Actor。当前支持在多偏好场景继续研究启用策略，并保留单偏好保护缺口。单偏好评分是历史 Qwen 详细模板适配。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/READOUT.md)
