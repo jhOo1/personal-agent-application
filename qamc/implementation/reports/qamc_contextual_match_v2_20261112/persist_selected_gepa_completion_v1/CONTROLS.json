@@ -1,0 +1,198 @@
+{
+  "MEMADAPTER_FULL/all": {
+    "common": 48,
+    "losses": 0,
+    "reference_pass": 37,
+    "selected_pass": 46,
+    "wins": 9
+  },
+  "MEMADAPTER_FULL/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 18,
+    "selected_pass": 18,
+    "wins": 0
+  },
+  "MEMADAPTER_FULL/cross_domain": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 12,
+    "selected_pass": 17,
+    "wins": 5
+  },
+  "MEMADAPTER_FULL/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 7,
+    "selected_pass": 11,
+    "wins": 4
+  },
+  "PB_FILTER_COMMON/all": {
+    "common": 46,
+    "losses": 0,
+    "reference_pass": 28,
+    "selected_pass": 44,
+    "wins": 16
+  },
+  "PB_FILTER_COMMON/beneficial_memory_usage": {
+    "common": 17,
+    "losses": 0,
+    "reference_pass": 16,
+    "selected_pass": 17,
+    "wins": 1
+  },
+  "PB_FILTER_COMMON/cross_domain": {
+    "common": 17,
+    "losses": 0,
+    "reference_pass": 11,
+    "selected_pass": 16,
+    "wins": 5
+  },
+  "PB_FILTER_COMMON/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 1,
+    "selected_pass": 11,
+    "wins": 10
+  },
+  "PB_FILTER_NATIVE/all": {
+    "common": 46,
+    "losses": 0,
+    "reference_pass": 35,
+    "selected_pass": 44,
+    "wins": 9
+  },
+  "PB_FILTER_NATIVE/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 17,
+    "selected_pass": 18,
+    "wins": 1
+  },
+  "PB_FILTER_NATIVE/cross_domain": {
+    "common": 16,
+    "losses": 0,
+    "reference_pass": 12,
+    "selected_pass": 15,
+    "wins": 3
+  },
+  "PB_FILTER_NATIVE/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 6,
+    "selected_pass": 11,
+    "wins": 5
+  },
+  "PB_FULL/all": {
+    "common": 47,
+    "losses": 0,
+    "reference_pass": 38,
+    "selected_pass": 45,
+    "wins": 7
+  },
+  "PB_FULL/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 18,
+    "selected_pass": 18,
+    "wins": 0
+  },
+  "PB_FULL/cross_domain": {
+    "common": 17,
+    "losses": 0,
+    "reference_pass": 15,
+    "selected_pass": 16,
+    "wins": 1
+  },
+  "PB_FULL/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 5,
+    "selected_pass": 11,
+    "wins": 6
+  },
+  "PB_GEPA/all": {
+    "common": 47,
+    "losses": 0,
+    "reference_pass": 38,
+    "selected_pass": 45,
+    "wins": 7
+  },
+  "PB_GEPA/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 17,
+    "selected_pass": 18,
+    "wins": 1
+  },
+  "PB_GEPA/cross_domain": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 16,
+    "selected_pass": 17,
+    "wins": 1
+  },
+  "PB_GEPA/sycophancy": {
+    "common": 11,
+    "losses": 0,
+    "reference_pass": 5,
+    "selected_pass": 10,
+    "wins": 5
+  },
+  "PB_NO_MEMORY/all": {
+    "common": 47,
+    "losses": 1,
+    "reference_pass": 29,
+    "selected_pass": 45,
+    "wins": 17
+  },
+  "PB_NO_MEMORY/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 2,
+    "selected_pass": 18,
+    "wins": 16
+  },
+  "PB_NO_MEMORY/cross_domain": {
+    "common": 17,
+    "losses": 1,
+    "reference_pass": 16,
+    "selected_pass": 16,
+    "wins": 1
+  },
+  "PB_NO_MEMORY/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 11,
+    "selected_pass": 11,
+    "wins": 0
+  },
+  "PB_RUBRIC/all": {
+    "common": 49,
+    "losses": 1,
+    "reference_pass": 43,
+    "selected_pass": 47,
+    "wins": 5
+  },
+  "PB_RUBRIC/beneficial_memory_usage": {
+    "common": 18,
+    "losses": 0,
+    "reference_pass": 18,
+    "selected_pass": 18,
+    "wins": 0
+  },
+  "PB_RUBRIC/cross_domain": {
+    "common": 19,
+    "losses": 1,
+    "reference_pass": 18,
+    "selected_pass": 18,
+    "wins": 1
+  },
+  "PB_RUBRIC/sycophancy": {
+    "common": 12,
+    "losses": 0,
+    "reference_pass": 7,
+    "selected_pass": 11,
+    "wins": 4
+  }
+}
