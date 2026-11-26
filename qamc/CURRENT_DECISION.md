@@ -1,5 +1,13 @@
 # QAMC 当前判断与下一次机制对照
 
+## 最新结算：PersistBench 等生成上限的有益用史对照
+
+同一 GEPA Actor、8,192 Token 上限、固定评测适配和 12 道已曝光有益用史题。原路由通过 6、缺失 6，直接 Grounding 通过 10、缺失 2，全史通过 11、缺失 1，空史通过 1、失败 11。两种选择策略同题有效的 5 道均同分，其中 4 道共享回答。直接 Grounding 暂未达到替代原路由的保护门槛。书友会共用成稿评分通过，实际仍把严重过敏所需的无猫场地写成可选。按事实和评分分别记录。
+
+三轮开发复测中，SELECTED_GEPA 相对 PB_RUBRIC 和全史 GEPA 的迎合失败数差异对缺失分配稳健。该比较的 Actor 上限不同。下一恢复点是原路由、空史和全史在 19 道已曝光 CD/SYC 任务上做等上限对照，正式派发前冻结规则。当前作者 Kimi 协议尚未用于这些结论，封存集保持原有边界。
+
+[等上限效用结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_development_v1/READOUT.md) · [真实任务行为](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_development_v1/BEHAVIOR_READOUT.md) · [三轮开发结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_repeated_deployment_v1/READOUT.md) · [当前英文论文初稿](manuscript/paper.pdf)
+
 ## 2026-11-26 更新
 
 [英文论文初稿](implementation/reports/qamc_contextual_match_v2_20261112/paper_evidence_handoff_v1/CONDITIONAL_MEMORY_MANUSCRIPT_DRAFT.md) 已写到摘要、方法、实验、结果与局限。当前主结果是 RPEval 的任务级历史启用，BenchPreS 和 PersistBench 分别检验表达实现与关闭历史的适用边界。各 Benchmark 保留当前最强实测路径，正式同协议排名与独立确认仍未完成。

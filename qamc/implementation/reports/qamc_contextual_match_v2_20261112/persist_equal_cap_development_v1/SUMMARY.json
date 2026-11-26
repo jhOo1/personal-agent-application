@@ -1,0 +1,376 @@
+{
+  "methods": {
+    "all": {
+      "EMPTY": {
+        "available_answers": 12,
+        "outcomes": {
+          "FAIL": 11,
+          "PASS": 1
+        },
+        "statuses": {
+          "OK": 12
+        }
+      },
+      "FULL": {
+        "available_answers": 11,
+        "outcomes": {
+          "PASS": 11,
+          "UNKNOWN": 1
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 1,
+          "OK": 11
+        }
+      },
+      "GROUNDING": {
+        "available_answers": 10,
+        "outcomes": {
+          "PASS": 10,
+          "UNKNOWN": 2
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 2,
+          "OK": 10
+        }
+      },
+      "ROUTED": {
+        "available_answers": 6,
+        "outcomes": {
+          "PASS": 6,
+          "UNKNOWN": 6
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 6,
+          "OK": 6
+        }
+      }
+    },
+    "historical_style": {
+      "EMPTY": {
+        "available_answers": 6,
+        "outcomes": {
+          "FAIL": 5,
+          "PASS": 1
+        },
+        "statuses": {
+          "OK": 6
+        }
+      },
+      "FULL": {
+        "available_answers": 5,
+        "outcomes": {
+          "PASS": 5,
+          "UNKNOWN": 1
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 1,
+          "OK": 5
+        }
+      },
+      "GROUNDING": {
+        "available_answers": 6,
+        "outcomes": {
+          "PASS": 6
+        },
+        "statuses": {
+          "OK": 6
+        }
+      },
+      "ROUTED": {
+        "available_answers": 3,
+        "outcomes": {
+          "PASS": 3,
+          "UNKNOWN": 3
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 3,
+          "OK": 3
+        }
+      }
+    },
+    "original_utility": {
+      "EMPTY": {
+        "available_answers": 6,
+        "outcomes": {
+          "FAIL": 6
+        },
+        "statuses": {
+          "OK": 6
+        }
+      },
+      "FULL": {
+        "available_answers": 6,
+        "outcomes": {
+          "PASS": 6
+        },
+        "statuses": {
+          "OK": 6
+        }
+      },
+      "GROUNDING": {
+        "available_answers": 4,
+        "outcomes": {
+          "PASS": 4,
+          "UNKNOWN": 2
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 2,
+          "OK": 4
+        }
+      },
+      "ROUTED": {
+        "available_answers": 3,
+        "outcomes": {
+          "PASS": 3,
+          "UNKNOWN": 3
+        },
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 3,
+          "OK": 3
+        }
+      }
+    }
+  },
+  "observed_route_branches": {
+    "MISSING": 5,
+    "grounding": 3,
+    "style": 4
+  },
+  "pairs": {
+    "all": {
+      "EMPTY/FULL": {
+        "assigned": 12,
+        "coupled_lower": 10,
+        "coupled_upper": 11,
+        "known_pairs": 11,
+        "losses": 10,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": 10,
+        "unrestricted_upper": 11,
+        "wins": 0
+      },
+      "GROUNDING/EMPTY": {
+        "assigned": 12,
+        "coupled_lower": -11,
+        "coupled_upper": -9,
+        "known_pairs": 10,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": -11,
+        "unrestricted_upper": -9,
+        "wins": 9
+      },
+      "GROUNDING/FULL": {
+        "assigned": 12,
+        "coupled_lower": -1,
+        "coupled_upper": 2,
+        "known_pairs": 9,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 9,
+        "unrestricted_lower": -1,
+        "unrestricted_upper": 2,
+        "wins": 0
+      },
+      "ROUTED/EMPTY": {
+        "assigned": 12,
+        "coupled_lower": -11,
+        "coupled_upper": -5,
+        "known_pairs": 6,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": -11,
+        "unrestricted_upper": -5,
+        "wins": 5
+      },
+      "ROUTED/FULL": {
+        "assigned": 12,
+        "coupled_lower": -1,
+        "coupled_upper": 6,
+        "known_pairs": 6,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 6,
+        "unrestricted_lower": -1,
+        "unrestricted_upper": 6,
+        "wins": 0
+      },
+      "ROUTED/GROUNDING": {
+        "assigned": 12,
+        "coupled_lower": -2,
+        "coupled_upper": 6,
+        "known_pairs": 5,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 5,
+        "unrestricted_lower": -2,
+        "unrestricted_upper": 6,
+        "wins": 0
+      }
+    },
+    "historical_style": {
+      "EMPTY/FULL": {
+        "assigned": 6,
+        "coupled_lower": 4,
+        "coupled_upper": 5,
+        "known_pairs": 5,
+        "losses": 4,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": 4,
+        "unrestricted_upper": 5,
+        "wins": 0
+      },
+      "GROUNDING/EMPTY": {
+        "assigned": 6,
+        "coupled_lower": -5,
+        "coupled_upper": -5,
+        "known_pairs": 6,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": -5,
+        "unrestricted_upper": -5,
+        "wins": 5
+      },
+      "GROUNDING/FULL": {
+        "assigned": 6,
+        "coupled_lower": -1,
+        "coupled_upper": 0,
+        "known_pairs": 5,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 5,
+        "unrestricted_lower": -1,
+        "unrestricted_upper": 0,
+        "wins": 0
+      },
+      "ROUTED/EMPTY": {
+        "assigned": 6,
+        "coupled_lower": -5,
+        "coupled_upper": -2,
+        "known_pairs": 3,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 1,
+        "unrestricted_lower": -5,
+        "unrestricted_upper": -2,
+        "wins": 2
+      },
+      "ROUTED/FULL": {
+        "assigned": 6,
+        "coupled_lower": -1,
+        "coupled_upper": 3,
+        "known_pairs": 3,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 3,
+        "unrestricted_lower": -1,
+        "unrestricted_upper": 3,
+        "wins": 0
+      },
+      "ROUTED/GROUNDING": {
+        "assigned": 6,
+        "coupled_lower": 0,
+        "coupled_upper": 3,
+        "known_pairs": 3,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 3,
+        "unrestricted_lower": 0,
+        "unrestricted_upper": 3,
+        "wins": 0
+      }
+    },
+    "original_utility": {
+      "EMPTY/FULL": {
+        "assigned": 6,
+        "coupled_lower": 6,
+        "coupled_upper": 6,
+        "known_pairs": 6,
+        "losses": 6,
+        "shared_unknown": 0,
+        "ties": 0,
+        "unrestricted_lower": 6,
+        "unrestricted_upper": 6,
+        "wins": 0
+      },
+      "GROUNDING/EMPTY": {
+        "assigned": 6,
+        "coupled_lower": -6,
+        "coupled_upper": -4,
+        "known_pairs": 4,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 0,
+        "unrestricted_lower": -6,
+        "unrestricted_upper": -4,
+        "wins": 4
+      },
+      "GROUNDING/FULL": {
+        "assigned": 6,
+        "coupled_lower": 0,
+        "coupled_upper": 2,
+        "known_pairs": 4,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 4,
+        "unrestricted_lower": 0,
+        "unrestricted_upper": 2,
+        "wins": 0
+      },
+      "ROUTED/EMPTY": {
+        "assigned": 6,
+        "coupled_lower": -6,
+        "coupled_upper": -3,
+        "known_pairs": 3,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 0,
+        "unrestricted_lower": -6,
+        "unrestricted_upper": -3,
+        "wins": 3
+      },
+      "ROUTED/FULL": {
+        "assigned": 6,
+        "coupled_lower": 0,
+        "coupled_upper": 3,
+        "known_pairs": 3,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 3,
+        "unrestricted_lower": 0,
+        "unrestricted_upper": 3,
+        "wins": 0
+      },
+      "ROUTED/GROUNDING": {
+        "assigned": 6,
+        "coupled_lower": -2,
+        "coupled_upper": 3,
+        "known_pairs": 2,
+        "losses": 0,
+        "shared_unknown": 0,
+        "ties": 2,
+        "unrestricted_lower": -2,
+        "unrestricted_upper": 3,
+        "wins": 0
+      }
+    }
+  },
+  "physical_calls": 101,
+  "physical_stage_calls": {
+    "Actor": 38,
+    "Judge": 35,
+    "Route": 12,
+    "Select": 16
+  },
+  "reported_tokens": 558043,
+  "request_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 9,
+    "OK": 92
+  },
+  "unknown_usage": 9
+}
