@@ -1,6 +1,12 @@
 # QAMC 新环境研究交接
 
-**先读本页，再读[证据索引](EVIDENCE_INDEX.md)和[恢复说明](MIGRATION.md)。** 本文以原实验仓库 `fd8b855bece3a8aadabb008ee4e0ca6c727833d5` 的代码和结果为锚。公开仓库是研究档案与代码快照。新环境先只读核验；本交接没有运行实验、补评分或访问封存题目。
+**先读本页，再读[证据索引](EVIDENCE_INDEX.md)和[恢复说明](MIGRATION.md)。** 公开仓库提供研究档案与代码快照。历史方法交接以原实验仓库 `fd8b855bece3a8aadabb008ee4e0ca6c727833d5` 为锚。当前实验继续使用源工作区中的冻结计划和回执。
+
+## 当前接续入口
+
+当前论文把任务级记忆启用与成稿落实分开讨论。RPEval 保留 IPE-C 为主结果，PersistBench 保留 SELECTED_GEPA 的安全与效用对照，BenchPreS 比较 Strong Gate 和作者 Selectivity。主张及协议差异见[论文草稿](manuscript/paper.pdf)和[外部比较状态](manuscript/COMPARISON_STATUS.md)。
+
+BenchPreS 的 48 道已曝光题已经冻结，使用相同 Qwen Actor、温度 1.0、三次采样及 Qwen 适配评分。前三批结算，第四批已启动。接续时以工作区的实际进程和结算文件为准。已有回执优先复用，封存集保持隔离。[冻结协议](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/PROTOCOL.md) · [前三批结果](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/WAVES012_READOUT.md) · [逐项缺失边界](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/WAVES012_FIELDWISE.md) · [当前恢复条件](MIGRATION.md#当前-benchpres-实验)
 
 ## 研究问题和论文主张
 
@@ -48,8 +54,8 @@ RPEval 用项目冻结 GPT-4.1 rubric，Match 是逐位命中，OPB、UPB、FM �
 - PersistBench 0613beea 项目模板。DREW 增加实际可选生命周期，唯一由失败转通过；犬只和欢迎邮件未复现。Azure Flames 的 Modern 与低费直伤是对象状态，颜色组合未证实；CDC 的唯一否决回退不增分。见 [DREW](reports/DREW-RESULTS.md) 与 [CDC](reports/CDC-RESULTS.md)。
 - CDC 214 次、DCR 132 次、DREW 161 次均为服务 OK；仍分别存在结构或评分缺失。DREW 48 次生成与 113 次评分、660494 报告 token，6 条结构失败回退。DCR 只有 3 题改变实际证据曝光、2 题有效配对。缺失、交付未知、结构回退和语义答错分开。RPEval 旗标用于配对敏感性；项目中有 Match 与文本理由矛盾，不覆盖原分。
 
-## 停止判断和接续
+## 历史停止判断与复用规则
 
-CDC、DCR 与通用 DREW 均已结算且未晋级。最新恢复点是 `fd8b855be` 中 DREW 回传记录。下一步候选是固定三个原生强路径的首次生成，在可编辑的共享策略块中对比逐条增删替换与同预算整块优化。当前只有入口排查，未见已冻结新实验或新请求。新环境先精确重建原始 Actor 请求及模型/评分合同，区分搜索组、组外开发确认和原封存组，再冻结预算、选择规则、合法偏好及完整度保护。复用精确旧结果，先核对请求哈希和交付状态。未能证实状态的单元写 UNKNOWN，勿因为找不到本地文件就重派发。
+CDC、DCR 与通用 DREW 均已结算且未晋级。`fd8b855be` 保存 DREW 阶段的回传记录。新设计沿用三基准的数据边界，区分已曝光开发和封存确认。复用精确旧结果时核对请求哈希、配置和交付状态。无法从原账本证实的单元标记 UNKNOWN，待取得回执后再决定是否可接续。
 
 新的设计和结论提交并推送本仓库。原始题目、候选、回执、网关配置和受限数据仅用私有恢复渠道。
