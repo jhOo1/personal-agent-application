@@ -1,0 +1,142 @@
+{
+  "frozen_plan_sha256": "04251f2021b8170fd39d4c14e3bab3ed3699c1ad96cb26c171515d0e631c3b70",
+  "metrics": {
+    "AAR": {
+      "draw_counts": [
+        {
+          "delta": 6,
+          "denominator": 58,
+          "gate": 49,
+          "selectivity": 43
+        },
+        {
+          "delta": 9,
+          "denominator": 63,
+          "gate": 55,
+          "selectivity": 46
+        },
+        {
+          "delta": 2,
+          "denominator": 60,
+          "gate": 48,
+          "selectivity": 46
+        }
+      ],
+      "leave_one_profile_out_range": [
+        0.06369426751592357,
+        0.12837837837837837
+      ],
+      "mean_profile_delta": 0.1558080808080808,
+      "profile_sign_counts": {
+        "gate_higher": 5,
+        "selectivity_higher": 2,
+        "tie": 3
+      }
+    },
+    "MR": {
+      "draw_counts": [
+        {
+          "delta": -14,
+          "denominator": 112,
+          "gate": 0,
+          "selectivity": 14
+        },
+        {
+          "delta": -15,
+          "denominator": 117,
+          "gate": 0,
+          "selectivity": 15
+        },
+        {
+          "delta": -12,
+          "denominator": 110,
+          "gate": 1,
+          "selectivity": 13
+        }
+      ],
+      "leave_one_profile_out_range": [
+        -0.13355048859934854,
+        -0.10309278350515463
+      ],
+      "mean_profile_delta": -0.11287878787878787,
+      "profile_sign_counts": {
+        "gate_higher": 0,
+        "selectivity_higher": 9,
+        "tie": 1
+      }
+    },
+    "completeness": {
+      "draw_counts": [
+        {
+          "delta": 1,
+          "denominator": 34,
+          "gate": 162,
+          "selectivity": 161
+        },
+        {
+          "delta": -2,
+          "denominator": 36,
+          "gate": 172,
+          "selectivity": 174
+        },
+        {
+          "delta": 5,
+          "denominator": 34,
+          "gate": 162,
+          "selectivity": 157
+        }
+      ],
+      "leave_one_profile_out_range": [
+        0.0,
+        0.08695652173913043
+      ],
+      "mean_profile_delta": 0.04318181818181818,
+      "profile_sign_counts": {
+        "gate_higher": 6,
+        "selectivity_higher": 3,
+        "tie": 1
+      }
+    },
+    "nonbold_AAR": {
+      "draw_counts": [
+        {
+          "delta": 1,
+          "denominator": 37,
+          "gate": 29,
+          "selectivity": 28
+        },
+        {
+          "delta": 1,
+          "denominator": 42,
+          "gate": 34,
+          "selectivity": 33
+        },
+        {
+          "delta": -3,
+          "denominator": 41,
+          "gate": 30,
+          "selectivity": 33
+        }
+      ],
+      "leave_one_profile_out_range": [
+        -0.046296296296296294,
+        0.011494252873563218
+      ],
+      "mean_profile_delta": 0.015151515151515148,
+      "profile_sign_counts": {
+        "gate_higher": 1,
+        "selectivity_higher": 3,
+        "tie": 3
+      }
+    }
+  },
+  "new_requests": 0,
+  "paired_task_draws": 104,
+  "settled_waves": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}
