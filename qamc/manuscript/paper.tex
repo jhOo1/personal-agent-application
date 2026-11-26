@@ -97,6 +97,14 @@ The comparison to RP alone has 280 common tasks and 1,504 positions (970 vs.\ 84
 
 A study holding the strategy predictions, policy and Actor fixed compared whole-history activation with giving the Actor only original entries predicted B/C. The two exposure conditions tie at 41/71 Match and the narrower arm increases OPB from 12 to 16. In an actual music-lesson recommendation, the narrow arm sees the relevant music preference but extends it from choosing a class to the route and relaxation routine. The Judge's rationale does not attribute misuse to the excluded entries. With one draw per condition this identifies a plausible route for failure, without isolating a causal effect for that case.
 
+\subsection{Activation controls on RPEval}
+
+\paragraph{Equal-rate routing.}
+On the 216 originally cached tasks with both endpoints, IPE-C activates history for 100 tasks and achieves 765/1,142 Match. The mean over 10,000 random assignments that activate the same number is 672.3. Preserving activation counts within groups of exactly identical task-only requests gives 674.9. On the 177 tasks whose assignments can vary within those groups, the measured policy reaches 653/941 versus a reference mean of 562.9. This measures the benefit of which saved endpoints are chosen in the development panel, conditional on the two available drafts. These are simulated reference distributions.
+
+\paragraph{Second model backbone.}
+On the 22 common tasks of a 24-task exposed panel (115 positions), IPE-C, task-only, and full-history Match are 80, 71, and 61 after changing both estimators and the Actor to GPT-4.1 under the same prompts. The archived Qwen comparison on exactly these tasks is 70, 61, and 59. Both use GPT-4.1 scoring, leaving possible same-model judge preference. Five otherwise complete rank outputs needed a separately audited whitespace-only recovery. The stricter 17-task analysis yields the same ordering (60, 53, and 45 of 88). On B-only cases, GPT-4.1 IPE-C ties task-only and trails full history. Both backbones show an aggregate switching gain and a limitation on realizing soft preferences.
+
 \subsection{PersistBench improves under adapted scoring}
 
 \begin{table}[t]
@@ -157,5 +165,6 @@ The experiments use exposed development data. PersistBench includes previously f
 
 A fixed-memory assistant can benefit from deciding when historical preferences should enter the generation path. In these development comparisons, task-level activation captures complementary benefits of the two fixed endpoints: avoiding irrelevant history and preserving useful constraints on tasks where it matters. Additional end-to-end controls show that passing relevant memory to the generator leaves an unresolved execution problem. Benchmark evaluation of these systems needs measures of both decisions and case-level verification of actual actions.
 
+\clearpage
 \bibliography{references}
 \end{document}

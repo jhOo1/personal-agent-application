@@ -1,12 +1,13 @@
 # QAMC paper working draft
 
-The [four-page PDF](paper.pdf) uses the official ACL style in preprint mode. The author field is a working-draft placeholder. [Editable source](paper.tex) · [References](references.bib)
+The [working PDF](paper.pdf) uses the official ACL style in preprint mode. The author field is a working-draft placeholder. [Editable source](paper.tex) · [References](references.bib)
 
 The manuscript keeps the three benchmarks on separate scoring protocols. Its tables are from matched development comparisons. The current PersistBench repeat deployment and author-score bridge are separate tracks. No unfinished experiment contributes a result to this draft.
 
 | Evidence | Authoritative project report |
 |---|---|
 | RPEval released roster, matched external pipelines and both fixed answer paths | [Common comparison](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/COMMON_COMPARISON_CLOSURE.md) · [Exact three-path aggregation](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_two_endpoint_completion_v1/READOUT.md) |
+| RPEval equal-rate controls and second backbone | [Equal-rate comparisons](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_rate_matched_controls_v1/READOUT.md) · [GPT-4.1 matched subset](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_second_backbone_v1/READOUT.md) |
 | RPEval explicit/implicit inputs and original memories | [Release identity and formats](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/RPE_RELEASE_IDENTITY_AND_FORMAT.md) |
 | PersistBench comparisons, 49-pair allocation and caveats | [Selected GEPA comparison](../implementation/reports/qamc_contextual_match_v2_20261112/persist_selected_gepa_completion_v1/READOUT.md) |
 | BenchPreS published-control adaptation and renderer comparison | [Raw/Selectivity/Gate](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/BENCH_RAW_COMMON_BRIDGE.md) · [Matched message generation](../implementation/reports/qamc_contextual_match_v2_20261112/bench_speech_act_renderer_v1/READOUT.md) |
@@ -16,7 +17,7 @@ See the [extended research draft](../implementation/reports/qamc_contextual_matc
 
 ## Verify table values
 
-Run `python3 check_evidence.py` in this directory. It checks the four main numeric tables against three independent public aggregate reports. It does not read private case traces or dispatch any requests.
+Run `python3 check_evidence.py` in this directory. It checks the four main numeric tables against three public aggregate reports. It does not read private case traces or dispatch any requests.
 
 ## Build
 
