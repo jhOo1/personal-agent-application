@@ -14,6 +14,10 @@ The manuscript keeps the three benchmarks on separate scoring protocols. Its tab
 
 See the [extended research draft](../implementation/reports/qamc_contextual_match_v2_20261112/paper_evidence_handoff_v1/CONDITIONAL_MEMORY_MANUSCRIPT_DRAFT.md) for additional ablations, paired denominators and evidence links. Private benchmark traces, sealed data and service credentials are outside this folder.
 
+## Verify table values
+
+Run `python3 check_evidence.py` in this directory. It checks the four main numeric tables against three independent public aggregate reports. It does not read private case traces or dispatch any requests.
+
 ## Build
 
 Run from this directory. Use a TeX Live installation with `latexmk`, pdfLaTeX, BibTeX, the common ACL dependencies and Times/Helvetica fonts. The build runs in an isolated directory and requires no tokens or benchmark data.
