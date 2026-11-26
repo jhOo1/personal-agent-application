@@ -1,0 +1,30 @@
+{
+  "allocated_actor_positions": 288,
+  "cloud_cap": 1911,
+  "current_service_actor_positions": 273,
+  "exact_prior_t1_draws_other_service": 2,
+  "gate_wire_coverage": 43,
+  "judge_alias": "qwen3.8-flash",
+  "missing_frozen_actor_positions": 15,
+  "new_cloud_calls": 0,
+  "plan_sha256": "04251f2021b8170fd39d4c14e3bab3ed3699c1ad96cb26c171515d0e631c3b70",
+  "profile_groups": 10,
+  "protocol_sampling_t1": true,
+  "tasks": 48,
+  "wave_profiles": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "wave_tasks": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ]
+}
