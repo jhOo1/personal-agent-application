@@ -2,7 +2,7 @@
 
 ## RPEval 共同 Actor 的发布权重 MemGate
 
-在冻结的 300 道多偏好开发题上比较发布版 MemGate 与 IPE-C、始终用史和始终不用史。保持原 RP Actor 和评分器，仅按发布阈值改变它实际看到的原文与对应已有策略。预检核实 295 道完整合同，136 道直接复用冻结端点和评分，另有 2 份子集成稿可精确复用。上限为 157 个新增生成和 159 个评分，本条为冻结协议和预检，最终分数待结算。[预检与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/PREFLIGHT.md)
+在冻结的 300 道多偏好开发题上比较发布版 MemGate 与 IPE-C、始终用史和始终不用史。保持原 RP Actor 和评分器，仅按发布阈值改变它实际看到的原文与对应已有策略。预检核实 295 道完整合同，136 道直接复用冻结端点和评分，另有 2 份子集成稿可精确复用。上限为 157 个新增生成和 159 个评分，本条为冻结协议和预检，最终分数待结算。[预检与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/PREFLIGHT.md) · [原发布编码器的中文覆盖](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/ENCODER_COVERAGE.md)
 
 ## RPEval 单偏好的外部对照
 

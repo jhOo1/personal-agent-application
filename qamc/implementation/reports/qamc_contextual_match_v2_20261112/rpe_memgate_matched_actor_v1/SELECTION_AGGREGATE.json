@@ -1,0 +1,41 @@
+{
+  "exposure": {
+    "by_author_position": {
+      "A": {
+        "verified": 1258,
+        "visible": 998
+      },
+      "B": {
+        "verified": 155,
+        "visible": 122
+      },
+      "C": {
+        "verified": 159,
+        "visible": 128
+      }
+    },
+    "by_stratum": {
+      "ALL_A": {
+        "EMPTY": 5,
+        "FULL": 61,
+        "SUBSET": 54,
+        "allocated_positions": 528,
+        "allocated_tasks": 120
+      },
+      "CONTAINS_C": {
+        "FULL": 49,
+        "SUBSET": 72,
+        "allocated_positions": 766,
+        "allocated_tasks": 126,
+        "missing_contract": 5
+      },
+      "ONLY_B": {
+        "EMPTY": 2,
+        "FULL": 19,
+        "SUBSET": 33,
+        "allocated_positions": 312,
+        "allocated_tasks": 54
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "coverage": {
+    "omitted_sources": {
+      "majority_unknown_visible": 324,
+      "mostly_han": 324,
+      "raw_tokens": 109479,
+      "texts": 324,
+      "texts_any_unknown": 324,
+      "texts_truncated": 236,
+      "unknown_visible_tokens": 42217,
+      "visible_tokens": 64078
+    },
+    "queries": {
+      "majority_unknown_visible": 281,
+      "mostly_han": 295,
+      "raw_tokens": 9514,
+      "texts": 295,
+      "texts_any_unknown": 295,
+      "texts_truncated": 0,
+      "unknown_visible_tokens": 5951,
+      "visible_tokens": 9514
+    },
+    "retained_sources": {
+      "majority_unknown_visible": 1247,
+      "mostly_han": 1247,
+      "raw_tokens": 274734,
+      "texts": 1248,
+      "texts_any_unknown": 1248,
+      "texts_truncated": 547,
+      "unknown_visible_tokens": 114381,
+      "visible_tokens": 172502
+    }
+  },
+  "model_max_input_tokens": 256,
+  "tokenizer_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "vocab_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+}
