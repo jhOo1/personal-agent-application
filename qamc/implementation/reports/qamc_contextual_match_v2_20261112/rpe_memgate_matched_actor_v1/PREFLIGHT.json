@@ -1,0 +1,35 @@
+{
+  "archive_hits_by_status": {
+    "OK": 2
+  },
+  "cloud_requests": 0,
+  "development_journals": 1336,
+  "distinct_unmatched_actor_wires": 157,
+  "known_endpoint_outcome": {
+    "FIXED_EMPTY": 7,
+    "FIXED_FULL": 129
+  },
+  "missing_contract": 5,
+  "pins": {
+    "endpoint_receipts_sha256": "01d1e516ecb66c880d2f29813c547475bf11bb5e4b02f3844faa8fdaef551aab",
+    "journal_receipts_sha256": "a911d07ea0258f76e62fb73f0eb4b028590c61e862f7c4b1ba6616957db3f517",
+    "manifest_sha256": "42159e280c415f3a98d35e9bb20649d9fc52d3591ae94079d36d881d70b46484",
+    "protocol_sha256": "09d046a3617609f2bb040696becfac721a986293d4ef6bca311778725374fefc",
+    "released_artifacts": {
+      "Memgate.pt": "cbb33abf27caf2d053d7e1f6d86e2a1b8c6292b840a63a3605fad193b0f41b5b",
+      "big_module.py": "10c4a33e98f19ea1a35fea72d97a5112242f6d567c6698783f46a77192179f1f",
+      "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db"
+    },
+    "selection_sha256": "84fb81c88564f2237e3eff61b5c6f94a97dfb65a54f0d59226af05210c8160fb",
+    "source_sha256": "5f0cb7ea34165f3a4aa888a54e59937e0c0d94f53f94b34e59f2a292a6ea7083",
+    "wires_sha256": "4390a1a1f6e7ed57a876131fec7bb445a897a69e724f48c6ee0da5e46d584316"
+  },
+  "planned": 300,
+  "selected_shape": {
+    "EMPTY": 7,
+    "FULL": 129,
+    "SUBSET": 159
+  },
+  "unmatched_allocations": 157,
+  "verified": 295
+}

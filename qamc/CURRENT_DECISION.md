@@ -1,10 +1,14 @@
 # QAMC 当前判断与下一次机制对照
 
+## RPEval 共同 Actor 的发布权重 MemGate
+
+在冻结的 300 道多偏好开发题上比较发布版 MemGate 与 IPE-C、始终用史和始终不用史。保持原 RP Actor 和评分器，仅按发布阈值改变它实际看到的原文与对应已有策略。预检核实 295 道完整合同，136 道直接复用冻结端点和评分，另有 2 份子集成稿可精确复用。上限为 157 个新增生成和 159 个评分，本条为冻结协议和预检，最终分数待结算。[预检与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/PREFLIGHT.md)
+
 ## RPEval 单偏好的外部对照
 
 24 道已曝光单偏好题中，22 道同题有效，IPE-C 15/22，RP 17/22，Des2Gen 与 MemAdapter 各 18/22。与空史同题的 21 道为 14/21 对 10/21。两道输 RP 的作者 C 均被 IPE 预测为 B 并走空史。多偏好旧账本中的 138 个作者 B 且 IPE 预测 B 的位置，68 个隐藏，70 个因另一条预测 C 进入 Actor。当前支持在多偏好场景继续研究启用策略，并保留单偏好保护缺口。单偏好评分是历史 Qwen 详细模板适配。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/READOUT.md)
 
-故意将作者分数只用于事后上界分析。两份存稿的最佳可能组合仅 16/21；Des2Gen 和 MemAdapter 同题各 17/21。固定的两估计器 B 触发追回了两道 C，却只追平始终用史，并且已在宽多偏好面板上造成明显退步。[旧规则同题回放与上界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/PRIOR_ROUTER_READOUT.md)
+作者分数仅用于事后上界分析。两份存稿的最佳可能组合仅 16/21；Des2Gen 和 MemAdapter 同题各 17/21。固定的两估计器 B 触发追回了两道 C，却只追平始终用史，并且已在宽多偏好面板上造成明显退步。[旧规则同题回放与上界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/PRIOR_ROUTER_READOUT.md)
 
 ## RPEval 冻结候选池资格
 
