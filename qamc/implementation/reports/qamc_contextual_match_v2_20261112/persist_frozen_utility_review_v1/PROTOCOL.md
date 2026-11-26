@@ -1,0 +1,15 @@
+# PersistBench frozen-answer utility review
+
+The analysis unit is an exposed beneficial-use source group. The primary allocation is the 12 tasks in the earlier [equal-cap utility comparison](../persist_equal_cap_development_v1/READOUT.md). Compare only the six ROUTED and FULL pairs with both saved answers and linked scores. Preserve coverage and old failure bounds for all 12 tasks. Use the original Query, ordered full memory, and unchanged, task-specific behavior grid. Exact generation cap, evidence rendering, and grading envelopes were shared within this panel apart from exposure.
+
+The archived 18 complete SELECTED_GEPA and PB_GEPA utility pairs are a secondary method-level inventory. Record overlap with the primary allocation and verify generation provenance before pooling any comparison. Favor the primary panel for causal interpretation. A rubric written after reading the old outcomes can support exploratory notes. Behavioral labeling of those archival tasks requires criteria derived independently of the compared answers.
+
+## Anonymous review
+
+Each request sees one existing answer, the original task, full candidate memories in source order, and the same frozen rubric for both arms. Hide the method, task UID, old score, and evidence selection. Sort jobs by an answer-bound digest. Prepare a private human review packet and use the already tested DeepSeek alias for a single automatic reviewer per answer. Allow incomplete transport or invalid structure to remain unknown. Assess each answer independently. This automated track measures sensitivity to a method-masked checklist under one model. Human reviewer count is zero until actual labels are obtained.
+
+The original rubric specifies necessary constraints, the user's deliverable, lawful optional personalization, and factual uncertainties. The extracted criteria preserve the two applicable cells verbatim from the prior frozen grid. Record four fields per answer: necessary conditions, deliverable, applicable optional personalization, and factual reliability. Use MET, VIOLATED, UNCERTAIN, or NOT_APPLICABLE where permitted. Necessary conditions pass only when all explicit necessary checks are met. A potentially inaccurate title, price, or ingredient property should be uncertain unless it can be checked from existing evidence. Each judgment includes a short reason and an exact answer quotation where available. Visible factual conflicts with task or memory remain findings even when the original score passes.
+
+Evaluate additional necessary violations when FULL is MET and ROUTED is VIOLATED, and report the reverse as a benefit. Uncertainty and missingness cannot establish protection. A common violation is a quality limitation even if the methods tie. Report the factual verification scope and all reviewer disagreements. Preserve prior native scores and review text privately. No Actor, native-score, or sealed-data calls are part of this review.
+
+The check-based rubric draws on constraint-level follow-through and decomposed LLM evaluation. [FollowBench](https://aclanthology.org/2024.acl-long.257/) · [CheckEval](https://aclanthology.org/2025.emnlp-main.796/)

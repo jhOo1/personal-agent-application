@@ -1,0 +1,9 @@
+# Existing PersistBench utility evidence by generation contract
+
+The historical frozen-answer inventory contains 18 scored SELECTED_GEPA and PB_GEPA pairs from 18 recorded source groups. All 12 source groups in the current equal-cap allocation also occur in that archive, including all six currently complete pairs. The archive contributes six additional groups. The exact original task and full candidate texts match their archived input hashes.
+
+All 18 historical SELECTED_GEPA requests use an 8,192-token cap and all 18 PB_GEPA requests use 4,096. Restoring full exposure and the old cap to the current GEPA request reproduces each PB_GEPA wire exactly. The 18 selected requests have the same non-message Actor settings and current task message as the current selected method. For 15 pairs, the historical route and selector request manifests match the current request constructors. For the other three, the factorial plan and actual generation hash bind the selected answer to its frozen evidence. These provenance facts support an archive method-level comparison.
+
+The verified strict BU scores are SELECTED_GEPA **18/18** and PB_GEPA **17/18**, with 17 shared passes. The 18-versus-18 result on the larger original comparison uses the other control, PB_RUBRIC. Keep that comparison distinct. The 18 historical pairs and the six current pairs provide 18 groups in total, with different settings across evaluations.
+
+This inventory makes zero calls. It exports counts only. The historical pairs outside the original behavior grid require task criteria derived from the original input before access to those archived responses. The six equal-cap pairs have an existing criterion grid. [Machine-readable verification](ARCHIVE_INVENTORY.json) · [Original method comparisons](../persist_selected_gepa_completion_v1/CONTROLS.json) · [Review protocol](PROTOCOL.md)
