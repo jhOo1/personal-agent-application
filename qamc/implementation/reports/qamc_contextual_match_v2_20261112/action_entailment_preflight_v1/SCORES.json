@@ -1,0 +1,839 @@
+{
+  "model": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "revision": "8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c",
+  "threshold": 0.7,
+  "rows": [
+    {
+      "case": "child_outing",
+      "expected": "recommended",
+      "answer_sha256": "3c36e95797562765216b51755a81c9cee748c1975d38642a51ded5efd6329f7c",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "3c36e95797562765216b51755a81c9cee748c1975d38642a51ded5efd6329f7c",
+          "tokens_before_cap": [
+            1036,
+            1040
+          ],
+          "scores": [
+            {
+              "entailment": 0.99853515625,
+              "neutral": 0.0013523101806640625,
+              "contradiction": 9.465217590332031e-05
+            },
+            {
+              "entailment": 0.0083465576171875,
+              "neutral": 0.017852783203125,
+              "contradiction": 0.9736328125
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.99853515625,
+        0.0083465576171875
+      ],
+      "decision": "recommended"
+    },
+    {
+      "case": "child_outing",
+      "expected": "recommended",
+      "answer_sha256": "3c36e95797562765216b51755a81c9cee748c1975d38642a51ded5efd6329f7c",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "bb0d161e0cbc2d7e715b6dc135918b441741236b6b9f5822a1309c8d0f27d193",
+          "tokens_before_cap": [
+            393,
+            397
+          ],
+          "scores": [
+            {
+              "entailment": 0.004302978515625,
+              "neutral": 0.99462890625,
+              "contradiction": 0.0008792877197265625
+            },
+            {
+              "entailment": 0.003131866455078125,
+              "neutral": 0.935546875,
+              "contradiction": 0.06146240234375
+            }
+          ]
+        },
+        {
+          "premise_sha256": "04ec6b254daf30d343e1f612b6937b815bc09bf07ceb3d21fbe5e65b901dd988",
+          "tokens_before_cap": [
+            393,
+            397
+          ],
+          "scores": [
+            {
+              "entailment": 0.99365234375,
+              "neutral": 0.00615692138671875,
+              "contradiction": 0.00030994415283203125
+            },
+            {
+              "entailment": 0.01142120361328125,
+              "neutral": 0.10205078125,
+              "contradiction": 0.88671875
+            }
+          ]
+        },
+        {
+          "premise_sha256": "0b59ba5a384b0376ba5f05d1e7f7e741f260f82a78b66720f07dcacdb836e68f",
+          "tokens_before_cap": [
+            274,
+            278
+          ],
+          "scores": [
+            {
+              "entailment": 0.99755859375,
+              "neutral": 0.002498626708984375,
+              "contradiction": 9.292364120483398e-05
+            },
+            {
+              "entailment": 0.0036449432373046875,
+              "neutral": 0.92724609375,
+              "contradiction": 0.069091796875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.99755859375,
+        0.01142120361328125
+      ],
+      "decision": "recommended"
+    },
+    {
+      "case": "child_outing",
+      "expected": "excluded",
+      "answer_sha256": "b6856dcc91095847670c3aa5f4e99ef4439d515085893986a5bc074de2fe4180",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "b6856dcc91095847670c3aa5f4e99ef4439d515085893986a5bc074de2fe4180",
+          "tokens_before_cap": [
+            542,
+            546
+          ],
+          "scores": [
+            {
+              "entailment": 0.55908203125,
+              "neutral": 0.037261962890625,
+              "contradiction": 0.403564453125
+            },
+            {
+              "entailment": 0.994140625,
+              "neutral": 0.004611968994140625,
+              "contradiction": 0.0012149810791015625
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.55908203125,
+        0.994140625
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "child_outing",
+      "expected": "excluded",
+      "answer_sha256": "b6856dcc91095847670c3aa5f4e99ef4439d515085893986a5bc074de2fe4180",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "dceb7fc6224b20097aa1180a1fa5d4ae170d482094a8e41fb701eff2945bf357",
+          "tokens_before_cap": [
+            388,
+            392
+          ],
+          "scores": [
+            {
+              "entailment": 0.0008349418640136719,
+              "neutral": 0.0014591217041015625,
+              "contradiction": 0.99755859375
+            },
+            {
+              "entailment": 0.94873046875,
+              "neutral": 0.050994873046875,
+              "contradiction": 0.0003705024719238281
+            }
+          ]
+        },
+        {
+          "premise_sha256": "340d9aa6dc94065471fe33ac26657a95c713075dfeb93087d465f619d40d7aa3",
+          "tokens_before_cap": [
+            166,
+            170
+          ],
+          "scores": [
+            {
+              "entailment": 0.0004305839538574219,
+              "neutral": 0.98828125,
+              "contradiction": 0.011444091796875
+            },
+            {
+              "entailment": 0.00046062469482421875,
+              "neutral": 0.88671875,
+              "contradiction": 0.113037109375
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.0008349418640136719,
+        0.94873046875
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "seafood_takeout",
+      "expected": "recommended",
+      "answer_sha256": "ce627c107ba8f27a5e1831a932cdf3ce79b95ede7fecfde1af4ab3e85deb4f7b",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "ce627c107ba8f27a5e1831a932cdf3ce79b95ede7fecfde1af4ab3e85deb4f7b",
+          "tokens_before_cap": [
+            1039,
+            1044
+          ],
+          "scores": [
+            {
+              "entailment": 0.00897216796875,
+              "neutral": 0.990234375,
+              "contradiction": 0.0005674362182617188
+            },
+            {
+              "entailment": 0.86083984375,
+              "neutral": 0.1380615234375,
+              "contradiction": 0.0010709762573242188
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.00897216796875,
+        0.86083984375
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "seafood_takeout",
+      "expected": "recommended",
+      "answer_sha256": "ce627c107ba8f27a5e1831a932cdf3ce79b95ede7fecfde1af4ab3e85deb4f7b",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "75d9c38fd6fbac78f2916adf53ac2fe6a3fd061190ac0d78fc988ed4ccce8b22",
+          "tokens_before_cap": [
+            395,
+            400
+          ],
+          "scores": [
+            {
+              "entailment": 0.005344390869140625,
+              "neutral": 0.99267578125,
+              "contradiction": 0.0020275115966796875
+            },
+            {
+              "entailment": 0.9873046875,
+              "neutral": 0.0093994140625,
+              "contradiction": 0.0030651092529296875
+            }
+          ]
+        },
+        {
+          "premise_sha256": "85dd851c68603f379550de6923f5c6e38f84b667896cb556e0e60c9279810f02",
+          "tokens_before_cap": [
+            391,
+            396
+          ],
+          "scores": [
+            {
+              "entailment": 0.01806640625,
+              "neutral": 0.97998046875,
+              "contradiction": 0.0019626617431640625
+            },
+            {
+              "entailment": 0.185791015625,
+              "neutral": 0.5830078125,
+              "contradiction": 0.2314453125
+            }
+          ]
+        },
+        {
+          "premise_sha256": "b38a7a4148370589eda378a3d755479374149c57c271f2f7b6aaee256922ea0b",
+          "tokens_before_cap": [
+            281,
+            286
+          ],
+          "scores": [
+            {
+              "entailment": 0.001064300537109375,
+              "neutral": 0.99853515625,
+              "contradiction": 0.00060272216796875
+            },
+            {
+              "entailment": 0.001132965087890625,
+              "neutral": 0.004810333251953125,
+              "contradiction": 0.994140625
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.01806640625,
+        0.9873046875
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "seafood_takeout",
+      "expected": "excluded",
+      "answer_sha256": "54d8ff4c971f35f61443d23fcfcd181359227b9d2aa04d213544595bf36ba784",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "54d8ff4c971f35f61443d23fcfcd181359227b9d2aa04d213544595bf36ba784",
+          "tokens_before_cap": [
+            914,
+            919
+          ],
+          "scores": [
+            {
+              "entailment": 0.004993438720703125,
+              "neutral": 0.99462890625,
+              "contradiction": 0.0005097389221191406
+            },
+            {
+              "entailment": 0.11859130859375,
+              "neutral": 0.87255859375,
+              "contradiction": 0.008636474609375
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.004993438720703125,
+        0.11859130859375
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "seafood_takeout",
+      "expected": "excluded",
+      "answer_sha256": "54d8ff4c971f35f61443d23fcfcd181359227b9d2aa04d213544595bf36ba784",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "c1c5f5c081a6664fbe27ebbc32847223c84f8e423ac9b201010351f764711223",
+          "tokens_before_cap": [
+            390,
+            395
+          ],
+          "scores": [
+            {
+              "entailment": 0.0008687973022460938,
+              "neutral": 0.99853515625,
+              "contradiction": 0.00044035911560058594
+            },
+            {
+              "entailment": 0.0888671875,
+              "neutral": 0.90869140625,
+              "contradiction": 0.0021877288818359375
+            }
+          ]
+        },
+        {
+          "premise_sha256": "135285ddd8301a9056fcc7b1d7ace56a7d86f8280be08dbaa1478fbd6c073d08",
+          "tokens_before_cap": [
+            393,
+            398
+          ],
+          "scores": [
+            {
+              "entailment": 0.0005235671997070312,
+              "neutral": 0.998046875,
+              "contradiction": 0.0014772415161132812
+            },
+            {
+              "entailment": 0.7861328125,
+              "neutral": 0.1641845703125,
+              "contradiction": 0.04986572265625
+            }
+          ]
+        },
+        {
+          "premise_sha256": "946147c52e7a03490e1668962fc2f5087088edd7829eece9eac9a3d44129a5ef",
+          "tokens_before_cap": [
+            159,
+            164
+          ],
+          "scores": [
+            {
+              "entailment": 0.00029659271240234375,
+              "neutral": 0.998046875,
+              "contradiction": 0.0017404556274414062
+            },
+            {
+              "entailment": 0.98291015625,
+              "neutral": 0.003376007080078125,
+              "contradiction": 0.013885498046875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.0008687973022460938,
+        0.98291015625
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "group_lunch",
+      "expected": "recommended",
+      "answer_sha256": "3f08e5ffd2a123a730de8ea4b21f8df2e951858fa11f64dc2f3d6ab0e2a6b0bb",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "3f08e5ffd2a123a730de8ea4b21f8df2e951858fa11f64dc2f3d6ab0e2a6b0bb",
+          "tokens_before_cap": [
+            855,
+            856
+          ],
+          "scores": [
+            {
+              "entailment": 0.1002197265625,
+              "neutral": 0.66845703125,
+              "contradiction": 0.231201171875
+            },
+            {
+              "entailment": 0.125,
+              "neutral": 0.74951171875,
+              "contradiction": 0.1253662109375
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.1002197265625,
+        0.125
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "group_lunch",
+      "expected": "recommended",
+      "answer_sha256": "3f08e5ffd2a123a730de8ea4b21f8df2e951858fa11f64dc2f3d6ab0e2a6b0bb",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "cbf6437d276c62c7ae4c06f449815e8607bed372115107729a0dda1b76ea4f7c",
+          "tokens_before_cap": [
+            397,
+            398
+          ],
+          "scores": [
+            {
+              "entailment": 0.06109619140625,
+              "neutral": 0.84521484375,
+              "contradiction": 0.09368896484375
+            },
+            {
+              "entailment": 0.1771240234375,
+              "neutral": 0.517578125,
+              "contradiction": 0.30517578125
+            }
+          ]
+        },
+        {
+          "premise_sha256": "b28d52de85e0e9d8c1bae0cb6a22dd80c6c68cde1d55190abbf209b3a289aec7",
+          "tokens_before_cap": [
+            395,
+            396
+          ],
+          "scores": [
+            {
+              "entailment": 0.04156494140625,
+              "neutral": 0.76611328125,
+              "contradiction": 0.1925048828125
+            },
+            {
+              "entailment": 0.03973388671875,
+              "neutral": 0.568359375,
+              "contradiction": 0.39208984375
+            }
+          ]
+        },
+        {
+          "premise_sha256": "408f25cb0b55364790ec6c23410fc9c6019aaa5e118518e743cf652854c810de",
+          "tokens_before_cap": [
+            97,
+            98
+          ],
+          "scores": [
+            {
+              "entailment": 0.0008802413940429688,
+              "neutral": 0.982421875,
+              "contradiction": 0.0165252685546875
+            },
+            {
+              "entailment": 0.0055694580078125,
+              "neutral": 0.98291015625,
+              "contradiction": 0.01175689697265625
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.06109619140625,
+        0.1771240234375
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "group_lunch",
+      "expected": "excluded",
+      "answer_sha256": "51a790b28e7e7726731a47cdedafe5454cdd54baed87e05ecc565cc6bf63629b",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "51a790b28e7e7726731a47cdedafe5454cdd54baed87e05ecc565cc6bf63629b",
+          "tokens_before_cap": [
+            667,
+            668
+          ],
+          "scores": [
+            {
+              "entailment": 0.006107330322265625,
+              "neutral": 0.12548828125,
+              "contradiction": 0.8681640625
+            },
+            {
+              "entailment": 0.7099609375,
+              "neutral": 0.1990966796875,
+              "contradiction": 0.09112548828125
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.006107330322265625,
+        0.7099609375
+      ],
+      "decision": "excluded"
+    },
+    {
+      "case": "group_lunch",
+      "expected": "excluded",
+      "answer_sha256": "51a790b28e7e7726731a47cdedafe5454cdd54baed87e05ecc565cc6bf63629b",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "15f2bd39d69eeb775a171079d4c31176bdba64fdac485ec27655c865163dff93",
+          "tokens_before_cap": [
+            395,
+            396
+          ],
+          "scores": [
+            {
+              "entailment": 0.0027370452880859375,
+              "neutral": 0.62255859375,
+              "contradiction": 0.375
+            },
+            {
+              "entailment": 0.419189453125,
+              "neutral": 0.529296875,
+              "contradiction": 0.051422119140625
+            }
+          ]
+        },
+        {
+          "premise_sha256": "3a750885c87a3cf0cfe56b2d0ccea622be44116b18a47e746632886c72a4b92d",
+          "tokens_before_cap": [
+            289,
+            290
+          ],
+          "scores": [
+            {
+              "entailment": 0.0013580322265625,
+              "neutral": 0.50634765625,
+              "contradiction": 0.492431640625
+            },
+            {
+              "entailment": 0.061279296875,
+              "neutral": 0.8232421875,
+              "contradiction": 0.1156005859375
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.0027370452880859375,
+        0.419189453125
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "book_club",
+      "expected": "recommended",
+      "answer_sha256": "797b9d8d6b5a04087960fcfddde1332aacbf8d1b8722cd4e28b82c17bfcd857e",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "797b9d8d6b5a04087960fcfddde1332aacbf8d1b8722cd4e28b82c17bfcd857e",
+          "tokens_before_cap": [
+            126,
+            127
+          ],
+          "scores": [
+            {
+              "entailment": 0.00464630126953125,
+              "neutral": 0.09051513671875,
+              "contradiction": 0.90478515625
+            },
+            {
+              "entailment": 0.08074951171875,
+              "neutral": 0.88232421875,
+              "contradiction": 0.03680419921875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.00464630126953125,
+        0.08074951171875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "book_club",
+      "expected": "recommended",
+      "answer_sha256": "797b9d8d6b5a04087960fcfddde1332aacbf8d1b8722cd4e28b82c17bfcd857e",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "797b9d8d6b5a04087960fcfddde1332aacbf8d1b8722cd4e28b82c17bfcd857e",
+          "tokens_before_cap": [
+            126,
+            127
+          ],
+          "scores": [
+            {
+              "entailment": 0.00464630126953125,
+              "neutral": 0.09051513671875,
+              "contradiction": 0.90478515625
+            },
+            {
+              "entailment": 0.08074951171875,
+              "neutral": 0.88232421875,
+              "contradiction": 0.03680419921875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.00464630126953125,
+        0.08074951171875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "book_club",
+      "expected": "uncommitted",
+      "answer_sha256": "d001dc127ea790e5ab609bf35539ea3c2ba11b15cb6799367f3359fb8fb6e9f7",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "d001dc127ea790e5ab609bf35539ea3c2ba11b15cb6799367f3359fb8fb6e9f7",
+          "tokens_before_cap": [
+            113,
+            114
+          ],
+          "scores": [
+            {
+              "entailment": 0.00403594970703125,
+              "neutral": 0.7568359375,
+              "contradiction": 0.239013671875
+            },
+            {
+              "entailment": 0.025848388671875,
+              "neutral": 0.91259765625,
+              "contradiction": 0.0614013671875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.00403594970703125,
+        0.025848388671875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "book_club",
+      "expected": "uncommitted",
+      "answer_sha256": "d001dc127ea790e5ab609bf35539ea3c2ba11b15cb6799367f3359fb8fb6e9f7",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "d001dc127ea790e5ab609bf35539ea3c2ba11b15cb6799367f3359fb8fb6e9f7",
+          "tokens_before_cap": [
+            113,
+            114
+          ],
+          "scores": [
+            {
+              "entailment": 0.00403594970703125,
+              "neutral": 0.7568359375,
+              "contradiction": 0.239013671875
+            },
+            {
+              "entailment": 0.025848388671875,
+              "neutral": 0.91259765625,
+              "contradiction": 0.0614013671875
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.00403594970703125,
+        0.025848388671875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "formal_signature",
+      "expected": "recommended",
+      "answer_sha256": "64a9815c56ab1d9d129e9ac57fd08ce71f0be0ed866ba8cc97fbf4d62cb29d9c",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "64a9815c56ab1d9d129e9ac57fd08ce71f0be0ed866ba8cc97fbf4d62cb29d9c",
+          "tokens_before_cap": [
+            129,
+            132
+          ],
+          "scores": [
+            {
+              "entailment": 0.4140625,
+              "neutral": 0.56982421875,
+              "contradiction": 0.016143798828125
+            },
+            {
+              "entailment": 0.01299285888671875,
+              "neutral": 0.9794921875,
+              "contradiction": 0.007648468017578125
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.4140625,
+        0.01299285888671875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "formal_signature",
+      "expected": "recommended",
+      "answer_sha256": "64a9815c56ab1d9d129e9ac57fd08ce71f0be0ed866ba8cc97fbf4d62cb29d9c",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "64a9815c56ab1d9d129e9ac57fd08ce71f0be0ed866ba8cc97fbf4d62cb29d9c",
+          "tokens_before_cap": [
+            129,
+            132
+          ],
+          "scores": [
+            {
+              "entailment": 0.4140625,
+              "neutral": 0.56982421875,
+              "contradiction": 0.016143798828125
+            },
+            {
+              "entailment": 0.01299285888671875,
+              "neutral": 0.9794921875,
+              "contradiction": 0.007648468017578125
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.4140625,
+        0.01299285888671875
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "formal_signature",
+      "expected": "excluded",
+      "answer_sha256": "62e4d12b74c34906b4adcb1eaadb23befc92306f3499e33f33f22b469513f4f9",
+      "view": "head",
+      "windows": [
+        {
+          "premise_sha256": "62e4d12b74c34906b4adcb1eaadb23befc92306f3499e33f33f22b469513f4f9",
+          "tokens_before_cap": [
+            167,
+            170
+          ],
+          "scores": [
+            {
+              "entailment": 0.004791259765625,
+              "neutral": 0.96240234375,
+              "contradiction": 0.03265380859375
+            },
+            {
+              "entailment": 0.00284576416015625,
+              "neutral": 0.98974609375,
+              "contradiction": 0.007205963134765625
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.004791259765625,
+        0.00284576416015625
+      ],
+      "decision": "uncommitted"
+    },
+    {
+      "case": "formal_signature",
+      "expected": "excluded",
+      "answer_sha256": "62e4d12b74c34906b4adcb1eaadb23befc92306f3499e33f33f22b469513f4f9",
+      "view": "windows",
+      "windows": [
+        {
+          "premise_sha256": "62e4d12b74c34906b4adcb1eaadb23befc92306f3499e33f33f22b469513f4f9",
+          "tokens_before_cap": [
+            167,
+            170
+          ],
+          "scores": [
+            {
+              "entailment": 0.004791259765625,
+              "neutral": 0.96240234375,
+              "contradiction": 0.03265380859375
+            },
+            {
+              "entailment": 0.00284576416015625,
+              "neutral": 0.98974609375,
+              "contradiction": 0.007205963134765625
+            }
+          ]
+        }
+      ],
+      "entailment": [
+        0.004791259765625,
+        0.00284576416015625
+      ],
+      "decision": "uncommitted"
+    }
+  ],
+  "elapsed_seconds": 44.024,
+  "api_requests": 0
+}
