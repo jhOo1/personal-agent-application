@@ -39,17 +39,18 @@ BenchPreS checks inappropriate application (MR), appropriate application (AAR) a
 | Contains C, 110 | 672 | 408 | 306 | **410** |
 | Without known grading flags, 184 | 1,022 | **701** | 655 | 592 |
 
-IPE-C gains 129 matches over Always-Memory (+8.82 percentage points), with +133 on all A and −2 on each of the two applicable strata. Against Always-Task, gains come principally from C (+102), offset in part by 26 fewer all-A matches. Under the adapted rubric, aggregate OPB for IPE-C, Always-Task and Always-Memory is 247, 80 and 371, and aggregate UPB is 248, 515 and 227. Their aggregate FM is 51, 250 and 55. Separately, on 280 common tasks and 1,504 positions, IPE-C reaches 970 against RP's 841. The following common-panel comparison uses the same 214 tasks and 1,144 author positions for every method.
+IPE-C gains 129 matches over Always-Memory (+8.82 percentage points), with +133 on all A and −2 on each of the two applicable strata. Against Always-Task, gains come principally from C (+102), offset in part by 26 fewer all-A matches. Under the adapted rubric, aggregate OPB for IPE-C, Always-Task and Always-Memory is 247, 80 and 371, and aggregate UPB is 248, 515 and 227. Their aggregate FM is 51, 250 and 55. Separately, on 280 common tasks and 1,504 positions, IPE-C reaches 970 against RP's 841. Requiring valid scores for both fixed endpoints and all external comparators yields the following 211-task intersection with 1,124 positions.
 
-| Method | Match | All A / 426 | Only B / 193 | Contains C / 525 | OPB / UPB / FM |
+| Method | Match | All A / 426 | Only B / 185 | Contains C / 513 | OPB / UPB / FM |
 |---|---:|---:|---:|---:|---:|
-| IPE-C | **761** | **334** | **111** | 316 | 202 / 176 / 39 |
-| RP-Reasoner reconstruction | 653 | 228 | 107 | **318** | 300 / 163 / 42 |
-| Des2Gen reconstruction | 538 | 125 | 96 | 317 | 467 / 102 / 96 |
-| MemAdapter adaptation | 510 | 86 | 108 | 316 | 384 / 182 / 102 |
-| Strong Gate | 512 | 107 | 96 | 309 | 466 / 135 / 120 |
+| IPE-C | **751** | 334 | **106** | 311 | 198 / 171 / 38 |
+| Always-Task | 691 | **363** | 103 | 225 | 60 / 386 / 198 |
+| RP-Reasoner reconstruction | 643 | 228 | 102 | **313** | 296 / 158 / 41 |
+| Des2Gen reconstruction | 529 | 125 | 92 | 312 | 462 / 97 / 95 |
+| MemAdapter adaptation | 501 | 86 | 104 | 311 | 381 / 175 / 100 |
+| Strong Gate | 503 | 107 | 92 | 304 | 457 / 134 / 118 |
 
-IPE-C gains 108 positions over RP on this intersection, 106 on all-A tasks. Its only-B advantage of four positions reverses on the larger RP pairing. The methods share the adapted scoring contract. Their generation pipelines differ. [Five-method comparison](../native_residual_v1/COMMON_COMPARISON_CLOSURE.md)
+Relative to RP, 106 of the 108 gained positions come from all-A tasks. Relative to Always-Task, 86 positions are gained on tasks containing C, while all-A loses 29. The methods share the adapted scoring contract. Their generation pipelines differ. [Common-panel comparison and coverage](../native_residual_v1/COMMON_COMPARISON_CLOSURE.md)
 
 On 177 switchable tasks grouped by identical task-only requests, the observed 653/941 positions exceed the 562.9/941 mean under a simulated reassignment preserving the number of memory activations within each block. This is a sensitivity comparison on the development archive.
 

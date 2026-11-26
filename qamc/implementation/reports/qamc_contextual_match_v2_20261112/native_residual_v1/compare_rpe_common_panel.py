@@ -1,4 +1,5 @@
 """Compare archived methods on one exact strict-Match RPEval intersection."""
+import argparse
 from collections import Counter, defaultdict
 import json
 
@@ -6,9 +7,11 @@ from compare_ipe_c_external import METHODS, read
 
 BASE = "IPE_C"
 FIELDS = ("OPB", "UPB", "FM")
+TASK_ONLY_ROUTES = {"REUSE_ORIGINAL_TASK_ONLY_STATE", "REUSE_DRAFT", "NEW_DRAFT"}
 
 
-def summarize():
+def summarize(*, include_task_only=False):
+    methods = (BASE, *METHODS, "TASK_ONLY") if include_task_only else (BASE, *METHODS)
     routes = read("ipe_c_two_endpoint_completion_v1/RESULTS.json")["rows"]
     grades = defaultdict(dict)
     for row in read("rpeval_formal_multi_coverage_v1/RESULT_ROWS.json"):
@@ -33,7 +36,15 @@ def summarize():
             reasons["missing_labels"] += 1
             continue
         scores = {BASE: row["ipe_c"]["grade"] or {}, **grades.get(uid, {})}
-        missing = [m for m in (BASE, *METHODS) if not scores.get(m, {}).get("match")]
+        if include_task_only:
+            task = row["controls"]["TASK_ONLY"]
+            if row["old_route"] in TASK_ONLY_ROUTES and task["grade"] and scores[BASE]:
+                if not task["answer_sha256"] or task["answer_sha256"] != row["ipe_c"]["answer_sha256"]:
+                    raise ValueError(f"Task-only answer drift: {uid}")
+                if task["grade"] != scores[BASE]:
+                    raise ValueError(f"Task-only score drift: {uid}")
+            scores["TASK_ONLY"] = task["grade"] or {}
+        missing = [m for m in methods if not scores.get(m, {}).get("match")]
         if missing:
             reasons["missing_common_any_method"] += 1
             reasons.update(missing)
@@ -63,4 +74,7 @@ def summarize():
 
 
 if __name__ == "__main__":
-    print(json.dumps(summarize(), indent=2))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--include-task-only", action="store_true")
+    args = parser.parse_args()
+    print(json.dumps(summarize(include_task_only=args.include_task_only), indent=2))

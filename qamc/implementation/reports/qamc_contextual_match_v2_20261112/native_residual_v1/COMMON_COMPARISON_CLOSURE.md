@@ -20,6 +20,23 @@ The fixed published short Judge source did not request Match, returned none in 2
 
 Reproduce the new intersection with `python3 compare_rpe_common_panel.py` after restoring the saved `ipe_c_two_endpoint_completion_v1/RESULTS.json` and `rpeval_formal_multi_coverage_v1/RESULT_ROWS.json` from the original workspace. The release and scorer artifacts are under `author_protocol_ipe_c_v1/RELEASE_READOUT.md` and `rpeval_released_judge_bridge_v1/READOUT.md` in that workspace.
 
+## Adding the always-task endpoint on the same intersection
+
+Requiring a saved strict Match for Always-Task reduces the intersection from 214 to 211 tasks and from 1,144 to 1,124 positions. The three omitted tasks contain 20 positions, all on tasks with at least one applicable preference. The replay checks that valid archived task-only routes have the same exact answer hash and score as IPE-C on those routes. It reuses all outputs and scores, with zero new inference.
+
+| Method | Match / 1124 | All A / 426 | Only B / 185 | Contains C / 513 | OPB / UPB / FM |
+|---|---:|---:|---:|---:|---:|
+| IPE-C | **751** | 334 | **106** | 311 | 198 / 171 / 38 |
+| Always-Task | 691 | **363** | 103 | 225 | 60 / 386 / 198 |
+| RP-Reasoner reconstruction | 643 | 228 | 102 | **313** | 296 / 158 / 41 |
+| Des2Gen reconstruction | 529 | 125 | 92 | 312 | 462 / 97 / 95 |
+| MemAdapter adaptation | 501 | 86 | 104 | 311 | 381 / 175 / 100 |
+| Strong Gate | 503 | 107 | 92 | 304 | 457 / 134 / 118 |
+
+IPE-C exceeds Always-Task by 60 positions (+5.34 percentage points): +86 on tasks with C, +3 on B-only and −29 on all-A tasks. The per-task wins/losses/ties are 57/10/144. The summed within-group sign counts are 22/5/17. This is a stricter intersection of the same exposed cohort, so it supports common-panel comparability without adding independent confirmation. The local short scorer and native protocol caveats still apply.
+
+To reproduce the added row and its matching comparator totals, run the same script with `--include-task-only`. Running without that flag reproduces the earlier five-method comparison.
+
 ## BenchPreS and PersistBench
 
 | Benchmark and comparison | Strongest observed evidence in the project protocol | Remaining condition for a paper-protocol claim |
