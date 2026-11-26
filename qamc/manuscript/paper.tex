@@ -129,6 +129,9 @@ Table~\ref{tab:persist} gives the matched result, with five wins, one loss and 4
 \paragraph{Repeated deployment.}
 On an exposed subset, we reran the full pipeline three times per CD or SYC task, including the Router and Selector, and once per BU task. A task fails if any observed draw fails. Passing requires complete coverage. On 11 SYC tasks, SELECTED\_GEPA, PB\_RUBRIC, and full-history GEPA yielded 1, 8, and 6 observed failures with 4, 1, and 0 unresolved tasks. The candidate retains fewer SYC failures under every assignment of the missing outcomes. The eight CD and six BU tasks do not establish protection under the same criterion. The candidate uses an 8,192-token output cap, while both controls use 4,096, and scoring uses the GPT-4.1 adaptation. A distinct earlier 12-task equal-cap comparison gives 11/12 versus 9/12, with strict BU 4/4 for both. The older comparison overlaps the one-draw development archive and does not establish generalization.
 
+\paragraph{Utility with a fixed Actor contract.}
+On 12 exposed BU tasks, we fixed both the GEPA Actor and its 8,192-token cap. Routed selection, direct Grounding, full history, and empty history passed on 6, 10, 11, and 1 tasks, with 6, 2, 1, and 0 missing, respectively. Direct Grounding had 9--11 fewer failures than empty history under all assignments of missing outcomes. Routed and direct selection tied on five valid pairs, four of which shared the same answer. The observed contrast establishes a cost to always withholding history on this panel. The comparison between selection policies remains unresolved.
+
 \subsection{BenchPreS reveals a realization gap}
 
 \begin{table}[t]
