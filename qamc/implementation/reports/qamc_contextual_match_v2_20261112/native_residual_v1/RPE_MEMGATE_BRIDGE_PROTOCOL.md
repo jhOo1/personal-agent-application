@@ -1,0 +1,9 @@
+# RPEval fixed-answer bridge for the released MemGate adapter
+
+The old fixed-input MemGate development suite contains 24 author multi-preference roots. Join its legacy source identities to the formal roster by author file and row index, then verify native and serialized inputs, original Qwen Actor request/response binding, and evaluation-reference identity. Twenty-two UIDs changed across project archives. The fixed release arm retains the author's guidance along with the frozen learned gate and original 0.07 threshold. The gate-only control is a previously executed ablation and is outside the new grading branch.
+
+Reuse every existing release-arm final answer on the overlap. Preserve the one unavailable Actor and all historical fields. Re-score the 23 saved answers at most once with the formal RPEval GPT-4.1 detailed-project scorer. No new generation, retrieval, parameter training, threshold selection or sealed data. Hold the full judge request hash in a frozen panel. Do not treat old Qwen grades as common-protocol substitutes. The existing transport owns the cache, failure and usage ledgers; unknown delivery remains missing.
+
+Compare Match, Full Match and OPB/UPB/FM against existing IPE-C, RP reconstruction and Strong Gate on strict common valid denominators. Separate all-A, only-B and C-bearing groups. No algorithm promotion follows from the bridge alone. MemGate uses its author-released gate in a fixed-candidate adaptation, and its original Actor prompt and generation era differ from the other methods. This is a local deployment comparison with common judging, not a reproduction of paper retrieval or a leaderboard protocol.
+
+The bridge requires the private restored archives named in the runner, the same dependency path as [source-local re-entry](../source_local_reentry_v1/ELIGIBILITY.md), and the existing project service configuration for `run`. `check` verifies parity without service calls.
