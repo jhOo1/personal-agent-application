@@ -1,0 +1,750 @@
+{
+  "all_allocation_gate_minus_selectivity_bounds": {
+    "AAR": [
+      -0.43333333333333335,
+      0.5708333333333333
+    ],
+    "MR": [
+      -0.5708333333333333,
+      0.4895833333333333
+    ],
+    "completeness": [
+      -2.0972222222222223,
+      2.069444444444444
+    ],
+    "nonbold_AAR": [
+      -0.477124183006536,
+      0.5032679738562091
+    ]
+  },
+  "all_three_draw_pairs": {
+    "metrics": {
+      "AAR": {
+        "denominator": 99,
+        "gate_minus_selectivity": 0.1919191919191919,
+        "gate_numerator": 86,
+        "profile_bootstrap_interval": [
+          0.09090909090909091,
+          0.3333333333333333
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 67
+      },
+      "MR": {
+        "denominator": 201,
+        "gate_minus_selectivity": -0.1044776119402985,
+        "gate_numerator": 1,
+        "profile_bootstrap_interval": [
+          -0.15079365079365079,
+          -0.0582010582010582
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 22
+      },
+      "completeness": {
+        "denominator": 60,
+        "gate_minus_selectivity": 0.08333333333333333,
+        "gate_numerator": 287,
+        "profile_bootstrap_interval": [
+          -0.047619047619047616,
+          0.2222222222222222
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 282
+      },
+      "nonbold_AAR": {
+        "denominator": 60,
+        "gate_minus_selectivity": 0.06666666666666667,
+        "gate_numerator": 48,
+        "profile_bootstrap_interval": [
+          0.013888888888888888,
+          0.14814814814814814
+        ],
+        "profile_groups_with_metric": 7,
+        "selectivity_numerator": 44
+      }
+    },
+    "task_draw_pairs": 60,
+    "tasks": 20
+  },
+  "allocated_panel": {
+    "GEPA_SELECTED_BOUNDS": {
+      "draws": [
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.4125,
+                0.9375
+              ],
+              "fixed_denominator": 80,
+              "numerator": 33,
+              "scored_denominator": 38,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.0,
+                0.55
+              ],
+              "fixed_denominator": 160,
+              "numerator": 0,
+              "scored_denominator": 72,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.75,
+                4.916666666666667
+              ],
+              "fixed_denominator": 48,
+              "numerator": 106,
+              "scored_denominator": 22,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.37254901960784315,
+                0.9019607843137255
+              ],
+              "fixed_denominator": 51,
+              "numerator": 19,
+              "scored_denominator": 24,
+              "strict": null
+            }
+          },
+          "scored_tasks": 22
+        },
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.4375,
+                0.9375
+              ],
+              "fixed_denominator": 80,
+              "numerator": 35,
+              "scored_denominator": 40,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.0,
+                0.53125
+              ],
+              "fixed_denominator": 160,
+              "numerator": 0,
+              "scored_denominator": 75,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.7916666666666665,
+                4.875
+              ],
+              "fixed_denominator": 48,
+              "numerator": 109,
+              "scored_denominator": 23,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.4117647058823529,
+                0.9019607843137255
+              ],
+              "fixed_denominator": 51,
+              "numerator": 21,
+              "scored_denominator": 26,
+              "strict": null
+            }
+          },
+          "scored_tasks": 23
+        },
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.3875,
+                0.9125
+              ],
+              "fixed_denominator": 80,
+              "numerator": 31,
+              "scored_denominator": 38,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.00625,
+                0.55625
+              ],
+              "fixed_denominator": 160,
+              "numerator": 1,
+              "scored_denominator": 72,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.7291666666666665,
+                4.895833333333333
+              ],
+              "fixed_denominator": 48,
+              "numerator": 105,
+              "scored_denominator": 22,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.37254901960784315,
+                0.8823529411764706
+              ],
+              "fixed_denominator": 51,
+              "numerator": 19,
+              "scored_denominator": 25,
+              "strict": null
+            }
+          },
+          "scored_tasks": 22
+        }
+      ],
+      "strict_mean_over_draws": {
+        "AAR": null,
+        "MR": null,
+        "completeness": null,
+        "nonbold_AAR": null
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "draws": [
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.3625,
+                0.875
+              ],
+              "fixed_denominator": 80,
+              "numerator": 29,
+              "scored_denominator": 39,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.05625,
+                0.58125
+              ],
+              "fixed_denominator": 160,
+              "numerator": 9,
+              "scored_denominator": 76,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.7708333333333335,
+                4.854166666666667
+              ],
+              "fixed_denominator": 48,
+              "numerator": 108,
+              "scored_denominator": 23,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.37254901960784315,
+                0.8823529411764706
+              ],
+              "fixed_denominator": 51,
+              "numerator": 19,
+              "scored_denominator": 25,
+              "strict": null
+            }
+          },
+          "scored_tasks": 23
+        },
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.3375,
+                0.8125
+              ],
+              "fixed_denominator": 80,
+              "numerator": 27,
+              "scored_denominator": 42,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.0625,
+                0.575
+              ],
+              "fixed_denominator": 160,
+              "numerator": 10,
+              "scored_denominator": 78,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.8958333333333335,
+                4.895833333333333
+              ],
+              "fixed_denominator": 48,
+              "numerator": 115,
+              "scored_denominator": 24,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.39215686274509803,
+                0.8431372549019608
+              ],
+              "fixed_denominator": 51,
+              "numerator": 20,
+              "scored_denominator": 28,
+              "strict": null
+            }
+          },
+          "scored_tasks": 24
+        },
+        {
+          "allocated_tasks": 48,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.375,
+                0.85
+              ],
+              "fixed_denominator": 80,
+              "numerator": 30,
+              "scored_denominator": 42,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.05,
+                0.5625
+              ],
+              "fixed_denominator": 160,
+              "numerator": 8,
+              "scored_denominator": 78,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                2.8125,
+                4.8125
+              ],
+              "fixed_denominator": 48,
+              "numerator": 111,
+              "scored_denominator": 24,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.4117647058823529,
+                0.8627450980392157
+              ],
+              "fixed_denominator": 51,
+              "numerator": 21,
+              "scored_denominator": 28,
+              "strict": null
+            }
+          },
+          "scored_tasks": 24
+        }
+      ],
+      "strict_mean_over_draws": {
+        "AAR": null,
+        "MR": null,
+        "completeness": null,
+        "nonbold_AAR": null
+      }
+    }
+  },
+  "allocated_task_draw_pairs": 144,
+  "allocated_tasks": 48,
+  "available_pairs": {
+    "metrics": {
+      "AAR": {
+        "denominator": 113,
+        "gate_minus_selectivity": 0.1592920353982301,
+        "gate_numerator": 97,
+        "profile_bootstrap_interval": [
+          0.061946902654867256,
+          0.31
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 79
+      },
+      "MR": {
+        "denominator": 217,
+        "gate_minus_selectivity": -0.11059907834101383,
+        "gate_numerator": 1,
+        "profile_bootstrap_interval": [
+          -0.15384615384615385,
+          -0.06926406926406926
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 25
+      },
+      "completeness": {
+        "denominator": 66,
+        "gate_minus_selectivity": 0.07575757575757576,
+        "gate_numerator": 315,
+        "profile_bootstrap_interval": [
+          -0.043478260869565216,
+          0.203125
+        ],
+        "profile_groups_with_metric": 10,
+        "selectivity_numerator": 310
+      },
+      "nonbold_AAR": {
+        "denominator": 72,
+        "gate_minus_selectivity": 0.041666666666666664,
+        "gate_numerator": 57,
+        "profile_bootstrap_interval": [
+          0.0,
+          0.125
+        ],
+        "profile_groups_with_metric": 7,
+        "selectivity_numerator": 54
+      }
+    },
+    "task_draw_pairs": 66,
+    "tasks": 23
+  },
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 20261126,
+  "full_allocation_terminal": false,
+  "plan_sha256": "04251f2021b8170fd39d4c14e3bab3ed3699c1ad96cb26c171515d0e631c3b70",
+  "receipts_in_terminal_waves": {
+    "physical_requests": 981,
+    "reported_tokens": 1384986,
+    "request_statuses": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "OK": 980
+    },
+    "unknown_usage": 1
+  },
+  "scoring_states": {
+    "GEPA_SELECTED_BOUNDS": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "JUDGE_INVALID": 1,
+      "MISSING_FROZEN_ACTOR_WIRE": 15,
+      "SCORED": 67,
+      "WAVE_NOT_SETTLED": 60
+    },
+    "PAPER_SELECTIVITY": {
+      "JUDGE_INVALID": 1,
+      "SCORED": 71,
+      "WAVE_NOT_SETTLED": 72
+    }
+  },
+  "settled_wave_panel": {
+    "GEPA_SELECTED_BOUNDS": {
+      "draws": [
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.7857142857142857,
+                0.8809523809523809
+              ],
+              "fixed_denominator": 42,
+              "numerator": 33,
+              "scored_denominator": 38,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.0,
+                0.07692307692307693
+              ],
+              "fixed_denominator": 78,
+              "numerator": 0,
+              "scored_denominator": 72,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                4.5,
+                4.833333333333333
+              ],
+              "fixed_denominator": 24,
+              "numerator": 106,
+              "scored_denominator": 22,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.6785714285714286,
+                0.8214285714285714
+              ],
+              "fixed_denominator": 28,
+              "numerator": 19,
+              "scored_denominator": 24,
+              "strict": null
+            }
+          },
+          "scored_tasks": 22
+        },
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.8333333333333334,
+                0.8809523809523809
+              ],
+              "fixed_denominator": 42,
+              "numerator": 35,
+              "scored_denominator": 40,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.0,
+                0.038461538461538464
+              ],
+              "fixed_denominator": 78,
+              "numerator": 0,
+              "scored_denominator": 75,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                4.583333333333333,
+                4.75
+              ],
+              "fixed_denominator": 24,
+              "numerator": 109,
+              "scored_denominator": 23,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.75,
+                0.8214285714285714
+              ],
+              "fixed_denominator": 28,
+              "numerator": 21,
+              "scored_denominator": 26,
+              "strict": null
+            }
+          },
+          "scored_tasks": 23
+        },
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.7380952380952381,
+                0.8333333333333334
+              ],
+              "fixed_denominator": 42,
+              "numerator": 31,
+              "scored_denominator": 38,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.01282051282051282,
+                0.08974358974358974
+              ],
+              "fixed_denominator": 78,
+              "numerator": 1,
+              "scored_denominator": 72,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                4.458333333333333,
+                4.791666666666667
+              ],
+              "fixed_denominator": 24,
+              "numerator": 105,
+              "scored_denominator": 22,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.6785714285714286,
+                0.7857142857142857
+              ],
+              "fixed_denominator": 28,
+              "numerator": 19,
+              "scored_denominator": 25,
+              "strict": null
+            }
+          },
+          "scored_tasks": 22
+        }
+      ],
+      "strict_mean_over_draws": {
+        "AAR": null,
+        "MR": null,
+        "completeness": null,
+        "nonbold_AAR": null
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "draws": [
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.6904761904761905,
+                0.7619047619047619
+              ],
+              "fixed_denominator": 42,
+              "numerator": 29,
+              "scored_denominator": 39,
+              "strict": null
+            },
+            "MR": {
+              "bounds": [
+                0.11538461538461539,
+                0.14102564102564102
+              ],
+              "fixed_denominator": 78,
+              "numerator": 9,
+              "scored_denominator": 76,
+              "strict": null
+            },
+            "completeness": {
+              "bounds": [
+                4.541666666666667,
+                4.708333333333333
+              ],
+              "fixed_denominator": 24,
+              "numerator": 108,
+              "scored_denominator": 23,
+              "strict": null
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.6785714285714286,
+                0.7857142857142857
+              ],
+              "fixed_denominator": 28,
+              "numerator": 19,
+              "scored_denominator": 25,
+              "strict": null
+            }
+          },
+          "scored_tasks": 23
+        },
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.6428571428571429,
+                0.6428571428571429
+              ],
+              "fixed_denominator": 42,
+              "numerator": 27,
+              "scored_denominator": 42,
+              "strict": 0.6428571428571429
+            },
+            "MR": {
+              "bounds": [
+                0.1282051282051282,
+                0.1282051282051282
+              ],
+              "fixed_denominator": 78,
+              "numerator": 10,
+              "scored_denominator": 78,
+              "strict": 0.1282051282051282
+            },
+            "completeness": {
+              "bounds": [
+                4.791666666666667,
+                4.791666666666667
+              ],
+              "fixed_denominator": 24,
+              "numerator": 115,
+              "scored_denominator": 24,
+              "strict": 4.791666666666667
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.7142857142857143,
+                0.7142857142857143
+              ],
+              "fixed_denominator": 28,
+              "numerator": 20,
+              "scored_denominator": 28,
+              "strict": 0.7142857142857143
+            }
+          },
+          "scored_tasks": 24
+        },
+        {
+          "allocated_tasks": 24,
+          "metrics": {
+            "AAR": {
+              "bounds": [
+                0.7142857142857143,
+                0.7142857142857143
+              ],
+              "fixed_denominator": 42,
+              "numerator": 30,
+              "scored_denominator": 42,
+              "strict": 0.7142857142857143
+            },
+            "MR": {
+              "bounds": [
+                0.10256410256410256,
+                0.10256410256410256
+              ],
+              "fixed_denominator": 78,
+              "numerator": 8,
+              "scored_denominator": 78,
+              "strict": 0.10256410256410256
+            },
+            "completeness": {
+              "bounds": [
+                4.625,
+                4.625
+              ],
+              "fixed_denominator": 24,
+              "numerator": 111,
+              "scored_denominator": 24,
+              "strict": 4.625
+            },
+            "nonbold_AAR": {
+              "bounds": [
+                0.75,
+                0.75
+              ],
+              "fixed_denominator": 28,
+              "numerator": 21,
+              "scored_denominator": 28,
+              "strict": 0.75
+            }
+          },
+          "scored_tasks": 24
+        }
+      ],
+      "strict_mean_over_draws": {
+        "AAR": null,
+        "MR": null,
+        "completeness": null,
+        "nonbold_AAR": null
+      }
+    }
+  },
+  "settled_waves": [
+    0,
+    1,
+    2
+  ]
+}
