@@ -1,0 +1,32 @@
+{
+  "allocated": 300,
+  "author_B_ipe_B_in_history_actual_rp_policy": {
+    "A": 2,
+    "B": 67,
+    "C": 1
+  },
+  "cross_tab": {
+    "history": {
+      "author_A_ipe_A": 285,
+      "author_A_ipe_B": 268,
+      "author_A_ipe_C": 16,
+      "author_B_ipe_A": 2,
+      "author_B_ipe_B": 70,
+      "author_B_ipe_C": 14,
+      "author_C_ipe_B": 10,
+      "author_C_ipe_C": 146,
+      "tasks": 137
+    },
+    "task_only": {
+      "author_A_ipe_A": 377,
+      "author_A_ipe_B": 312,
+      "author_B_ipe_A": 1,
+      "author_B_ipe_B": 68,
+      "author_C_ipe_B": 3,
+      "tasks": 158
+    }
+  },
+  "new_requests": 0,
+  "route_unknown": 5,
+  "verified_route": 295
+}

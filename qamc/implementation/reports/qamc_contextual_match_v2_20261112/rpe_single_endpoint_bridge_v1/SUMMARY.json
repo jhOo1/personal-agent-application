@@ -1,0 +1,856 @@
+{
+  "actor_origins": {
+    "ARCHIVED_EXACT": 1,
+    "LOCAL_RECEIPT": 23
+  },
+  "physical_stages": {
+    "SingleDetailJudge": 23,
+    "SingleZeroActor": 23
+  },
+  "reported_tokens": 75554,
+  "request_status": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "OK": 45
+  },
+  "requests": 46,
+  "retries": 0,
+  "table": {
+    "A": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            2,
+            2
+          ],
+          "pairs": 3,
+          "severity": {
+            "FM": [
+              0,
+              1
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 3,
+          "win_loss_tie": [
+            1,
+            1,
+            1
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            2,
+            2
+          ],
+          "pairs": 3,
+          "severity": {
+            "FM": [
+              0,
+              0
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 3,
+          "win_loss_tie": [
+            0,
+            0,
+            3
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            2,
+            2
+          ],
+          "pairs": 3,
+          "severity": {
+            "FM": [
+              0,
+              0
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 3,
+          "win_loss_tie": [
+            0,
+            0,
+            3
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            2,
+            2
+          ],
+          "pairs": 3,
+          "severity": {
+            "FM": [
+              0,
+              0
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 3,
+          "win_loss_tie": [
+            0,
+            0,
+            3
+          ]
+        }
+      },
+      "planned": 4,
+      "route": {
+        "TASK_ONLY": 4
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          3,
+          4
+        ],
+        "IPE_C": [
+          2,
+          3
+        ],
+        "MEMADAPTER_FULL": [
+          2,
+          4
+        ],
+        "RPR_PAPER_FULL": [
+          3,
+          4
+        ],
+        "TASK_ONLY": [
+          2,
+          3
+        ]
+      }
+    },
+    "B": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            8,
+            8
+          ],
+          "pairs": 9,
+          "severity": {
+            "FM": [
+              5,
+              6
+            ],
+            "OPB": [
+              0,
+              1
+            ],
+            "UPB": [
+              3,
+              2
+            ]
+          },
+          "source_groups": 9,
+          "win_loss_tie": [
+            0,
+            0,
+            9
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            8,
+            9
+          ],
+          "pairs": 9,
+          "severity": {
+            "FM": [
+              5,
+              3
+            ],
+            "OPB": [
+              0,
+              2
+            ],
+            "UPB": [
+              3,
+              0
+            ]
+          },
+          "source_groups": 9,
+          "win_loss_tie": [
+            0,
+            1,
+            8
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            8,
+            8
+          ],
+          "pairs": 9,
+          "severity": {
+            "FM": [
+              5,
+              4
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              3,
+              2
+            ]
+          },
+          "source_groups": 9,
+          "win_loss_tie": [
+            0,
+            0,
+            9
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            8,
+            8
+          ],
+          "pairs": 9,
+          "severity": {
+            "FM": [
+              5,
+              5
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              3,
+              3
+            ]
+          },
+          "source_groups": 9,
+          "win_loss_tie": [
+            0,
+            0,
+            9
+          ]
+        }
+      },
+      "planned": 9,
+      "route": {
+        "TASK_ONLY": 9
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          8,
+          9
+        ],
+        "IPE_C": [
+          8,
+          9
+        ],
+        "MEMADAPTER_FULL": [
+          9,
+          9
+        ],
+        "RPR_PAPER_FULL": [
+          8,
+          9
+        ],
+        "TASK_ONLY": [
+          8,
+          9
+        ]
+      }
+    },
+    "C": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            5,
+            8
+          ],
+          "pairs": 10,
+          "severity": {
+            "FM": [
+              25,
+              16
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              20,
+              5
+            ]
+          },
+          "source_groups": 10,
+          "win_loss_tie": [
+            0,
+            3,
+            7
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            5,
+            7
+          ],
+          "pairs": 10,
+          "severity": {
+            "FM": [
+              25,
+              11
+            ],
+            "OPB": [
+              0,
+              1
+            ],
+            "UPB": [
+              20,
+              3
+            ]
+          },
+          "source_groups": 10,
+          "win_loss_tie": [
+            1,
+            3,
+            6
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            5,
+            7
+          ],
+          "pairs": 10,
+          "severity": {
+            "FM": [
+              25,
+              13
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              20,
+              5
+            ]
+          },
+          "source_groups": 10,
+          "win_loss_tie": [
+            0,
+            2,
+            8
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            4,
+            0
+          ],
+          "pairs": 9,
+          "severity": {
+            "FM": [
+              25,
+              38
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              20,
+              45
+            ]
+          },
+          "source_groups": 9,
+          "win_loss_tie": [
+            4,
+            0,
+            5
+          ]
+        }
+      },
+      "planned": 11,
+      "route": {
+        "RPR_PAPER_FULL": 6,
+        "TASK_ONLY": 5
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          9,
+          11
+        ],
+        "IPE_C": [
+          5,
+          10
+        ],
+        "MEMADAPTER_FULL": [
+          8,
+          11
+        ],
+        "RPR_PAPER_FULL": [
+          8,
+          11
+        ],
+        "TASK_ONLY": [
+          0,
+          9
+        ]
+      }
+    },
+    "explicit/single": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            9,
+            10
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              8,
+              10
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            1,
+            2,
+            8
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            9,
+            9
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              8,
+              6
+            ],
+            "OPB": [
+              0,
+              2
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            1,
+            1,
+            9
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            9,
+            9
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              8,
+              8
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              0
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            0,
+            0,
+            11
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            8,
+            4
+          ],
+          "pairs": 10,
+          "severity": {
+            "FM": [
+              8,
+              21
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              0,
+              25
+            ]
+          },
+          "source_groups": 10,
+          "win_loss_tie": [
+            4,
+            0,
+            6
+          ]
+        }
+      },
+      "planned": 12,
+      "route": {
+        "RPR_PAPER_FULL": 6,
+        "TASK_ONLY": 6
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          11,
+          12
+        ],
+        "IPE_C": [
+          9,
+          11
+        ],
+        "MEMADAPTER_FULL": [
+          10,
+          12
+        ],
+        "RPR_PAPER_FULL": [
+          10,
+          12
+        ],
+        "TASK_ONLY": [
+          4,
+          10
+        ]
+      }
+    },
+    "implicit/single": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            6,
+            8
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              22,
+              13
+            ],
+            "OPB": [
+              0,
+              1
+            ],
+            "UPB": [
+              23,
+              7
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            0,
+            2,
+            9
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            6,
+            9
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              22,
+              8
+            ],
+            "OPB": [
+              0,
+              1
+            ],
+            "UPB": [
+              23,
+              3
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            0,
+            3,
+            8
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            6,
+            8
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              22,
+              9
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              23,
+              7
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            0,
+            2,
+            9
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            6,
+            6
+          ],
+          "pairs": 11,
+          "severity": {
+            "FM": [
+              22,
+              22
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              23,
+              23
+            ]
+          },
+          "source_groups": 11,
+          "win_loss_tie": [
+            0,
+            0,
+            11
+          ]
+        }
+      },
+      "planned": 12,
+      "route": {
+        "TASK_ONLY": 12
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          9,
+          12
+        ],
+        "IPE_C": [
+          6,
+          11
+        ],
+        "MEMADAPTER_FULL": [
+          9,
+          12
+        ],
+        "RPR_PAPER_FULL": [
+          9,
+          12
+        ],
+        "TASK_ONLY": [
+          6,
+          11
+        ]
+      }
+    },
+    "overall": {
+      "pairs_vs_ipe_c": {
+        "DES2GEN_FULL": {
+          "match": [
+            15,
+            18
+          ],
+          "pairs": 22,
+          "severity": {
+            "FM": [
+              30,
+              23
+            ],
+            "OPB": [
+              0,
+              1
+            ],
+            "UPB": [
+              23,
+              7
+            ]
+          },
+          "source_groups": 22,
+          "win_loss_tie": [
+            1,
+            4,
+            17
+          ]
+        },
+        "MEMADAPTER_FULL": {
+          "match": [
+            15,
+            18
+          ],
+          "pairs": 22,
+          "severity": {
+            "FM": [
+              30,
+              14
+            ],
+            "OPB": [
+              0,
+              3
+            ],
+            "UPB": [
+              23,
+              3
+            ]
+          },
+          "source_groups": 22,
+          "win_loss_tie": [
+            1,
+            4,
+            17
+          ]
+        },
+        "RPR_PAPER_FULL": {
+          "match": [
+            15,
+            17
+          ],
+          "pairs": 22,
+          "severity": {
+            "FM": [
+              30,
+              17
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              23,
+              7
+            ]
+          },
+          "source_groups": 22,
+          "win_loss_tie": [
+            0,
+            2,
+            20
+          ]
+        },
+        "TASK_ONLY": {
+          "match": [
+            14,
+            10
+          ],
+          "pairs": 21,
+          "severity": {
+            "FM": [
+              30,
+              43
+            ],
+            "OPB": [
+              0,
+              0
+            ],
+            "UPB": [
+              23,
+              48
+            ]
+          },
+          "source_groups": 21,
+          "win_loss_tie": [
+            4,
+            0,
+            17
+          ]
+        }
+      },
+      "planned": 24,
+      "route": {
+        "RPR_PAPER_FULL": 6,
+        "TASK_ONLY": 18
+      },
+      "valid_match": {
+        "DES2GEN_FULL": [
+          20,
+          24
+        ],
+        "IPE_C": [
+          15,
+          22
+        ],
+        "MEMADAPTER_FULL": [
+          19,
+          24
+        ],
+        "RPR_PAPER_FULL": [
+          19,
+          24
+        ],
+        "TASK_ONLY": [
+          10,
+          21
+        ]
+      }
+    }
+  },
+  "task_only_status": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "INVALID_SCORE": 2,
+    "OK": 21
+  },
+  "unknown_usage": 1
+}

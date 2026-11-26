@@ -97,6 +97,9 @@ The comparison to RP alone has 280 common tasks and 1,504 positions (970 vs.\ 84
 
 A study holding the strategy predictions, policy and Actor fixed compared whole-history activation with giving the Actor only original entries predicted B/C. The two exposure conditions tie at 41/71 Match and the narrower arm increases OPB from 12 to 16. In an actual music-lesson recommendation, the narrow arm sees the relevant music preference but extends it from choosing a class to the route and relaxation routine. The Judge's rationale does not attribute misuse to the excluded entries. With one draw per condition this identifies a plausible route for failure, without isolating a causal effect for that case.
 
+\paragraph{Single-preference limits.}
+Under a separate Qwen rubric adaptation, IPE-C scores 15/22, RP 17/22, and Des2Gen and MemAdapter 18/22 each. IPE-C withholds history on all nine author-B tasks, including seven ranked B. In the verified multi-preference routes, 70/138 author-B positions ranked B reach the Actor because a different prediction is C. Rank and exposure are distinct.
+
 \subsection{Activation controls on RPEval}
 
 \paragraph{Equal-rate routing.}
@@ -127,7 +130,7 @@ Overall & 43/49 & \textbf{47/49}\\
 Table~\ref{tab:persist} gives the matched result, with five wins, one loss and 43 ties. On separate exact intersections SELECTED\_GEPA also exceeds full-history GEPA (45/47 vs.\ 38/47) and the saved complete MemAdapter adaptation (46/48 vs.\ 37/48). Neither intersection provides an official rank. The three original wins in a failure-enriched 14-case cohort all gave the Actor zero original memories. Under an identical OFF instruction, physically withholding history and leaving it visible gave identical ordinal ratings on all five valid OFF pairs. In a project-template task both OFF conditions avoid making Waterfall the mandatory default. The gain is therefore compatible with suppressing influence, and the current evidence does not isolate a benefit from per-item selection itself.
 
 \paragraph{Repeated deployment with a matched Actor cap.}
-An earlier three-wave comparison favors SELECTED\_GEPA over two full-history baselines on SYC under all assignments of missing scores. The candidate used an 8,192-token cap and the controls used 4,096. In two subsequent waves on the same 19 exposed risk tasks, routed selection, empty history, and full history used the identical GEPA Actor and the same 8,192-token cap. We observe the same direction with complete coverage (Table~\ref{tab:persist_risk}). The routed and empty arms share Actor and Judge requests on 27 of 38 task--wave pairs. Routed retains a proper subset in the other 11, and the binary ratings agree in every pair. All routed wins over full history occur when the selector returns no history.
+An earlier three-wave comparison favors SELECTED\_GEPA on SYC under unequal Actor caps. The direction holds in two complete waves with the same GEPA Actor and an 8,192-token cap (Table~\ref{tab:persist_risk}). Routing and empty history share requests on 27/38 task--wave pairs and agree on all binary ratings. Every routed win over full history occurs with no history selected.
 
 \begin{table}[t]
 \centering
@@ -145,7 +148,7 @@ Cross-domain & \textbf{0/8} & \textbf{0/8} & 1/8\\
 \end{table}
 
 \paragraph{Utility with a fixed Actor contract.}
-On 12 exposed BU tasks, we fixed both the GEPA Actor and its 8,192-token cap. Routed selection, direct Grounding, full history, and empty history passed on 6, 10, 11, and 1 tasks, with 6, 2, 1, and 0 missing, respectively. Direct Grounding had 9--11 fewer failures than empty history under all assignments of missing outcomes. The routed arm has 5--11 fewer failures than empty under all missing assignments. Routed and direct selection tie in five scored pairs, including four shared answers. Across all assignments of missing outcomes, routed selection could have one fewer to six more failures than full history. In five additional exposed tasks conditioned on prior routed success, archived routed and matched-cap full-history answers each pass all five. Four exact full-history answers and grades were recovered from the archive, and one pair was completed by generating and grading the missing full-history answer. These additional pairs leave the missingness interval unchanged.
+On 12 exposed BU tasks, routed selection, direct Grounding, full history, and empty history pass on 6, 10, 11, and 1, with 6, 2, 1, and 0 missing, respectively. Across missingness assignments, routing has 5--11 fewer failures than empty history and one fewer to six more than full history. Five additional tasks conditioned on prior routed success pass under both routed and matched-cap full-history methods. They do not narrow the original missingness interval.
 
 \paragraph{Released selector under the same Actor.}
 Using the same GEPA Actor and adapted Judge, released MemGate \citep{zhang2026memgate} retains history on every SYC task. On 10 complete SYC pairs, MemGate, routing and empty history each fail one, while full history fails five. On 11 strict BU pairs versus full history, MemGate loses two and ties nine. Its losses include omitted dietary constraints for a pet and a shared dinner.
