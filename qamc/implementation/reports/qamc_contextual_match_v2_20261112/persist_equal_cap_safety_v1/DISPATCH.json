@@ -1,0 +1,94 @@
+{
+  "1": {
+    "routed_actor_allocations": {
+      "cross_domain": {
+        "empty": 6,
+        "proper_subset": 2
+      },
+      "sycophancy": {
+        "empty": 8,
+        "proper_subset": 3
+      }
+    },
+    "stages": {
+      "Actor": {
+        "physical_calls": 43,
+        "reported_tokens": 399304,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 43
+        }
+      },
+      "Judge": {
+        "physical_calls": 43,
+        "reported_tokens": 453191,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 43
+        }
+      },
+      "Route": {
+        "physical_calls": 19,
+        "reported_tokens": 10203,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 19
+        }
+      },
+      "Select": {
+        "physical_calls": 19,
+        "reported_tokens": 32996,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 19
+        }
+      }
+    }
+  },
+  "2": {
+    "routed_actor_allocations": {
+      "cross_domain": {
+        "empty": 6,
+        "proper_subset": 2
+      },
+      "sycophancy": {
+        "empty": 7,
+        "proper_subset": 4
+      }
+    },
+    "stages": {
+      "Actor": {
+        "physical_calls": 44,
+        "reported_tokens": 368771,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 44
+        }
+      },
+      "Judge": {
+        "physical_calls": 44,
+        "reported_tokens": 465508,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 44
+        }
+      },
+      "Route": {
+        "physical_calls": 19,
+        "reported_tokens": 11147,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 19
+        }
+      },
+      "Select": {
+        "physical_calls": 19,
+        "reported_tokens": 51805,
+        "requests_without_usage": 0,
+        "statuses": {
+          "OK": 19
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,16 @@
 # QAMC 当前判断与下一次机制对照
 
-## 最新结算：PersistBench 等生成上限的有益用史对照
+## 最新结算：PersistBench 两轮等上限风险对照
+
+固定同一个 GEPA 生成器和 8,192 Token 上限。19 道已曝光题、114 个成稿位置全部有效。两轮任一失败计数：原路由、空史、全史的迎合为 1/11、1/11、6/11，跨域为 0/8、0/8、1/8。原路由相对全史达到数值门槛。27/38 个任务波次与空史实际共用成稿，其余 11 个保留部分历史，二值结果仍逐题持平。所有相对全史胜例均实际清空历史。独立的有益用史开发面板中，清空历史有明确效用代价，原路由相对全史的效用保护依然未确认。
+
+两轮共 250 个物理请求、1,792,925 Token，均成功且无重发。正式 Kimi 复评分、独立确认和外部 SOTA 继续单列。[结算及行为证据](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_safety_v1/READOUT.md)
+
+## 效用结算：PersistBench 等生成上限的有益用史对照
 
 同一 GEPA Actor、8,192 Token 上限、固定评测适配和 12 道已曝光有益用史题。原路由通过 6、缺失 6，直接 Grounding 通过 10、缺失 2，全史通过 11、缺失 1，空史通过 1、失败 11。两种选择策略同题有效的 5 道均同分，其中 4 道共享回答。直接 Grounding 暂未达到替代原路由的保护门槛。书友会共用成稿评分通过，实际仍把严重过敏所需的无猫场地写成可选。按事实和评分分别记录。
 
-三轮开发复测中，SELECTED_GEPA 相对 PB_RUBRIC 和全史 GEPA 的迎合失败数差异对缺失分配稳健。该比较的 Actor 上限不同。原路由、空史和全史在 19 道已曝光 CD/SYC 任务上的等上限对照已登记两轮并启动首轮。见[事前协议](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_safety_v1/PROTOCOL.md)。当前没有本对照的结算结果。当前作者 Kimi 协议尚未用于这些结论，封存集保持原有边界。
+三轮开发复测中，SELECTED_GEPA 相对 PB_RUBRIC 和全史 GEPA 的迎合失败数差异对缺失分配稳健。该比较的 Actor 上限不同。相应等上限对照见上节。[事前协议](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_safety_v1/PROTOCOL.md)当前作者 Kimi 协议尚未用于这些结论，封存集保持原有边界。
 
 [等上限效用结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_development_v1/READOUT.md) · [真实任务行为](implementation/reports/qamc_contextual_match_v2_20261112/persist_equal_cap_development_v1/BEHAVIOR_READOUT.md) · [三轮开发结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_repeated_deployment_v1/READOUT.md) · [当前英文论文初稿](manuscript/paper.pdf)
 
