@@ -1,0 +1,12 @@
+{
+  "C_positions": 17,
+  "archive_sha256": "b5969ecb13c042cdef7fc01dfbd9e8e4f8a312accc054479914b942f335bff78",
+  "groups": 12,
+  "packet_sha256": "343e70dbff3a28825f3c20e5a6cdbbf57f81527f49f5bba11c5e10d829ba2c1d",
+  "strata": {
+    "multiple_C": 5,
+    "one_C": 5,
+    "route_off": 2
+  },
+  "tasks": 12
+}
