@@ -70,6 +70,17 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         seen_tracks.add(track)
     require(seen_tracks, tracks.keys(), "PersistBench tracks")
 
+    risk = json.loads((root / "persist_equal_cap_safety_v1/SUMMARY.json").read_text())
+    risk_tracks = {"Sycophancy": "sycophancy", "Cross-domain": "cross_domain"}
+    seen_risk_tracks = set()
+    for track, *observed in latex_rows(paper, "persist_risk"):
+        track_result = risk["splits"][risk_tracks[track]]["both"]
+        expected = [f"{track_result['methods'][arm]['states'].get('FAIL', 0)}/{track_result['tasks']}"
+                    for arm in ("ROUTED", "EMPTY", "FULL")]
+        require(observed, expected, f"Equal-cap risk {track}")
+        seen_risk_tracks.add(track)
+    require(seen_risk_tracks, risk_tracks.keys(), "Equal-cap PersistBench tracks")
+
     bench_line, = (r[1] for r in markdown_rows(common) if r[0].startswith("BenchPreS, Strong Gate"))
     mr, aar, nonbold = (
         re.search(pattern, bench_line).groups()[::-1]
@@ -85,7 +96,7 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(tuple(pair), public_bench[metric], f"BenchPreS {metric}")
         seen_metrics.add(metric)
     require(seen_metrics, public_bench.keys(), "BenchPreS metrics")
-    return sum(map(len, (seen_strata, seen_external, seen_tracks, seen_metrics)))
+    return sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@
 \raggedbottom
 
 \begin{abstract}
-A personalized assistant can retrieve the right history and still apply it to the wrong task or person. We distinguish activating history for a task from realizing an applicable preference in the final answer. With fixed candidate memory, we test a training-free rule that activates history when an intent estimator predicts at least one decision-driving preference. On 274 commonly scored tasks from RPEval's released multi-preference roster, the rule matches 953 of 1,462 positions, versus 874 when always excluding history and 824 when always including it. Gains over full history are concentrated in all-ignore tasks. On a separate PersistBench development panel, a task-conditioned selection and generation pipeline passes 47 of 49 tasks versus 43 for a rubric-guided full-history baseline, with both passing all 18 strict beneficial-use tasks. On BenchPreS, a source gate lowers inappropriate preference application, while non-bold preference realization remains comparable to the adapted Selectivity control. These are matched development results under documented grader adaptations. Case analysis finds that even when applicable history is visible and an answer passes automatic scoring, the actual decision can still violate a necessary constraint.
+A personalized assistant can retrieve the right history and still apply it to the wrong task or person. We distinguish activating history for a task from realizing an applicable preference in the final answer. With fixed candidate memory, we test a training-free rule that activates history when an intent estimator predicts at least one decision-driving preference. On 274 commonly scored tasks from RPEval's released multi-preference roster, the rule matches 953 of 1,462 positions, versus 874 when always excluding history and 824 when always including it. Gains over full history are concentrated in all-ignore tasks. On a separate PersistBench development panel, a task-conditioned selection and generation pipeline passes 47 of 49 tasks versus 43 for a rubric-guided full-history baseline, with both passing all 18 strict beneficial-use tasks. An equal-cap two-wave study reduces sycophancy failures from 6/11 to 1/11, matching empty history. On a separate utility panel, empty history passes only 1/12. On BenchPreS, a source gate lowers inappropriate preference application, while non-bold preference realization remains comparable to the adapted Selectivity control. These are matched development results under documented grader adaptations. Case analysis finds that even when applicable history is visible and an answer passes automatic scoring, the actual decision can still violate a necessary constraint.
 \end{abstract}
 
 \section{Introduction}
@@ -29,7 +29,7 @@ Our main comparison tests a single task-level switching rule against two fixed a
 
 RPEval distinguishes ignored, supporting, and decision-driving uses of personal evidence, and its RP-Reasoner uses pragmatic intent inference to select among those uses \citep{feng2026rpeval}. Our primary intervention reuses its intent estimator and changes which complete generation path is run. The fixed-endpoint comparison tests the incremental value of that activation decision. BenchPreS targets the appropriateness of preferences in socially and institutionally governed communication \citep{yoon2026benchpres}. PersistBench explicitly separates cross-domain leakage, memory-induced sycophancy and beneficial use \citep{pulipaka2026persistbench}. We use those separate metrics to distinguish suppressing harmful influence from realizing legitimate use.
 
-MemGate learns a query-conditioned gate between retrieval and generation \citep{zhang2026memgate}. MemAdapter instead estimates and regulates the influence of retrieved memories through counterfactual induction, reflection, and evidence-based generation \citep{ning2026memadapter}. Our main route reuses the existing strategy estimator and changes task-level exposure. Its fixed-endpoint comparison tests when this simple decision is sufficient. In PersistBench comparisons, GEPA's reflection-based prompt optimization is an existing source of generation guidance \citep{agrawal2026gepa}. We use its frozen downstream prompt to compare full and selected original evidence.
+MemGate learns a query-conditioned gate between retrieval and generation \citep{zhang2026memgate}. MemAdapter instead estimates and regulates the influence of retrieved memories through counterfactual induction, reflection, and evidence-based generation \citep{ning2026memadapter}. Our main route reuses the existing strategy estimator and changes task-level exposure. Its fixed-endpoint comparison tests when this simple decision is sufficient. In PersistBench comparisons, GEPA's reflection-based prompt optimization is an existing source of generation guidance \citep{agrawal2026gepa}. We use its frozen downstream prompt to compare full and selected original evidence. Human preference judgments also show that access to history does not consistently yield preferred answers. The learned preference model in \citet{dong2026memoryreward} predicts which of two completed answers a user prefers. Our comparisons intervene on evidence before generation and use task-specific benchmark criteria.
 
 \section{Methods}
 
@@ -126,11 +126,26 @@ Overall & 43/49 & \textbf{47/49}\\
 
 Table~\ref{tab:persist} gives the matched result, with five wins, one loss and 43 ties. On separate exact intersections SELECTED\_GEPA also exceeds full-history GEPA (45/47 vs.\ 38/47) and the saved complete MemAdapter adaptation (46/48 vs.\ 37/48). Neither intersection provides an official rank. The three original wins in a failure-enriched 14-case cohort all gave the Actor zero original memories. Under an identical OFF instruction, physically withholding history and leaving it visible gave identical ordinal ratings on all five valid OFF pairs. In a project-template task both OFF conditions avoid making Waterfall the mandatory default. The gain is therefore compatible with suppressing influence, and the current evidence does not isolate a benefit from per-item selection itself.
 
-\paragraph{Repeated deployment.}
-On an exposed subset, we reran the full pipeline three times per CD or SYC task, including the Router and Selector, and once per BU task. A task fails if any observed draw fails. Passing requires complete coverage. On 11 SYC tasks, SELECTED\_GEPA, PB\_RUBRIC, and full-history GEPA yielded 1, 8, and 6 observed failures with 4, 1, and 0 unresolved tasks. The candidate retains fewer SYC failures under every assignment of the missing outcomes. The eight CD and six BU tasks do not establish protection under the same criterion. The candidate uses an 8,192-token output cap, while both controls use 4,096, and scoring uses the GPT-4.1 adaptation. A distinct earlier 12-task equal-cap comparison gives 11/12 versus 9/12, with strict BU 4/4 for both. The older comparison overlaps the one-draw development archive and does not establish generalization.
+\paragraph{Repeated deployment with a matched Actor cap.}
+An earlier three-wave comparison favors SELECTED\_GEPA over two full-history baselines on SYC under all assignments of missing scores. The candidate used an 8,192-token cap and the controls used 4,096. In two subsequent waves on the same 19 exposed risk tasks, routed selection, empty history, and full history used the identical GEPA Actor and the same 8,192-token cap. We observe the same direction with complete coverage (Table~\ref{tab:persist_risk}). The routed and empty arms share Actor and Judge requests on 27 of 38 task--wave pairs. Routed retains a proper subset in the other 11, and the binary ratings agree in every pair. All routed wins over full history occur when the selector returns no history.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Track & Routed & Empty & Full\\
+\midrule
+Sycophancy & \textbf{1/11} & \textbf{1/11} & 6/11\\
+Cross-domain & \textbf{0/8} & \textbf{0/8} & 1/8\\
+\bottomrule
+\end{tabular}
+\caption{PersistBench tasks with a failure in either of two equal-cap waves. All 114 logical answers have grades under the GPT-4.1 adaptation.}
+\label{tab:persist_risk}
+\end{table}
 
 \paragraph{Utility with a fixed Actor contract.}
-On 12 exposed BU tasks, we fixed both the GEPA Actor and its 8,192-token cap. Routed selection, direct Grounding, full history, and empty history passed on 6, 10, 11, and 1 tasks, with 6, 2, 1, and 0 missing, respectively. Direct Grounding had 9--11 fewer failures than empty history under all assignments of missing outcomes. Routed and direct selection tied on five valid pairs, four of which shared the same answer. The observed contrast establishes a cost to always withholding history on this panel. The comparison between selection policies remains unresolved.
+On 12 exposed BU tasks, we fixed both the GEPA Actor and its 8,192-token cap. Routed selection, direct Grounding, full history, and empty history passed on 6, 10, 11, and 1 tasks, with 6, 2, 1, and 0 missing, respectively. Direct Grounding had 9--11 fewer failures than empty history under all assignments of missing outcomes. The routed arm has 5--11 fewer failures than empty under all missing assignments. Routed and direct selection tie in five scored pairs, including four shared answers. Utility preservation versus full history remains unresolved for the routed arm.
 
 \subsection{BenchPreS reveals a realization gap}
 
