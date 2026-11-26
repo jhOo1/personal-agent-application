@@ -16,7 +16,7 @@ def read(path):
     return json.loads(path.read_text())
 
 
-def summarize():
+def load_matched_scores():
     plan = read(PAPER / "PLAN.json")
     old = read(LEGACY / "PLAN.json")
     cases = {c["uid"]: c for c in plan["cases"]}
@@ -41,6 +41,11 @@ def summarize():
     by = {(r["uid"], r["method"]): r for r in rows}
     if len(by) != len(rows) or set(by) != {(uid, m) for uid in cases for m in METHODS}:
         raise ValueError("Method assignments differ")
+    return cases, by
+
+
+def summarize():
+    cases, by = load_matched_scores()
     status = {m: Counter(r["actor_status"] if not r["score"] else "SCORED"
                          for (uid, method), r in by.items() if m == method) for m in METHODS}
     common, totals = [], {m: Counter() for m in METHODS}

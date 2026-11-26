@@ -1,0 +1,554 @@
+{
+  "draws": 10000,
+  "effects": {
+    "BenchPreS/PAPER_SELECTIVITY/aar": {
+      "candidate": 56,
+      "control": 53,
+      "denominator": 64,
+      "effect_points": 4.6875,
+      "group_positive_ties_negative": [
+        4,
+        4,
+        2
+      ],
+      "group_resampling_95_percentile": [
+        -3.7735849056603774,
+        14.285714285714286
+      ],
+      "groups": 10,
+      "leave_one_group_range": [
+        1.7241379310344827,
+        8.16326530612245
+      ],
+      "tasks": 38
+    },
+    "BenchPreS/PAPER_SELECTIVITY/mr": {
+      "candidate": 1,
+      "control": 12,
+      "denominator": 126,
+      "effect_points": -8.73015873015873,
+      "group_positive_ties_negative": [
+        0,
+        4,
+        6
+      ],
+      "group_resampling_95_percentile": [
+        -12.0,
+        -4.385964912280702
+      ],
+      "groups": 10,
+      "leave_one_group_range": [
+        -10.0,
+        -7.547169811320755
+      ],
+      "tasks": 38
+    },
+    "BenchPreS/PAPER_SELECTIVITY/nonbold_aar": {
+      "candidate": 35,
+      "control": 36,
+      "denominator": 43,
+      "effect_points": -2.3255813953488373,
+      "group_positive_ties_negative": [
+        1,
+        4,
+        2
+      ],
+      "group_resampling_95_percentile": [
+        -9.615384615384615,
+        6.0606060606060606
+      ],
+      "groups": 7,
+      "leave_one_group_range": [
+        -5.405405405405405,
+        0.0
+      ],
+      "tasks": 28
+    },
+    "BenchPreS/RAW/aar": {
+      "candidate": 56,
+      "control": 49,
+      "denominator": 64,
+      "effect_points": 10.9375,
+      "group_positive_ties_negative": [
+        3,
+        6,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        -2.127659574468085,
+        22.78481012658228
+      ],
+      "groups": 10,
+      "leave_one_group_range": [
+        4.081632653061225,
+        13.793103448275861
+      ],
+      "tasks": 38
+    },
+    "BenchPreS/RAW/mr": {
+      "candidate": 1,
+      "control": 78,
+      "denominator": 126,
+      "effect_points": -61.111111111111114,
+      "group_positive_ties_negative": [
+        0,
+        0,
+        10
+      ],
+      "group_resampling_95_percentile": [
+        -75.0,
+        -50.833333333333336
+      ],
+      "groups": 10,
+      "leave_one_group_range": [
+        -64.15094339622641,
+        -57.758620689655174
+      ],
+      "tasks": 38
+    },
+    "BenchPreS/RAW/nonbold_aar": {
+      "candidate": 35,
+      "control": 28,
+      "denominator": 43,
+      "effect_points": 16.27906976744186,
+      "group_positive_ties_negative": [
+        3,
+        3,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        -3.4482758620689653,
+        28.169014084507044
+      ],
+      "groups": 7,
+      "leave_one_group_range": [
+        7.142857142857143,
+        20.0
+      ],
+      "tasks": 28
+    },
+    "PersistBench/MEMADAPTER_FULL/Overall": {
+      "candidate": 46,
+      "control": 37,
+      "denominator": 48,
+      "effect_points": 18.75,
+      "group_positive_ties_negative": [
+        9,
+        39,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        8.333333333333334,
+        31.25
+      ],
+      "groups": 48,
+      "leave_one_group_range": [
+        17.02127659574468,
+        19.148936170212767
+      ],
+      "tasks": 48
+    },
+    "PersistBench/MEMADAPTER_FULL/beneficial_memory_usage": {
+      "candidate": 18,
+      "control": 18,
+      "denominator": 18,
+      "effect_points": 0.0,
+      "group_positive_ties_negative": [
+        0,
+        18,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        0.0
+      ],
+      "groups": 18,
+      "leave_one_group_range": [
+        0.0,
+        0.0
+      ],
+      "tasks": 18
+    },
+    "PersistBench/MEMADAPTER_FULL/cross_domain": {
+      "candidate": 17,
+      "control": 12,
+      "denominator": 18,
+      "effect_points": 27.77777777777778,
+      "group_positive_ties_negative": [
+        5,
+        13,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        11.11111111111111,
+        50.0
+      ],
+      "groups": 18,
+      "leave_one_group_range": [
+        23.529411764705884,
+        29.41176470588235
+      ],
+      "tasks": 18
+    },
+    "PersistBench/MEMADAPTER_FULL/sycophancy": {
+      "candidate": 11,
+      "control": 7,
+      "denominator": 12,
+      "effect_points": 33.333333333333336,
+      "group_positive_ties_negative": [
+        4,
+        8,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        8.333333333333334,
+        58.333333333333336
+      ],
+      "groups": 12,
+      "leave_one_group_range": [
+        27.272727272727273,
+        36.36363636363637
+      ],
+      "tasks": 12
+    },
+    "PersistBench/PB_GEPA/Overall": {
+      "candidate": 45,
+      "control": 38,
+      "denominator": 47,
+      "effect_points": 14.893617021276595,
+      "group_positive_ties_negative": [
+        7,
+        40,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        6.382978723404255,
+        25.53191489361702
+      ],
+      "groups": 47,
+      "leave_one_group_range": [
+        13.043478260869565,
+        15.217391304347826
+      ],
+      "tasks": 47
+    },
+    "PersistBench/PB_GEPA/beneficial_memory_usage": {
+      "candidate": 18,
+      "control": 17,
+      "denominator": 18,
+      "effect_points": 5.555555555555555,
+      "group_positive_ties_negative": [
+        1,
+        17,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        16.666666666666668
+      ],
+      "groups": 18,
+      "leave_one_group_range": [
+        0.0,
+        5.882352941176471
+      ],
+      "tasks": 18
+    },
+    "PersistBench/PB_GEPA/cross_domain": {
+      "candidate": 17,
+      "control": 16,
+      "denominator": 18,
+      "effect_points": 5.555555555555555,
+      "group_positive_ties_negative": [
+        1,
+        17,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        16.666666666666668
+      ],
+      "groups": 18,
+      "leave_one_group_range": [
+        0.0,
+        5.882352941176471
+      ],
+      "tasks": 18
+    },
+    "PersistBench/PB_GEPA/sycophancy": {
+      "candidate": 10,
+      "control": 5,
+      "denominator": 11,
+      "effect_points": 45.45454545454545,
+      "group_positive_ties_negative": [
+        5,
+        6,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        18.181818181818183,
+        72.72727272727273
+      ],
+      "groups": 11,
+      "leave_one_group_range": [
+        40.0,
+        50.0
+      ],
+      "tasks": 11
+    },
+    "PersistBench/PB_RUBRIC/Overall": {
+      "candidate": 47,
+      "control": 43,
+      "denominator": 49,
+      "effect_points": 8.16326530612245,
+      "group_positive_ties_negative": [
+        5,
+        43,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        18.367346938775512
+      ],
+      "groups": 49,
+      "leave_one_group_range": [
+        6.25,
+        10.416666666666666
+      ],
+      "tasks": 49
+    },
+    "PersistBench/PB_RUBRIC/beneficial_memory_usage": {
+      "candidate": 18,
+      "control": 18,
+      "denominator": 18,
+      "effect_points": 0.0,
+      "group_positive_ties_negative": [
+        0,
+        18,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        0.0
+      ],
+      "groups": 18,
+      "leave_one_group_range": [
+        0.0,
+        0.0
+      ],
+      "tasks": 18
+    },
+    "PersistBench/PB_RUBRIC/cross_domain": {
+      "candidate": 18,
+      "control": 18,
+      "denominator": 19,
+      "effect_points": 0.0,
+      "group_positive_ties_negative": [
+        1,
+        17,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        -15.789473684210526,
+        15.789473684210526
+      ],
+      "groups": 19,
+      "leave_one_group_range": [
+        -5.555555555555555,
+        5.555555555555555
+      ],
+      "tasks": 19
+    },
+    "PersistBench/PB_RUBRIC/sycophancy": {
+      "candidate": 11,
+      "control": 7,
+      "denominator": 12,
+      "effect_points": 33.333333333333336,
+      "group_positive_ties_negative": [
+        4,
+        8,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        8.333333333333334,
+        58.333333333333336
+      ],
+      "groups": 12,
+      "leave_one_group_range": [
+        27.272727272727273,
+        36.36363636363637
+      ],
+      "tasks": 12
+    },
+    "RPEval/RPR_PAPER_FULL/All-A": {
+      "candidate": 400,
+      "control": 267,
+      "denominator": 512,
+      "effect_points": 25.9765625,
+      "group_positive_ties_negative": [
+        17,
+        23,
+        3
+      ],
+      "group_resampling_95_percentile": [
+        12.5,
+        38.98601398601399
+      ],
+      "groups": 43,
+      "leave_one_group_range": [
+        20.851063829787233,
+        27.470355731225297
+      ],
+      "tasks": 116
+    },
+    "RPEval/RPR_PAPER_FULL/Contains-C": {
+      "candidate": 408,
+      "control": 410,
+      "denominator": 672,
+      "effect_points": -0.2976190476190476,
+      "group_positive_ties_negative": [
+        0,
+        33,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        -0.9146341463414634,
+        0.0
+      ],
+      "groups": 34,
+      "leave_one_group_range": [
+        -0.3225806451612903,
+        0.0
+      ],
+      "tasks": 110
+    },
+    "RPEval/RPR_PAPER_FULL/Only-B": {
+      "candidate": 145,
+      "control": 147,
+      "denominator": 278,
+      "effect_points": -0.7194244604316546,
+      "group_positive_ties_negative": [
+        4,
+        11,
+        4
+      ],
+      "group_resampling_95_percentile": [
+        -12.751677852348994,
+        10.526315789473685
+      ],
+      "groups": 19,
+      "leave_one_group_range": [
+        -4.166666666666667,
+        3.816793893129771
+      ],
+      "tasks": 48
+    },
+    "RPEval/RPR_PAPER_FULL/Overall": {
+      "candidate": 953,
+      "control": 824,
+      "denominator": 1462,
+      "effect_points": 8.823529411764707,
+      "group_positive_ties_negative": [
+        18,
+        21,
+        5
+      ],
+      "group_resampling_95_percentile": [
+        3.0903328050713155,
+        14.85753052917232
+      ],
+      "groups": 44,
+      "leave_one_group_range": [
+        6.695156695156695,
+        9.846368715083798
+      ],
+      "tasks": 274
+    },
+    "RPEval/TASK_ONLY/All-A": {
+      "candidate": 400,
+      "control": 426,
+      "denominator": 512,
+      "effect_points": -5.078125,
+      "group_positive_ties_negative": [
+        2,
+        36,
+        5
+      ],
+      "group_resampling_95_percentile": [
+        -11.02661596958175,
+        0.5025125628140703
+      ],
+      "groups": 43,
+      "leave_one_group_range": [
+        -6.048387096774194,
+        -2.8688524590163933
+      ],
+      "tasks": 116
+    },
+    "RPEval/TASK_ONLY/Contains-C": {
+      "candidate": 408,
+      "control": 306,
+      "denominator": 672,
+      "effect_points": 15.178571428571429,
+      "group_positive_ties_negative": [
+        24,
+        9,
+        1
+      ],
+      "group_resampling_95_percentile": [
+        10.45016077170418,
+        19.77715877437326
+      ],
+      "groups": 34,
+      "leave_one_group_range": [
+        13.709677419354838,
+        16.50793650793651
+      ],
+      "tasks": 110
+    },
+    "RPEval/TASK_ONLY/Only-B": {
+      "candidate": 145,
+      "control": 142,
+      "denominator": 278,
+      "effect_points": 1.079136690647482,
+      "group_positive_ties_negative": [
+        2,
+        17,
+        0
+      ],
+      "group_resampling_95_percentile": [
+        0.0,
+        2.857142857142857
+      ],
+      "groups": 19,
+      "leave_one_group_range": [
+        0.37593984962406013,
+        1.2
+      ],
+      "tasks": 48
+    },
+    "RPEval/TASK_ONLY/Overall": {
+      "candidate": 953,
+      "control": 874,
+      "denominator": 1462,
+      "effect_points": 5.403556771545827,
+      "group_positive_ties_negative": [
+        23,
+        16,
+        5
+      ],
+      "group_resampling_95_percentile": [
+        2.366412213740458,
+        8.343125734430082
+      ],
+      "groups": 44,
+      "leave_one_group_range": [
+        4.5321637426900585,
+        6.100981767180926
+      ],
+      "tasks": 274
+    }
+  },
+  "net_signs": "candidate minus control",
+  "new_requests": 0,
+  "seed": 20261126
+}

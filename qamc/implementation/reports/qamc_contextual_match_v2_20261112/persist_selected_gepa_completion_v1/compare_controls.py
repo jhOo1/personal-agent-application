@@ -9,7 +9,7 @@ STAGES = ("selected_gepa_expansion_v1", "persist_performance_v1")
 EXTERNAL = "persist_memadapter_alignment_v1"
 
 
-def compare():
+def load_verified_scores():
     author, bounds, _ = get_author()
     controls = defaultdict(dict)
     for row in author:
@@ -52,6 +52,11 @@ def compare():
                     or normalized(wire, row["answer"]) != bounds[uid]):
                 raise ValueError("Completed score manifest drift")
         selected[uid] = (row["category"], row["score"])
+    return selected, controls
+
+
+def compare():
+    selected, controls = load_verified_scores()
     comparisons = defaultdict(Counter)
     for uid, (track, score) in selected.items():
         active = passes(score, track)
