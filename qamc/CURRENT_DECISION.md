@@ -1,5 +1,16 @@
 # QAMC 当前判断与下一次机制对照
 
+## 2026-11-26 更新
+
+[英文论文初稿](implementation/reports/qamc_contextual_match_v2_20261112/paper_evidence_handoff_v1/CONDITIONAL_MEMORY_MANUSCRIPT_DRAFT.md) 已写到摘要、方法、实验、结果与局限。当前主结果是 RPEval 的任务级历史启用，BenchPreS 和 PersistBench 分别检验表达实现与关闭历史的适用边界。各 Benchmark 保留当前最强实测路径，正式同协议排名与独立确认仍未完成。
+
+- [RPEval 原生数据核验](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/RPE_RELEASE_IDENTITY_AND_FORMAT.md)：300 道确为固定版本作者多偏好题，共同有效 280 题，IPE-C 对 RP 重建为 970/1,504 对 841/1,504。显隐输入成对之后，优势仍主要在全 A。
+- [同题外部对照与协议缺口](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/COMMON_COMPARISON_CLOSURE.md)：BenchPreS 保留 Strong Gate，下一项优先工作是核对已存成稿能否支撑固定答案评分桥接；PersistBench 保留 PB_RUBRIC 与 SELECTED_GEPA 的分面板证据。
+- [PersistBench 固定信号对照](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/PERSIST_SWITCH_CROSS_RUN_AUDIT.md)：五个共同有效的 OFF 案例中，移除历史与保留历史但发出明确 OFF 指令严格等级均相同。
+- [双状态替代](implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/RPE_CONTINGENCY_RESULTS.md)：未达到行为与保护门槛，停止此版本的扩大。
+
+## 2026-11-25 历史记录
+
 截至 2026-11-25，最新真跑仍为 DREW，原工作区结算提交 `adb2231e7`，恢复锚 `fd8b855be`。
 
 ## 已建立的结果
