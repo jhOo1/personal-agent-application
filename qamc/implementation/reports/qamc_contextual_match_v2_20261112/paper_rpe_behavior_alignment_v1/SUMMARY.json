@@ -1,0 +1,61 @@
+{
+  "C_positions": 17,
+  "archive_sha256": "b5969ecb13c042cdef7fc01dfbd9e8e4f8a312accc054479914b942f335bff78",
+  "groups": 12,
+  "native_on_behavior_improvements": {
+    "IPE_C": {
+      "native_gain": 7,
+      "native_tie": 2
+    },
+    "RPR_PAPER_FULL": {
+      "native_gain": 8,
+      "native_tie": 3
+    }
+  },
+  "native_positions": 74,
+  "packet_sha256": "343e70dbff3a28825f3c20e5a6cdbbf57f81527f49f5bba11c5e10d829ba2c1d",
+  "review_sha256": "f746c6834637267f84b3afed366c524716d84bcb2b1caf14ceb237a687f27aae",
+  "scores": {
+    "IPE_C": {
+      "CONFLICT": 1,
+      "OMITTED": 2,
+      "REALIZED": 14,
+      "joint_C_realized": 9,
+      "native_match": 42
+    },
+    "RPR_PAPER_FULL": {
+      "CONFLICT": 1,
+      "REALIZED": 16,
+      "joint_C_realized": 11,
+      "native_match": 44
+    },
+    "TASK_ONLY": {
+      "CONFLICT": 9,
+      "OMITTED": 6,
+      "REALIZED": 2,
+      "joint_C_realized": 1,
+      "native_match": 32
+    }
+  },
+  "strata": {
+    "multiple_C": 5,
+    "one_C": 5,
+    "route_off": 2
+  },
+  "tasks": 12,
+  "transitions_from_task_only": {
+    "IPE_C": {
+      "CONFLICT->CONFLICT": 1,
+      "CONFLICT->REALIZED": 8,
+      "OMITTED->OMITTED": 2,
+      "OMITTED->REALIZED": 4,
+      "REALIZED->REALIZED": 2
+    },
+    "RPR_PAPER_FULL": {
+      "CONFLICT->CONFLICT": 1,
+      "CONFLICT->REALIZED": 8,
+      "OMITTED->REALIZED": 6,
+      "REALIZED->REALIZED": 2
+    }
+  }
+}

@@ -81,6 +81,19 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
                 *whole_task["missing_sensitivity_delta_count"]["RPR_PAPER_FULL"]["micro"])
     require(tuple(map(float, match.groups())) if match else None, expected, "RPEval source sensitivity")
 
+    behavior = json.loads((root / "paper_rpe_behavior_alignment_v1/SUMMARY.json").read_text())
+    measured = re.search(
+        r"On (\d+) exposed source groups, .*?realization at (\d+)/(\d+), (\d+)/(\d+), and (\d+)/(\d+)"
+        r".*?together for (\d+), (\d+), and (\d+) of the (\d+) tasks\.",
+        paper,
+        re.S,
+    )
+    names = ("IPE_C", "TASK_ONLY", "RPR_PAPER_FULL")
+    expected = (behavior["groups"], *(x for a in names for x in
+                (behavior["scores"][a]["REALIZED"], behavior["C_positions"])),
+                *(behavior["scores"][a]["joint_C_realized"] for a in names), behavior["tasks"])
+    require(tuple(map(count, measured.groups())) if measured else None, expected, "RPEval execution-side audit")
+
     reservation = json.loads((root / "rpe_constraint_reservation_v1/SUMMARY.json").read_text())
     reserved = reservation["comparisons"]["RESERVED/TOP_NEXT"]["all"]
     positions = reserved["match"]["positions"]
@@ -138,7 +151,7 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(tuple(pair), public_bench[metric], f"BenchPreS {metric}")
         seen_metrics.add(metric)
     require(seen_metrics, public_bench.keys(), "BenchPreS metrics")
-    return 4 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    return 5 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
