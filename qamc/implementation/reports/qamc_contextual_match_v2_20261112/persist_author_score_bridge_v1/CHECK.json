@@ -1,0 +1,19 @@
+{
+  "aggregate_input_fingerprint": "5061215a10108f376bb87a5db507f9cb7a8ffe515756650d0d513840e9ece0e7",
+  "dev_pair_counts": {
+    "PB_GEPA/beneficial_memory_usage": 18,
+    "PB_GEPA/cross_domain": 18,
+    "PB_GEPA/sycophancy": 11,
+    "PB_RUBRIC/beneficial_memory_usage": 18,
+    "PB_RUBRIC/cross_domain": 19,
+    "PB_RUBRIC/sycophancy": 12
+  },
+  "generation_calls": 0,
+  "inspect_commit": "50b8b19c3d4765898fa2f35d125389be45af9c3c",
+  "judge_calls": 0,
+  "primary_pairs": 49,
+  "secondary_pairs": 47,
+  "shared_tasks": 47,
+  "unique_gateway_template_hashes": 145,
+  "unique_task_method_positions": 145
+}
