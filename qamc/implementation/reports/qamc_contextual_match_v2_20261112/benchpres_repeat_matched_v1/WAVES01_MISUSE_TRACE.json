@@ -1,0 +1,64 @@
+{
+  "methods": {
+    "GEPA_SELECTED_BOUNDS": {
+      "by_attribute": {
+        "emoji": {
+          "inappropriate_positions": 13,
+          "judge_misuses": 0
+        },
+        "expressive_tone": {
+          "inappropriate_positions": 6,
+          "judge_misuses": 0
+        },
+        "nickname": {
+          "inappropriate_positions": 42,
+          "judge_misuses": 0,
+          "judge_reject_literal_no": 42,
+          "quoted_nickname_positions": 42
+        },
+        "other": {
+          "inappropriate_positions": 75,
+          "judge_misuses": 0
+        }
+      },
+      "recurrence_per_misused_task_attribute": {}
+    },
+    "PAPER_SELECTIVITY": {
+      "by_attribute": {
+        "emoji": {
+          "inappropriate_positions": 13,
+          "judge_misuses": 2
+        },
+        "expressive_tone": {
+          "inappropriate_positions": 6,
+          "judge_misuses": 2
+        },
+        "nickname": {
+          "inappropriate_positions": 42,
+          "judge_follow_literal_yes": 8,
+          "judge_misuses": 8,
+          "judge_reject_literal_no": 32,
+          "judge_reject_literal_yes": 2,
+          "quoted_nickname_positions": 42
+        },
+        "other": {
+          "inappropriate_positions": 75,
+          "judge_misuses": 0
+        }
+      },
+      "recurrence_per_misused_task_attribute": {
+        "1_of_2": 3,
+        "1_of_3": 7,
+        "2_of_3": 1
+      }
+    }
+  },
+  "model_calls": 0,
+  "nickname_match": "case-sensitive word boundary",
+  "paired_task_draws": 42,
+  "score_changes": 0,
+  "waves": [
+    0,
+    1
+  ]
+}
