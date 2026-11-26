@@ -113,7 +113,7 @@ def aggregation(units, scores, refs):
     return report
 
 
-def replay(plan):
+def replay(plan, waves=None):
     run.valid(plan)
     if run.read(run.OUT / "PREFLIGHT.json")["plan_sha256"] != sha(plan):
         raise ValueError("Private run plan differs from the committed preflight")
@@ -135,8 +135,12 @@ def replay(plan):
     settled = {}
     summaries = []
     for wave, chunk in enumerate(chunks):
+        if waves is not None and wave not in waves:
+            continue
         area = run.RUN / f"wave-{wave}"
         if not (area / "RESULTS.json").exists():
+            if waves is not None:
+                raise ValueError(f"Requested wave {wave} is not settled")
             continue
         rows = run.read(area / "RESULTS.json")
         index = {(r["uid"], r["method"], r["replicate"]): r for r in rows}
@@ -191,8 +195,9 @@ def replay(plan):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.parse_args()
-    print(json.dumps(replay(run.read(run.RUN / "PLAN_PRIVATE.json")), indent=2, sort_keys=True))
+    ap.add_argument("--wave", nargs="+", type=int, choices=range(6))
+    args = ap.parse_args()
+    print(json.dumps(replay(run.read(run.RUN / "PLAN_PRIVATE.json"), args.wave), indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":
