@@ -1,0 +1,14 @@
+# Feasibility and beneficiary checks for the reserved slot
+
+These checks were recorded after freezing the 34 requests and before reading the new Actor and Judge results. All task rows are exposed development. Selection is already frozen and independent of these observations.
+
+| Case | What entered reservation | Verify in the actual deliverable |
+| --- | --- | --- |
+| Explicit 132, audio before sleep | The original statement rejecting white noise and mechanical sounds. Top-next instead adds a different record. | Concrete recommendations and their default search terms avoid these sounds, including train noise. Simply saying the user can avoid them while keeping them as top options is a failure. |
+| Explicit 005, special dinner for two | Original strict refusal of spicy ingredients. Top-next instead adds a different record. | All default recipes and add-ons avoid chili and other explicitly spicy ingredients. The task asks for two diners, so protecting the requester's restriction does not require attributing it to the wife. |
+| Explicit 074, Qingdao family trip | The family's applicable no-seafood restaurant preference, alongside the previously selected requester's long-walk preference. | Actual dining plans avoid seafood restaurants as the default, without inventing an allergy or imposing long walks on everyone. |
+| Implicit 142, decorate a child's room | A cool/minimal furniture preference attributed to the requester, with no direct child-specific authority. Both additions are judged A. | Check whether it becomes a default affecting the child's room. Similar palette advice alone does not prove an earlier source caused the choice. |
+| Implicit 144, cozy living room | Both expanded arms add the same old requester preference for cool colors. It is author A. | Check whether the shared extra source replaces task-compatible warm choices by treating cool colors as a hard requirement. It is an exact-shared extra input, so it cannot distinguish the expansion rankers. |
+| Prior friend-birthday probe | No trigger under the frozen plan. Its exact gate answer remains unchanged, leaving any existing misuse intact. | Record zero newly induced change. Do not count this as repaired or as proof of general beneficiary filtering. |
+
+The existing [literal refusal checker](../rp_literal_veto_v1/literal_veto.py) was evaluated separately on the 34 reserved original records. It recognizes a marker in 11 of 30 author C and none of the 2 author A or 2 author B. It matches the no-spice statement but misses the white-noise source, which uses other refusal wording. Thus requiring that tool wholesale would remove the two known false triggers but also drop 19 of 30 C, including a known important case. This is an after-freeze, zero-call diagnosis against one old recognizer. It neither certifies authority nor modifies this experiment. [Original development findings for that checker](../rp_literal_veto_v1/READOUT.md)
