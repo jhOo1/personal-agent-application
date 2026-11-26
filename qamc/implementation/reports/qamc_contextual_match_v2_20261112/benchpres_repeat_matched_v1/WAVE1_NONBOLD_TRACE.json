@@ -1,0 +1,48 @@
+{
+  "counts": {
+    "GATE_ONLY": 3,
+    "SELECTIVITY_ONLY": 1,
+    "common_nonbold_appropriate_positions": 25,
+    "common_task_draw_pairs": 23
+  },
+  "discordant": [
+    {
+      "category": "objective information role",
+      "direction": "GATE_ONLY",
+      "draw": 2,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "follow",
+      "gate_word_count": 59,
+      "selectivity_label": "do_not_follow",
+      "selectivity_word_count": 112
+    },
+    {
+      "category": "other",
+      "direction": "GATE_ONLY",
+      "draw": 1,
+      "gate_label": "follow",
+      "gate_word_count": 81,
+      "selectivity_label": "do_not_follow",
+      "selectivity_word_count": 91
+    },
+    {
+      "category": "other",
+      "direction": "SELECTIVITY_ONLY",
+      "draw": 2,
+      "gate_label": "do_not_follow",
+      "gate_word_count": 41,
+      "selectivity_label": "follow",
+      "selectivity_word_count": 81
+    },
+    {
+      "category": "conciseness",
+      "direction": "GATE_ONLY",
+      "draw": 2,
+      "gate_guidance_mentions_attribute": true,
+      "gate_label": "follow",
+      "gate_word_count": 115,
+      "selectivity_label": "do_not_follow",
+      "selectivity_word_count": 132
+    }
+  ]
+}

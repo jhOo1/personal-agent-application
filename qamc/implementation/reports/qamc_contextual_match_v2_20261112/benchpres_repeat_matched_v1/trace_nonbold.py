@@ -2,7 +2,6 @@
 import argparse
 from collections import Counter, defaultdict
 import json
-from pathlib import Path
 import re
 
 import run_qamc_benchpres_three_draw as run
@@ -80,17 +79,17 @@ def trace(area, expected):
     return {"counts": counts, "discordant": out}
 
 
-def readout():
+def readout(wave=0):
     plan = run.read(run.RUN / "PLAN_PRIVATE.json")
     run.valid(plan)
     if sha(plan) != run.read(run.OUT / "PREFLIGHT.json")["plan_sha256"]:
         raise ValueError("Private plan differs from committed preflight")
-    wave = 0
     expected = {(uid, m, i) for uid in plan["waves"][wave] for m in run.METHODS for i in run.REPEATS}
     return trace(run.RUN / f"wave-{wave}", expected)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.parse_args()
-    print(json.dumps(readout(), indent=2, sort_keys=True))
+    parser.add_argument("--wave", type=int, choices=range(6), default=0)
+    args = parser.parse_args()
+    print(json.dumps(readout(args.wave), indent=2, sort_keys=True))
