@@ -4,6 +4,8 @@
 
 24 道已曝光单偏好题中，22 道同题有效，IPE-C 15/22，RP 17/22，Des2Gen 与 MemAdapter 各 18/22。与空史同题的 21 道为 14/21 对 10/21。两道输 RP 的作者 C 均被 IPE 预测为 B 并走空史。多偏好旧账本中的 138 个作者 B 且 IPE 预测 B 的位置，68 个隐藏，70 个因另一条预测 C 进入 Actor。当前支持在多偏好场景继续研究启用策略，并保留单偏好保护缺口。单偏好评分是历史 Qwen 详细模板适配。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/READOUT.md)
 
+故意将作者分数只用于事后上界分析。两份存稿的最佳可能组合仅 16/21；Des2Gen 和 MemAdapter 同题各 17/21。固定的两估计器 B 触发追回了两道 C，却只追平始终用史，并且已在宽多偏好面板上造成明显退步。[旧规则同题回放与上界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_single_endpoint_bridge_v1/PRIOR_ROUTER_READOUT.md)
+
 ## RPEval 冻结候选池资格
 
 已发布的 IF-CRITIC 有模型权重与可核实推理接口。用 130 道原 IPE-C 历史请求查询 1,334 份开发账本，找到 29 道逐请求相同且终答不同的任务。13 道含已经送达并预测为 B 的合法偏好。文本核验未找到两个独立来源的合法软偏好恢复，因此未启动 Critic 选稿。该结果限制的是已有候选，而 IF-CRITIC 在此任务的能力仍未知。[资格结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_learned_critic_qualification_v1/READOUT.md)
