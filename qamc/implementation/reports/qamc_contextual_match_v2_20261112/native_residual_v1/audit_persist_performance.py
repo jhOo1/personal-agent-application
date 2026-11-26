@@ -1,7 +1,8 @@
 """Verify archived PersistBench controls and produce matched tables for the expanded run."""
 import argparse
-from collections import Counter
+from collections import Counter, defaultdict
 import json
+import re
 
 from build_jobs import archive as baseline_archive
 from freeze_persist_performance_panel import CONTROLS, HERE, read
@@ -42,6 +43,33 @@ def load_controls():
     return cases, scores
 
 
+
+def check_actor_pairs(cases):
+    manifest = read(HERE / "persist_performance_v1" / "FinalActor_MANIFEST.json")
+    pairs = defaultdict(dict)
+    for item in manifest["units"]:
+        unit, request = item["unit"], item["request"]
+        uid, method = unit["root_id"], unit["method"]
+        if uid not in cases or method not in CANDIDATES or method in pairs[uid]:
+            raise ValueError(f"Unexpected Actor row: {uid}/{method}")
+        pairs[uid][method] = request
+    counts = {k: Counter() for k in {row["category"] for row in cases.values()}}
+    for uid, pair in pairs.items():
+        left, right = (pair[method] for method in CANDIDATES)
+        a, b = (re.findall(r"<memories>\n(.*?)\n</memories>", request["messages"][0]["content"], re.S)
+                for request in (left, right))
+        if len(a) != 1 or a != b or left["messages"][1:] != right["messages"][1:]:
+            raise ValueError(f"Paired evidence or task drift: {uid}")
+        left_settings, right_settings = ({k: v for k, v in request.items() if k != "messages"}
+                                         for request in (left, right))
+        if left_settings != right_settings:
+            raise ValueError(f"Paired Actor settings drift: {uid}")
+        count = counts[cases[uid]["category"]]
+        count["paired"] += 1
+        count["empty_history"] += not a[0]
+    return counts
+
+
 def summary(cases, scores):
     report = {}
     for left, right in [(a, b) for a in CANDIDATES for b in METHODS] + [CANDIDATES]:
@@ -63,10 +91,13 @@ def summary(cases, scores):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("action", choices=("controls", "results"))
+    parser.add_argument("action", choices=("controls", "actors", "results"))
     cases, scores = load_controls()
-    if parser.parse_args().action == "controls":
+    action = parser.parse_args().action
+    if action == "controls":
         print(json.dumps(Counter(method for _, method in scores), indent=2))
+    elif action == "actors":
+        print(json.dumps(check_actor_pairs(cases), indent=2, sort_keys=True))
     else:
         results = read(HERE / "persist_performance_v1" / "RESULTS.json")
         scores.update({(row["uid"], row["method"]): row["score"] for row in results["rows"]
