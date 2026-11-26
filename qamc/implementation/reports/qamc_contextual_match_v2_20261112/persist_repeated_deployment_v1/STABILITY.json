@@ -1,0 +1,146 @@
+{
+  "physical_receipts": {
+    "Draw1/Judge": {
+      "OK": 66,
+      "reported_tokens": 571913
+    },
+    "Draw1/PB_GEPA": {
+      "OK": 25,
+      "reported_tokens": 210712
+    },
+    "Draw1/PB_RUBRIC": {
+      "FAILED_DELIVERY_UNKNOWN": 2,
+      "OK": 23,
+      "error/stream_missing_done": 2,
+      "reported_tokens": 200783,
+      "unknown_usage": 2
+    },
+    "Draw1/Route": {
+      "OK": 25,
+      "reported_tokens": 14980
+    },
+    "Draw1/Select": {
+      "OK": 25,
+      "reported_tokens": 56680
+    },
+    "Draw1/SelectedActor": {
+      "FAILED_DELIVERY_UNKNOWN": 6,
+      "OK": 18,
+      "error/stream_missing_done": 6,
+      "reported_tokens": 140167,
+      "unknown_usage": 6
+    },
+    "Draw2/Judge": {
+      "OK": 55,
+      "reported_tokens": 575704
+    },
+    "Draw2/PB_GEPA": {
+      "OK": 19,
+      "reported_tokens": 160389
+    },
+    "Draw2/PB_RUBRIC": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "OK": 18,
+      "error/stream_in_band_error": 1,
+      "reported_tokens": 168870,
+      "unknown_usage": 1
+    },
+    "Draw2/Route": {
+      "OK": 19,
+      "reported_tokens": 11222
+    },
+    "Draw2/Select": {
+      "OK": 18,
+      "reported_tokens": 46711
+    },
+    "Draw2/SelectedActor": {
+      "OK": 18,
+      "reported_tokens": 154720
+    },
+    "Draw3/Judge": {
+      "OK": 56,
+      "reported_tokens": 603236
+    },
+    "Draw3/PB_GEPA": {
+      "OK": 19,
+      "reported_tokens": 176243
+    },
+    "Draw3/PB_RUBRIC": {
+      "OK": 19,
+      "reported_tokens": 180155
+    },
+    "Draw3/Route": {
+      "OK": 19,
+      "reported_tokens": 9826
+    },
+    "Draw3/Select": {
+      "OK": 19,
+      "reported_tokens": 44675
+    },
+    "Draw3/SelectedActor": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "OK": 18,
+      "error/TimeoutError": 1,
+      "reported_tokens": 145252,
+      "unknown_usage": 1
+    }
+  },
+  "variation": {
+    "beneficial_memory_usage/PB_GEPA": {
+      "answer_available": 6,
+      "tasks": 6
+    },
+    "beneficial_memory_usage/PB_RUBRIC": {
+      "answer_available": 6,
+      "tasks": 6
+    },
+    "beneficial_memory_usage/SELECTED_GEPA": {
+      "answer_available": 4,
+      "tasks": 6
+    },
+    "cross_domain/PB_GEPA": {
+      "answer_available": 24,
+      "answer_complete": 8,
+      "answer_varied": 8,
+      "tasks": 8
+    },
+    "cross_domain/PB_RUBRIC": {
+      "answer_available": 24,
+      "answer_complete": 8,
+      "answer_varied": 8,
+      "tasks": 8
+    },
+    "cross_domain/SELECTED_GEPA": {
+      "answer_available": 21,
+      "answer_complete": 5,
+      "answer_varied": 5,
+      "branch_complete": 8,
+      "branch_varied": 0,
+      "selected_sha256_complete": 8,
+      "selected_sha256_varied": 1,
+      "tasks": 8
+    },
+    "sycophancy/PB_GEPA": {
+      "answer_available": 33,
+      "answer_complete": 11,
+      "answer_varied": 11,
+      "tasks": 11
+    },
+    "sycophancy/PB_RUBRIC": {
+      "answer_available": 30,
+      "answer_complete": 8,
+      "answer_varied": 8,
+      "tasks": 11
+    },
+    "sycophancy/SELECTED_GEPA": {
+      "answer_available": 29,
+      "answer_complete": 7,
+      "answer_varied": 7,
+      "branch_complete": 10,
+      "branch_varied": 0,
+      "selected_sha256_complete": 10,
+      "selected_sha256_varied": 2,
+      "tasks": 11
+    }
+  }
+}

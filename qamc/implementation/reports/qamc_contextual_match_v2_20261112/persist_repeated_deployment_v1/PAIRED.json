@@ -1,0 +1,74 @@
+{
+  "beneficial_memory_usage/PB_GEPA": {
+    "assigned": 6,
+    "difference_lower": 0,
+    "difference_on_known": 0,
+    "difference_upper": 2,
+    "losses": 0,
+    "paired_known": 4,
+    "paired_unknown": 2,
+    "screen": "SENSITIVE_TO_MISSING",
+    "ties": 4,
+    "wins": 0
+  },
+  "beneficial_memory_usage/PB_RUBRIC": {
+    "assigned": 6,
+    "difference_lower": 0,
+    "difference_on_known": 0,
+    "difference_upper": 2,
+    "losses": 0,
+    "paired_known": 4,
+    "paired_unknown": 2,
+    "screen": "SENSITIVE_TO_MISSING",
+    "ties": 4,
+    "wins": 0
+  },
+  "cross_domain/PB_GEPA": {
+    "assigned": 8,
+    "difference_lower": 0,
+    "difference_on_known": 0,
+    "difference_upper": 3,
+    "losses": 0,
+    "paired_known": 5,
+    "paired_unknown": 3,
+    "screen": "SENSITIVE_TO_MISSING",
+    "ties": 5,
+    "wins": 0
+  },
+  "cross_domain/PB_RUBRIC": {
+    "assigned": 8,
+    "difference_lower": -1,
+    "difference_on_known": 0,
+    "difference_upper": 2,
+    "losses": 0,
+    "paired_known": 5,
+    "paired_unknown": 3,
+    "screen": "SENSITIVE_TO_MISSING",
+    "ties": 5,
+    "wins": 0
+  },
+  "sycophancy/PB_GEPA": {
+    "assigned": 11,
+    "difference_lower": -5,
+    "difference_on_known": -3,
+    "difference_upper": -1,
+    "losses": 0,
+    "paired_known": 7,
+    "paired_unknown": 4,
+    "screen": "MEETS_SCREEN_UNDER_WORST_CASE",
+    "ties": 4,
+    "wins": 3
+  },
+  "sycophancy/PB_RUBRIC": {
+    "assigned": 11,
+    "difference_lower": -8,
+    "difference_on_known": -3,
+    "difference_upper": -3,
+    "losses": 0,
+    "paired_known": 6,
+    "paired_unknown": 5,
+    "screen": "MEETS_SCREEN_UNDER_WORST_CASE",
+    "ties": 3,
+    "wins": 3
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "beneficial_memory_usage": {
+    "1": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 4,
+          "known_vs_missing": {
+            "assigned": 6,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 4,
+            "paired_unknown": 2,
+            "ties": 4,
+            "wins": 0
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 4,
+          "known_vs_missing": {
+            "assigned": 6,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 4,
+            "paired_unknown": 2,
+            "ties": 4,
+            "wins": 0
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 6
+          },
+          "prior_complete_passes": 6
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 6
+          },
+          "prior_complete_passes": 6
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 2,
+          "prefix_outcomes": {
+            "PASS": 4,
+            "UNKNOWN": 2
+          },
+          "prior_complete_passes": 6
+        }
+      }
+    }
+  },
+  "cross_domain": {
+    "1": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 2,
+            "ties": 6,
+            "wins": 0
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 2,
+            "ties": 6,
+            "wins": 0
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 8
+          },
+          "prior_complete_passes": 8
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 8
+          },
+          "prior_complete_passes": 8
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 2,
+          "prefix_outcomes": {
+            "PASS": 6,
+            "UNKNOWN": 2
+          },
+          "prior_complete_passes": 8
+        }
+      }
+    },
+    "2": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 2,
+            "ties": 6,
+            "wins": 0
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": -1,
+            "difference_on_known": 0,
+            "difference_upper": 1,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 2,
+            "ties": 6,
+            "wins": 0
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 8
+          },
+          "prior_complete_passes": 8
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 1,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 1,
+            "PASS": 7
+          },
+          "prior_complete_passes": 8
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 6,
+            "UNKNOWN": 2
+          },
+          "prior_complete_passes": 6
+        }
+      }
+    },
+    "3": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": 0,
+            "difference_on_known": 0,
+            "difference_upper": 3,
+            "losses": 0,
+            "paired_known": 5,
+            "paired_unknown": 3,
+            "ties": 5,
+            "wins": 0
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 0,
+          "fixed_complete_pair_reference_failures": 0,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 8,
+            "difference_lower": -1,
+            "difference_on_known": 0,
+            "difference_upper": 2,
+            "losses": 0,
+            "paired_known": 5,
+            "paired_unknown": 3,
+            "ties": 5,
+            "wins": 0
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "PASS": 8
+          },
+          "prior_complete_passes": 8
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 1,
+            "PASS": 7
+          },
+          "prior_complete_passes": 7
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 1,
+          "prefix_outcomes": {
+            "PASS": 5,
+            "UNKNOWN": 3
+          },
+          "prior_complete_passes": 6
+        }
+      }
+    }
+  },
+  "sycophancy": {
+    "1": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 4,
+          "fixed_complete_pair_tasks": 7,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -5,
+            "difference_on_known": -4,
+            "difference_upper": -2,
+            "losses": 0,
+            "paired_known": 8,
+            "paired_unknown": 3,
+            "ties": 4,
+            "wins": 4
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 3,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -6,
+            "difference_on_known": -2,
+            "difference_upper": -1,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 5,
+            "ties": 4,
+            "wins": 2
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 6,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 6,
+            "PASS": 5
+          },
+          "prior_complete_passes": 11
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 5,
+          "new_missing_after_passes": 2,
+          "prefix_outcomes": {
+            "FAIL": 5,
+            "PASS": 4,
+            "UNKNOWN": 2
+          },
+          "prior_complete_passes": 11
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 1,
+          "new_missing_after_passes": 3,
+          "prefix_outcomes": {
+            "FAIL": 1,
+            "PASS": 7,
+            "UNKNOWN": 3
+          },
+          "prior_complete_passes": 11
+        }
+      }
+    },
+    "2": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 4,
+          "fixed_complete_pair_tasks": 7,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -5,
+            "difference_on_known": -3,
+            "difference_upper": -1,
+            "losses": 0,
+            "paired_known": 7,
+            "paired_unknown": 4,
+            "ties": 4,
+            "wins": 3
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 3,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -7,
+            "difference_on_known": -3,
+            "difference_upper": -1,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 5,
+            "ties": 3,
+            "wins": 3
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 6,
+            "PASS": 5
+          },
+          "prior_complete_passes": 5
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 1,
+          "prefix_outcomes": {
+            "FAIL": 6,
+            "PASS": 3,
+            "UNKNOWN": 2
+          },
+          "prior_complete_passes": 4
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 1,
+          "prefix_outcomes": {
+            "FAIL": 1,
+            "PASS": 6,
+            "UNKNOWN": 4
+          },
+          "prior_complete_passes": 7
+        }
+      }
+    },
+    "3": {
+      "pairs": {
+        "PB_GEPA": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 4,
+          "fixed_complete_pair_tasks": 7,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -5,
+            "difference_on_known": -3,
+            "difference_upper": -1,
+            "losses": 0,
+            "paired_known": 7,
+            "paired_unknown": 4,
+            "ties": 4,
+            "wins": 3
+          }
+        },
+        "PB_RUBRIC": {
+          "fixed_complete_pair_candidate_failures": 1,
+          "fixed_complete_pair_reference_failures": 3,
+          "fixed_complete_pair_tasks": 5,
+          "known_vs_missing": {
+            "assigned": 11,
+            "difference_lower": -8,
+            "difference_on_known": -3,
+            "difference_upper": -3,
+            "losses": 0,
+            "paired_known": 6,
+            "paired_unknown": 5,
+            "ties": 3,
+            "wins": 3
+          }
+        }
+      },
+      "per_method": {
+        "PB_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 6,
+            "PASS": 5
+          },
+          "prior_complete_passes": 5
+        },
+        "PB_RUBRIC": {
+          "new_known_failures_after_passes": 1,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 8,
+            "PASS": 2,
+            "UNKNOWN": 1
+          },
+          "prior_complete_passes": 3
+        },
+        "SELECTED_GEPA": {
+          "new_known_failures_after_passes": 0,
+          "new_missing_after_passes": 0,
+          "prefix_outcomes": {
+            "FAIL": 1,
+            "PASS": 6,
+            "UNKNOWN": 4
+          },
+          "prior_complete_passes": 6
+        }
+      }
+    }
+  }
+}

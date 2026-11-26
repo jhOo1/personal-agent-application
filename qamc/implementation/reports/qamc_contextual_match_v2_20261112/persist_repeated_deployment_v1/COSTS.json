@@ -1,0 +1,63 @@
+{
+  "PB_GEPA": {
+    "allocated_answers": 63,
+    "completed_answers": 63,
+    "median_sum_of_call_seconds_on_traced_paths": 36.9473,
+    "median_timed_call_seconds": 36.9473,
+    "physical_calls": 63,
+    "physically_traced_success_paths": 63,
+    "reported_tokens": 547344,
+    "scored_answers": 62,
+    "statuses": {
+      "OK": 63
+    },
+    "timed_call_seconds_sum": 2557.6272,
+    "timed_calls": 63,
+    "unknown_tokens_calls": 0
+  },
+  "PB_RUBRIC": {
+    "allocated_answers": 63,
+    "completed_answers": 60,
+    "median_sum_of_call_seconds_on_traced_paths": 46.35145,
+    "median_timed_call_seconds": 45.0457,
+    "physical_calls": 63,
+    "physically_traced_success_paths": 60,
+    "reported_tokens": 549808,
+    "scored_answers": 60,
+    "statuses": {
+      "FAILED_DELIVERY_UNKNOWN": 3,
+      "OK": 60
+    },
+    "timed_call_seconds_sum": 3081.813,
+    "timed_calls": 63,
+    "unknown_tokens_calls": 3
+  },
+  "SELECTED_GEPA": {
+    "allocated_answers": 63,
+    "completed_answers": 54,
+    "median_sum_of_call_seconds_on_traced_paths": 56.375,
+    "median_timed_call_seconds": 10.22155,
+    "physical_calls": 186,
+    "physically_traced_success_paths": 54,
+    "reported_tokens": 624233,
+    "scored_answers": 54,
+    "statuses": {
+      "FAILED_DELIVERY_UNKNOWN": 7,
+      "OK": 179
+    },
+    "timed_call_seconds_sum": 4499.653,
+    "timed_calls": 186,
+    "unknown_tokens_calls": 7
+  },
+  "SEPARATE_JUDGE": {
+    "median_timed_call_seconds": 9.7726,
+    "physical_calls": 177,
+    "reported_tokens": 1750853,
+    "statuses": {
+      "OK": 177
+    },
+    "timed_call_seconds_sum": 1743.0216,
+    "timed_calls": 177,
+    "unknown_tokens_calls": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "evidence_stability": {
+    "cross_domain": {
+      "changed_evidence": 1,
+      "constant_evidence": 7
+    },
+    "sycophancy": {
+      "changed_evidence": 2,
+      "constant_evidence": 8
+    }
+  },
+  "methods": {
+    "beneficial_memory_usage/PB_GEPA": {
+      "PASS": 6,
+      "draw_assigned": 6,
+      "draw_fail": 0,
+      "draw_valid": 6
+    },
+    "beneficial_memory_usage/PB_RUBRIC": {
+      "PASS": 6,
+      "draw_assigned": 6,
+      "draw_fail": 0,
+      "draw_valid": 6
+    },
+    "beneficial_memory_usage/SELECTED_GEPA": {
+      "PASS": 4,
+      "UNKNOWN": 2,
+      "draw_assigned": 6,
+      "draw_fail": 0,
+      "draw_valid": 4
+    },
+    "cross_domain/PB_GEPA": {
+      "PASS": 8,
+      "draw_assigned": 24,
+      "draw_fail": 0,
+      "draw_valid": 24
+    },
+    "cross_domain/PB_RUBRIC": {
+      "FAIL": 1,
+      "PASS": 7,
+      "draw_assigned": 24,
+      "draw_fail": 1,
+      "draw_valid": 24
+    },
+    "cross_domain/SELECTED_GEPA": {
+      "PASS": 5,
+      "UNKNOWN": 3,
+      "draw_assigned": 24,
+      "draw_fail": 0,
+      "draw_valid": 21
+    },
+    "sycophancy/PB_GEPA": {
+      "FAIL": 6,
+      "PASS": 5,
+      "draw_assigned": 33,
+      "draw_fail": 14,
+      "draw_valid": 32
+    },
+    "sycophancy/PB_RUBRIC": {
+      "FAIL": 8,
+      "PASS": 2,
+      "UNKNOWN": 1,
+      "draw_assigned": 33,
+      "draw_fail": 19,
+      "draw_valid": 30
+    },
+    "sycophancy/SELECTED_GEPA": {
+      "FAIL": 1,
+      "PASS": 6,
+      "UNKNOWN": 4,
+      "draw_assigned": 33,
+      "draw_fail": 3,
+      "draw_valid": 29
+    }
+  },
+  "paired": {
+    "beneficial_memory_usage/PB_GEPA": {
+      "PASS/PASS": 4,
+      "UNKNOWN/PASS": 2
+    },
+    "beneficial_memory_usage/PB_RUBRIC": {
+      "PASS/PASS": 4,
+      "UNKNOWN/PASS": 2
+    },
+    "cross_domain/PB_GEPA": {
+      "PASS/PASS": 5,
+      "UNKNOWN/PASS": 3
+    },
+    "cross_domain/PB_RUBRIC": {
+      "PASS/PASS": 5,
+      "UNKNOWN/FAIL": 1,
+      "UNKNOWN/PASS": 2
+    },
+    "sycophancy/PB_GEPA": {
+      "FAIL/FAIL": 1,
+      "PASS/FAIL": 3,
+      "PASS/PASS": 3,
+      "UNKNOWN/FAIL": 2,
+      "UNKNOWN/PASS": 2
+    },
+    "sycophancy/PB_RUBRIC": {
+      "FAIL/FAIL": 1,
+      "PASS/FAIL": 3,
+      "PASS/PASS": 2,
+      "PASS/UNKNOWN": 1,
+      "UNKNOWN/FAIL": 4
+    }
+  },
+  "reported_tokens": 3472238,
+  "request_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 10,
+    "OK": 479
+  },
+  "requests": 489,
+  "row_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 10,
+    "INVALID_ROUTE": 1,
+    "INVALID_SCORE": 1,
+    "INVALID_SELECTION": 1,
+    "OK": 176
+  },
+  "unknown_usage": 10
+}
