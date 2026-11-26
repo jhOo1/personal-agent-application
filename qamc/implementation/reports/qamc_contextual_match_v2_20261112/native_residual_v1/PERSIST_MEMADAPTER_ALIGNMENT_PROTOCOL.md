@@ -1,0 +1,5 @@
+# Archived full MemAdapter comparison
+
+Score the existing full three-stage MemAdapter answers from the 60-root author-control development cohort using the exact common PersistBench GPT-4.1 adapted Judge contract. There are 56 successful archived final answers and at most 49 common answers with valid archived PB_RUBRIC. Preserve the four historical Actor failures and all original Qwen rubric scores. No Actor, induction, or reflection run is repeated. No sealed data is included.
+
+The local bridge uses the pinned MemAdapter commit 6b517dc90d4c7e0ebc4d2305684d45051f792cc9, full author prompts and builder/validation functions for all three stages. The archived run uses the project's Qwen backbone and transport. It is a complete pipeline adaptation, with different backbone, inference settings, and scoring from the published method. Pair per track and also compare archived SELECTED candidates on common valid cases. Report the new grading cost separately from historical inference cost. At most 56 new Judge requests. Historical control grades are revalidated against their exact saved scoring requests and receipts.
