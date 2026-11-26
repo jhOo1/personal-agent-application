@@ -38,3 +38,5 @@ done
 (cd "$build_dir" && latexmk -pdf -interaction=nonstopmode -halt-on-error paper.tex)
 cp "$build_dir/paper.pdf" ./paper.pdf
 ```
+
+The [comparison and recovery status](COMPARISON_STATUS.md) records the strongest available references, official scorer gaps, and the next reproducible evaluations.
