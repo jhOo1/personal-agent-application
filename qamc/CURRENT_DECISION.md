@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## 发布版 MemGate 的同 Actor 对照
+
+固定 GEPA Actor、8192 上限和适配裁判。MemGate 在已曝光风险面板与 ROUTED 的 10 个 SYC 共同有效任务同结果，1 道评分缺失；CD 8/8 与空史共享样本。SYC 每题都保留了一部分历史，项目模板和启动邮件例显示可以排除有害因素同时保留其他证据。严格 BU 与 FULL 的 11 个共同有效任务中输两道。路由相对效用非劣仍未建立。保留发布版 MemGate 作为外部强参照，当前不替换路由。[完整比较与恢复路径](implementation/reports/qamc_contextual_match_v2_20261112/persist_memgate_matched_actor_v1/READOUT.md)
+
 ## PersistBench 效用行为复核
 
 同生成上限的 12 道已曝光效用题保有 6 对完整成稿。原生两臂均通过这 6 道。GPT-4.1 的匿名清单只返回 2 份逐字校验全通过的评审，覆盖 0 个完整评审对。事后引文分项诊断可定位 6 对交付和必要条件检查。书友会的过敏场地仍未得到可靠落实。原路由相对全历史的完整失败差仍为 [−1, +6]。历史全史 GEPA 的对照严格通过 17/18，候选 18/18，生成上限不同。保留真实失败和全部原生分。[复核及原始覆盖](implementation/reports/qamc_contextual_match_v2_20261112/persist_frozen_utility_review_v1/READOUT.md)

@@ -1,0 +1,261 @@
+{
+  "actor_provenance": {
+    "ARCHIVED_EXACT": 1,
+    "LOCAL_RECEIPT": 32,
+    "MATCHED_WAVE": 17
+  },
+  "logical_result_status": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "OK": 49
+  },
+  "physical_requests": 64,
+  "physical_status": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "OK": 63
+  },
+  "reported_tokens": 510919,
+  "retries": 0,
+  "tracks": {
+    "beneficial_memory_usage": {
+      "failure_pass_missing": {
+        "EMPTY": [
+          11,
+          1,
+          0
+        ],
+        "FULL": [
+          0,
+          11,
+          1
+        ],
+        "MEMGATE": [
+          2,
+          10,
+          0
+        ],
+        "ROUTED": [
+          0,
+          6,
+          6
+        ]
+      },
+      "memgate_vs": {
+        "EMPTY": {
+          "common": 12,
+          "failure_difference_bounds": [
+            -9,
+            -9
+          ],
+          "failures_candidate_reference": [
+            2,
+            11
+          ],
+          "win_loss_tie": [
+            9,
+            0,
+            3
+          ]
+        },
+        "FULL": {
+          "common": 11,
+          "failure_difference_bounds": [
+            1,
+            2
+          ],
+          "failures_candidate_reference": [
+            2,
+            0
+          ],
+          "win_loss_tie": [
+            0,
+            2,
+            9
+          ]
+        },
+        "ROUTED": {
+          "common": 6,
+          "failure_difference_bounds": [
+            -4,
+            2
+          ],
+          "failures_candidate_reference": [
+            1,
+            0
+          ],
+          "win_loss_tie": [
+            0,
+            1,
+            5
+          ]
+        }
+      },
+      "planned": 12,
+      "same_actor_wire": {
+        "EMPTY": 0,
+        "FULL": 0,
+        "ROUTED": 0
+      }
+    },
+    "cross_domain": {
+      "failure_pass_missing": {
+        "EMPTY": [
+          0,
+          8,
+          0
+        ],
+        "FULL": [
+          1,
+          7,
+          0
+        ],
+        "MEMGATE": [
+          0,
+          8,
+          0
+        ],
+        "ROUTED": [
+          0,
+          8,
+          0
+        ]
+      },
+      "memgate_vs": {
+        "EMPTY": {
+          "common": 8,
+          "failure_difference_bounds": [
+            0,
+            0
+          ],
+          "failures_candidate_reference": [
+            0,
+            0
+          ],
+          "win_loss_tie": [
+            0,
+            0,
+            8
+          ]
+        },
+        "FULL": {
+          "common": 8,
+          "failure_difference_bounds": [
+            -1,
+            -1
+          ],
+          "failures_candidate_reference": [
+            0,
+            1
+          ],
+          "win_loss_tie": [
+            1,
+            0,
+            7
+          ]
+        },
+        "ROUTED": {
+          "common": 8,
+          "failure_difference_bounds": [
+            0,
+            0
+          ],
+          "failures_candidate_reference": [
+            0,
+            0
+          ],
+          "win_loss_tie": [
+            0,
+            0,
+            8
+          ]
+        }
+      },
+      "planned": 8,
+      "same_actor_wire": {
+        "EMPTY": 16,
+        "FULL": 0,
+        "ROUTED": 12
+      }
+    },
+    "sycophancy": {
+      "failure_pass_missing": {
+        "EMPTY": [
+          1,
+          10,
+          0
+        ],
+        "FULL": [
+          6,
+          5,
+          0
+        ],
+        "MEMGATE": [
+          1,
+          9,
+          1
+        ],
+        "ROUTED": [
+          1,
+          10,
+          0
+        ]
+      },
+      "memgate_vs": {
+        "EMPTY": {
+          "common": 10,
+          "failure_difference_bounds": [
+            0,
+            1
+          ],
+          "failures_candidate_reference": [
+            1,
+            1
+          ],
+          "win_loss_tie": [
+            0,
+            0,
+            10
+          ]
+        },
+        "FULL": {
+          "common": 10,
+          "failure_difference_bounds": [
+            -5,
+            -4
+          ],
+          "failures_candidate_reference": [
+            1,
+            5
+          ],
+          "win_loss_tie": [
+            4,
+            0,
+            6
+          ]
+        },
+        "ROUTED": {
+          "common": 10,
+          "failure_difference_bounds": [
+            0,
+            1
+          ],
+          "failures_candidate_reference": [
+            1,
+            1
+          ],
+          "win_loss_tie": [
+            0,
+            0,
+            10
+          ]
+        }
+      },
+      "planned": 11,
+      "same_actor_wire": {
+        "EMPTY": 0,
+        "FULL": 0,
+        "ROUTED": 1
+      }
+    }
+  },
+  "unknown_usage": 1
+}
