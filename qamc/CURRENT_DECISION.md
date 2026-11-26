@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## RPEval 冻结候选池资格
+
+已发布的 IF-CRITIC 有模型权重与可核实推理接口。用 130 道原 IPE-C 历史请求查询 1,334 份开发账本，找到 29 道逐请求相同且终答不同的任务。13 道含已经送达并预测为 B 的合法偏好。文本核验未找到两个独立来源的合法软偏好恢复，因此未启动 Critic 选稿。该结果限制的是已有候选，而 IF-CRITIC 在此任务的能力仍未知。[资格结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_learned_critic_qualification_v1/READOUT.md)
+
 ## 多需求集合覆盖先导
 
 固定 MemGate 原曝光数量，用自动生成的任务需求分别重算分数。13 个有效任务中，独立排序与集合覆盖均未改变任何原证据集；晚餐题发生流错误。事后只改打分输入边界的离线诊断恢复了宠物粮证据，两种算法均恢复，未达到两个来源与独立增量的门槛。没有新增终答或评分。[资格先导结算](implementation/reports/qamc_contextual_match_v2_20261112/persist_demand_coverage_gate_v1/READOUT.md)
