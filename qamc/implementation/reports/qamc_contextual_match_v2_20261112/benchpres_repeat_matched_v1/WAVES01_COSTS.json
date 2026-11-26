@@ -1,0 +1,155 @@
+{
+  "frozen_selector_cost_excluded": true,
+  "methods": {
+    "GEPA_SELECTED_BOUNDS": {
+      "generation": {
+        "automatic_retries": 0,
+        "calls": 45,
+        "statuses": {
+          "FAILED_DELIVERY_UNKNOWN": 1,
+          "OK": 44
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 75759,
+            "unknown": 1
+          },
+          "prompt_tokens": {
+            "known": 337812,
+            "unknown": 1
+          },
+          "total_tokens": {
+            "known": 413571,
+            "unknown": 1
+          }
+        }
+      },
+      "grading": {
+        "automatic_retries": 0,
+        "calls": 264,
+        "statuses": {
+          "OK": 264
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 33851,
+            "unknown": 0
+          },
+          "prompt_tokens": {
+            "known": 81575,
+            "unknown": 0
+          },
+          "total_tokens": {
+            "known": 115426,
+            "unknown": 0
+          }
+        }
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "generation": {
+        "automatic_retries": 0,
+        "calls": 48,
+        "statuses": {
+          "OK": 48
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 101434,
+            "unknown": 0
+          },
+          "prompt_tokens": {
+            "known": 112998,
+            "unknown": 0
+          },
+          "total_tokens": {
+            "known": 214432,
+            "unknown": 0
+          }
+        }
+      },
+      "grading": {
+        "automatic_retries": 0,
+        "calls": 288,
+        "statuses": {
+          "OK": 288
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 46773,
+            "unknown": 0
+          },
+          "prompt_tokens": {
+            "known": 101463,
+            "unknown": 0
+          },
+          "total_tokens": {
+            "known": 148236,
+            "unknown": 0
+          }
+        }
+      }
+    }
+  },
+  "paired_actor": {
+    "GEPA_SELECTED_BOUNDS": {
+      "median_completion_tokens": 1520.0,
+      "median_elapsed_seconds": 21.2703,
+      "median_prompt_tokens": 7699.0,
+      "median_total_tokens": 9063.0,
+      "summary": {
+        "automatic_retries": 0,
+        "calls": 44,
+        "statuses": {
+          "OK": 44
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 75759,
+            "unknown": 0
+          },
+          "prompt_tokens": {
+            "known": 337812,
+            "unknown": 0
+          },
+          "total_tokens": {
+            "known": 413571,
+            "unknown": 0
+          }
+        }
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "median_completion_tokens": 1813.5,
+      "median_elapsed_seconds": 24.526600000000002,
+      "median_prompt_tokens": 2283.0,
+      "median_total_tokens": 4120.0,
+      "summary": {
+        "automatic_retries": 0,
+        "calls": 44,
+        "statuses": {
+          "OK": 44
+        },
+        "usage": {
+          "completion_tokens": {
+            "known": 94419,
+            "unknown": 0
+          },
+          "prompt_tokens": {
+            "known": 102886,
+            "unknown": 0
+          },
+          "total_tokens": {
+            "known": 197305,
+            "unknown": 0
+          }
+        }
+      }
+    }
+  },
+  "successful_actor_pairs": 44,
+  "waves": [
+    0,
+    1
+  ]
+}
