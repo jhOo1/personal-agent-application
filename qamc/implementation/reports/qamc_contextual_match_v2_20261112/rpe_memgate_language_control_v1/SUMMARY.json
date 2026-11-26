@@ -98,6 +98,26 @@
       "tasks": 11
     }
   },
+  "grouped_applicable_delta": {
+    "matched_en_count": {
+      "groups": 11,
+      "net_negative": 0,
+      "net_positive": 3,
+      "same": 8
+    },
+    "matched_zh_count": {
+      "groups": 11,
+      "net_negative": 0,
+      "net_positive": 2,
+      "same": 9
+    },
+    "threshold": {
+      "groups": 11,
+      "net_negative": 2,
+      "net_positive": 2,
+      "same": 7
+    }
+  },
   "local_translation": {
     "items": 74,
     "segments": 77,
@@ -106,27 +126,65 @@
   "macro_within_task_auc": {
     "BC_vs_A/EN": {
       "macro": 0.780556,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "BC_vs_A/ZH": {
       "macro": 0.483333,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "B_vs_A/EN": {
       "macro": 0.527778,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "B_vs_A/ZH": {
       "macro": 0.866667,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "C_vs_A/EN": {
       "macro": 0.9,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
     },
     "C_vs_A/ZH": {
       "macro": 0.175,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
+    }
+  },
+  "paired_source_movement": {
+    "matched_en_count": {
+      "adds_applicable_without_any_applicable_loss": 3,
+      "adds_c_with_no_applicable_loss": 3,
+      "drops_any_b": 0,
+      "drops_any_c": 0,
+      "drops_applicable_without_any_applicable_gain": 0,
+      "fewer_applicable": 0,
+      "more_applicable": 3,
+      "tasks": 11
+    },
+    "matched_zh_count": {
+      "adds_applicable_without_any_applicable_loss": 2,
+      "adds_c_with_no_applicable_loss": 2,
+      "drops_any_b": 0,
+      "drops_any_c": 0,
+      "drops_applicable_without_any_applicable_gain": 0,
+      "fewer_applicable": 0,
+      "more_applicable": 2,
+      "tasks": 11
+    },
+    "threshold": {
+      "adds_applicable_without_any_applicable_loss": 2,
+      "adds_c_with_no_applicable_loss": 2,
+      "drops_any_b": 2,
+      "drops_any_c": 0,
+      "drops_applicable_without_any_applicable_gain": 2,
+      "fewer_applicable": 2,
+      "more_applicable": 2,
+      "tasks": 11
     }
   },
   "statuses": {

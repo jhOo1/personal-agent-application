@@ -53,10 +53,12 @@ def report(run=RUN):
         "assets": frozen["translation_assets"],
         "effects": defaultdict(Counter),
         "by_label": defaultdict(Counter),
+        "paired_source_movement": defaultdict(Counter),
         "local_translation": Counter(),
         "macro_within_task_auc": {},
     }
     aucs = defaultdict(list)
+    changes_by_group = defaultdict(Counter)
     for uid, row in result.items():
         if row["status"] != "OK":
             continue
@@ -77,16 +79,36 @@ def report(run=RUN):
                 interior_zh=0 < len(old) < len(labels), interior_en=0 < len(new) < len(labels),
                 common_ids=len(old & new), swapped_out=len(old - new), swapped_in=len(new - old),
             )
-            summary["by_label"][mode].update(deltas(old, new, labels))
+            changes = deltas(old, new, labels)
+            summary["by_label"][mode].update(changes)
+            added = changes["B_added"] + changes["C_added"]
+            dropped = changes["B_dropped"] + changes["C_dropped"]
+            movement = summary["paired_source_movement"][mode]
+            movement.update(
+                tasks=1, more_applicable=added > dropped, fewer_applicable=added < dropped,
+                adds_applicable_without_any_applicable_loss=added > 0 and dropped == 0,
+                drops_applicable_without_any_applicable_gain=dropped > 0 and added == 0,
+                adds_c_with_no_applicable_loss=changes["C_added"] > 0 and dropped == 0,
+                drops_any_b=changes["B_dropped"] > 0, drops_any_c=changes["C_dropped"] > 0,
+            )
+            changes_by_group[mode][case["analysis_group_id"]] += added - dropped
         for tag, positives in (("BC_vs_A", "BC"), ("C_vs_A", "C"), ("B_vs_A", "B")):
             for language, mode in (("ZH", zh), ("EN", en)):
                 auc = separation(mode["scores"], labels, positives)
                 if auc is not None:
-                    aucs[tag, language].append(auc)
+                    aucs[tag, language].append((case["analysis_group_id"], auc))
         summary["local_translation"].update(row["accounting"])
     summary["macro_within_task_auc"] = {
-        f"{tag}/{language}": {"roots": len(values), "macro": round(sum(values) / len(values), 6)}
+        f"{tag}/{language}": {
+            "tasks": len(values), "source_groups": len({group for group, _ in values}),
+            "macro": round(sum(score for _, score in values) / len(values), 6),
+        }
         for (tag, language), values in aucs.items()
+    }
+    summary["grouped_applicable_delta"] = {
+        mode: {"groups": len(counts), "net_positive": sum(v > 0 for v in counts.values()),
+               "net_negative": sum(v < 0 for v in counts.values()), "same": sum(v == 0 for v in counts.values())}
+        for mode, counts in changes_by_group.items()
     }
     return summary
 

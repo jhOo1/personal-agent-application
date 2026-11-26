@@ -1,0 +1,195 @@
+{
+  "allocated_tasks": 300,
+  "assets": {
+    "config.json": "d84104da12fa90da59acf5f0ed30428e43cc92574ad4b9dfa88f29eeeb2b0eb0",
+    "generation_config.json": "81f06422302b9f4666f20c6f20f43b904e38ccce9326a208f82ff97c2c9699e5",
+    "pytorch_model.bin": "9d8ceb91d103ef89400c9d9d62328b4858743cf8924878aee3b8afc594242ce0",
+    "source.spm": "e27a3a1b539f4959ec72ea60e453f49156289f95d4e6000b29332efc45616203",
+    "target.spm": "6a881f4717cd7265f53fea54fd3dc689c767c05338fac7a4590f3088cb2d7855",
+    "tokenizer_config.json": "53cc7a6f05224f287476af4798d96b1b85da2edae60257e58633f092c7b5b823",
+    "vocab.json": "c0f79ee4c413ccb24cd808a0c727eec85b2130f23c82802cc1caeb07b5f0d458"
+  },
+  "by_label": {
+    "matched_en_count": {
+      "A_added": 153,
+      "A_available": 1216,
+      "A_dropped": 193,
+      "A_new": 370,
+      "A_old": 410,
+      "B_added": 28,
+      "B_available": 149,
+      "B_dropped": 20,
+      "B_new": 58,
+      "B_old": 50,
+      "C_added": 42,
+      "C_available": 155,
+      "C_dropped": 10,
+      "C_new": 84,
+      "C_old": 52
+    },
+    "matched_zh_count": {
+      "A_added": 133,
+      "A_available": 1216,
+      "A_dropped": 154,
+      "A_new": 943,
+      "A_old": 964,
+      "B_added": 21,
+      "B_available": 149,
+      "B_dropped": 16,
+      "B_new": 122,
+      "B_old": 117,
+      "C_added": 24,
+      "C_available": 155,
+      "C_dropped": 8,
+      "C_new": 140,
+      "C_old": 124
+    },
+    "threshold": {
+      "A_added": 98,
+      "A_available": 1216,
+      "A_dropped": 692,
+      "A_new": 370,
+      "A_old": 964,
+      "B_added": 14,
+      "B_available": 149,
+      "B_dropped": 73,
+      "B_new": 58,
+      "B_old": 117,
+      "C_added": 19,
+      "C_available": 155,
+      "C_dropped": 59,
+      "C_new": 84,
+      "C_old": 124
+    }
+  },
+  "cloud_requests": 0,
+  "effects": {
+    "matched_en_count": {
+      "common_ids": 289,
+      "interior_en": 213,
+      "interior_zh": 213,
+      "membership_changed": 180,
+      "selected_en": 512,
+      "selected_zh": 512,
+      "swapped_in": 223,
+      "swapped_out": 223,
+      "tasks": 286
+    },
+    "matched_zh_count": {
+      "common_ids": 1027,
+      "interior_en": 154,
+      "interior_zh": 154,
+      "membership_changed": 145,
+      "selected_en": 1205,
+      "selected_zh": 1205,
+      "swapped_in": 178,
+      "swapped_out": 178,
+      "tasks": 286
+    },
+    "threshold": {
+      "common_ids": 381,
+      "interior_en": 213,
+      "interior_zh": 154,
+      "membership_changed": 284,
+      "selected_en": 512,
+      "selected_zh": 1205,
+      "swapped_in": 131,
+      "swapped_out": 824,
+      "tasks": 286
+    }
+  },
+  "grouped_applicable_delta": {
+    "matched_en_count": {
+      "groups": 45,
+      "net_negative": 7,
+      "net_positive": 25,
+      "same": 13
+    },
+    "matched_zh_count": {
+      "groups": 45,
+      "net_negative": 8,
+      "net_positive": 17,
+      "same": 20
+    },
+    "threshold": {
+      "groups": 45,
+      "net_negative": 30,
+      "net_positive": 6,
+      "same": 9
+    }
+  },
+  "local_translation": {
+    "items": 1806,
+    "segments": 1855,
+    "translator_input_tokens": 258820
+  },
+  "macro_within_task_auc": {
+    "BC_vs_A/EN": {
+      "macro": 0.666778,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "BC_vs_A/ZH": {
+      "macro": 0.519847,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "B_vs_A/EN": {
+      "macro": 0.586161,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "B_vs_A/ZH": {
+      "macro": 0.555357,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "C_vs_A/EN": {
+      "macro": 0.699264,
+      "source_groups": 35,
+      "tasks": 118
+    },
+    "C_vs_A/ZH": {
+      "macro": 0.495924,
+      "source_groups": 35,
+      "tasks": 118
+    }
+  },
+  "paired_source_movement": {
+    "matched_en_count": {
+      "adds_applicable_without_any_applicable_loss": 51,
+      "adds_c_with_no_applicable_loss": 35,
+      "drops_any_b": 20,
+      "drops_any_c": 10,
+      "drops_applicable_without_any_applicable_gain": 18,
+      "fewer_applicable": 18,
+      "more_applicable": 53,
+      "tasks": 286
+    },
+    "matched_zh_count": {
+      "adds_applicable_without_any_applicable_loss": 34,
+      "adds_c_with_no_applicable_loss": 18,
+      "drops_any_b": 16,
+      "drops_any_c": 8,
+      "drops_applicable_without_any_applicable_gain": 14,
+      "fewer_applicable": 15,
+      "more_applicable": 36,
+      "tasks": 286
+    },
+    "threshold": {
+      "adds_applicable_without_any_applicable_loss": 18,
+      "adds_c_with_no_applicable_loss": 12,
+      "drops_any_b": 68,
+      "drops_any_c": 53,
+      "drops_applicable_without_any_applicable_gain": 83,
+      "fewer_applicable": 85,
+      "more_applicable": 18,
+      "tasks": 286
+    }
+  },
+  "statuses": {
+    "INVALID_TRANSLATION_OR_SCORE": 9,
+    "OK": 286
+  },
+  "unavailable_original_contracts": 5
+}

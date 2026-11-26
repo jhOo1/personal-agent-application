@@ -1,0 +1,705 @@
+{
+  "comparisons": {
+    "IPE_C": {
+      "ALL": {
+        "all_planned_match_delta_bounds": [
+          -230,
+          -44
+        ],
+        "allocation": {
+          "both_missing": 10,
+          "control_missing": 18,
+          "memgate_missing": 16,
+          "positions": 1606,
+          "tasks": 300
+        },
+        "cluster_sensitivity_pp": [
+          -15.0392,
+          -3.733
+        ],
+        "flag_excluded": {
+          "control": 691,
+          "losses": 29,
+          "memgate": 594,
+          "positions": 1001,
+          "tasks": 179,
+          "ties": 144,
+          "wins": 6
+        },
+        "groups": 45,
+        "match": {
+          "control": 953,
+          "losses": 48,
+          "memgate": 816,
+          "positions": 1477,
+          "tasks": 276,
+          "ties": 214,
+          "wins": 14
+        },
+        "severity": {
+          "FM": {
+            "control": 52,
+            "memgate": 92,
+            "pairs": 276
+          },
+          "OPB": {
+            "control": 253,
+            "memgate": 370,
+            "pairs": 276
+          },
+          "UPB": {
+            "control": 257,
+            "memgate": 275,
+            "pairs": 276
+          }
+        }
+      },
+      "ALL_A": {
+        "all_planned_match_delta_bounds": [
+          -153,
+          -137
+        ],
+        "allocation": {
+          "both_missing": 0,
+          "control_missing": 2,
+          "memgate_missing": 2,
+          "positions": 528,
+          "tasks": 120
+        },
+        "cluster_sensitivity_pp": [
+          -40.6504,
+          -15.8273
+        ],
+        "flag_excluded": {
+          "control": 336,
+          "losses": 19,
+          "memgate": 245,
+          "positions": 380,
+          "tasks": 86,
+          "ties": 67,
+          "wins": 0
+        },
+        "groups": 44,
+        "match": {
+          "control": 397,
+          "losses": 32,
+          "memgate": 252,
+          "positions": 512,
+          "tasks": 116,
+          "ties": 83,
+          "wins": 1
+        },
+        "severity": {
+          "FM": {
+            "control": 11,
+            "memgate": 28,
+            "pairs": 116
+          },
+          "OPB": {
+            "control": 62,
+            "memgate": 168,
+            "pairs": 116
+          },
+          "UPB": {
+            "control": 51,
+            "memgate": 60,
+            "pairs": 116
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "all_planned_match_delta_bounds": [
+          -75,
+          60
+        ],
+        "allocation": {
+          "both_missing": 9,
+          "control_missing": 11,
+          "memgate_missing": 12,
+          "positions": 766,
+          "tasks": 126
+        },
+        "cluster_sensitivity_pp": [
+          -2.8146,
+          0.5376
+        ],
+        "flag_excluded": {
+          "control": 266,
+          "losses": 7,
+          "memgate": 259,
+          "positions": 457,
+          "tasks": 67,
+          "ties": 58,
+          "wins": 2
+        },
+        "groups": 35,
+        "match": {
+          "control": 408,
+          "losses": 10,
+          "memgate": 401,
+          "positions": 683,
+          "tasks": 112,
+          "ties": 98,
+          "wins": 4
+        },
+        "severity": {
+          "FM": {
+            "control": 33,
+            "memgate": 63,
+            "pairs": 112
+          },
+          "OPB": {
+            "control": 177,
+            "memgate": 171,
+            "pairs": 112
+          },
+          "UPB": {
+            "control": 106,
+            "memgate": 132,
+            "pairs": 112
+          }
+        }
+      },
+      "ONLY_B": {
+        "all_planned_match_delta_bounds": [
+          -2,
+          33
+        ],
+        "allocation": {
+          "both_missing": 1,
+          "control_missing": 5,
+          "memgate_missing": 2,
+          "positions": 312,
+          "tasks": 54
+        },
+        "cluster_sensitivity_pp": [
+          -4.1899,
+          16.7665
+        ],
+        "flag_excluded": {
+          "control": 89,
+          "losses": 3,
+          "memgate": 90,
+          "positions": 164,
+          "tasks": 26,
+          "ties": 19,
+          "wins": 4
+        },
+        "groups": 20,
+        "match": {
+          "control": 148,
+          "losses": 6,
+          "memgate": 163,
+          "positions": 282,
+          "tasks": 48,
+          "ties": 33,
+          "wins": 9
+        },
+        "severity": {
+          "FM": {
+            "control": 8,
+            "memgate": 1,
+            "pairs": 48
+          },
+          "OPB": {
+            "control": 14,
+            "memgate": 31,
+            "pairs": 48
+          },
+          "UPB": {
+            "control": 100,
+            "memgate": 83,
+            "pairs": 48
+          }
+        }
+      }
+    },
+    "RPR_PAPER_FULL": {
+      "ALL": {
+        "all_planned_match_delta_bounds": [
+          -90,
+          66
+        ],
+        "allocation": {
+          "both_missing": 10,
+          "control_missing": 13,
+          "memgate_missing": 16,
+          "positions": 1606,
+          "tasks": 300
+        },
+        "cluster_sensitivity_pp": [
+          -2.5249,
+          1.2266
+        ],
+        "flag_excluded": {
+          "control": 591,
+          "losses": 12,
+          "memgate": 591,
+          "positions": 1023,
+          "tasks": 184,
+          "ties": 163,
+          "wins": 9
+        },
+        "groups": 45,
+        "match": {
+          "control": 840,
+          "losses": 25,
+          "memgate": 832,
+          "positions": 1505,
+          "tasks": 281,
+          "ties": 241,
+          "wins": 15
+        },
+        "severity": {
+          "FM": {
+            "control": 56,
+            "memgate": 92,
+            "pairs": 281
+          },
+          "OPB": {
+            "control": 381,
+            "memgate": 369,
+            "pairs": 281
+          },
+          "UPB": {
+            "control": 244,
+            "memgate": 288,
+            "pairs": 281
+          }
+        }
+      },
+      "ALL_A": {
+        "all_planned_match_delta_bounds": [
+          -21,
+          -9
+        ],
+        "allocation": {
+          "both_missing": 1,
+          "control_missing": 2,
+          "memgate_missing": 2,
+          "positions": 528,
+          "tasks": 120
+        },
+        "cluster_sensitivity_pp": [
+          -7.5171,
+          2.7907
+        ],
+        "flag_excluded": {
+          "control": 249,
+          "losses": 3,
+          "memgate": 248,
+          "positions": 407,
+          "tasks": 92,
+          "ties": 86,
+          "wins": 3
+        },
+        "groups": 44,
+        "match": {
+          "control": 269,
+          "losses": 8,
+          "memgate": 257,
+          "positions": 519,
+          "tasks": 117,
+          "ties": 104,
+          "wins": 5
+        },
+        "severity": {
+          "FM": {
+            "control": 27,
+            "memgate": 28,
+            "pairs": 117
+          },
+          "OPB": {
+            "control": 172,
+            "memgate": 165,
+            "pairs": 117
+          },
+          "UPB": {
+            "control": 46,
+            "memgate": 65,
+            "pairs": 117
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "all_planned_match_delta_bounds": [
+          -77,
+          58
+        ],
+        "allocation": {
+          "both_missing": 9,
+          "control_missing": 11,
+          "memgate_missing": 12,
+          "positions": 766,
+          "tasks": 126
+        },
+        "cluster_sensitivity_pp": [
+          -2.9851,
+          0.1408
+        ],
+        "flag_excluded": {
+          "control": 266,
+          "losses": 7,
+          "memgate": 259,
+          "positions": 457,
+          "tasks": 67,
+          "ties": 58,
+          "wins": 2
+        },
+        "groups": 35,
+        "match": {
+          "control": 410,
+          "losses": 10,
+          "memgate": 401,
+          "positions": 683,
+          "tasks": 112,
+          "ties": 99,
+          "wins": 3
+        },
+        "severity": {
+          "FM": {
+            "control": 29,
+            "memgate": 63,
+            "pairs": 112
+          },
+          "OPB": {
+            "control": 177,
+            "memgate": 171,
+            "pairs": 112
+          },
+          "UPB": {
+            "control": 103,
+            "memgate": 132,
+            "pairs": 112
+          }
+        }
+      },
+      "ONLY_B": {
+        "all_planned_match_delta_bounds": [
+          8,
+          17
+        ],
+        "allocation": {
+          "both_missing": 0,
+          "control_missing": 0,
+          "memgate_missing": 2,
+          "positions": 312,
+          "tasks": 54
+        },
+        "cluster_sensitivity_pp": [
+          -1.1719,
+          10.1307
+        ],
+        "flag_excluded": {
+          "control": 76,
+          "losses": 2,
+          "memgate": 84,
+          "positions": 159,
+          "tasks": 25,
+          "ties": 19,
+          "wins": 4
+        },
+        "groups": 22,
+        "match": {
+          "control": 161,
+          "losses": 7,
+          "memgate": 174,
+          "positions": 303,
+          "tasks": 52,
+          "ties": 38,
+          "wins": 7
+        },
+        "severity": {
+          "FM": {
+            "control": 0,
+            "memgate": 1,
+            "pairs": 52
+          },
+          "OPB": {
+            "control": 32,
+            "memgate": 33,
+            "pairs": 52
+          },
+          "UPB": {
+            "control": 95,
+            "memgate": 91,
+            "pairs": 52
+          }
+        }
+      }
+    },
+    "TASK_ONLY": {
+      "ALL": {
+        "all_planned_match_delta_bounds": [
+          -166,
+          44
+        ],
+        "allocation": {
+          "both_missing": 10,
+          "control_missing": 20,
+          "memgate_missing": 16,
+          "positions": 1606,
+          "tasks": 300
+        },
+        "cluster_sensitivity_pp": [
+          -11.4444,
+          2.6035
+        ],
+        "flag_excluded": {
+          "control": 649,
+          "losses": 28,
+          "memgate": 611,
+          "positions": 1014,
+          "tasks": 181,
+          "ties": 106,
+          "wins": 47
+        },
+        "groups": 44,
+        "match": {
+          "control": 869,
+          "losses": 46,
+          "memgate": 811,
+          "positions": 1459,
+          "tasks": 274,
+          "ties": 154,
+          "wins": 74
+        },
+        "severity": {
+          "FM": {
+            "control": 255,
+            "memgate": 90,
+            "pairs": 274
+          },
+          "OPB": {
+            "control": 82,
+            "memgate": 365,
+            "pairs": 274
+          },
+          "UPB": {
+            "control": 518,
+            "memgate": 269,
+            "pairs": 274
+          }
+        }
+      },
+      "ALL_A": {
+        "all_planned_match_delta_bounds": [
+          -179,
+          -163
+        ],
+        "allocation": {
+          "both_missing": 0,
+          "control_missing": 2,
+          "memgate_missing": 2,
+          "positions": 528,
+          "tasks": 120
+        },
+        "cluster_sensitivity_pp": [
+          -50.0,
+          -17.9074
+        ],
+        "flag_excluded": {
+          "control": 356,
+          "losses": 24,
+          "memgate": 241,
+          "positions": 372,
+          "tasks": 84,
+          "ties": 60,
+          "wins": 0
+        },
+        "groups": 44,
+        "match": {
+          "control": 426,
+          "losses": 39,
+          "memgate": 252,
+          "positions": 512,
+          "tasks": 116,
+          "ties": 75,
+          "wins": 2
+        },
+        "severity": {
+          "FM": {
+            "control": 8,
+            "memgate": 28,
+            "pairs": 116
+          },
+          "OPB": {
+            "control": 30,
+            "memgate": 168,
+            "pairs": 116
+          },
+          "UPB": {
+            "control": 60,
+            "memgate": 60,
+            "pairs": 116
+          }
+        }
+      },
+      "CONTAINS_C": {
+        "all_planned_match_delta_bounds": [
+          15,
+          166
+        ],
+        "allocation": {
+          "both_missing": 9,
+          "control_missing": 12,
+          "memgate_missing": 12,
+          "positions": 766,
+          "tasks": 126
+        },
+        "cluster_sensitivity_pp": [
+          9.4643,
+          19.1111
+        ],
+        "flag_excluded": {
+          "control": 208,
+          "losses": 2,
+          "memgate": 281,
+          "positions": 480,
+          "tasks": 71,
+          "ties": 26,
+          "wins": 43
+        },
+        "groups": 34,
+        "match": {
+          "control": 303,
+          "losses": 3,
+          "memgate": 400,
+          "positions": 673,
+          "tasks": 111,
+          "ties": 45,
+          "wins": 63
+        },
+        "severity": {
+          "FM": {
+            "control": 238,
+            "memgate": 61,
+            "pairs": 111
+          },
+          "OPB": {
+            "control": 42,
+            "memgate": 168,
+            "pairs": 111
+          },
+          "UPB": {
+            "control": 352,
+            "memgate": 127,
+            "pairs": 111
+          }
+        }
+      },
+      "ONLY_B": {
+        "all_planned_match_delta_bounds": [
+          -2,
+          41
+        ],
+        "allocation": {
+          "both_missing": 1,
+          "control_missing": 6,
+          "memgate_missing": 2,
+          "positions": 312,
+          "tasks": 54
+        },
+        "cluster_sensitivity_pp": [
+          -3.5433,
+          18.7151
+        ],
+        "flag_excluded": {
+          "control": 85,
+          "losses": 2,
+          "memgate": 89,
+          "positions": 162,
+          "tasks": 26,
+          "ties": 20,
+          "wins": 4
+        },
+        "groups": 19,
+        "match": {
+          "control": 140,
+          "losses": 4,
+          "memgate": 159,
+          "positions": 274,
+          "tasks": 47,
+          "ties": 34,
+          "wins": 9
+        },
+        "severity": {
+          "FM": {
+            "control": 9,
+            "memgate": 1,
+            "pairs": 47
+          },
+          "OPB": {
+            "control": 10,
+            "memgate": 29,
+            "pairs": 47
+          },
+          "UPB": {
+            "control": 106,
+            "memgate": 82,
+            "pairs": 47
+          }
+        }
+      }
+    }
+  },
+  "execution": {
+    "paired": {
+      "ipe_c": 953,
+      "memgate": 816,
+      "pairs": 276,
+      "positions": 1477
+    },
+    "requests": {
+      "MatchedActor": 157,
+      "MatchedRpeJudge": 157
+    },
+    "statuses": {
+      "INVALID_MATCH": 7,
+      "INVALID_OR_ABSENT_ARCHIVED_MATCH": 4,
+      "MISSING_VERIFIED_RP_ACTOR_OR_STRATEGY": 5,
+      "OK": 284
+    },
+    "tokens": 621510,
+    "usage_unknown": 0
+  },
+  "exposure": {
+    "by_author_position": {
+      "A": {
+        "verified": 1258,
+        "visible": 998
+      },
+      "B": {
+        "verified": 155,
+        "visible": 122
+      },
+      "C": {
+        "verified": 159,
+        "visible": 128
+      }
+    },
+    "by_stratum": {
+      "ALL_A": {
+        "EMPTY": 5,
+        "FULL": 61,
+        "SUBSET": 54,
+        "allocated_positions": 528,
+        "allocated_tasks": 120
+      },
+      "CONTAINS_C": {
+        "FULL": 49,
+        "SUBSET": 72,
+        "allocated_positions": 766,
+        "allocated_tasks": 126,
+        "missing_contract": 5
+      },
+      "ONLY_B": {
+        "EMPTY": 2,
+        "FULL": 19,
+        "SUBSET": 33,
+        "allocated_positions": 312,
+        "allocated_tasks": 54
+      }
+    }
+  }
+}

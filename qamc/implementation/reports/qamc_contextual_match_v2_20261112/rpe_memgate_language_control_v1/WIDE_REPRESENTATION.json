@@ -1,0 +1,94 @@
+{
+  "counted_rows": 286,
+  "coverage": {
+    "EN/memory": {
+      "texts": 1520,
+      "truncated_texts": 14,
+      "unknown_visible_tokens": 0,
+      "visible_tokens": 100412
+    },
+    "EN/query": {
+      "texts": 286,
+      "truncated_texts": 0,
+      "unknown_visible_tokens": 0,
+      "visible_tokens": 6347
+    },
+    "ZH/memory": {
+      "texts": 1520,
+      "truncated_texts": 731,
+      "unknown_visible_tokens": 147860,
+      "visible_tokens": 223372
+    },
+    "ZH/query": {
+      "texts": 286,
+      "truncated_texts": 0,
+      "unknown_visible_tokens": 5781,
+      "visible_tokens": 9234
+    }
+  },
+  "encoder_weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "input_limit_including_special_tokens": 256,
+  "macro_within_task_auc": {
+    "BC_vs_A/EN/cosine": {
+      "macro": 0.694064,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "BC_vs_A/EN/gated": {
+      "macro": 0.666778,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "BC_vs_A/ZH/cosine": {
+      "macro": 0.567496,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "BC_vs_A/ZH/gated": {
+      "macro": 0.519847,
+      "source_groups": 42,
+      "tasks": 168
+    },
+    "B_vs_A/EN/cosine": {
+      "macro": 0.636235,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "B_vs_A/EN/gated": {
+      "macro": 0.586161,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "B_vs_A/ZH/cosine": {
+      "macro": 0.509439,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "B_vs_A/ZH/gated": {
+      "macro": 0.555357,
+      "source_groups": 33,
+      "tasks": 112
+    },
+    "C_vs_A/EN/cosine": {
+      "macro": 0.718079,
+      "source_groups": 35,
+      "tasks": 118
+    },
+    "C_vs_A/EN/gated": {
+      "macro": 0.699264,
+      "source_groups": 35,
+      "tasks": 118
+    },
+    "C_vs_A/ZH/cosine": {
+      "macro": 0.615738,
+      "source_groups": 35,
+      "tasks": 118
+    },
+    "C_vs_A/ZH/gated": {
+      "macro": 0.495924,
+      "source_groups": 35,
+      "tasks": 118
+    }
+  },
+  "new_cloud_requests": 0
+}

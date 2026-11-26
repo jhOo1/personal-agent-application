@@ -31,51 +31,63 @@
   "macro_within_task_auc": {
     "BC_vs_A/EN/cosine": {
       "macro": 0.733333,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "BC_vs_A/EN/gated": {
       "macro": 0.780556,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "BC_vs_A/ZH/cosine": {
       "macro": 0.545635,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "BC_vs_A/ZH/gated": {
       "macro": 0.483333,
-      "roots": 6
+      "source_groups": 6,
+      "tasks": 6
     },
     "B_vs_A/EN/cosine": {
       "macro": 0.5,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "B_vs_A/EN/gated": {
       "macro": 0.527778,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "B_vs_A/ZH/cosine": {
       "macro": 0.707937,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "B_vs_A/ZH/gated": {
       "macro": 0.866667,
-      "roots": 3
+      "source_groups": 3,
+      "tasks": 3
     },
     "C_vs_A/EN/cosine": {
       "macro": 0.825,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
     },
     "C_vs_A/EN/gated": {
       "macro": 0.9,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
     },
     "C_vs_A/ZH/cosine": {
       "macro": 0.4375,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
     },
     "C_vs_A/ZH/gated": {
       "macro": 0.175,
-      "roots": 4
+      "source_groups": 4,
+      "tasks": 4
     }
   },
   "new_cloud_requests": 0

@@ -2,9 +2,9 @@
 
 ## RPEval 共同 Actor 的发布权重 MemGate
 
-在冻结的 300 道多偏好开发题上比较发布版 MemGate 与 IPE-C、始终用史和始终不用史。保持原 RP Actor 和评分器，仅按发布阈值改变它实际看到的原文与对应已有策略。预检核实 295 道完整合同，136 道直接复用冻结端点和评分，另有 2 份子集成稿可精确复用。上限为 157 个新增生成和 159 个评分，本条为冻结协议和预检，最终分数待结算。[预检与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/PREFLIGHT.md) · [原发布编码器的中文覆盖](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/ENCODER_COVERAGE.md)
+在冻结的 300 道多偏好开发题上，发布版 MemGate 和 IPE-C 使用同一个 RP Actor。276 道共享题，MemGate Match 816/1,477，IPE-C 953/1,477。全 A 为 252/512 对 397/512，仅 B 任务为 163/282 对 148/282，含 C 为 401/683 对 408/683。314 次真实新增请求全部传输成功，621,510 Token，最终 284 个 MemGate Match 有效。结论适用于发布英文编码器直接筛选中文历史的配置。[同 Actor 结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/READOUT.md)
 
-发布版英文编码器的语言适配先导已完成。12 个已曝光来源组，11 个有效。逐题匹配原中文保留量后，英文排序把作者 C 的实际曝光从 2/4 提高到 4/4，作者 B 保持 5/5。直接用英文默认阈值只保留 13/63 条，中文原版为 53/63 条，合法 B 由 5/5 降为 1/5。部分译文丢了关键否定或饮食对象。完整 295 合同本地复核已开始，先导结论仅涉及选中原文，尚无新增终答性能。[先导结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/READOUT.md)
+语言适配完整本地对照有 286 道有效。逐题匹配英文保留量时，英文排序的 B 曝光 50→58、C 52→84、A 410→370。直接迁移默认阈值，合法 B/C 曝光从 241 降至 142。英文普通余弦排序在 168 道混合标签题上也提高区分度，且高于英文 MemGate。局部排序改善还需要终答验证。[语言适配结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/WIDE_READOUT.md)
 
 ## RPEval 单偏好的外部对照
 

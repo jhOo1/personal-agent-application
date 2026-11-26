@@ -67,14 +67,15 @@ def report(run, embedding):
                     for mode, items in (("cosine", cosine), ("gated", gated)):
                         auc = separation(items, labels, positive)
                         if auc is not None:
-                            scores[label, name, mode].append(auc)
+                            scores[label, name, mode].append((manifest[uid]["analysis_group_id"], auc))
     return {
         "input_limit_including_special_tokens": model.max_seq_length,
         "encoder_weights_sha256": weights,
         "counted_rows": sum(r["status"] == "OK" for r in outputs.values()),
         "coverage": tok,
         "macro_within_task_auc": {
-            "/".join(key): {"roots": len(value), "macro": round(sum(value) / len(value), 6)}
+            "/".join(key): {"tasks": len(value), "source_groups": len({g for g, _ in value}),
+                            "macro": round(sum(s for _, s in value) / len(value), 6)}
             for key, value in scores.items()
         },
         "new_cloud_requests": 0,
