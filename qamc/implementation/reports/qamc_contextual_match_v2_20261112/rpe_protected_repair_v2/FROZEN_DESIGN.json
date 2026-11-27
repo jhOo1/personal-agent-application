@@ -1,0 +1,18 @@
+{
+  "case_count": 24,
+  "packets_sha256": "8ec91dacd3857513bc5cc7032ff947e436f02f8799f8219d5c8d5fb269d5d4e5",
+  "binding_sha256": "e25e3032d355638b52c0b7ab88773cd583d83b0a59a0df544fbf719fca0346a0",
+  "locate_wires_sha256": "3fec7896e232d474698ca58f882e325f53264a7bcbbfd0183cedcd15bfd1d641",
+  "veto_sha256": "3e425a1f696896e6c73cf1ada6230d2b3ad961b2e7d121686f5681672da33c95",
+  "caps": {
+    "Locate": 24,
+    "Repair": 48,
+    "SingleDetailJudge": 48
+  },
+  "code_sha256": {
+    "repair_trial.py": "421ed4019914a4fd2d8c5dc95b93a33c8b65eb37b4c2e6c487ec4d00d0c8230f",
+    "protected.py": "cc58a17073b20afc2191adf3b82aef8298595469146d162b443ece7c0ffcdf9b",
+    "PROTOCOL.md": "baeafb984dad6613c9b5d1a8bd2284ce46b9f41cac318eb767119fe82182f22e",
+    "run.sh": "08d5af28769153642d1f1f4629c7f56795bc41cc842dff2be74f84139497da68"
+  }
+}
