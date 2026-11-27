@@ -1,0 +1,88 @@
+{
+  "agreement_over_available_answer_pairs": {
+    "GEPA_SELECTED_BOUNDS": {
+      "agreement": 0.8571428571428571,
+      "excluded": 3,
+      "kappa": 0.48076923076923056,
+      "left_no_right_yes": 17,
+      "left_yes_right_no": 1,
+      "paired_binary_votes": 126
+    },
+    "PAPER_SELECTIVITY": {
+      "agreement": 0.872,
+      "excluded": 4,
+      "kappa": 0.5495495495495495,
+      "left_no_right_yes": 14,
+      "left_yes_right_no": 2,
+      "paired_binary_votes": 125
+    }
+  },
+  "cached_wires": 18,
+  "frozen_nonbold_allocation": 153,
+  "human_reviews": 0,
+  "model": "gpt-4.1",
+  "model_bounds": {
+    "all_planned": {
+      "allocation": 153,
+      "common_observed": 123,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 111,
+        "PAPER_SELECTIVITY": 109
+      },
+      "full_allocation_delta_numerator_bounds": [
+        -24,
+        30
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        -0.1568627450980392,
+        0.19607843137254902
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 27,
+        "PAPER_SELECTIVITY": 27
+      }
+    },
+    "paired_saved_answers": {
+      "allocation": 129,
+      "common_observed": 123,
+      "common_observed_sum": {
+        "GEPA_SELECTED_BOUNDS": 111,
+        "PAPER_SELECTIVITY": 109
+      },
+      "full_allocation_delta_numerator_bounds": [
+        0,
+        6
+      ],
+      "full_allocation_delta_ratio_bounds": [
+        0.0,
+        0.046511627906976744
+      ],
+      "missing_positions": {
+        "GEPA_SELECTED_BOUNDS": 3,
+        "PAPER_SELECTIVITY": 3
+      }
+    }
+  },
+  "new_request_cap": 240,
+  "new_requests": 240,
+  "original_scores_replaced": 0,
+  "paired_answer_slots": 129,
+  "paired_both_evaluators": {
+    "GPT4.1": {
+      "GEPA_SELECTED_BOUNDS": 106,
+      "PAPER_SELECTIVITY": 104
+    },
+    "Qwen": {
+      "GEPA_SELECTED_BOUNDS": 91,
+      "PAPER_SELECTIVITY": 94
+    },
+    "positions": 117
+  },
+  "reported_tokens": 82967,
+  "request_states": {
+    "INVALID_LABEL": 6,
+    "OK": 234
+  },
+  "terminal": true,
+  "unknown_usage": 0
+}

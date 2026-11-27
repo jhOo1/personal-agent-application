@@ -199,7 +199,22 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         paper,
     )
     require(list(claim.groups()) if claim else None, expected, "BenchPreS repeat evidence and missing bounds")
-    return 7 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    census = json.loads((repeat_root / "NONBOLD_CENSUS_RESULTS.json").read_text())
+    common_census = census["paired_both_evaluators"]
+    all_census = census["model_bounds"]["all_planned"]
+    methods = ("GEPA_SELECTED_BOUNDS", "PAPER_SELECTIVITY")
+    expected = [common_census["positions"], *(common_census[j][m] for j in ("Qwen", "GPT4.1") for m in methods),
+                all_census["common_observed"], *(all_census["common_observed_sum"][m] for m in methods),
+                census["frozen_nonbold_allocation"], *all_census["full_allocation_delta_numerator_bounds"]]
+    match = re.search(
+        r"On (\d+) common non-bold positions, Qwen gives Gate and Selectivity (\d+) and (\d+) reflected preferences, "
+        r"and a masked GPT-4.1 single-attribute diagnostic gives (\d+) and (\d+)\..*?"
+        r"Over all (\d+) paired GPT-4.1 positions, the counts are (\d+) and (\d+)\. "
+        r"The full (\d+)-position missing-outcome bounds span \$\[(-?\d+),(-?\d+)\]\$",
+        paper, re.S,
+    )
+    require([count(t) for t in match.groups()] if match else None, expected, "BenchPreS fixed-answer evaluator census")
+    return 8 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
