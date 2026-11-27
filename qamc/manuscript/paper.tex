@@ -138,6 +138,9 @@ On the 216 originally cached tasks with both endpoints, IPE-C activates history 
 \paragraph{Second model backbone.}
 On 22 common tasks with both estimators and the Actor changed to GPT-4.1, Match is 80/115, 71/115 and 61/115 for IPE-C and the two fixed paths. Qwen obtains 70/115, 61/115 and 59/115 on exactly these tasks. GPT-4.1 scores both, leaving potential same-model preference. The stricter 17-task subset before audited whitespace-only output recovery preserves the ordering. IPE-C ties task-only and trails full history on B-only tasks.
 
+\paragraph{Changing the generator after activation.}
+On the 274 tasks with comparable Des2Gen and IPE-C records (1,472 positions), IPE-C, always using reconstructed Des2Gen, and using Des2Gen only when IPE-C activates history scored 949, 704 and 942 matches. A stricter switch retained every RP-predicted C and required Des2Gen to mark fewer memories applicable, with no new additions. On the 44 affected tasks, Match declined from 157 to 154 of 267. Underuse severity decreased from 38 to 25 while overuse increased from 68 to 91. On a bedtime audio request, Des2Gen suppressed three more sources but opened by attributing its recommendations to the user's meditation and musical tastes. The full source texts remained visible in both pipelines.
+
 \subsection{PersistBench improves under adapted scoring}
 
 \begin{table}[t]
@@ -212,6 +215,9 @@ On 12 exposed BU tasks, routed selection, direct Grounding, full history, and em
 \paragraph{Released selector under the same Actor.}
 Using the same GEPA Actor and adapted Judge, released MemGate \citep{zhang2026memgate} retains history on every SYC task. On 10 complete SYC pairs, MemGate, routing and empty history each fail one, while full history fails five. On 11 strict BU pairs versus full history, MemGate loses two and ties nine. Its losses include omitted dietary constraints for a pet and a shared dinner.
 
+\paragraph{When was partial exposure necessary for a passing grade?}
+Across the 49-source deployment, no source had a confirmed SELECTED pass together with failures for both full and empty history. The original adapted grader ruled out this pattern on 47 sources; one cross-domain and one strict-utility source had unresolved endpoints. This retrospective test asks whether even an oracle choosing between full and empty would fail. A deployed switch lacks that oracle. Moreover, each source measures one track, so a passing risk grade alone cannot establish that an answer also used beneficial history.
+
 \subsection{BenchPreS reveals a realization gap}
 
 \begin{table}[t]
@@ -273,6 +279,9 @@ Query breadth and MemAdapter tied on all 12 mutually graded answers under GPT-4.
 
 \paragraph{Repeated risk deployments against MemAdapter.}
 On eight exposed sycophancy sources and one cross-domain source, each deployed three times, MemAdapter delivered 14 of 24 sycophancy answers and one of three cross-domain answers. Together with beneficial use, it delivered 28 of 47 assigned answers: 16 deployments stopped at the induction length limit, two reached the answer length limit, and one induction had unknown delivery. These are deployment outcomes under the frozen budget. On all 24 sycophancy deployments the two internal policies sent identical generator requests, including 17 with empty history. Counting a source as failed if any deployment showed a failure, the yoga-studio source favored either internal policy over MemAdapter under both graders and all missing-outcome assignments. Across eight sources, the corresponding paired net difference for breadth versus MemAdapter ranges from $-3$ to $+6$ when allowing either grader per source. Strict utility ranges from $-4$ to $+7$ across its 20 sources. This comparison establishes neither an overall semantic advantage over MemAdapter nor an incremental sycophancy benefit from broadening exposure.
+
+\paragraph{Joint delivery on a single document.}
+A retrospective diagnostic required the same answer to realize every applicable preference, avoid all misapplications and score 5/5 on completeness. Of 48 allocated documents, 26 had all three method scores. Task-only, full RP and Strong Gate passed on 2, 8 and 19 of these 26. Gate alone passed on nine documents across five profiles. On one such document, all methods earned full completeness: task-only realized one of two applicable preferences, full RP realized one and added a misapplication, and Gate realized both with no misapplication. The extra attribute was bold formatting. None of the nine Gate-only successes realized more non-bold attributes than both alternatives. These full methods also differ in their generation prompts.
 
 \paragraph{Fixed-answer evaluation sensitivity.}
 On 117 common non-bold positions, Qwen gives Gate and Selectivity 91 and 94 reflected preferences, and a masked GPT-4.1 single-attribute diagnostic gives 106 and 104. Both method contrasts span zero under exploratory profile-cluster resampling. Over all 123 paired GPT-4.1 positions, the counts are 111 and 109. The full 153-position missing-outcome bounds span $[-24,30]$. The diagnostic changes the judge and input presentation together, contains no human votes, and does not replace the original grades.

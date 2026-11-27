@@ -341,7 +341,23 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require(int(delivered), arm["delivered"], f"{method} delivered")
         for j, text in (("GPT", gpt), ("Qwen", qwen)):
             require(text, f"{arm[j+'_pass']}/{utility['allocated']-arm[j+'_missing']}", f"{method} {j}")
-    return 60 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    composition = json.loads((root / "rpe_ipe_des2gen_composition_v1/RESULTS.json").read_text())["common"]["overall"]
+    switch = json.loads((root / "rpe_ipe_des2gen_composition_v1/AGREEMENT.json").read_text())["history_on"]["switch"]
+    oracle = json.loads((root / "persist_exposure_fr3_v1/ENDPOINT_ORACLE.json").read_text())
+    joint = json.loads((root / "bench_joint_delivery_v1/RESULTS.json").read_text())["5"]
+    c = joint["counts"]
+    ruled_out = sum(row["strict_win_ruled_out"] for key, row in oracle.items() if key.endswith("/both"))
+    phrases = [
+        f"{composition['tasks']} tasks with comparable Des2Gen and IPE-C records ({composition['positions']:,} positions)",
+        f"scored {composition['IPE_Match']}, {composition['DES_Match']} and {composition['COMPOSED_Match']} matches",
+        f"{switch['tasks']} affected tasks, Match declined from {switch['IPE_Match']} to {switch['Des2Gen_Match']} of {switch['positions']}",
+        f"decreased from {switch['IPE_UPB']} to {switch['Des2Gen_UPB']} while overuse increased from {switch['IPE_OPB']} to {switch['Des2Gen_OPB']}",
+        f"ruled out this pattern on {ruled_out} sources",
+        f"{c['T_passes']}, {c['H_passes']} and {c['G_passes']} of these {c['comparable']}",
+    ]
+    for phrase in phrases:
+        require(phrase in paper, True, phrase)
+    return 60 + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
