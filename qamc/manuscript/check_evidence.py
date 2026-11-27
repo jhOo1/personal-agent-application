@@ -398,9 +398,32 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
             return f"{good}/{len(values)}"
         require([gpt, qwen, risk], [fraction(True, 0), fraction(True, 1),
                 " / ".join(fraction(False, j) for j in (0, 1))], name)
+    external_text = (root / "bench_profile_external_stability_v1/RESULTS.md").read_text()
+    source_rows = list(markdown_rows(external_text.split("## Pairwise eligible")[0]))[2:]
+    aliases = {"Strong Gate": "GEPA_SELECTED_BOUNDS", "Des2Gen": "DES2GEN_FULL",
+               "MemAdapter": "MEMADAPTER_FULL", "Selectivity": "PAPER_SELECTIVITY",
+               "RP reconstructed": "RPR_PAPER_FULL"}
+    by_method = {r[0]: r[1:] for r in source_rows}
+    joint_rows = list(latex_rows(paper, "benchjoint"))
+    require({r[0] for r in joint_rows}, set(aliases), "joint delivery methods")
+    for name, *numbers in joint_rows:
+        a, m, c, j = by_method[aliases[name]]
+        require(numbers, [f.split("/")[0] for f in (a,m,c,j)], name+" joint panel")
+        require([f.split("/")[1] for f in (a,m,c,j)], ["63","122","37","37"], "common panel denominators")
+    common_text = external_text.split("## Common five-method panel")[1]
+    selectivity = next(r for r in markdown_rows(common_text) if r[0]=="PAPER_SELECTIVITY")
+    low, high = selectivity[-1].replace("+","").split(" to ")
+    hybrid = (root / "bench_joint_nonbold_judge_swap_v1/RESULTS.md").read_text()
+    sample = next(r for r in markdown_rows(hybrid) if r[0]=="All complete")
+    g0,g1 = sample[4].split("/")
+    s0,s1 = sample[5].split("/")
+    limit = re.search(r"all (\d+) assigned draws: \[\+(\d+), \+(\d+)\]",hybrid)
+    phrases.extend([f"between {low} and {high} percentage points",
+                    f"On {sample[1]} paired draws", f"from {g0} to {g1} for Gate and from {s0} to {s1} for Selectivity",
+                    f"Across all {limit[1]} assigned pairs", f"by {limit[2]} to {limit[3]} joint passes"])
     for phrase in phrases:
         require(phrase in paper, True, phrase)
-    return 60 + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    return 60 + len(joint_rows) + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@
 \raggedbottom
 
 \begin{abstract}
-When should a personalized assistant let retrieved memories influence its answer? We test a training-free rule that uses an intent estimate to choose whether the generator sees the fixed history. On 274 RPEval development tasks, this rule matches 953 of 1,462 preference positions, compared with 874 for empty history and 824 for full history. The gain over full history comes from tasks where every preference should be ignored. Whole-task Match is 95/274, versus 103/274 without history and 64/274 with full history. On a separate PersistBench development panel, sycophancy failures across three deployments fall from 7/12 with full history to 3/12 with a selector-driven switch and 1/12 with selected evidence. Always suppressing history also fails on only 1/12, but passes just 2/18 strict beneficial-use tasks. BenchPreS reveals a further limit: an appropriate preference can reach the generator without appearing in the delivered message. Fixed-answer scoring controls show why a low score alone cannot locate the error. These matched comparisons support controlling history exposure under the evaluated protocols; they leave reliable realization of applicable preferences open.
+When should a personalized assistant let retrieved memories influence its answer? We test a training-free rule that uses an intent estimate to choose whether the generator sees the fixed history. On 274 RPEval development tasks, this rule matches 953 of 1,462 preference positions, compared with 874 for empty history and 824 for full history. The gain over full history comes from tasks where every preference should be ignored. Whole-task Match is 95/274, versus 103/274 without history and 64/274 with full history. On a separate PersistBench development panel, sycophancy failures across three deployments fall from 7/12 with full history to 3/12 with a selector-driven switch and 1/12 with selected evidence. Always suppressing history also fails on only 1/12, but passes just 2/18 strict beneficial-use tasks. On 37 BenchPreS development tasks, an existing evidence gate delivers 24 answers that realize all applicable preferences, avoid misuse and earn full completeness, versus 10--16 for four external adaptations. Some appropriate preferences still go unused after reaching the generator. Fixed-answer scoring controls show why a low score alone cannot locate the error. These matched comparisons support controlling history exposure under the evaluated protocols; they leave reliable realization of applicable preferences open.
 \end{abstract}
 
 \section{Introduction}
@@ -238,7 +238,7 @@ Using the same GEPA Actor and adapted Judge, released MemGate \citep{zhang2026me
 \paragraph{When was partial exposure necessary for a passing grade?}
 Across the 49-source deployment, no source had a confirmed SELECTED pass together with failures for both full and empty history. The original adapted grader ruled out this pattern on 47 sources; one cross-domain and one strict-utility source had unresolved endpoints. This retrospective test asks whether even an oracle choosing between full and empty would fail. A deployed switch lacks that oracle. Moreover, each source measures one track, so a passing risk grade alone cannot establish that an answer also used beneficial history.
 
-\subsection{BenchPreS reveals a realization gap}
+\subsection{Joint delivery and its limits on BenchPreS}
 
 \begin{table}[t]
 \centering
@@ -259,8 +259,30 @@ Mean completeness $\uparrow$ & 4.875 & 4.875\\
 
 On a 38-task intersection, unfiltered, Selectivity, and Strong Gate misapply 78, 12, and one of 126 inappropriate preferences, respectively. The non-bold slice of the larger 40-task panel still does not improve over Selectivity (Table~\ref{tab:bench}). This is notable because several missing legitimate preferences are already present in the strong Actor's input.
 
+\paragraph{Can a single answer satisfy all three requirements?}
+We counted an answer as a joint pass when it realized every applicable preference, realized no inappropriate preference and received 5/5 completeness. All five systems had comparable grades on 37 tasks spanning ten profiles (Table~\ref{tab:benchjoint}). On this panel Strong Gate tied for lowest misuse and highest total completeness, and realized the most applicable preferences. With profiles weighted equally, Selectivity was the closest competitor on joint passes. Dropping one profile at a time left the Gate advantage over Selectivity between 6.1 and 28.3 percentage points. These descriptive checks use exposed profiles and the project's Qwen rubric adaptation. They measure the existing Gate; they confer no additional credit on later routing or revision components.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & AAR & MR & Comp. & Joint\\
+\midrule
+Strong Gate & 53 & 1 & 180 & 24\\
+Des2Gen & 46 & 1 & 169 & 15\\
+MemAdapter & 40 & 1 & 168 & 10\\
+Selectivity & 49 & 12 & 180 & 15\\
+RP reconstructed & 45 & 3 & 172 & 16\\
+\bottomrule
+\end{tabular}
+\caption{One answer per method on each of 37 matched tasks. Columns count appropriate uses (of 63), misuses (of 122), completeness points (of 185), and jointly passing answers (of 37). Generation prompts and costs differ.}
+\label{tab:benchjoint}
+\end{table}
+
 \paragraph{Three-draw replication.}
 On 106 paired draws from 38 of the 48 allocated tasks, Gate and Selectivity have MR 1/346 and 44/346, AAR 155/184 and 138/184, and non-bold AAR 95/122 and 96/122, respectively. Exact nicknames account for 36 Selectivity misuse labels. Outside nickname positions, MR is 1/240 and 8/240. The final wave contributes only two paired draws after 30 transport timeouts. On the full allocation, the fieldwise missing-value bounds are $[-101,39]$ MR positions, $[-13,50]$ AAR positions, and $[8,32]$ bold AAR positions for Gate minus Selectivity. The observed MR gap does not fix its direction under all missing outcomes.
+
+As a scoring sensitivity check on this replication, we replaced only the applicable non-bold verdicts with stored masked GPT-4.1 judgments on the same attribute and answer. Misuse, bold adherence and completeness retained their Qwen grades. On 101 paired draws with complete inputs to both procedures, joint passes changed from 57 to 72 for Gate and from 28 to 33 for Selectivity. Across all 144 assigned pairs, the hybrid rule's missing-outcome bounds still favor Gate by 14 to 70 joint passes. The masked judge sees neither the current task nor the other attributes. The check changes one component and its presentation; it does not supply a full second scoring protocol.
 
 \paragraph{Changing the generator with evidence held fixed.}
 On five persistent expression misses spanning two profiles, we drew three fresh responses each from Qwen and DeepSeek-v4.1-flash using the same archived Gate messages. Indexed preference realization was 2/15 and 3/15, respectively. The objective-expression profile improved from 1/9 to 3/9, while the concise profile declined from 1/6 to 0/6. On eight previously successful tasks, 23 of 24 draws had paired complete scores. Qwen and DeepSeek realized the protected attribute in 23/23 and 22/23 draws; completeness totaled 112 and 106 points. Both had zero misapplications in 70 protection positions. All three DeepSeek insurance appeals stated that records were enclosed without supporting evidence. The completeness judge sees the task and answer, without the source facts. These outcomes retain Qwen under the prespecified rule. The prompts identify the assistant as Qwen, limiting the interpretation to a generator substitution in this pipeline.
