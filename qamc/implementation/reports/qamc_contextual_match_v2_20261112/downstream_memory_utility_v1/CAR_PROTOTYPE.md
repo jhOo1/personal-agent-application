@@ -1,12 +1,12 @@
 # Counterfactual Action Realization prototype
 
-Status: the deterministic output operation is implemented and structurally tested. Endpoint inventory, Actor wire parity, candidate creation prompts, preregistration, generation, and scoring remain to be completed. No experimental results from this prototype enter the manuscript.
+Status: the deterministic output operation, controller contracts, and Actor exposure adapters are implemented and structurally tested. Endpoint answer availability, preregistration, job dispatch, generation, and scoring remain to be completed. No experimental results from this prototype enter the manuscript.
 
 ## Shared inputs and comparison
 
 The same task, public facts, frozen source inventory and Actor feed an empty-history and a complete-history answer. Archived endpoints qualify for reuse only when their inputs and service are compatible with the frozen comparison. The same controller proposes at most one concrete action and identifies the historical source and the actor and beneficiary of that action. When justified, the Actor produces one new complete answer using the verified source subset in its existing input channel. A source-use instruction may be added only if the frozen Actor interface already has such a channel. Neither the proposal nor author labels can be passed as user facts.
 
-The three treatments receive the same complete candidates, proposal, sources, and protection information. With one equal-budget control call each, one selects a complete answer, one freely revises or keeps an existing answer, and one selects or performs the copy-only transaction below. Count all upstream cold-start calls, including shared calls and cached counterparts. Keep omitted or failing candidates visible in the per-arm ledger. Use original IPE-C, Strong Gate, and PB_RUBRIC or SELECTED_GEPA as separate method-level references under documented project scoring adaptations.
+The three treatments receive the same complete candidates, proposal, sources, and protection information. They share the exact protected-literal check and fixed fallback. [Controller prompts and parser](controller.py) With one equal-budget control call each, one selects a complete answer, one freely revises or keeps an existing answer, and one selects or performs the copy-only transaction below. Count all upstream cold-start calls, including shared calls and cached counterparts. Keep omitted or failing candidates visible in the per-arm ledger. Use original IPE-C, Strong Gate, and PB_RUBRIC or SELECTED_GEPA as separate method-level references under documented project scoring adaptations.
 
 ## Executable operation
 

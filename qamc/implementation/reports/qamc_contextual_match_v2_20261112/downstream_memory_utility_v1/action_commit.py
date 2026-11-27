@@ -30,6 +30,10 @@ def _unique_keys(pairs):
     return result
 
 
+def parse_controller_json(raw):
+    return json.loads(raw, object_pairs_hook=_unique_keys)
+
+
 def _span(bounds, size, previous_stop, *, allow_insert=False):
     if not isinstance(bounds, list) or len(bounds) != 2 or any(type(i) is not int for i in bounds):
         raise ValueError("A block range must contain two integer boundaries")
@@ -59,7 +63,7 @@ def submit(raw: str, candidates: Mapping[str, Sequence[str]], fallback: str,
     if any(not literal or literal not in fallback_answer for literal in protected_literals):
         raise ValueError("Protected literal is missing from the fixed fallback")
     try:
-        program = json.loads(raw, object_pairs_hook=_unique_keys)
+        program = parse_controller_json(raw)
         if not isinstance(program, dict):
             raise ValueError("Expected transaction object")
         mode = program.get("mode")
