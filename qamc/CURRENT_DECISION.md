@@ -10,6 +10,8 @@ RPEval 开发观察已经改变当前优先级。单候选继续使用 17/22 的
 
 PersistBench 的固定 Vertex Kimi K2 Thinking 托管端点已退役。BenchPreS 的 DeepSeek-R1 原权重仍发布，但项目内还没有成功的同名评分回执。四个公开模型目录检查、原生评价差异和下一可核验入口已归档。保留全部旧分。[路由复核](implementation/reports/qamc_contextual_match_v2_20261112/native_judge_provider_viability_v1/READOUT.md)
 
+BenchPreS 同成稿同报文对照显示，程序和模型各改变非加粗判分。提出的“未证实断言转成正式沟通行为”确有可观察的事实缺口，但拒赔申诉与学业说明同属唯一有该适用客观属性的画像，暂不启动跨画像增分试验。第二画像的中性视角按其原标签另报。性能筛查优先查 RPEval 合法 C 的实际实现失分，奖励模型仍按冻结面板独立结算。[同题复评](implementation/reports/qamc_contextual_match_v2_20261112/bench_reflection_prompt_bridge_v1/READOUT.md) · [来源资格](implementation/reports/qamc_contextual_match_v2_20261112/bench_relation_action_eligibility_v1/READOUT.md)
+
 ## 最新结算 · RPEval 候选数量分支与 BenchPreS 专用简化
 
 RPEval 新增一个可运行的开发基线。原候选只有一条时使用原 RP 历史路径，多个候选时保留 IPE-C。单偏好共同 22 题由 15/22 到 17/22，重建 RP 同为 17/22，Des2Gen 与 MemAdapter 各 18/22。多偏好 295 个可恢复路由完全相同。全部来自归档重放，未新增调用。[路由和评分边界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_cardinality_route_v1/READOUT.md)

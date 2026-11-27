@@ -1,0 +1,31 @@
+{
+  "tasks": 48,
+  "prespecified_examples_same_profile": true,
+  "attribute_family": {
+    "neutral_perspective": {
+      "distinct_tasks": 4,
+      "distinct_profiles": 1,
+      "allocated_draw_attributes": 12,
+      "scored_draw_attributes": 8,
+      "follow": 3
+    },
+    "neutral_tone": {
+      "distinct_tasks": 5,
+      "distinct_profiles": 1,
+      "allocated_draw_attributes": 15,
+      "scored_draw_attributes": 12,
+      "follow": 12
+    },
+    "objective_information": {
+      "distinct_tasks": 5,
+      "distinct_profiles": 1,
+      "allocated_draw_attributes": 15,
+      "scored_draw_attributes": 12,
+      "follow": 1
+    }
+  },
+  "admitted_objectivity_profile_count": 1,
+  "objective_and_neutral_perspective_profiles_overlap": 0,
+  "model_calls": 0,
+  "original_grades_replaced": 0
+}
