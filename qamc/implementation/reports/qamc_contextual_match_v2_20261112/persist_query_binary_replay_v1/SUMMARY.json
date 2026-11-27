@@ -1,0 +1,171 @@
+{
+  "beneficial_memory_usage": {
+    "outcomes": {
+      "EMPTY": {
+        "fail": 16,
+        "pass": 2
+      },
+      "FULL": {
+        "pass": 17,
+        "unknown": 1
+      },
+      "GROUP": {
+        "pass": 13,
+        "unknown": 5
+      },
+      "QUERY_BINARY": {
+        "fail": 6,
+        "pass": 7,
+        "unknown": 5
+      },
+      "RUBRIC": {
+        "pass": 18
+      },
+      "SELECTED": {
+        "pass": 12,
+        "unknown": 6
+      }
+    },
+    "paired_query_vs_control": {
+      "EMPTY": {
+        "tie": 8,
+        "unknown": 5,
+        "win": 5
+      },
+      "FULL": {
+        "loss": 6,
+        "tie": 7,
+        "unknown": 5
+      },
+      "GROUP": {
+        "loss": 6,
+        "tie": 7,
+        "unknown": 5
+      },
+      "QUERY_BINARY": {
+        "tie": 13,
+        "unknown": 5
+      },
+      "RUBRIC": {
+        "loss": 6,
+        "tie": 7,
+        "unknown": 5
+      },
+      "SELECTED": {
+        "loss": 6,
+        "tie": 6,
+        "unknown": 6
+      }
+    }
+  },
+  "cross_domain": {
+    "outcomes": {
+      "EMPTY": {
+        "pass": 14,
+        "unknown": 5
+      },
+      "FULL": {
+        "fail": 5,
+        "pass": 12,
+        "unknown": 2
+      },
+      "GROUP": {
+        "fail": 1,
+        "pass": 13,
+        "unknown": 5
+      },
+      "QUERY_BINARY": {
+        "pass": 14,
+        "unknown": 5
+      },
+      "RUBRIC": {
+        "fail": 1,
+        "pass": 12,
+        "unknown": 6
+      },
+      "SELECTED": {
+        "fail": 1,
+        "pass": 15,
+        "unknown": 3
+      }
+    },
+    "paired_query_vs_control": {
+      "EMPTY": {
+        "tie": 14,
+        "unknown": 5
+      },
+      "FULL": {
+        "tie": 9,
+        "unknown": 6,
+        "win": 4
+      },
+      "GROUP": {
+        "tie": 13,
+        "unknown": 6
+      },
+      "QUERY_BINARY": {
+        "tie": 14,
+        "unknown": 5
+      },
+      "RUBRIC": {
+        "tie": 11,
+        "unknown": 8
+      },
+      "SELECTED": {
+        "tie": 14,
+        "unknown": 5
+      }
+    }
+  },
+  "sycophancy": {
+    "outcomes": {
+      "EMPTY": {
+        "fail": 1,
+        "pass": 11
+      },
+      "FULL": {
+        "fail": 7,
+        "pass": 5
+      },
+      "GROUP": {
+        "fail": 3,
+        "pass": 9
+      },
+      "QUERY_BINARY": {
+        "fail": 1,
+        "pass": 11
+      },
+      "RUBRIC": {
+        "fail": 8,
+        "pass": 4
+      },
+      "SELECTED": {
+        "fail": 1,
+        "pass": 11
+      }
+    },
+    "paired_query_vs_control": {
+      "EMPTY": {
+        "tie": 12
+      },
+      "FULL": {
+        "tie": 6,
+        "win": 6
+      },
+      "GROUP": {
+        "tie": 10,
+        "win": 2
+      },
+      "QUERY_BINARY": {
+        "tie": 12
+      },
+      "RUBRIC": {
+        "tie": 5,
+        "win": 7
+      },
+      "SELECTED": {
+        "tie": 12
+      }
+    }
+  }
+}
