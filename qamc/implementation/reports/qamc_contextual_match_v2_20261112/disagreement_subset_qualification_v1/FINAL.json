@@ -1,0 +1,269 @@
+{
+  "allocated": 24,
+  "calls": 66,
+  "calls_by_status": {
+    "OK": 66
+  },
+  "paired": {
+    "all_A": {
+      "DISAGREE": {
+        "FM": 4,
+        "FM_tasks": 7,
+        "OPB": 20,
+        "OPB_tasks": 7,
+        "UPB": 3,
+        "UPB_tasks": 7,
+        "exact": 1,
+        "match": 4,
+        "positions": 29,
+        "tasks": 7
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 4,
+        "FM_tasks": 7,
+        "OPB": 19,
+        "OPB_tasks": 7,
+        "UPB": 3,
+        "UPB_tasks": 7,
+        "exact": 1,
+        "match": 4,
+        "positions": 29,
+        "tasks": 7
+      },
+      "RP_K": {
+        "FM": 4,
+        "FM_tasks": 7,
+        "OPB": 19,
+        "OPB_tasks": 7,
+        "UPB": 3,
+        "UPB_tasks": 7,
+        "exact": 1,
+        "match": 4,
+        "positions": 29,
+        "tasks": 7
+      },
+      "TASK_ONLY": {
+        "FM": 0,
+        "FM_tasks": 7,
+        "OPB": 6,
+        "OPB_tasks": 7,
+        "UPB": 9,
+        "UPB_tasks": 7,
+        "exact": 4,
+        "match": 17,
+        "positions": 29,
+        "tasks": 7
+      }
+    },
+    "contains_B_no_C": {
+      "DISAGREE": {
+        "FM": 2,
+        "FM_tasks": 14,
+        "OPB": 13,
+        "OPB_tasks": 14,
+        "UPB": 22,
+        "UPB_tasks": 14,
+        "exact": 1,
+        "match": 41,
+        "positions": 80,
+        "tasks": 14
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 1,
+        "FM_tasks": 14,
+        "OPB": 10,
+        "OPB_tasks": 14,
+        "UPB": 20,
+        "UPB_tasks": 14,
+        "exact": 2,
+        "match": 47,
+        "positions": 80,
+        "tasks": 14
+      },
+      "RP_K": {
+        "FM": 2,
+        "FM_tasks": 14,
+        "OPB": 17,
+        "OPB_tasks": 14,
+        "UPB": 17,
+        "UPB_tasks": 14,
+        "exact": 1,
+        "match": 45,
+        "positions": 80,
+        "tasks": 14
+      },
+      "TASK_ONLY": {
+        "FM": 4,
+        "FM_tasks": 14,
+        "OPB": 5,
+        "OPB_tasks": 14,
+        "UPB": 32,
+        "UPB_tasks": 14,
+        "exact": 1,
+        "match": 40,
+        "positions": 80,
+        "tasks": 14
+      }
+    },
+    "contains_C": {
+      "DISAGREE": {
+        "FM": 1,
+        "FM_tasks": 3,
+        "OPB": 5,
+        "OPB_tasks": 3,
+        "UPB": 3,
+        "UPB_tasks": 3,
+        "exact": 0,
+        "match": 8,
+        "positions": 13,
+        "tasks": 3
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 0,
+        "FM_tasks": 3,
+        "OPB": 1,
+        "OPB_tasks": 3,
+        "UPB": 6,
+        "UPB_tasks": 3,
+        "exact": 0,
+        "match": 8,
+        "positions": 13,
+        "tasks": 3
+      },
+      "RP_K": {
+        "FM": 2,
+        "FM_tasks": 3,
+        "OPB": 6,
+        "OPB_tasks": 3,
+        "UPB": 2,
+        "UPB_tasks": 3,
+        "exact": 0,
+        "match": 8,
+        "positions": 13,
+        "tasks": 3
+      },
+      "TASK_ONLY": {
+        "FM": 4,
+        "FM_tasks": 3,
+        "OPB": 1,
+        "OPB_tasks": 3,
+        "UPB": 9,
+        "UPB_tasks": 3,
+        "exact": 0,
+        "match": 6,
+        "positions": 13,
+        "tasks": 3
+      }
+    },
+    "different_input": {
+      "DISAGREE": {
+        "FM": 4,
+        "FM_tasks": 11,
+        "OPB": 18,
+        "OPB_tasks": 11,
+        "UPB": 12,
+        "UPB_tasks": 11,
+        "exact": 1,
+        "match": 27,
+        "positions": 62,
+        "tasks": 11
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 3,
+        "FM_tasks": 11,
+        "OPB": 18,
+        "OPB_tasks": 11,
+        "UPB": 7,
+        "UPB_tasks": 11,
+        "exact": 2,
+        "match": 34,
+        "positions": 62,
+        "tasks": 11
+      },
+      "RP_K": {
+        "FM": 5,
+        "FM_tasks": 11,
+        "OPB": 22,
+        "OPB_tasks": 11,
+        "UPB": 6,
+        "UPB_tasks": 11,
+        "exact": 1,
+        "match": 31,
+        "positions": 62,
+        "tasks": 11
+      },
+      "TASK_ONLY": {
+        "FM": 3,
+        "FM_tasks": 11,
+        "OPB": 9,
+        "OPB_tasks": 11,
+        "UPB": 24,
+        "UPB_tasks": 11,
+        "exact": 2,
+        "match": 28,
+        "positions": 62,
+        "tasks": 11
+      }
+    },
+    "paired": {
+      "DISAGREE": {
+        "FM": 7,
+        "FM_tasks": 24,
+        "OPB": 38,
+        "OPB_tasks": 24,
+        "UPB": 28,
+        "UPB_tasks": 24,
+        "exact": 2,
+        "match": 53,
+        "positions": 122,
+        "tasks": 24
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 5,
+        "FM_tasks": 24,
+        "OPB": 30,
+        "OPB_tasks": 24,
+        "UPB": 29,
+        "UPB_tasks": 24,
+        "exact": 3,
+        "match": 59,
+        "positions": 122,
+        "tasks": 24
+      },
+      "RP_K": {
+        "FM": 8,
+        "FM_tasks": 24,
+        "OPB": 42,
+        "OPB_tasks": 24,
+        "UPB": 22,
+        "UPB_tasks": 24,
+        "exact": 2,
+        "match": 57,
+        "positions": 122,
+        "tasks": 24
+      },
+      "TASK_ONLY": {
+        "FM": 8,
+        "FM_tasks": 24,
+        "OPB": 12,
+        "OPB_tasks": 24,
+        "UPB": 50,
+        "UPB_tasks": 24,
+        "exact": 5,
+        "match": 63,
+        "positions": 122,
+        "tasks": 24
+      }
+    }
+  },
+  "root_net": {
+    "loss": 1,
+    "tie": 14,
+    "win": 1
+  },
+  "status": {
+    "VALID": 48
+  },
+  "tokens": 118229,
+  "unknown_usage": 0
+}
