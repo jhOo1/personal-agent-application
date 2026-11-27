@@ -18,7 +18,7 @@ def key(row):
     return row["source_file"], row["track"], row["row_index"]
 
 
-def inventory():
+def roster():
     census = [r for r in read(PREP / "CENSUS.json")["catalog"] if r["benchmark"] == "rpeval"]
     by_id = {r["source_id"]: r for r in census}
     blocked = {r["audit_group_id"] for r in read(PREP / "RESERVED_IDENTITIES.json")["native_cases"]
@@ -48,6 +48,11 @@ def inventory():
                 source = LEGACY.parent / c["source_file"]
                 assert sha256(source.read_bytes()).hexdigest() == c["source_sha256"]
                 verified[key(c)] = c
+    return rows, direct, counts, verified
+
+
+def inventory():
+    rows, direct, counts, verified = roster()
     details = read(LEGACY / "qamc_des2gen/ALL_NINE_CASE_DETAILS.json")
     matched = Counter()
     for row in details:
