@@ -1,0 +1,102 @@
+{
+  "methods": {
+    "RPR_PAPER_FULL": {
+      "eligible_labels": 54,
+      "paired": 49,
+      "unknown": 5,
+      "strict_match_win": 9,
+      "protected_win": 2
+    },
+    "MEMADAPTER_FULL": {
+      "eligible_labels": 54,
+      "paired": 46,
+      "unknown": 8,
+      "strict_match_win": 6
+    },
+    "DES2GEN_FULL": {
+      "eligible_labels": 54,
+      "paired": 47,
+      "unknown": 7,
+      "strict_match_win": 8,
+      "protected_win": 2
+    }
+  },
+  "candidates": [
+    {
+      "uid": "rpeval/formal_multi_v1/explicit/125",
+      "group": "39b59d9fc6ce253992a40c5d4f75aa6de6e97dfe94f21c2e7d8090e04b9158cf",
+      "method": "RPR_PAPER_FULL",
+      "labels": "ABAAAAA",
+      "score": [
+        5,
+        6
+      ],
+      "flags": [
+        [],
+        [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      ],
+      "answers": [
+        "5c0b58eaaf76f4b19776468e81c361894f3ab4f0d45f64ca957dd1f5cc7bb736",
+        "54a759e256673af37ee12325a44c959719bb6c5ca359c41294c27cac84a0b3ba"
+      ]
+    },
+    {
+      "uid": "rpeval/formal_multi_v1/implicit/067",
+      "group": "a139555577c2bb6542446d1eb1e3ae22af05ca3587089b87e819695d15749850",
+      "method": "RPR_PAPER_FULL",
+      "labels": "ABAB",
+      "score": [
+        2,
+        4
+      ],
+      "flags": [
+        [],
+        []
+      ],
+      "answers": [
+        "3a86424fb10ccd39f257ffda94453169725eef3d799c556621d65b6150955480",
+        "59f58f8c888c56e12afd14932f4fea0250ffc021665fcc118ba4c31f4dea8984"
+      ]
+    },
+    {
+      "uid": "rpeval/formal_multi_v1/explicit/125",
+      "group": "39b59d9fc6ce253992a40c5d4f75aa6de6e97dfe94f21c2e7d8090e04b9158cf",
+      "method": "DES2GEN_FULL",
+      "labels": "ABAAAAA",
+      "score": [
+        5,
+        6
+      ],
+      "flags": [
+        [],
+        [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      ],
+      "answers": [
+        "5c0b58eaaf76f4b19776468e81c361894f3ab4f0d45f64ca957dd1f5cc7bb736",
+        "63a78693e1a991c0ff65855389a3021ef566996585d6f4a4a17380ff7c0a5e9b"
+      ]
+    },
+    {
+      "uid": "rpeval/formal_multi_v1/implicit/008",
+      "group": "eb6bc39a4a81b29811e4fd79fefe95b5ccdf013afb9733c4c1d1168f6be2b17b",
+      "method": "DES2GEN_FULL",
+      "labels": "AABBAAB",
+      "score": [
+        4,
+        5
+      ],
+      "flags": [
+        [],
+        []
+      ],
+      "answers": [
+        "016aa11df595d89436624b870348aee8bcbe487237b98221c2b2f8874ec1722f",
+        "c89ef2a5925fb21ae2bb36dce9bc47e53640933c4d431ebc61799ee2f063c811"
+      ]
+    }
+  ]
+}
