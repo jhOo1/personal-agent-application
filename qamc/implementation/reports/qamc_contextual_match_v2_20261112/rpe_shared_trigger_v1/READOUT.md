@@ -1,0 +1,9 @@
+# Independent source agreement does not change the activation decision
+
+On 18 exposed roots, the two separately dispatched but identically prompted Qwen IPE estimators agreed on the complete C-trigger set for 16. There were eight tasks where both would activate history. All eight had at least one shared trigger. Requiring agreement on the exact source vetoed zero additional activations versus the two-call ordinary control. All six C-bearing tasks remained open. Opening history alone does not show that every legitimate constraint was implemented.
+
+In the all-A family living-room task (implicit/144), both estimators ranked the same two histories first as C. One described how subdued, simple furniture helps the requester relax. The other favored straight lines, few decorations and open space. The query asks for a warmer living room for the family. Both histories are topically plausible; the author's four positions all call for ignoring history. A stable prediction could not identify the false activation. In the first wave empty/full scored 4/4 and 0/4. In the second both scored 0/4. These are automated final-answer scores. Withholding the two histories does not guarantee a higher score in every generation.
+
+Both agreement rules and both single calls scored 38/91 on wave one (18 paired tasks, OPB 22, UPB 32) and 44/87 on wave two (17 paired tasks, OPB 18, UPB 26). One wave-two full endpoint had no valid Match; the selected policies still had valid selected endpoints on all 18 assigned tasks. Totals shown here require both endpoints. Do not compare the two wave totals as a treatment change. Prior scores were known; only the source-intersection decision was newly frozen. No new generation or scoring requests. Do not add a second identical estimator call on the strength of these data.
+
+[Protocol](PROTOCOL.md) · [Replay](replay.py) · [Aggregate](RESULTS.json)
