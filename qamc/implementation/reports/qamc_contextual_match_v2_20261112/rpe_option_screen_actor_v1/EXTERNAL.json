@@ -1,0 +1,173 @@
+{
+  "des2gen": {
+    "totals": {
+      "reference": {
+        "tasks": 7,
+        "positions": 44,
+        "match": 26,
+        "OPB": 14,
+        "UPB": 6,
+        "FM": 1
+      },
+      "review": {
+        "tasks": 7,
+        "positions": 44,
+        "match": 26,
+        "OPB": 13,
+        "UPB": 6,
+        "FM": 1
+      },
+      "screen": {
+        "tasks": 7,
+        "positions": 44,
+        "match": 28,
+        "OPB": 14,
+        "UPB": 6,
+        "FM": 2
+      },
+      "DES2GEN_FULL": {
+        "tasks": 7,
+        "positions": 44,
+        "match": 26,
+        "OPB": 13,
+        "UPB": 5,
+        "FM": 2
+      }
+    },
+    "screen_vs": {
+      "reference": {
+        "tie": 5,
+        "win": 2
+      },
+      "review": {
+        "tie": 5,
+        "win": 2
+      },
+      "screen": {
+        "tie": 7
+      },
+      "DES2GEN_FULL": {
+        "tie": 5,
+        "win": 2
+      }
+    }
+  },
+  "memadapter": {
+    "totals": {
+      "reference": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 13,
+        "UPB": 5,
+        "FM": 1
+      },
+      "review": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 12,
+        "UPB": 5,
+        "FM": 1
+      },
+      "screen": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 22,
+        "OPB": 12,
+        "UPB": 5,
+        "FM": 1
+      },
+      "MEMADAPTER_FULL": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 4
+      }
+    },
+    "screen_vs": {
+      "reference": {
+        "tie": 4,
+        "win": 2
+      },
+      "review": {
+        "tie": 4,
+        "win": 2
+      },
+      "screen": {
+        "tie": 6
+      },
+      "MEMADAPTER_FULL": {
+        "tie": 4,
+        "win": 2
+      }
+    }
+  },
+  "all": {
+    "totals": {
+      "reference": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 13,
+        "UPB": 5,
+        "FM": 1
+      },
+      "review": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 12,
+        "UPB": 5,
+        "FM": 1
+      },
+      "screen": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 22,
+        "OPB": 12,
+        "UPB": 5,
+        "FM": 1
+      },
+      "DES2GEN_FULL": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 11,
+        "UPB": 5,
+        "FM": 1
+      },
+      "MEMADAPTER_FULL": {
+        "tasks": 6,
+        "positions": 35,
+        "match": 20,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 4
+      }
+    },
+    "screen_vs": {
+      "reference": {
+        "tie": 4,
+        "win": 2
+      },
+      "review": {
+        "tie": 4,
+        "win": 2
+      },
+      "screen": {
+        "tie": 6
+      },
+      "DES2GEN_FULL": {
+        "tie": 4,
+        "win": 2
+      },
+      "MEMADAPTER_FULL": {
+        "tie": 4,
+        "win": 2
+      }
+    }
+  }
+}
