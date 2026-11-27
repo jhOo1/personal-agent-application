@@ -1,0 +1,43 @@
+{
+  "observed_utc": "2026-11-27T06:04:57.209113+00:00",
+  "public_listings": [
+    {
+      "name": "DeepSeek-R1",
+      "registry": "openrouter",
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-r1/endpoints",
+      "http_status": 200,
+      "model_id": "deepseek/deepseek-r1",
+      "endpoint_count": 0,
+      "providers": []
+    },
+    {
+      "name": "DeepSeek-R1",
+      "registry": "huggingface",
+      "url": "https://huggingface.co/api/models/deepseek-ai/DeepSeek-R1?expand=inferenceProviderMapping&expand=sha",
+      "http_status": 200,
+      "model_id": "deepseek-ai/DeepSeek-R1",
+      "revision": "56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+      "inference_providers": []
+    },
+    {
+      "name": "Kimi-K2-Thinking",
+      "registry": "openrouter",
+      "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2-thinking/endpoints",
+      "http_status": 200,
+      "model_id": "moonshotai/kimi-k2-thinking",
+      "endpoint_count": 0,
+      "providers": []
+    },
+    {
+      "name": "Kimi-K2-Thinking",
+      "registry": "huggingface",
+      "url": "https://huggingface.co/api/models/moonshotai/Kimi-K2-Thinking?expand=inferenceProviderMapping&expand=sha",
+      "http_status": 200,
+      "model_id": "moonshotai/Kimi-K2-Thinking",
+      "revision": "a51ccc050d73dab088bf7b0e2dd9b30ae85a4e55",
+      "inference_providers": []
+    }
+  ],
+  "authenticated_requests": 0,
+  "inference_requests": 0
+}

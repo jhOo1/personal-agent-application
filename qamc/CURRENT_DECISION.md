@@ -6,6 +6,10 @@
 
 RPEval 开发观察已经改变当前优先级。单候选继续使用 17/22 的归档 RP 路径，多候选继续使用 IPE-C。同一批 RP、Des2Gen、MemAdapter 成稿有 21/22 的事后 Match 上界，普通盲选为 17/22，固定两个外部适配各 18/22。冻结模型臂使用同样的候选池，独立结算。弃用普通盲选作为当前替代方案。完整分数、争议、预算及恢复命令均已归档。[同题结果](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/DIRECT_READOUT.md) · [奖励模型协议与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/LOCAL_RUNTIME.md)
 
+## 论文协议恢复
+
+PersistBench 的固定 Vertex Kimi K2 Thinking 托管端点已退役。BenchPreS 的 DeepSeek-R1 原权重仍发布，但项目内还没有成功的同名评分回执。四个公开模型目录检查、原生评价差异和下一可核验入口已归档。保留全部旧分。[路由复核](implementation/reports/qamc_contextual_match_v2_20261112/native_judge_provider_viability_v1/READOUT.md)
+
 ## 最新结算 · RPEval 候选数量分支与 BenchPreS 专用简化
 
 RPEval 新增一个可运行的开发基线。原候选只有一条时使用原 RP 历史路径，多个候选时保留 IPE-C。单偏好共同 22 题由 15/22 到 17/22，重建 RP 同为 17/22，Des2Gen 与 MemAdapter 各 18/22。多偏好 295 个可恢复路由完全相同。全部来自归档重放，未新增调用。[路由和评分边界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_cardinality_route_v1/READOUT.md)

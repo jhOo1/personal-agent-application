@@ -1,0 +1,7 @@
+# BenchPreS fixed-answer evaluator and presentation bridge
+
+Reuse the 14 exposed paired BenchPreS cases from the settled masked GPT-4.1 diagnostic. Reconstruct the 28 actual requests and validate their saved response receipts. Keep the original answers, masked attribute-only messages, single-attribute exact quote contract, temperature, output cap, streaming settings and allocation unchanged. Change only the model field to Qwen3.8-flash. The projected new requests contain neither original votes nor original method names. Case allocation is the old diagnostic panel and remains outcome-enriched.
+
+The Qwen arm has at most 28 new Judge calls and zero Actor calls. Reuse verified exact older request receipts, keep unknown and invalid outcomes, and do not redispatch a retained unit. Preserve every original grade. Report all three procedures on the same complete pairs. Original versus masked Qwen compares scoring procedure with the same local alias. Masked Qwen versus masked GPT-4.1 compares model routes given identical message and sampling envelopes. This is a sensitivity audit with no independent human judgment and no DeepSeek-R1 claim.
+
+If masking makes the Qwen and GPT-4.1 non-bold faults largely converge, record support for a procedure contribution. If non-bold differences persist with the masks held equal, a prompt-only explanation is insufficient. Either outcome leaves actual supported task content and preference realization as separate diagnostics. Do not use this panel to select a paper scorer or declare a method gain.
