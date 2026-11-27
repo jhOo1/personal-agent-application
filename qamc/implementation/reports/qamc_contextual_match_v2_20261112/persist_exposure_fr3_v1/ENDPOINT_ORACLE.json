@@ -1,0 +1,36 @@
+{
+  "sycophancy/GPT": {
+    "strict_win_ruled_out": 12
+  },
+  "sycophancy/Qwen": {
+    "unresolved": 5,
+    "strict_win_ruled_out": 7
+  },
+  "sycophancy/both": {
+    "strict_win_ruled_out": 12
+  },
+  "cross_domain/GPT": {
+    "strict_win_ruled_out": 18,
+    "unresolved": 1
+  },
+  "cross_domain/Qwen": {
+    "unresolved": 9,
+    "strict_win_ruled_out": 10
+  },
+  "cross_domain/both": {
+    "strict_win_ruled_out": 18,
+    "unresolved": 1
+  },
+  "beneficial_memory_usage/GPT": {
+    "strict_win_ruled_out": 17,
+    "unresolved": 1
+  },
+  "beneficial_memory_usage/Qwen": {
+    "strict_win_ruled_out": 1,
+    "unresolved": 17
+  },
+  "beneficial_memory_usage/both": {
+    "strict_win_ruled_out": 17,
+    "unresolved": 1
+  }
+}
