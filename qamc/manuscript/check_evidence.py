@@ -373,6 +373,17 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         f"In {oracle[4]} groups the preferred endpoint reverses",
         f"all four policies scored {soft[1]} on it",
     ])
+    reopening = {r[0]: r for r in markdown_rows((root / "query_specific_reopening_v1/RESULTS.md").read_text())}
+    base, candidate = reopening["IPE-C"], reopening["Across queries"]
+    original_match, positions = base[6].split("/")
+    phrases.extend([
+        f"reduced Match from {original_match} to {candidate[6].split('/')[0]} of {int(positions):,}",
+        f"Underuse severity fell from {base[8]} to {candidate[8]} while overuse rose from {base[7]} to {candidate[7]}",
+    ])
+    diagnostic = (root / "spanish_app_joint_diagnostic_v1/RESULTS.md").read_text()
+    saved = re.search(r"full endpoints: ([^.]*)", diagnostic).group(1).split(", ")
+    joint_score = re.search(r"M1\+M3 wire scored (\d+/\d+)", diagnostic).group(1)
+    phrases.extend([", ".join(saved[:-1]) + " and " + saved[-1], f"recognized both behaviors yet gave {joint_score}"])
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
