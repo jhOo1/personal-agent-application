@@ -1,0 +1,27 @@
+{
+  "previous": {
+    "original": 5,
+    "corrected": 3
+  },
+  "fresh": [
+    {
+      "corrected": 5,
+      "original": 4
+    },
+    {
+      "original": 5,
+      "corrected": 4
+    },
+    {
+      "corrected": 4,
+      "original": 3
+    }
+  ],
+  "requests": 6,
+  "statuses": {
+    "OK": 6
+  },
+  "reported_tokens": 4116,
+  "missing_usage": 0,
+  "retries": 0
+}

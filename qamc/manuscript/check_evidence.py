@@ -350,7 +350,10 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     joint = json.loads((root / "bench_joint_delivery_v1/RESULTS.json").read_text())["5"]
     c = joint["counts"]
     ruled_out = sum(row["strict_win_ruled_out"] for key, row in oracle.items() if key.endswith("/both"))
+    repeats = json.loads((root / "bench_enrollment_repeat_v1/RESULTS.json").read_text())["fresh"]
+    paired = [f"{r['original']}/{r['corrected']}" for r in repeats]
     phrases = [
+        f"original/corrected pairs of {paired[0]}, {paired[1]} and {paired[2]}",
         f"{composition['tasks']} tasks with comparable Des2Gen and IPE-C records ({composition['positions']:,} positions)",
         f"scored {composition['IPE_Match']}, {composition['DES_Match']} and {composition['COMPOSED_Match']} matches",
         f"{switch['tasks']} affected tasks, Match declined from {switch['IPE_Match']} to {switch['Des2Gen_Match']} of {switch['positions']}",
