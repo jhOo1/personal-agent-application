@@ -1,0 +1,49 @@
+{
+  "assigned": 48,
+  "changed": {
+    "paired": 6,
+    "original": {
+      "aar_numerator": 8,
+      "aar_denominator": 11,
+      "mr_numerator": 0,
+      "mr_denominator": 19,
+      "task_completeness": 28
+    },
+    "edited": {
+      "aar_numerator": 9,
+      "aar_denominator": 11,
+      "mr_numerator": 0,
+      "mr_denominator": 19,
+      "task_completeness": 26
+    }
+  },
+  "all": {
+    "paired": 41,
+    "original": {
+      "aar_numerator": 62,
+      "aar_denominator": 72,
+      "mr_numerator": 1,
+      "mr_denominator": 133,
+      "task_completeness": 192
+    },
+    "edited": {
+      "aar_numerator": 63,
+      "aar_denominator": 72,
+      "mr_numerator": 1,
+      "mr_denominator": 133,
+      "task_completeness": 190
+    }
+  },
+  "diagnostics": {
+    "completeness_delta_0": 4,
+    "completeness_delta_-1": 2,
+    "appropriate_flip": 1
+  },
+  "requests": 36,
+  "statuses": {
+    "OK": 36
+  },
+  "known_tokens": 18496,
+  "unknown_usage": 0,
+  "retries": 0
+}
