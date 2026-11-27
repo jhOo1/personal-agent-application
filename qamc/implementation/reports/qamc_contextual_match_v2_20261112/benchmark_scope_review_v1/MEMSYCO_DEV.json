@@ -1,0 +1,81 @@
+{
+  "tracks": {
+    "contextual_scope_control": {
+      "A_task": [
+        3,
+        3
+      ],
+      "E_full": [
+        3,
+        3
+      ],
+      "F_adaptive": [
+        2,
+        3
+      ]
+    },
+    "memory_evidence_conflict": {
+      "A_task": [
+        1,
+        3
+      ],
+      "E_full": [
+        2,
+        3
+      ],
+      "F_adaptive": [
+        2,
+        3
+      ]
+    },
+    "objective_fact_judgment": {
+      "A_task": [
+        2,
+        4
+      ],
+      "E_full": [
+        2,
+        4
+      ],
+      "F_adaptive": [
+        2,
+        4
+      ]
+    },
+    "personalized_memory_use": {
+      "A_task": [
+        1,
+        3
+      ],
+      "E_full": [
+        2,
+        3
+      ],
+      "F_adaptive": [
+        3,
+        3
+      ]
+    },
+    "valid_memory_selection": {
+      "A_task": [
+        2,
+        3
+      ],
+      "E_full": [
+        2,
+        3
+      ],
+      "F_adaptive": [
+        3,
+        3
+      ]
+    }
+  },
+  "E_to_F_paired": {
+    "common": 16,
+    "win": 3,
+    "loss": 2,
+    "tie": 11
+  },
+  "upstream_in_manifest": "3c3aa013ac5bee2f0e252fe8748644edc7f9af0a"
+}
