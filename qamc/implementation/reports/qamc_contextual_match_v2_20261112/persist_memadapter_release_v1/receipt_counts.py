@@ -9,19 +9,31 @@ RUN = HERE.parents[2] / "runs" / HERE.parent.name / HERE.name
 
 
 def counts(path):
-    result = Counter()
+    receipts = {}
+    for file in (path.parent/"visible").glob("*/record.json"):
+        rec = json.loads(file.read_text())
+        key = rec["request_sha256"]
+        if key in receipts:
+            raise ValueError("Duplicate physical receipt within draw/stage")
+        receipts[key] = rec
+    states, outcomes, combined, usage = Counter(), Counter(), Counter(), Counter()
     with sqlite3.connect(path.resolve().as_uri()+"?mode=ro", uri=True) as db:
-        for status, cap, used in db.execute("""
-            SELECT status, json_extract(request_json,'$.max_tokens'),
-                   json_extract(response_json,'$.usage.completion_tokens')
+        for key, status, cap in db.execute("""
+            SELECT request_sha, status, json_extract(request_json,'$.max_tokens')
             FROM samples
         """):
-            result[status] += 1
+            states[status] += 1
+            rec = receipts.get(key, {})
+            outcome = rec.get("status", "NO_VISIBLE_RECEIPT_YET")
+            outcomes[outcome] += 1
+            combined[status+" / "+outcome] += 1
+            used = (rec.get("usage") or {}).get("completion_tokens")
             if used is not None:
-                result["known_completion_usage"] += 1
-                result["reported_above_requested_max"] += int(used > cap)
-                result["max_reported_completion"] = max(used,result["max_reported_completion"])
-    return dict(result)
+                usage["known_completion_usage"] += 1
+                usage["reported_above_requested_max"] += int(used > cap)
+                usage["max_reported_completion"] = max(used,usage["max_reported_completion"])
+    return dict(samples=states, transport=outcomes, paired_status=combined, usage=usage)
+
 
 
 if __name__ == "__main__":
