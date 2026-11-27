@@ -1,0 +1,273 @@
+{
+  "assigned": 300,
+  "missing": {
+    "no_actor_wire": 4,
+    "no_matched_answer_grade": 9
+  },
+  "tables": {
+    "all/all/any": {
+      "answer_match": 860,
+      "exact_answers": 65,
+      "missed": 680,
+      "misses_on_correct_predictions_lower": 241,
+      "misses_on_correct_predictions_upper": 488,
+      "positions": 1540,
+      "predicted_correct": 922,
+      "source_groups": 45,
+      "tasks": 287
+    },
+    "all/all/exact": {
+      "answer_match": 141,
+      "exact_answers": 18,
+      "missed": 67,
+      "misses_on_correct_predictions_lower": 67,
+      "misses_on_correct_predictions_upper": 67,
+      "positions": 208,
+      "predicted_correct": 208,
+      "source_groups": 19,
+      "tasks": 41
+    },
+    "all/all/inexact": {
+      "answer_match": 719,
+      "exact_answers": 47,
+      "missed": 613,
+      "misses_on_correct_predictions_lower": 174,
+      "misses_on_correct_predictions_upper": 421,
+      "positions": 1332,
+      "predicted_correct": 714,
+      "source_groups": 44,
+      "tasks": 246
+    },
+    "all/unflagged/any": {
+      "answer_match": 653,
+      "exact_answers": 64,
+      "missed": 502,
+      "misses_on_correct_predictions_lower": 181,
+      "misses_on_correct_predictions_upper": 348,
+      "positions": 1155,
+      "predicted_correct": 698,
+      "source_groups": 45,
+      "tasks": 211
+    },
+    "all/unflagged/exact": {
+      "answer_match": 123,
+      "exact_answers": 18,
+      "missed": 56,
+      "misses_on_correct_predictions_lower": 56,
+      "misses_on_correct_predictions_upper": 56,
+      "positions": 179,
+      "predicted_correct": 179,
+      "source_groups": 18,
+      "tasks": 33
+    },
+    "all/unflagged/inexact": {
+      "answer_match": 530,
+      "exact_answers": 46,
+      "missed": 446,
+      "misses_on_correct_predictions_lower": 125,
+      "misses_on_correct_predictions_upper": 292,
+      "positions": 976,
+      "predicted_correct": 519,
+      "source_groups": 42,
+      "tasks": 178
+    },
+    "all_A/all/any": {
+      "answer_match": 272,
+      "exact_answers": 62,
+      "missed": 250,
+      "misses_on_correct_predictions_lower": 90,
+      "misses_on_correct_predictions_upper": 91,
+      "positions": 522,
+      "predicted_correct": 272,
+      "source_groups": 44,
+      "tasks": 118
+    },
+    "all_A/all/exact": {
+      "answer_match": 72,
+      "exact_answers": 17,
+      "missed": 0,
+      "misses_on_correct_predictions_lower": 0,
+      "misses_on_correct_predictions_upper": 0,
+      "positions": 72,
+      "predicted_correct": 72,
+      "source_groups": 13,
+      "tasks": 17
+    },
+    "all_A/all/inexact": {
+      "answer_match": 200,
+      "exact_answers": 45,
+      "missed": 250,
+      "misses_on_correct_predictions_lower": 90,
+      "misses_on_correct_predictions_upper": 91,
+      "positions": 450,
+      "predicted_correct": 200,
+      "source_groups": 42,
+      "tasks": 101
+    },
+    "all_A/unflagged/any": {
+      "answer_match": 267,
+      "exact_answers": 61,
+      "missed": 183,
+      "misses_on_correct_predictions_lower": 56,
+      "misses_on_correct_predictions_upper": 56,
+      "positions": 450,
+      "predicted_correct": 235,
+      "source_groups": 44,
+      "tasks": 102
+    },
+    "all_A/unflagged/exact": {
+      "answer_match": 72,
+      "exact_answers": 17,
+      "missed": 0,
+      "misses_on_correct_predictions_lower": 0,
+      "misses_on_correct_predictions_upper": 0,
+      "positions": 72,
+      "predicted_correct": 72,
+      "source_groups": 13,
+      "tasks": 17
+    },
+    "all_A/unflagged/inexact": {
+      "answer_match": 195,
+      "exact_answers": 44,
+      "missed": 183,
+      "misses_on_correct_predictions_lower": 56,
+      "misses_on_correct_predictions_upper": 56,
+      "positions": 378,
+      "predicted_correct": 163,
+      "source_groups": 39,
+      "tasks": 85
+    },
+    "contains_B_no_C/all/any": {
+      "answer_match": 166,
+      "exact_answers": 3,
+      "missed": 146,
+      "misses_on_correct_predictions_lower": 73,
+      "misses_on_correct_predictions_upper": 137,
+      "positions": 312,
+      "predicted_correct": 220,
+      "source_groups": 22,
+      "tasks": 54
+    },
+    "contains_B_no_C/all/exact": {
+      "answer_match": 36,
+      "exact_answers": 1,
+      "missed": 26,
+      "misses_on_correct_predictions_lower": 26,
+      "misses_on_correct_predictions_upper": 26,
+      "positions": 62,
+      "predicted_correct": 62,
+      "source_groups": 10,
+      "tasks": 11
+    },
+    "contains_B_no_C/all/inexact": {
+      "answer_match": 130,
+      "exact_answers": 2,
+      "missed": 120,
+      "misses_on_correct_predictions_lower": 47,
+      "misses_on_correct_predictions_upper": 111,
+      "positions": 250,
+      "predicted_correct": 158,
+      "source_groups": 21,
+      "tasks": 43
+    },
+    "contains_B_no_C/unflagged/any": {
+      "answer_match": 91,
+      "exact_answers": 3,
+      "missed": 104,
+      "misses_on_correct_predictions_lower": 61,
+      "misses_on_correct_predictions_upper": 95,
+      "positions": 195,
+      "predicted_correct": 148,
+      "source_groups": 17,
+      "tasks": 32
+    },
+    "contains_B_no_C/unflagged/exact": {
+      "answer_match": 28,
+      "exact_answers": 1,
+      "missed": 21,
+      "misses_on_correct_predictions_lower": 21,
+      "misses_on_correct_predictions_upper": 21,
+      "positions": 49,
+      "predicted_correct": 49,
+      "source_groups": 7,
+      "tasks": 8
+    },
+    "contains_B_no_C/unflagged/inexact": {
+      "answer_match": 63,
+      "exact_answers": 2,
+      "missed": 83,
+      "misses_on_correct_predictions_lower": 40,
+      "misses_on_correct_predictions_upper": 74,
+      "positions": 146,
+      "predicted_correct": 99,
+      "source_groups": 14,
+      "tasks": 24
+    },
+    "contains_C/all/any": {
+      "answer_match": 422,
+      "exact_answers": 0,
+      "missed": 284,
+      "misses_on_correct_predictions_lower": 78,
+      "misses_on_correct_predictions_upper": 260,
+      "positions": 706,
+      "predicted_correct": 430,
+      "source_groups": 35,
+      "tasks": 115
+    },
+    "contains_C/all/exact": {
+      "answer_match": 33,
+      "exact_answers": 0,
+      "missed": 41,
+      "misses_on_correct_predictions_lower": 41,
+      "misses_on_correct_predictions_upper": 41,
+      "positions": 74,
+      "predicted_correct": 74,
+      "source_groups": 8,
+      "tasks": 13
+    },
+    "contains_C/all/inexact": {
+      "answer_match": 389,
+      "exact_answers": 0,
+      "missed": 243,
+      "misses_on_correct_predictions_lower": 37,
+      "misses_on_correct_predictions_upper": 219,
+      "positions": 632,
+      "predicted_correct": 356,
+      "source_groups": 33,
+      "tasks": 102
+    },
+    "contains_C/unflagged/any": {
+      "answer_match": 295,
+      "exact_answers": 0,
+      "missed": 215,
+      "misses_on_correct_predictions_lower": 64,
+      "misses_on_correct_predictions_upper": 197,
+      "positions": 510,
+      "predicted_correct": 315,
+      "source_groups": 32,
+      "tasks": 77
+    },
+    "contains_C/unflagged/exact": {
+      "answer_match": 23,
+      "exact_answers": 0,
+      "missed": 35,
+      "misses_on_correct_predictions_lower": 35,
+      "misses_on_correct_predictions_upper": 35,
+      "positions": 58,
+      "predicted_correct": 58,
+      "source_groups": 6,
+      "tasks": 8
+    },
+    "contains_C/unflagged/inexact": {
+      "answer_match": 272,
+      "exact_answers": 0,
+      "missed": 180,
+      "misses_on_correct_predictions_lower": 29,
+      "misses_on_correct_predictions_upper": 162,
+      "positions": 452,
+      "predicted_correct": 257,
+      "source_groups": 29,
+      "tasks": 69
+    }
+  }
+}
