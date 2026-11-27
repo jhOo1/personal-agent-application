@@ -1,0 +1,74 @@
+{
+  "complete_actor_cells_by_unique_texts": {
+    "GEPA_SELECTED_BOUNDS": {
+      "3_distinct_of_3": 38
+    },
+    "PAPER_SELECTIVITY": {
+      "3_distinct_of_3": 42
+    }
+  },
+  "logical_output_origins": {
+    "generation": {
+      "INDEPENDENT_SAMPLING_UNIT": 273
+    },
+    "grading": {
+      "CURRENT_STAGE": 1494
+    }
+  },
+  "model_calls_added": 0,
+  "observed_next_start_after_failed_response_seconds": [
+    60.00630211830139,
+    12906.954733848572,
+    12903.571925878525,
+    12904.714573860168,
+    12903.428069114685,
+    12905.268165588379,
+    12904.033834695816,
+    12904.436154127121,
+    12904.697199106216,
+    11130.329513072968,
+    11128.21630859375,
+    11130.623860120773,
+    11127.905471801758,
+    11129.583852767944,
+    11126.599659919739,
+    11127.614557981491,
+    11127.962590694427,
+    338.30566930770874,
+    336.6493561267853,
+    333.51077795028687,
+    335.1101002693176,
+    334.68349409103394,
+    336.6447112560272,
+    333.4425389766693,
+    153.65206909179688,
+    80.18617510795593,
+    4.522822141647339,
+    1.7612521648406982
+  ],
+  "physical_calls": 1767,
+  "recorded_max_overlap": 8,
+  "recorded_minimum_start_gap_seconds": 3.190531015396118,
+  "reported_model_alias_on_success": {
+    "GEPA_SELECTED_BOUNDS/actor": {
+      "qwen3.8-flash": 119
+    },
+    "GEPA_SELECTED_BOUNDS/judge": {
+      "qwen3.8-flash": 710
+    },
+    "PAPER_SELECTIVITY/actor": {
+      "qwen3.8-flash": 130
+    },
+    "PAPER_SELECTIVITY/judge": {
+      "qwen3.8-flash": 777
+    }
+  },
+  "waves": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

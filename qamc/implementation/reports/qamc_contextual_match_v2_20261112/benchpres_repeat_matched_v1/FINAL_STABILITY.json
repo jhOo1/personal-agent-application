@@ -1,0 +1,233 @@
+{
+  "common_complete_tasks": 30,
+  "common_profiles": 10,
+  "historical_vs_current_service_parity": false,
+  "interpretation": "descriptive cross-service comparison, not an identified temperature effect",
+  "methods": {
+    "GEPA_SELECTED_BOUNDS": {
+      "attribute_vote_distribution": {
+        "appropriate_bold": {
+          "T0_follow_T1_follow_2_of_3": 2,
+          "T0_follow_T1_follow_3_of_3": 15,
+          "T1_mixed": 2
+        },
+        "appropriate_nonbold": {
+          "T0_do_not_follow_T1_follow_0_of_3": 4,
+          "T0_do_not_follow_T1_follow_1_of_3": 1,
+          "T0_do_not_follow_T1_follow_2_of_3": 2,
+          "T0_follow_T1_follow_0_of_3": 1,
+          "T0_follow_T1_follow_1_of_3": 1,
+          "T0_follow_T1_follow_2_of_3": 2,
+          "T0_follow_T1_follow_3_of_3": 23,
+          "T1_mixed": 6
+        },
+        "inappropriate": {
+          "T0_do_not_follow_T1_follow_0_of_3": 98,
+          "T0_follow_T1_follow_1_of_3": 1,
+          "T1_mixed": 1
+        }
+      },
+      "current_T1_draws": [
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 42
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 0
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 142
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 26
+          }
+        },
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 44
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 0
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 145
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 27
+          }
+        },
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 42
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 1
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 142
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 26
+          }
+        }
+      ],
+      "current_T1_mean": {
+        "AAR": 0.8366013071895425,
+        "MR": 0.003367003367003367,
+        "completeness": 4.766666666666667,
+        "nonbold_AAR": 0.7745098039215687
+      },
+      "historic_T0": {
+        "AAR": {
+          "denominator": 51,
+          "numerator": 44
+        },
+        "MR": {
+          "denominator": 99,
+          "numerator": 1
+        },
+        "completeness": {
+          "denominator": 30,
+          "numerator": 147
+        },
+        "nonbold_AAR": {
+          "denominator": 34,
+          "numerator": 27
+        }
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "attribute_vote_distribution": {
+        "appropriate_bold": {
+          "T0_do_not_follow_T1_follow_1_of_3": 3,
+          "T0_do_not_follow_T1_follow_2_of_3": 2,
+          "T0_follow_T1_follow_1_of_3": 4,
+          "T0_follow_T1_follow_2_of_3": 1,
+          "T0_follow_T1_follow_3_of_3": 7,
+          "T1_mixed": 10
+        },
+        "appropriate_nonbold": {
+          "T0_do_not_follow_T1_follow_0_of_3": 5,
+          "T0_do_not_follow_T1_follow_2_of_3": 1,
+          "T0_do_not_follow_T1_follow_3_of_3": 1,
+          "T0_follow_T1_follow_1_of_3": 3,
+          "T0_follow_T1_follow_2_of_3": 2,
+          "T0_follow_T1_follow_3_of_3": 22,
+          "T1_mixed": 6
+        },
+        "inappropriate": {
+          "T0_do_not_follow_T1_follow_0_of_3": 72,
+          "T0_do_not_follow_T1_follow_1_of_3": 13,
+          "T0_do_not_follow_T1_follow_2_of_3": 2,
+          "T0_do_not_follow_T1_follow_3_of_3": 2,
+          "T0_follow_T1_follow_0_of_3": 1,
+          "T0_follow_T1_follow_1_of_3": 5,
+          "T0_follow_T1_follow_2_of_3": 3,
+          "T0_follow_T1_follow_3_of_3": 1,
+          "T1_mixed": 23
+        }
+      },
+      "current_T1_draws": [
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 37
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 13
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 143
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 25
+          }
+        },
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 36
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 13
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 145
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 26
+          }
+        },
+        {
+          "AAR": {
+            "denominator": 51,
+            "numerator": 39
+          },
+          "MR": {
+            "denominator": 99,
+            "numerator": 11
+          },
+          "completeness": {
+            "denominator": 30,
+            "numerator": 141
+          },
+          "nonbold_AAR": {
+            "denominator": 34,
+            "numerator": 27
+          }
+        }
+      ],
+      "current_T1_mean": {
+        "AAR": 0.7320261437908496,
+        "MR": 0.12457912457912458,
+        "completeness": 4.766666666666667,
+        "nonbold_AAR": 0.7647058823529411
+      },
+      "historic_T0": {
+        "AAR": {
+          "denominator": 51,
+          "numerator": 39
+        },
+        "MR": {
+          "denominator": 99,
+          "numerator": 10
+        },
+        "completeness": {
+          "denominator": 30,
+          "numerator": 147
+        },
+        "nonbold_AAR": {
+          "denominator": 34,
+          "numerator": 27
+        }
+      }
+    }
+  },
+  "represented_tasks": 48,
+  "scored_waves": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -74,7 +74,7 @@ def audit(waves):
                         if packet["response"] != answer or packet["preference"] != pref or returned != d["label"]:
                             raise ValueError("Actor and Judge records differ from settled evaluation")
                         category = next((key for key, pat in CATEGORIES if pat.search(pref)), "other")
-                        follow = d["label"] == "follow"
+                        follow = int(d["label"] == "follow")
                         counts[m][category].update(inappropriate_positions=1, judge_misuses=follow)
                         repeats[m][uid, i].update(scored_draws=1, misuse_draws=follow)
                         quoted = NICKNAME.search(pref)

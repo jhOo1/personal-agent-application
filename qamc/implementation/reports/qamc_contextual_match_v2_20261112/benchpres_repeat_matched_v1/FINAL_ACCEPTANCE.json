@@ -1,0 +1,32 @@
+{
+  "common_paired_draws": 106,
+  "confirmed_physical_calls": 1767,
+  "confirmed_reported_tokens": 2430117,
+  "confirmed_unknown_usage": 31,
+  "new_model_calls": 0,
+  "settled_waves": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "verified_artifacts": {
+    "FINAL_COSTS.json": "08301f9ac109b12d7cf251a2ca8e8a65d84dd97eb274789b3f5aac4b38b6f364",
+    "FINAL_DELIVERY_TRACE.json": "4165fbf79655adc481b92822584458bfd453c8025b03a0620cce5d1d84af10b4",
+    "FINAL_FIELDWISE.json": "f7f6041b2373d3fe9d9e43499aacaa997ca12118e9809a54a401a4dca2a98824",
+    "FINAL_IDENTITY.json": "59972c5de53fef6471a9dadc829ffbfdd1564bf1363dc3b8f18109dc5bb2be68",
+    "FINAL_MISUSE_TRACE.json": "b47f7e0af79da5642ca4f26718fc313dec78bdf67b10ca84f81ad29d574ff819",
+    "FINAL_PROFILE_TRACE.json": "41490180efed34bc8cfb19926d7bf4fc7f2dfa2330d3e94ffe24c431767dae5b",
+    "FINAL_REPLAY.json": "6e209f2656fb5fd98b8798c8dfe6405bfaf8bfb50361cef994838b1b8d970211",
+    "FINAL_STABILITY.json": "6c3159910df924946d1831d9c4a9f44ace0be9e78bec5e9f49c55cada52b9792"
+  },
+  "verified_fieldwise_denominators": {
+    "AAR": 195,
+    "MR": 372,
+    "completeness": 112,
+    "nonbold_AAR": 128
+  },
+  "whole_allocation_terminal": true
+}

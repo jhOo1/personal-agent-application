@@ -1,0 +1,48 @@
+{
+  "model_calls": 0,
+  "paired_positions_by_gate_delivery": {
+    "gate_no_exact_expression": {
+      "both": 0,
+      "gate_follow": 0,
+      "neither": 1,
+      "paired_positions": 3,
+      "paper_follow": 2,
+      "paper_wire_exact": 3
+    },
+    "gate_selected_source_exact": {
+      "both": 84,
+      "gate_follow": 95,
+      "neither": 14,
+      "paired_positions": 119,
+      "paper_follow": 94,
+      "paper_wire_exact": 119
+    }
+  },
+  "recurrence": {
+    "1 draws: Gate True, Selectivity True": 2,
+    "2 draws: Gate 0, Selectivity 1": 1,
+    "2 draws: Gate 1, Selectivity 1": 1,
+    "2 draws: Gate 2, Selectivity 2": 4,
+    "3 draws: Gate 0, Selectivity 0": 3,
+    "3 draws: Gate 0, Selectivity 2": 1,
+    "3 draws: Gate 0, Selectivity 3": 1,
+    "3 draws: Gate 1, Selectivity 0": 1,
+    "3 draws: Gate 1, Selectivity 2": 1,
+    "3 draws: Gate 2, Selectivity 0": 1,
+    "3 draws: Gate 2, Selectivity 1": 2,
+    "3 draws: Gate 2, Selectivity 2": 1,
+    "3 draws: Gate 2, Selectivity 3": 1,
+    "3 draws: Gate 3, Selectivity 1": 1,
+    "3 draws: Gate 3, Selectivity 3": 23
+  },
+  "score_changes": 0,
+  "unique_task_attributes": 44,
+  "waves": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

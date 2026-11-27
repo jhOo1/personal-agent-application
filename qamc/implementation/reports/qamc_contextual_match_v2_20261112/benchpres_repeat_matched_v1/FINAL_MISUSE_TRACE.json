@@ -1,0 +1,72 @@
+{
+  "methods": {
+    "GEPA_SELECTED_BOUNDS": {
+      "by_attribute": {
+        "emoji": {
+          "inappropriate_positions": 44,
+          "judge_misuses": 0
+        },
+        "expressive_tone": {
+          "inappropriate_positions": 12,
+          "judge_misuses": 1
+        },
+        "nickname": {
+          "inappropriate_positions": 106,
+          "judge_misuses": 0,
+          "judge_reject_literal_no": 106,
+          "quoted_nickname_positions": 106
+        },
+        "other": {
+          "inappropriate_positions": 184,
+          "judge_misuses": 0
+        }
+      },
+      "recurrence_per_misused_task_attribute": {
+        "1_of_3": 1
+      }
+    },
+    "PAPER_SELECTIVITY": {
+      "by_attribute": {
+        "emoji": {
+          "inappropriate_positions": 44,
+          "judge_misuses": 3
+        },
+        "expressive_tone": {
+          "inappropriate_positions": 12,
+          "judge_misuses": 2
+        },
+        "nickname": {
+          "inappropriate_positions": 106,
+          "judge_follow_literal_yes": 36,
+          "judge_misuses": 36,
+          "judge_reject_literal_no": 67,
+          "judge_reject_literal_yes": 3,
+          "quoted_nickname_positions": 106
+        },
+        "other": {
+          "inappropriate_positions": 184,
+          "judge_misuses": 3
+        }
+      },
+      "recurrence_per_misused_task_attribute": {
+        "1_of_1": 2,
+        "1_of_2": 3,
+        "1_of_3": 18,
+        "2_of_3": 6,
+        "3_of_3": 3
+      }
+    }
+  },
+  "model_calls": 0,
+  "nickname_match": "case-sensitive word boundary",
+  "paired_task_draws": 106,
+  "score_changes": 0,
+  "waves": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}
