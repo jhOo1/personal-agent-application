@@ -1,0 +1,23 @@
+{
+  "beneficial_memory_usage": {
+    "allocated_roots": 6,
+    "assigned_outputs": 18,
+    "available_outputs": 16,
+    "complete_method_tuples": 16,
+    "complete_three_method_roots": 4
+  },
+  "cross_domain": {
+    "allocated_roots": 8,
+    "assigned_outputs": 72,
+    "available_outputs": 69,
+    "complete_method_tuples": 21,
+    "complete_three_method_roots": 5
+  },
+  "sycophancy": {
+    "allocated_roots": 11,
+    "assigned_outputs": 99,
+    "available_outputs": 92,
+    "complete_method_tuples": 26,
+    "complete_three_method_roots": 5
+  }
+}
