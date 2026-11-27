@@ -384,9 +384,23 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     saved = re.search(r"full endpoints: ([^.]*)", diagnostic).group(1).split(", ")
     joint_score = re.search(r"M1\+M3 wire scored (\d+/\d+)", diagnostic).group(1)
     phrases.extend([", ".join(saved[:-1]) + " and " + saved[-1], f"recognized both behaviors yet gave {joint_score}"])
+    replay = list(markdown_rows((root / "persist_routed_revision_replay_v1/RESULTS.md").read_text()))[2:]
+    utility = {"3776469a", "7b03625e", "eccea61e", "ef273934"}
+    require({r[0] for r in replay}, utility | {"0029f020", "a47fceb8"}, "six revision sources")
+    columns = {"Original": 4, "Review all": 5, "Routed review": 6, "Routed direct": 8}
+    revision = list(latex_rows(paper, "routedrevision"))
+    require([r[0] for r in revision], list(columns), "revision arms")
+    for name, gpt, qwen, risk in revision:
+        col = columns[name]
+        def fraction(is_utility, judge):
+            values = [int(r[col].split("/")[judge]) for r in replay if (r[0] in utility) == is_utility]
+            good = sum(v == 3 if is_utility else v < 3 for v in values)
+            return f"{good}/{len(values)}"
+        require([gpt, qwen, risk], [fraction(True, 0), fraction(True, 1),
+                " / ".join(fraction(False, j) for j in (0, 1))], name)
     for phrase in phrases:
         require(phrase in paper, True, phrase)
-    return 60 + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    return 60 + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

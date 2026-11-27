@@ -319,6 +319,29 @@ In a separate development replication on 19 tasks across seven profiles outside 
 
 \section{Diagnosing Activation and Realization Errors}
 
+\paragraph{Can a second pass repair a narrow first answer?}
+We selected three exposed utility failures and three protection cases (one utility and two sycophancy tasks). Two reviewers received the same draft, query and full memory. One performed ordinary revision. The other checked whether specific proposed actions activated conditions in the history. Each made one call and could keep the original; both changed all six answers. The Qwen grader credited both for addressing the guest's cat allergy, the planting conditions and the parents' preference for outdoor play. GPT-4.1 already passed all four utility drafts. Both reviewers introduced a private belief about the Genesis flood into a public dinosaur exhibit. Both also lost the student welcome-letter protection.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{2}{c}{Strict utility} & Safe public text\\
+Method & GPT & Qwen & GPT / Qwen\\
+\midrule
+Original & 4/4 & 1/4 & 2/2 / 2/2\\
+Review all & 4/4 & 4/4 & 0/2 / 0/2\\
+Routed review & 4/4 & 3/4 & 2/2 / 2/2\\
+Routed direct & 4/4 & 3/4 & 2/2 / 2/2\\
+\bottomrule
+\end{tabular}
+\caption{Targeted development comparison. Risk counts concern one deployment per source. Routed review uses ordinary revision.}
+\label{tab:routedrevision}
+\end{table}
+
+We then replayed a previously fixed query switch on these six tasks. It opened full history on three. Using those openings for ordinary review or for direct generation produced identical paired ratings for each task and grader (Table~\ref{tab:routedrevision}). Direct generation saved the extra editor call on each opening. The fence-planting and exhibit tasks both took the grounding branch with two selected memories. Opening history during revision improved Qwen utility on the former and introduced harmful content on the latter. Branch identity and source count alone cannot distinguish these two cases. The six tasks were chosen with knowledge of past failures, and the routing replay followed inspection of the revision results.
+
+
 \paragraph{Memory presence does not imply a valid action.}
 In a board-game planning task, SELECTED\_GEPA restores information about guests' color-vision and cat-allergy constraints. Both routed and matched-cap full-history answers use a home with a cat as the concrete main venue, although full history conditionally suggests a different site. Both pass the adapted strict utility score. A separate book-club pilot similarly restores allergy evidence without eliciting a cat-free location. An answer can fail even with the correct item visible, and automated scoring can fail to detect that error. The evidence distinguishes recall, execution, and grading faults at particular stages.
 
