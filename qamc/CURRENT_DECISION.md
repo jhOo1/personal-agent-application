@@ -1,5 +1,11 @@
 # QAMC 当前判断与下一次机制对照
 
+## RPEval 正在执行固定底稿修复对照
+
+见证替换与默认感知控制在严格交集均为 18/21。已冻结 24 道原开发题上的保护性修复对照。两臂共享一次缺陷定位、同一 RP 底稿、三份完整候选及原始任务与历史。有可执行诊断时，一臂可自由修订，另一臂只可原子化执行定位器圈定的联动删除、替换或增补。未被圈定的原稿内容保持原样。方法比较和评分仍待结算。[冻结协议与复现入口](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/PROTOCOL.md)
+
+此前独立启动的本地奖励模型已结算。与见证替换在所有 24 道上的 Match 逐题相同，同一旧分主表均为 19/22，且选择的成稿在 13 道共同题不同。见证替换的 FM 更低。后续修复仅依赖 API 和确定性程序。[归档对照](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/REWARD_READOUT.md)
+
 ## RPEval 以明确冲突触发整稿替换
 
 用相同三份已评分完整候选，22 道共同题上，见证替换 19/22，单次普通盲选 17/22，仅标默认答案的同报文控制 18/22，固定 RP 17/22，两个外部适配各 18/22。三选手都有效的严格 21 题，见证与默认控制均 18/21，OPB 为 1 对 4。两道原 RP 失分确有饮食或材质范围的行为修复，普通盲选也做到了这两次替换。五份替换提案全通过，逐字校验的前后成绩一致，不能将收益归到程序校验。之后沿同一个方向检验能否只修实际决定并保护原答。冻结的外部权重排名单独结算。[结果与范围](implementation/reports/qamc_contextual_match_v2_20261112/rpe_constraint_veto_v1/READOUT.md) · [默认控制](implementation/reports/qamc_contextual_match_v2_20261112/rpe_constraint_veto_v1/DEFAULT_CONTROL_READOUT.md)
