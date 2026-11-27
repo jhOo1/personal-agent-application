@@ -1,0 +1,11 @@
+{
+  "stage_requests": {
+    "Route": 18,
+    "Select": 18,
+    "Actor": 54,
+    "GPT": 53,
+    "Qwen": 53
+  },
+  "automatic_retries": 0,
+  "reported_completion_over_requested": 7
+}

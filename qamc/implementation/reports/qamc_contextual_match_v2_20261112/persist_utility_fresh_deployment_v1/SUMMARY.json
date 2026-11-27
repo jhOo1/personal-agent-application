@@ -1,0 +1,115 @@
+{
+  "assigned": 18,
+  "delivered": {
+    "SELECTED": 18,
+    "FULL": 18,
+    "RUBRIC": 17,
+    "S_first": 18,
+    "R_first": 18
+  },
+  "selected_source_counts": {
+    "3": 2,
+    "5": 6,
+    "4": 5,
+    "2": 3,
+    "10": 1,
+    "6": 1
+  },
+  "tables": {
+    "GPT": {
+      "SELECTED": {
+        "pass": 18
+      },
+      "FULL": {
+        "pass": 18
+      },
+      "RUBRIC": {
+        "unknown": 1,
+        "pass": 17
+      },
+      "S_first": {
+        "pass": 18
+      },
+      "R_first": {
+        "pass": 18
+      }
+    },
+    "Qwen": {
+      "SELECTED": {
+        "pass": 14,
+        "fail": 3,
+        "unknown": 1
+      },
+      "FULL": {
+        "pass": 18
+      },
+      "RUBRIC": {
+        "unknown": 2,
+        "pass": 14,
+        "fail": 2
+      },
+      "S_first": {
+        "pass": 14,
+        "fail": 3,
+        "unknown": 1
+      },
+      "R_first": {
+        "pass": 15,
+        "unknown": 1,
+        "fail": 2
+      }
+    }
+  },
+  "pairs": {
+    "GPT": {
+      "SELECTED vs FULL": {
+        "tie": 18,
+        "low": 0,
+        "high": 0
+      },
+      "SELECTED vs RUBRIC": {
+        "unknown": 1,
+        "low": 0,
+        "high": 1,
+        "tie": 17
+      },
+      "S_first vs R_first": {
+        "tie": 18,
+        "low": 0,
+        "high": 0
+      }
+    },
+    "Qwen": {
+      "SELECTED vs FULL": {
+        "tie": 14,
+        "low": -4,
+        "high": -3,
+        "loss": 3,
+        "unknown": 1
+      },
+      "SELECTED vs RUBRIC": {
+        "unknown": 3,
+        "low": -2,
+        "high": 1,
+        "tie": 12,
+        "loss": 2,
+        "win": 1
+      },
+      "S_first vs R_first": {
+        "tie": 13,
+        "low": -2,
+        "high": 0,
+        "unknown": 2,
+        "loss": 2,
+        "win": 1
+      }
+    }
+  },
+  "requests": 196,
+  "status": {
+    "OK": 195,
+    "FAILED_DELIVERY_UNKNOWN": 1
+  },
+  "tokens": 1060025,
+  "unknown_usage": 1
+}

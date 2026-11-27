@@ -280,7 +280,14 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     c = cj["beneficial_memory_usage"]["both_judges"]
     require([c["conservative_low"],c["conservative_high"]], [-7,4], "Two-judge utility bound")
     require("seven roots under GPT-4.1 and four under Qwen" in paper, True, "Two-judge manuscript claim")
-    return 29 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    fresh = json.loads((root / "persist_utility_fresh_deployment_v1/SUMMARY.json").read_text())
+    require(fresh["assigned"], 18, "Fresh utility assignments")
+    require([fresh["delivered"][a] for a in ("SELECTED","FULL","RUBRIC")], [18,18,17], "New deliveries")
+    for judge, want in (("GPT",[18,18,17]), ("Qwen",[14,18,14])):
+        require([fresh["tables"][judge][a]["pass"] for a in ("SELECTED","FULL","RUBRIC")], want, judge + " fresh strict passes")
+    require(fresh["pairs"]["Qwen"]["SELECTED vs FULL"]["high"], -3, "Fresh utility best-case net")
+    require("lost at least three strict utility passes" in paper, True, "New utility interpretation")
+    return 35 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

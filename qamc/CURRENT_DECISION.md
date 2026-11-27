@@ -1,5 +1,15 @@
 # QAMC 当前判断与下一次机制对照
 
+## 论文范围与研发优先级（开发结果可见后调整）
+
+保留三个基准的全部历史结果。下一阶段用 RPEval 与 PersistBench 主测“当前任务应向生成器开放哪些历史”，用 BenchPreS 检验该机制在正式交付中的表达边界。尚未证实同一选择器能在两项主测上领先。此处是研究资源分配决定，未更改任何已完成对照的分母。
+
+- RPEval 的 IPE-C 在 274 道共同题上提高总体 Match，收益集中在应忽略全部偏好的任务；模型实现软偏好的能力仍有缺口。
+- PersistBench 的迎合优势在固定成稿、两位自动评分器下方向相同。严格有益使用应按全部分配任务报告，包括生成缺失及新部署的失败。
+- BenchPreS 的 122 个共同非加粗适用位置中，119 个位置两边输入都有偏好原文。进一步筛来源难以解决“证据已到、表达仍未落实”。保留非加粗实现、误用和任务完整度；开发后挑选更易出分的替代集无法验证同一算法假设。
+
+[范围决定与源报告](implementation/reports/qamc_contextual_match_v2_20261112/bench_gate_gepa_feedback_v1/SCOPE_REVIEW.md) · [固定成稿双评分](implementation/reports/qamc_contextual_match_v2_20261112/persist_selected_crossjudge_fr3_v1/SUMMARY.json) · [全 18 根新部署结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_utility_fresh_deployment_v1/RESULTS.md)。逐条选择与同生成器全史在 GPT-4.1 下均 18/18 通过；Qwen 下选择 14 通过、3 失败、1 未知，全史 18 通过。减少迎合已有支持，严格有益使用在这次部署出现可定位的代价。
+
 ## 局部重求解已结算
 
 29 道开发题四路均有分。RPEval 多偏好强稿 53/79、自由修订 52/79、看旧值与遮旧值局部稿均 49/79。BenchPreS 与 PersistBench 的同题终答指标持平。单偏好早午餐遮旧值获 1/1，但实际修改只细化位置和时间询问。当前版本不晋级，保留各基准强入口。[结果、病例与恢复](implementation/reports/qamc_contextual_match_v2_20261112/obligation_resolve_v1/FINAL.md)
