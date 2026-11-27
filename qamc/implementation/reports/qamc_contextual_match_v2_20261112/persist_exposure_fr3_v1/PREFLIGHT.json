@@ -1,0 +1,99 @@
+{
+  "actor_cap": 8192,
+  "distinct_source_groups": 49,
+  "equal_cap_prior_risk": {
+    "actual_nonempty_subsets_vs_group": 11,
+    "group_identical_to_selected": 27,
+    "group_selects": {
+      "EMPTY": 27,
+      "FULL": 11
+    },
+    "physical_receipts_bound": 250,
+    "roots": 19,
+    "selected_vs_same_signal_group": {
+      "cross_domain": {
+        "group_fail_either_draw": 0,
+        "roots": 8,
+        "sampled_losses": 0,
+        "sampled_wins": 0,
+        "selected_fail_either_draw": 0,
+        "selected_group_outcome_vectors_sha256": "6aba2bb5e7e94c9bad440757efa21d1f017ea35b5b144d46ae30fa29e9f444cb"
+      },
+      "sycophancy": {
+        "group_fail_either_draw": 1,
+        "roots": 11,
+        "sampled_losses": 1,
+        "sampled_wins": 0,
+        "selected_fail_either_draw": 1,
+        "selected_group_outcome_vectors_sha256": "43e5d819e7cbf4ab1ed98ada96a8db5014744c610d12ea12c5614962471a4b50"
+      }
+    },
+    "validated_score_positions_for_selected_full_empty": 114,
+    "validated_task_draws": 38
+  },
+  "equal_cap_prior_utility": {
+    "intact_scored_positions": {
+      "EMPTY": 12,
+      "FULL": 11,
+      "GROUNDING": 10,
+      "ROUTED": 6
+    },
+    "roots": 12,
+    "unknown_delivery_by_arm": {
+      "FULL": 1,
+      "GROUNDING": 2,
+      "ROUTED": 6
+    }
+  },
+  "logical_answer_positions": 555,
+  "new_model_requests": 0,
+  "plan_pins": {
+    "gepa": "65ea2e508cd72f0a45239b34eda922c4dfc4970aa1541477ffccd77c9c3aa1aa",
+    "inputs": "c58711c248609982b64fcb3b6a312c8f267b5f9905f84c5dd8fd79158835bf14",
+    "judge_envelopes": "e20f6a398ab7a0c204229bcd404a9aade02dd1658ed5d20889b8cf0d4e3e1283",
+    "source_roster": "491a7ffa1eb886a53395befceb4dd09f9d3f4095feaaf204f6a5c7b6a89a43b1"
+  },
+  "positions_per_arm": 111,
+  "prior_third_risk_slot": {
+    "actor_positions_not_covered_by_selected_excluding_rubric": 26,
+    "group_selects": {
+      "EMPTY": 12,
+      "FULL": 7
+    },
+    "identical_group_positions": 12,
+    "identical_group_positions_with_unknown_delivery": 1,
+    "reuse_registration_sha256": "71b57e4aee2a28622e133b016a075a400ff45adc40e387a66e8099cf62b6bca3",
+    "roots": 19,
+    "selected_status": {
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "OK": 18
+    }
+  },
+  "prior_three_draw": {
+    "matched_rubric_proven": false,
+    "roots": 25,
+    "status_by_policy": {
+      "PB_GEPA": {
+        "INVALID_SCORE": 1,
+        "OK": 62
+      },
+      "PB_RUBRIC": {
+        "FAILED_DELIVERY_UNKNOWN": 3,
+        "OK": 60
+      },
+      "SELECTED_GEPA": {
+        "FAILED_DELIVERY_UNKNOWN": 7,
+        "INVALID_ROUTE": 1,
+        "INVALID_SELECTION": 1,
+        "OK": 54
+      }
+    }
+  },
+  "raw_upper_bound_requests_before_reuse": 1110,
+  "scope": "Verified exposed development roster; audit only",
+  "tracks": {
+    "beneficial_memory_usage": 18,
+    "cross_domain": 19,
+    "sycophancy": 12
+  }
+}

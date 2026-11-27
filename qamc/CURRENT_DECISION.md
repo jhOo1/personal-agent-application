@@ -4,6 +4,10 @@
 
 两臂用同一份任务、固定原始记忆和强稿，各生成两条提案后调用同一 Actor。12 道多偏好开发题、79 位，IPE-C 53，自由提案 31，同决定提案 44；归档 RP 重建 46。三个全 A 题由 IPE-C 14/14 降到 6/14，六道仅 B 题由 24/42 到 23/42，两组都重写了全部强稿。已知父母早午餐单独比较，两组都由 V1 的 0/1 到 1/1，作者 MemAdapter 适配也为 1/1。78 次请求均成功，250,338 Token，无重发。当前版本不晋级。阶段结果、评分争议、BenchPreS 的异画像复现和 MemAdapter 资产哈希已发 QAMC-v3.1；后续以保住现行强入口并实测真实新增终答收益为条件。[结果和实际案例](implementation/reports/qamc_contextual_match_v2_20261112/matched_alternative_rpeval_v1/READOUT.md)
 
+## PersistBench 下一阶段已核验旧回执
+
+QAMC-v3.1 建议优先复核原策略的匹配三抽。49 道已曝光题、三个类别及五臂固定。旧等上限两抽能共享 114 个既有分数位置，并可用同信号构造 GROUP：SELECTED 与 GROUP 的迎合均败 1/11、跨域均败 0/8。第三抽已有 18 个精确 SELECTED 成功和 1 个交付未知，未知与同次无史组共享。原 Rubric 的输出上限不同；正式新增请求尚未派发。后续先完整锁定复用登记和真实缺口。[零调用验收和恢复位置](implementation/reports/qamc_contextual_match_v2_20261112/persist_exposure_fr3_v1/READOUT.md)
+
 ## 三基准直接操作数对照
 
 每个基准八道已曝光题，两臂同一输入各调用一次。RPEval 共同八题的强稿／自由改写／操作数 Match 为 5/8、4/8、5/8。BenchPreS 八题非加粗 AAR 为 9/14、11/14、9/14，完整度为 38/40、36/40、37/40。PersistBench 七道共同题通过 5/7、4/7、5/7。操作数未提高相对原强稿的主指标。仅执行一次闭合提问、一次原文事件报告，真实错误亦出现在可选项。126 次调用，125 成功、一条交付未知，无重发。保留基线，结果不外推至独立确认。[实测与分母](implementation/reports/qamc_contextual_match_v2_20261112/operand_generation_v1/READOUT.md)
