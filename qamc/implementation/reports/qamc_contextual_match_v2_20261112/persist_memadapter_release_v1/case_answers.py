@@ -2,22 +2,34 @@
 from competition import (HERE, RUN, OUT, actor_request, author_module, author_wire, branch,
                          inputs, input_requests, read, select, sha, transfer)
 from exposure_audit import receipts, stage_manifest
+import argparse
 import json
 
 PREFIXES=("3776469a","7b03625e","ef273934")
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--cross-domain", action="store_true",
+                        help="Inspect the sole exposed cross-domain source instead of the three fixed utility probes")
+    parser.add_argument("--draw", type=int, choices=(1,2,3), default=1)
+    args=parser.parse_args()
+    if args.draw>1 and not args.cross_domain:
+        parser.error("Utility cases have only one deployment")
     _,cases,tasks=inputs()
+    prefixes=({uid.split("/")[-1][:8] for uid,c in cases.items() if c["category"]=="cross_domain"}
+              if args.cross_domain else set(PREFIXES))
+    assert len(prefixes)==(1 if args.cross_domain else 3)
+    draw_prefix=f"D{args.draw}"
     mod=author_module()
     protocol=read(HERE.parents[2]/"reports/qamc_persistbench_actor_factorial/PLAN.json")
     plan=read(transfer.OUT/"PLAN.json")
-    banks={s:receipts("D1"+s) for s in ("MA1","MA2","Route","Select","Actor")}
-    manifest=stage_manifest("D1Actor")
+    banks={s:receipts(draw_prefix+s) for s in ("MA1","MA2","Route","Select","Actor")}
+    manifest=stage_manifest(draw_prefix+"Actor")
     entries={}
     for uid,t in tasks.items():
         prefix=uid.split("/")[-1][:8]
-        if prefix not in PREFIXES:
+        if prefix not in prefixes:
             continue
         entry=dict(query=t["query"],memories=t["memories"],arms={})
         entries[prefix]=entry
@@ -55,7 +67,7 @@ def main():
             entry["arms"][arm]=dict(status=status,actor_digest=key,evidence=ev,answer=answer)
         for arm in ("SELECTED","BREADTH"):
             entry["arms"].setdefault(arm,dict(status="selection unavailable"))
-    assert set(entries)==set(PREFIXES)
+    assert set(entries)==prefixes
     print(json.dumps(entries,ensure_ascii=False,indent=2))
 
 
