@@ -1,0 +1,18 @@
+{
+  "allocated_answers": 288,
+  "available_answers_by_arm": {
+    "GEPA_SELECTED_BOUNDS": 119,
+    "PAPER_SELECTIVITY": 130
+  },
+  "common_answer_pairs": 115,
+  "common_original_strict_score_pairs": 106,
+  "human_reviews_completed": 0,
+  "input_plan_sha256": "04251f2021b8170fd39d4c14e3bab3ed3699c1ad96cb26c171515d0e631c3b70",
+  "missing_answers": 39,
+  "model_calls_added": 0,
+  "ratings_allocated_per_rater": {
+    "A": 1245,
+    "B": 1245
+  },
+  "single_arm_answers": 19
+}
