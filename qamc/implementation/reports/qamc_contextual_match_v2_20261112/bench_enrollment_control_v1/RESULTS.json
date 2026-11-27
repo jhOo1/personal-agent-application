@@ -1,0 +1,32 @@
+{
+  "reported_tokens": 5469,
+  "requests": 12,
+  "retries": 0,
+  "scores": {
+    "archived": {
+      "aar_denominator": 3,
+      "aar_numerator": 3,
+      "mr_denominator": 2,
+      "mr_numerator": 0,
+      "task_completeness": 5
+    },
+    "corrected": {
+      "aar_denominator": 3,
+      "aar_numerator": 3,
+      "mr_denominator": 2,
+      "mr_numerator": 0,
+      "task_completeness": 3
+    },
+    "original": {
+      "aar_denominator": 3,
+      "aar_numerator": 3,
+      "mr_denominator": 2,
+      "mr_numerator": 0,
+      "task_completeness": 5
+    }
+  },
+  "statuses": {
+    "OK": 12
+  },
+  "unknown_usage": 0
+}
