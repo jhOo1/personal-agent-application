@@ -1,0 +1,22 @@
+{
+  "assignments": 24,
+  "actions": {
+    "program_switches": 5,
+    "proposed_switches": 5,
+    "changed_by_program": 0
+  },
+  "affected_labels": {},
+  "historical_overlap": {
+    "unchecked_match": 19,
+    "unchecked_total": 22,
+    "unchecked_OPB": 1,
+    "unchecked_UPB": 2,
+    "unchecked_FM": 12,
+    "checked_match": 19,
+    "checked_total": 22,
+    "checked_OPB": 1,
+    "checked_UPB": 2,
+    "checked_FM": 12
+  },
+  "model_calls": 0
+}
