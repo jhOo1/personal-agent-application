@@ -1,5 +1,11 @@
 # QAMC 当前判断与下一次机制对照
 
+## RPEval 单调用决策编辑已结算
+
+固定 24 道已曝光单偏好题和 V1 底稿。两臂共享只读索引、任务、原始历史和候选，各用一次 Qwen API。原口径的 21 道共同有效题中，V1 和自由修订均为 18/21，限定编辑为 19/21。唯一相对 V1 的等级增益来自仍有鱼虾推荐且文字重复的 Omega-3 题。仅规范原提案的列表标记、额外评分 9 份成稿后，限定编辑降至 17/21，实际可见不适用的露营和餐桌布置历史被重新引入。保留 V1，后续优先检验干预适用性、具体选项和重复控制。[结果、基线和执行证据](implementation/reports/qamc_contextual_match_v2_20261112/rpe_decision_delta_v21/READOUT.md)
+
+BenchPreS 的 117 个固定成稿非加粗位置，两种自动评分均给外部 Selectivity 独胜的只有两个，跨两个画像。其中一份在原 Qwen 评测中损失了 Gate 已实现的加粗。值得验证移植具体沟通动作是否能得到增长并保住适用格式。两种评分的分歧单列。[零调用审计](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/CONSENSUS_HEADROOM.md)
+
 ## RPEval 固定底稿修复主对照已结算
 
 24 道原开发题，两臂共享一次诊断、RP 底稿、候选及原始任务与历史。原历史口径的 13 道共同有效题上，限定修复、自由修订和 V1 见证替换均为 10/13，RP 为 9/13。植物增肌得到两种有效的新成稿，限定修复只删冲突备选。独立补充实验复用 4 条定位原回执。纳入同一分母后，自由修订为 11/13，限定修复仍为 10/13。早午餐题只改开头的筛选条件，未给出具体特色选项。两段合计 59 次请求，9 次交付未知。保留现有 V1 和本轮主结果，后续检验局部修复能否落到真正需要联动的选项。[主结果](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/READOUT.md) · [补充结果](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/LOCATOR_RECOVERY_READOUT.md)

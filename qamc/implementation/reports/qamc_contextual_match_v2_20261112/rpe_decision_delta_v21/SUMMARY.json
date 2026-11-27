@@ -1,0 +1,468 @@
+{
+  "assigned": 24,
+  "historical_assigned": 22,
+  "historical_common": 21,
+  "all_common": 22,
+  "historical_available_scores": {
+    "RP": {
+      "tasks": 22,
+      "Match": 17,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 14
+    },
+    "IPE-C": {
+      "tasks": 22,
+      "Match": 15,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 30
+    },
+    "V1": {
+      "tasks": 22,
+      "Match": 19,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 12
+    },
+    "FREE": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA": {
+      "tasks": 21,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    }
+  },
+  "historical_matched_scores": {
+    "RP": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 14
+    },
+    "Des2Gen": {
+      "tasks": 21,
+      "Match": 17,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 21
+    },
+    "MemAdapter": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 11
+    },
+    "IPE-C": {
+      "tasks": 21,
+      "Match": 14,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 27
+    },
+    "V1": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 9
+    },
+    "FREE": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 13
+    },
+    "DELTA": {
+      "tasks": 21,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    }
+  },
+  "all_available_scores": {
+    "RP": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 24,
+      "Match": 20,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 16
+    },
+    "IPE-C": {
+      "tasks": 22,
+      "Match": 15,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 30
+    },
+    "V1": {
+      "tasks": 24,
+      "Match": 21,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 12
+    },
+    "FREE": {
+      "tasks": 23,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA": {
+      "tasks": 23,
+      "Match": 21,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 12
+    }
+  },
+  "all_matched_scores": {
+    "RP": {
+      "tasks": 22,
+      "Match": 17,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 14
+    },
+    "Des2Gen": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 21
+    },
+    "MemAdapter": {
+      "tasks": 22,
+      "Match": 19,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 11
+    },
+    "IPE-C": {
+      "tasks": 21,
+      "Match": 14,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 27
+    },
+    "V1": {
+      "tasks": 22,
+      "Match": 19,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 9
+    },
+    "FREE": {
+      "tasks": 22,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 13
+    },
+    "DELTA": {
+      "tasks": 22,
+      "Match": 20,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 12
+    }
+  },
+  "historical_paired": {
+    "FREE": {
+      "RP": {
+        "wins": 3,
+        "losses": 1,
+        "ties": 17
+      },
+      "Des2Gen": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 18
+      },
+      "MemAdapter": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 17
+      },
+      "IPE-C": {
+        "wins": 5,
+        "losses": 1,
+        "ties": 15
+      },
+      "V1": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 17
+      },
+      "DELTA": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 18
+      }
+    },
+    "DELTA": {
+      "RP": {
+        "wins": 3,
+        "losses": 0,
+        "ties": 18
+      },
+      "Des2Gen": {
+        "wins": 3,
+        "losses": 1,
+        "ties": 17
+      },
+      "MemAdapter": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 18
+      },
+      "IPE-C": {
+        "wins": 5,
+        "losses": 0,
+        "ties": 16
+      },
+      "V1": {
+        "wins": 1,
+        "losses": 0,
+        "ties": 20
+      },
+      "FREE": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 18
+      }
+    }
+  },
+  "by_author_label": {
+    "A": {
+      "RP": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "Des2Gen": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 1
+      },
+      "MemAdapter": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "IPE-C": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "V1": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "FREE": {
+        "tasks": 3,
+        "Match": 1,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 2
+      },
+      "DELTA": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      }
+    },
+    "B": {
+      "RP": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 2,
+        "FM": 4
+      },
+      "Des2Gen": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 6
+      },
+      "MemAdapter": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 3
+      },
+      "IPE-C": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      },
+      "V1": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 2,
+        "FM": 4
+      },
+      "FREE": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 6
+      },
+      "DELTA": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      }
+    },
+    "C": {
+      "RP": {
+        "tasks": 9,
+        "Match": 6,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 10
+      },
+      "Des2Gen": {
+        "tasks": 9,
+        "Match": 7,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 14
+      },
+      "MemAdapter": {
+        "tasks": 9,
+        "Match": 7,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 8
+      },
+      "IPE-C": {
+        "tasks": 9,
+        "Match": 4,
+        "OPB": 0,
+        "UPB": 20,
+        "FM": 22
+      },
+      "V1": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 5
+      },
+      "FREE": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 5
+      },
+      "DELTA": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 5
+      }
+    }
+  },
+  "disposition": {
+    "FREE": {
+      "EDITED": 23,
+      "KEEP": 1
+    },
+    "DELTA": {
+      "KEEP": 3,
+      "GROUP_FALLBACK": 10,
+      "EDITED": 10,
+      "PARTIAL_EDIT": 1
+    }
+  },
+  "score_status": {
+    "FREE": {
+      "OK": 22,
+      "INVALID_SCORE": 1,
+      "ARCHIVED_EXACT": 1
+    },
+    "DELTA": {
+      "ARCHIVED_EXACT": 13,
+      "OK": 10,
+      "INVALID_SCORE": 1
+    }
+  },
+  "requests": {
+    "count": 82,
+    "usage_unknown": 0,
+    "reported_tokens": 503587,
+    "by_stage": {
+      "DecisionEdit": 48,
+      "SingleDetailJudge": 34
+    },
+    "by_status": {
+      "OK": 82
+    },
+    "automatic_retries": 0
+  }
+}

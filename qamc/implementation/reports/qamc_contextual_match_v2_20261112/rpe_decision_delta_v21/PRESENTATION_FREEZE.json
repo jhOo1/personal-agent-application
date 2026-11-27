@@ -1,0 +1,14 @@
+{
+  "parent_freeze": "bf3a1ebd723d950d4a06859d280a237e0987808df52fbdfeec5c7395a66f2a34",
+  "parent_answers": "f7906553f8ffdde0235b6f46c4d17bd855d413fb26093a7a2993837bad6ed6e8",
+  "edited_cases": 9,
+  "projected_output_sha256": "1e5b6286003813bee04140b8009f1eec88f22febb60529fd0cdffc1555cc7d44",
+  "caps": {
+    "SingleDetailJudge": 9
+  },
+  "code_sha256": {
+    "presentation.py": "fedc93afe8416d3c35c363825efbe18ce37989b00ce94ce7d24784b3f2060f87",
+    "readouts.sh": "47ccf21d923be390bd29edb0067de1eadd2be4e3702e4e5ea74c68ac2f68e8b3",
+    "PRESENTATION.md": "5353d58ccc5728ba1f5aa2df0af2a1c4e2926a890fc989a7390d28c22c6808ff"
+  }
+}
