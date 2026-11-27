@@ -1,0 +1,7 @@
+# GPT-4.1 fixed-answer robustness diagnostic
+
+Use the same 14 source-distinct paired attribute positions, exact saved answers, one-attribute review instructions, order and affirmative quote requirement frozen for the GPT-6.1-sol attempt. This is a separately identified model route and new sampling namespace. The previous four attempts and all original Qwen scores remain independent evidence. No Actor rerun, query, method name, source history or author suitability label enters the review requests. [Source panel](REFLECTION_MODEL_PROTOCOL.md)
+
+GPT-4.1 uses the archived standard streaming client with temperature 0, output limit 2,048 and explicit usage reporting. The different transport and sampling settings are part of this diagnostic. A parsed positive label must quote the exact finished answer. The transport and vote contract are both required. The maximum is 28 requests, one in flight, with the established 3.2-second pacing and one-minute cooldown. Two consecutive invalid replies or an authentication/budget stop leave the remainder unissued. Recorded or delivery-unknown units are retained. The model route is never silently substituted.
+
+Report original Qwen-to-GPT vote transitions by selected stratum and by completed pair. This panel deliberately samples disagreements and shared outcomes. Its results cannot estimate full BenchPreS performance, establish an official scoring reproduction or provide human labels. Human review remains separate. [Runner](run_reflection_gpt41.py)

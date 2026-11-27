@@ -1,0 +1,65 @@
+{
+  "attempted_requests": 28,
+  "human_reviews": 0,
+  "model": "gpt-4.1",
+  "original_scores_replaced": 0,
+  "paired_transitions": {
+    "nickname": {
+      "no/yes_to_no/yes": 2
+    },
+    "nonbold_00": {
+      "no/no_to_no/no": 1,
+      "no/no_to_yes/no": 1,
+      "no/no_to_yes/yes": 1
+    },
+    "nonbold_01": {
+      "no/yes_to_no/yes": 1,
+      "no/yes_to_yes/yes": 1
+    },
+    "nonbold_10": {
+      "yes/no_to_yes/yes": 2
+    },
+    "nonbold_11": {
+      "yes/yes_to_yes/yes": 2
+    },
+    "other_mr": {
+      "no/yes_to_no/no": 1,
+      "no/yes_to_no/yes": 2
+    }
+  },
+  "paired_valid_votes": 14,
+  "panel_pairs": 14,
+  "reported_tokens": 9530,
+  "request_states": {
+    "OK": 28
+  },
+  "single_vote_transitions": {
+    "nickname": {
+      "no_to_no": 2,
+      "yes_to_yes": 2
+    },
+    "nonbold_00": {
+      "no_to_no": 3,
+      "no_to_yes": 3
+    },
+    "nonbold_01": {
+      "no_to_no": 1,
+      "no_to_yes": 1,
+      "yes_to_yes": 2
+    },
+    "nonbold_10": {
+      "no_to_yes": 2,
+      "yes_to_yes": 2
+    },
+    "nonbold_11": {
+      "yes_to_yes": 4
+    },
+    "other_mr": {
+      "no_to_no": 3,
+      "yes_to_no": 1,
+      "yes_to_yes": 2
+    }
+  },
+  "terminal": true,
+  "unknown_usage": 0
+}
