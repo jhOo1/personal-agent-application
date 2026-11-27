@@ -1,0 +1,68 @@
+{
+  "assigned": 300,
+  "active": 137,
+  "switches": 8,
+  "paired": {
+    "all": {
+      "IPE-C": {
+        "roots": 282,
+        "positions": 1510,
+        "Match": 970,
+        "OPB": 257,
+        "UPB": 266,
+        "FM": 53
+      },
+      "unanimous": {
+        "roots": 282,
+        "positions": 1510,
+        "Match": 972,
+        "OPB": 258,
+        "UPB": 262,
+        "FM": 50
+      }
+    },
+    "clean": {
+      "IPE-C": {
+        "roots": 220,
+        "positions": 1213,
+        "Match": 818,
+        "OPB": 189,
+        "UPB": 146,
+        "FM": 47
+      },
+      "unanimous": {
+        "roots": 220,
+        "positions": 1213,
+        "Match": 820,
+        "OPB": 190,
+        "UPB": 142,
+        "FM": 44
+      }
+    },
+    "switched": {
+      "IPE-C": {
+        "roots": 7,
+        "positions": 41,
+        "Match": 23,
+        "OPB": 11,
+        "UPB": 7,
+        "FM": 5
+      },
+      "unanimous": {
+        "roots": 7,
+        "positions": 41,
+        "Match": 25,
+        "OPB": 12,
+        "UPB": 3,
+        "FM": 2
+      }
+    }
+  },
+  "transitions": {
+    "missing_unswitched": 17,
+    "tie": 5,
+    "missing_on_switch": 1,
+    "win": 2
+  },
+  "clean_winning_groups": 1
+}
