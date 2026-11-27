@@ -1,0 +1,78 @@
+{
+  "1": {
+    "roots": 18,
+    "routes": {
+      "TASK_ONLY": 10,
+      "RP_FULL": 8
+    },
+    "attributed": {
+      "lazy": {
+        "generation_requests": 44,
+        "prompt_tokens": 74381,
+        "completion_tokens": 211437,
+        "total_tokens": 285818
+      },
+      "full": {
+        "generation_requests": 54,
+        "prompt_tokens": 112431,
+        "completion_tokens": 286695,
+        "total_tokens": 399126
+      },
+      "empty": {
+        "generation_requests": 18,
+        "prompt_tokens": 3402,
+        "completion_tokens": 14342,
+        "total_tokens": 17744
+      }
+    },
+    "median_modeled_seconds": {
+      "lazy": 116.65,
+      "lazy/TASK_ONLY": 79.14,
+      "full": 121.03,
+      "full/TASK_ONLY": 120.12,
+      "empty": 11.27,
+      "empty/TASK_ONLY": 13.92,
+      "lazy/RP_FULL": 207.91,
+      "full/RP_FULL": 127.81,
+      "empty/RP_FULL": 9.54
+    }
+  },
+  "2": {
+    "roots": 18,
+    "routes": {
+      "RP_FULL": 9,
+      "TASK_ONLY": 9
+    },
+    "attributed": {
+      "lazy": {
+        "generation_requests": 45,
+        "prompt_tokens": 78884,
+        "completion_tokens": 193276,
+        "total_tokens": 272160
+      },
+      "full": {
+        "generation_requests": 54,
+        "prompt_tokens": 112431,
+        "completion_tokens": 269633,
+        "total_tokens": 382064
+      },
+      "empty": {
+        "generation_requests": 18,
+        "prompt_tokens": 3402,
+        "completion_tokens": 14013,
+        "total_tokens": 17415
+      }
+    },
+    "median_modeled_seconds": {
+      "lazy": 100.87,
+      "lazy/RP_FULL": 157.33,
+      "full": 111.38,
+      "full/RP_FULL": 113.34,
+      "empty": 7.99,
+      "empty/RP_FULL": 8.01,
+      "lazy/TASK_ONLY": 60.54,
+      "full/TASK_ONLY": 109.41,
+      "empty/TASK_ONLY": 7.97
+    }
+  }
+}
