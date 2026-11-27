@@ -9,8 +9,9 @@ import accelerate
 from accelerate.hooks import AlignDevicesHook, add_hook_to_module
 import torch
 
-from local_reward import load_model, read, save, score_packet, transformers_version
-from selection import IDS, REVISION
+from qamc.common import sha
+from local_reward import load_model, read, save, transformers_version
+from selection import IDS, REVISION, conversation, reward_choice
 
 
 def file_sha(path):
@@ -32,6 +33,25 @@ def activate_mps(model):
     return model
 
 
+def score_packet(model, tokenizer, packet):
+    items = [conversation(packet["context"], packet["candidates"][cid]) for cid in IDS]
+    lengths = []
+    for item in items:
+        template = tokenizer.apply_chat_template(item, tokenize=False, add_generation_prompt=False)
+        ids = tokenizer.encode(template, add_special_tokens=False)
+        lengths.append(len(ids) + (ids[-1] != model.config.reward_token_id))
+    if max(lengths) > model.config.max_position_embeddings:
+        raise ValueError("Context exceeds reward model limit")
+    if max(lengths) > 1536:
+        # Keep the eager attention workspace bounded on 16 GiB hosts.
+        values = [model.get_score(tokenizer, item, use_cache=False) for item in items]
+    else:
+        values = model.get_scores(tokenizer, items, use_cache=False)
+    scores = dict(zip(IDS, values, strict=True))
+    reward_choice(scores)
+    return scores, lengths
+
+
 def score_all(root, snapshot):
     frozen = read(root / "FROZEN.json")
     from local_reward import __file__ as local_source
@@ -41,6 +61,8 @@ def score_all(root, snapshot):
             raise ValueError("Frozen reward source changed")
     packets_file = root / "BLIND_PACKETS.json"
     packets = read(packets_file)
+    if sha(packets) != frozen["packets_sha256"]:
+        raise ValueError("Frozen reward packets changed")
     if len(packets) != 24 or any(set(p) != {"context", "candidates"} or set(p["candidates"]) != set(IDS)
                                 for p in packets.values()):
         raise ValueError("Unexpected frozen input shape")
