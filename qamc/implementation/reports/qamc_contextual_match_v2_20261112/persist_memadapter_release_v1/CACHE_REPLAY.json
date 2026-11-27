@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "deployments": 47,
+    "prior_valid_cache": 14,
+    "identical_second_request_this_draw": 0,
+    "new_second_request_needed": 14,
+    "previously_failed_inductions_bypassed": 4
+  },
+  "skipped_stage_one_receipts": {
+    "known_tokens": 200784,
+    "unknown_usage": 1
+  }
+}
