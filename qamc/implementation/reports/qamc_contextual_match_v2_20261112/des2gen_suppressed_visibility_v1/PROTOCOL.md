@@ -1,0 +1,7 @@
+# Physical exposure after the frozen Des2Gen decision
+
+Select at most sixteen distinct exposed RPEval source groups from the archived IPE-C history-on branch. Require an available original Des2Gen Actor wire with both Apply and Suppress decisions. Sort by salted UID digest and take the first case per previously unseen group, without reading scores. These cases characterize the triggered subset; all other inputs would keep the original IPE-C.
+
+Reuse the complete logged Des2Gen selector output. Compare a fresh sample of the unchanged full Actor request with the same request after setting the text field of every Suppress item to the empty string. Preserve every ID, position, Apply item and applicability decision. Keep the Actor system, task and token cap. The historical full response is a secondary comparator; the main fresh control measures sampling variability. Use the same frozen RPEval GPT-4.1 grader. Preserve missing or failed outputs. Limit to one new generation and at most one new grade per arm per case. No tuning or sealed cases.
+
+Report paired Match, OPB, UPB and FM, pair versus IPE-C, joint flags, all assigned denominators, and actual source labels concealed for evaluation only. Promote only if masked improves Match over both fresh control and IPE-C across at least two distinct unflagged roots, lowers OPB versus fresh control, and does not increase UPB or FM. A failure applies to this particular selection/generation interface.
