@@ -1,0 +1,178 @@
+{
+  "all": {
+    "GEPA_SELECTED_BOUNDS": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 503,
+      "exact": 23,
+      "severity": 629
+    },
+    "MEMADAPTER_FULL": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 501,
+      "exact": 19,
+      "severity": 561
+    },
+    "RPR_PAPER_FULL": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 643,
+      "exact": 53,
+      "severity": 410
+    },
+    "DES2GEN_FULL": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 529,
+      "exact": 28,
+      "severity": 583
+    },
+    "IPE_C": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 751,
+      "exact": 79,
+      "severity": 338
+    },
+    "TASK_ONLY": {
+      "tasks": 211,
+      "positions": 1124,
+      "matched": 691,
+      "exact": 87,
+      "severity": 399
+    }
+  },
+  "contains_C": {
+    "GEPA_SELECTED_BOUNDS": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 304,
+      "exact": 0,
+      "severity": 246
+    },
+    "MEMADAPTER_FULL": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 311,
+      "exact": 0,
+      "severity": 206
+    },
+    "RPR_PAPER_FULL": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 313,
+      "exact": 0,
+      "severity": 184
+    },
+    "DES2GEN_FULL": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 312,
+      "exact": 0,
+      "severity": 214
+    },
+    "IPE_C": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 311,
+      "exact": 0,
+      "severity": 185
+    },
+    "TASK_ONLY": {
+      "tasks": 83,
+      "positions": 513,
+      "matched": 225,
+      "exact": 2,
+      "severity": 266
+    }
+  },
+  "only_B": {
+    "GEPA_SELECTED_BOUNDS": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 92,
+      "exact": 0,
+      "severity": 89
+    },
+    "MEMADAPTER_FULL": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 104,
+      "exact": 1,
+      "severity": 74
+    },
+    "RPR_PAPER_FULL": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 102,
+      "exact": 2,
+      "severity": 66
+    },
+    "DES2GEN_FULL": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 92,
+      "exact": 0,
+      "severity": 85
+    },
+    "IPE_C": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 106,
+      "exact": 5,
+      "severity": 66
+    },
+    "TASK_ONLY": {
+      "tasks": 32,
+      "positions": 185,
+      "matched": 103,
+      "exact": 5,
+      "severity": 67
+    }
+  },
+  "all_A": {
+    "GEPA_SELECTED_BOUNDS": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 107,
+      "exact": 23,
+      "severity": 294
+    },
+    "MEMADAPTER_FULL": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 86,
+      "exact": 18,
+      "severity": 281
+    },
+    "RPR_PAPER_FULL": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 228,
+      "exact": 51,
+      "severity": 160
+    },
+    "DES2GEN_FULL": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 125,
+      "exact": 28,
+      "severity": 284
+    },
+    "IPE_C": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 334,
+      "exact": 74,
+      "severity": 87
+    },
+    "TASK_ONLY": {
+      "tasks": 96,
+      "positions": 426,
+      "matched": 363,
+      "exact": 80,
+      "severity": 66
+    }
+  }
+}

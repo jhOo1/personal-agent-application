@@ -53,10 +53,13 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
 
     six_method = common.split("## Adding the always-task endpoint", 1)[1].split("## BenchPreS", 1)[0]
     public_external = {r[0]: tuple(map(count, r[1:5])) for r in list(markdown_rows(six_method))[2:]}
+    secondary = json.loads((root / "rpe_external_whole_task_v1/RESULTS.json").read_text())["all"]
+    method_keys = {'IPE-C': 'IPE_C', 'Always-Task': 'TASK_ONLY', 'RP-Reasoner reconstructed': 'RPR_PAPER_FULL', 'Des2Gen reconstructed': 'DES2GEN_FULL', 'MemAdapter adapted': 'MEMADAPTER_FULL', 'Strong Gate': 'GEPA_SELECTED_BOUNDS'}
     seen_external = set()
     for method, *points in latex_rows(paper, "external"):
         source_name = method.replace(" reconstructed", " reconstruction").replace(" adapted", " adaptation")
-        require(tuple(map(count, points)), public_external[source_name], f"RPEval {method}")
+        source = secondary[method_keys[method]]
+        require(tuple(map(count, points)), (*public_external[source_name], source["exact"], source["severity"]), f"RPEval {method}")
         seen_external.add(source_name)
     require(seen_external, public_external.keys(), "RPEval comparison methods")
 

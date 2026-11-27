@@ -83,21 +83,24 @@ Which preferences account for the remaining errors? Of 264 unmatched positions o
 \begin{table}[t]
 \centering
 \small
-\begin{tabular}{@{}lrrrr@{}}
+\begin{tabular}{@{}lrrrrrr@{}}
 \toprule
-Method & Match & A & B & C\\
+Method & Match & A & B & C & Exact & Severity\\
 \midrule
-IPE-C & \textbf{751} & 334 & \textbf{106} & 311\\
-Always-Task & 691 & \textbf{363} & 103 & 225\\
-RP-Reasoner reconstructed & 643 & 228 & 102 & \textbf{313}\\
-Des2Gen reconstructed & 529 & 125 & 92 & 312\\
-MemAdapter adapted & 501 & 86 & 104 & 311\\
-Strong Gate & 503 & 107 & 92 & 304\\
+IPE-C & \textbf{751} & 334 & \textbf{106} & 311 & 79 & 338\\
+Always-Task & 691 & \textbf{363} & 103 & 225 & 87 & 399\\
+RP-Reasoner reconstructed & 643 & 228 & 102 & \textbf{313} & 53 & 410\\
+Des2Gen reconstructed & 529 & 125 & 92 & 312 & 28 & 583\\
+MemAdapter adapted & 501 & 86 & 104 & 311 & 19 & 561\\
+Strong Gate & 503 & 107 & 92 & 304 & 23 & 629\\
 \bottomrule
 \end{tabular}
-\caption{Adapted RPEval comparison among six methods on 211 jointly valid tasks and 1,124 positions. Columns A, B, and C denote task strata (all A, only B, and contains C), with 426, 185, and 513 positions.}
+\caption{Adapted RPEval comparison among six methods on 211 jointly valid tasks and 1,124 positions. Columns A, B, and C denote task strata (all A, only B, and contains C), with 426, 185, and 513 positions. Exact counts tasks with every position matched. Severity sums the detailed Judge field (lower is better).}
 \label{tab:external}
 \end{table}
+
+IPE-C has the lowest overall severity sum in this intersection, but empty history wins on whole-task correctness. Of IPE-C's 79 exact tasks, 74 are all-ignore and five have supported preferences without C. No history-using system in this table is exact on any of the 83 C-bearing tasks; empty history is exact on two. These counts describe joint position alignment and do not imply the absence of useful individual constraint realizations.
+
 
 The comparison to RP alone has 280 common tasks and 1,504 positions (970 vs.\ 841). The more restrictive six-method intersection retains the same qualitative pattern (Table~\ref{tab:external}). There, 106 of the 108 gained positions relative to RP come from all-A tasks. On 128 exact explicit--implicit counterparts with all four scores valid, IPE-C and RP obtain 469 and 402 on the 693 explicit positions, and 438 and 384 on the implicit positions. The only-B direction differs across formats. This offers little support for a reliable gain on appropriate supporting preferences.
 
