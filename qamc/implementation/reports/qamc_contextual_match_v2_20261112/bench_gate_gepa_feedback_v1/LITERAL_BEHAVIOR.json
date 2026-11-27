@@ -1,0 +1,43 @@
+{
+  "common_deliveries": 40,
+  "per_arm": {
+    "baseline": {
+      "appropriate_markdown_bold_positions": 23,
+      "appropriate_markdown_bold_hits": 23,
+      "inappropriate_nickname_positions": 40,
+      "inappropriate_nickname_hits": 0
+    },
+    "score": {
+      "appropriate_markdown_bold_positions": 23,
+      "appropriate_markdown_bold_hits": 22,
+      "inappropriate_nickname_positions": 40,
+      "inappropriate_nickname_hits": 0
+    },
+    "behavior": {
+      "appropriate_markdown_bold_positions": 23,
+      "appropriate_markdown_bold_hits": 23,
+      "inappropriate_nickname_positions": 40,
+      "inappropriate_nickname_hits": 0
+    }
+  },
+  "median_characters": {
+    "baseline": 710.5,
+    "score": 711.5,
+    "behavior": 592.0
+  },
+  "length_vs_baseline": {
+    "score": {
+      "shorter": 17,
+      "longer": 22,
+      "equal": 1
+    },
+    "behavior": {
+      "longer": 21,
+      "shorter": 19
+    }
+  },
+  "median_paired_length_change": {
+    "score": 31.5,
+    "behavior": 17.0
+  }
+}
