@@ -44,3 +44,20 @@ The [RPEval release audit](../implementation/reports/qamc_contextual_match_v2_20
 The [additional single-preference comparison](../implementation/reports/qamc_contextual_match_v2_20261112/single_external_roster_recovery_v1/EXTERNAL_READOUT.md) isolates two different observations. The source-witness rule recovered a trip constraint that ordinary selection also recovered. Its advantage over ordinary selection came from retaining the RP answer on a separate task. Both selectors shared all available candidates; full deployment still requires generating three answers. The 15 jointly graded development groups do not resolve independent or full-protocol rankings.
 
 The [source capacity and precision check](../implementation/reports/qamc_contextual_match_v2_20261112/confirmation_precision_v1/README.md) qualifies step 4. Even the historical upper limit of 12 screened beneficial-use groups would provide little precision for a low loss rate. Current eligibility remains unknown.
+
+## What changes if the RPEval Judge template changes?
+
+For each of the same 12 exposed tasks, subtract the empty-history answer's numeric score from the full-history RP answer's score. Compare the sign under the detailed and released short templates. Each row below counts tasks. The signs describe numeric ordering only, since the short prompt leaves the severity direction and acronyms unspecified.
+
+| Field | Same nonzero sign | Opposite sign | Both tied | Exactly one tied |
+|---|---:|---:|---:|---:|
+| OPB | 6 | 0 | 2 | 4 |
+| UPB | 0 | 5 | 2 | 5 |
+| RII | 1 | 2 | 5 | 4 |
+| FM | 0 | 3 | 7 | 2 |
+| VG | 1 | 0 | 4 | 7 |
+| Judge | 2 | 4 | 4 | 2 |
+
+Reproduction uses the private bridge RESULTS.json referenced above, rows[].adapted and rows[].published, keys RPR_PAPER_FULL and TASK_ONLY. Each contrast reuses the two actual endpoint answers; the derived IPE-C column adds no independent answer. All 24 short replies omitted both match fields. On these inputs the pinned aggregator counts 24 total answers and zero boolean full matches, and accumulates 0 matched out of 0 graded positions. Its fallback prints zero for both rates. The semantic accuracy for that template is unavailable. These are zero-call analyses of existing receipts. [Pinned aggregation code](https://github.com/XueyangFeng/RPEval/blob/0f8bce80a03e6b86426485264b14ae7de49cc8f9/generation_task/eval_multi.py#L405-L438)
+
+For scope decisions the archived 274-task IPE-C advantage under the detailed rubric and the change in ranking across two fresh deployments should both be reported. Retain BenchPreS as the expression and task-completion boundary. A replacement would need to measure a specified missing capability, with an accessible scorer and comparable external baselines. [Detailed-rubric comparison](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_overall_severity_v1/README.md) · [Benchmark scope decision](../implementation/reports/qamc_contextual_match_v2_20261112/benchmark_scope_decision_v1/DECISION.md)
