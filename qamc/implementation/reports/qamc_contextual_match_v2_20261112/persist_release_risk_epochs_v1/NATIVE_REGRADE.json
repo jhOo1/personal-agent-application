@@ -1,0 +1,46 @@
+{
+  "exposed_49": {
+    "beneficial_memory_usage": {
+      "allocated": 90,
+      "distinct_answer_slots": 65,
+      "duplicate_answer_slots": 13,
+      "unavailable": 12,
+      "verbatim_native_candidates": 0
+    },
+    "cross_domain": {
+      "allocated": 285,
+      "distinct_answer_slots": 174,
+      "duplicate_answer_slots": 86,
+      "unavailable": 25,
+      "verbatim_native_candidates": 0
+    },
+    "sycophancy": {
+      "allocated": 180,
+      "distinct_answer_slots": 120,
+      "duplicate_answer_slots": 60,
+      "verbatim_native_candidates": 0
+    }
+  },
+  "overlap_13": {
+    "beneficial_memory_usage": {
+      "allocated": 35,
+      "distinct_answer_slots": 25,
+      "duplicate_answer_slots": 6,
+      "unavailable": 4,
+      "verbatim_native_candidates": 0
+    },
+    "cross_domain": {
+      "allocated": 60,
+      "distinct_answer_slots": 34,
+      "duplicate_answer_slots": 21,
+      "unavailable": 5,
+      "verbatim_native_candidates": 0
+    },
+    "sycophancy": {
+      "allocated": 30,
+      "distinct_answer_slots": 23,
+      "duplicate_answer_slots": 7,
+      "verbatim_native_candidates": 0
+    }
+  }
+}

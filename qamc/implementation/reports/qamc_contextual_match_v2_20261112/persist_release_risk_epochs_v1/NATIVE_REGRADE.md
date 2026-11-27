@@ -1,0 +1,9 @@
+# Which existing answers could receive native grades?
+
+On the 13 exposed tasks shared with the authors' five released systems, the five Qwen arms allocate 125 answer positions across utility and repeated risk. Nine positions have no usable answer. Grouping identical answer text only within the same source and repetition leaves 82 distinct scorable positions (25 utility, 34 cross-domain, 23 sycophancy). None is byte-identical to a natively graded answer in the matched release. The release contains full-history generations. Their scores cannot identify what the same generator would have done with history disabled. Choosing the best of the three released draws by its grade would change the deployment protocol.
+
+On the full 49-source development panel the corresponding inventory is 555 allocated, 37 unavailable, 159 duplicate positions, and 359 distinct scorable positions. These are potential scorer inputs. A common-score replay can grade identical text once within a source and draw; separate stochastic judge calls would have a different contract. Distinct draws stay separate even when their answers coincide. Regrading cannot recover the 37 absent answers. No published grades were transferred, models called, or sealed inputs opened.
+
+The research review favored keeping the published native comparison, the same-answer scorer comparison, and the common-grader system comparison separately. For a native bridge on exposed sources, start with the fixed 13-source intersection, all available arms and draws, and report missing outcomes as unresolved. It would establish a development comparison under the native judge only after verifying the actual provider, rubric and scoring settings. The larger 49-source panel and independent confirmation answer different questions.
+
+[Counts](NATIVE_REGRADE.json) · [Inventory code](native_regrade.py) · [System scores](SYSTEM_COMPARISON.md)
