@@ -1,0 +1,20 @@
+{
+  "allocated_exposed_rows": 62,
+  "direct_allocation_rows": 29,
+  "direct_groups": 29,
+  "inspected_archives": {
+    "D2G_PAPER_ADAPT_nonempty_answer": 20,
+    "MEMADAPTER_FULL_nonempty_answer": 0,
+    "RPR_PAPER_XBENCH_nonempty_answer": 21,
+    "nine_method_archive_exact_rows": 21,
+    "qamc_bounded_external_20261109_exact_row": 8,
+    "qamc_bounded_external_20261109_explicit_development": 0,
+    "qamc_rpreasoner_paper_exact_row": 21,
+    "qamc_rpreasoner_paper_explicit_development": 21
+  },
+  "legacy_paired_scores": {
+    "D2G_PAPER_ADAPT": 16,
+    "RPR_PAPER_XBENCH": 15,
+    "common_strict_single_cases": 18
+  }
+}
