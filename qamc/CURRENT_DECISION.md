@@ -1,8 +1,8 @@
 # QAMC 当前判断与下一次机制对照
 
-## RPEval 正在执行固定底稿修复对照
+## RPEval 固定底稿修复主对照已结算
 
-见证替换与默认感知控制在严格交集均为 18/21。已冻结 24 道原开发题上的保护性修复对照。两臂共享一次缺陷定位、同一 RP 底稿、三份完整候选及原始任务与历史。有可执行诊断时，一臂可自由修订，另一臂只可原子化执行定位器圈定的联动删除、替换或增补。未被圈定的原稿内容保持原样。方法比较和评分仍待结算。[冻结协议与复现入口](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/PROTOCOL.md)
+24 道原开发题，两臂共享一次诊断、RP 底稿、候选及原始任务与历史。原历史口径的 13 道共同有效题上，限定修复、自由修订和 V1 见证替换均为 10/13，RP 为 9/13。植物增肌得到两种有效的新成稿，限定修复只删冲突备选。现有证据不足以扩大。43 次请求中 9 次交付未知，主结果保留。独立补充实验只复用 4 条定位原回执，丢弃未声明的替换建议字段后测同样两臂。[结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/READOUT.md) · [补充实验和边界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_protected_repair_v2/LOCATOR_RECOVERY.md)
 
 此前独立启动的本地奖励模型已结算。与见证替换在所有 24 道上的 Match 逐题相同，同一旧分主表均为 19/22，且选择的成稿在 13 道共同题不同。见证替换的 FM 更低。后续修复仅依赖 API 和确定性程序。[归档对照](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/REWARD_READOUT.md)
 

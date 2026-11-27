@@ -1,0 +1,78 @@
+{
+  "locator": {
+    "FAILED_DELIVERY_UNKNOWN": 8,
+    "KEEP": 7,
+    "INVALID_LOCATOR": 4,
+    "ACT": 5
+  },
+  "locator_contract_errors": {
+    "invalid target operation": 4
+  },
+  "target_ops": {
+    "DELETE": 2,
+    "ENRICH": 1,
+    "REPLACE": 3
+  },
+  "intervention_counts": {
+    "FREE": {
+      "NEW_CANDIDATE": 4
+    },
+    "PATCH": {
+      "NEW_CANDIDATE": 5
+    }
+  },
+  "misses_and_repairs": {
+    "FREE": {
+      "FAILED_DELIVERY_UNKNOWN:MISSING": 8,
+      "KEEP:TIE": 7,
+      "INVALID_LOCATOR:TIE": 4,
+      "ACT:TIE": 3,
+      "ACT:RECOVERY": 1,
+      "ACT:MISSING": 1
+    },
+    "PATCH": {
+      "FAILED_DELIVERY_UNKNOWN:MISSING": 8,
+      "KEEP:TIE": 7,
+      "INVALID_LOCATOR:TIE": 4,
+      "ACT:TIE": 4,
+      "ACT:RECOVERY": 1
+    }
+  },
+  "structurally_recoverable_locator_extras": 4,
+  "match_delta_bounds_22": {
+    "PATCH_vs_RP": [
+      -6,
+      2
+    ],
+    "PATCH_vs_V1": [
+      -8,
+      0
+    ],
+    "PATCH_vs_FREE": [
+      -8,
+      9
+    ],
+    "PATCH_vs_MemAdapter": [
+      -7,
+      1
+    ]
+  },
+  "match_delta_bounds_24": {
+    "PATCH_vs_RP": [
+      -6,
+      2
+    ],
+    "PATCH_vs_V1": [
+      -8,
+      0
+    ],
+    "PATCH_vs_FREE": [
+      -8,
+      9
+    ],
+    "PATCH_vs_MemAdapter": [
+      -6,
+      2
+    ]
+  }
+}

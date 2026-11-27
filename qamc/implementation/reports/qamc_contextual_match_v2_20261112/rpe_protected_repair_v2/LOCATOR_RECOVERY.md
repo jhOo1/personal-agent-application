@@ -1,0 +1,7 @@
+# Separate locator contract sensitivity
+
+Four terminal Qwen locator replies had string-valued unsolicited replacement text in the target objects. The frozen V2 dispatcher correctly treated them as invalid and returned RP. For this separate execution only, discard the unsolicited text and pass the remaining diagnosis through the unchanged exact witness and target validation. All four projected diagnoses pass structurally without reading any grade. Other structurally invalid or delivery-unknown replies stay in the original state. Source evidence, target spans and target operations remain exactly those specified by the existing locator. No locator request is reissued.
+
+Run the same secondary FREE and PATCH requests with matched information for every projected row. Empty corrections and unsuccessful stages retain their previously specified disposition semantics. After the extension output is locked, the same answer-bound grading policy applies. Store extension records and composite scores in a separate private directory. The original V2 settlement remains authoritative for the prespecified result. The composite identifies consequences of a narrowly defined contract change in this development panel.
+
+This extension was specified from raw locator errors prior to reading the V2 scores. The ceiling is 16 additional physical requests across revision and scoring. An exact cache hit can reduce that number. The eight original delivery-unknown locator records remain missing. Run the extension after the parent repair and its scoring are terminal.

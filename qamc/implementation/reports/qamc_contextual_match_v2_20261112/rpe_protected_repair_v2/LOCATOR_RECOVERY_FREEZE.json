@@ -1,0 +1,17 @@
+{
+  "parent_freeze": "0906dc20a15abad58474ae7773257abaaa02f61129a1cdbd7e4294c3ff947e33",
+  "parent_locator": "9926db8dbc4a51f23ab1449a2df361a2dbd96e5077653f3bc9b2690400df82e4",
+  "projected_count": 4,
+  "canonical_diagnoses": "5787bd16eef6435a1ab11ac1d50b5ddcd10341eedf88663b64510c99b6f623e4",
+  "repair_wire_sha256": "a54ff5afc4e0d4271a68001c2e4c93c8b29dac6b3c3970b876191b778a384750",
+  "caps": {
+    "Repair": 8,
+    "SingleDetailJudge": 8
+  },
+  "code_sha256": {
+    "audit_protected_repair.py": "e15d2836a862a416267ebbdc64413a901b7a8f6579219ee241246a1bcda614f0",
+    "recover_locator.py": "d2cb30b5c85c26aeb11b563642c8cd2bce745c7a321da6b797a7838d43f539ac",
+    "readouts.sh": "ae95ae9b602278d2127b042b387c6782bdf704a4c5ea309d02875f095ad10c65",
+    "LOCATOR_RECOVERY.md": "a64661a35b93072b8f11d2bd3f2a438c42fc30c8bcc8f2a5190a0c19095d51c1"
+  }
+}
