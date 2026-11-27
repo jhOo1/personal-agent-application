@@ -1,0 +1,40 @@
+{
+  "exact": {
+    "DES2GEN_FULL": 0,
+    "GEPA_SELECTED_BOUNDS": 0,
+    "GEPA_UNIFIED": 0,
+    "GOAL_EFFECT_GEPA": 0,
+    "IPE_C": 0,
+    "MEMADAPTER_FULL": 0,
+    "RPR_PAPER_FULL": 0,
+    "TASK_ONLY": 2
+  },
+  "exact_method_count_distribution": {
+    "0": 74,
+    "1": 2
+  },
+  "exclusively_exact": {
+    "TASK_ONLY": 2
+  },
+  "match": {
+    "DES2GEN_FULL": 287,
+    "GEPA_SELECTED_BOUNDS": 277,
+    "GEPA_UNIFIED": 281,
+    "GOAL_EFFECT_GEPA": 281,
+    "IPE_C": 285,
+    "MEMADAPTER_FULL": 286,
+    "RPR_PAPER_FULL": 285,
+    "TASK_ONLY": 203
+  },
+  "panel": {
+    "any_exact": 2,
+    "excluded_incomplete_comparison": 34,
+    "hindsight_position_max": 310,
+    "paired_tasks": 76,
+    "positions": 468,
+    "starting_tasks": 110
+  },
+  "task_only_exact_unique_answers": 1,
+  "task_only_exact_unique_reasons": 1,
+  "task_only_exact_unique_roots": 1
+}
