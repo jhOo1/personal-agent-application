@@ -1,0 +1,22 @@
+{
+  "explicit": {
+    "DES2GEN_FULL": 4,
+    "GEPA_SELECTED_BOUNDS": 4,
+    "GEPA_UNIFIED": 4,
+    "GOAL_EFFECT_GEPA": 4,
+    "IPE_C": 5,
+    "MEMADAPTER_FULL": 4,
+    "RPR_PAPER_FULL": 5,
+    "TASK_ONLY": 7
+  },
+  "implicit": {
+    "DES2GEN_FULL": 5,
+    "GEPA_SELECTED_BOUNDS": 4,
+    "GEPA_UNIFIED": 4,
+    "GOAL_EFFECT_GEPA": 4,
+    "IPE_C": 5,
+    "MEMADAPTER_FULL": 4,
+    "RPR_PAPER_FULL": 5,
+    "TASK_ONLY": 7
+  }
+}
