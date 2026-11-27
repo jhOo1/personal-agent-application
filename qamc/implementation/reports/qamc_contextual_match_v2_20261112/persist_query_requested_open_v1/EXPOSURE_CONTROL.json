@@ -1,0 +1,14 @@
+{
+  "assigned": 18,
+  "fully_graded_pairs": 17,
+  "opened": 13,
+  "gain_histogram": {
+    "2": 4095,
+    "3": 3003,
+    "1": 1365,
+    "0": 105
+  },
+  "assignments": 8568,
+  "observed": 2,
+  "at_least_observed": 7098
+}
