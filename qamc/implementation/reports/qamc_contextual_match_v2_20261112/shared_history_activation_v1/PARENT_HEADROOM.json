@@ -1,0 +1,56 @@
+{
+  "all_A": {
+    "all": {
+      "tasks": 98,
+      "positions": 432,
+      "ipe_c": 343,
+      "possible_extra_match": 43,
+      "tasks_with_any_headroom": 10,
+      "groups_with_any_headroom": 8
+    },
+    "neither_endpoint_flagged": {
+      "tasks": 78,
+      "positions": 348,
+      "ipe_c": 299,
+      "possible_extra_match": 37,
+      "tasks_with_any_headroom": 8,
+      "groups_with_any_headroom": 6
+    }
+  },
+  "B_only": {
+    "all": {
+      "tasks": 32,
+      "positions": 181,
+      "ipe_c": 100,
+      "possible_extra_match": 12,
+      "tasks_with_any_headroom": 5,
+      "groups_with_any_headroom": 4
+    },
+    "neither_endpoint_flagged": {
+      "tasks": 17,
+      "positions": 103,
+      "ipe_c": 59,
+      "possible_extra_match": 2,
+      "tasks_with_any_headroom": 1,
+      "groups_with_any_headroom": 1
+    }
+  },
+  "contains_C": {
+    "all": {
+      "tasks": 86,
+      "positions": 529,
+      "ipe_c": 322,
+      "possible_extra_match": 6,
+      "tasks_with_any_headroom": 3,
+      "groups_with_any_headroom": 1
+    },
+    "neither_endpoint_flagged": {
+      "tasks": 57,
+      "positions": 383,
+      "ipe_c": 228,
+      "possible_extra_match": 6,
+      "tasks_with_any_headroom": 3,
+      "groups_with_any_headroom": 1
+    }
+  }
+}
