@@ -1,0 +1,74 @@
+{
+  "cases": [
+    {
+      "case": "explicit/044",
+      "matches": {
+        "IPE": 3,
+        "old_Des": 2,
+        "new_full": 3,
+        "new_mask": 3
+      },
+      "positions": 5
+    },
+    {
+      "case": "implicit/077",
+      "matches": {
+        "IPE": 6,
+        "old_Des": 5,
+        "new_full": 5,
+        "new_mask": 6
+      },
+      "positions": 9
+    },
+    {
+      "case": "implicit/078",
+      "matches": {
+        "IPE": 4,
+        "old_Des": 2,
+        "new_full": 2,
+        "new_mask": 2
+      },
+      "positions": 6
+    },
+    {
+      "case": "4203f7b6afcbdade5e1d",
+      "matches": {
+        "IPE": 6,
+        "old_Des": 5,
+        "new_full": 4,
+        "new_mask": 5
+      },
+      "positions": 8
+    }
+  ],
+  "totals": {
+    "IPE": {
+      "Match": 19,
+      "positions": 28,
+      "OPB": 5,
+      "UPB": 4,
+      "FM": 0
+    },
+    "old_Des": {
+      "Match": 14,
+      "positions": 28,
+      "OPB": 6,
+      "UPB": 7,
+      "FM": 3
+    },
+    "new_full": {
+      "Match": 14,
+      "positions": 28,
+      "OPB": 7,
+      "UPB": 3,
+      "FM": 3
+    },
+    "new_mask": {
+      "Match": 16,
+      "positions": 28,
+      "OPB": 8,
+      "UPB": 3,
+      "FM": 1
+    }
+  }
+}

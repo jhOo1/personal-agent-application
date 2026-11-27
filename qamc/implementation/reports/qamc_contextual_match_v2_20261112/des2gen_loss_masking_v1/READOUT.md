@@ -12,3 +12,14 @@ The four exposed sources all met the historical loss and pre-generation decision
 Two wins, two ties, zero losses on Match. In the Xi'an family outing, the masked answer led with a park and a walk rather than explicitly invoking the user's history; both avoided queues. Match 5/9 to 6/9, OPB 2 to 1 and UPB 0 to 1. In the birthday task the full answer explicitly linked the requester's own interests to party planning; the masked opening focused on the friend's discomfort with bars. Match 4/8 to 5/8, OPB 3 in both. On the student diet task, both openings still invoked the user's usual diet. Match stayed 2/6, OPB rose from 0 to 2 and UPB fell from 3 to 1. On the family Yunnan itinerary both earned 3/5; the masked grade has an existing diagnostic flag. No regrading or human verification. Changes in openings do not establish why a whole-answer grade moved.
 
 Masking reached the two-source Match criterion and missed the predeclared OPB protection. Retain IPE-C. These four previously losing cases cannot estimate the expected gain from masking the full deployment population. The separate archived visibility panel supplies protection context only. All eight Actor and eight adapted GPT-4.1 grader calls returned OK, 72,626 reported tokens, no unknown usage.
+
+### How much of the original gap was recovered?
+
+| Task | Positions | Archived IPE-C | Archived Des2Gen | Same full request resampled | Suppress text masked |
+|---|---:|---:|---:|---:|---:|
+| Yunnan family itinerary |5|3|2|3|3|
+| Xi'an family outing |9|6|5|5|6|
+| Student diet |6|4|2|2|2|
+| Friend's birthday |8|6|5|4|5|
+
+The two one-position gains against the fresh full control have different implications. On the Xi'an task masking closed the archived one-position gap. On the birthday task masking returned to the old Des2Gen score after the unchanged request scored lower on resampling; the gap to IPE-C remained. On the Yunnan task the unchanged request itself closed the gap. Across all four tasks the incumbent retained 19/28 Match and OPB severity 5, compared with masked 16/28 and 8. The incumbent is an archived reference; only the two intervention arms were generated concurrently. Cases were selected for archived losses, so the 19/28 cannot estimate an unbiased advantage. [Four-way alignment](RECOVERY.json).
