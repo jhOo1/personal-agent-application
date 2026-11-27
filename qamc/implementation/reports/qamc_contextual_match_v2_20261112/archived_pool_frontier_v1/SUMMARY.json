@@ -1,0 +1,51 @@
+{
+  "BenchPreS": {
+    "alternative_records": 68,
+    "assigned": 26,
+    "best_gain_winning_groups": 1,
+    "missing_answers": 5,
+    "missing_grades_on_answers": 17,
+    "primary_gain": 1,
+    "primary_winning_tasks": 1,
+    "protected_gain": 0,
+    "protected_gain_winning_groups": 0,
+    "protected_winning_tasks": 0,
+    "tasks_with_ungraded_answers_and_AAR_headroom": 3,
+    "unflagged_protected_gain": 0,
+    "unflagged_protected_gain_winning_groups": 0,
+    "unflagged_protected_winning_tasks": 0,
+    "ungraded_distinct_answers_with_AAR_headroom": 4,
+    "with_scored_distinct_alternative": 19
+  },
+  "PersistBench": {
+    "alternative_records": 100,
+    "assigned": 42,
+    "best_gain_winning_groups": 1,
+    "missing_answers": 13,
+    "primary_gain": 1,
+    "primary_winning_tasks": 1,
+    "protected_gain": 1,
+    "protected_gain_winning_groups": 1,
+    "protected_winning_tasks": 1,
+    "unflagged_protected_gain": 1,
+    "unflagged_protected_gain_winning_groups": 1,
+    "unflagged_protected_winning_tasks": 1,
+    "with_scored_distinct_alternative": 32
+  },
+  "RPEval": {
+    "alternative_records": 64,
+    "assigned": 24,
+    "best_gain_winning_groups": 2,
+    "missing_answers": 4,
+    "missing_grades_on_answers": 1,
+    "primary_gain": 8,
+    "primary_winning_tasks": 2,
+    "protected_gain": 8,
+    "protected_gain_winning_groups": 2,
+    "protected_winning_tasks": 2,
+    "unflagged_protected_gain": 1,
+    "unflagged_protected_gain_winning_groups": 1,
+    "unflagged_protected_winning_tasks": 1,
+    "with_scored_distinct_alternative": 21
+  }
+}
