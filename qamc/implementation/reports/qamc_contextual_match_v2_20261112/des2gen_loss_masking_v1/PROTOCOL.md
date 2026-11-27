@@ -1,0 +1,5 @@
+# Physical masking on archived losses
+
+Development mechanism probe, deliberately conditioned on an archived loss. From the frozen history-on, strict-subset switch population require a strictly lower Des2Gen Match than IPE-C. Take at most four distinct exposed source groups in predetermined UID hash order, one task per group. Two fresh arms per task: original full request resampled versus the identical request with only Suppress texts emptied. Preserve temperature, ID order, all decisions and the scoring contract. Score fields and author labels never enter generation. Earlier masking ties are historical protection context and are not regenerated.
+
+Report every registered outcome, paired Match, OPB, UPB, FM, missingness, and exact dispatch cost. Positive exploratory signal requires masked Match gains over fresh full on at least two groups and no aggregate OPB or UPB regression. A single fresh pair does not establish stability. The archived trigger enriches prior losses; recovering the historical score alone is not efficacy. No sealed cases, automatic retry, score replacement or panel expansion.
