@@ -1,0 +1,64 @@
+{
+  "caps": {
+    "BenchAttrs": 192,
+    "Donor": 28,
+    "Endpoints": 56,
+    "Final": 84,
+    "Opportunity": 28,
+    "PersistNative": 24,
+    "RPEvalJudge": 36
+  },
+  "code": {
+    "PILOT_PROTOCOL.md": "3a568d1472feff6778605d75c55d5ad6d5fe4ffc98072cfa4ebb29dd8a145274",
+    "action_commit.py": "b57bb767647bcc57debd4e34c432c4d276ef447ebc75107687b7a1d482f7b7f0",
+    "controller.py": "09ee47fcd012daec0b1097d08dd3b4a987b4e4e232c0cf48d96cd0e7fad1e8f6",
+    "exposure_wires.py": "0fa9c2e93b849427842e981a1ed6c0afe79e6378a3bcc9d8ce13ca5cddd38795",
+    "pilot_panel.py": "292efe1ca64cb81dd48b7df9003ed8836fad7b971d3f1f9ba3779e0fa0dd31c5",
+    "run_car.py": "b6412f4596d2ed201eafdf38e6e525dd57e162fc806cc22c92c3178697a0a5ea"
+  },
+  "final_arms": [
+    "WHOLE",
+    "FREE",
+    "COMMIT"
+  ],
+  "inventory": {
+    "BenchPreS": {
+      "groups": 8,
+      "new_endpoint_jobs": 16,
+      "reusable_endpoints": {},
+      "strata": {
+        "communication": 8
+      },
+      "tasks": 8
+    },
+    "PersistBench": {
+      "groups": 8,
+      "new_endpoint_jobs": 8,
+      "reusable_endpoints": {
+        "H": 8
+      },
+      "strata": {
+        "beneficial_memory_usage": 3,
+        "cross_domain": 2,
+        "sycophancy": 3
+      },
+      "tasks": 8
+    },
+    "RPEval": {
+      "groups": 8,
+      "new_endpoint_jobs": 0,
+      "reusable_endpoints": {
+        "H": 12,
+        "T": 12
+      },
+      "strata": {
+        "B_only": 4,
+        "all_A": 6,
+        "contains_C": 2
+      },
+      "tasks": 12
+    }
+  },
+  "panel_sha256": "cb1db7dc0b7edcbe054707b917ce7d77b42711d1f375de5d4d6b4148b15e8265",
+  "scope": "previously exposed development only"
+}
