@@ -1,0 +1,114 @@
+{
+  "archive": {
+    "allocated": 300,
+    "common": 274,
+    "total": {
+      "IPE": {
+        "severity": 451,
+        "matched": 953,
+        "positions": 1462
+      },
+      "empty": {
+        "severity": 537,
+        "matched": 874,
+        "positions": 1462
+      },
+      "full": {
+        "severity": 532,
+        "matched": 824,
+        "positions": 1462
+      }
+    },
+    "match_and_severity": {
+      "empty": {
+        "win/tie": 11,
+        "tie/tie": 169,
+        "tie/win": 23,
+        "win/win": 59,
+        "loss/loss": 11,
+        "tie/loss": 1
+      },
+      "full": {
+        "tie/tie": 201,
+        "loss/loss": 12,
+        "win/win": 38,
+        "tie/loss": 11,
+        "tie/win": 8,
+        "loss/tie": 2,
+        "loss/win": 1,
+        "win/loss": 1
+      }
+    }
+  },
+  "fresh1": {
+    "allocated": 18,
+    "common": 18,
+    "total": {
+      "IPE": {
+        "severity": 46,
+        "matched": 38,
+        "positions": 91
+      },
+      "empty": {
+        "severity": 49,
+        "matched": 34,
+        "positions": 91
+      },
+      "full": {
+        "severity": 45,
+        "matched": 40,
+        "positions": 91
+      }
+    },
+    "match_and_severity": {
+      "empty": {
+        "tie/tie": 11,
+        "win/win": 5,
+        "tie/win": 1,
+        "loss/loss": 1
+      },
+      "full": {
+        "tie/tie": 14,
+        "tie/loss": 1,
+        "win/win": 1,
+        "loss/loss": 1,
+        "tie/win": 1
+      }
+    }
+  },
+  "fresh2": {
+    "allocated": 18,
+    "common": 17,
+    "total": {
+      "IPE": {
+        "severity": 38,
+        "matched": 44,
+        "positions": 87
+      },
+      "empty": {
+        "severity": 48,
+        "matched": 32,
+        "positions": 87
+      },
+      "full": {
+        "severity": 41,
+        "matched": 40,
+        "positions": 87
+      }
+    },
+    "match_and_severity": {
+      "empty": {
+        "tie/tie": 10,
+        "win/win": 5,
+        "tie/win": 1,
+        "tie/loss": 1
+      },
+      "full": {
+        "tie/tie": 14,
+        "tie/loss": 1,
+        "win/win": 1,
+        "tie/win": 1
+      }
+    }
+  }
+}
