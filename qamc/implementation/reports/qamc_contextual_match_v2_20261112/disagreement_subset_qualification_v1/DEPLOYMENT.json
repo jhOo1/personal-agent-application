@@ -1,0 +1,60 @@
+{
+  "assigned": 300,
+  "net_match_by_root_vs_original": {
+    "DISAGREE": {
+      "loss": 3,
+      "tie": 39,
+      "win": 2
+    },
+    "IPE_C": {
+      "tie": 44
+    },
+    "RP_K": {
+      "loss": 4,
+      "tie": 37,
+      "win": 3
+    }
+  },
+  "overall": {
+    "DISAGREE": {
+      "FM": 50,
+      "FM_valid": 274,
+      "OPB": 273,
+      "OPB_valid": 274,
+      "UPB": 226,
+      "UPB_valid": 274,
+      "full_match": 92,
+      "full_match_valid": 274,
+      "match": 943,
+      "positions": 1462,
+      "tasks": 274
+    },
+    "IPE_C": {
+      "FM": 51,
+      "FM_valid": 274,
+      "OPB": 247,
+      "OPB_valid": 274,
+      "UPB": 248,
+      "UPB_valid": 274,
+      "full_match": 95,
+      "full_match_valid": 274,
+      "match": 953,
+      "positions": 1462,
+      "tasks": 274
+    },
+    "RP_K": {
+      "FM": 51,
+      "FM_valid": 274,
+      "OPB": 277,
+      "OPB_valid": 274,
+      "UPB": 220,
+      "UPB_valid": 274,
+      "full_match": 92,
+      "full_match_valid": 274,
+      "match": 947,
+      "positions": 1462,
+      "tasks": 274
+    }
+  },
+  "triggered": 24
+}
