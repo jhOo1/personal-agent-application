@@ -20,7 +20,12 @@ def main():
     prefixes=({uid.split("/")[-1][:8] for uid,c in cases.items() if c["category"]=="cross_domain"}
               if args.cross_domain else set(PREFIXES))
     assert len(prefixes)==(1 if args.cross_domain else 3)
-    draw_prefix=f"D{args.draw}"
+    entries=assemble(args.draw,cases,tasks,prefixes)
+    print(json.dumps(entries,ensure_ascii=False,indent=2))
+
+
+def assemble(draw,cases,tasks,prefixes):
+    draw_prefix=f"D{draw}"
     mod=author_module()
     protocol=read(HERE.parents[2]/"reports/qamc_persistbench_actor_factorial/PLAN.json")
     plan=read(transfer.OUT/"PLAN.json")
@@ -68,7 +73,7 @@ def main():
         for arm in ("SELECTED","BREADTH"):
             entry["arms"].setdefault(arm,dict(status="selection unavailable"))
     assert set(entries)==prefixes
-    print(json.dumps(entries,ensure_ascii=False,indent=2))
+    return entries
 
 
 if __name__=="__main__":
