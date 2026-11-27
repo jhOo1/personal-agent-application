@@ -1,0 +1,1326 @@
+{
+  "scope": "13 exposed source groups, with one single case reported separately",
+  "cost": {
+    "requests": 78,
+    "stages": {
+      "CandidateSupply": 26,
+      "CandidateAnswer": 26,
+      "SingleDetailJudge": 2,
+      "MultiCandidateJudge": 24
+    },
+    "statuses": {
+      "OK": 78
+    },
+    "reported_tokens": 250338,
+    "unknown_usage": 0,
+    "retries": 0,
+    "tokens_by_stage": {
+      "CandidateSupply": 68344,
+      "CandidateAnswer": 116967,
+      "SingleDetailJudge": 4719,
+      "MultiCandidateJudge": 60308
+    }
+  },
+  "rows": [
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "021971e5ff9ea1919a9135b3a441fc3b6e7a2ef4d98b387960bfdd5cd8d02cb0",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 0,
+          "Judge": 0,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          },
+          "full_match": 1
+        },
+        "OPEN": {
+          "OPB": 0,
+          "UPB": 3,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 3,
+            "positions": 7
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 0,
+          "UPB": 4,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 1,
+            "positions": 7
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0,
+          "archived_matched": 2
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 3
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 7
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 5,
+            "positions": 7
+          },
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 5,
+            "positions": 7
+          },
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 1,
+            "positions": 7
+          },
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "all_A",
+      "source_group": "168b97cccab1b9789f26c112d3a8edc8e1443ad399fe701c3f17f44bc7655dce",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 0,
+          "Judge": 0,
+          "match": {
+            "matched": 4,
+            "positions": 4
+          },
+          "full_match": 1
+        },
+        "OPEN": {
+          "OPB": 2,
+          "UPB": 0,
+          "RII": 3,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 3,
+          "UPB": 0,
+          "RII": 2,
+          "FM": 1,
+          "VG": 1,
+          "Judge": 3,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 1,
+          "archived_matched": 0
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 0
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 4
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 4
+          },
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "contains_C",
+      "source_group": "19959df2320c7659446ad8704ddb20dad654f86cbb9451d9f54eff85d30eaa95",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 2,
+          "RII": 1,
+          "FM": 1,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 0,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 0,
+          "UPB": 2,
+          "RII": 1,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1,
+          "archived_matched": 4
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0,
+          "archived_matched": 4
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 1,
+          "archived_matched": 4
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "all_A",
+      "source_group": "233f33c289e116f2f9965fd6fcb660387b8c71b1e49339b0bdc97c817ea3342c",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 1,
+          "match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "full_match": 1
+        },
+        "OPEN": {
+          "OPB": 2,
+          "UPB": 3,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 0,
+            "positions": 6
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 1,
+          "match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "full_match": 1
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 6
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 0,
+          "archived_matched": 0
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 6
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 0,
+            "positions": 6
+          },
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "237cfa115dae25c879707ea5fba83c3c0535426c20c83fb403046208d658a54b",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 0,
+          "Judge": 0,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          },
+          "full_match": 1
+        },
+        "OPEN": {
+          "OPB": 0,
+          "UPB": 4,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 1,
+            "positions": 7
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 1,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          },
+          "full_match": 1
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 7
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 5
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 7
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 7,
+            "positions": 7
+          },
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 7,
+            "positions": 7
+          },
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 5,
+            "positions": 7
+          },
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      },
+      "semantic_note": "Judges in both new arms misidentify the position of the sole B label; original scores retained."
+    },
+    {
+      "track": "single",
+      "stratum": "B_only",
+      "source_group": "869b0f021d5a7026da825ea57c8740b42460cac085ff28cc707b0b518cc81a6d",
+      "grade": {
+        "BASE": {
+          "matched": 0,
+          "total": 1,
+          "severity": {
+            "OPB": 0,
+            "UPB": 2,
+            "RII": 0,
+            "FM": 1,
+            "VG": 1,
+            "Judge": 2
+          },
+          "protocol": "rpeval_archived_rubric_adapted_v1",
+          "lower_severity_is_better": true
+        },
+        "OPEN": {
+          "matched": 1,
+          "total": 1,
+          "severity": {
+            "OPB": 0,
+            "UPB": 0,
+            "RII": 0,
+            "FM": 0,
+            "VG": 1,
+            "Judge": 1
+          },
+          "protocol": "rpeval_archived_rubric_adapted_v1",
+          "lower_severity_is_better": true
+        },
+        "MATCHED": {
+          "matched": 1,
+          "total": 1,
+          "severity": {
+            "OPB": 0,
+            "UPB": 1,
+            "RII": 0,
+            "FM": 0,
+            "VG": 1,
+            "Judge": 1
+          },
+          "protocol": "rpeval_archived_rubric_adapted_v1",
+          "lower_severity_is_better": true
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RP": {
+          "matched": 0,
+          "total": 1
+        },
+        "Des2Gen": {
+          "matched": 0,
+          "total": 1
+        },
+        "MemAdapter": {
+          "matched": 1,
+          "total": 1
+        },
+        "IPE-C": {
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "contains_C",
+      "source_group": "a0e2a2b7be4c333ce89a9f6f473d521ef28123a9f7abf8e02264189a2bd09f79",
+      "grade": {
+        "BASE": {
+          "OPB": 2,
+          "UPB": 0,
+          "RII": 1,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 2,
+          "UPB": 1,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 2,
+          "UPB": 0,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 5
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 4
+        },
+        "TASK_ONLY": {
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 3,
+          "archived_matched": 3
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 1
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 5,
+            "positions": 8
+          },
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "aeb65e9dde495432e8a5112ec95fc60072ae90cc3ff0e5c7478442a003be7cae",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 3,
+          "RII": 2,
+          "FM": 1,
+          "VG": 1,
+          "Judge": 3,
+          "match": {
+            "matched": 2,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 0,
+          "UPB": 3,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 2,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 0,
+          "UPB": 3,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 2,
+            "positions": 8
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0,
+          "archived_matched": 2
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 2,
+          "UPB": 2,
+          "FM": 1,
+          "archived_matched": 2
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 1,
+          "archived_matched": 2
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 2,
+            "positions": 8
+          },
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 2,
+            "positions": 8
+          },
+          "OPB": 1,
+          "UPB": 3,
+          "FM": 1
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "c20c45baf8a7f2f7f78348a616ce5d7734beca60fecc6fd958c68e726c492294",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 4,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 4,
+          "match": {
+            "matched": 1,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 2,
+          "UPB": 0,
+          "RII": 3,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 3,
+          "match": {
+            "matched": 4,
+            "positions": 8
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 2,
+          "UPB": 0,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 6,
+            "positions": 8
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 7
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 5
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 1,
+          "archived_matched": 1
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 6,
+            "positions": 8
+          },
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 6,
+            "positions": 8
+          },
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 8
+          },
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "c663045d057b72ac403b33fddceb604079540a74499f397c0fab34b1620f27c2",
+      "grade": {
+        "BASE": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 1,
+          "VG": 3,
+          "Judge": 2,
+          "match": {
+            "matched": 4,
+            "positions": 7
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 3,
+          "FM": 1,
+          "VG": 3,
+          "Judge": 3,
+          "match": {
+            "matched": 4,
+            "positions": 7
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 4,
+            "positions": 7
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0,
+          "archived_matched": 4
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0,
+          "archived_matched": 4
+        },
+        "TASK_ONLY": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 1,
+          "archived_matched": 4
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 7
+          },
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 4,
+            "positions": 7
+          },
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "all_A",
+      "source_group": "d69ac950bce541615b4b909fc26375543d09ff9a569a623cab12aa3a044e2691",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 0,
+          "RII": 0,
+          "FM": 0,
+          "VG": 0,
+          "Judge": 0,
+          "match": {
+            "matched": 4,
+            "positions": 4
+          },
+          "full_match": 1
+        },
+        "OPEN": {
+          "OPB": 4,
+          "UPB": 0,
+          "RII": 2,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 4,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 4,
+          "UPB": 0,
+          "RII": 3,
+          "FM": 1,
+          "VG": 2,
+          "Judge": 4,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 0
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 5,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 0
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 4
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 1
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "contains_C",
+      "source_group": "e110d92a109be10efb9151f3a77580b1a6be43e917a36916f181d3348063f0a5",
+      "grade": {
+        "BASE": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 6,
+            "positions": 9
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 1,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 5,
+            "positions": 9
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 1,
+          "UPB": 1,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 6,
+            "positions": 9
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0,
+          "archived_matched": 6
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 6
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1,
+          "archived_matched": 5
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 6,
+            "positions": 9
+          },
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 6,
+            "positions": 9
+          },
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 6,
+            "positions": 9
+          },
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 1
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    },
+    {
+      "track": "multi",
+      "stratum": "B_only",
+      "source_group": "fcc097a410bd584ed006175b02e1f617ab0f8a42d5142410254c98863204a5fe",
+      "grade": {
+        "BASE": {
+          "OPB": 0,
+          "UPB": 2,
+          "RII": 1,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "full_match": 0
+        },
+        "OPEN": {
+          "OPB": 1,
+          "UPB": 2,
+          "RII": 2,
+          "FM": 0,
+          "VG": 1,
+          "Judge": 2,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "full_match": 0
+        },
+        "MATCHED": {
+          "OPB": 1,
+          "UPB": 1,
+          "RII": 2,
+          "FM": 0,
+          "VG": 2,
+          "Judge": 2,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "full_match": 0
+        }
+      },
+      "status": {
+        "OPEN": "DRAFTED",
+        "MATCHED": "DRAFTED"
+      },
+      "valid_ideas": {
+        "OPEN": true,
+        "MATCHED": true
+      },
+      "references": {
+        "RPR_PAPER_FULL": {
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 0,
+          "archived_matched": 3
+        },
+        "GEPA_SELECTED_BOUNDS": {
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 1,
+          "archived_matched": 3
+        },
+        "TASK_ONLY": {
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 0,
+          "archived_matched": 3
+        },
+        "DIRECT": {
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        },
+        "GENERIC_ALTERNATE": {
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "CONDITIONAL_ALTERNATE": {
+          "match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        }
+      },
+      "judge_invalid_fields": {
+        "OPEN": {},
+        "MATCHED": {}
+      }
+    }
+  ]
+}
