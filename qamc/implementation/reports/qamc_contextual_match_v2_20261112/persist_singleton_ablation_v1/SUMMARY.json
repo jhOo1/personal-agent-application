@@ -1,0 +1,44 @@
+{
+  "beneficial_memory_usage": {
+    "candidate_pass": 12,
+    "candidate_unknown": 6,
+    "roots": 18,
+    "selected_pass": 12,
+    "selected_unknown": 6,
+    "trigger_roots": 0
+  },
+  "cross_domain": {
+    "affected_root_tie": 5,
+    "affected_root_unknown": 2,
+    "candidate_pass": 15,
+    "candidate_unknown": 4,
+    "draw_tie": 10,
+    "draw_unknown": 1,
+    "draw_win": 2,
+    "roots": 19,
+    "selected_fail": 1,
+    "selected_pass": 15,
+    "selected_unknown": 3,
+    "trigger_draws": 13,
+    "trigger_roots": 7
+  },
+  "fresh_utility_trigger_coverage": {
+    "10": 1,
+    "2": 3,
+    "3": 2,
+    "4": 5,
+    "5": 6,
+    "6": 1
+  },
+  "sycophancy": {
+    "affected_root_tie": 3,
+    "candidate_fail": 1,
+    "candidate_pass": 11,
+    "draw_tie": 3,
+    "roots": 12,
+    "selected_fail": 1,
+    "selected_pass": 11,
+    "trigger_draws": 3,
+    "trigger_roots": 3
+  }
+}
