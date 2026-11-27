@@ -1,0 +1,41 @@
+{
+  "counts": {
+    "mask_trial_assigned": 16,
+    "switch_condition": 6,
+    "in_previous_scored_switch_panel": 5,
+    "incomplete": 1,
+    "comparable": 5,
+    "archived_tie": 5,
+    "masked_tie": 5
+  },
+  "totals": {
+    "original_IPE": {
+      "Match": 12,
+      "positions": 25,
+      "OPB": 7,
+      "UPB": 6,
+      "FM": 3
+    },
+    "original_Des2Gen": {
+      "Match": 12,
+      "positions": 25,
+      "OPB": 12,
+      "UPB": 0,
+      "FM": 3
+    },
+    "fresh_full": {
+      "Match": 12,
+      "positions": 25,
+      "OPB": 13,
+      "UPB": 2,
+      "FM": 2
+    },
+    "fresh_masked": {
+      "Match": 12,
+      "positions": 25,
+      "OPB": 14,
+      "UPB": 0,
+      "FM": 2
+    }
+  }
+}
