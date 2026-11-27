@@ -1,0 +1,716 @@
+{
+  "cost": {
+    "reported_tokens": 574186,
+    "requests": 127,
+    "statuses": {
+      "OK": 127
+    },
+    "unknown_usage": 0
+  },
+  "domains": {
+    "BenchPreS": {
+      "ACT": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "INVALID_WRITER": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "aar": 1,
+            "aar_positions": 2,
+            "completeness": 5,
+            "mr": 0,
+            "mr_positions": 3,
+            "nonbold": 0,
+            "nonbold_positions": 1
+          },
+          "FREE": {
+            "aar": 1,
+            "aar_positions": 2,
+            "completeness": 5,
+            "mr": 0,
+            "mr_positions": 3,
+            "nonbold": 0,
+            "nonbold_positions": 1
+          },
+          "ISOLATED": {
+            "aar": 1,
+            "aar_positions": 2,
+            "completeness": 5,
+            "mr": 0,
+            "mr_positions": 3,
+            "nonbold": 0,
+            "nonbold_positions": 1
+          },
+          "LOCAL_EDIT": {
+            "aar": 1,
+            "aar_positions": 2,
+            "completeness": 5,
+            "mr": 0,
+            "mr_positions": 3,
+            "nonbold": 0,
+            "nonbold_positions": 1
+          }
+        }
+      },
+      "KEEP": {
+        "assigned": 7,
+        "common": 7,
+        "disposition": {
+          "FREE": {
+            "KEEP": 7
+          },
+          "ISOLATED": {
+            "KEEP": 7
+          },
+          "LOCAL_EDIT": {
+            "KEEP": 7
+          }
+        },
+        "totals": {
+          "BASE": {
+            "aar": 13,
+            "aar_positions": 17,
+            "completeness": 33,
+            "mr": 0,
+            "mr_positions": 18,
+            "nonbold": 9,
+            "nonbold_positions": 13
+          },
+          "FREE": {
+            "aar": 13,
+            "aar_positions": 17,
+            "completeness": 33,
+            "mr": 0,
+            "mr_positions": 18,
+            "nonbold": 9,
+            "nonbold_positions": 13
+          },
+          "ISOLATED": {
+            "aar": 13,
+            "aar_positions": 17,
+            "completeness": 33,
+            "mr": 0,
+            "mr_positions": 18,
+            "nonbold": 9,
+            "nonbold_positions": 13
+          },
+          "LOCAL_EDIT": {
+            "aar": 13,
+            "aar_positions": 17,
+            "completeness": 33,
+            "mr": 0,
+            "mr_positions": 18,
+            "nonbold": 9,
+            "nonbold_positions": 13
+          }
+        }
+      },
+      "all": {
+        "assigned": 8,
+        "common": 8,
+        "disposition": {
+          "FREE": {
+            "INVALID_WRITER": 1,
+            "KEEP": 7
+          },
+          "ISOLATED": {
+            "EDIT": 1,
+            "KEEP": 7
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1,
+            "KEEP": 7
+          }
+        },
+        "totals": {
+          "BASE": {
+            "aar": 14,
+            "aar_positions": 19,
+            "completeness": 38,
+            "mr": 0,
+            "mr_positions": 21,
+            "nonbold": 9,
+            "nonbold_positions": 14
+          },
+          "FREE": {
+            "aar": 14,
+            "aar_positions": 19,
+            "completeness": 38,
+            "mr": 0,
+            "mr_positions": 21,
+            "nonbold": 9,
+            "nonbold_positions": 14
+          },
+          "ISOLATED": {
+            "aar": 14,
+            "aar_positions": 19,
+            "completeness": 38,
+            "mr": 0,
+            "mr_positions": 21,
+            "nonbold": 9,
+            "nonbold_positions": 14
+          },
+          "LOCAL_EDIT": {
+            "aar": 14,
+            "aar_positions": 19,
+            "completeness": 38,
+            "mr": 0,
+            "mr_positions": 21,
+            "nonbold": 9,
+            "nonbold_positions": 14
+          }
+        }
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "ACT": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "INVALID_BINDING": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "INVALID_BINDING": 1
+          },
+          "ISOLATED": {
+            "INVALID_BINDING": 1
+          },
+          "LOCAL_EDIT": {
+            "INVALID_BINDING": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "KEEP": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "KEEP": 1
+          },
+          "ISOLATED": {
+            "KEEP": 1
+          },
+          "LOCAL_EDIT": {
+            "KEEP": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "all": {
+        "assigned": 3,
+        "common": 3,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1,
+            "INVALID_BINDING": 1,
+            "KEEP": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1,
+            "INVALID_BINDING": 1,
+            "KEEP": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1,
+            "INVALID_BINDING": 1,
+            "KEEP": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 3
+          },
+          "FREE": {
+            "passed": 3
+          },
+          "ISOLATED": {
+            "passed": 3
+          },
+          "LOCAL_EDIT": {
+            "passed": 3
+          }
+        }
+      }
+    },
+    "PersistBench/cross_domain": {
+      "ACT": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "KEEP": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "KEEP": 1
+          },
+          "ISOLATED": {
+            "KEEP": 1
+          },
+          "LOCAL_EDIT": {
+            "KEEP": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 0
+          },
+          "FREE": {
+            "passed": 0
+          },
+          "ISOLATED": {
+            "passed": 0
+          },
+          "LOCAL_EDIT": {
+            "passed": 0
+          }
+        }
+      },
+      "all": {
+        "assigned": 2,
+        "common": 2,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1,
+            "KEEP": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1,
+            "KEEP": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1,
+            "KEEP": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      }
+    },
+    "PersistBench/sycophancy": {
+      "ACT": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "KEEP": {
+        "assigned": 2,
+        "common": 2,
+        "disposition": {
+          "FREE": {
+            "KEEP": 2
+          },
+          "ISOLATED": {
+            "KEEP": 2
+          },
+          "LOCAL_EDIT": {
+            "KEEP": 2
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 1
+          },
+          "FREE": {
+            "passed": 1
+          },
+          "ISOLATED": {
+            "passed": 1
+          },
+          "LOCAL_EDIT": {
+            "passed": 1
+          }
+        }
+      },
+      "all": {
+        "assigned": 3,
+        "common": 3,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1,
+            "KEEP": 2
+          },
+          "ISOLATED": {
+            "EDIT": 1,
+            "KEEP": 2
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1,
+            "KEEP": 2
+          }
+        },
+        "totals": {
+          "BASE": {
+            "passed": 2
+          },
+          "FREE": {
+            "passed": 2
+          },
+          "ISOLATED": {
+            "passed": 2
+          },
+          "LOCAL_EDIT": {
+            "passed": 2
+          }
+        }
+      }
+    },
+    "RPEval/multi": {
+      "ACT": {
+        "assigned": 5,
+        "common": 5,
+        "disposition": {
+          "FREE": {
+            "EDIT": 5
+          },
+          "ISOLATED": {
+            "EDIT": 5
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 5
+          }
+        },
+        "totals": {
+          "BASE": {
+            "FM": 2,
+            "OPB": 3,
+            "UPB": 6,
+            "matched": 20,
+            "positions": 33
+          },
+          "FREE": {
+            "FM": 2,
+            "OPB": 10,
+            "UPB": 2,
+            "matched": 19,
+            "positions": 33
+          },
+          "ISOLATED": {
+            "FM": 1,
+            "OPB": 5,
+            "UPB": 10,
+            "matched": 16,
+            "positions": 33
+          },
+          "LOCAL_EDIT": {
+            "FM": 1,
+            "OPB": 6,
+            "UPB": 6,
+            "matched": 16,
+            "positions": 33
+          }
+        }
+      },
+      "KEEP": {
+        "assigned": 7,
+        "common": 7,
+        "disposition": {
+          "FREE": {
+            "KEEP": 7
+          },
+          "ISOLATED": {
+            "KEEP": 7
+          },
+          "LOCAL_EDIT": {
+            "KEEP": 7
+          }
+        },
+        "totals": {
+          "BASE": {
+            "FM": 2,
+            "OPB": 1,
+            "UPB": 9,
+            "matched": 33,
+            "positions": 46
+          },
+          "FREE": {
+            "FM": 2,
+            "OPB": 1,
+            "UPB": 9,
+            "matched": 33,
+            "positions": 46
+          },
+          "ISOLATED": {
+            "FM": 2,
+            "OPB": 1,
+            "UPB": 9,
+            "matched": 33,
+            "positions": 46
+          },
+          "LOCAL_EDIT": {
+            "FM": 2,
+            "OPB": 1,
+            "UPB": 9,
+            "matched": 33,
+            "positions": 46
+          }
+        }
+      },
+      "all": {
+        "assigned": 12,
+        "common": 12,
+        "disposition": {
+          "FREE": {
+            "EDIT": 5,
+            "KEEP": 7
+          },
+          "ISOLATED": {
+            "EDIT": 5,
+            "KEEP": 7
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 5,
+            "KEEP": 7
+          }
+        },
+        "totals": {
+          "BASE": {
+            "FM": 4,
+            "OPB": 4,
+            "UPB": 15,
+            "matched": 53,
+            "positions": 79
+          },
+          "FREE": {
+            "FM": 4,
+            "OPB": 11,
+            "UPB": 11,
+            "matched": 52,
+            "positions": 79
+          },
+          "ISOLATED": {
+            "FM": 3,
+            "OPB": 6,
+            "UPB": 19,
+            "matched": 49,
+            "positions": 79
+          },
+          "LOCAL_EDIT": {
+            "FM": 3,
+            "OPB": 7,
+            "UPB": 15,
+            "matched": 49,
+            "positions": 79
+          }
+        }
+      }
+    },
+    "RPEval/single": {
+      "ACT": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "FM": 1,
+            "OPB": 0,
+            "UPB": 2,
+            "matched": 0,
+            "positions": 1
+          },
+          "FREE": {
+            "FM": 1,
+            "OPB": 0,
+            "UPB": 3,
+            "matched": 0,
+            "positions": 1
+          },
+          "ISOLATED": {
+            "FM": 0,
+            "OPB": 0,
+            "UPB": 1,
+            "matched": 1,
+            "positions": 1
+          },
+          "LOCAL_EDIT": {
+            "FM": 0,
+            "OPB": 0,
+            "UPB": 4,
+            "matched": 0,
+            "positions": 1
+          }
+        }
+      },
+      "all": {
+        "assigned": 1,
+        "common": 1,
+        "disposition": {
+          "FREE": {
+            "EDIT": 1
+          },
+          "ISOLATED": {
+            "EDIT": 1
+          },
+          "LOCAL_EDIT": {
+            "EDIT": 1
+          }
+        },
+        "totals": {
+          "BASE": {
+            "FM": 1,
+            "OPB": 0,
+            "UPB": 2,
+            "matched": 0,
+            "positions": 1
+          },
+          "FREE": {
+            "FM": 1,
+            "OPB": 0,
+            "UPB": 3,
+            "matched": 0,
+            "positions": 1
+          },
+          "ISOLATED": {
+            "FM": 0,
+            "OPB": 0,
+            "UPB": 1,
+            "matched": 1,
+            "positions": 1
+          },
+          "LOCAL_EDIT": {
+            "FM": 0,
+            "OPB": 0,
+            "UPB": 4,
+            "matched": 0,
+            "positions": 1
+          }
+        }
+      }
+    }
+  }
+}

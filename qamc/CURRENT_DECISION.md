@@ -1,8 +1,8 @@
 # QAMC 当前判断与下一次机制对照
 
-## 下一轮正在运行
+## 局部重求解已结算
 
-29 个已曝光任务的当前任务接口全部生成并通过机械核验。实验已冻结，将同一强稿中同一决定交给同一生成器，比较其能否看到被替换位置的原正文，同时固定其余文稿、任务职责、已绑定的原文证据及可写范围。归档复用项和新请求单列。生日题的任务接口可能遗漏可执行决定，需在最终分和行为中核对。[接口实测和恢复点](implementation/reports/qamc_contextual_match_v2_20261112/obligation_resolve_v1/INTERFACE_READOUT.md)
+29 道开发题四路均有分。RPEval 多偏好强稿 53/79、自由修订 52/79、看旧值与遮旧值局部稿均 49/79。BenchPreS 与 PersistBench 的同题终答指标持平。单偏好早午餐遮旧值获 1/1，但实际修改只细化位置和时间询问。当前版本不晋级，保留各基准强入口。[结果、病例与恢复](implementation/reports/qamc_contextual_match_v2_20261112/obligation_resolve_v1/FINAL.md)
 
 ## PersistBench 五臂已结算
 
