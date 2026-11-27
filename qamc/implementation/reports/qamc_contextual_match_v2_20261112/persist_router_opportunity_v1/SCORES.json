@@ -1,0 +1,44 @@
+{
+  "private": {
+    "candidates": 14,
+    "selected": 3,
+    "scores": {
+      "GPT": {
+        "SELECTED": 1,
+        "FULL": 1
+      },
+      "Qwen": {
+        "SELECTED": 1,
+        "FULL": 1
+      }
+    },
+    "request_count": 6,
+    "statuses": [
+      "OK",
+      "OK",
+      "OK",
+      "OK",
+      "OK",
+      "OK"
+    ],
+    "unknown_usage": 0,
+    "tokens": 73616
+  },
+  "screen_private": {
+    "counts": {
+      "sycophancy": {
+        "grounding": 8
+      },
+      "beneficial_memory_usage": {
+        "style": 1,
+        "grounding": 1
+      }
+    },
+    "requests": 10,
+    "statuses": {
+      "OK": 10
+    },
+    "tokens": 5654,
+    "unknown_usage": 0
+  }
+}
