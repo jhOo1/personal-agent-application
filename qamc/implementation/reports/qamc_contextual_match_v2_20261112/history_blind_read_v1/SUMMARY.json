@@ -1,0 +1,215 @@
+{
+  "domains": {
+    "BenchPreS": {
+      "assigned": 4,
+      "both_valid": 3,
+      "both_valid_totals": {
+        "BASE": {
+          "aar_denominator": 5,
+          "aar_numerator": 4,
+          "mr_denominator": 10,
+          "mr_numerator": 0,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 15
+        },
+        "BlindRead": {
+          "aar_denominator": 5,
+          "aar_numerator": 4,
+          "mr_denominator": 10,
+          "mr_numerator": 4,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 13
+        },
+        "FullRead": {
+          "aar_denominator": 5,
+          "aar_numerator": 4,
+          "mr_denominator": 10,
+          "mr_numerator": 3,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 12
+        }
+      },
+      "common": 4,
+      "common_totals": {
+        "BASE": {
+          "aar_denominator": 6,
+          "aar_numerator": 5,
+          "mr_denominator": 14,
+          "mr_numerator": 0,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 20
+        },
+        "BlindRead": {
+          "aar_denominator": 6,
+          "aar_numerator": 5,
+          "mr_denominator": 14,
+          "mr_numerator": 4,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 18
+        },
+        "FullRead": {
+          "aar_denominator": 6,
+          "aar_numerator": 5,
+          "mr_denominator": 14,
+          "mr_numerator": 5,
+          "nonbold_eligible": 2,
+          "nonbold_follow": 1,
+          "task_completeness": 16
+        }
+      },
+      "different_final_answers": 3,
+      "statuses": {
+        "BlindRead": {
+          "OK": 3,
+          "Unbound reading": 1
+        },
+        "FullRead": {
+          "OK": 4
+        }
+      }
+    },
+    "PersistBench": {
+      "assigned": 4,
+      "both_valid": 3,
+      "both_valid_totals": {
+        "BASE": {
+          "strict_pass": 1
+        },
+        "BlindRead": {
+          "strict_pass": 1
+        },
+        "FullRead": {
+          "strict_pass": 1
+        }
+      },
+      "by_track": {
+        "beneficial_memory_usage": {
+          "BASE": {
+            "strict_pass": 1
+          },
+          "BlindRead": {
+            "strict_pass": 1
+          },
+          "FullRead": {
+            "strict_pass": 1
+          }
+        },
+        "cross_domain": {
+          "BASE": {
+            "strict_pass": 1
+          },
+          "BlindRead": {
+            "strict_pass": 1
+          },
+          "FullRead": {
+            "strict_pass": 1
+          }
+        },
+        "sycophancy": {
+          "BASE": {
+            "strict_pass": 0
+          },
+          "BlindRead": {
+            "strict_pass": 0
+          },
+          "FullRead": {
+            "strict_pass": 0
+          }
+        }
+      },
+      "common": 4,
+      "common_totals": {
+        "BASE": {
+          "strict_pass": 2
+        },
+        "BlindRead": {
+          "strict_pass": 2
+        },
+        "FullRead": {
+          "strict_pass": 2
+        }
+      },
+      "different_final_answers": 1,
+      "statuses": {
+        "BlindRead": {
+          "OK": 3,
+          "Unbound reading": 1
+        },
+        "FullRead": {
+          "OK": 4
+        }
+      }
+    },
+    "RPEval": {
+      "assigned": 4,
+      "both_valid": 4,
+      "both_valid_totals": {
+        "BASE": {
+          "FM": 0,
+          "OPB": 6,
+          "UPB": 1,
+          "matches": 15,
+          "positions": 23
+        },
+        "BlindRead": {
+          "FM": 1,
+          "OPB": 8,
+          "UPB": 2,
+          "matches": 13,
+          "positions": 23
+        },
+        "FullRead": {
+          "FM": 1,
+          "OPB": 8,
+          "UPB": 2,
+          "matches": 13,
+          "positions": 23
+        }
+      },
+      "common": 4,
+      "common_totals": {
+        "BASE": {
+          "FM": 0,
+          "OPB": 6,
+          "UPB": 1,
+          "matches": 15,
+          "positions": 23
+        },
+        "BlindRead": {
+          "FM": 1,
+          "OPB": 8,
+          "UPB": 2,
+          "matches": 13,
+          "positions": 23
+        },
+        "FullRead": {
+          "FM": 1,
+          "OPB": 8,
+          "UPB": 2,
+          "matches": 13,
+          "positions": 23
+        }
+      },
+      "different_final_answers": 0,
+      "statuses": {
+        "BlindRead": {
+          "OK": 4
+        },
+        "FullRead": {
+          "OK": 4
+        }
+      }
+    }
+  },
+  "requests": 46,
+  "tokens_reported": 305878,
+  "transport": {
+    "OK": 46
+  },
+  "usage_unknown": 0
+}
