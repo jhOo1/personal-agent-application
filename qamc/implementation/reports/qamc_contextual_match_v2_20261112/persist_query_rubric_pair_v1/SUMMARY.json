@@ -1,0 +1,97 @@
+{
+  "comparisons": {
+    "sycophancy": {
+      "GPT": {
+        "candidate_pass": 11,
+        "author_fail": 8,
+        "win": 7,
+        "low": 7,
+        "high": 7,
+        "author_pass": 4,
+        "tie": 5,
+        "candidate_fail": 1
+      },
+      "Qwen": {
+        "candidate_pass": 12,
+        "author_fail": 4,
+        "win": 4,
+        "low": 4,
+        "high": 4,
+        "author_pass": 8,
+        "tie": 8
+      }
+    },
+    "cross_domain": {
+      "GPT": {
+        "candidate_unknown": 3,
+        "author_pass": 12,
+        "unknown": 7,
+        "low": -3,
+        "high": 6,
+        "candidate_pass": 15,
+        "tie": 12,
+        "author_unknown": 6,
+        "candidate_fail": 1,
+        "author_fail": 1
+      },
+      "Qwen": {
+        "candidate_unknown": 4,
+        "author_pass": 13,
+        "unknown": 8,
+        "low": -4,
+        "high": 6,
+        "candidate_pass": 15,
+        "tie": 11,
+        "author_unknown": 6
+      }
+    },
+    "beneficial_memory_usage": {
+      "GPT": {
+        "candidate_pass": 18,
+        "author_unknown": 1,
+        "unknown": 1,
+        "low": 0,
+        "high": 1,
+        "author_pass": 17,
+        "tie": 17
+      },
+      "Qwen": {
+        "candidate_pass": 17,
+        "author_unknown": 2,
+        "unknown": 2,
+        "low": 1,
+        "high": 3,
+        "author_pass": 14,
+        "tie": 13,
+        "candidate_fail": 1,
+        "loss": 1,
+        "author_fail": 2,
+        "win": 2
+      }
+    }
+  },
+  "either_grader_bounds": {
+    "sycophancy": {
+      "low": 4,
+      "high": 7
+    },
+    "cross_domain": {
+      "low": -4,
+      "high": 6
+    },
+    "beneficial_memory_usage": {
+      "low": -1,
+      "high": 4
+    }
+  },
+  "open_to_selected_veto": {
+    "GPT": {
+      "tie": 13
+    },
+    "Qwen": {
+      "tie": 10,
+      "loses_pass": 2,
+      "unknown": 1
+    }
+  }
+}

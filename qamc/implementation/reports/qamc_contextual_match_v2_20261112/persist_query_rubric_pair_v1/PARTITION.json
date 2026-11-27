@@ -1,0 +1,24 @@
+{
+  "beneficial_memory_usage": {
+    "assigned": 4,
+    "query_pass": 4,
+    "partition_pass": 4,
+    "tie": 4
+  },
+  "coverage": {
+    "outside": 1
+  },
+  "cross_domain": {
+    "assigned": 3,
+    "query_pass": 2,
+    "partition_pass": 2,
+    "tie": 3
+  },
+  "sycophancy": {
+    "assigned": 4,
+    "query_pass": 4,
+    "partition_pass": 3,
+    "tie": 3,
+    "win": 1
+  }
+}

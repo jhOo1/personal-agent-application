@@ -287,7 +287,14 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         require([fresh["tables"][judge][a]["pass"] for a in ("SELECTED","FULL","RUBRIC")], want, judge + " fresh strict passes")
     require(fresh["pairs"]["Qwen"]["SELECTED vs FULL"]["high"], -3, "Fresh utility best-case net")
     require("lost at least three strict utility passes" in paper, True, "New utility interpretation")
-    return 35 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    direct = json.loads((root / "persist_query_rubric_pair_v1/SUMMARY.json").read_text())
+    paired = direct["comparisons"]["beneficial_memory_usage"]["Qwen"]
+    require([paired[k] for k in ("win","loss","tie","unknown")], [2,1,13,2], "Author defense utility pairs")
+    require(direct["either_grader_bounds"]["beneficial_memory_usage"], {"low":-1,"high":4}, "Utility judge sensitivity")
+    partition = json.loads((root / "persist_query_rubric_pair_v1/PARTITION.json").read_text())
+    require(sum(row.get("tie",0) for row in partition.values()), 10, "Partition paired ties")
+    require("ten of 11 common roots tied" in paper, True, "Partition manuscript claim")
+    return 39 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
