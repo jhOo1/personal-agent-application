@@ -1,0 +1,21 @@
+{
+  "known_route": {
+    "history_on": 137,
+    "lazy_nominal_calls": 727,
+    "rp_nominal_calls": 885,
+    "history_off": 158
+  },
+  "three_scored_endpoints": {
+    "history_on": 125,
+    "lazy_nominal_calls": 673,
+    "rp_nominal_calls": 822,
+    "IPE_C_Match": 953,
+    "TASK_ONLY_Match": 874,
+    "RPR_PAPER_FULL_Match": 824,
+    "positions": 1462,
+    "history_off": 149
+  },
+  "allocation": {
+    "route_unknown": 5
+  }
+}
