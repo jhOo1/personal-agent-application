@@ -1,0 +1,22 @@
+{
+  "additional_paired_answers": {
+    "GEPA_SELECTED_BOUNDS_literal_present": 0,
+    "PAPER_SELECTIVITY_literal_present": 5,
+    "answer_pairs": 9,
+    "paired_nickname_attributes": 9
+  },
+  "all_paired_answers": {
+    "GEPA_SELECTED_BOUNDS_literal_present": 0,
+    "PAPER_SELECTIVITY_literal_present": 44,
+    "answer_pairs": 115,
+    "paired_nickname_attributes": 115
+  },
+  "new_calls": 0,
+  "original_scores_replaced": 0,
+  "strict_qwen_pairs": {
+    "GEPA_SELECTED_BOUNDS_literal_present": 0,
+    "PAPER_SELECTIVITY_literal_present": 39,
+    "answer_pairs": 106,
+    "paired_nickname_attributes": 106
+  }
+}

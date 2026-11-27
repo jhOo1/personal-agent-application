@@ -1,0 +1,14 @@
+{
+  "Qwen_to_model_by_stratum": {},
+  "attempted_requests": 2,
+  "complete_paired_model_votes": 0,
+  "human_reviews": 0,
+  "old_scores_replaced": 0,
+  "paired_labels_by_stratum": {},
+  "reported_tokens": 0,
+  "request_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 1,
+    "INVALID_COMPLETION": 1
+  },
+  "unknown_usage": 2
+}
