@@ -1,0 +1,21 @@
+{
+  "source_commit": "6b517dc90d4c7e0ebc4d2305684d45051f792cc9",
+  "author_baseline_prompt_sha256": "b0a59357abd763a01f8d65124a407640bb99ff2b8fb57cee25e31e1b56d2e1ea",
+  "panel_assigned": 18,
+  "counts": {
+    "all_formal": {
+      "archived_rows": 300,
+      "original_stage1_wire_verified": 276,
+      "reusable_stage1": 265,
+      "cards": 1407,
+      "with_full_method_answer": 261
+    },
+    "shared_exposed_panel": {
+      "archived_rows": 18,
+      "original_stage1_wire_verified": 17,
+      "reusable_stage1": 16,
+      "cards": 93,
+      "with_full_method_answer": 16
+    }
+  }
+}
