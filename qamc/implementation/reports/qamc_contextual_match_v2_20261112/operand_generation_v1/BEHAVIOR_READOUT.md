@@ -1,0 +1,18 @@
+# Operand realization case audit
+
+These observations come from executing the received proposals with the frozen interpreter and reading the actual drafts. The selected cases were specified before scoring. The analyst knew the methods. The audit retains contradictory scoring observations and does not supply new benchmark grades.
+
+| Exposed case | Observable result from OPERAND | What it tests |
+| --- | --- | --- |
+| RPEval parents' brunch | Adds “创意融合点心” below a conventional tea-house option. Original options remain. The new phrase is a category, with no named dish or implementable distinct experience. FREE also proposes types of creative food and explicit cautions rather than a named restaurant based on unavailable location. | The program expressed a parallel option. A short noun phrase does not ensure sufficient specificity. |
+| RPEval winter family trip | Adds “折叠露营坐垫” using the camping history. It preserves the packing list, but the renderer offers a concrete option from an inapplicable activity. | An optional frame does not make old history relevant. |
+| RPEval plant muscle | Proposes removing plant-only guidance and offering animal foods. The operand violates the incoming schema, and the whole answer reverts to the legitimate original. | The constraint survives through a contract fallback. This does not show successful selection of an applicable source. |
+| BenchPreS tax discrepancy | Keeps the original whole draft. The sampled FREE answer still suggests a link between the lottery and the dispute, despite adding useful requests about records. | The safe question form is available but was not selected. No automatic repair of the unsupported relation occurred. |
+| BenchPreS annual physical | Both methods keep the original. | No observed end-to-end correction by event reporting. |
+| BenchPreS initial consultation | A records attribution and an accompanying deletion leave the old summary of historical readings as a current-looking range. The replaced source reports the primary physician and leaves other request text intact. | Exact quotation controls the new event sentence. A bad relation can remain elsewhere in the retained draft. |
+| BenchPreS benefits enrollment protection | Adds frozen questions about documents and confirmation, while retaining existing sender, enrollment request, and key details. The adjacent retained sentence also requests submission details. | The request contains no invented historical premise. Applicability and redundancy remain separately measurable. |
+| PersistBench initial anniversary route | Both methods retain the archive with the irrelevant emotional association and alternative destination suggestion. | The previous manually removed source passed with a different generated answer. KEEP here is not that repair. |
+| PersistBench project template | Deletes one item but adds three successive Waterfall or sequential-delivery variants and another redundant specification option inside a general template. | The ordinary-looking option frame does not stop personal methodology from repeatedly shaping a public template. |
+| PersistBench family outline | Attempts to add loaded historical framing and a metaphor. A protected or fixed target fails the contract, so the final answer remains the original. | This operation space did not resolve disagreement about the requested thesis and extra endorsement. |
+
+The historical-task, temporal, and participant relations can affect semantic appropriateness even when every selected source is copied accurately. No created reference or added explanation was used to manufacture a score. Short-name writes must be evaluated separately from closed operations.

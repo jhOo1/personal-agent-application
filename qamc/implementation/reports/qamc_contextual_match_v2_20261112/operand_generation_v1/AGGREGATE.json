@@ -1,0 +1,727 @@
+{
+  "benchmark": {
+    "RPEval": {
+      "assigned": 8,
+      "groups": 8,
+      "statuses": {
+        "FREE": {
+          "KEEP": 1,
+          "EDITED": 7
+        },
+        "OPERAND": {
+          "CONTRACT_FALLBACK": 2,
+          "KEEP": 3,
+          "EDITED": 3
+        }
+      },
+      "operations": {
+        "OFFER_ALTERNATIVE": 3
+      },
+      "common_three": {
+        "common": 8,
+        "groups": 8,
+        "left_right": [
+          "FREE",
+          "OPERAND"
+        ],
+        "right_wins": 1,
+        "right_losses": 0,
+        "ties": 7,
+        "metrics": {
+          "BASE": {
+            "match": 5,
+            "positions": 8,
+            "OPB": 1,
+            "UPB": 2,
+            "FM": 3
+          },
+          "FREE": {
+            "match": 4,
+            "positions": 8,
+            "OPB": 1,
+            "UPB": 0,
+            "FM": 7
+          },
+          "OPERAND": {
+            "match": 5,
+            "positions": 8,
+            "OPB": 1,
+            "UPB": 2,
+            "FM": 5
+          }
+        }
+      },
+      "primary_delta_bounds": {
+        "OPERAND_minus_FREE": [
+          1,
+          1
+        ],
+        "OPERAND_minus_BASE": [
+          0,
+          0
+        ],
+        "FREE_minus_BASE": [
+          -1,
+          -1
+        ]
+      },
+      "matched_base_by_arm": {
+        "FREE": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "BASE",
+            "FREE"
+          ],
+          "right_wins": 1,
+          "right_losses": 2,
+          "ties": 5,
+          "metrics": {
+            "BASE": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 3
+            },
+            "FREE": {
+              "match": 4,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 0,
+              "FM": 7
+            }
+          }
+        },
+        "OPERAND": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "BASE",
+            "OPERAND"
+          ],
+          "right_wins": 1,
+          "right_losses": 1,
+          "ties": 6,
+          "metrics": {
+            "BASE": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 3
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        }
+      },
+      "matched_reference": {
+        "Des2Gen": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "Des2Gen",
+            "OPERAND"
+          ],
+          "right_wins": 2,
+          "right_losses": 1,
+          "ties": 5,
+          "metrics": {
+            "Des2Gen": {
+              "match": 4,
+              "positions": 8,
+              "OPB": 0,
+              "UPB": 7,
+              "FM": 9
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        },
+        "IPE_C": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "IPE_C",
+            "OPERAND"
+          ],
+          "right_wins": 3,
+          "right_losses": 1,
+          "ties": 4,
+          "metrics": {
+            "IPE_C": {
+              "match": 3,
+              "positions": 8,
+              "OPB": 0,
+              "UPB": 13,
+              "FM": 13
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        },
+        "MemAdapter": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "MemAdapter",
+            "OPERAND"
+          ],
+          "right_wins": 0,
+          "right_losses": 1,
+          "ties": 7,
+          "metrics": {
+            "MemAdapter": {
+              "match": 6,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 0,
+              "FM": 4
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        },
+        "RP": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "RP",
+            "OPERAND"
+          ],
+          "right_wins": 3,
+          "right_losses": 1,
+          "ties": 4,
+          "metrics": {
+            "RP": {
+              "match": 3,
+              "positions": 8,
+              "OPB": 0,
+              "UPB": 7,
+              "FM": 9
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        },
+        "TASK_ONLY": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "TASK_ONLY",
+            "OPERAND"
+          ],
+          "right_wins": 3,
+          "right_losses": 1,
+          "ties": 4,
+          "metrics": {
+            "TASK_ONLY": {
+              "match": 3,
+              "positions": 8,
+              "OPB": 0,
+              "UPB": 18,
+              "FM": 16
+            },
+            "OPERAND": {
+              "match": 5,
+              "positions": 8,
+              "OPB": 1,
+              "UPB": 2,
+              "FM": 5
+            }
+          }
+        }
+      }
+    },
+    "BenchPreS": {
+      "assigned": 8,
+      "groups": 4,
+      "statuses": {
+        "FREE": {
+          "EDITED": 7,
+          "KEEP": 1
+        },
+        "OPERAND": {
+          "KEEP": 5,
+          "EDITED": 3
+        }
+      },
+      "operations": {
+        "REPORT_EVENT": 1,
+        "TRIM": 2,
+        "ASK_OPEN": 1
+      },
+      "common_three": {
+        "common": 8,
+        "groups": 4,
+        "left_right": [
+          "FREE",
+          "OPERAND"
+        ],
+        "right_wins": 0,
+        "right_losses": 2,
+        "ties": 6,
+        "metrics": {
+          "BASE": {
+            "aar": 14,
+            "aar_possible": 19,
+            "nonbold": 9,
+            "nonbold_possible": 14,
+            "mr": 0,
+            "mr_possible": 21,
+            "completeness": 38
+          },
+          "FREE": {
+            "aar": 15,
+            "aar_possible": 19,
+            "nonbold": 11,
+            "nonbold_possible": 14,
+            "mr": 0,
+            "mr_possible": 21,
+            "completeness": 36
+          },
+          "OPERAND": {
+            "aar": 14,
+            "aar_possible": 19,
+            "nonbold": 9,
+            "nonbold_possible": 14,
+            "mr": 0,
+            "mr_possible": 21,
+            "completeness": 37
+          }
+        }
+      },
+      "primary_delta_bounds": {
+        "OPERAND_minus_FREE": [
+          -2,
+          -2
+        ],
+        "OPERAND_minus_BASE": [
+          0,
+          0
+        ],
+        "FREE_minus_BASE": [
+          2,
+          2
+        ]
+      },
+      "matched_base_by_arm": {
+        "FREE": {
+          "common": 8,
+          "groups": 4,
+          "left_right": [
+            "BASE",
+            "FREE"
+          ],
+          "right_wins": 2,
+          "right_losses": 0,
+          "ties": 6,
+          "metrics": {
+            "BASE": {
+              "aar": 14,
+              "aar_possible": 19,
+              "nonbold": 9,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 38
+            },
+            "FREE": {
+              "aar": 15,
+              "aar_possible": 19,
+              "nonbold": 11,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 36
+            }
+          }
+        },
+        "OPERAND": {
+          "common": 8,
+          "groups": 4,
+          "left_right": [
+            "BASE",
+            "OPERAND"
+          ],
+          "right_wins": 0,
+          "right_losses": 0,
+          "ties": 8,
+          "metrics": {
+            "BASE": {
+              "aar": 14,
+              "aar_possible": 19,
+              "nonbold": 9,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 38
+            },
+            "OPERAND": {
+              "aar": 14,
+              "aar_possible": 19,
+              "nonbold": 9,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 37
+            }
+          }
+        }
+      },
+      "matched_reference": {
+        "Selectivity": {
+          "common": 8,
+          "groups": 4,
+          "left_right": [
+            "Selectivity",
+            "OPERAND"
+          ],
+          "right_wins": 2,
+          "right_losses": 2,
+          "ties": 4,
+          "metrics": {
+            "Selectivity": {
+              "aar": 12,
+              "aar_possible": 19,
+              "nonbold": 9,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 37
+            },
+            "OPERAND": {
+              "aar": 14,
+              "aar_possible": 19,
+              "nonbold": 9,
+              "nonbold_possible": 14,
+              "mr": 0,
+              "mr_possible": 21,
+              "completeness": 37
+            }
+          }
+        }
+      }
+    },
+    "PersistBench": {
+      "assigned": 8,
+      "groups": 8,
+      "statuses": {
+        "FREE": {
+          "KEEP": 1,
+          "EDITED": 6,
+          "FAILED_DELIVERY_UNKNOWN": 1
+        },
+        "OPERAND": {
+          "KEEP": 5,
+          "CONTRACT_FALLBACK": 1,
+          "EDITED": 2
+        }
+      },
+      "operations": {
+        "TRIM": 1,
+        "OFFER_ALTERNATIVE": 5
+      },
+      "common_three": {
+        "common": 7,
+        "groups": 7,
+        "left_right": [
+          "FREE",
+          "OPERAND"
+        ],
+        "right_wins": 1,
+        "right_losses": 0,
+        "ties": 6,
+        "metrics": {
+          "BASE": {
+            "cross_domain_allocated": 1,
+            "cross_domain_passes": 0,
+            "sycophancy_allocated": 3,
+            "sycophancy_passes": 2,
+            "beneficial_memory_usage_allocated": 3,
+            "beneficial_memory_usage_passes": 3
+          },
+          "FREE": {
+            "cross_domain_allocated": 1,
+            "cross_domain_passes": 0,
+            "sycophancy_allocated": 3,
+            "sycophancy_passes": 1,
+            "beneficial_memory_usage_allocated": 3,
+            "beneficial_memory_usage_passes": 3
+          },
+          "OPERAND": {
+            "cross_domain_allocated": 1,
+            "cross_domain_passes": 0,
+            "sycophancy_allocated": 3,
+            "sycophancy_passes": 2,
+            "beneficial_memory_usage_allocated": 3,
+            "beneficial_memory_usage_passes": 3
+          }
+        }
+      },
+      "primary_delta_bounds": {
+        "OPERAND_minus_FREE": [
+          1,
+          2
+        ],
+        "OPERAND_minus_BASE": [
+          0,
+          0
+        ],
+        "FREE_minus_BASE": [
+          -2,
+          -1
+        ]
+      },
+      "matched_base_by_arm": {
+        "FREE": {
+          "common": 7,
+          "groups": 7,
+          "left_right": [
+            "BASE",
+            "FREE"
+          ],
+          "right_wins": 0,
+          "right_losses": 1,
+          "ties": 6,
+          "metrics": {
+            "BASE": {
+              "cross_domain_allocated": 1,
+              "cross_domain_passes": 0,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "FREE": {
+              "cross_domain_allocated": 1,
+              "cross_domain_passes": 0,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 1,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        },
+        "OPERAND": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "BASE",
+            "OPERAND"
+          ],
+          "right_wins": 0,
+          "right_losses": 0,
+          "ties": 8,
+          "metrics": {
+            "BASE": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        }
+      },
+      "matched_reference": {
+        "MEMADAPTER_FULL": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "MEMADAPTER_FULL",
+            "OPERAND"
+          ],
+          "right_wins": 0,
+          "right_losses": 0,
+          "ties": 8,
+          "metrics": {
+            "MEMADAPTER_FULL": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        },
+        "PB_FILTER_NATIVE": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "PB_FILTER_NATIVE",
+            "OPERAND"
+          ],
+          "right_wins": 1,
+          "right_losses": 0,
+          "ties": 7,
+          "metrics": {
+            "PB_FILTER_NATIVE": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 1,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        },
+        "PB_GEPA": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "PB_GEPA",
+            "OPERAND"
+          ],
+          "right_wins": 1,
+          "right_losses": 0,
+          "ties": 7,
+          "metrics": {
+            "PB_GEPA": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 1,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        },
+        "PB_NO_MEMORY": {
+          "common": 7,
+          "groups": 7,
+          "left_right": [
+            "PB_NO_MEMORY",
+            "OPERAND"
+          ],
+          "right_wins": 2,
+          "right_losses": 1,
+          "ties": 4,
+          "metrics": {
+            "PB_NO_MEMORY": {
+              "cross_domain_allocated": 1,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 1
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 1,
+              "cross_domain_passes": 0,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        },
+        "PB_RUBRIC": {
+          "common": 8,
+          "groups": 8,
+          "left_right": [
+            "PB_RUBRIC",
+            "OPERAND"
+          ],
+          "right_wins": 1,
+          "right_losses": 1,
+          "ties": 6,
+          "metrics": {
+            "PB_RUBRIC": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 2,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 1,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            },
+            "OPERAND": {
+              "cross_domain_allocated": 2,
+              "cross_domain_passes": 1,
+              "sycophancy_allocated": 3,
+              "sycophancy_passes": 2,
+              "beneficial_memory_usage_allocated": 3,
+              "beneficial_memory_usage_passes": 3
+            }
+          }
+        }
+      }
+    }
+  },
+  "cost": {
+    "requests": 126,
+    "stages": {
+      "OperandEdit": 48,
+      "SingleDetailJudge": 10,
+      "OperandBenchGrade": 60,
+      "OperandPersistGrade": 8
+    },
+    "statuses": {
+      "OK": 125,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    },
+    "tokens": 586458,
+    "unknown_usage": 1,
+    "retries": 0
+  }
+}

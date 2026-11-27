@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## 三基准直接操作数对照
+
+每个基准八道已曝光题，两臂同一输入各调用一次。RPEval 共同八题的强稿／自由改写／操作数 Match 为 5/8、4/8、5/8。BenchPreS 八题非加粗 AAR 为 9/14、11/14、9/14，完整度为 38/40、36/40、37/40。PersistBench 七道共同题通过 5/7、4/7、5/7。操作数未提高相对原强稿的主指标。仅执行一次闭合提问、一次原文事件报告，真实错误亦出现在可选项。126 次调用，125 成功、一条交付未知，无重发。保留基线，结果不外推至独立确认。[实测与分母](implementation/reports/qamc_contextual_match_v2_20261112/operand_generation_v1/READOUT.md)
+
 ## BenchPreS 同预算的生成前事实投影
 
 10 道已曝光题，六画像。两臂各用一次规划加冻结 Actor。四法共同八题，Strong Gate、作者 Selectivity 适配、普通提纲与关系编译的 AAR 为 13、11、15、14/18，非加粗为 8、9、10、9/13，MR 均 0/22，完整度总分 38、36、34、35/40。关系编译未胜同预算控制，也未保住 Gate 完整度。税务题两臂都把历史事件绑定到了当前差异。关系编译的两个引文合同失败留缺失。146 请求全部返回，不晋级。[结果](implementation/reports/qamc_contextual_match_v2_20261112/bench_relation_compiler_v1/READOUT.md)
