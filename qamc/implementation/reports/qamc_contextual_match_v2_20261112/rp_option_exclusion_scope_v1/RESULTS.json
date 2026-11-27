@@ -1,0 +1,171 @@
+{
+  "tables": {
+    "diagnostic/2/raw": {
+      "ordinary": {
+        "tasks": 2,
+        "Match": 6,
+        "positions": 9,
+        "OPB": 2,
+        "UPB": 2,
+        "FM": 0
+      },
+      "scope": {
+        "tasks": 2,
+        "Match": 6,
+        "positions": 9,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 1
+      }
+    },
+    "diagnostic/3/raw": {
+      "ordinary": {
+        "tasks": 2,
+        "Match": 6,
+        "positions": 9,
+        "OPB": 2,
+        "UPB": 2,
+        "FM": 0
+      },
+      "scope": {
+        "tasks": 2,
+        "Match": 6,
+        "positions": 9,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 1
+      },
+      "IPE-C": {
+        "tasks": 2,
+        "Match": 6,
+        "positions": 9,
+        "OPB": 2,
+        "UPB": 2,
+        "FM": 0
+      }
+    },
+    "primary/2/raw": {
+      "ordinary": {
+        "tasks": 14,
+        "Match": 47,
+        "positions": 88,
+        "OPB": 25,
+        "UPB": 11,
+        "FM": 5
+      },
+      "scope": {
+        "tasks": 14,
+        "Match": 46,
+        "positions": 88,
+        "OPB": 26,
+        "UPB": 9,
+        "FM": 5
+      }
+    },
+    "primary/2/unflagged": {
+      "ordinary": {
+        "tasks": 11,
+        "Match": 40,
+        "positions": 72,
+        "OPB": 21,
+        "UPB": 6,
+        "FM": 5
+      },
+      "scope": {
+        "tasks": 11,
+        "Match": 39,
+        "positions": 72,
+        "OPB": 21,
+        "UPB": 7,
+        "FM": 3
+      }
+    },
+    "primary/3/raw": {
+      "ordinary": {
+        "tasks": 14,
+        "Match": 47,
+        "positions": 88,
+        "OPB": 25,
+        "UPB": 11,
+        "FM": 5
+      },
+      "scope": {
+        "tasks": 14,
+        "Match": 46,
+        "positions": 88,
+        "OPB": 26,
+        "UPB": 9,
+        "FM": 5
+      },
+      "IPE-C": {
+        "tasks": 14,
+        "Match": 48,
+        "positions": 88,
+        "OPB": 20,
+        "UPB": 11,
+        "FM": 3
+      }
+    },
+    "primary/3/unflagged": {
+      "ordinary": {
+        "tasks": 10,
+        "Match": 36,
+        "positions": 66,
+        "OPB": 19,
+        "UPB": 6,
+        "FM": 4
+      },
+      "scope": {
+        "tasks": 10,
+        "Match": 35,
+        "positions": 66,
+        "OPB": 19,
+        "UPB": 7,
+        "FM": 2
+      },
+      "IPE-C": {
+        "tasks": 10,
+        "Match": 37,
+        "positions": 66,
+        "OPB": 13,
+        "UPB": 9,
+        "FM": 3
+      }
+    }
+  },
+  "comparisons": {
+    "diagnostic/2/raw": {
+      "above_all_controls": 0,
+      "tie": 2
+    },
+    "diagnostic/3/raw": {
+      "above_all_controls": 0,
+      "tie": 2
+    },
+    "primary/2/raw": {
+      "above_all_controls": 0,
+      "tie": 13,
+      "loss": 1
+    },
+    "primary/2/unflagged": {
+      "above_all_controls": 0,
+      "tie": 10,
+      "loss": 1
+    },
+    "primary/3/raw": {
+      "above_all_controls": 0,
+      "tie": 13,
+      "loss": 1
+    },
+    "primary/3/unflagged": {
+      "above_all_controls": 0,
+      "tie": 9,
+      "loss": 1
+    }
+  },
+  "status": {
+    "OK": 64
+  },
+  "usage": 164376,
+  "unknown_usage": 0
+}
