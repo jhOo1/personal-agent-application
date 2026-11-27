@@ -324,7 +324,14 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         for value in passes.values():
             require(f"{value}/{n}" in paper.split("To test whether the project grader")[1].split("\\section")[0],
                     True, f"Released answer bridge {row['category']}")
-    return 47 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    fresh_dir = root / "rpe_ipe_fresh_repeat_v1"
+    fresh = json.loads((fresh_dir / "VERIFICATION.json").read_text())["deployments"]
+    for dep in fresh:
+        methods = dep["all_complete"]["methods"]
+        values = [methods[m]["match"] for m in ("IPE_C", "TASK_ONLY", "RP_FULL")]
+        phrase = f"{values[0]}, {values[1]} and {values[2]} out of {methods['IPE_C']['positions']}"
+        require(phrase in paper, True, f"Fresh IPE-C deployment {dep['deployment']}")
+    return 49 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
