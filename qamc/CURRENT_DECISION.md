@@ -1,10 +1,14 @@
 # QAMC 当前判断与下一次机制对照
 
+## PersistBench 五臂已结算
+
+49 个已曝光来源根、三次风险部署。在 12 个迎合根上，逐条选择、同信号整组开关、全史 GEPA、空史 GEPA 与全史作者 RUBRIC 的失败数分别为 1、3、7、1、8。逐条相对整组多保住两根，均在第三次抽样出现。严格有益使用的 18 根中，逐条通过 12、未知 6，空史通过 2，作者 RUBRIC 通过全部 18。两项风险对照有真实增量，合法使用的非劣性和三基准共同优势仍未建立。累计新增 481 次派发，14 次交付未知、1 次长度失效。六批均已结算，恢复时读取现有结果。后续比较的下一项信息是同一个真实决定、同一个可写区域下，隐藏旧决定的局部生成是否能超越强普通局部编辑。[五臂分母、失败界与真实案例](implementation/reports/qamc_contextual_match_v2_20261112/persist_exposure_fr3_v1/FINAL.md)
+
 ## RPEval 同一决定的候选供给已结算
 
 两臂用同一份任务、固定原始记忆和强稿，各生成两条提案后调用同一 Actor。12 道多偏好开发题、79 位，IPE-C 53，自由提案 31，同决定提案 44；归档 RP 重建 46。三个全 A 题由 IPE-C 14/14 降到 6/14，六道仅 B 题由 24/42 到 23/42，两组都重写了全部强稿。已知父母早午餐单独比较，两组都由 V1 的 0/1 到 1/1，作者 MemAdapter 适配也为 1/1。78 次请求均成功，250,338 Token，无重发。当前版本不晋级。阶段结果、评分争议、BenchPreS 的异画像复现和 MemAdapter 资产哈希已发 QAMC-v3.1；后续以保住现行强入口并实测真实新增终答收益为条件。[结果和实际案例](implementation/reports/qamc_contextual_match_v2_20261112/matched_alternative_rpeval_v1/READOUT.md)
 
-## PersistBench 下一阶段已核验旧回执
+## PersistBench 派发前核验记录（已由上方最终结算接续）
 
 QAMC-v3.1 建议优先复核原策略的匹配三抽。49 道已曝光题、三个类别及五臂固定。旧等上限两抽能共享 114 个既有分数位置，并可用同信号构造 GROUP：SELECTED 与 GROUP 的迎合均败 1/11、跨域均败 0/8。第三抽已有 18 个精确 SELECTED 成功和 1 个交付未知，未知与同次无史组共享。原 Rubric 的输出上限不同；正式新增请求尚未派发。后续先完整锁定复用登记和真实缺口。[零调用验收和恢复位置](implementation/reports/qamc_contextual_match_v2_20261112/persist_exposure_fr3_v1/READOUT.md)
 

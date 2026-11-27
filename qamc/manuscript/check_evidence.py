@@ -214,7 +214,17 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         paper, re.S,
     )
     require([count(t) for t in match.groups()] if match else None, expected, "BenchPreS fixed-answer evaluator census")
-    return 8 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    fr3 = json.loads((root / "persist_exposure_fr3_v1/SETTLEMENT_AUDIT.json").read_text())
+    tracks = ("sycophancy", "cross_domain", "beneficial_memory_usage")
+    policies = {"Selected": "SELECTED", "Switch": "GROUP", "Full": "FULL", "Empty": "EMPTY", "Rubric": "RUBRIC"}
+    checked = []
+    for method, *cells in latex_rows(paper, "persist_three"):
+        checked.append(method)
+        scores = [fr3["root_outcomes"][track][policies[method]] for track in tracks]
+        values = [f"{stats.get('failure', 0)}/{stats.get('unknown', 0)}" for stats in scores]
+        require(cells, values, f"Three deployments {method}")
+    require(checked, list(policies), "Three deployment policies")
+    return 8 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

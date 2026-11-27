@@ -1,0 +1,571 @@
+{
+  "cases": 49,
+  "settled_repeat_positions": 111,
+  "outcomes": {
+    "cross_domain": {
+      "1": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 18,
+            "left_pass": 18,
+            "right_pass": 17,
+            "right_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            -1,
+            0
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_failure": 1,
+            "right_pass": 19,
+            "loss": 1,
+            "left_pass": 17,
+            "tie": 17,
+            "left_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            1,
+            2
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 3,
+            "tie": 16,
+            "left_pass": 17,
+            "right_pass": 15,
+            "left_unknown": 1,
+            "right_unknown": 1,
+            "pair_unknown": 1,
+            "win": 2
+          },
+          "failure_difference_bounds": [
+            -2,
+            -2
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 3,
+            "right_failure": 1,
+            "tie": 16,
+            "left_pass": 15,
+            "right_pass": 18,
+            "left_unknown": 1,
+            "pair_unknown": 1,
+            "loss": 2
+          },
+          "failure_difference_bounds": [
+            2,
+            3
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 19,
+            "left_pass": 18,
+            "right_pass": 18
+          },
+          "failure_difference_bounds": [
+            0,
+            0
+          ]
+        }
+      },
+      "2": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 18,
+            "left_pass": 18,
+            "right_pass": 17,
+            "right_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            -1,
+            0
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_failure": 1,
+            "right_pass": 19,
+            "loss": 1,
+            "left_pass": 17,
+            "tie": 17,
+            "left_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            1,
+            2
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 4,
+            "tie": 15,
+            "left_pass": 17,
+            "right_pass": 14,
+            "left_unknown": 1,
+            "right_unknown": 1,
+            "pair_unknown": 1,
+            "win": 3
+          },
+          "failure_difference_bounds": [
+            -3,
+            -3
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 4,
+            "right_failure": 1,
+            "tie": 14,
+            "left_pass": 14,
+            "right_pass": 17,
+            "left_unknown": 1,
+            "pair_unknown": 2,
+            "loss": 3,
+            "right_unknown": 1
+          },
+          "failure_difference_bounds": [
+            2,
+            4
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 18,
+            "left_pass": 18,
+            "right_pass": 17,
+            "right_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            -1,
+            0
+          ]
+        }
+      },
+      "3": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 14,
+            "left_pass": 15,
+            "right_pass": 13,
+            "right_unknown": 5,
+            "pair_unknown": 5,
+            "left_unknown": 3
+          },
+          "failure_difference_bounds": [
+            -2,
+            0
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_failure": 1,
+            "right_unknown": 5,
+            "pair_unknown": 6,
+            "left_pass": 13,
+            "right_pass": 14,
+            "tie": 13,
+            "left_unknown": 5
+          },
+          "failure_difference_bounds": [
+            -1,
+            3
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 5,
+            "tie": 10,
+            "left_pass": 13,
+            "right_pass": 12,
+            "left_unknown": 5,
+            "right_unknown": 2,
+            "pair_unknown": 5,
+            "win": 4
+          },
+          "failure_difference_bounds": [
+            -4,
+            -1
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 5,
+            "right_failure": 1,
+            "tie": 10,
+            "left_pass": 12,
+            "right_unknown": 6,
+            "pair_unknown": 6,
+            "right_pass": 12,
+            "left_unknown": 2,
+            "loss": 3
+          },
+          "failure_difference_bounds": [
+            -2,
+            6
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_failure": 1,
+            "right_failure": 1,
+            "tie": 12,
+            "left_pass": 15,
+            "right_unknown": 6,
+            "pair_unknown": 7,
+            "right_pass": 12,
+            "left_unknown": 3
+          },
+          "failure_difference_bounds": [
+            -6,
+            3
+          ]
+        }
+      }
+    },
+    "sycophancy": {
+      "1": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 12,
+            "tie": 11,
+            "left_failure": 1,
+            "loss": 1
+          },
+          "failure_difference_bounds": [
+            1,
+            1
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_pass": 12,
+            "right_pass": 11,
+            "tie": 11,
+            "right_failure": 1,
+            "win": 1
+          },
+          "failure_difference_bounds": [
+            -1,
+            -1
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_pass": 12,
+            "right_pass": 9,
+            "tie": 9,
+            "right_failure": 3,
+            "win": 3
+          },
+          "failure_difference_bounds": [
+            -3,
+            -3
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 9,
+            "right_pass": 7,
+            "tie": 8,
+            "left_failure": 3,
+            "right_failure": 5,
+            "win": 3,
+            "loss": 1
+          },
+          "failure_difference_bounds": [
+            -2,
+            -2
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 7,
+            "tie": 8,
+            "right_failure": 5,
+            "win": 4,
+            "left_failure": 1
+          },
+          "failure_difference_bounds": [
+            -4,
+            -4
+          ]
+        }
+      },
+      "2": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 11,
+            "tie": 12,
+            "left_failure": 1,
+            "right_failure": 1
+          },
+          "failure_difference_bounds": [
+            0,
+            0
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 11,
+            "tie": 12,
+            "left_failure": 1,
+            "right_failure": 1
+          },
+          "failure_difference_bounds": [
+            0,
+            0
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 6,
+            "tie": 7,
+            "right_failure": 6,
+            "win": 5,
+            "left_failure": 1
+          },
+          "failure_difference_bounds": [
+            -5,
+            -5
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 6,
+            "right_failure": 6,
+            "win": 1,
+            "left_failure": 6,
+            "tie": 10,
+            "right_pass": 6,
+            "loss": 1
+          },
+          "failure_difference_bounds": [
+            0,
+            0
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 11,
+            "right_failure": 6,
+            "win": 5,
+            "right_pass": 6,
+            "tie": 7,
+            "left_failure": 1
+          },
+          "failure_difference_bounds": [
+            -5,
+            -5
+          ]
+        }
+      },
+      "3": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_pass": 11,
+            "right_pass": 9,
+            "tie": 10,
+            "left_failure": 1,
+            "right_failure": 3,
+            "win": 2
+          },
+          "failure_difference_bounds": [
+            -2,
+            -2
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_pass": 9,
+            "right_pass": 11,
+            "tie": 10,
+            "left_failure": 3,
+            "right_failure": 1,
+            "loss": 2
+          },
+          "failure_difference_bounds": [
+            2,
+            2
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_pass": 9,
+            "right_pass": 5,
+            "tie": 8,
+            "right_failure": 7,
+            "win": 4,
+            "left_failure": 3
+          },
+          "failure_difference_bounds": [
+            -4,
+            -4
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 5,
+            "right_failure": 8,
+            "win": 1,
+            "left_failure": 7,
+            "tie": 11,
+            "right_pass": 4
+          },
+          "failure_difference_bounds": [
+            -1,
+            -1
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 11,
+            "right_failure": 8,
+            "win": 7,
+            "right_pass": 4,
+            "tie": 5,
+            "left_failure": 1
+          },
+          "failure_difference_bounds": [
+            -7,
+            -7
+          ]
+        }
+      }
+    },
+    "beneficial_memory_usage": {
+      "1": {
+        "SELECTED_vs_GROUP": {
+          "counts": {
+            "left_unknown": 6,
+            "right_pass": 13,
+            "pair_unknown": 6,
+            "left_pass": 12,
+            "tie": 12,
+            "right_unknown": 5
+          },
+          "failure_difference_bounds": [
+            -5,
+            6
+          ]
+        },
+        "GROUP_vs_EMPTY": {
+          "counts": {
+            "left_pass": 13,
+            "right_failure": 16,
+            "win": 11,
+            "right_pass": 2,
+            "tie": 2,
+            "left_unknown": 5,
+            "pair_unknown": 5
+          },
+          "failure_difference_bounds": [
+            -16,
+            -11
+          ]
+        },
+        "GROUP_vs_FULL": {
+          "counts": {
+            "left_pass": 13,
+            "right_pass": 17,
+            "tie": 13,
+            "left_unknown": 5,
+            "right_unknown": 1,
+            "pair_unknown": 5
+          },
+          "failure_difference_bounds": [
+            -1,
+            5
+          ]
+        },
+        "FULL_vs_RUBRIC": {
+          "counts": {
+            "left_pass": 17,
+            "right_pass": 18,
+            "tie": 17,
+            "left_unknown": 1,
+            "pair_unknown": 1
+          },
+          "failure_difference_bounds": [
+            0,
+            1
+          ]
+        },
+        "SELECTED_vs_RUBRIC": {
+          "counts": {
+            "left_unknown": 6,
+            "right_pass": 18,
+            "pair_unknown": 6,
+            "left_pass": 12,
+            "tie": 12
+          },
+          "failure_difference_bounds": [
+            0,
+            6
+          ]
+        }
+      }
+    }
+  },
+  "status_by_policy": {
+    "SELECTED": {
+      "OK": 102,
+      "FAILED_DELIVERY_UNKNOWN": 9
+    },
+    "GROUP": {
+      "OK": 100,
+      "FAILED_DELIVERY_UNKNOWN": 11
+    },
+    "FULL": {
+      "OK": 106,
+      "FAILED_DELIVERY_UNKNOWN": 5
+    },
+    "EMPTY": {
+      "OK": 106,
+      "FAILED_DELIVERY_UNKNOWN": 5
+    },
+    "RUBRIC": {
+      "OK": 104,
+      "KNOWN_LENGTH_FAILURE": 1,
+      "FAILED_DELIVERY_UNKNOWN": 6
+    }
+  },
+  "new_dispatches": {
+    "physical": 481,
+    "status": {
+      "OK": 466,
+      "FAILED_DELIVERY_UNKNOWN": 14,
+      "KNOWN_LENGTH_FAILURE": 1
+    },
+    "usage_unknown": 14,
+    "reported_tokens": 3993738
+  }
+}
