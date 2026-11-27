@@ -1,0 +1,773 @@
+{
+  "archived_induction_calls": 16,
+  "archived_induction_tokens": 230898,
+  "tables": {
+    "all": {
+      "assigned": 18,
+      "five_way": {
+        "matched": 16,
+        "arms": {
+          "induction": {
+            "positions": 93,
+            "Match": 46,
+            "OPB": 26,
+            "UPB": 14,
+            "FM": 5
+          },
+          "ordinary": {
+            "positions": 93,
+            "Match": 52,
+            "OPB": 30,
+            "UPB": 9,
+            "FM": 6
+          },
+          "IPE-C": {
+            "positions": 93,
+            "Match": 60,
+            "OPB": 14,
+            "UPB": 17,
+            "FM": 2
+          },
+          "RP": {
+            "positions": 93,
+            "Match": 56,
+            "OPB": 22,
+            "UPB": 10,
+            "FM": 3
+          },
+          "Gate": {
+            "positions": 93,
+            "Match": 43,
+            "OPB": 35,
+            "UPB": 13,
+            "FM": 10
+          }
+        },
+        "paired": {
+          "tie": 14,
+          "loss": 2
+        },
+        "winning_groups": 0
+      },
+      "all_five_unflagged": {
+        "matched": 8,
+        "arms": {
+          "induction": {
+            "positions": 50,
+            "Match": 23,
+            "OPB": 17,
+            "UPB": 6,
+            "FM": 4
+          },
+          "ordinary": {
+            "positions": 50,
+            "Match": 24,
+            "OPB": 18,
+            "UPB": 6,
+            "FM": 4
+          },
+          "IPE-C": {
+            "positions": 50,
+            "Match": 34,
+            "OPB": 9,
+            "UPB": 7,
+            "FM": 1
+          },
+          "RP": {
+            "positions": 50,
+            "Match": 24,
+            "OPB": 14,
+            "UPB": 7,
+            "FM": 2
+          },
+          "Gate": {
+            "positions": 50,
+            "Match": 24,
+            "OPB": 21,
+            "UPB": 2,
+            "FM": 6
+          }
+        },
+        "paired": {
+          "tie": 7,
+          "loss": 1
+        },
+        "winning_groups": 0
+      },
+      "pairwise": {
+        "ordinary": {
+          "matched": 16,
+          "arms": {
+            "induction": {
+              "positions": 93,
+              "Match": 46,
+              "OPB": 26,
+              "UPB": 14,
+              "FM": 5
+            },
+            "ordinary": {
+              "positions": 93,
+              "Match": 52,
+              "OPB": 30,
+              "UPB": 9,
+              "FM": 6
+            }
+          },
+          "paired": {
+            "tie": 14,
+            "loss": 2
+          },
+          "winning_groups": 0
+        },
+        "IPE-C": {
+          "matched": 16,
+          "arms": {
+            "induction": {
+              "positions": 93,
+              "Match": 46,
+              "OPB": 26,
+              "UPB": 14,
+              "FM": 5
+            },
+            "IPE-C": {
+              "positions": 93,
+              "Match": 60,
+              "OPB": 14,
+              "UPB": 17,
+              "FM": 2
+            }
+          },
+          "paired": {
+            "tie": 10,
+            "win": 1,
+            "loss": 5
+          },
+          "winning_groups": 1
+        },
+        "RP": {
+          "matched": 16,
+          "arms": {
+            "induction": {
+              "positions": 93,
+              "Match": 46,
+              "OPB": 26,
+              "UPB": 14,
+              "FM": 5
+            },
+            "RP": {
+              "positions": 93,
+              "Match": 56,
+              "OPB": 22,
+              "UPB": 10,
+              "FM": 3
+            }
+          },
+          "paired": {
+            "tie": 12,
+            "loss": 4
+          },
+          "winning_groups": 0
+        },
+        "Gate": {
+          "matched": 16,
+          "arms": {
+            "induction": {
+              "positions": 93,
+              "Match": 46,
+              "OPB": 26,
+              "UPB": 14,
+              "FM": 5
+            },
+            "Gate": {
+              "positions": 93,
+              "Match": 43,
+              "OPB": 35,
+              "UPB": 13,
+              "FM": 10
+            }
+          },
+          "paired": {
+            "tie": 14,
+            "loss": 1,
+            "win": 1
+          },
+          "winning_groups": 1
+        }
+      }
+    },
+    "B_only": {
+      "assigned": 6,
+      "five_way": {
+        "matched": 5,
+        "arms": {
+          "induction": {
+            "positions": 32,
+            "Match": 19,
+            "OPB": 4,
+            "UPB": 8,
+            "FM": 0
+          },
+          "ordinary": {
+            "positions": 32,
+            "Match": 19,
+            "OPB": 6,
+            "UPB": 7,
+            "FM": 0
+          },
+          "IPE-C": {
+            "positions": 32,
+            "Match": 17,
+            "OPB": 1,
+            "UPB": 10,
+            "FM": 1
+          },
+          "RP": {
+            "positions": 32,
+            "Match": 23,
+            "OPB": 2,
+            "UPB": 6,
+            "FM": 0
+          },
+          "Gate": {
+            "positions": 32,
+            "Match": 19,
+            "OPB": 10,
+            "UPB": 1,
+            "FM": 4
+          }
+        },
+        "paired": {
+          "tie": 5
+        },
+        "winning_groups": 0
+      },
+      "all_five_unflagged": {
+        "matched": 2,
+        "arms": {
+          "induction": {
+            "positions": 11,
+            "Match": 5,
+            "OPB": 1,
+            "UPB": 5,
+            "FM": 0
+          },
+          "ordinary": {
+            "positions": 11,
+            "Match": 5,
+            "OPB": 1,
+            "UPB": 5,
+            "FM": 0
+          },
+          "IPE-C": {
+            "positions": 11,
+            "Match": 5,
+            "OPB": 1,
+            "UPB": 5,
+            "FM": 0
+          },
+          "RP": {
+            "positions": 11,
+            "Match": 5,
+            "OPB": 1,
+            "UPB": 5,
+            "FM": 0
+          },
+          "Gate": {
+            "positions": 11,
+            "Match": 5,
+            "OPB": 4,
+            "UPB": 0,
+            "FM": 1
+          }
+        },
+        "paired": {
+          "tie": 2
+        },
+        "winning_groups": 0
+      },
+      "pairwise": {
+        "ordinary": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 4,
+              "UPB": 8,
+              "FM": 0
+            },
+            "ordinary": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 6,
+              "UPB": 7,
+              "FM": 0
+            }
+          },
+          "paired": {
+            "tie": 5
+          },
+          "winning_groups": 0
+        },
+        "IPE-C": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 4,
+              "UPB": 8,
+              "FM": 0
+            },
+            "IPE-C": {
+              "positions": 32,
+              "Match": 17,
+              "OPB": 1,
+              "UPB": 10,
+              "FM": 1
+            }
+          },
+          "paired": {
+            "tie": 3,
+            "win": 1,
+            "loss": 1
+          },
+          "winning_groups": 1
+        },
+        "RP": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 4,
+              "UPB": 8,
+              "FM": 0
+            },
+            "RP": {
+              "positions": 32,
+              "Match": 23,
+              "OPB": 2,
+              "UPB": 6,
+              "FM": 0
+            }
+          },
+          "paired": {
+            "tie": 3,
+            "loss": 2
+          },
+          "winning_groups": 0
+        },
+        "Gate": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 4,
+              "UPB": 8,
+              "FM": 0
+            },
+            "Gate": {
+              "positions": 32,
+              "Match": 19,
+              "OPB": 10,
+              "UPB": 1,
+              "FM": 4
+            }
+          },
+          "paired": {
+            "tie": 5
+          },
+          "winning_groups": 0
+        }
+      }
+    },
+    "contains_C": {
+      "assigned": 6,
+      "five_way": {
+        "matched": 6,
+        "arms": {
+          "induction": {
+            "positions": 38,
+            "Match": 23,
+            "OPB": 12,
+            "UPB": 1,
+            "FM": 2
+          },
+          "ordinary": {
+            "positions": 38,
+            "Match": 24,
+            "OPB": 12,
+            "UPB": 2,
+            "FM": 3
+          },
+          "IPE-C": {
+            "positions": 38,
+            "Match": 24,
+            "OPB": 11,
+            "UPB": 4,
+            "FM": 1
+          },
+          "RP": {
+            "positions": 38,
+            "Match": 24,
+            "OPB": 11,
+            "UPB": 4,
+            "FM": 1
+          },
+          "Gate": {
+            "positions": 38,
+            "Match": 24,
+            "OPB": 13,
+            "UPB": 4,
+            "FM": 3
+          }
+        },
+        "paired": {
+          "loss": 1,
+          "tie": 5
+        },
+        "winning_groups": 0
+      },
+      "all_five_unflagged": {
+        "matched": 4,
+        "arms": {
+          "induction": {
+            "positions": 29,
+            "Match": 18,
+            "OPB": 9,
+            "UPB": 1,
+            "FM": 2
+          },
+          "ordinary": {
+            "positions": 29,
+            "Match": 19,
+            "OPB": 9,
+            "UPB": 1,
+            "FM": 2
+          },
+          "IPE-C": {
+            "positions": 29,
+            "Match": 19,
+            "OPB": 8,
+            "UPB": 2,
+            "FM": 1
+          },
+          "RP": {
+            "positions": 29,
+            "Match": 19,
+            "OPB": 8,
+            "UPB": 2,
+            "FM": 1
+          },
+          "Gate": {
+            "positions": 29,
+            "Match": 19,
+            "OPB": 10,
+            "UPB": 2,
+            "FM": 3
+          }
+        },
+        "paired": {
+          "loss": 1,
+          "tie": 3
+        },
+        "winning_groups": 0
+      },
+      "pairwise": {
+        "ordinary": {
+          "matched": 6,
+          "arms": {
+            "induction": {
+              "positions": 38,
+              "Match": 23,
+              "OPB": 12,
+              "UPB": 1,
+              "FM": 2
+            },
+            "ordinary": {
+              "positions": 38,
+              "Match": 24,
+              "OPB": 12,
+              "UPB": 2,
+              "FM": 3
+            }
+          },
+          "paired": {
+            "loss": 1,
+            "tie": 5
+          },
+          "winning_groups": 0
+        },
+        "IPE-C": {
+          "matched": 6,
+          "arms": {
+            "induction": {
+              "positions": 38,
+              "Match": 23,
+              "OPB": 12,
+              "UPB": 1,
+              "FM": 2
+            },
+            "IPE-C": {
+              "positions": 38,
+              "Match": 24,
+              "OPB": 11,
+              "UPB": 4,
+              "FM": 1
+            }
+          },
+          "paired": {
+            "loss": 1,
+            "tie": 5
+          },
+          "winning_groups": 0
+        },
+        "RP": {
+          "matched": 6,
+          "arms": {
+            "induction": {
+              "positions": 38,
+              "Match": 23,
+              "OPB": 12,
+              "UPB": 1,
+              "FM": 2
+            },
+            "RP": {
+              "positions": 38,
+              "Match": 24,
+              "OPB": 11,
+              "UPB": 4,
+              "FM": 1
+            }
+          },
+          "paired": {
+            "loss": 1,
+            "tie": 5
+          },
+          "winning_groups": 0
+        },
+        "Gate": {
+          "matched": 6,
+          "arms": {
+            "induction": {
+              "positions": 38,
+              "Match": 23,
+              "OPB": 12,
+              "UPB": 1,
+              "FM": 2
+            },
+            "Gate": {
+              "positions": 38,
+              "Match": 24,
+              "OPB": 13,
+              "UPB": 4,
+              "FM": 3
+            }
+          },
+          "paired": {
+            "loss": 1,
+            "tie": 5
+          },
+          "winning_groups": 0
+        }
+      }
+    },
+    "all_A": {
+      "assigned": 6,
+      "five_way": {
+        "matched": 5,
+        "arms": {
+          "induction": {
+            "positions": 23,
+            "Match": 4,
+            "OPB": 10,
+            "UPB": 5,
+            "FM": 3
+          },
+          "ordinary": {
+            "positions": 23,
+            "Match": 9,
+            "OPB": 12,
+            "UPB": 0,
+            "FM": 3
+          },
+          "IPE-C": {
+            "positions": 23,
+            "Match": 19,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 0
+          },
+          "RP": {
+            "positions": 23,
+            "Match": 9,
+            "OPB": 9,
+            "UPB": 0,
+            "FM": 2
+          },
+          "Gate": {
+            "positions": 23,
+            "Match": 0,
+            "OPB": 12,
+            "UPB": 8,
+            "FM": 3
+          }
+        },
+        "paired": {
+          "tie": 4,
+          "loss": 1
+        },
+        "winning_groups": 0
+      },
+      "all_five_unflagged": {
+        "matched": 2,
+        "arms": {
+          "induction": {
+            "positions": 10,
+            "Match": 0,
+            "OPB": 7,
+            "UPB": 0,
+            "FM": 2
+          },
+          "ordinary": {
+            "positions": 10,
+            "Match": 0,
+            "OPB": 8,
+            "UPB": 0,
+            "FM": 2
+          },
+          "IPE-C": {
+            "positions": 10,
+            "Match": 10,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "RP": {
+            "positions": 10,
+            "Match": 0,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 1
+          },
+          "Gate": {
+            "positions": 10,
+            "Match": 0,
+            "OPB": 7,
+            "UPB": 0,
+            "FM": 2
+          }
+        },
+        "paired": {
+          "tie": 2
+        },
+        "winning_groups": 0
+      },
+      "pairwise": {
+        "ordinary": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 23,
+              "Match": 4,
+              "OPB": 10,
+              "UPB": 5,
+              "FM": 3
+            },
+            "ordinary": {
+              "positions": 23,
+              "Match": 9,
+              "OPB": 12,
+              "UPB": 0,
+              "FM": 3
+            }
+          },
+          "paired": {
+            "tie": 4,
+            "loss": 1
+          },
+          "winning_groups": 0
+        },
+        "IPE-C": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 23,
+              "Match": 4,
+              "OPB": 10,
+              "UPB": 5,
+              "FM": 3
+            },
+            "IPE-C": {
+              "positions": 23,
+              "Match": 19,
+              "OPB": 2,
+              "UPB": 3,
+              "FM": 0
+            }
+          },
+          "paired": {
+            "tie": 2,
+            "loss": 3
+          },
+          "winning_groups": 0
+        },
+        "RP": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 23,
+              "Match": 4,
+              "OPB": 10,
+              "UPB": 5,
+              "FM": 3
+            },
+            "RP": {
+              "positions": 23,
+              "Match": 9,
+              "OPB": 9,
+              "UPB": 0,
+              "FM": 2
+            }
+          },
+          "paired": {
+            "tie": 4,
+            "loss": 1
+          },
+          "winning_groups": 0
+        },
+        "Gate": {
+          "matched": 5,
+          "arms": {
+            "induction": {
+              "positions": 23,
+              "Match": 4,
+              "OPB": 10,
+              "UPB": 5,
+              "FM": 3
+            },
+            "Gate": {
+              "positions": 23,
+              "Match": 0,
+              "OPB": 12,
+              "UPB": 8,
+              "FM": 3
+            }
+          },
+          "paired": {
+            "win": 1,
+            "tie": 4
+          },
+          "winning_groups": 1
+        }
+      }
+    }
+  },
+  "status": {
+    "OK": 80
+  },
+  "reported_tokens": 394778,
+  "unknown_usage": 0
+}

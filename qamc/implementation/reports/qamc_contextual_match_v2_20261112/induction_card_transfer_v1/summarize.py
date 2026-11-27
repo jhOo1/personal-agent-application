@@ -23,7 +23,18 @@ def comparison(rows,names,clean=False):
     return {"matched":sum(wins.values()),"arms":counts,"paired":wins,"winning_groups":len(groups)}
 
 def report():
-    frozen=read(RUN/"private/FROZEN.json")["roster"]
+    manifest=read(RUN/"private/FROZEN.json")
+    frozen=manifest["roster"]
+    archived_records={}
+    receipts=RUN.parent/"rpeval_formal_multi_coverage_v1/generation/execution/visible"
+    for path in receipts.glob("*/record.json"):
+        record=read(path)
+        unit=record["unit"]
+        uid=unit["root_id"]
+        if uid in manifest["prep"] and unit["stage"]=="MemInduction" and unit["method"]=="MEMADAPTER_FULL" and record["status"]=="OK":
+            assert uid not in archived_records
+            archived_records[uid]=record
+    assert archived_records.keys()==manifest["prep"].keys()
     result=read(RUN/"private/RESULTS.json")
     frontier={r["uid"]:r for r in read(BASE/"selective_path_frontier_v1/RESULTS.json")["rows"]}
     cells={(r["uid"],r["arm"]):r["score"] for r in result["rows"]}
@@ -48,7 +59,9 @@ def report():
         tables[s]={"assigned":len(subset),"five_way":comparison(subset,ARMS),
                    "all_five_unflagged":comparison(subset,ARMS,True),
                    "pairwise":{a:comparison(subset,("induction",a)) for a in ARMS[1:]}}
-    return {"tables":tables,"status":Counter(x["status"] for x in result["ledger"]),
+    return {"archived_induction_calls":len(archived_records),
+            "archived_induction_tokens":sum(r["usage"]["total_tokens"] for r in archived_records.values()),
+            "tables":tables,"status":Counter(x["status"] for x in result["ledger"]),
             "reported_tokens":sum((x["usage"] or {}).get("total_tokens",0) for x in result["ledger"]),
             "unknown_usage":sum((x["usage"] or {}).get("total_tokens") is None for x in result["ledger"])}
 if __name__=="__main__":print(json.dumps(report(),indent=2))
