@@ -1,0 +1,102 @@
+{
+  "assigned": 8,
+  "available": {
+    "reference": 8,
+    "review": 8,
+    "screen": 7
+  },
+  "common": {
+    "reference": {
+      "tasks": 7,
+      "positions": 44,
+      "match": 26,
+      "OPB": 14,
+      "UPB": 6,
+      "FM": 1,
+      "flags": 3
+    },
+    "review": {
+      "tasks": 7,
+      "positions": 44,
+      "match": 26,
+      "OPB": 13,
+      "UPB": 6,
+      "FM": 1,
+      "flags": 3
+    },
+    "screen": {
+      "tasks": 7,
+      "positions": 44,
+      "match": 28,
+      "OPB": 14,
+      "UPB": 6,
+      "FM": 2,
+      "flags": 4
+    }
+  },
+  "paired": {
+    "reference": {
+      "tie": 5,
+      "win": 2
+    },
+    "review": {
+      "tie": 5,
+      "win": 2
+    }
+  },
+  "details": [
+    {
+      "case": "explicit/118",
+      "reference": 1,
+      "review": 1,
+      "screen": 1
+    },
+    {
+      "case": "implicit/050",
+      "reference": 4,
+      "review": 4,
+      "screen": 5
+    },
+    {
+      "case": "implicit/024",
+      "reference": 2,
+      "review": 2,
+      "screen": 2
+    },
+    {
+      "case": "implicit/011",
+      "reference": 6,
+      "review": 6,
+      "screen": 6
+    },
+    {
+      "case": "implicit/038",
+      "reference": 4,
+      "review": 4,
+      "screen": 5
+    },
+    {
+      "case": "implicit/130",
+      "reference": 5,
+      "review": 5,
+      "screen": 5
+    },
+    {
+      "case": "explicit/006",
+      "reference": 4,
+      "review": 4,
+      "screen": 4
+    }
+  ],
+  "requests": 31,
+  "by_stage": {
+    "Actor": 16,
+    "RPEvalJudge": 15
+  },
+  "statuses": {
+    "OK": 30,
+    "FAILED_DELIVERY_UNKNOWN": 1
+  },
+  "tokens": 110260,
+  "unknown_usage": 1
+}
