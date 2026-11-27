@@ -1,0 +1,3 @@
+# Can pre-existing query routing decide when to review a strong draft?
+
+Replay on every one of the six sources of proposal_memory_check_v1. Use the unchanged exposure rule from persist_query_requested_open_v1: when the archived routing branch is style and the selection nonempty, use the stored ordinary full-history revision; otherwise use the original SELECTED answer. Compare using the very same switch to generate directly with full history. Also report always-keep, always-review and the targeted-review substitution. No threshold fitting, no new calls. This is a post-hoc mechanism diagnostic on known outcomes, including two handpicked single-deployment risk protections. Do not extrapolate to FR3, independent validation or SOTA. Missing score stays unknown.
