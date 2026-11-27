@@ -15,6 +15,7 @@ The manuscript keeps the three benchmarks on separate scoring protocols. Its tab
 | RPEval shared-Actor MemGate and language mismatch | [End-to-end comparison](../implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/READOUT.md) · [Count-matched language adaptation](../implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_language_control_v1/WIDE_READOUT.md) · [Equal-count final answers](../implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_equal_count_answer_v1/READOUT.md) |
 | PersistBench released external selector | [Matched MemGate versus routed, empty and full history](../implementation/reports/qamc_contextual_match_v2_20261112/persist_memgate_matched_actor_v1/READOUT.md) |
 | BenchPreS published-control adaptation and renderer comparison | [Raw/Selectivity/Gate](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/BENCH_RAW_COMMON_BRIDGE.md) · [Matched message generation](../implementation/reports/qamc_contextual_match_v2_20261112/bench_speech_act_renderer_v1/READOUT.md) |
+| BenchPreS three-draw replication and missing bounds | [Final replay and receipt reconciliation](../implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/FINAL_READOUT.md) |
 | BenchPreS profile-disjoint realization replication | [Matched direct and content-first results](../implementation/reports/qamc_contextual_match_v2_20261112/native_residual_v1/BENCH_GROUP_OUT_RESULTS.md) |
 | Group-level score sensitivity | [Paired source stability](../implementation/reports/qamc_contextual_match_v2_20261112/paired_source_stability_v1/READOUT.md) |
 
@@ -22,7 +23,7 @@ See the [extended research draft](../implementation/reports/qamc_contextual_matc
 
 ## Verify table values
 
-Run `python3 check_evidence.py` in this directory. It checks the five main numeric tables against four public aggregate reports. It does not read private case traces or dispatch any requests.
+Run `python3 check_evidence.py` in this directory. It checks the main numeric tables and selected quantitative claims against the public evidence. It does not read private case traces or dispatch any requests.
 
 ## Build
 

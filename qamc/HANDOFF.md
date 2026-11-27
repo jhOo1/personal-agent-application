@@ -6,7 +6,7 @@
 
 当前论文把任务级记忆启用与成稿落实分开讨论。RPEval 保留 IPE-C 为主结果，PersistBench 保留 SELECTED_GEPA 的安全与效用对照，BenchPreS 比较 Strong Gate 和作者 Selectivity。主张及协议差异见[论文草稿](manuscript/paper.pdf)和[外部比较状态](manuscript/COMPARISON_STATUS.md)。
 
-BenchPreS 的 48 道已曝光题已经冻结，使用相同 Qwen Actor、温度 1.0、三次采样及 Qwen 适配评分。前三批结算，第四批已启动。接续时以工作区的实际进程和结算文件为准。已有回执优先复用，封存集保持隔离。[冻结协议](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/PROTOCOL.md) · [前三批结果](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/WAVES012_READOUT.md) · [逐项缺失边界](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/WAVES012_FIELDWISE.md) · [当前恢复条件](MIGRATION.md#当前-benchpres-实验)
+BenchPreS 的 48 道已曝光题已完成全部六批。实验使用相同 Qwen Actor 别名、温度 1.0、三次采样及 Qwen 适配评分。106 个共同有效抽样对支持较少的观察误用和更高的加粗实现，完整分配的最坏缺失边界只保住加粗效果。新环境可复用结果，封存集保持隔离。[冻结协议](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/PROTOCOL.md) · [完整结果](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/FINAL_READOUT.md) · [当前恢复条件](MIGRATION.md#当前-benchpres-实验)
 
 ## 研究问题和论文主张
 

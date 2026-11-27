@@ -22,11 +22,11 @@ tar -xzf workspace-overlay.tar.gz -C qamc-recovered
 
 ## 当前 BenchPreS 实验
 
-下方 `fd8b855be` 私有包是 DREW 阶段快照。要迁移当前三次采样对照，应另取正在执行的源工作区快照和原始账本。新快照需包含 `scripts/run_qamc_benchpres_three_draw.py`、它依赖的源仓库 `proposals/` 模块、已校验的历史输入资产，以及整个 `runs/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/`。其中 `PLAN_PRIVATE.json`、各批次的请求清单、回执与 SQLite，以及 `PACING.json` 共同记录执行进度。公开库只有协议、代码快照和脱敏汇总。当前私有快照在新机器上的完整恢复尚未验收。
+下方 `fd8b855be` 私有包是 DREW 阶段快照。要迁移当前三次采样对照，应另取结算提交 `0350aaeb0` 的源工作区快照和原始账本。新快照需包含 `scripts/run_qamc_benchpres_three_draw.py`、它依赖的源仓库 `proposals/` 模块、已校验的历史输入资产，以及整个 `runs/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/`。其中 `PLAN_PRIVATE.json`、各批次的请求清单、回执与 SQLite，以及 `PACING.json` 共同记录执行进度。公开库只有协议、代码快照和脱敏汇总。当前私有快照在新机器上的完整恢复尚未验收。
 
-1. 在原机确认顺序执行进程与在途请求。原机仍在执行时，新机使用只读回放。
+1. 六批已结算。新机使用只读回放，保留所有已派发结果和缺失。
 2. 核对 [PREFLIGHT](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/PREFLIGHT.json) 中的计划哈希、固定输入以及原账本中的服务指纹。在恢复后的源项目运行 `PYTHONPATH=src:.:scripts python scripts/report_qamc_benchpres_three_draw.py`，核对已结算批次、评分状态和调用量。
-3. 只有原机进程已停止且已完整转移账本时，才用原运行入口接续第一个未结算批次。保留全部已派发、交付未知及结构失败记录，并核对原服务指纹。原账本缺失时，先从原机或私有备份恢复。
+3. 使用[结算脚本](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/settle_repeat.py)重放完整分母和账本。31 条交付未知按结算保留。原账本缺失时，从原机或私有备份恢复。
 
 冻结范围见[三次采样协议](implementation/reports/qamc_contextual_match_v2_20261112/benchpres_repeat_matched_v1/PROTOCOL.md)。旧私有包经验证的范围仍见下文。
 

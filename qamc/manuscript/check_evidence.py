@@ -164,7 +164,42 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     require(direct[2], content[2], "BenchPreS replication matched MR")
     expected = (allocation[1], direct[1], content[1], direct[3], content[3], direct[2])
     require(claim.groups() if claim else None, expected, "BenchPreS profile-disjoint replication")
-    return 6 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    repeat_root = root / "benchpres_repeat_matched_v1"
+    repeat = json.loads((repeat_root / "FINAL_REPLAY.json").read_text())
+    misuse = json.loads((repeat_root / "FINAL_MISUSE_TRACE.json").read_text())
+    fieldwise = json.loads((repeat_root / "FINAL_FIELDWISE.json").read_text())
+    prior_waves = json.loads((repeat_root / "WAVES01234_REPLAY.json").read_text())
+    require(repeat["full_allocation_terminal"], True, "BenchPreS terminal replay")
+    paired = repeat["available_pairs"]
+    expected = [str(v) for v in (paired["task_draw_pairs"], paired["tasks"], repeat["allocated_tasks"])]
+    for name in ("MR", "AAR", "nonbold_AAR"):
+        metric = paired["metrics"][name]
+        expected.extend(f"{metric[key]}/{metric['denominator']}"
+                        for key in ("gate_numerator", "selectivity_numerator"))
+    nicknames = misuse["methods"]["PAPER_SELECTIVITY"]["by_attribute"]["nickname"]["judge_follow_literal_yes"]
+    other_rates = []
+    for arm in ("GEPA_SELECTED_BOUNDS", "PAPER_SELECTIVITY"):
+        categories = misuse["methods"][arm]["by_attribute"]
+        other = [group for name, group in categories.items() if name != "nickname"]
+        hits = sum(group["judge_misuses"] for group in other)
+        denominator = sum(group["inappropriate_positions"] for group in other)
+        other_rates.append(f"{hits}/{denominator}")
+    totals_key = "receipts_in_terminal_waves"
+    late_timeouts = repeat[totals_key]["unknown_usage"] - prior_waves[totals_key]["unknown_usage"]
+    expected.extend((str(nicknames), *other_rates, str(late_timeouts)))
+    for name in ("MR", "AAR", "bold_AAR"):
+        expected.extend(map(str, fieldwise["fieldwise_diagnostic_only"][name]["full_allocation_delta_numerator_bounds"]))
+    claim = re.search(
+        r"On (\d+) paired draws from (\d+) of the (\d+) allocated tasks, .*?MR (\d+/\d+) and (\d+/\d+), "
+        r"AAR (\d+/\d+) and (\d+/\d+), and non-bold AAR (\d+/\d+) and (\d+/\d+), respectively\. "
+        r"Exact nicknames account for (\d+) Selectivity misuse labels\. Outside nickname positions, MR is "
+        r"(\d+/\d+) and (\d+/\d+)\. .*?after (\d+) transport timeouts\. "
+        r".*?\$\[(-?\d+),(-?\d+)\]\$ MR positions, \$\[(-?\d+),(-?\d+)\]\$ AAR positions, "
+        r"and \$\[(-?\d+),(-?\d+)\]\$ bold AAR positions",
+        paper,
+    )
+    require(list(claim.groups()) if claim else None, expected, "BenchPreS repeat evidence and missing bounds")
+    return 7 + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
