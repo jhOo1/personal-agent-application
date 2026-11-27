@@ -1,0 +1,122 @@
+{
+  "no_visible_A": {
+    "full": {
+      "tasks": 6,
+      "opb": 10,
+      "positive": 6,
+      "match_available": 5,
+      "clean_tasks": 3,
+      "clean_opb": 5,
+      "clean_positive": 3
+    },
+    "masked": {
+      "tasks": 6,
+      "opb": 15,
+      "positive": 6,
+      "match_available": 5,
+      "clean_tasks": 4,
+      "clean_opb": 9,
+      "clean_positive": 4
+    }
+  },
+  "no_visible_A/author_B": {
+    "full": {
+      "tasks": 4,
+      "opb": 6,
+      "positive": 4,
+      "match_available": 3,
+      "clean_tasks": 2,
+      "clean_opb": 3,
+      "clean_positive": 2
+    },
+    "masked": {
+      "tasks": 4,
+      "opb": 9,
+      "positive": 4,
+      "match_available": 3,
+      "clean_tasks": 3,
+      "clean_opb": 7,
+      "clean_positive": 3
+    }
+  },
+  "no_visible_A/no_author_B": {
+    "full": {
+      "tasks": 2,
+      "opb": 4,
+      "positive": 2,
+      "match_available": 2,
+      "clean_tasks": 1,
+      "clean_opb": 2,
+      "clean_positive": 1
+    },
+    "masked": {
+      "tasks": 2,
+      "opb": 6,
+      "positive": 2,
+      "match_available": 2,
+      "clean_tasks": 1,
+      "clean_opb": 2,
+      "clean_positive": 1
+    }
+  },
+  "visible_A": {
+    "full": {
+      "tasks": 10,
+      "opb": 29,
+      "positive": 10,
+      "match_available": 10,
+      "clean_tasks": 9,
+      "clean_opb": 26,
+      "clean_positive": 9
+    },
+    "masked": {
+      "tasks": 10,
+      "opb": 27,
+      "positive": 10,
+      "match_available": 10,
+      "clean_tasks": 9,
+      "clean_opb": 26,
+      "clean_positive": 9
+    }
+  },
+  "visible_A/author_B": {
+    "full": {
+      "tasks": 5,
+      "opb": 11,
+      "positive": 5,
+      "match_available": 5,
+      "clean_tasks": 5,
+      "clean_opb": 11,
+      "clean_positive": 5
+    },
+    "masked": {
+      "tasks": 5,
+      "opb": 12,
+      "positive": 5,
+      "match_available": 5,
+      "clean_tasks": 5,
+      "clean_opb": 12,
+      "clean_positive": 5
+    }
+  },
+  "visible_A/no_author_B": {
+    "full": {
+      "tasks": 5,
+      "opb": 18,
+      "positive": 5,
+      "match_available": 5,
+      "clean_tasks": 4,
+      "clean_opb": 15,
+      "clean_positive": 4
+    },
+    "masked": {
+      "tasks": 5,
+      "opb": 15,
+      "positive": 5,
+      "match_available": 5,
+      "clean_tasks": 4,
+      "clean_opb": 14,
+      "clean_positive": 4
+    }
+  }
+}
