@@ -6,7 +6,7 @@ from qamc.common import sha
 
 HERE=Path(__file__).resolve().parent
 BASE=HERE.parent
-OUT=HERE.parents[2]/"runs"/BASE.name/HERE.name/"private"
+OUT=HERE.parents[2]/"runs"/BASE.name/HERE.name/"private_v2"
 read=cb.read
 
 def main():
@@ -46,7 +46,9 @@ def main():
     with cb.probe.runner_lock(OUT.parent/"runner.lock"):
         new={k:w for k,w in jobs.items() if sha(w) not in existing}
         assert len({sha(w) for w in new.values()})==len(new)
-        actors=call("CrossActor",new)
+        actors={}
+        for alias in ("Q","G"):
+            actors.update(call("CrossActor"+alias,{k:w for k,w in new.items() if k[1].endswith(alias)}))
         graders={k:cb.engine.rpe_wire(parent,cases[k[0]],{"uid":k[0],"actor_status":"OK","answer":v["answer"]}) for k,v in actors.items() if v["status"]=="OK" and v["answer"]}
         grades=call(cb.engine.RPE,graders)
         rows=[]

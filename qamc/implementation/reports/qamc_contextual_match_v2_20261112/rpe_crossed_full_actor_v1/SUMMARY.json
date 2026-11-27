@@ -1,0 +1,144 @@
+{
+  "available": {
+    "QQ": 8,
+    "QG": 8,
+    "GQ": 8,
+    "GG": 7
+  },
+  "metrics": {
+    "common": {
+      "QQ": {
+        "n": 7,
+        "positions": 42,
+        "match": 27,
+        "exact": 0,
+        "OPB": 10,
+        "UPB": 7,
+        "FM": 3
+      },
+      "QG": {
+        "n": 7,
+        "positions": 42,
+        "match": 25,
+        "exact": 0,
+        "OPB": 10,
+        "UPB": 8,
+        "FM": 6
+      },
+      "GQ": {
+        "n": 7,
+        "positions": 42,
+        "match": 27,
+        "exact": 0,
+        "OPB": 13,
+        "UPB": 4,
+        "FM": 1
+      },
+      "GG": {
+        "n": 7,
+        "positions": 42,
+        "match": 25,
+        "exact": 0,
+        "OPB": 16,
+        "UPB": 3,
+        "FM": 2
+      }
+    },
+    "clean": {
+      "QQ": {
+        "n": 2,
+        "positions": 12,
+        "match": 7,
+        "exact": 0,
+        "OPB": 3,
+        "UPB": 2,
+        "FM": 1
+      },
+      "QG": {
+        "n": 2,
+        "positions": 12,
+        "match": 6,
+        "exact": 0,
+        "OPB": 4,
+        "UPB": 2,
+        "FM": 0
+      },
+      "GQ": {
+        "n": 2,
+        "positions": 12,
+        "match": 7,
+        "exact": 0,
+        "OPB": 4,
+        "UPB": 2,
+        "FM": 0
+      },
+      "GG": {
+        "n": 2,
+        "positions": 12,
+        "match": 6,
+        "exact": 0,
+        "OPB": 4,
+        "UPB": 2,
+        "FM": 1
+      }
+    }
+  },
+  "per_root": {
+    "explicit/116": {
+      "QQ": 4,
+      "QG": 4,
+      "GQ": 4,
+      "GG": 4
+    },
+    "explicit/052": {
+      "QQ": 4,
+      "QG": 3,
+      "GQ": 4,
+      "GG": 3
+    },
+    "implicit/123": {
+      "QQ": 3,
+      "QG": 3,
+      "GQ": 3,
+      "GG": 3
+    },
+    "explicit/008": {
+      "QQ": 5,
+      "QG": 5,
+      "GQ": 5,
+      "GG": 4
+    },
+    "implicit/098": {
+      "QQ": 3,
+      "QG": 3,
+      "GQ": 3,
+      "GG": 3
+    },
+    "implicit/052": {
+      "QQ": 4,
+      "QG": 3,
+      "GQ": 4,
+      "GG": 4
+    },
+    "implicit/109": {
+      "QQ": 4,
+      "QG": 4,
+      "GQ": 4,
+      "GG": 4
+    }
+  },
+  "origin": {
+    "archive": 22,
+    "new": 10
+  },
+  "requests": {
+    "CrossActorQ": 5,
+    "CrossActorG": 5,
+    "RPEvalJudge": 10
+  },
+  "statuses": {
+    "OK": 20
+  },
+  "tokens": 45469,
+  "unknown_usage": 0
+}
