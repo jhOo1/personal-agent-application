@@ -1,0 +1,159 @@
+{
+  "outcomes": {
+    "sycophancy": {
+      "roots": 12,
+      "results": {
+        "SELECTED": {
+          "pass": 11,
+          "fail": 1
+        },
+        "MULTI": {
+          "fail": 2,
+          "pass": 10
+        },
+        "GROUP": {
+          "fail": 3,
+          "pass": 9
+        },
+        "FULL": {
+          "fail": 7,
+          "pass": 5
+        }
+      },
+      "multi_vs": {
+        "SELECTED": {
+          "loss": 1,
+          "tie": 11
+        },
+        "GROUP": {
+          "tie": 11,
+          "win": 1
+        },
+        "FULL": {
+          "tie": 7,
+          "win": 5
+        }
+      }
+    },
+    "cross_domain": {
+      "roots": 19,
+      "results": {
+        "SELECTED": {
+          "unknown": 3,
+          "pass": 15,
+          "fail": 1
+        },
+        "MULTI": {
+          "unknown": 4,
+          "pass": 14,
+          "fail": 1
+        },
+        "GROUP": {
+          "unknown": 5,
+          "pass": 13,
+          "fail": 1
+        },
+        "FULL": {
+          "pass": 12,
+          "fail": 5,
+          "unknown": 2
+        }
+      },
+      "multi_vs": {
+        "SELECTED": {
+          "unknown": 4,
+          "tie": 15
+        },
+        "GROUP": {
+          "unknown": 5,
+          "tie": 14
+        },
+        "FULL": {
+          "unknown": 5,
+          "tie": 10,
+          "win": 4
+        }
+      }
+    },
+    "utility_GPT": {
+      "roots": 18,
+      "results": {
+        "SELECTED": {
+          "pass": 18
+        },
+        "MULTI": {
+          "pass": 18
+        },
+        "GROUP": {
+          "pass": 18
+        },
+        "FULL": {
+          "pass": 18
+        }
+      },
+      "multi_vs": {
+        "SELECTED": {
+          "tie": 18
+        },
+        "GROUP": {
+          "tie": 18
+        },
+        "FULL": {
+          "tie": 18
+        }
+      }
+    },
+    "utility_Qwen": {
+      "roots": 18,
+      "results": {
+        "SELECTED": {
+          "pass": 14,
+          "fail": 3,
+          "unknown": 1
+        },
+        "MULTI": {
+          "pass": 18
+        },
+        "GROUP": {
+          "pass": 18
+        },
+        "FULL": {
+          "pass": 18
+        }
+      },
+      "multi_vs": {
+        "SELECTED": {
+          "tie": 14,
+          "win": 3,
+          "unknown": 1
+        },
+        "GROUP": {
+          "tie": 18
+        },
+        "FULL": {
+          "tie": 18
+        }
+      }
+    }
+  },
+  "selection_counts": {
+    "sycophancy": {
+      "2": 9,
+      "0": 24,
+      "1": 3
+    },
+    "cross_domain": {
+      "0": 38,
+      "2": 6,
+      "1": 13
+    },
+    "utility": {
+      "3": 2,
+      "5": 6,
+      "4": 5,
+      "2": 3,
+      "10": 1,
+      "6": 1
+    }
+  }
+}
