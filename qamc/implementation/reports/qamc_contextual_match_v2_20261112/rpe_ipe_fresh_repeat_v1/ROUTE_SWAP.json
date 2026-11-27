@@ -1,0 +1,43 @@
+{
+  "assigned": 18,
+  "omitted": [
+    "rpeval/pa_transfer_20261109/b8628c9ec605beccef86"
+  ],
+  "positions": 87,
+  "route_by_endpoint_net_vs_full": [
+    [
+      -2,
+      4
+    ],
+    [
+      -2,
+      4
+    ]
+  ],
+  "changed_net": [
+    [
+      "rpeval/formal_multi_v1/implicit/009",
+      "all_A",
+      "TASK_ONLY",
+      "TASK_ONLY",
+      2,
+      0
+    ],
+    [
+      "rpeval/formal_multi_v1/implicit/000",
+      "all_A",
+      "TASK_ONLY",
+      "TASK_ONLY",
+      -4,
+      0
+    ],
+    [
+      "rpeval/formal_multi_v1/explicit/061",
+      "all_A",
+      "TASK_ONLY",
+      "TASK_ONLY",
+      0,
+      4
+    ]
+  ]
+}
