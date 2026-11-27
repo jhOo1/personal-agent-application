@@ -1,0 +1,17 @@
+{
+  "case_count": 10,
+  "profile_count": 6,
+  "caps": {
+    "BenchProject": 20,
+    "BenchActor": 20,
+    "BenchScore": 120
+  },
+  "inventory_sha256": "e519184b1a2b2dbea7a4c093624bfebd9149291c5564e66ba9861f2a7c1cbddf",
+  "case_baselines_sha256": "21ebcbd171c26ba228f712e3b0079ee081a1531ca5a2ef4222aaa3a8f724580f",
+  "planner_wires_sha256": "1b76dc55703a3497f7043893a45a5643f0b31aaa4a7b5d5814b480a01159961f",
+  "files": {
+    "relation_trial.py": "a8a6ae0455c656ca39ac113c545b299d4c528b3d7b05024efdbce1e83a87a608",
+    "run.sh": "eaae8a25fe2085cb1579550b84ef9b94186f4208bd0db4ae435958983d9addfb",
+    "PROTOCOL.md": "65fbe18117ec9468c3bb00dd5602305ff32c30aca6c3a0d701554395711f64b0"
+  }
+}

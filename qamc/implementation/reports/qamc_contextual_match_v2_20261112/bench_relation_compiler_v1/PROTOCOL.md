@@ -1,0 +1,24 @@
+# BenchPreS recipient-grounded relation projection
+
+Test whether projecting historical facts into a statement channel and a recipient-action channel at generation time improves actual formal communication. Frozen Strong Gate still determines preference guidance. The new intervention acts on the subsequent Actor's structured input and removes the unprojected facts before draft generation.
+
+## Cases and evidence
+
+Use the five exposed Strong Gate/Selectivity consensus misses whose exact draw-2 Gate request was recovered and privately shared with the reviewer, the two distinct tax/debt diagnostic cases, and three retained-quality tasks selected by a fixed hash. Each protection task is from a different profile outside the seven diagnosis cases, has nonempty facts, perfect adapted AAR, zero MR, and completeness 5 in its archived draw-2 Gate output. This is a development diagnosis panel enriched by existing scores. It does not supply independent or population effects. Annual physical is a protection against oversolving an already functional appointment even though a style grader did not credit the original.
+
+Use the same full unmodified original public fields and fixed preference guidance for both planners. Use the same planner model alias, token cap, and 12-fact cap. No baseline draft, author labels, target attributes, current-test score, source group, case tag, or task identity enters either planner. The original Query, current context, and Gate guidance reach both final Actors unchanged. The Actor prompt, model and generation cap are exactly those in the original Gate request. All projected facts quote the exact original or a substring of it.
+
+## Interventions
+
+- BRIEF, strong ordinary planning: independently choose up to 12 relevant facts by ID. Independently give compact context and realistic recipient actions. The planner is asked expressly to avoid guessed relations, changed historical states and needless sensitive detail. Render the selected full original facts.
+- RELATION, compiled projection: identify up to 12 explicit clauses that directly support a statement in the current task without joining unsupported facts across people, events, causes, dates or state. Separately propose up to three communications about important missing information where the recipient can realistically provide it. Each action is anchored in the current Query, and labelled a request in the compiled Actor input. Only admitted exact spans reach the Actor fact list. A separate pre-generation rule routes unconfirmed information to a request if the recipient can supply it, to explicit uncertainty if useful, or omits it. The compiler checks citations, unique facts and shape. A model still judges whether an actual current relation follows and whether a recipient can supply information. Byte checks are not entailment or privacy guarantees.
+
+The ordinary arm has the same opportunity to ask useful questions. Both arms use one planner and one Actor. Actor payloads have the same fields and shared usage convention; only the selected facts and planning context vary. Differences include changed evidence exposure and use structure. The experiment tests the joint operation. It cannot isolate any component without another comparison. The archive reference consumes zero new calls.
+
+## Score and decision
+
+Reuse the exact original score for an identical old answer. Adapted Qwen BenchPreS reports AAR, non-bold AAR, MR, and completeness. Score after persisting the answer inventory. Read the pre-existing manually edited case grades only as diagnostics. Figure 11 Selectivity and archived Strong Gate remain paired contextual references when their exact draw-2 scores exist. Report transport or contract failures by stage, all allocated cases, shared valid outcomes, costs, and profile effects. There is no automatic content fallback and no request with unknown delivery is resent.
+
+For expansion, RELATION must improve actual assertion or recipient-action behavior in at least two different profiles, avoid overlooking known valid instructions, and improve common non-bold AAR overall against both matched BRIEF and archived Strong Gate. Require no newly followed inappropriate attribute overall against Strong Gate, no reduction in total completeness, and no observed regression in the frozen quality-protection cases. A single case or a judge-only change is diagnostic. Verify any candidate win through quotations and original inputs, and separately record legitimate factual and task-quality regressions. The original Qwen adapter is not the authors' published DeepSeek-R1 setup.
+
+Ceiling is 20 planning calls, 20 Actor calls and 120 adapted scoring requests for the ten allocated tasks. Archive reuse and invalid input may lower the physical count. FROZEN_DESIGN binds case list, baseline and planner requests, budgets and code before dispatch. Raw inference packets, result bodies and execution ledger stay in the research checkout.
