@@ -313,7 +313,18 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     rep = json.loads((root / "bench_header_repeat_v1/SUMMARY.json").read_text())["stats"]
     before, after = (rep["completeness"][key] for key in ("original_net_edit","replicate_net_edit"))
     require(f"from ${before}$ to ${after:+}$ total points" in paper, True, "Completeness replication")
-    return 44 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    agreement = json.loads((root / "persist_released_grade_agreement_v1/ORDINAL.json").read_text())
+    for row in agreement:
+        counts = row["counts"]
+        n = sum(cell["n"] for cell in counts)
+        passes = {}
+        for side in ("released", "project"):
+            passes[side] = sum(cell["n"] for cell in counts if (
+                cell[side] == 3 if row["category"] == "beneficial_memory_usage" else cell[side] < 3))
+        for value in passes.values():
+            require(f"{value}/{n}" in paper.split("To test whether the project grader")[1].split("\\section")[0],
+                    True, f"Released answer bridge {row['category']}")
+    return 47 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
