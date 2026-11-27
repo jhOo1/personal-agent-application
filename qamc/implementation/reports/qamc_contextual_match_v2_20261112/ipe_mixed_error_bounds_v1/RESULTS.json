@@ -1,0 +1,87 @@
+{
+  "case": {
+    "UPB": 0,
+    "existing_flags": [],
+    "match": "6/9"
+  },
+  "counts": {
+    "all/IPE_C": {
+      "A_forced_tasks": 44,
+      "A_max_positions": 264,
+      "A_min_positions": 62,
+      "BC_forced_tasks": 0,
+      "BC_max_positions": 202,
+      "BC_min_positions": 0,
+      "C_forced_tasks": 0,
+      "C_max_positions": 148,
+      "C_min_positions": 0,
+      "tasks": 110,
+      "unmatched": 264
+    },
+    "all/RPR_PAPER_FULL": {
+      "A_forced_tasks": 43,
+      "A_max_positions": 262,
+      "A_min_positions": 60,
+      "BC_forced_tasks": 0,
+      "BC_max_positions": 202,
+      "BC_min_positions": 0,
+      "C_forced_tasks": 0,
+      "C_max_positions": 148,
+      "C_min_positions": 0,
+      "tasks": 110,
+      "unmatched": 262
+    },
+    "all/TASK_ONLY": {
+      "A_forced_tasks": 88,
+      "A_max_positions": 350,
+      "A_min_positions": 158,
+      "BC_forced_tasks": 16,
+      "BC_max_positions": 208,
+      "BC_min_positions": 16,
+      "C_forced_tasks": 0,
+      "C_max_positions": 145,
+      "C_min_positions": 0,
+      "tasks": 110,
+      "unmatched": 366
+    },
+    "unflagged/IPE_C": {
+      "A_forced_tasks": 27,
+      "A_max_positions": 185,
+      "A_min_positions": 44,
+      "BC_forced_tasks": 0,
+      "BC_max_positions": 141,
+      "BC_min_positions": 0,
+      "C_forced_tasks": 0,
+      "C_max_positions": 99,
+      "C_min_positions": 0,
+      "tasks": 67,
+      "unmatched": 185
+    },
+    "unflagged/RPR_PAPER_FULL": {
+      "A_forced_tasks": 27,
+      "A_max_positions": 185,
+      "A_min_positions": 44,
+      "BC_forced_tasks": 0,
+      "BC_max_positions": 141,
+      "BC_min_positions": 0,
+      "C_forced_tasks": 0,
+      "C_max_positions": 99,
+      "C_min_positions": 0,
+      "tasks": 67,
+      "unmatched": 185
+    },
+    "unflagged/TASK_ONLY": {
+      "A_forced_tasks": 61,
+      "A_max_positions": 250,
+      "A_min_positions": 118,
+      "BC_forced_tasks": 12,
+      "BC_max_positions": 144,
+      "BC_min_positions": 12,
+      "C_forced_tasks": 0,
+      "C_max_positions": 97,
+      "C_min_positions": 0,
+      "tasks": 67,
+      "unmatched": 262
+    }
+  }
+}
