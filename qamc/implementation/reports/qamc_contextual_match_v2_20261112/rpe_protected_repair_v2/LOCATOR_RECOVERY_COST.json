@@ -1,0 +1,14 @@
+{
+  "projected": 4,
+  "physical_requests": 16,
+  "tokens": 82381,
+  "unknown_usage": 0,
+  "repair_dispositions": {
+    "FREE": {
+      "EDITED": 4
+    },
+    "PATCH": {
+      "EDITED": 4
+    }
+  }
+}
