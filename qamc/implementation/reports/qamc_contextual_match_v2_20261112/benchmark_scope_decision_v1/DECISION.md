@@ -14,3 +14,5 @@
 外部方法核对：DEEP-JLU/MemAdapter 固定 6b517dc90d4c7e0ebc4d2305684d45051f792cc9 的 methods/memadapter/memadapter.py 中 run_three_stage 依次从原文归纳边界、结合查询产生用法、以原文和用法生成。第一、第二阶段默认各可尝试三次。正式比较须区分已存适配与这条完整路径，披露统一单次失败合同及固定输入适配。此核对没有产生新模型成绩。
 
 证据：公开仓库 qamc/manuscript/paper.tex 的 BenchPreS、查询范围和重复部署各节；同目录树的 external_pool_frontier_v1/READOUT.md 与 persist_query_requested_open_v1。外法源码 https://github.com/DEEP-JLU/MemAdapter/blob/6b517dc90d4c7e0ebc4d2305684d45051f792cc9/methods/memadapter/memadapter.py 。
+
+QAMC-v3.2 已答复本次去留质询。双方建议采用两项主评、一项公开边界：RPEval 与 PersistBench 做主要效果比较，BenchPreS 暂停专项优化，继续报告既有分数并检验新算法是否损害正式表达。评审提到 MemSyco 可以列为备选，本次没有对其重新做资格检验，未将其加入。此变更仅调整当前研究投入和拟议论文主张。
