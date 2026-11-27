@@ -224,7 +224,19 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         values = [f"{stats.get('failure', 0)}/{stats.get('unknown', 0)}" for stats in scores]
         require(cells, values, f"Three deployments {method}")
     require(checked, list(policies), "Three deployment policies")
-    return 8 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    feature_report = (root / "teacher_feature_actor_v1/RESULTS.md").read_text()
+    feature_rows = [r for r in markdown_rows(feature_report) if r[0] in {"history_B", "history_C", "task_all_A"}]
+    for subset, phrase in (
+        (feature_rows, r"obtained (\d+), (\d+) and (\d+) matches out of (\d+) positions"),
+        ([r for r in feature_rows if r[0] == "history_B"], r"they obtained (\d+), (\d+) and (\d+) out of (\d+)"),
+        ([r for r in feature_rows if r[1] not in {"implicit/070", "explicit/089"}],
+         r"the three scores were (\d+), (\d+) and (\d+) out of (\d+)"),
+    ):
+        totals = [sum(int(r[3].split("/")[i]) for r in subset) for i in range(3)]
+        match = re.search(phrase, paper)
+        require(list(map(int, match.groups())) if match else None, totals + [sum(int(r[2]) for r in subset)],
+                "Direct generation illustration")
+    return 11 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
