@@ -1,0 +1,41 @@
+{
+  "source_positions": {
+    "disagreement": {
+      "A": 7,
+      "B": 19,
+      "C": 3
+    },
+    "same_count": {
+      "A": 13,
+      "B": 13,
+      "C": 3
+    }
+  },
+  "source_positions_on_different_inputs": {
+    "disagreement": {
+      "A": 4,
+      "B": 10,
+      "C": 1
+    },
+    "same_count": {
+      "A": 10,
+      "B": 4,
+      "C": 1
+    }
+  },
+  "tasks": {
+    "B_lost_positions": 1,
+    "B_new_positions": 7,
+    "B_tasks_with_net_decrease": 0,
+    "B_tasks_with_net_increase": 6,
+    "C_lost_positions": 0,
+    "C_new_positions": 0,
+    "C_tasks_with_net_decrease": 0,
+    "C_tasks_with_net_increase": 0,
+    "different_from_equal_size_rp": 11,
+    "different_source_groups": 9,
+    "paired_panel": 274,
+    "prior_local_reentry_uid_overlap": 2,
+    "triggered": 24
+  }
+}
