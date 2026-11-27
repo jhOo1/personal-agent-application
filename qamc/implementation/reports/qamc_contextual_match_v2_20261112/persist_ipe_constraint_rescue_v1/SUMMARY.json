@@ -1,0 +1,210 @@
+{
+  "verified_rp_roots": 49,
+  "tracks": {
+    "sycophancy": {
+      "assigned": {
+        "SELECTED": {
+          "pass": 11,
+          "fail": 1
+        },
+        "FULL": {
+          "fail": 7,
+          "pass": 5
+        },
+        "RUBRIC": {
+          "fail": 8,
+          "pass": 4
+        },
+        "IPE-C": {
+          "fail": 7,
+          "pass": 5
+        },
+        "rescue_C": {
+          "pass": 6,
+          "fail": 6
+        },
+        "rescue_BC": {
+          "pass": 6,
+          "fail": 6
+        }
+      },
+      "transitions_from_selected": {
+        "SELECTED": {
+          "pass->pass": 11,
+          "fail->fail": 1
+        },
+        "FULL": {
+          "pass->fail": 6,
+          "pass->pass": 5,
+          "fail->fail": 1
+        },
+        "RUBRIC": {
+          "pass->fail": 7,
+          "pass->pass": 4,
+          "fail->fail": 1
+        },
+        "IPE-C": {
+          "pass->fail": 6,
+          "pass->pass": 5,
+          "fail->fail": 1
+        },
+        "rescue_C": {
+          "pass->pass": 6,
+          "pass->fail": 5,
+          "fail->fail": 1
+        },
+        "rescue_BC": {
+          "pass->pass": 6,
+          "pass->fail": 5,
+          "fail->fail": 1
+        }
+      },
+      "changes": {
+        "original_FULL": 12,
+        "original_EMPTY": 24,
+        "rescue_C_reopens": 24,
+        "rescue_BC_reopens": 24
+      }
+    },
+    "cross_domain": {
+      "assigned": {
+        "SELECTED": {
+          "unknown": 3,
+          "pass": 15,
+          "fail": 1
+        },
+        "FULL": {
+          "pass": 12,
+          "fail": 5,
+          "unknown": 2
+        },
+        "RUBRIC": {
+          "pass": 12,
+          "unknown": 6,
+          "fail": 1
+        },
+        "IPE-C": {
+          "unknown": 5,
+          "pass": 10,
+          "fail": 4
+        },
+        "rescue_C": {
+          "unknown": 3,
+          "pass": 11,
+          "fail": 5
+        },
+        "rescue_BC": {
+          "pass": 14,
+          "fail": 5
+        }
+      },
+      "transitions_from_selected": {
+        "SELECTED": {
+          "unknown->unknown": 3,
+          "pass->pass": 15,
+          "fail->fail": 1
+        },
+        "FULL": {
+          "unknown->pass": 3,
+          "pass->pass": 9,
+          "pass->fail": 4,
+          "pass->unknown": 2,
+          "fail->fail": 1
+        },
+        "RUBRIC": {
+          "unknown->pass": 1,
+          "pass->pass": 11,
+          "unknown->unknown": 2,
+          "pass->unknown": 4,
+          "fail->fail": 1
+        },
+        "IPE-C": {
+          "unknown->unknown": 3,
+          "pass->pass": 10,
+          "pass->fail": 4,
+          "pass->unknown": 1,
+          "fail->unknown": 1
+        },
+        "rescue_C": {
+          "unknown->unknown": 3,
+          "pass->pass": 11,
+          "pass->fail": 4,
+          "fail->fail": 1
+        },
+        "rescue_BC": {
+          "unknown->pass": 3,
+          "pass->pass": 11,
+          "pass->fail": 4,
+          "fail->fail": 1
+        }
+      },
+      "changes": {
+        "original_EMPTY": 38,
+        "rescue_C_reopens": 21,
+        "rescue_BC_reopens": 38,
+        "original_FULL": 19
+      }
+    },
+    "beneficial_memory_usage": {
+      "assigned": {
+        "SELECTED": {
+          "pass": 12,
+          "unknown": 6
+        },
+        "FULL": {
+          "pass": 17,
+          "unknown": 1
+        },
+        "RUBRIC": {
+          "pass": 18
+        },
+        "IPE-C": {
+          "pass": 16,
+          "unknown": 1,
+          "fail": 1
+        },
+        "rescue_C": {
+          "pass": 12,
+          "unknown": 6
+        },
+        "rescue_BC": {
+          "pass": 12,
+          "unknown": 6
+        }
+      },
+      "transitions_from_selected": {
+        "SELECTED": {
+          "pass->pass": 12,
+          "unknown->unknown": 6
+        },
+        "FULL": {
+          "pass->pass": 12,
+          "unknown->pass": 5,
+          "unknown->unknown": 1
+        },
+        "RUBRIC": {
+          "pass->pass": 12,
+          "unknown->pass": 6
+        },
+        "IPE-C": {
+          "pass->pass": 11,
+          "unknown->pass": 5,
+          "unknown->unknown": 1,
+          "pass->fail": 1
+        },
+        "rescue_C": {
+          "pass->pass": 12,
+          "unknown->unknown": 6
+        },
+        "rescue_BC": {
+          "pass->pass": 12,
+          "unknown->unknown": 6
+        }
+      },
+      "changes": {
+        "original_FULL": 13,
+        "original_None": 5
+      }
+    }
+  }
+}
