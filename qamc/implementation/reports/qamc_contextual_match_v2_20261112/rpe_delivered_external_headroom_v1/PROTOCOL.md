@@ -1,0 +1,5 @@
+# Exploratory conditioned generation replay
+
+The prior delivered-source inventory motivated testing a deployable composition: use the original IPE-C decision; on its history-on branch execute the complete Des2Gen reconstruction instead of RP. Preserve the exact original answer on a valid history-off path. Missing route or missing candidate stays missing. No per-case scores or labels are part of this rule. Inventory and replay use overlapping development cases, so both are exploratory. The reader, source presentation, and final generator can all differ between methods; this cannot isolate prompt wording.
+
+Report the paired total, all-A, only-B and contains-C, raw and joint unflagged, against IPE-C. Include grade missingness and bounds on the total Match difference relative to scored IPE-C. Favor adoption only with positive overall and unflagged Match and no increased aggregate OPB, UPB or FM on the common panel. Report always-Des2Gen on a three-way paired panel. A positive score without meeting the guards does not replace IPE-C. No new generation or sealed tasks.

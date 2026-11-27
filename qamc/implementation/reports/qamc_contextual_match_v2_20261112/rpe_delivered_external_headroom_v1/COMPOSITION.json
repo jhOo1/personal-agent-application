@@ -1,0 +1,363 @@
+{
+  "assigned": 300,
+  "bounds": {
+    "scored_reference": 282,
+    "low": -13,
+    "high": -5,
+    "missing": 2
+  },
+  "tables": {
+    "all/pair/raw": {
+      "IPE-C": {
+        "tasks": 280,
+        "Match": 964,
+        "positions": 1502,
+        "OPB": 255,
+        "UPB": 266,
+        "FM": 53
+      },
+      "composition": {
+        "tasks": 280,
+        "Match": 957,
+        "positions": 1502,
+        "OPB": 304,
+        "UPB": 228,
+        "FM": 76
+      }
+    },
+    "all/pair/unflagged": {
+      "IPE-C": {
+        "tasks": 206,
+        "Match": 775,
+        "positions": 1145,
+        "OPB": 174,
+        "UPB": 138,
+        "FM": 43
+      },
+      "composition": {
+        "tasks": 206,
+        "Match": 773,
+        "positions": 1145,
+        "OPB": 200,
+        "UPB": 119,
+        "FM": 62
+      }
+    },
+    "all/three/raw": {
+      "IPE-C": {
+        "tasks": 274,
+        "Match": 949,
+        "positions": 1472,
+        "OPB": 255,
+        "UPB": 254,
+        "FM": 52
+      },
+      "composition": {
+        "tasks": 274,
+        "Match": 942,
+        "positions": 1472,
+        "OPB": 304,
+        "UPB": 216,
+        "FM": 75
+      },
+      "always_Des2Gen": {
+        "tasks": 274,
+        "Match": 704,
+        "positions": 1472,
+        "OPB": 578,
+        "UPB": 149,
+        "FM": 121
+      }
+    },
+    "all/three/unflagged": {
+      "IPE-C": {
+        "tasks": 178,
+        "Match": 656,
+        "positions": 991,
+        "OPB": 171,
+        "UPB": 114,
+        "FM": 38
+      },
+      "composition": {
+        "tasks": 178,
+        "Match": 654,
+        "positions": 991,
+        "OPB": 197,
+        "UPB": 95,
+        "FM": 57
+      },
+      "always_Des2Gen": {
+        "tasks": 178,
+        "Match": 477,
+        "positions": 991,
+        "OPB": 391,
+        "UPB": 53,
+        "FM": 87
+      }
+    },
+    "contains_C/pair/raw": {
+      "IPE-C": {
+        "tasks": 114,
+        "Match": 417,
+        "positions": 701,
+        "OPB": 179,
+        "UPB": 109,
+        "FM": 33
+      },
+      "composition": {
+        "tasks": 114,
+        "Match": 419,
+        "positions": 701,
+        "OPB": 218,
+        "UPB": 68,
+        "FM": 51
+      }
+    },
+    "contains_C/pair/unflagged": {
+      "IPE-C": {
+        "tasks": 66,
+        "Match": 258,
+        "positions": 457,
+        "OPB": 123,
+        "UPB": 50,
+        "FM": 24
+      },
+      "composition": {
+        "tasks": 66,
+        "Match": 263,
+        "positions": 457,
+        "OPB": 142,
+        "UPB": 29,
+        "FM": 37
+      }
+    },
+    "contains_C/three/raw": {
+      "IPE-C": {
+        "tasks": 113,
+        "Match": 415,
+        "positions": 698,
+        "OPB": 179,
+        "UPB": 107,
+        "FM": 32
+      },
+      "composition": {
+        "tasks": 113,
+        "Match": 417,
+        "positions": 698,
+        "OPB": 218,
+        "UPB": 66,
+        "FM": 50
+      },
+      "always_Des2Gen": {
+        "tasks": 113,
+        "Match": 418,
+        "positions": 698,
+        "OPB": 222,
+        "UPB": 61,
+        "FM": 49
+      }
+    },
+    "contains_C/three/unflagged": {
+      "IPE-C": {
+        "tasks": 65,
+        "Match": 257,
+        "positions": 454,
+        "OPB": 123,
+        "UPB": 46,
+        "FM": 22
+      },
+      "composition": {
+        "tasks": 65,
+        "Match": 262,
+        "positions": 454,
+        "OPB": 142,
+        "UPB": 25,
+        "FM": 35
+      },
+      "always_Des2Gen": {
+        "tasks": 65,
+        "Match": 263,
+        "positions": 454,
+        "OPB": 143,
+        "UPB": 22,
+        "FM": 35
+      }
+    },
+    "B_only/pair/raw": {
+      "IPE-C": {
+        "tasks": 49,
+        "Match": 150,
+        "positions": 286,
+        "OPB": 14,
+        "UPB": 102,
+        "FM": 9
+      },
+      "composition": {
+        "tasks": 49,
+        "Match": 145,
+        "positions": 286,
+        "OPB": 21,
+        "UPB": 101,
+        "FM": 9
+      }
+    },
+    "B_only/pair/unflagged": {
+      "IPE-C": {
+        "tasks": 39,
+        "Match": 120,
+        "positions": 238,
+        "OPB": 4,
+        "UPB": 88,
+        "FM": 9
+      },
+      "composition": {
+        "tasks": 39,
+        "Match": 117,
+        "positions": 238,
+        "OPB": 5,
+        "UPB": 90,
+        "FM": 9
+      }
+    },
+    "B_only/three/raw": {
+      "IPE-C": {
+        "tasks": 47,
+        "Match": 148,
+        "positions": 273,
+        "OPB": 14,
+        "UPB": 96,
+        "FM": 9
+      },
+      "composition": {
+        "tasks": 47,
+        "Match": 143,
+        "positions": 273,
+        "OPB": 21,
+        "UPB": 95,
+        "FM": 9
+      },
+      "always_Des2Gen": {
+        "tasks": 47,
+        "Match": 140,
+        "positions": 273,
+        "OPB": 80,
+        "UPB": 44,
+        "FM": 12
+      }
+    },
+    "B_only/three/unflagged": {
+      "IPE-C": {
+        "tasks": 27,
+        "Match": 73,
+        "positions": 162,
+        "OPB": 4,
+        "UPB": 68,
+        "FM": 8
+      },
+      "composition": {
+        "tasks": 27,
+        "Match": 70,
+        "positions": 162,
+        "OPB": 5,
+        "UPB": 70,
+        "FM": 8
+      },
+      "always_Des2Gen": {
+        "tasks": 27,
+        "Match": 76,
+        "positions": 162,
+        "OPB": 39,
+        "UPB": 31,
+        "FM": 7
+      }
+    },
+    "all_A/pair/raw": {
+      "IPE-C": {
+        "tasks": 117,
+        "Match": 397,
+        "positions": 515,
+        "OPB": 62,
+        "UPB": 55,
+        "FM": 11
+      },
+      "composition": {
+        "tasks": 117,
+        "Match": 393,
+        "positions": 515,
+        "OPB": 65,
+        "UPB": 59,
+        "FM": 16
+      }
+    },
+    "all_A/pair/unflagged": {
+      "IPE-C": {
+        "tasks": 101,
+        "Match": 397,
+        "positions": 450,
+        "OPB": 47,
+        "UPB": 0,
+        "FM": 10
+      },
+      "composition": {
+        "tasks": 101,
+        "Match": 393,
+        "positions": 450,
+        "OPB": 53,
+        "UPB": 0,
+        "FM": 16
+      }
+    },
+    "all_A/three/raw": {
+      "IPE-C": {
+        "tasks": 114,
+        "Match": 386,
+        "positions": 501,
+        "OPB": 62,
+        "UPB": 51,
+        "FM": 11
+      },
+      "composition": {
+        "tasks": 114,
+        "Match": 382,
+        "positions": 501,
+        "OPB": 65,
+        "UPB": 55,
+        "FM": 16
+      },
+      "always_Des2Gen": {
+        "tasks": 114,
+        "Match": 146,
+        "positions": 501,
+        "OPB": 276,
+        "UPB": 44,
+        "FM": 60
+      }
+    },
+    "all_A/three/unflagged": {
+      "IPE-C": {
+        "tasks": 86,
+        "Match": 326,
+        "positions": 375,
+        "OPB": 44,
+        "UPB": 0,
+        "FM": 8
+      },
+      "composition": {
+        "tasks": 86,
+        "Match": 322,
+        "positions": 375,
+        "OPB": 50,
+        "UPB": 0,
+        "FM": 14
+      },
+      "always_Des2Gen": {
+        "tasks": 86,
+        "Match": 138,
+        "positions": 375,
+        "OPB": 209,
+        "UPB": 0,
+        "FM": 45
+      }
+    }
+  }
+}

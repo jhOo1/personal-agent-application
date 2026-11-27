@@ -1,0 +1,22 @@
+{
+  "DES2GEN_FULL": {
+    "delivered": 121,
+    "common": 120,
+    "clean": 68,
+    "net_match": 2,
+    "positions": 471,
+    "protected_wins": 8,
+    "protected_gain": 13,
+    "winning_groups": 6
+  },
+  "MEMADAPTER_FULL": {
+    "delivered": 121,
+    "common": 111,
+    "clean": 65,
+    "net_match": 0,
+    "positions": 444,
+    "protected_wins": 6,
+    "protected_gain": 10,
+    "winning_groups": 5
+  }
+}
