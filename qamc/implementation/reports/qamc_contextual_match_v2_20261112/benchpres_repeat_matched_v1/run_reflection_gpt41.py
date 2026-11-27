@@ -38,8 +38,8 @@ def plan_from_source():
     return {"protocol": PROTOCOL, "units": jobs, "source_plan_sha256": sha(source)}
 
 
-def receipt(job):
-    path = ROOT / "execution" / "visible" / sampling_key(job["unit"])
+def receipt(job, root=ROOT):
+    path = root / "execution" / "visible" / sampling_key(job["unit"])
     if not (path / "record.json").is_file():
         return None, None
     row = run.read(path / "record.json")
@@ -54,27 +54,27 @@ def receipt(job):
         return row, None
 
 
-def dispatch(plan):
-    if (ROOT / "TERMINAL").exists():
+def dispatch(plan, root=ROOT):
+    if (root / "TERMINAL").exists():
         return
-    prior = [row for job in plan["units"] if (row := receipt(job)[0])]
+    prior = [row for job in plan["units"] if (row := receipt(job, root)[0])]
     if any(r["status"] == "PENDING_DELIVERY_UNKNOWN" for r in prior):
         raise ValueError("Retained delivery-unknown unit")
     _, fingerprint = read_reference()
-    write_frozen(ROOT / "SERVICE_SHA256", fingerprint)
-    gate = BudgetGate(ROOT / "PACING.json", spacing=3.2, cooldown=301, limit=len(plan["units"]))
+    write_frozen(root / "SERVICE_SHA256", fingerprint)
+    gate = BudgetGate(root / "PACING.json", spacing=3.2, cooldown=301, limit=len(plan["units"]))
     activate(gate, max((r["started_unix"] + r["elapsed_seconds"] for r in prior if r["status"] != "OK"), default=0))
-    sampler = UsageObservableSampler(ROOT / "execution", plan)
+    sampler = UsageObservableSampler(root / "execution", plan)
     sampler.control = MinuteControl(sampler.control, gate)
     consecutive = 0
     try:
         for job in plan["units"]:
-            if receipt(job)[0] is None:
+            if receipt(job, root)[0] is None:
                 try:
                     sampler.perform(job["unit"], job["request"])
                 except (SamplingTransportError, RetainedSamplingAttempt):
                     pass
-            row, label = receipt(job)
+            row, label = receipt(job, root)
             if row is None or row["status"] == "PENDING_DELIVERY_UNKNOWN":
                 return
             if row["reference_config_sha256"] != fingerprint:
@@ -89,7 +89,7 @@ def dispatch(plan):
                     break
             else:
                 consecutive = 0
-        write_frozen(ROOT / "TERMINAL", "Settled fixed-answer diagnostic\n")
+        write_frozen(root / "TERMINAL", "Settled fixed-answer diagnostic\n")
     finally:
         sampler.close()
 
