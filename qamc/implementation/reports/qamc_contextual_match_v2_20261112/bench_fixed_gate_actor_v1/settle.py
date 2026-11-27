@@ -1,7 +1,7 @@
 """Verify actual Actor manifests, summarize paired completed draws without dispatch."""
 from collections import Counter, defaultdict
 import json
-from panel import HERE, BASE, digest, read
+from panel import HERE, BASE, RUN, digest, read
 
 PRIVATE = HERE / "private"
 MODELS = ("qwen3.8-flash", "deepseek-v4.1-flash")
@@ -9,6 +9,7 @@ MODELS = ("qwen3.8-flash", "deepseek-v4.1-flash")
 
 def verify_wires(cards):
     count = 0
+    receipts = Counter()
     for p in sorted(PRIVATE.glob("Actor*_MANIFEST.json")):
         stage = p.name.removesuffix("_MANIFEST.json")
         model = stage.split("_",1)[1]
@@ -24,8 +25,22 @@ def verify_wires(cards):
                 raise ValueError("Actor wire mismatch")
         if seen != set(cards):
             raise ValueError("Incomplete Actor manifest")
+        requests = {row["unit"]["root_id"]: row for row in manifest["units"]}
+        received = set()
+        stage_dir = RUN.with_name(HERE.name) / stage
+        for record_path in stage_dir.glob("visible/*/record.json"):
+            record = read(record_path)
+            uid = record["unit"]["root_id"]
+            original = requests[uid]
+            saved_wire = read(record_path.with_name("request.json"))
+            if (uid in received or original["unit"] != record["unit"]
+                    or original["request"] != saved_wire
+                    or digest(saved_wire) != record["request_sha256"]):
+                raise ValueError("Receipt does not match frozen Actor request")
+            received.add(uid)
+            receipts[record["status"]] += 1
         count += len(seen)
-    return count
+    return count, dict(receipts)
 
 
 def settle():
@@ -34,7 +49,8 @@ def settle():
     cohorts = {r["uid"]:g for g,rows in roster.items() for r in rows}
     targets = {(r["uid"],r["position"]):r["preference"] for r in
                read(BASE/"strong_actor_boundary_audit_v1/CENSUS.json")["BenchPreS"]["attributes"]}
-    summary = {"verified_actor_wires":verify_wires(cards),"completed_draws":0}
+    manifested, receipts = verify_wires(cards)
+    summary = {"verified_actor_wires":manifested,"verified_actor_receipts":receipts,"completed_draws":0}
     checkpoints = sorted(PRIVATE.glob("DRAW*.json"))
     if not checkpoints:
         return summary
@@ -59,7 +75,7 @@ def settle():
                 attr = s["decisions"][card["position"]]
                 if attr["preference"]!=targets[uid,card["position"]] or not attr["appropriate"]:
                     raise ValueError("Indexed protection/target mismatch")
-                for key in (cohort,cohort+"/"+card["profile"]):
+                for key in (cohort,cohort+"/"+card["profile"],cohort+"/"+uid):
                     totals[key][m].update(pairs=1,follow=int(attr["label"]=="follow"),
                         aar=s["aar_numerator"],aar_denom=s["aar_denominator"],
                         mr=s["mr_numerator"],mr_denom=s["mr_denominator"],completeness=s["task_completeness"])
