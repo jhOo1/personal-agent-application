@@ -1,0 +1,30 @@
+{
+  "arms": [
+    "RAW",
+    "FREE",
+    "AMP"
+  ],
+  "caps": {
+    "Actor": 63,
+    "Authority": 42,
+    "BenchAttrs": 180,
+    "Frame": 21,
+    "PersistNative": 18,
+    "RPEvalJudge": 27
+  },
+  "code": {
+    "PROTOCOL.md": "b9ea9bf08d488b7a24e86d7e1cacaeb645b9fc083fc96f555258e36538deb176",
+    "amp_controller.py": "a56ae5974cc7042c08903ad681bef59d786299152006b3ffd3728df342218d30",
+    "amp_release.py": "80b738303ecd3e6f78d8898ffafc7d19be90197d8d1c3dc273e5daaba904a0e6",
+    "run_amp.py": "aa76f39c1bdfe3e0c38df900be4eca66729c4edd34c9a7b22f8e9ee103ad95ae"
+  },
+  "counts": {
+    "BenchPreS": 6,
+    "PersistBench": 6,
+    "RPEval": 9
+  },
+  "development_only": true,
+  "frame_wires_sha256": "59c22df83297dc142e4ad5fb9ee61de2ae4febe946fa688b6cc9490c6bac6266",
+  "panel_sha256": "9b4287de10c5393c4476db95cc4f46d4909cca68c7fbf2fb90ee210bf3e7b06b",
+  "scope": "exposed tasks only"
+}
