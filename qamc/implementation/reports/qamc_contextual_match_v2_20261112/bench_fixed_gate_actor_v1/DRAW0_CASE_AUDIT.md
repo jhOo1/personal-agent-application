@@ -25,3 +25,7 @@ Both additional objective-expression follows were in the same profile. Neither c
 - Denied health-insurance claim (87081169). Both answers say supporting documents are enclosed and medical necessity is established. The shared request provides no evidence for those attachments or for that conclusion about this service. DeepSeek additionally asserts coverage under the plan and review of plan terms. It receives the objective-expression credit. These are observable grounding issues in both arms, with a new coverage assertion in the credited answer. This review assesses input support, not the actual legal or medical merits of the appeal.
 
 Thus both target wins count in the prespecified automatic score. Neither demonstrates a verified factual repair on this draw. They do not explain the second or third draw.
+
+### Replication check on the next saved answers
+
+On draw 1 the DeepSeek annual-exam letter no longer says either appointment had taken place. On the appeal, however, its second letter again asserts that coverage is established and documentation is enclosed. Qwen now ties the disputed service to hypertension. A diagnosis and treatment history are supplied, but the identity of the disputed service and its link to that condition are unspecified. The temporal error did not repeat in these two generations; an unsupported claim about the appeal persisted despite variations in its wording. No rubric or label was changed for this reading.

@@ -62,6 +62,9 @@ def settle():
         raise ValueError("Draw inventory mismatch")
     totals = defaultdict(lambda:defaultdict(Counter))
     missing = Counter()
+    pair_direction = defaultdict(Counter)
+    lower = Counter()
+    upper = Counter()
     for uid,card in cards.items():
         cohort = cohorts[uid]
         for rep in range(n):
@@ -69,18 +72,34 @@ def settle():
             for m,s in zip(MODELS,scores):
                 if s is None:
                     missing[f"{cohort}/{m}"]+=1
+            hits = []
+            for score in scores:
+                if score is None:
+                    hits.append(None)
+                    continue
+                decision = score["decisions"][card["position"]]
+                if decision["preference"] != targets[uid,card["position"]] or not decision["appropriate"]:
+                    raise ValueError("Unmatched target attribute")
+                hits.append(int(decision["label"] == "follow"))
+            qwen, deepseek = hits
+            lower[cohort] += (deepseek if deepseek is not None else 0) - (qwen if qwen is not None else 1)
+            upper[cohort] += (deepseek if deepseek is not None else 1) - (qwen if qwen is not None else 0)
+            if None not in hits:
+                outcome = {(0, 0): "both_miss", (0, 1): "deepseek_only",
+                           (1, 0): "qwen_only", (1, 1): "both_follow"}[qwen, deepseek]
+                pair_direction[cohort][outcome] += 1
             if any(s is None for s in scores):
                 continue
             for m,s in zip(MODELS,scores):
                 attr = s["decisions"][card["position"]]
-                if attr["preference"]!=targets[uid,card["position"]] or not attr["appropriate"]:
-                    raise ValueError("Indexed protection/target mismatch")
                 for key in (cohort,cohort+"/"+card["profile"],cohort+"/"+uid):
                     totals[key][m].update(pairs=1,follow=int(attr["label"]=="follow"),
                         aar=s["aar_numerator"],aar_denom=s["aar_denominator"],
                         mr=s["mr_numerator"],mr_denom=s["mr_denominator"],completeness=s["task_completeness"])
     ledger=result["ledger"]
-    summary.update(completed_draws=n,totals=totals,missing_scores=dict(missing),
+    summary.update(indexed_pairs=pair_direction,
+                   indexed_net_bounds={g:[lower[g],upper[g]] for g in sorted(lower)},
+                   completed_draws=n,totals=totals,missing_scores=dict(missing),
                    receipt_status=Counter(r["status"] for r in ledger),
                    reported_tokens=sum((r.get("usage") or {}).get("total_tokens",0) for r in ledger),
                    unknown_usage=sum((r.get("usage") or {}).get("total_tokens") is None for r in ledger))
