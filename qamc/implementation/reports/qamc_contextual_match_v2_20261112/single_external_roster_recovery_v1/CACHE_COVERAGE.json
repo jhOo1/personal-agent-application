@@ -1,0 +1,23 @@
+{
+  "coverage": {
+    "D2G_PAPER_ADAPT": {
+      "any_receipt": 0,
+      "requested": 20,
+      "unique_successful_answer": 0
+    },
+    "RPR_PAPER_XBENCH": {
+      "any_receipt": 0,
+      "requested": 21,
+      "unique_successful_answer": 0
+    },
+    "Stage1": {
+      "any_receipt": 0,
+      "requested": 21,
+      "unique_successful_answer": 0
+    }
+  },
+  "databases": {
+    "ledger.sqlite": 173,
+    "samples.sqlite": 1513
+  }
+}

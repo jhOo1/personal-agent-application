@@ -6,7 +6,7 @@ from pathlib import Path
 import sqlite3
 import sys
 
-from audit import BASE, LEGACY, key, read, roster
+from roster_audit import BASE, LEGACY, key, read, roster
 
 ROOT = BASE.parents[1]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT / "scripts"), str(ROOT)]
