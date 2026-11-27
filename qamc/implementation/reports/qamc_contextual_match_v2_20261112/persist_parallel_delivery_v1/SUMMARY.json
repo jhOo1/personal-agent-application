@@ -1,0 +1,161 @@
+{
+  "delivery": {
+    "sycophancy": {
+      "positions": 36,
+      "both": 36,
+      "S_only": 0,
+      "R_only": 0,
+      "neither": 0
+    },
+    "cross_domain": {
+      "positions": 57,
+      "both": 49,
+      "S_only": 5,
+      "R_only": 1,
+      "neither": 2
+    },
+    "beneficial_memory_usage": {
+      "positions": 18,
+      "both": 12,
+      "S_only": 0,
+      "R_only": 6,
+      "neither": 0
+    }
+  },
+  "root_outcomes": {
+    "sycophancy": {
+      "old/S": {
+        "pass": 11,
+        "fail": 1
+      },
+      "old/R": {
+        "fail": 8,
+        "pass": 4
+      },
+      "old/S_first": {
+        "pass": 11,
+        "fail": 1
+      },
+      "old/R_first": {
+        "fail": 8,
+        "pass": 4
+      },
+      "qwen/S": {
+        "pass": 12
+      },
+      "qwen/R": {
+        "fail": 4,
+        "pass": 8
+      },
+      "qwen/S_first": {
+        "pass": 12
+      },
+      "qwen/R_first": {
+        "fail": 4,
+        "pass": 8
+      }
+    },
+    "beneficial_memory_usage": {
+      "old/S": {
+        "pass": 12,
+        "unknown": 6
+      },
+      "old/R": {
+        "pass": 18
+      },
+      "old/S_first": {
+        "pass": 18
+      },
+      "old/R_first": {
+        "pass": 18
+      },
+      "qwen/S": {
+        "fail": 1,
+        "pass": 11,
+        "unknown": 6
+      },
+      "qwen/R": {
+        "pass": 14,
+        "fail": 4
+      },
+      "qwen/S_first": {
+        "fail": 3,
+        "pass": 15
+      },
+      "qwen/R_first": {
+        "pass": 14,
+        "fail": 4
+      }
+    },
+    "cross_domain": {
+      "old/S": {
+        "pass": 15,
+        "unknown": 3,
+        "fail": 1
+      },
+      "old/R": {
+        "pass": 12,
+        "unknown": 6,
+        "fail": 1
+      },
+      "old/S_first": {
+        "pass": 16,
+        "unknown": 2,
+        "fail": 1
+      },
+      "old/R_first": {
+        "pass": 16,
+        "unknown": 2,
+        "fail": 1
+      },
+      "qwen/S": {
+        "pass": 15,
+        "unknown": 4
+      },
+      "qwen/R": {
+        "pass": 13,
+        "unknown": 6
+      },
+      "qwen/S_first": {
+        "pass": 16,
+        "unknown": 3
+      },
+      "qwen/R_first": {
+        "pass": 17,
+        "unknown": 2
+      }
+    }
+  },
+  "symmetric_priority_pairs": {
+    "sycophancy": {
+      "old": {
+        "win": 7,
+        "tie": 5
+      },
+      "qwen": {
+        "win": 4,
+        "tie": 8
+      }
+    },
+    "beneficial_memory_usage": {
+      "old": {
+        "tie": 18
+      },
+      "qwen": {
+        "loss": 1,
+        "tie": 15,
+        "win": 2
+      }
+    },
+    "cross_domain": {
+      "old": {
+        "tie": 17,
+        "unknown": 2
+      },
+      "qwen": {
+        "tie": 16,
+        "unknown": 3
+      }
+    }
+  }
+}
