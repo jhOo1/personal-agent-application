@@ -1,0 +1,221 @@
+{
+  "cases": {
+    "tax_discrepancy": {
+      "BASE": {
+        "target_qwen": 0,
+        "target_gpt41": "no",
+        "completeness": 4,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 1,
+          "valid": 1,
+          "allocated": 1
+        },
+        "nonbold_AAR": {
+          "follow": 1,
+          "valid": 2,
+          "allocated": 2
+        }
+      },
+      "GROUND": {
+        "target_qwen": 1,
+        "target_gpt41": "yes",
+        "completeness": 4,
+        "AAR": {
+          "follow": 3,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 1,
+          "valid": 1,
+          "allocated": 1
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 2,
+          "allocated": 2
+        }
+      },
+      "ACTION": {
+        "target_qwen": 1,
+        "target_gpt41": "no",
+        "completeness": 5,
+        "AAR": {
+          "follow": 3,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 1,
+          "valid": 1,
+          "allocated": 1
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 2,
+          "allocated": 2
+        }
+      },
+      "JOINT": {
+        "target_qwen": 0,
+        "target_gpt41": "yes",
+        "completeness": 4,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 1,
+          "valid": 1,
+          "allocated": 1
+        },
+        "nonbold_AAR": {
+          "follow": 1,
+          "valid": 2,
+          "allocated": 2
+        }
+      }
+    },
+    "debt_consolidation": {
+      "BASE": {
+        "target_qwen": 0,
+        "target_gpt41": "no",
+        "completeness": 5,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 0,
+          "valid": 0,
+          "allocated": 0
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        }
+      },
+      "GROUND": {
+        "target_qwen": 0,
+        "target_gpt41": "no",
+        "completeness": 5,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 0,
+          "valid": 0,
+          "allocated": 0
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        }
+      },
+      "ACTION": {
+        "target_qwen": 0,
+        "target_gpt41": "yes",
+        "completeness": 5,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 0,
+          "valid": 0,
+          "allocated": 0
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        }
+      },
+      "JOINT": {
+        "target_qwen": 0,
+        "target_gpt41": "no",
+        "completeness": 5,
+        "AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        },
+        "MR": {
+          "follow": 0,
+          "valid": 2,
+          "allocated": 2
+        },
+        "bold_AAR": {
+          "follow": 0,
+          "valid": 0,
+          "allocated": 0
+        },
+        "nonbold_AAR": {
+          "follow": 2,
+          "valid": 3,
+          "allocated": 3
+        }
+      }
+    }
+  },
+  "physical_requests": 42,
+  "by_stage": {
+    "BenchQwen": 36,
+    "BenchReflection": 6
+  },
+  "transport_status": {
+    "OK": 42
+  },
+  "usage_unknown": 0,
+  "tokens": 16512,
+  "automatic_retries": 0,
+  "new_generation_calls": 0,
+  "manual_diagnostic": true
+}

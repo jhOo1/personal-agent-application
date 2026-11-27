@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## BenchPreS 固定成稿的事实与请求动作诊断
+
+两道已曝光题固定原 Strong Gate 成稿，分别修正无依据状态、增加收件人可执行的请求、同时应用两种修改。税务题去掉原稿对年度和差异原因的假设后，两种裁判都认可简明属性。单独细化税务核查请求使 Qwen 完整度 4→5，但两种裁判对简明意见不同；同时应用两项修改也未延续共同增益。债务题只有 GPT-4.1 对单独动作版给目标属性通过。42 次评测全有效，0 次生成。保留 Strong Gate，使用可溯源的人工改稿作为行为诊断。[结果与评分分歧](implementation/reports/qamc_contextual_match_v2_20261112/bench_action_grounding_diagnostic/READOUT.md)
+
 ## RPEval 已执行成稿的验收对照
 
 固定同一 V1 原稿和已生成的 FREE、DELTA 修改稿。21 道共同有效题上，通用与任务行为验收在两种生成路径均为 18/21。两种 FREE 验收都接受全部 23 份实际修改稿，家庭冬游的无关露营偏好仍被接受。两种 DELTA 验收都拒绝重复的 Omega-3 建议，失去旧评测的争议加分。无新增生成或评分。保留 V1，当前结构化验收尚无同预算增益。[结算与真实执行证据](implementation/reports/qamc_contextual_match_v2_20261112/rpe_outcome_accept_v22/READOUT.md)
