@@ -1,0 +1,13 @@
+{
+  "identical_requests_repeated_three_times": 9,
+  "draw_order_patterns": {
+    "KNOWN_LENGTH_FAILURE / KNOWN_LENGTH_FAILURE / KNOWN_LENGTH_FAILURE": 2,
+    "OK / KNOWN_LENGTH_FAILURE / KNOWN_LENGTH_FAILURE": 1,
+    "OK / OK / FAILED_DELIVERY_UNKNOWN": 1,
+    "OK / OK / KNOWN_LENGTH_FAILURE": 1,
+    "OK / OK / OK": 4
+  },
+  "known_success_and_length_on_same_request": 2,
+  "length_in_all_three": 2,
+  "ok_in_all_three": 4
+}
