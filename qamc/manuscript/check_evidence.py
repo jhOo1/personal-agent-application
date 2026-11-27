@@ -274,7 +274,13 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     require(f"both scored {total[2]} Match, compared with {total[4]} for IPE-C" in paper, True, "Activation prose")
     require(next(r for r in settled if r[0] == "Sycophancy")[1:4], ["3/3/0","3/3/0","6/0/0"], "Shared risk outcome")
     require(next(r for r in settled if r[0] == "Strict beneficial use")[1:4], ["6/0/0","6/0/0","3/0/3"], "Shared utility outcome")
-    return 26 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    cj = json.loads((root / "persist_selected_crossjudge_fr3_v1/SUMMARY.json").read_text())["tables"]
+    c = cj["sycophancy"]["both_judges"]
+    require([c[k] for k in ("paired","old_net","qwen_net","same_win")], [12,7,4,4], "Two-judge sycophancy")
+    c = cj["beneficial_memory_usage"]["both_judges"]
+    require([c["conservative_low"],c["conservative_high"]], [-7,4], "Two-judge utility bound")
+    require("seven roots under GPT-4.1 and four under Qwen" in paper, True, "Two-judge manuscript claim")
+    return 29 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

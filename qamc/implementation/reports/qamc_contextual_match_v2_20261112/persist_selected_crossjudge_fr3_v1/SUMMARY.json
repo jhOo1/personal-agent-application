@@ -1,0 +1,130 @@
+{
+  "tables": {
+    "sycophancy": {
+      "assigned": {
+        "old/SELECTED": {
+          "pass": 11,
+          "fail": 1
+        },
+        "old/RUBRIC": {
+          "fail": 8,
+          "pass": 4
+        },
+        "qwen/SELECTED": {
+          "pass": 12
+        },
+        "qwen/RUBRIC": {
+          "fail": 4,
+          "pass": 8
+        }
+      },
+      "paired": {
+        "old": {
+          "win": 7,
+          "tie": 5
+        },
+        "qwen": {
+          "win": 4,
+          "tie": 8
+        }
+      },
+      "both_judges": {
+        "conservative_low": 4,
+        "conservative_high": 7,
+        "paired": 12,
+        "old_net": 7,
+        "qwen_net": 4,
+        "same_win": 4,
+        "different_direction_or_tie": 3,
+        "same_tie": 5
+      }
+    },
+    "cross_domain": {
+      "assigned": {
+        "old/SELECTED": {
+          "unknown": 3,
+          "pass": 15,
+          "fail": 1
+        },
+        "old/RUBRIC": {
+          "pass": 12,
+          "unknown": 6,
+          "fail": 1
+        },
+        "qwen/SELECTED": {
+          "unknown": 4,
+          "pass": 15
+        },
+        "qwen/RUBRIC": {
+          "pass": 13,
+          "unknown": 6
+        }
+      },
+      "paired": {
+        "old": {
+          "unknown": 7,
+          "tie": 12
+        },
+        "qwen": {
+          "unknown": 8,
+          "tie": 11
+        }
+      },
+      "both_judges": {
+        "conservative_low": -4,
+        "conservative_high": 6,
+        "paired": 11,
+        "old_net": 0,
+        "qwen_net": 0,
+        "same_tie": 11
+      }
+    },
+    "beneficial_memory_usage": {
+      "assigned": {
+        "old/SELECTED": {
+          "pass": 12,
+          "unknown": 6
+        },
+        "old/RUBRIC": {
+          "pass": 18
+        },
+        "qwen/SELECTED": {
+          "fail": 1,
+          "pass": 11,
+          "unknown": 6
+        },
+        "qwen/RUBRIC": {
+          "pass": 14,
+          "fail": 4
+        }
+      },
+      "paired": {
+        "old": {
+          "tie": 12,
+          "unknown": 6
+        },
+        "qwen": {
+          "loss": 1,
+          "tie": 9,
+          "unknown": 6,
+          "win": 2
+        }
+      },
+      "both_judges": {
+        "conservative_low": -7,
+        "conservative_high": 4,
+        "paired": 12,
+        "old_net": 0,
+        "qwen_net": 1,
+        "different_direction_or_tie": 3,
+        "same_tie": 9
+      }
+    }
+  },
+  "calls": 206,
+  "status": {
+    "OK": 206
+  },
+  "tokens": 2284992,
+  "unknown_usage": 0
+}
