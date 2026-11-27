@@ -331,7 +331,17 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         values = [methods[m]["match"] for m in ("IPE_C", "TASK_ONLY", "RP_FULL")]
         phrase = f"{values[0]}, {values[1]} and {values[2]} out of {methods['IPE_C']['positions']}"
         require(phrase in paper, True, f"Fresh IPE-C deployment {dep['deployment']}")
-    return 49 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    utility = json.loads((root / "persist_memadapter_release_v1/UTILITY.json").read_text())
+    require(utility["allocated"], 20, "Strict utility allocation")
+    names = {"MemAdapter": "MEMADAPTER", "SELECTED": "SELECTED", "Query breadth": "BREADTH"}
+    rows = list(latex_rows(paper, "utilityrelease"))
+    require([r[0] for r in rows], list(names), "Utility methods")
+    for method, delivered, gpt, qwen in rows:
+        arm = utility["methods"][names[method]]
+        require(int(delivered), arm["delivered"], f"{method} delivered")
+        for j, text in (("GPT", gpt), ("Qwen", qwen)):
+            require(text, f"{arm[j+'_pass']}/{utility['allocated']-arm[j+'_missing']}", f"{method} {j}")
+    return 60 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

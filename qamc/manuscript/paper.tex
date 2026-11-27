@@ -250,6 +250,27 @@ We replayed an existing query-only decision about whether the request calls for 
 
 Against the full-history author Rubric on the fresh utility panel, the query policy had two paired wins, one loss, 13 ties and two unknowns under Qwen. Under GPT-4.1 all 17 comparable pairs tied. Allowing either grader per root and any missing result yields a net difference from $-1$ to $+4$. In a separate first-draw comparison with the Structured Memory partition plus Rubric adaptation, ten of 11 common roots tied. The sole win was the previously studied project template (ratings 1 versus 4); the selected history was empty. This does not establish an advantage over domain partitioning on new sources.
 
+\paragraph{Fresh comparison with full MemAdapter.}
+We deployed the frozen breadth rule and SELECTED on all 20 exposed strict beneficial-use sources, alongside the author's three-stage MemAdapter with the same fixed memories, Qwen generator, and requested output cap. Table~\ref{tab:utilityrelease} separates delivery from graded utility. Seven MemAdapter inductions ended at the length limit. Its archived answers on those same seven tasks had all passed; we retain the missing outcomes in this deployment.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Method & Delivered & GPT-4.1 & Qwen \\
+\midrule
+MemAdapter & 13 & 13/13 & 13/13 \\
+SELECTED & 19 & 19/19 & 15/18 \\
+Query breadth & 19 & 19/19 & 16/18 \\
+\bottomrule
+\end{tabular}
+\caption{Strict beneficial use on 20 allocated development sources per method. Grader columns give passes over valid ratings. Each grader used the project's rubric adaptation.}
+\label{tab:utilityrelease}
+\end{table}
+
+Query breadth and MemAdapter tied on all 12 mutually graded answers under GPT-4.1. Under Qwen, breadth lost one and tied 11. Against SELECTED, breadth won one of 18 Qwen pairs, with 17 ties; all 19 GPT-4.1 pairs tied. The Qwen win was a planting request: both inputs already included the preference for hydrangeas, but broadening added a dog and a pollen allergy. The broader answer ranked hydrangeas first and discussed the dog. This single-judge difference does not establish a repeatable gain in preference execution.
+
 \paragraph{Fixed-answer evaluation sensitivity.}
 On 117 common non-bold positions, Qwen gives Gate and Selectivity 91 and 94 reflected preferences, and a masked GPT-4.1 single-attribute diagnostic gives 106 and 104. Both method contrasts span zero under exploratory profile-cluster resampling. Over all 123 paired GPT-4.1 positions, the counts are 111 and 109. The full 153-position missing-outcome bounds span $[-24,30]$. The diagnostic changes the judge and input presentation together, contains no human votes, and does not replace the original grades.
 
