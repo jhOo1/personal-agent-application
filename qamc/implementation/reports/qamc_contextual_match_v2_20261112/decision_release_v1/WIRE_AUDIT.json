@@ -1,0 +1,60 @@
+{
+  "physical_actor_wires": {
+    "BenchPreS": {
+      "FREE_empty_view": 0,
+      "FREE_wires": 4,
+      "RAW_AMP_one_representative": 2,
+      "RAW_empty_view": 2,
+      "RAW_wires": 2
+    },
+    "PersistBench": {
+      "AMP_effects": 3,
+      "AMP_empty_view": 1,
+      "AMP_facts": 0,
+      "AMP_wires": 3,
+      "FREE_empty_view": 0,
+      "FREE_wires": 6,
+      "RAW_AMP_joint": 2,
+      "RAW_AMP_one_representative": 2,
+      "RAW_AMP_view_diff": 2,
+      "RAW_empty_view": 1,
+      "RAW_full_records": 3,
+      "RAW_wires": 3
+    },
+    "RPEval": {
+      "AMP_effects": 4,
+      "AMP_empty_view": 4,
+      "AMP_facts": 0,
+      "AMP_wires": 7,
+      "FREE_empty_view": 0,
+      "FREE_wires": 9,
+      "RAW_AMP_joint": 3,
+      "RAW_AMP_one_representative": 5,
+      "RAW_AMP_view_diff": 3,
+      "RAW_empty_view": 1,
+      "RAW_full_records": 4,
+      "RAW_wires": 4
+    }
+  },
+  "physical_controller_receipts": {
+    "BenchPreS": {
+      "FREE/invalid_json": 1,
+      "FREE/valid": 4,
+      "SHARED/Cannot bind permission to an exact original quote": 1,
+      "SHARED/Permission refers to an invalid source or destination": 2,
+      "SHARED/empty": 2,
+      "SHARED/valid": 2
+    },
+    "PersistBench": {
+      "FREE/valid": 6,
+      "SHARED/Permission refers to an invalid source or destination": 2,
+      "SHARED/empty": 2,
+      "SHARED/valid": 4
+    },
+    "RPEval": {
+      "FREE/valid": 9,
+      "SHARED/empty": 6,
+      "SHARED/valid": 9
+    }
+  }
+}

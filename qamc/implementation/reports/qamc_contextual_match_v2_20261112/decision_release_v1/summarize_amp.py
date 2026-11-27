@@ -10,6 +10,13 @@ METHODS = ("BASE", *ARMS)
 PRIMARY = {"RPEval": "match", "BenchPreS": "aar", "PersistBench": "pass"}
 
 
+def performance(benchmark, score, stratum):
+    values = metrics(benchmark, score, stratum)
+    if values is not None and benchmark == "PersistBench":
+        values["release_pass"] = (int(not score["failure_release"]), 1)
+    return values
+
+
 def summarize(results):
     panels = defaultdict(dict)
     statuses = defaultdict(Counter)
@@ -20,10 +27,10 @@ def summarize(results):
         b, uid, arm = (record[k] for k in ("benchmark", "uid", "method"))
         s = record["stratum"]
         item = panels[b].setdefault(uid, {"group": record["group"], "stratum": s,
-                                        "scores": {"BASE": metrics(b, record["base_score"], s)}})
+                                        "scores": {"BASE": performance(b, record["base_score"], s)}})
         if arm in item["scores"]:
             raise ValueError("Duplicate projected outcome")
-        item["scores"][arm] = metrics(b, record["score"], s)
+        item["scores"][arm] = performance(b, record["score"], s)
         if item["scores"]["BASE"] is None:
             raise ValueError("Missing frozen primary comparator")
         if b == "RPEval" and (record.get("score_flags") or base_flags.get(uid)):

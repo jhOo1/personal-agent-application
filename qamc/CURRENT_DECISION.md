@@ -1,6 +1,10 @@
 # QAMC 当前判断与下一次机制对照
 
-## 最新结算 · CAR 与三基准开发范围
+## 最新结算 · AMP
+
+AMP 把允许记忆影响决策和允许原文进入 Actor 分开。21 道已曝光题、18 个来源组中，只有 5 道的 RAW/AMP 请求实际改变了原文曝光。RPEval 九道同题上三个新组均为 31/46，IPE-C 35/46。BenchPreS 没有形成有效投影对照，AMP 与强 Gate 两道共同题的 AAR 为 1/5 对 4/5。PersistBench 四道 RAW/AMP/PB_RUBRIC 同题均通过，两道严格有益使用题均在共享授权校验阶段缺失。当前 AMP 不晋级，保留已有强方法和真实失分。本轮共 164 次真实请求，报告 583,007 Token，一次长度失败，无重发。适配评分和已曝光病例限制如前。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/decision_release_v1/READOUT.md)
+
+## CAR 结算与三基准开发范围
 
 CAR 的三基准开发对照已结算，停止扩展当前候选。RPEval 11 道共同有效题上，IPE-C 44/55，整稿选择 25/55，自由修订及 CAR 各 28/55。相对 IPE-C，CAR 对完整分配的缺失上下界为 −18 到 −12 个 Match 位置。BenchPreS 的四道共同题上，三种新控制都多落实一个适用属性，同时 MR 从 0/13 变成 3/13，平均完整度从 4.75 变成 4.00。PersistBench 的七道共同题逐题同结果，四组均通过 6/7。六次实际拼接与所有失败已留档。原三基准强方法、封存边界和既有成绩保留。[完整报告](implementation/reports/qamc_contextual_match_v2_20261112/downstream_memory_utility_v1/PILOT_READOUT.md)
 

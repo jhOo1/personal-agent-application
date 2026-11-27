@@ -1,0 +1,4442 @@
+{
+  "benchmark": {
+    "BenchPreS": {
+      "availability": {
+        "AMP/INVALID_FRAME": 1,
+        "AMP/INVALID_PROJECTION": 3,
+        "AMP/OK": 2,
+        "AMP/valid_score": 2,
+        "FREE/INVALID_FRAME": 1,
+        "FREE/INVALID_PROJECTION": 1,
+        "FREE/OK": 4,
+        "FREE/valid_score": 4,
+        "RAW/INVALID_FRAME": 1,
+        "RAW/INVALID_PROJECTION": 3,
+        "RAW/OK": 2,
+        "RAW/valid_score": 2
+      },
+      "exposure": {
+        "effects_count": 0,
+        "history_count": 0,
+        "released_facts_count": 0,
+        "validated_joint_projection": 2,
+        "wire_differs": 0
+      },
+      "secondary_archive_comparison": {
+        "AMP": {
+          "allocated": 6,
+          "common": 2,
+          "common_groups": 2,
+          "second_minus_first_full_allocation_delta_bounds": [
+            -9,
+            -2
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 2
+          },
+          "totals": {
+            "AMP": {
+              "aar": [
+                1,
+                5
+              ],
+              "completeness": [
+                9,
+                2
+              ],
+              "mr": [
+                0,
+                5
+              ],
+              "nonbold_aar": [
+                1,
+                3
+              ]
+            },
+            "PAPER_SELECTIVITY": {
+              "aar": [
+                3,
+                5
+              ],
+              "completeness": [
+                10,
+                2
+              ],
+              "mr": [
+                0,
+                5
+              ],
+              "nonbold_aar": [
+                1,
+                3
+              ]
+            }
+          }
+        },
+        "FREE": {
+          "allocated": 6,
+          "common": 4,
+          "common_groups": 4,
+          "second_minus_first_full_allocation_delta_bounds": [
+            -5,
+            0
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 1,
+            "tie": 3
+          },
+          "totals": {
+            "FREE": {
+              "aar": [
+                5,
+                7
+              ],
+              "completeness": [
+                20,
+                4
+              ],
+              "mr": [
+                0,
+                13
+              ],
+              "nonbold_aar": [
+                5,
+                6
+              ]
+            },
+            "PAPER_SELECTIVITY": {
+              "aar": [
+                6,
+                7
+              ],
+              "completeness": [
+                20,
+                4
+              ],
+              "mr": [
+                0,
+                13
+              ],
+              "nonbold_aar": [
+                5,
+                6
+              ]
+            }
+          }
+        },
+        "RAW": {
+          "allocated": 6,
+          "common": 2,
+          "common_groups": 2,
+          "second_minus_first_full_allocation_delta_bounds": [
+            -9,
+            -2
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 2
+          },
+          "totals": {
+            "PAPER_SELECTIVITY": {
+              "aar": [
+                3,
+                5
+              ],
+              "completeness": [
+                10,
+                2
+              ],
+              "mr": [
+                0,
+                5
+              ],
+              "nonbold_aar": [
+                1,
+                3
+              ]
+            },
+            "RAW": {
+              "aar": [
+                1,
+                5
+              ],
+              "completeness": [
+                9,
+                2
+              ],
+              "mr": [
+                0,
+                5
+              ],
+              "nonbold_aar": [
+                1,
+                3
+              ]
+            }
+          }
+        }
+      },
+      "strata": {
+        "all": {
+          "common": {
+            "allocated": 6,
+            "common": 1,
+            "common_groups": 1,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "aar": [
+                  1,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  1,
+                  2
+                ]
+              },
+              "BASE": {
+                "aar": [
+                  3,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  2,
+                  2
+                ]
+              },
+              "FREE": {
+                "aar": [
+                  2,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  2,
+                  2
+                ]
+              },
+              "RAW": {
+                "aar": [
+                  1,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  1,
+                  2
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -8,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                },
+                "BASE": {
+                  "aar": [
+                    4,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    3
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 6,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -4,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 3
+              },
+              "totals": {
+                "BASE": {
+                  "aar": [
+                    6,
+                    7
+                  ],
+                  "completeness": [
+                    20,
+                    4
+                  ],
+                  "mr": [
+                    0,
+                    13
+                  ],
+                  "nonbold_aar": [
+                    5,
+                    6
+                  ]
+                },
+                "FREE": {
+                  "aar": [
+                    5,
+                    7
+                  ],
+                  "completeness": [
+                    20,
+                    4
+                  ],
+                  "mr": [
+                    0,
+                    13
+                  ],
+                  "nonbold_aar": [
+                    5,
+                    6
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -8,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2
+              },
+              "totals": {
+                "BASE": {
+                  "aar": [
+                    4,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 6,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -9,
+                3
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "aar": [
+                    2,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -7,
+                7
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 6,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -3,
+                9
+              ],
+              "second_minus_first_source_group_signs": {
+                "positive": 1
+              },
+              "totals": {
+                "FREE": {
+                  "aar": [
+                    2,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    2
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "communication": {
+          "common": {
+            "allocated": 6,
+            "common": 1,
+            "common_groups": 1,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "aar": [
+                  1,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  1,
+                  2
+                ]
+              },
+              "BASE": {
+                "aar": [
+                  3,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  2,
+                  2
+                ]
+              },
+              "FREE": {
+                "aar": [
+                  2,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  2,
+                  2
+                ]
+              },
+              "RAW": {
+                "aar": [
+                  1,
+                  3
+                ],
+                "completeness": [
+                  5,
+                  1
+                ],
+                "mr": [
+                  0,
+                  2
+                ],
+                "nonbold_aar": [
+                  1,
+                  2
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -8,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                },
+                "BASE": {
+                  "aar": [
+                    4,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    3
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 6,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -4,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 3
+              },
+              "totals": {
+                "BASE": {
+                  "aar": [
+                    6,
+                    7
+                  ],
+                  "completeness": [
+                    20,
+                    4
+                  ],
+                  "mr": [
+                    0,
+                    13
+                  ],
+                  "nonbold_aar": [
+                    5,
+                    6
+                  ]
+                },
+                "FREE": {
+                  "aar": [
+                    5,
+                    7
+                  ],
+                  "completeness": [
+                    20,
+                    4
+                  ],
+                  "mr": [
+                    0,
+                    13
+                  ],
+                  "nonbold_aar": [
+                    5,
+                    6
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -8,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2
+              },
+              "totals": {
+                "BASE": {
+                  "aar": [
+                    4,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 6,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -9,
+                3
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "aar": [
+                    2,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 6,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -7,
+                7
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    5
+                  ],
+                  "completeness": [
+                    9,
+                    2
+                  ],
+                  "mr": [
+                    0,
+                    5
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    3
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 6,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -3,
+                9
+              ],
+              "second_minus_first_source_group_signs": {
+                "positive": 1
+              },
+              "totals": {
+                "FREE": {
+                  "aar": [
+                    2,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "aar": [
+                    1,
+                    3
+                  ],
+                  "completeness": [
+                    5,
+                    1
+                  ],
+                  "mr": [
+                    0,
+                    2
+                  ],
+                  "nonbold_aar": [
+                    1,
+                    2
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "PersistBench": {
+      "availability": {
+        "AMP/INVALID_PROJECTION": 2,
+        "AMP/OK": 4,
+        "AMP/valid_score": 4,
+        "FREE/KNOWN_LENGTH_FAILURE": 1,
+        "FREE/OK": 5,
+        "FREE/valid_score": 5,
+        "RAW/INVALID_PROJECTION": 2,
+        "RAW/OK": 4,
+        "RAW/valid_score": 4
+      },
+      "exposure": {
+        "effects_count": 3,
+        "history_count": 3,
+        "released_facts_count": 0,
+        "validated_joint_projection": 4,
+        "wire_differs": 2
+      },
+      "secondary_archive_comparison": {
+        "AMP": {
+          "allocated": 6,
+          "common": 3,
+          "common_groups": 3,
+          "second_minus_first_full_allocation_delta_bounds": [
+            -1,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "tie": 3
+          },
+          "totals": {
+            "AMP": {
+              "pass": [
+                3,
+                3
+              ],
+              "release_pass": [
+                3,
+                3
+              ]
+            },
+            "PB_GEPA": {
+              "pass": [
+                3,
+                3
+              ]
+            }
+          }
+        },
+        "FREE": {
+          "allocated": 6,
+          "common": 5,
+          "common_groups": 5,
+          "second_minus_first_full_allocation_delta_bounds": [
+            0,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "positive": 1,
+            "tie": 4
+          },
+          "totals": {
+            "FREE": {
+              "pass": [
+                5,
+                5
+              ],
+              "release_pass": [
+                5,
+                5
+              ]
+            },
+            "PB_GEPA": {
+              "pass": [
+                4,
+                5
+              ]
+            }
+          }
+        },
+        "RAW": {
+          "allocated": 6,
+          "common": 3,
+          "common_groups": 3,
+          "second_minus_first_full_allocation_delta_bounds": [
+            -1,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "tie": 3
+          },
+          "totals": {
+            "PB_GEPA": {
+              "pass": [
+                3,
+                3
+              ]
+            },
+            "RAW": {
+              "pass": [
+                3,
+                3
+              ],
+              "release_pass": [
+                3,
+                3
+              ]
+            }
+          }
+        }
+      },
+      "strata": {
+        "all": {
+          "common": {
+            "allocated": 6,
+            "common": 3,
+            "common_groups": 3,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "pass": [
+                  3,
+                  3
+                ],
+                "release_pass": [
+                  3,
+                  3
+                ]
+              },
+              "BASE": {
+                "pass": [
+                  3,
+                  3
+                ],
+                "release_pass": [
+                  3,
+                  3
+                ]
+              },
+              "FREE": {
+                "pass": [
+                  3,
+                  3
+                ],
+                "release_pass": [
+                  3,
+                  3
+                ]
+              },
+              "RAW": {
+                "pass": [
+                  3,
+                  3
+                ],
+                "release_pass": [
+                  3,
+                  3
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 6,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                },
+                "BASE": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 6,
+              "common": 5,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 5
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    5,
+                    5
+                  ],
+                  "release_pass": [
+                    5,
+                    5
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    5,
+                    5
+                  ],
+                  "release_pass": [
+                    5,
+                    5
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 6,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 6,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 3
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    3,
+                    3
+                  ],
+                  "release_pass": [
+                    3,
+                    3
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    3,
+                    3
+                  ],
+                  "release_pass": [
+                    3,
+                    3
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 6,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                2
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    4,
+                    4
+                  ],
+                  "release_pass": [
+                    4,
+                    4
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 6,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                2
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 3
+              },
+              "totals": {
+                "FREE": {
+                  "pass": [
+                    3,
+                    3
+                  ],
+                  "release_pass": [
+                    3,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    3,
+                    3
+                  ],
+                  "release_pass": [
+                    3,
+                    3
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "beneficial_memory_usage": {
+          "common": {
+            "allocated": 2,
+            "common": 0,
+            "common_groups": 0,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {},
+              "BASE": {},
+              "FREE": {},
+              "RAW": {}
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 2,
+              "common": 0,
+              "common_groups": 0,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                0
+              ],
+              "second_minus_first_source_group_signs": {},
+              "totals": {
+                "AMP": {},
+                "BASE": {}
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 2,
+              "common": 0,
+              "common_groups": 0,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                0
+              ],
+              "second_minus_first_source_group_signs": {},
+              "totals": {
+                "BASE": {},
+                "RAW": {}
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 2,
+              "common": 0,
+              "common_groups": 0,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                0
+              ],
+              "second_minus_first_source_group_signs": {},
+              "totals": {
+                "AMP": {},
+                "FREE": {}
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 2,
+              "common": 0,
+              "common_groups": 0,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -2,
+                2
+              ],
+              "second_minus_first_source_group_signs": {},
+              "totals": {
+                "AMP": {},
+                "RAW": {}
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 2,
+              "common": 0,
+              "common_groups": 0,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                2
+              ],
+              "second_minus_first_source_group_signs": {},
+              "totals": {
+                "FREE": {},
+                "RAW": {}
+              }
+            }
+          }
+        },
+        "cross_domain": {
+          "common": {
+            "allocated": 2,
+            "common": 2,
+            "common_groups": 2,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "pass": [
+                  2,
+                  2
+                ],
+                "release_pass": [
+                  2,
+                  2
+                ]
+              },
+              "BASE": {
+                "pass": [
+                  2,
+                  2
+                ],
+                "release_pass": [
+                  2,
+                  2
+                ]
+              },
+              "FREE": {
+                "pass": [
+                  2,
+                  2
+                ],
+                "release_pass": [
+                  2,
+                  2
+                ]
+              },
+              "RAW": {
+                "pass": [
+                  2,
+                  2
+                ],
+                "release_pass": [
+                  2,
+                  2
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "FREE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "sycophancy": {
+          "common": {
+            "allocated": 2,
+            "common": 1,
+            "common_groups": 1,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "pass": [
+                  1,
+                  1
+                ],
+                "release_pass": [
+                  1,
+                  1
+                ]
+              },
+              "BASE": {
+                "pass": [
+                  1,
+                  1
+                ],
+                "release_pass": [
+                  1,
+                  1
+                ]
+              },
+              "FREE": {
+                "pass": [
+                  1,
+                  1
+                ],
+                "release_pass": [
+                  1,
+                  1
+                ]
+              },
+              "RAW": {
+                "pass": [
+                  1,
+                  1
+                ],
+                "release_pass": [
+                  1,
+                  1
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 2,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 1
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 2,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 1
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                },
+                "FREE": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    2,
+                    2
+                  ],
+                  "release_pass": [
+                    2,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 2,
+              "common": 1,
+              "common_groups": 1,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 1
+              },
+              "totals": {
+                "FREE": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                },
+                "RAW": {
+                  "pass": [
+                    1,
+                    1
+                  ],
+                  "release_pass": [
+                    1,
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "RPEval": {
+      "availability": {
+        "AMP/OK": 9,
+        "AMP/valid_score": 9,
+        "FREE/OK": 9,
+        "FREE/valid_score": 9,
+        "RAW/OK": 9,
+        "RAW/valid_score": 9
+      },
+      "exposure": {
+        "effects_count": 4,
+        "history_count": 4,
+        "released_facts_count": 0,
+        "validated_joint_projection": 9,
+        "wire_differs": 3
+      },
+      "secondary_archive_comparison": {
+        "AMP": {
+          "allocated": 9,
+          "common": 9,
+          "common_groups": 6,
+          "second_minus_first_full_allocation_delta_bounds": [
+            2,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 2,
+            "positive": 2,
+            "tie": 2
+          },
+          "totals": {
+            "AMP": {
+              "exact": [
+                4,
+                9
+              ],
+              "fm": [
+                3,
+                9
+              ],
+              "match": [
+                31,
+                46
+              ],
+              "opb": [
+                6,
+                9
+              ],
+              "upb": [
+                11,
+                9
+              ]
+            },
+            "RP_REBUILT": {
+              "exact": [
+                3,
+                9
+              ],
+              "fm": [
+                0,
+                9
+              ],
+              "match": [
+                29,
+                46
+              ],
+              "opb": [
+                8,
+                9
+              ],
+              "upb": [
+                9,
+                9
+              ]
+            }
+          }
+        },
+        "FREE": {
+          "allocated": 9,
+          "common": 9,
+          "common_groups": 6,
+          "second_minus_first_full_allocation_delta_bounds": [
+            2,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 1,
+            "positive": 2,
+            "tie": 3
+          },
+          "totals": {
+            "FREE": {
+              "exact": [
+                3,
+                9
+              ],
+              "fm": [
+                1,
+                9
+              ],
+              "match": [
+                31,
+                46
+              ],
+              "opb": [
+                4,
+                9
+              ],
+              "upb": [
+                12,
+                9
+              ]
+            },
+            "RP_REBUILT": {
+              "exact": [
+                3,
+                9
+              ],
+              "fm": [
+                0,
+                9
+              ],
+              "match": [
+                29,
+                46
+              ],
+              "opb": [
+                8,
+                9
+              ],
+              "upb": [
+                9,
+                9
+              ]
+            }
+          }
+        },
+        "RAW": {
+          "allocated": 9,
+          "common": 9,
+          "common_groups": 6,
+          "second_minus_first_full_allocation_delta_bounds": [
+            2,
+            2
+          ],
+          "second_minus_first_source_group_signs": {
+            "negative": 2,
+            "positive": 2,
+            "tie": 2
+          },
+          "totals": {
+            "RAW": {
+              "exact": [
+                4,
+                9
+              ],
+              "fm": [
+                2,
+                9
+              ],
+              "match": [
+                31,
+                46
+              ],
+              "opb": [
+                5,
+                9
+              ],
+              "upb": [
+                11,
+                9
+              ]
+            },
+            "RP_REBUILT": {
+              "exact": [
+                3,
+                9
+              ],
+              "fm": [
+                0,
+                9
+              ],
+              "match": [
+                29,
+                46
+              ],
+              "opb": [
+                8,
+                9
+              ],
+              "upb": [
+                9,
+                9
+              ]
+            }
+          }
+        }
+      },
+      "strata": {
+        "B_only": {
+          "common": {
+            "allocated": 3,
+            "common": 3,
+            "common_groups": 3,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "exact": [
+                  1,
+                  3
+                ],
+                "fm": [
+                  0,
+                  3
+                ],
+                "match": [
+                  12,
+                  16
+                ],
+                "opb": [
+                  1,
+                  3
+                ],
+                "upb": [
+                  4,
+                  3
+                ]
+              },
+              "BASE": {
+                "exact": [
+                  1,
+                  3
+                ],
+                "fm": [
+                  0,
+                  3
+                ],
+                "match": [
+                  12,
+                  16
+                ],
+                "opb": [
+                  1,
+                  3
+                ],
+                "upb": [
+                  4,
+                  3
+                ]
+              },
+              "FREE": {
+                "exact": [
+                  0,
+                  3
+                ],
+                "fm": [
+                  0,
+                  3
+                ],
+                "match": [
+                  11,
+                  16
+                ],
+                "opb": [
+                  2,
+                  3
+                ],
+                "upb": [
+                  4,
+                  3
+                ]
+              },
+              "RAW": {
+                "exact": [
+                  1,
+                  3
+                ],
+                "fm": [
+                  0,
+                  3
+                ],
+                "match": [
+                  12,
+                  16
+                ],
+                "opb": [
+                  1,
+                  3
+                ],
+                "upb": [
+                  4,
+                  3
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 3
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "BASE": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    0,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    11,
+                    16
+                  ],
+                  "opb": [
+                    2,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 3
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                1,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "positive": 1,
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    0,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    11,
+                    16
+                  ],
+                  "opb": [
+                    2,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 3
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 3,
+              "common": 3,
+              "common_groups": 3,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 2
+              },
+              "totals": {
+                "FREE": {
+                  "exact": [
+                    0,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    11,
+                    16
+                  ],
+                  "opb": [
+                    2,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    1,
+                    3
+                  ],
+                  "fm": [
+                    0,
+                    3
+                  ],
+                  "match": [
+                    12,
+                    16
+                  ],
+                  "opb": [
+                    1,
+                    3
+                  ],
+                  "upb": [
+                    4,
+                    3
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "all": {
+          "common": {
+            "allocated": 9,
+            "common": 9,
+            "common_groups": 6,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "exact": [
+                  4,
+                  9
+                ],
+                "fm": [
+                  3,
+                  9
+                ],
+                "match": [
+                  31,
+                  46
+                ],
+                "opb": [
+                  6,
+                  9
+                ],
+                "upb": [
+                  11,
+                  9
+                ]
+              },
+              "BASE": {
+                "exact": [
+                  5,
+                  9
+                ],
+                "fm": [
+                  0,
+                  9
+                ],
+                "match": [
+                  35,
+                  46
+                ],
+                "opb": [
+                  7,
+                  9
+                ],
+                "upb": [
+                  4,
+                  9
+                ]
+              },
+              "FREE": {
+                "exact": [
+                  3,
+                  9
+                ],
+                "fm": [
+                  1,
+                  9
+                ],
+                "match": [
+                  31,
+                  46
+                ],
+                "opb": [
+                  4,
+                  9
+                ],
+                "upb": [
+                  12,
+                  9
+                ]
+              },
+              "RAW": {
+                "exact": [
+                  4,
+                  9
+                ],
+                "fm": [
+                  2,
+                  9
+                ],
+                "match": [
+                  31,
+                  46
+                ],
+                "opb": [
+                  5,
+                  9
+                ],
+                "upb": [
+                  11,
+                  9
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -4,
+                -4
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2,
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    3,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    6,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                },
+                "BASE": {
+                  "exact": [
+                    5,
+                    9
+                  ],
+                  "fm": [
+                    0,
+                    9
+                  ],
+                  "match": [
+                    35,
+                    46
+                  ],
+                  "opb": [
+                    7,
+                    9
+                  ],
+                  "upb": [
+                    4,
+                    9
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -4,
+                -4
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2,
+                "tie": 4
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    5,
+                    9
+                  ],
+                  "fm": [
+                    0,
+                    9
+                  ],
+                  "match": [
+                    35,
+                    46
+                  ],
+                  "opb": [
+                    7,
+                    9
+                  ],
+                  "upb": [
+                    4,
+                    9
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    9
+                  ],
+                  "fm": [
+                    1,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    4,
+                    9
+                  ],
+                  "upb": [
+                    12,
+                    9
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -4,
+                -4
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 2,
+                "tie": 4
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    5,
+                    9
+                  ],
+                  "fm": [
+                    0,
+                    9
+                  ],
+                  "match": [
+                    35,
+                    46
+                  ],
+                  "opb": [
+                    7,
+                    9
+                  ],
+                  "upb": [
+                    4,
+                    9
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    2,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    5,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "positive": 1,
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    3,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    6,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    9
+                  ],
+                  "fm": [
+                    1,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    4,
+                    9
+                  ],
+                  "upb": [
+                    12,
+                    9
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 6
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    3,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    6,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    2,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    5,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 9,
+              "common": 9,
+              "common_groups": 6,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "positive": 1,
+                "tie": 4
+              },
+              "totals": {
+                "FREE": {
+                  "exact": [
+                    3,
+                    9
+                  ],
+                  "fm": [
+                    1,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    4,
+                    9
+                  ],
+                  "upb": [
+                    12,
+                    9
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    4,
+                    9
+                  ],
+                  "fm": [
+                    2,
+                    9
+                  ],
+                  "match": [
+                    31,
+                    46
+                  ],
+                  "opb": [
+                    5,
+                    9
+                  ],
+                  "upb": [
+                    11,
+                    9
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "all_A": {
+          "common": {
+            "allocated": 4,
+            "common": 4,
+            "common_groups": 4,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "exact": [
+                  3,
+                  4
+                ],
+                "fm": [
+                  0,
+                  4
+                ],
+                "match": [
+                  14,
+                  17
+                ],
+                "opb": [
+                  2,
+                  4
+                ],
+                "upb": [
+                  3,
+                  4
+                ]
+              },
+              "BASE": {
+                "exact": [
+                  4,
+                  4
+                ],
+                "fm": [
+                  0,
+                  4
+                ],
+                "match": [
+                  17,
+                  17
+                ],
+                "opb": [
+                  0,
+                  4
+                ],
+                "upb": [
+                  0,
+                  4
+                ]
+              },
+              "FREE": {
+                "exact": [
+                  3,
+                  4
+                ],
+                "fm": [
+                  0,
+                  4
+                ],
+                "match": [
+                  14,
+                  17
+                ],
+                "opb": [
+                  0,
+                  4
+                ],
+                "upb": [
+                  3,
+                  4
+                ]
+              },
+              "RAW": {
+                "exact": [
+                  3,
+                  4
+                ],
+                "fm": [
+                  0,
+                  4
+                ],
+                "match": [
+                  14,
+                  17
+                ],
+                "opb": [
+                  2,
+                  4
+                ],
+                "upb": [
+                  3,
+                  4
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -3,
+                -3
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 3
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                },
+                "BASE": {
+                  "exact": [
+                    4,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    17,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    0,
+                    4
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -3,
+                -3
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 3
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    4,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    17,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    0,
+                    4
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -3,
+                -3
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 3
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    4,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    17,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    0,
+                    4
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 4,
+              "common": 4,
+              "common_groups": 4,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 4
+              },
+              "totals": {
+                "FREE": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    0,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    4
+                  ],
+                  "fm": [
+                    0,
+                    4
+                  ],
+                  "match": [
+                    14,
+                    17
+                  ],
+                  "opb": [
+                    2,
+                    4
+                  ],
+                  "upb": [
+                    3,
+                    4
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "contains_C": {
+          "common": {
+            "allocated": 2,
+            "common": 2,
+            "common_groups": 2,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "exact": [
+                  0,
+                  2
+                ],
+                "fm": [
+                  3,
+                  2
+                ],
+                "match": [
+                  5,
+                  13
+                ],
+                "opb": [
+                  3,
+                  2
+                ],
+                "upb": [
+                  4,
+                  2
+                ]
+              },
+              "BASE": {
+                "exact": [
+                  0,
+                  2
+                ],
+                "fm": [
+                  0,
+                  2
+                ],
+                "match": [
+                  6,
+                  13
+                ],
+                "opb": [
+                  6,
+                  2
+                ],
+                "upb": [
+                  0,
+                  2
+                ]
+              },
+              "FREE": {
+                "exact": [
+                  0,
+                  2
+                ],
+                "fm": [
+                  1,
+                  2
+                ],
+                "match": [
+                  6,
+                  13
+                ],
+                "opb": [
+                  2,
+                  2
+                ],
+                "upb": [
+                  5,
+                  2
+                ]
+              },
+              "RAW": {
+                "exact": [
+                  0,
+                  2
+                ],
+                "fm": [
+                  2,
+                  2
+                ],
+                "match": [
+                  5,
+                  13
+                ],
+                "opb": [
+                  2,
+                  2
+                ],
+                "upb": [
+                  4,
+                  2
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 1
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    3,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    3,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                },
+                "BASE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    0,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    6,
+                    2
+                  ],
+                  "upb": [
+                    0,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    0,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    6,
+                    2
+                  ],
+                  "upb": [
+                    0,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    1,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    5,
+                    2
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 1
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    0,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    6,
+                    2
+                  ],
+                  "upb": [
+                    0,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    2,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 1
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    3,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    3,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    1,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    5,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 2
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    3,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    3,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    2,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 2,
+              "common": 2,
+              "common_groups": 2,
+              "second_minus_first_full_allocation_delta_bounds": [
+                1,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "positive": 1,
+                "tie": 1
+              },
+              "totals": {
+                "FREE": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    1,
+                    2
+                  ],
+                  "match": [
+                    6,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    5,
+                    2
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    0,
+                    2
+                  ],
+                  "fm": [
+                    2,
+                    2
+                  ],
+                  "match": [
+                    5,
+                    13
+                  ],
+                  "opb": [
+                    2,
+                    2
+                  ],
+                  "upb": [
+                    4,
+                    2
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "unflagged": {
+          "common": {
+            "allocated": 6,
+            "common": 6,
+            "common_groups": 5,
+            "second_minus_first_full_allocation_delta_bounds": null,
+            "second_minus_first_source_group_signs": {},
+            "totals": {
+              "AMP": {
+                "exact": [
+                  3,
+                  6
+                ],
+                "fm": [
+                  3,
+                  6
+                ],
+                "match": [
+                  21,
+                  31
+                ],
+                "opb": [
+                  3,
+                  6
+                ],
+                "upb": [
+                  6,
+                  6
+                ]
+              },
+              "BASE": {
+                "exact": [
+                  3,
+                  6
+                ],
+                "fm": [
+                  0,
+                  6
+                ],
+                "match": [
+                  22,
+                  31
+                ],
+                "opb": [
+                  6,
+                  6
+                ],
+                "upb": [
+                  2,
+                  6
+                ]
+              },
+              "FREE": {
+                "exact": [
+                  3,
+                  6
+                ],
+                "fm": [
+                  1,
+                  6
+                ],
+                "match": [
+                  22,
+                  31
+                ],
+                "opb": [
+                  2,
+                  6
+                ],
+                "upb": [
+                  7,
+                  6
+                ]
+              },
+              "RAW": {
+                "exact": [
+                  3,
+                  6
+                ],
+                "fm": [
+                  2,
+                  6
+                ],
+                "match": [
+                  21,
+                  31
+                ],
+                "opb": [
+                  2,
+                  6
+                ],
+                "upb": [
+                  6,
+                  6
+                ]
+              }
+            }
+          },
+          "paired": {
+            "BASE/AMP": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    3,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    3,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                },
+                "BASE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    0,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    6,
+                    6
+                  ],
+                  "upb": [
+                    2,
+                    6
+                  ]
+                }
+              }
+            },
+            "BASE/FREE": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 5
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    0,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    6,
+                    6
+                  ],
+                  "upb": [
+                    2,
+                    6
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    1,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    7,
+                    6
+                  ]
+                }
+              }
+            },
+            "BASE/RAW": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 4
+              },
+              "totals": {
+                "BASE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    0,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    6,
+                    6
+                  ],
+                  "upb": [
+                    2,
+                    6
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    2,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                }
+              }
+            },
+            "FREE/AMP": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                -1,
+                -1
+              ],
+              "second_minus_first_source_group_signs": {
+                "negative": 1,
+                "tie": 4
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    3,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    3,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                },
+                "FREE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    1,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    7,
+                    6
+                  ]
+                }
+              }
+            },
+            "RAW/AMP": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                0,
+                0
+              ],
+              "second_minus_first_source_group_signs": {
+                "tie": 5
+              },
+              "totals": {
+                "AMP": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    3,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    3,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    2,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                }
+              }
+            },
+            "RAW/FREE": {
+              "allocated": 6,
+              "common": 6,
+              "common_groups": 5,
+              "second_minus_first_full_allocation_delta_bounds": [
+                1,
+                1
+              ],
+              "second_minus_first_source_group_signs": {
+                "positive": 1,
+                "tie": 4
+              },
+              "totals": {
+                "FREE": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    1,
+                    6
+                  ],
+                  "match": [
+                    22,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    7,
+                    6
+                  ]
+                },
+                "RAW": {
+                  "exact": [
+                    3,
+                    6
+                  ],
+                  "fm": [
+                    2,
+                    6
+                  ],
+                  "match": [
+                    21,
+                    31
+                  ],
+                  "opb": [
+                    2,
+                    6
+                  ],
+                  "upb": [
+                    6,
+                    6
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "calls": {
+    "Actor": 38,
+    "Authority": 40,
+    "BenchAttrs": 36,
+    "Frame": 18,
+    "PersistNative": 11,
+    "RPEvalJudge": 21
+  },
+  "statuses": {
+    "KNOWN_LENGTH_FAILURE": 1,
+    "OK": 163
+  },
+  "tokens": 583007,
+  "unknown_usage": 0
+}

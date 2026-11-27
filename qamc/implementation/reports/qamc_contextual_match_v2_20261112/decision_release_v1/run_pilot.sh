@@ -8,4 +8,8 @@ for d in decision_release_v1 downstream_memory_utility_v1 transactional_reassemb
 done
 PYTHONPATH="$PYTHONPATH:$(find "$base" -mindepth 1 -maxdepth 1 -type d | sort | paste -s -d : -)"
 export PYTHONDONTWRITEBYTECODE=1
+case "${1:-}" in
+  audit) exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/decision_release_v1/audit_actor_wires.py" ;;
+  report) exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/decision_release_v1/summarize_amp.py" ;;
+esac
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/decision_release_v1/run_amp.py" "$@"
