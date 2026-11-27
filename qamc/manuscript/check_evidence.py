@@ -301,7 +301,19 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     require(expected in paper, True, "Query-only switch utility")
     bound = totals["pass"] + totals["unknown"]
     require(f"at most {bound} passes against {utility['FULL']['pass']} observed" in paper, True, "Utility bound")
-    return 41 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    diagnostic = json.loads((root / "rpe_indexed_grade_pair_v1/SUMMARY.json").read_text())
+    scopes = ("all_A", "contains_B", "contains_C", "all")
+    expected = []
+    for scope in scopes:
+        cells = diagnostic["tables"][scope]
+        expected.append([f"{cells[a]['match']}/{cells[a]['positions']}" for a in ("archive","original","indexed")])
+    require([r[1:] for r in latex_rows(paper,"grade_index")], expected, "Score presentation table")
+    flips = diagnostic["directions"]["all"]
+    require(f"on {flips['original_indexed_down']} tasks, raised it on none and left {flips['original_indexed_tie']} unchanged" in paper and not flips.get("original_indexed_up"), True, "Index direction")
+    rep = json.loads((root / "bench_header_repeat_v1/SUMMARY.json").read_text())["stats"]
+    before, after = (rep["completeness"][key] for key in ("original_net_edit","replicate_net_edit"))
+    require(f"from ${before}$ to ${after:+}$ total points" in paper, True, "Completeness replication")
+    return 44 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

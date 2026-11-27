@@ -14,7 +14,7 @@
 \raggedbottom
 
 \begin{abstract}
-A personalized assistant can retrieve the right history and still apply it to the wrong task or person. We distinguish activating history for a task from realizing an applicable preference in the final answer. With fixed candidate memory, we test a training-free rule that activates history when an intent estimator predicts at least one decision-driving preference. On 274 commonly scored tasks from RPEval's released multi-preference roster, the rule matches 953 of 1,462 positions, versus 874 when always excluding history and 824 when always including it. Gains over full history are concentrated in all-ignore tasks. Whole-task Match is 95/274, versus 103/274 without history and 64/274 with full history. On a separate PersistBench development panel, a task-conditioned selection and generation pipeline passes 47 of 49 tasks versus 43 for a rubric-guided full-history baseline, with both passing all 18 strict beneficial-use tasks. Across three deployments, sycophancy failures occur on 1/12 tasks with selected history, 3/12 with a whole-history switch driven by the same selector, and 7/12 with full history under the same generator. Empty history also fails on 1/12, but passes only 2/18 strict utility tasks. Selection passes 12/18 with six outcomes unknown in that deployment. In a fresh utility deployment, GPT-4.1 passes both selected and full-history GEPA on all 18 tasks, while Qwen passes 14 selected answers and all 18 full-history answers. On common BenchPreS pairs, Strong Gate records fewer inappropriate applications and comparable non-bold preference realization relative to adapted Selectivity. These are matched development results under documented grader adaptations. Case analysis finds that even when applicable history is visible and an answer passes automatic scoring, the actual decision can still violate a necessary constraint.
+When should a personalized assistant let retrieved memories influence its answer? We test a training-free rule that uses an intent estimate to choose whether the generator sees the fixed history. On 274 RPEval development tasks, this rule matches 953 of 1,462 preference positions, compared with 874 for empty history and 824 for full history. The gain over full history comes from tasks where every preference should be ignored. Whole-task Match is 95/274, versus 103/274 without history and 64/274 with full history. On a separate PersistBench development panel, sycophancy failures across three deployments fall from 7/12 with full history to 3/12 with a selector-driven switch and 1/12 with selected evidence. Always suppressing history also fails on only 1/12, but passes just 2/18 strict beneficial-use tasks. BenchPreS reveals a further limit: an appropriate preference can reach the generator without appearing in the delivered message. Fixed-answer scoring controls show why a low score alone cannot locate the error. These matched comparisons support controlling history exposure under the evaluated protocols; they leave reliable realization of applicable preferences open.
 \end{abstract}
 
 \section{Introduction}
@@ -274,6 +274,31 @@ Removing any one RPEval source group preserves both overall position-level gains
 
 \paragraph{Can a single applicability question replace the strong task-specific policies?}
 We froze two instructions that choose between archived full-history and empty-history answers. One asks about general applicability, the other asks whether history warrants a different concrete action for the beneficiary. On 17 paired RPEval tasks both scored 56/95 Match, compared with 66/95 for IPE-C. The entire gap came from the six all-ignore tasks. On PersistBench both opened history on every strict utility and sycophancy task: each passed six of six utility tasks and three of six sycophancy tasks. Archived SELECTED passed all six sycophancy tasks; three of its strict utility grades were missing. A uniform activation question did not reproduce the stronger policies' selectivity.
+
+\subsection{Does a low Match locate the error?}
+
+We compared the policy inside each archived full-history RP Actor request with the author labels. Of 287 graded tasks with verified request and answer records, 41 matched at every policy position. All 17 all-ignore answers received full Match. Only one of 11 answers with supporting preferences and no dominant preference did so; none of 13 answers with a dominant preference did. These counts locate a discrepancy downstream of policy prediction. They do not distinguish an inappropriate action from a misread by the grader.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Author policy & Archived & Repeat & Indexed \\
+\midrule
+All ignore & 15/15 & 15/15 & 15/15 \\
+Support, no dominant & 36/62 & 38/62 & 18/62 \\
+Contains dominant & 33/74 & 33/74 & 24/74 \\
+Total & 84/151 & 86/151 & 57/151 \\
+\bottomrule
+\end{tabular}
+\caption{RPEval Match for identical answers. Repeat uses the original grading prompt. Indexed appends a redundant position-to-label mapping. The panel includes all 24 exact-policy tasks with an applicable preference and four hash-selected all-ignore controls.}
+\label{tab:grade_index}
+\end{table}
+
+Indexing lowered the recorded Match on 14 tasks, raised it on none and left 14 unchanged (Table~\ref{tab:grade_index}). On a Zhangjiajie family itinerary, the answer excluded high-altitude activities in accordance with the fourth memory's dominant constraint. The indexed grader described all eight positions as satisfied but reported 2/8. This inconsistency establishes a problem with that justification; the correct score remains unknown.
+
+On BenchPreS, removing only a repeated recipient header left every body sentence intact in six letters. The edited-minus-original completeness difference changed from $-2$ to $+2$ total points when the same scoring requests were repeated; four of 12 unchanged requests received different completeness values. The one observed brevity gain disappeared. Both experiments use their original scores in the method comparisons. Neither diagnostic supplies a replacement ranking.
 
 \section{Limitations}
 
