@@ -1,0 +1,58 @@
+{
+  "release": "0f8bce80a03e6b86426485264b14ae7de49cc8f9",
+  "actor_template_sha256": "3da056e64108813d23091d5469e632669760ddf8529684fc07641383a38560e1",
+  "input_checks": {
+    "explicit": {
+      "rows": 150,
+      "actor_invariant_to_policy": 150
+    },
+    "implicit": {
+      "rows": 150,
+      "actor_invariant_to_policy": 150,
+      "actor_uses_different_source_than_project": 150
+    }
+  },
+  "old_judge_calls": 24,
+  "old_reported_tokens": 31370,
+  "complete_numeric_outputs": 24,
+  "match_present": 0,
+  "whole_match_present": 0,
+  "totals": {
+    "OPB": {
+      "published": {
+        "RPR_PAPER_FULL": 55,
+        "TASK_ONLY": 45,
+        "IPE_C": 55
+      },
+      "adapted": {
+        "RPR_PAPER_FULL": 22,
+        "TASK_ONLY": 6,
+        "IPE_C": 14
+      }
+    },
+    "UPB": {
+      "published": {
+        "RPR_PAPER_FULL": 50,
+        "TASK_ONLY": 29,
+        "IPE_C": 40
+      },
+      "adapted": {
+        "RPR_PAPER_FULL": 7,
+        "TASK_ONLY": 25,
+        "IPE_C": 11
+      }
+    },
+    "FM": {
+      "published": {
+        "RPR_PAPER_FULL": 60,
+        "TASK_ONLY": 54,
+        "IPE_C": 60
+      },
+      "adapted": {
+        "RPR_PAPER_FULL": 3,
+        "TASK_ONLY": 12,
+        "IPE_C": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "allocation": 144,
+  "pairs": 115,
+  "tasks": 39,
+  "pairs_per_draw": {
+    "0": 38,
+    "1": 38,
+    "2": 39
+  },
+  "pair_count_by_task": {
+    "3": 37,
+    "2": 2,
+    "0": 9
+  },
+  "ordered_answer_pair_manifest_sha256": "6b40c456d8a27d666b163a3b0ccf194cfeb6073d0c2f05ccb1eb4669e984c3f9"
+}
