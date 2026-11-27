@@ -80,7 +80,7 @@ How much could a better activation decision recover with the same answers? On th
 
 Which preferences account for the remaining errors? Of 264 unmatched positions on C-bearing tasks under IPE-C, at least 62 must be author-A positions across at least 44 tasks. This lower bound follows by assigning as many errors as possible to B/C positions within each task. A score of $n/m$ alone cannot identify the individual errors. In one family-trip task, the answer offered quiet activities and alternatives to crowded sites. The grader faulted omission of three adventure preferences, calling them B, although all three were marked A in the actual grading request. The recorded score remains 6/9. This case had no existing grading flag.
 
-\begin{table}[t]
+\begin{table*}[t]
 \centering
 \small
 \begin{tabular}{@{}lrrrrrr@{}}
@@ -95,9 +95,9 @@ MemAdapter adapted & 501 & 86 & 104 & 311 & 19 & 561\\
 Strong Gate & 503 & 107 & 92 & 304 & 23 & 629\\
 \bottomrule
 \end{tabular}
-\caption{Adapted RPEval comparison among six methods on 211 jointly valid tasks and 1,124 positions. Columns A, B, and C denote task strata (all A, only B, and contains C), with 426, 185, and 513 positions. Exact counts tasks with every position matched. Severity sums the detailed Judge field (lower is better).}
+\caption{Adapted RPEval comparison among six methods on 211 jointly valid tasks and 1,124 positions. Columns A, B, and C denote task strata (all A, at least one B and no C, and at least one C), with 426, 185, and 513 positions. Exact counts tasks with every position matched. Severity sums the detailed Judge field (lower is better).}
 \label{tab:external}
-\end{table}
+\end{table*}
 
 IPE-C has the lowest overall severity sum in this intersection, but empty history wins on whole-task correctness. Of IPE-C's 79 exact tasks, 74 are all-ignore and five have supported preferences without C. No history-using system in this table is exact on any of the 83 C-bearing tasks; empty history is exact on two. These counts describe joint position alignment and do not imply the absence of useful individual constraint realizations.
 
@@ -141,6 +141,14 @@ On 12 exposed source groups, selected by a fixed rule that enriches for history-
 
 \paragraph{Equal-rate routing.}
 On the 216 originally cached tasks with both endpoints, IPE-C activates history for 100 tasks and achieves 765/1,142 Match. The mean over 10,000 random assignments that activate the same number is 672.3. Preserving activation counts within groups of exactly identical task-only requests gives 674.9. On the 177 tasks whose assignments can vary within those groups, the measured policy reaches 653/941 versus a reference mean of 562.9. This measures the benefit of which saved endpoints are chosen in the development panel, conditional on the two available drafts. These are simulated reference distributions.
+
+\paragraph{Can the switch distinguish histories for the same request?}
+Within each of 47 identical task-only request groups, an oracle that chooses one endpoint for the whole group after scoring obtains 766/1,142 Match, compared with 765/1,142 for IPE-C. In 15 groups the preferred endpoint reverses across tasks. IPE-C exceeds the group oracle in 11 groups and trails it in ten. The oracle uses outcome information unavailable at deployment.
+
+We then froze twelve request groups by hash and chose two distinct histories per group. The same Qwen gate saw either the task alone or the task and history, and selected an existing answer. Query-only, history-aware, IPE-C and always-full scored 69, 82, 81 and 85 of 126 positions. The first two gates opened history on 2 and 19 of the 24 tasks. Reading history reduced underuse severity from 50 to 15 and increased overuse severity from 9 to 30. The history-aware switch chose different endpoints within only three groups. Uniformly reassigning its openings within each request yields expected Match of 82, equal to its observed score. Thus the gain over the query-only gate can be accounted for by opening history more often on particular requests. Only one of the 24 tasks contained supporting preferences without any decision-driving preference; all four policies scored 2/4 on it.
+
+\paragraph{Can a third answer recover missed supporting preferences?}
+Across the broader archive, 48 of 54 tasks containing B and no C had two scored endpoints. Both endpoints received imperfect Match and positive underuse severity on 36 tasks. We screened three archived alternatives for higher Match than both endpoints with no increase in overuse, underuse or feasibility severity relative to either. Only one task qualified. On a family road trip, reconstructed Des2Gen scored 5/7 against 4/7 for both endpoints, but the grader's explanation interchanged the intended treatment of two memories. The scores identify room for improvement; attributing that improvement to a particular recommendation would require stronger evidence.
 
 \paragraph{Second model backbone.}
 On 22 common tasks with both estimators and the Actor changed to GPT-4.1, Match is 80/115, 71/115 and 61/115 for IPE-C and the two fixed paths. Qwen obtains 70/115, 61/115 and 59/115 on exactly these tasks. GPT-4.1 scores both, leaving potential same-model preference. The stricter 17-task subset before audited whitespace-only output recovery preserves the ordering. IPE-C ties task-only and trails full history on B-only tasks.
@@ -367,7 +375,7 @@ The experiments use exposed development data. PersistBench includes previously f
 
 \section{Conclusion}
 
-A fixed-memory assistant can benefit from deciding when historical preferences should enter the generation path. In these development comparisons, task-level activation captures complementary benefits of the two fixed endpoints: avoiding irrelevant history and preserving useful constraints on tasks where it matters. Additional end-to-end controls show that passing relevant memory to the generator leaves an unresolved execution problem. Benchmark evaluation of these systems needs measures of both decisions and case-level verification of actual actions.
+A fixed-memory assistant can benefit from deciding when historical preferences should enter the generation path. In these development comparisons, task-level activation captures complementary benefits of the two fixed endpoints: avoiding irrelevant history and preserving useful constraints on tasks where it matters. Within-request tests leave open how reliably the switch distinguishes useful histories from distracting ones for the same task. Additional end-to-end controls show that passing relevant memory to the generator leaves an unresolved execution problem. Benchmark evaluation of these systems needs measures of both decisions and case-level verification of actual actions.
 
 \bibliography{references}
 \end{document}

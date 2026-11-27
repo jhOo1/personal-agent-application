@@ -361,6 +361,18 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         f"ruled out this pattern on {ruled_out} sources",
         f"{c['T_passes']}, {c['H_passes']} and {c['G_passes']} of these {c['comparable']}",
     ]
+    gate = {r[3]: r for r in markdown_rows((root / "rpe_deployable_history_gate_v1/RESULTS.md").read_text()) if r[0] == "all"}
+    oracle, = [r for r in markdown_rows((root / "ipe_endpoint_behavior_gpt41_v1/QUERY_ORACLE.md").read_text()) if r[0] == "All"]
+    correction = (root / "rpe_soft_endpoint_opportunity_v1/RESULTS.md").read_text()
+    soft, = [r for r in markdown_rows(correction) if r[0] == "memory"]
+    phrases.extend([
+        f"{gate['query'][5]}, {gate['memory'][5]}, {gate['IPE-C'][5]} and {gate['full'][5]} of {gate['full'][2]} positions",
+        f"underuse severity from {gate['query'][7]} to {gate['memory'][7]}",
+        f"overuse severity from {gate['query'][6]} to {gate['memory'][6]}",
+        f"obtains {oracle[8]}/{int(oracle[2]):,} Match, compared with {oracle[7]}/{int(oracle[2]):,} for IPE-C",
+        f"In {oracle[4]} groups the preferred endpoint reverses",
+        f"all four policies scored {soft[1]} on it",
+    ])
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
