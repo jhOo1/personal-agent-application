@@ -1,0 +1,596 @@
+{
+  "totals": {
+    "all": {
+      "Qwen": {
+        "Qwen": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 70,
+          "exact": 7,
+          "OPB": 18,
+          "UPB": 28,
+          "FM": 5
+        },
+        "GPT": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 72,
+          "exact": 7,
+          "OPB": 19,
+          "UPB": 25,
+          "FM": 4
+        },
+        "both": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 70,
+          "exact": 7,
+          "OPB": 18,
+          "UPB": 28,
+          "FM": 5
+        },
+        "either": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 72,
+          "exact": 7,
+          "OPB": 19,
+          "UPB": 25,
+          "FM": 4
+        },
+        "off": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 61,
+          "exact": 7,
+          "OPB": 9,
+          "UPB": 48,
+          "FM": 23
+        },
+        "on": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 59,
+          "exact": 3,
+          "OPB": 34,
+          "UPB": 21,
+          "FM": 6
+        }
+      },
+      "GPT": {
+        "Qwen": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 80,
+          "exact": 10,
+          "OPB": 17,
+          "UPB": 20,
+          "FM": 4
+        },
+        "GPT": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 80,
+          "exact": 10,
+          "OPB": 17,
+          "UPB": 19,
+          "FM": 4
+        },
+        "both": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 80,
+          "exact": 10,
+          "OPB": 17,
+          "UPB": 20,
+          "FM": 4
+        },
+        "either": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 80,
+          "exact": 10,
+          "OPB": 17,
+          "UPB": 19,
+          "FM": 4
+        },
+        "off": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 71,
+          "exact": 10,
+          "OPB": 0,
+          "UPB": 49,
+          "FM": 29
+        },
+        "on": {
+          "tasks": 22,
+          "positions": 115,
+          "match": 61,
+          "exact": 4,
+          "OPB": 32,
+          "UPB": 23,
+          "FM": 5
+        }
+      }
+    },
+    "B_only": {
+      "Qwen": {
+        "Qwen": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 25,
+          "exact": 2,
+          "OPB": 3,
+          "UPB": 14,
+          "FM": 1
+        },
+        "GPT": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 27,
+          "exact": 2,
+          "OPB": 4,
+          "UPB": 11,
+          "FM": 0
+        },
+        "both": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 25,
+          "exact": 2,
+          "OPB": 3,
+          "UPB": 14,
+          "FM": 1
+        },
+        "either": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 27,
+          "exact": 2,
+          "OPB": 4,
+          "UPB": 11,
+          "FM": 0
+        },
+        "off": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 25,
+          "exact": 2,
+          "OPB": 2,
+          "UPB": 14,
+          "FM": 1
+        },
+        "on": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 23,
+          "exact": 1,
+          "OPB": 4,
+          "UPB": 14,
+          "FM": 0
+        }
+      },
+      "GPT": {
+        "Qwen": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 22,
+          "exact": 2,
+          "OPB": 1,
+          "UPB": 17,
+          "FM": 2
+        },
+        "GPT": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 22,
+          "exact": 2,
+          "OPB": 1,
+          "UPB": 16,
+          "FM": 2
+        },
+        "both": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 22,
+          "exact": 2,
+          "OPB": 1,
+          "UPB": 17,
+          "FM": 2
+        },
+        "either": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 22,
+          "exact": 2,
+          "OPB": 1,
+          "UPB": 16,
+          "FM": 2
+        },
+        "off": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 22,
+          "exact": 2,
+          "OPB": 0,
+          "UPB": 18,
+          "FM": 2
+        },
+        "on": {
+          "tasks": 7,
+          "positions": 40,
+          "match": 24,
+          "exact": 1,
+          "OPB": 3,
+          "UPB": 13,
+          "FM": 1
+        }
+      }
+    },
+    "contains_C": {
+      "Qwen": {
+        "Qwen": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 27,
+          "exact": 0,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 3
+        },
+        "GPT": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 27,
+          "exact": 0,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 3
+        },
+        "both": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 27,
+          "exact": 0,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 3
+        },
+        "either": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 27,
+          "exact": 0,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 3
+        },
+        "off": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 18,
+          "exact": 0,
+          "OPB": 2,
+          "UPB": 27,
+          "FM": 21
+        },
+        "on": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 27,
+          "exact": 0,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 3
+        }
+      },
+      "GPT": {
+        "Qwen": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 25,
+          "exact": 0,
+          "OPB": 16,
+          "UPB": 3,
+          "FM": 2
+        },
+        "GPT": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 25,
+          "exact": 0,
+          "OPB": 16,
+          "UPB": 3,
+          "FM": 2
+        },
+        "both": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 25,
+          "exact": 0,
+          "OPB": 16,
+          "UPB": 3,
+          "FM": 2
+        },
+        "either": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 25,
+          "exact": 0,
+          "OPB": 16,
+          "UPB": 3,
+          "FM": 2
+        },
+        "off": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 16,
+          "exact": 0,
+          "OPB": 0,
+          "UPB": 31,
+          "FM": 27
+        },
+        "on": {
+          "tasks": 7,
+          "positions": 42,
+          "match": 25,
+          "exact": 0,
+          "OPB": 16,
+          "UPB": 3,
+          "FM": 2
+        }
+      }
+    },
+    "all_A": {
+      "Qwen": {
+        "Qwen": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 18,
+          "exact": 5,
+          "OPB": 5,
+          "UPB": 7,
+          "FM": 1
+        },
+        "GPT": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 18,
+          "exact": 5,
+          "OPB": 5,
+          "UPB": 7,
+          "FM": 1
+        },
+        "both": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 18,
+          "exact": 5,
+          "OPB": 5,
+          "UPB": 7,
+          "FM": 1
+        },
+        "either": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 18,
+          "exact": 5,
+          "OPB": 5,
+          "UPB": 7,
+          "FM": 1
+        },
+        "off": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 18,
+          "exact": 5,
+          "OPB": 5,
+          "UPB": 7,
+          "FM": 1
+        },
+        "on": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 9,
+          "exact": 2,
+          "OPB": 20,
+          "UPB": 0,
+          "FM": 3
+        }
+      },
+      "GPT": {
+        "Qwen": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 33,
+          "exact": 8,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GPT": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 33,
+          "exact": 8,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "both": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 33,
+          "exact": 8,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "either": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 33,
+          "exact": 8,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "off": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 33,
+          "exact": 8,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "on": {
+          "tasks": 8,
+          "positions": 33,
+          "match": 12,
+          "exact": 3,
+          "OPB": 13,
+          "UPB": 7,
+          "FM": 2
+        }
+      }
+    },
+    "clean": {
+      "Qwen": {
+        "Qwen": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 31,
+          "exact": 6,
+          "OPB": 1,
+          "UPB": 4,
+          "FM": 1
+        },
+        "GPT": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 31,
+          "exact": 6,
+          "OPB": 1,
+          "UPB": 4,
+          "FM": 1
+        },
+        "both": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 31,
+          "exact": 6,
+          "OPB": 1,
+          "UPB": 4,
+          "FM": 1
+        },
+        "either": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 31,
+          "exact": 6,
+          "OPB": 1,
+          "UPB": 4,
+          "FM": 1
+        },
+        "off": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 31,
+          "exact": 6,
+          "OPB": 1,
+          "UPB": 5,
+          "FM": 1
+        },
+        "on": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 22,
+          "exact": 3,
+          "OPB": 10,
+          "UPB": 4,
+          "FM": 2
+        }
+      },
+      "GPT": {
+        "Qwen": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 30,
+          "exact": 6,
+          "OPB": 0,
+          "UPB": 5,
+          "FM": 1
+        },
+        "GPT": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 30,
+          "exact": 6,
+          "OPB": 0,
+          "UPB": 5,
+          "FM": 1
+        },
+        "both": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 30,
+          "exact": 6,
+          "OPB": 0,
+          "UPB": 5,
+          "FM": 1
+        },
+        "either": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 30,
+          "exact": 6,
+          "OPB": 0,
+          "UPB": 5,
+          "FM": 1
+        },
+        "off": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 29,
+          "exact": 6,
+          "OPB": 0,
+          "UPB": 7,
+          "FM": 2
+        },
+        "on": {
+          "tasks": 8,
+          "positions": 37,
+          "match": 25,
+          "exact": 4,
+          "OPB": 8,
+          "UPB": 4,
+          "FM": 2
+        }
+      }
+    }
+  },
+  "disagreements": [
+    {
+      "uid": "rpeval/formal_multi_v1/explicit/080",
+      "stratum": "B_only",
+      "qwen_on": false,
+      "gpt_on": true,
+      "off_on_matches": {
+        "Qwen": [
+          2,
+          4
+        ],
+        "GPT": [
+          2,
+          2
+        ]
+      }
+    }
+  ],
+  "missing": [
+    "rpeval/formal_multi_v1/explicit/036",
+    "rpeval/formal_multi_v1/explicit/114"
+  ]
+}
