@@ -1,0 +1,34 @@
+{
+  "common_positions": 117,
+  "distinct_profiles_by_outcome": {
+    "both_follow": 7,
+    "both_miss": 2,
+    "gate_only": 1,
+    "judge_disagree": 4,
+    "selectivity_only": 2
+  },
+  "distinct_tasks_by_outcome": {
+    "both_follow": 26,
+    "both_miss": 5,
+    "gate_only": 2,
+    "judge_disagree": 13,
+    "selectivity_only": 2
+  },
+  "independent_human_votes": 0,
+  "physical_requests_added": 0,
+  "qwen_and_gpt41": {
+    "both_follow": 82,
+    "both_miss": 5,
+    "gate_only": 2,
+    "judge_disagree": 26,
+    "selectivity_only": 2
+  },
+  "same_answer_automatic_judges": 2,
+  "selectivity_only_whole_answer_guards": {
+    "available_whole_answer_pairs": 2,
+    "no_qwen_bold_regression": 1,
+    "no_qwen_completeness_loss": 2,
+    "no_qwen_mr_increase": 2,
+    "qwen_bold_positions": 1
+  }
+}
