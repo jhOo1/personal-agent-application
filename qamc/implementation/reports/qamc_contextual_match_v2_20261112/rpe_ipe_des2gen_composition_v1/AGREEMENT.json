@@ -1,0 +1,36 @@
+{
+  "history_on": {
+    "keep": {
+      "tasks": 85,
+      "positions": 510,
+      "IPE_Match": 286,
+      "IPE_OPB": 149,
+      "IPE_UPB": 75,
+      "IPE_FM": 19,
+      "Des2Gen_Match": 282,
+      "Des2Gen_OPB": 175,
+      "Des2Gen_UPB": 50,
+      "Des2Gen_FM": 35
+    },
+    "switch": {
+      "tasks": 44,
+      "positions": 267,
+      "IPE_Match": 157,
+      "IPE_OPB": 68,
+      "IPE_UPB": 38,
+      "IPE_FM": 13,
+      "Des2Gen_Match": 154,
+      "Des2Gen_OPB": 91,
+      "Des2Gen_UPB": 25,
+      "Des2Gen_FM": 20
+    },
+    "availability": {
+      "missing_grade": 8
+    }
+  },
+  "switch_group_net": {
+    "tie": 20,
+    "loss": 4,
+    "win": 2
+  }
+}
