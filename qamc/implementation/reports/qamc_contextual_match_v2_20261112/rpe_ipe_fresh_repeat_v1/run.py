@@ -32,7 +32,7 @@ def main():
             if r["stratum"] != s or g in used:
                 continue
             assert cases[uid]["analysis_group_id"] == g
-            cards.append((uid,g,s))
+            cards.append([uid,g,s])
             used.add(g)
             n += 1
             if n == 6:
@@ -47,7 +47,10 @@ def main():
     pin = dict(cards=cards, excluded_groups=sorted(banned), estimator_hashes=[sha(w) for w in est.values()],
                model=model, code=sha(Path(__file__).read_bytes()), protocol=sha((HERE/"PROTOCOL.md").read_bytes()))
     OUT.mkdir(parents=True,exist_ok=True)
-    probe.freeze(OUT/"PANEL.json",pin)
+    previous = read(OUT/"PANEL.json") if (OUT/"PANEL.json").exists() else None
+    if previous:
+        assert {k:v for k,v in previous.items() if k!="code"} == {k:v for k,v in pin.items() if k!="code"}
+    probe.freeze(OUT/"PANEL_V2.json",pin)
     if action == "freeze":
         print(len(cards),model)
         return
