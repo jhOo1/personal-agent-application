@@ -1,0 +1,44 @@
+{
+  "5": {
+    "counts": {
+      "missing_triple": 22,
+      "comparable": 26,
+      "T_passes": 2,
+      "H_passes": 8,
+      "G_passes": 19,
+      "gate_only": 9,
+      "gate_only_nonbold_above_both": 0
+    },
+    "profiles": 9,
+    "winning_profiles": 5,
+    "endpoint_errors_on_gate_only": {
+      "T/applicable+incomplete": 1,
+      "H/incomplete": 2,
+      "T/applicable": 8,
+      "H/applicable": 4,
+      "H/misuse": 2,
+      "H/applicable+misuse": 1
+    }
+  },
+  "4": {
+    "counts": {
+      "missing_triple": 22,
+      "comparable": 26,
+      "T_passes": 3,
+      "H_passes": 9,
+      "G_passes": 19,
+      "gate_only": 8,
+      "gate_only_nonbold_above_both": 0
+    },
+    "profiles": 9,
+    "winning_profiles": 5,
+    "endpoint_errors_on_gate_only": {
+      "T/applicable+incomplete": 1,
+      "H/incomplete": 1,
+      "T/applicable": 7,
+      "H/applicable": 4,
+      "H/misuse": 2,
+      "H/applicable+misuse": 1
+    }
+  }
+}
