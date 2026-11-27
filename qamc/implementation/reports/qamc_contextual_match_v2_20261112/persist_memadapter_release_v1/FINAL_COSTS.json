@@ -1,0 +1,58 @@
+{
+  "total": {
+    "requests": 434,
+    "automatic_retries": 0,
+    "reported_tokens": 3782722,
+    "above_requested_cap": 78,
+    "unknown_usage": 2
+  },
+  "statuses": {
+    "OK": 409,
+    "KNOWN_LENGTH_FAILURE": 23,
+    "FAILED_DELIVERY_UNKNOWN": 2
+  },
+  "by_stage": {
+    "Actor": {
+      "requests": 93,
+      "automatic_retries": 0,
+      "reported_tokens": 1057755,
+      "above_requested_cap": 30,
+      "unknown_usage": 1
+    },
+    "GPT": {
+      "requests": 85,
+      "automatic_retries": 0,
+      "reported_tokens": 673775
+    },
+    "MA1": {
+      "requests": 47,
+      "automatic_retries": 0,
+      "reported_tokens": 729292,
+      "above_requested_cap": 46,
+      "unknown_usage": 1
+    },
+    "MA2": {
+      "requests": 30,
+      "automatic_retries": 0,
+      "reported_tokens": 341375
+    },
+    "Qwen": {
+      "requests": 85,
+      "automatic_retries": 0,
+      "reported_tokens": 797792
+    },
+    "Route": {
+      "requests": 47,
+      "automatic_retries": 0,
+      "reported_tokens": 31469
+    },
+    "Select": {
+      "requests": 47,
+      "automatic_retries": 0,
+      "reported_tokens": 151264,
+      "above_requested_cap": 2
+    }
+  },
+  "first_to_last_timed_receipt_seconds": 3916.3,
+  "final_receipts_with_elapsed": 434
+}

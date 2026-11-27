@@ -1,0 +1,132 @@
+{
+  "1": {
+    "settled": true,
+    "judges": {
+      "GPT": {
+        "distinct_grading_wires": 60,
+        "logical": {
+          "OK": 72,
+          "NO_ANSWER": 15
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": 1,
+            "SELECTED": 1,
+            "BREADTH": 1
+          },
+          "ef273934": {
+            "MEMADAPTER": null,
+            "SELECTED": 3,
+            "BREADTH": 3
+          },
+          "7b03625e": {
+            "MEMADAPTER": 3,
+            "SELECTED": 3,
+            "BREADTH": 3
+          },
+          "3776469a": {
+            "MEMADAPTER": 3,
+            "SELECTED": 3,
+            "BREADTH": 3
+          }
+        }
+      },
+      "Qwen": {
+        "distinct_grading_wires": 60,
+        "logical": {
+          "OK": 70,
+          "NO_ANSWER": 15,
+          "INVALID_GRADE": 2
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": 1,
+            "SELECTED": 1,
+            "BREADTH": 1
+          },
+          "ef273934": {
+            "MEMADAPTER": null,
+            "SELECTED": 2,
+            "BREADTH": 2
+          },
+          "7b03625e": {
+            "MEMADAPTER": 3,
+            "SELECTED": 2,
+            "BREADTH": 3
+          },
+          "3776469a": {
+            "MEMADAPTER": 3,
+            "SELECTED": 3,
+            "BREADTH": 3
+          }
+        }
+      }
+    }
+  },
+  "2": {
+    "settled": true,
+    "judges": {
+      "GPT": {
+        "distinct_grading_wires": 14,
+        "logical": {
+          "NO_ANSWER": 6,
+          "OK": 21
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": null,
+            "SELECTED": 1,
+            "BREADTH": 1
+          }
+        }
+      },
+      "Qwen": {
+        "distinct_grading_wires": 14,
+        "logical": {
+          "NO_ANSWER": 6,
+          "OK": 21
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": null,
+            "SELECTED": 1,
+            "BREADTH": 1
+          }
+        }
+      }
+    }
+  },
+  "3": {
+    "settled": true,
+    "judges": {
+      "GPT": {
+        "distinct_grading_wires": 11,
+        "logical": {
+          "NO_ANSWER": 10,
+          "OK": 17
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": null,
+            "SELECTED": 1,
+            "BREADTH": 1
+          }
+        }
+      },
+      "Qwen": {
+        "distinct_grading_wires": 11,
+        "logical": {
+          "NO_ANSWER": 10,
+          "OK": 17
+        },
+        "case_ratings": {
+          "bedefbbe": {
+            "MEMADAPTER": null,
+            "SELECTED": 1,
+            "BREADTH": 2
+          }
+        }
+      }
+    }
+  }
+}

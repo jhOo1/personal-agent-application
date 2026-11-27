@@ -1,0 +1,316 @@
+{
+  "GPT": {
+    "beneficial_memory_usage": {
+      "passes": {
+        "MEMADAPTER": 13,
+        "SELECTED": 19,
+        "BREADTH": 19
+      },
+      "missing": {
+        "MEMADAPTER": 7,
+        "SELECTED": 1,
+        "BREADTH": 1
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 19,
+            "unknown": 1
+          },
+          "net_bounds": [
+            -1,
+            1
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 12,
+            "unknown": 8
+          },
+          "net_bounds": [
+            -1,
+            7
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 12,
+            "unknown": 8
+          },
+          "net_bounds": [
+            -1,
+            7
+          ]
+        }
+      }
+    },
+    "cross_domain": {
+      "passes": {
+        "MEMADAPTER": 0,
+        "SELECTED": 1,
+        "BREADTH": 1
+      },
+      "missing": {
+        "MEMADAPTER": 1,
+        "SELECTED": 0,
+        "BREADTH": 0
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 1,
+          "outcomes": {
+            "tie": 1
+          },
+          "net_bounds": [
+            0,
+            0
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 1,
+          "outcomes": {
+            "unknown": 1
+          },
+          "net_bounds": [
+            0,
+            1
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 1,
+          "outcomes": {
+            "unknown": 1
+          },
+          "net_bounds": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "sycophancy": {
+      "passes": {
+        "MEMADAPTER": 2,
+        "SELECTED": 4,
+        "BREADTH": 4
+      },
+      "missing": {
+        "MEMADAPTER": 5,
+        "SELECTED": 3,
+        "BREADTH": 3
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 8,
+          "outcomes": {
+            "tie": 5,
+            "unknown": 3
+          },
+          "net_bounds": [
+            -3,
+            3
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 8,
+          "outcomes": {
+            "unknown": 5,
+            "tie": 2,
+            "win": 1
+          },
+          "net_bounds": [
+            -3,
+            5
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 8,
+          "outcomes": {
+            "unknown": 5,
+            "tie": 2,
+            "win": 1
+          },
+          "net_bounds": [
+            -3,
+            5
+          ]
+        }
+      }
+    }
+  },
+  "Qwen": {
+    "beneficial_memory_usage": {
+      "passes": {
+        "MEMADAPTER": 13,
+        "SELECTED": 15,
+        "BREADTH": 16
+      },
+      "missing": {
+        "MEMADAPTER": 7,
+        "SELECTED": 2,
+        "BREADTH": 2
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 17,
+            "unknown": 2,
+            "win": 1
+          },
+          "net_bounds": [
+            -1,
+            3
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 11,
+            "unknown": 8,
+            "loss": 1
+          },
+          "net_bounds": [
+            -4,
+            5
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 20,
+          "outcomes": {
+            "tie": 10,
+            "unknown": 8,
+            "loss": 2
+          },
+          "net_bounds": [
+            -5,
+            4
+          ]
+        }
+      }
+    },
+    "cross_domain": {
+      "passes": {
+        "MEMADAPTER": 0,
+        "SELECTED": 1,
+        "BREADTH": 1
+      },
+      "missing": {
+        "MEMADAPTER": 1,
+        "SELECTED": 0,
+        "BREADTH": 0
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 1,
+          "outcomes": {
+            "tie": 1
+          },
+          "net_bounds": [
+            0,
+            0
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 1,
+          "outcomes": {
+            "unknown": 1
+          },
+          "net_bounds": [
+            0,
+            1
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 1,
+          "outcomes": {
+            "unknown": 1
+          },
+          "net_bounds": [
+            0,
+            1
+          ]
+        }
+      }
+    },
+    "sycophancy": {
+      "passes": {
+        "MEMADAPTER": 2,
+        "SELECTED": 5,
+        "BREADTH": 5
+      },
+      "missing": {
+        "MEMADAPTER": 5,
+        "SELECTED": 3,
+        "BREADTH": 3
+      },
+      "comparisons": {
+        "BREADTH_vs_SELECTED": {
+          "pairs": 8,
+          "outcomes": {
+            "tie": 5,
+            "unknown": 3
+          },
+          "net_bounds": [
+            -3,
+            3
+          ]
+        },
+        "BREADTH_vs_MEMADAPTER": {
+          "pairs": 8,
+          "outcomes": {
+            "unknown": 5,
+            "tie": 2,
+            "win": 1
+          },
+          "net_bounds": [
+            -2,
+            6
+          ]
+        },
+        "SELECTED_vs_MEMADAPTER": {
+          "pairs": 8,
+          "outcomes": {
+            "unknown": 5,
+            "tie": 2,
+            "win": 1
+          },
+          "net_bounds": [
+            -2,
+            6
+          ]
+        }
+      }
+    }
+  },
+  "actor_status": {
+    "MEMADAPTER": {
+      "OK": 28,
+      "NO_UPSTREAM": 17,
+      "KNOWN_LENGTH_FAILURE": 2
+    },
+    "SELECTED": {
+      "OK": 41,
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "KNOWN_LENGTH_FAILURE": 5
+    },
+    "BREADTH": {
+      "OK": 41,
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "KNOWN_LENGTH_FAILURE": 5
+    }
+  },
+  "ledger": {
+    "rows": 434,
+    "statuses": {
+      "OK": 409,
+      "KNOWN_LENGTH_FAILURE": 23,
+      "FAILED_DELIVERY_UNKNOWN": 2
+    },
+    "reported_tokens": 3782722,
+    "unknown_usage": 2
+  }
+}
