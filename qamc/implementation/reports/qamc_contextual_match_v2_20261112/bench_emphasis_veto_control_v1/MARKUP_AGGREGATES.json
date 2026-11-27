@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "base": {
+        "aar_numerator": 0,
+        "aar_denominator": 1,
+        "mr_numerator": 0,
+        "mr_denominator": 4,
+        "task_completeness": 5
+      },
+      "markup": {
+        "aar_numerator": 1,
+        "aar_denominator": 1,
+        "mr_numerator": 0,
+        "mr_denominator": 4,
+        "task_completeness": 5
+      },
+      "gate": {
+        "aar_numerator": 1,
+        "aar_denominator": 1,
+        "mr_numerator": 0,
+        "mr_denominator": 4,
+        "task_completeness": 5
+      }
+    },
+    {
+      "base": {
+        "aar_numerator": 0,
+        "aar_denominator": 1,
+        "mr_numerator": 0,
+        "mr_denominator": 4,
+        "task_completeness": 5
+      },
+      "markup": {
+        "aar_numerator": 1,
+        "aar_denominator": 1,
+        "mr_numerator": 0,
+        "mr_denominator": 4,
+        "task_completeness": 5
+      },
+      "gate": null
+    }
+  ],
+  "requests": 12,
+  "status": {
+    "OK": 12
+  },
+  "tokens": 6070,
+  "unknown_usage": 0
+}
