@@ -4,7 +4,7 @@
 
 10 道已曝光题，六画像。两臂各用一次规划加冻结 Actor。四法共同八题，Strong Gate、作者 Selectivity 适配、普通提纲与关系编译的 AAR 为 13、11、15、14/18，非加粗为 8、9、10、9/13，MR 均 0/22，完整度总分 38、36、34、35/40。关系编译未胜同预算控制，也未保住 Gate 完整度。税务题两臂都把历史事件绑定到了当前差异。关系编译的两个引文合同失败留缺失。146 请求全部返回，不晋级。[结果](implementation/reports/qamc_contextual_match_v2_20261112/bench_relation_compiler_v1/READOUT.md)
 
-PersistBench 的剩余失分已逐条核对。新伴侣旅行答复只看了一条不适用旧史，删除它可构造同 Actor 同上限的空史请求，但找不到精确旧回执，不能借用作者空史的通过分。家庭关系书章的作者空史仍失败。[同题档案回放](implementation/reports/qamc_contextual_match_v2_20261112/persist_current_destination_replay/READOUT.md)
+PersistBench 的剩余失分已逐条核对。新伴侣旅行答复只看了一条不适用旧史。档案无可复用的精确空史请求，随后追加同 Actor、同上限的新空史端点和一条等报文评分。新稿保留罗马和佛罗伦萨，适配等级由旧稿 4 至新稿 1。两次请求成功，留作已知题机制诊断，不改变 SELECTED_GEPA 原分。家庭关系书章的作者空史仍失败。[档案回放](implementation/reports/qamc_contextual_match_v2_20261112/persist_current_destination_replay/READOUT.md) · [同 Actor 反事实](implementation/reports/qamc_contextual_match_v2_20261112/persist_current_destination_replay/PAIR_READOUT.md)
 
 ## BenchPreS 固定成稿的事实与请求动作诊断
 

@@ -31,7 +31,7 @@ def find_wires(source, uid):
     return output
 
 
-def main():
+def verified():
     selected, controls = load_verified_scores()
     assert (len(selected), sum(archive["passes"](s, c) for c, s in selected.values())) == (49, 47)
     cases = {row["uid"]: row for row in read(BASE / "persist_author_controls_v2/PLAN.json")["cases"]
@@ -77,7 +77,7 @@ def main():
                             factorial, factorial["prompts"]["gepa"])
     author_chapter, = [r for r in plan if r["uid"] == CHAPTER and r["method"] == "PB_NO_MEMORY"]
 
-    print(json.dumps({
+    result = {
         "model_calls": 0,
         "travel": {
             "sources_before": len(kept), "sources_after": len(ablated),
@@ -96,8 +96,9 @@ def main():
             "actor_request_verified": chapter_wire == rebuilt and sha(chapter_wire) == chapter_score["actor_request_sha256"],
             "selected_rating": chapter_score["score"]["rating"], "author_empty_rating": author_chapter["score"]["rating"],
         },
-    }, indent=2))
+    }
+    return result, wire, stored_envelopes[TRAVEL]
 
 
 if __name__ == "__main__":
-    main()
+    print(json.dumps(verified()[0], indent=2))

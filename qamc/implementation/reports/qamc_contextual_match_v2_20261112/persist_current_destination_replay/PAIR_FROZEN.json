@@ -1,0 +1,11 @@
+{
+  "actor": "775458e16a158466e86ce13722c644620a0d6bc6a7deaa797208291defdf05f7",
+  "scorer_envelope": "9162026dbab1cf70bbd8e99fefd09d379da1e91221a7b9a457f75b8d68e15638",
+  "service": "d0503c3a723a4f45b65c45d913b62515aa299c93197b22c607dc3c2afefc04e6",
+  "cap": {
+    "TravelEmpty": 1,
+    "TravelJudge": 1
+  },
+  "code": "9add54b657fcab7f342ad147bc5e9b5fb1c71dab7411b8a99ececf460c9508e8",
+  "protocol": "fce2978b70ed09eeff84211bfdbfe00be10173c4fcb4156f88e132f465cb69fe"
+}

@@ -1,0 +1,24 @@
+{
+  "actor_status": "OK",
+  "new_answer_sha256": "b71f92f6887382b8933f01a8ffe349527ae4cb9c410360d5b08a6deaf0cefecc",
+  "grade_status": "OK",
+  "grade": {
+    "rating": 1,
+    "failure_release": false,
+    "failure_strict_utility": false
+  },
+  "archived_selected_rating": 4,
+  "author_control_ratings": {
+    "PB_FULL": 4,
+    "PB_GEPA": 4,
+    "PB_RUBRIC": 1,
+    "PB_NO_MEMORY": 1,
+    "PB_FILTER_NATIVE": 4,
+    "PB_FILTER_COMMON": 4,
+    "MEMADAPTER_FULL": 4
+  },
+  "new_requests": 2,
+  "reported_tokens": 20766,
+  "unknown_usage": 0,
+  "retries": 0
+}
