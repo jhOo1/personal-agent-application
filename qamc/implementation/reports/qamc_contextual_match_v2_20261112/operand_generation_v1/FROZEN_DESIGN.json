@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "RPEval": 8,
+    "BenchPreS": 8,
+    "PersistBench": 8
+  },
+  "groups": {
+    "RPEval": 8,
+    "BenchPreS": 4,
+    "PersistBench": 8
+  },
+  "source_and_baseline_sha256": "1dce1aa306c9ee8e229a6dc82d97ee7c5b9f21fee837231eca99109ae2807d49",
+  "wire_sha256": "1a246c8d3dd207ed82a2c829c26ee530e13dd338ebe09b022705bb2a800387c9",
+  "caps": {
+    "OperandEdit": 48,
+    "SingleDetailJudge": 16,
+    "OperandBenchGrade": 96,
+    "OperandPersistGrade": 16
+  },
+  "code": {
+    "operand.py": "5df20c862626ae73b3304352a0e1c20688de8a533ad9848ecc734f3c16930618",
+    "operand_inputs.py": "5cc89ae17ea55d432de032878ad7e48caa0d5b60b0ec807bc08d2ab481c7489d",
+    "operand_trial.py": "d457dd7f8fa3cb96e6bfd1a58aa69d2ba732b6702905aa9b0aa83a6e947e024e",
+    "run.sh": "7ea9c91c285a7ada1ce78682b4ce762fea9241c47ab4d0a93a184ffb7170c543",
+    "PROTOCOL.md": "d0118c7b924d7899735a7f2840066e3bf64504a8c09f8514d99338642f981712"
+  }
+}
