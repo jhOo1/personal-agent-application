@@ -1,0 +1,17 @@
+{
+  "manual_edits_sha256": "c19137483d44d441d70b248262ea52299713fd5273b617439d682897bb0f628c",
+  "answer_inventory_sha256": "d9591270f479e9be7a9fb1300f13b7516be9a162428d398623e758f5e46066ec",
+  "wires_sha256": {
+    "BenchQwen": "e4510117333849252985dce252897a4af1b04714f6e043e5eed3217bb93182eb",
+    "BenchReflection": "342b2e90635fd0cd7c5e5410f9caf37f2416aedfa58020d27f844421ae068470"
+  },
+  "cap": {
+    "BenchQwen": 36,
+    "BenchReflection": 6
+  },
+  "code": {
+    "action_grounding.py": "7de957f77446375c43f2f2027a721689fca5c3b48699f146f4ecddf4c0cfbc6a",
+    "run.sh": "49f836d884412db2c6fcaf2553e73e0c9b9e9fd858cd0bc15211cf5cf4ac2244",
+    "PROTOCOL.md": "640a07a61c80c1d2d041e78cd1ccf67b10d5dbd6dfa398a49596ac2c6212a041"
+  }
+}
