@@ -1,0 +1,11 @@
+{
+  "positions": 125,
+  "missing": 9,
+  "jobs": 82,
+  "packet_sha256": "8372d975d5dca04a20ed80b784255f4a37b439edef2280f960c451f505346b35",
+  "standalone_revision": "d2ded18be6d15ebb14008d081a44bd03c20670e4",
+  "inspect_revision": "50b8b19c3d4765898fa2f35d125389be45af9c3c",
+  "message_parity": {
+    "system=True,user=True": 82
+  }
+}
