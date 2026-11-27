@@ -1,0 +1,23 @@
+{
+  "assigned": {
+    "roots": 18,
+    "positions": 91,
+    "IPE_C": 39,
+    "TASK_ONLY": 33,
+    "RPR_PAPER_FULL": 39
+  },
+  "deployment1_common": {
+    "roots": 18,
+    "positions": 91,
+    "IPE_C": 39,
+    "TASK_ONLY": 33,
+    "RPR_PAPER_FULL": 39
+  },
+  "deployment2_common": {
+    "roots": 17,
+    "positions": 87,
+    "IPE_C": 37,
+    "TASK_ONLY": 31,
+    "RPR_PAPER_FULL": 37
+  }
+}

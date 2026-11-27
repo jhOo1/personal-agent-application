@@ -1,0 +1,554 @@
+[
+  {
+    "deployment": 1,
+    "scope": "all",
+    "method": "IPE_C",
+    "assigned": 18,
+    "paired": 18,
+    "positions": 91,
+    "match": 38,
+    "severity": {
+      "OPB": [
+        22,
+        18
+      ],
+      "UPB": [
+        32,
+        18
+      ],
+      "FM": [
+        4,
+        18
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "all",
+    "method": "TASK_ONLY",
+    "assigned": 18,
+    "paired": 18,
+    "positions": 91,
+    "match": 34,
+    "severity": {
+      "OPB": [
+        7,
+        18
+      ],
+      "UPB": [
+        48,
+        18
+      ],
+      "FM": [
+        18,
+        18
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "all",
+    "method": "RP_FULL",
+    "assigned": 18,
+    "paired": 18,
+    "positions": 91,
+    "match": 40,
+    "severity": {
+      "OPB": [
+        34,
+        18
+      ],
+      "UPB": [
+        17,
+        18
+      ],
+      "FM": [
+        4,
+        18
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "all_A",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 2,
+    "severity": {
+      "OPB": [
+        8,
+        6
+      ],
+      "UPB": [
+        14,
+        6
+      ],
+      "FM": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "all_A",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 6,
+    "severity": {
+      "OPB": [
+        4,
+        6
+      ],
+      "UPB": [
+        14,
+        6
+      ],
+      "FM": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "all_A",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 4,
+    "severity": {
+      "OPB": [
+        16,
+        6
+      ],
+      "UPB": [
+        3,
+        6
+      ],
+      "FM": [
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "B_only",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 28,
+    "match": 14,
+    "severity": {
+      "OPB": [
+        2,
+        6
+      ],
+      "UPB": [
+        14,
+        6
+      ],
+      "FM": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "B_only",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 28,
+    "match": 13,
+    "severity": {
+      "OPB": [
+        1,
+        6
+      ],
+      "UPB": [
+        15,
+        6
+      ],
+      "FM": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "B_only",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 28,
+    "match": 14,
+    "severity": {
+      "OPB": [
+        6,
+        6
+      ],
+      "UPB": [
+        10,
+        6
+      ],
+      "FM": [
+        0,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "contains_C",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 22,
+    "severity": {
+      "OPB": [
+        12,
+        6
+      ],
+      "UPB": [
+        4,
+        6
+      ],
+      "FM": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "contains_C",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 15,
+    "severity": {
+      "OPB": [
+        2,
+        6
+      ],
+      "UPB": [
+        19,
+        6
+      ],
+      "FM": [
+        15,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 1,
+    "scope": "contains_C",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 22,
+    "severity": {
+      "OPB": [
+        12,
+        6
+      ],
+      "UPB": [
+        4,
+        6
+      ],
+      "FM": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all",
+    "method": "IPE_C",
+    "assigned": 18,
+    "paired": 17,
+    "positions": 87,
+    "match": 44,
+    "severity": {
+      "OPB": [
+        18,
+        17
+      ],
+      "UPB": [
+        26,
+        17
+      ],
+      "FM": [
+        8,
+        17
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all",
+    "method": "TASK_ONLY",
+    "assigned": 18,
+    "paired": 17,
+    "positions": 87,
+    "match": 32,
+    "severity": {
+      "OPB": [
+        11,
+        17
+      ],
+      "UPB": [
+        45,
+        17
+      ],
+      "FM": [
+        20,
+        17
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all",
+    "method": "RP_FULL",
+    "assigned": 18,
+    "paired": 17,
+    "positions": 87,
+    "match": 40,
+    "severity": {
+      "OPB": [
+        31,
+        17
+      ],
+      "UPB": [
+        15,
+        17
+      ],
+      "FM": [
+        5,
+        17
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all_A",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 6,
+    "severity": {
+      "OPB": [
+        7,
+        6
+      ],
+      "UPB": [
+        10,
+        6
+      ],
+      "FM": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all_A",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 6,
+    "severity": {
+      "OPB": [
+        5,
+        6
+      ],
+      "UPB": [
+        13,
+        6
+      ],
+      "FM": [
+        4,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "all_A",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 25,
+    "match": 2,
+    "severity": {
+      "OPB": [
+        18,
+        6
+      ],
+      "UPB": [
+        0,
+        6
+      ],
+      "FM": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "B_only",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 5,
+    "positions": 24,
+    "match": 11,
+    "severity": {
+      "OPB": [
+        2,
+        5
+      ],
+      "UPB": [
+        13,
+        5
+      ],
+      "FM": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "B_only",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 5,
+    "positions": 24,
+    "match": 11,
+    "severity": {
+      "OPB": [
+        2,
+        5
+      ],
+      "UPB": [
+        12,
+        5
+      ],
+      "FM": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "B_only",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 5,
+    "positions": 24,
+    "match": 11,
+    "severity": {
+      "OPB": [
+        4,
+        5
+      ],
+      "UPB": [
+        12,
+        5
+      ],
+      "FM": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "contains_C",
+    "method": "IPE_C",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 27,
+    "severity": {
+      "OPB": [
+        9,
+        6
+      ],
+      "UPB": [
+        3,
+        6
+      ],
+      "FM": [
+        3,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "contains_C",
+    "method": "TASK_ONLY",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 15,
+    "severity": {
+      "OPB": [
+        4,
+        6
+      ],
+      "UPB": [
+        20,
+        6
+      ],
+      "FM": [
+        15,
+        6
+      ]
+    }
+  },
+  {
+    "deployment": 2,
+    "scope": "contains_C",
+    "method": "RP_FULL",
+    "assigned": 6,
+    "paired": 6,
+    "positions": 38,
+    "match": 27,
+    "severity": {
+      "OPB": [
+        9,
+        6
+      ],
+      "UPB": [
+        3,
+        6
+      ],
+      "FM": [
+        3,
+        6
+      ]
+    }
+  }
+]

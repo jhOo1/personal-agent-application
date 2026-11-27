@@ -1,0 +1,42 @@
+{
+  "RP_FULL": {
+    "assigned": 18,
+    "fully_known": 17,
+    "repeat_direction_counts": {
+      "tie/tie": 14,
+      "tie/win": 1,
+      "loss/tie": 1,
+      "win/tie": 1
+    },
+    "complete_root_net": 2
+  },
+  "TASK_ONLY": {
+    "assigned": 18,
+    "fully_known": 18,
+    "repeat_direction_counts": {
+      "win/win": 4,
+      "tie/tie": 11,
+      "tie/win": 1,
+      "win/tie": 1,
+      "loss/tie": 1
+    },
+    "complete_root_net": 16
+  },
+  "within_path": {
+    "RP_FULL": {
+      "roots": 17,
+      "changed_match": 4,
+      "absolute_match_difference": 12
+    },
+    "TASK_ONLY": {
+      "roots": 18,
+      "changed_match": 4,
+      "absolute_match_difference": 10
+    },
+    "IPE_C": {
+      "roots": 18,
+      "changed_match": 3,
+      "absolute_match_difference": 10
+    }
+  }
+}
