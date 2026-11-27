@@ -1,0 +1,16 @@
+{
+  "answer": 295,
+  "assigned": 300,
+  "chengdu_verified": 1,
+  "explicit_matches_actor_sources": 148,
+  "explicit_matches_author_persona": 148,
+  "explicit_receipts": 148,
+  "implicit_matches_actor_sources": 0,
+  "implicit_matches_author_persona": 147,
+  "implicit_receipts": 147,
+  "no_local_success_receipt": 5,
+  "ordered_sources": 148,
+  "question": 295,
+  "two_intent_fields": 295,
+  "verified_receipt": 295
+}
