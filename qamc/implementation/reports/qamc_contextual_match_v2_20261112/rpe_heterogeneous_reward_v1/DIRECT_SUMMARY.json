@@ -1,0 +1,261 @@
+{
+  "assigned": 24,
+  "historical_overlap": 22,
+  "historical_overlap_groups": 22,
+  "strict": 21,
+  "historical_overlap_scores": {
+    "RP": {
+      "tasks": 22,
+      "Match": 17,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 14
+    },
+    "Direct": {
+      "tasks": 22,
+      "Match": 17,
+      "OPB": 2,
+      "UPB": 2,
+      "FM": 15
+    }
+  },
+  "strict_scores": {
+    "RP": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 16
+    },
+    "Des2Gen": {
+      "tasks": 21,
+      "Match": 17,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 21
+    },
+    "MemAdapter": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 0,
+      "FM": 11
+    },
+    "Direct": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 2,
+      "UPB": 2,
+      "FM": 14
+    }
+  },
+  "all_available_scores": {
+    "RP": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 24,
+      "Match": 20,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 16
+    },
+    "Direct": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 2,
+      "FM": 15
+    }
+  },
+  "both_archived_endpoints_scores": {
+    "RP": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 21,
+      "Match": 17,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 20
+    },
+    "MemAdapter": {
+      "tasks": 21,
+      "Match": 17,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 14
+    },
+    "Direct": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 2,
+      "UPB": 2,
+      "FM": 15
+    }
+  },
+  "oracle_match_only": 21,
+  "by_author_label": {
+    "A": {
+      "RP": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "Des2Gen": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 1
+      },
+      "MemAdapter": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "Direct": {
+        "tasks": 3,
+        "Match": 1,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 1
+      }
+    },
+    "B": {
+      "RP": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 2,
+        "FM": 4
+      },
+      "Des2Gen": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 6
+      },
+      "MemAdapter": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 3
+      },
+      "Direct": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 5
+      }
+    },
+    "C": {
+      "RP": {
+        "tasks": 10,
+        "Match": 7,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 13
+      },
+      "Des2Gen": {
+        "tasks": 10,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 16
+      },
+      "MemAdapter": {
+        "tasks": 10,
+        "Match": 7,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 11
+      },
+      "Direct": {
+        "tasks": 10,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 9
+      }
+    }
+  },
+  "paired": {
+    "Direct": {
+      "RP": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 18
+      },
+      "Des2Gen": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 19
+      },
+      "MemAdapter": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 19
+      }
+    }
+  },
+  "selection_statuses": {
+    "Direct": {
+      "OK": 22,
+      "FAILED_DELIVERY_UNKNOWN": 2
+    }
+  },
+  "selected_methods": {
+    "Direct": {
+      "MemAdapter": 10,
+      "RP": 3,
+      "Des2Gen": 11
+    }
+  },
+  "cloud": {
+    "requests": 24,
+    "status": {
+      "OK": 22,
+      "FAILED_DELIVERY_UNKNOWN": 2
+    },
+    "tokens": 97447,
+    "unknown_usage": 2,
+    "automatic_retries": 0
+  }
+}

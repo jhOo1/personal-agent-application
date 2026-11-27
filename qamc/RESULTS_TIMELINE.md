@@ -12,3 +12,4 @@
 | 受保护路由 | 三折无可行规则；BenchPreS归档候选上界38/44与强Gate持平。 | 单纯在旧终稿里选答案无法实现缺失偏好。 |
 | 不同范围修订 | BenchPreS 16题有限润色相对强Gate AAR 30/40→31/40，MR均0/40，完整度4.813→4.625。PersistBench固定Rubric作用修订迎合无净改善，跨域失败0/8→3/8。 | 保留结构保护的观察，两个方法均未晋级。 |
 | CDC / DCR / DREW | 各阶段分母和结果见独立报告。统一候选至今未达到协议匹配强对照之上的稳定优势。 | 当前强参照分别为IPE-C、Strong Gate及PB_RUBRIC。 |
+| RPEval 单来源成稿盲选 | 22 题，普通盲选和 RP 均 17/22，Des2Gen 与 MemAdapter 各 18/22。成稿池事后上界 21/22。 | 普通盲选未胜，冻结奖励模型另行结算。见[配对结果](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/DIRECT_READOUT.md)。 |
