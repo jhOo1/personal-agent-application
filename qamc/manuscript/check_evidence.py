@@ -236,7 +236,20 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         match = re.search(phrase, paper)
         require(list(map(int, match.groups())) if match else None, totals + [sum(int(r[2]) for r in subset)],
                 "Direct generation illustration")
-    return 11 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    transfer = json.loads((root / "rpe_pb_on_transfer_v1/SUMMARY.json").read_text())
+    pattern = (r"Full, count-matched RP, and transfer matched (\d+), (\d+), and (\d+) of (\d+) "
+               r"positions on the first draw and (\d+), (\d+), and (\d+) of (\d+) on the second")
+    match = re.search(pattern, paper)
+    expected = []
+    for draw in ("0", "1"):
+        values = transfer["draws"][draw]["assigned"]
+        denoms = {values[arm]["positions"] for arm in ("FULL", "RP_K", "PB")}
+        if len(denoms) != 1:
+            raise ValueError("Transfer denominators differ")
+        expected.extend(values[arm]["matched"] for arm in ("FULL", "RP_K", "PB"))
+        expected.extend(denoms)
+    require(list(map(int, match.groups())) if match else None, expected, "Transferred selector")
+    return 12 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":

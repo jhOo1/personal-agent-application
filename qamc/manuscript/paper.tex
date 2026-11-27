@@ -107,6 +107,9 @@ On 34 triggered tasks, we add one omitted history when its IPE top rank and fuse
 \paragraph{Single-preference limits.}
 Under a separate Qwen rubric adaptation, IPE-C scores 15/22, RP 17/22, and Des2Gen and MemAdapter 18/22 each. IPE-C withholds history on all nine author-B tasks, including seven ranked B. In the verified multi-preference routes, 70/138 author-B positions ranked B reach the Actor because a different prediction is C. Rank and exposure are distinct.
 
+\paragraph{Does a selector transfer across benchmarks?}
+On 12 exposed RPEval tasks where IPE-C already enabled history, we compared full history, the top $k$ sources by RP policy, and the frozen PersistBench selector under the same RP Actor. Here $k$ is the transferred selector's output size. Two empty selections reused the incumbent; ten proper subsets yielded four tasks where the two subset methods exposed different sources. The transfer retained eight of nine supporting preferences versus six under count-matched RP; both retained all eight decision-driving sources. Full, count-matched RP, and transfer matched 43, 44, and 43 of 75 positions on the first draw and 40, 42, and 40 of 75 on the second. In the Xi'an family outing, transfer replaced a night-activity preference with an outdoor preference. The count-matched answer already suggested parks. Better source coverage did not yield a measurable answer advantage on this panel.
+
 \subsection{Activation controls on RPEval}
 
 \paragraph{Whole-task match and source sensitivity.}
