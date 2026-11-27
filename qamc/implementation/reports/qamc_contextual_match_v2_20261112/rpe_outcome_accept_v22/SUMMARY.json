@@ -1,0 +1,734 @@
+{
+  "allocated": 24,
+  "historical_allocated": 22,
+  "historical_common": 21,
+  "common_scores": {
+    "RP": {
+      "tasks": 21,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 14
+    },
+    "Des2Gen": {
+      "tasks": 21,
+      "Match": 17,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 21
+    },
+    "MemAdapter": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 11
+    },
+    "IPE-C": {
+      "tasks": 21,
+      "Match": 14,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 27
+    },
+    "V1": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 9
+    },
+    "FREE": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 13
+    },
+    "DELTA": {
+      "tasks": 21,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    },
+    "FREE_GENERIC": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 13
+    },
+    "FREE_EFFECT": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 13
+    },
+    "DELTA_GENERIC": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    },
+    "DELTA_EFFECT": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    }
+  },
+  "available_scores": {
+    "RP": {
+      "tasks": 22,
+      "Match": 17,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 14
+    },
+    "IPE-C": {
+      "tasks": 22,
+      "Match": 15,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 30
+    },
+    "V1": {
+      "tasks": 22,
+      "Match": 19,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 12
+    },
+    "FREE": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA": {
+      "tasks": 21,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    },
+    "FREE_GENERIC": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "FREE_EFFECT": {
+      "tasks": 22,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA_GENERIC": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    },
+    "DELTA_EFFECT": {
+      "tasks": 21,
+      "Match": 18,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 10
+    }
+  },
+  "all_available_scores": {
+    "RP": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 0,
+      "UPB": 7,
+      "FM": 17
+    },
+    "Des2Gen": {
+      "tasks": 24,
+      "Match": 20,
+      "OPB": 1,
+      "UPB": 7,
+      "FM": 23
+    },
+    "MemAdapter": {
+      "tasks": 24,
+      "Match": 19,
+      "OPB": 3,
+      "UPB": 3,
+      "FM": 16
+    },
+    "IPE-C": {
+      "tasks": 22,
+      "Match": 15,
+      "OPB": 0,
+      "UPB": 23,
+      "FM": 30
+    },
+    "V1": {
+      "tasks": 24,
+      "Match": 21,
+      "OPB": 1,
+      "UPB": 2,
+      "FM": 12
+    },
+    "FREE": {
+      "tasks": 23,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA": {
+      "tasks": 23,
+      "Match": 21,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 12
+    },
+    "FREE_GENERIC": {
+      "tasks": 23,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "FREE_EFFECT": {
+      "tasks": 23,
+      "Match": 19,
+      "OPB": 2,
+      "UPB": 1,
+      "FM": 16
+    },
+    "DELTA_GENERIC": {
+      "tasks": 23,
+      "Match": 20,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 12
+    },
+    "DELTA_EFFECT": {
+      "tasks": 23,
+      "Match": 20,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 12
+    }
+  },
+  "common_by_label": {
+    "A": {
+      "RP": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "Des2Gen": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 1
+      },
+      "MemAdapter": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "IPE-C": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "V1": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "FREE": {
+        "tasks": 3,
+        "Match": 1,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 2
+      },
+      "DELTA": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "FREE_GENERIC": {
+        "tasks": 3,
+        "Match": 1,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 2
+      },
+      "FREE_EFFECT": {
+        "tasks": 3,
+        "Match": 1,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 2
+      },
+      "DELTA_GENERIC": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "DELTA_EFFECT": {
+        "tasks": 3,
+        "Match": 2,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      }
+    },
+    "B": {
+      "RP": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 2,
+        "FM": 4
+      },
+      "Des2Gen": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 6
+      },
+      "MemAdapter": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 3
+      },
+      "IPE-C": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      },
+      "V1": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 2,
+        "FM": 4
+      },
+      "FREE": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 6
+      },
+      "DELTA": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      },
+      "FREE_GENERIC": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 6
+      },
+      "FREE_EFFECT": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 6
+      },
+      "DELTA_GENERIC": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      },
+      "DELTA_EFFECT": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 5
+      }
+    },
+    "C": {
+      "RP": {
+        "tasks": 9,
+        "Match": 6,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 10
+      },
+      "Des2Gen": {
+        "tasks": 9,
+        "Match": 7,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 14
+      },
+      "MemAdapter": {
+        "tasks": 9,
+        "Match": 7,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 8
+      },
+      "IPE-C": {
+        "tasks": 9,
+        "Match": 4,
+        "OPB": 0,
+        "UPB": 20,
+        "FM": 22
+      },
+      "V1": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 5
+      },
+      "FREE": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 5
+      },
+      "DELTA": {
+        "tasks": 9,
+        "Match": 9,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 5
+      },
+      "FREE_GENERIC": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 5
+      },
+      "FREE_EFFECT": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 5
+      },
+      "DELTA_GENERIC": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 5
+      },
+      "DELTA_EFFECT": {
+        "tasks": 9,
+        "Match": 8,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 5
+      }
+    }
+  },
+  "paired": {
+    "FREE": {
+      "tasks": 22,
+      "scores": {
+        "RP": {
+          "tasks": 22,
+          "Match": 17,
+          "OPB": 0,
+          "UPB": 7,
+          "FM": 17
+        },
+        "Des2Gen": {
+          "tasks": 22,
+          "Match": 18,
+          "OPB": 1,
+          "UPB": 7,
+          "FM": 23
+        },
+        "MemAdapter": {
+          "tasks": 22,
+          "Match": 18,
+          "OPB": 3,
+          "UPB": 3,
+          "FM": 14
+        },
+        "IPE-C": {
+          "tasks": 22,
+          "Match": 15,
+          "OPB": 0,
+          "UPB": 23,
+          "FM": 30
+        },
+        "V1": {
+          "tasks": 22,
+          "Match": 19,
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 12
+        },
+        "FREE": {
+          "tasks": 22,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 16
+        },
+        "DELTA": {
+          "tasks": 21,
+          "Match": 19,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        },
+        "FREE_GENERIC": {
+          "tasks": 22,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 16
+        },
+        "FREE_EFFECT": {
+          "tasks": 22,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 16
+        },
+        "DELTA_GENERIC": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        },
+        "DELTA_EFFECT": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        }
+      },
+      "wins": 0,
+      "losses": 0,
+      "ties": 22,
+      "effect_minus_generic_bound": [
+        0,
+        0
+      ]
+    },
+    "DELTA": {
+      "tasks": 21,
+      "scores": {
+        "RP": {
+          "tasks": 21,
+          "Match": 16,
+          "OPB": 0,
+          "UPB": 7,
+          "FM": 14
+        },
+        "Des2Gen": {
+          "tasks": 21,
+          "Match": 17,
+          "OPB": 1,
+          "UPB": 7,
+          "FM": 21
+        },
+        "MemAdapter": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 3,
+          "UPB": 3,
+          "FM": 11
+        },
+        "IPE-C": {
+          "tasks": 21,
+          "Match": 14,
+          "OPB": 0,
+          "UPB": 23,
+          "FM": 27
+        },
+        "V1": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 9
+        },
+        "FREE": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 13
+        },
+        "DELTA": {
+          "tasks": 21,
+          "Match": 19,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        },
+        "FREE_GENERIC": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 13
+        },
+        "FREE_EFFECT": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 13
+        },
+        "DELTA_GENERIC": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        },
+        "DELTA_EFFECT": {
+          "tasks": 21,
+          "Match": 18,
+          "OPB": 2,
+          "UPB": 3,
+          "FM": 10
+        }
+      },
+      "wins": 0,
+      "losses": 0,
+      "ties": 21,
+      "effect_minus_generic_bound": [
+        -1,
+        1
+      ]
+    }
+  },
+  "by_arm": {
+    "FREE_GENERIC": {
+      "status": {
+        "ADOPT": 23,
+        "IDENTICAL": 1
+      },
+      "score_capture": {
+        "accepted_loss": 3,
+        "accepted_same_match": 16,
+        "accepted_gain": 2
+      },
+      "delta_bound_vs_V1": [
+        -1,
+        -1
+      ]
+    },
+    "FREE_EFFECT": {
+      "status": {
+        "ADOPT": 23,
+        "IDENTICAL": 1
+      },
+      "score_capture": {
+        "accepted_loss": 3,
+        "accepted_same_match": 16,
+        "accepted_gain": 2
+      },
+      "delta_bound_vs_V1": [
+        -1,
+        -1
+      ]
+    },
+    "DELTA_GENERIC": {
+      "status": {
+        "IDENTICAL": 13,
+        "ADOPT": 8,
+        "KEEP": 3
+      },
+      "score_capture": {
+        "accepted_same_match": 6,
+        "rejected_gain": 1,
+        "rejected_same_match": 2
+      },
+      "delta_bound_vs_V1": [
+        -1,
+        0
+      ]
+    },
+    "DELTA_EFFECT": {
+      "status": {
+        "IDENTICAL": 13,
+        "ADOPT": 9,
+        "KEEP": 2
+      },
+      "score_capture": {
+        "accepted_same_match": 7,
+        "rejected_gain": 1,
+        "rejected_same_match": 1
+      },
+      "delta_bound_vs_V1": [
+        -1,
+        0
+      ]
+    }
+  },
+  "requests": 68,
+  "request_statuses": {
+    "OK": 68
+  },
+  "usage_unknown": 0,
+  "reported_tokens": 187071,
+  "automatic_retries": 0,
+  "actor_calls": 0,
+  "scoring_calls": 0
+}
