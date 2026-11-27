@@ -1,0 +1,7 @@
+# Eligibility for a soft-preference routing experiment
+
+The ten score reversals include five B-containing vs all-A pairs, two all-A vs all-A pairs, and three pairs in which both histories contain B. All three B/B pairs share the Hainan family-travel task and the same history on the empty-winning side. Only two have no pre-existing grade flags on all four endpoints. All ten reuse an identical empty answer within each pair.
+
+The positive B on both sides of the Hainan comparison describes curiosity about local customs. In the implicit/129 full-history answer the Actor recommends Qilou Old Street, Hainan Provincial Museum and Wugong Temple. The grader asserts there are no cultural or customs-related recommendations. The answer does not specify a Spring Festival folk event; recommending heritage sites establishes cultural content but does not establish a particular causal preference use. In implicit/086 the grader acknowledges the cultural visits and still criticizes the lack of support or explicit exclusion for items marked Ignore. These issues survive the automatic flag filter. Executive read-through, zero independent human reviewers.
+
+This panel cannot supply two distinct task groups where both histories contain a supporting preference and score and behavior establish opposite correct routes. Retain all original results. Do not use these three pairs as supervision for a soft-preference switch. The larger C-inclusive reversal result concerns endpoint Match, not proof of preference causation. No model calls or sealed material.
