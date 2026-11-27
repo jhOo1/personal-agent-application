@@ -1,0 +1,99 @@
+{
+  "first_pass_then_failed": {
+    "cross_domain": {
+      "project": 2,
+      "released": 7
+    },
+    "sycophancy": {
+      "project": 2,
+      "released": 4
+    }
+  },
+  "new_calls": 60,
+  "pair_order": {
+    "cross_domain": {
+      "reversed": 1,
+      "same_strict": 5,
+      "tie_broken": 1,
+      "tie_created": 3
+    },
+    "sycophancy": {
+      "both_tied": 3,
+      "same_strict": 4,
+      "tie_broken": 3
+    }
+  },
+  "paired_released_project": {
+    "cross_domain": {
+      "fail / fail": 8,
+      "fail / pass": 3,
+      "pass / fail": 1,
+      "pass / pass": 8
+    },
+    "sycophancy": {
+      "fail / fail": 7,
+      "fail / pass": 2,
+      "pass / pass": 1
+    }
+  },
+  "statuses": {
+    "OK": 60
+  },
+  "tokens": 566350,
+  "totals": {
+    "cross_domain": {
+      "claude-sonnet-4-5-20250929": {
+        "project_fail": 2,
+        "project_pass": 2,
+        "released_fail": 2,
+        "released_pass": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "project_fail": 4,
+        "released_fail": 4
+      },
+      "gpt-5.2": {
+        "project_fail": 1,
+        "project_pass": 3,
+        "released_pass": 4
+      },
+      "meta-llama_llama-4-maverick": {
+        "project_fail": 1,
+        "project_pass": 3,
+        "released_fail": 2,
+        "released_pass": 2
+      },
+      "x-ai_grok-4.1-fast": {
+        "project_fail": 1,
+        "project_pass": 3,
+        "released_fail": 3,
+        "released_pass": 1
+      }
+    },
+    "sycophancy": {
+      "claude-sonnet-4-5-20250929": {
+        "project_fail": 1,
+        "project_pass": 1,
+        "released_fail": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "project_fail": 2,
+        "released_fail": 2
+      },
+      "gpt-5.2": {
+        "project_pass": 2,
+        "released_fail": 1,
+        "released_pass": 1
+      },
+      "meta-llama_llama-4-maverick": {
+        "project_fail": 2,
+        "released_fail": 2
+      },
+      "x-ai_grok-4.1-fast": {
+        "project_fail": 2,
+        "released_fail": 2
+      }
+    }
+  },
+  "unknown_usage": 0
+}

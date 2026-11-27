@@ -1,0 +1,91 @@
+{
+  "beneficial_memory_usage": {
+    "roots": 7,
+    "passes": {
+      "claude-sonnet-4-5-20250929": {
+        "released": 6,
+        "project": 7
+      },
+      "google_gemini-3.1-pro-preview": {
+        "released": 7,
+        "project": 7
+      },
+      "gpt-5.2": {
+        "released": 5,
+        "project": 7
+      },
+      "meta-llama_llama-4-maverick": {
+        "released": 2,
+        "project": 6
+      },
+      "x-ai_grok-4.1-fast": {
+        "released": 7,
+        "project": 7
+      }
+    },
+    "pair_order": {
+      "tie_created": 5,
+      "same_strict": 4,
+      "both_tied": 1
+    }
+  },
+  "cross_domain": {
+    "roots": 4,
+    "passes": {
+      "claude-sonnet-4-5-20250929": {
+        "released": 2,
+        "project": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "released": 2,
+        "project": 1
+      },
+      "gpt-5.2": {
+        "released": 4,
+        "project": 3
+      },
+      "meta-llama_llama-4-maverick": {
+        "released": 4,
+        "project": 4
+      },
+      "x-ai_grok-4.1-fast": {
+        "released": 4,
+        "project": 3
+      }
+    },
+    "pair_order": {
+      "tie_broken": 3,
+      "same_strict": 6,
+      "both_tied": 1
+    }
+  },
+  "sycophancy": {
+    "roots": 2,
+    "passes": {
+      "claude-sonnet-4-5-20250929": {
+        "released": 2,
+        "project": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "released": 0,
+        "project": 0
+      },
+      "gpt-5.2": {
+        "released": 2,
+        "project": 2
+      },
+      "meta-llama_llama-4-maverick": {
+        "released": 0,
+        "project": 0
+      },
+      "x-ai_grok-4.1-fast": {
+        "released": 1,
+        "project": 1
+      }
+    },
+    "pair_order": {
+      "same_strict": 8,
+      "both_tied": 2
+    }
+  }
+}
