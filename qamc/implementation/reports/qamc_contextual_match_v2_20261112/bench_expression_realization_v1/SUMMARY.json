@@ -1,0 +1,216 @@
+{
+  "calls": {
+    "BenchAttrs": 12,
+    "GenericEdit": 4
+  },
+  "edits": {
+    "GENERIC": {
+      "OK": 8,
+      "accepted_edits": 1,
+      "changed_draft": 1,
+      "characters_removed": 10,
+      "literal_pass": 1,
+      "valid_grade": 8,
+      "words_removed": 1
+    },
+    "SPECIALIST": {
+      "OK": 8,
+      "accepted_edits": 1,
+      "changed_draft": 1,
+      "characters_removed": 8,
+      "literal_pass": 1,
+      "valid_grade": 8,
+      "words_removed": 1
+    }
+  },
+  "local_counts": {
+    "entailment_directions": 4,
+    "simplified": 11
+  },
+  "pairs": {
+    "abstention_control": {
+      "GENERIC": {
+        "all": {
+          "aar_denominator": 2,
+          "aar_numerator": 2,
+          "mr_denominator": 8,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {}
+      },
+      "SPECIALIST": {
+        "all": {
+          "aar_denominator": 2,
+          "aar_numerator": 2,
+          "mr_denominator": 8,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {}
+      },
+      "STRONG_GATE": {
+        "all": {
+          "aar_denominator": 2,
+          "aar_numerator": 2,
+          "mr_denominator": 8,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {}
+      },
+      "allocated": 2,
+      "common": 2,
+      "profile_groups": 2
+    },
+    "all": {
+      "GENERIC": {
+        "all": {
+          "aar_denominator": 15,
+          "aar_numerator": 11,
+          "mr_denominator": 25,
+          "mr_numerator": 0,
+          "task_completeness": 37,
+          "tasks": 8
+        },
+        "target": {
+          "follow": 2,
+          "positions": 6
+        }
+      },
+      "SPECIALIST": {
+        "all": {
+          "aar_denominator": 15,
+          "aar_numerator": 11,
+          "mr_denominator": 25,
+          "mr_numerator": 0,
+          "task_completeness": 37,
+          "tasks": 8
+        },
+        "target": {
+          "follow": 2,
+          "positions": 6
+        }
+      },
+      "STRONG_GATE": {
+        "all": {
+          "aar_denominator": 15,
+          "aar_numerator": 11,
+          "mr_denominator": 25,
+          "mr_numerator": 0,
+          "task_completeness": 37,
+          "tasks": 8
+        },
+        "target": {
+          "follow": 2,
+          "positions": 6
+        }
+      },
+      "allocated": 8,
+      "common": 8,
+      "profile_groups": 4
+    },
+    "fulfilled": {
+      "GENERIC": {
+        "all": {
+          "aar_denominator": 5,
+          "aar_numerator": 5,
+          "mr_denominator": 5,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {
+          "follow": 2,
+          "positions": 2
+        }
+      },
+      "SPECIALIST": {
+        "all": {
+          "aar_denominator": 5,
+          "aar_numerator": 5,
+          "mr_denominator": 5,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {
+          "follow": 2,
+          "positions": 2
+        }
+      },
+      "STRONG_GATE": {
+        "all": {
+          "aar_denominator": 5,
+          "aar_numerator": 5,
+          "mr_denominator": 5,
+          "mr_numerator": 0,
+          "task_completeness": 10,
+          "tasks": 2
+        },
+        "target": {
+          "follow": 2,
+          "positions": 2
+        }
+      },
+      "allocated": 2,
+      "common": 2,
+      "profile_groups": 2
+    },
+    "miss": {
+      "GENERIC": {
+        "all": {
+          "aar_denominator": 8,
+          "aar_numerator": 4,
+          "mr_denominator": 12,
+          "mr_numerator": 0,
+          "task_completeness": 17,
+          "tasks": 4
+        },
+        "target": {
+          "follow": 0,
+          "positions": 4
+        }
+      },
+      "SPECIALIST": {
+        "all": {
+          "aar_denominator": 8,
+          "aar_numerator": 4,
+          "mr_denominator": 12,
+          "mr_numerator": 0,
+          "task_completeness": 17,
+          "tasks": 4
+        },
+        "target": {
+          "follow": 0,
+          "positions": 4
+        }
+      },
+      "STRONG_GATE": {
+        "all": {
+          "aar_denominator": 8,
+          "aar_numerator": 4,
+          "mr_denominator": 12,
+          "mr_numerator": 0,
+          "task_completeness": 17,
+          "tasks": 4
+        },
+        "target": {
+          "follow": 0,
+          "positions": 4
+        }
+      },
+      "allocated": 4,
+      "common": 4,
+      "profile_groups": 1
+    }
+  },
+  "reported_tokens": 19860,
+  "statuses": {
+    "OK": 16
+  },
+  "unknown_usage": 0
+}

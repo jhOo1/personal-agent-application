@@ -1,0 +1,74 @@
+{
+  "multi": {
+    "assigned": 300,
+    "counts": {
+      "grade_valid": 282,
+      "identical_route": 295,
+      "match": 970,
+      "positions": 1510,
+      "unavailable": 5
+    },
+    "scoring": "separate detailed author multi-rubric with historical GPT-4.1 adaptation"
+  },
+  "new_requests": 0,
+  "single": {
+    "assigned": 24,
+    "counts": {
+      "changed_route": 18,
+      "common": 22,
+      "noncommon": 2,
+      "tie": 20,
+      "win": 2
+    },
+    "label_strata": {
+      "A": {
+        "cardinality": 2,
+        "common": 3,
+        "ipe_c": 2
+      },
+      "B": {
+        "cardinality": 8,
+        "common": 9,
+        "ipe_c": 8
+      },
+      "C": {
+        "cardinality": 7,
+        "common": 10,
+        "ipe_c": 5
+      }
+    },
+    "scores": {
+      "DES2GEN_FULL": {
+        "FM": 23,
+        "OPB": 1,
+        "UPB": 7,
+        "match": 18
+      },
+      "IPE_C": {
+        "FM": 30,
+        "OPB": 0,
+        "UPB": 23,
+        "match": 15
+      },
+      "MEMADAPTER_FULL": {
+        "FM": 14,
+        "OPB": 3,
+        "UPB": 3,
+        "match": 18
+      },
+      "RPR_PAPER_FULL": {
+        "FM": 17,
+        "OPB": 0,
+        "UPB": 7,
+        "match": 17
+      },
+      "cardinality": {
+        "FM": 17,
+        "OPB": 0,
+        "UPB": 7,
+        "match": 17
+      }
+    },
+    "scoring": "detailed author single-rubric with historical Qwen adaptation"
+  }
+}

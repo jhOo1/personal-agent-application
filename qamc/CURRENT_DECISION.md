@@ -1,6 +1,12 @@
 # QAMC 当前判断与下一次机制对照
 
-## 最新结算 · 归档单源轨迹与 BenchPreS 补入
+## 最新结算 · RPEval 候选数量分支与 BenchPreS 专用简化
+
+RPEval 新增一个可运行的开发基线。原候选只有一条时使用原 RP 历史路径，多个候选时保留 IPE-C。单偏好共同 22 题由 15/22 到 17/22，重建 RP 同为 17/22，Des2Gen 与 MemAdapter 各 18/22。多偏好 295 个可恢复路由完全相同。全部来自归档重放，未新增调用。[路由和评分边界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_cardinality_route_v1/READOUT.md)
+
+BenchPreS 八题上，Strong Gate、普通局部简化和冻结 TS-T5 的 AAR 都是 11/15、MR 都是 0/25、完整度均值都是 4.625。四个已知简洁偏好失分均未修复。TS-T5 仅一处替换通过检查，但把准备状态加强成了明确承诺。当前不晋级，保留原 Gate。16 次真实请求全部成功，19,860 Token，零重发。[简化对照和错误证据](implementation/reports/qamc_contextual_match_v2_20261112/bench_expression_realization_v1/READOUT.md)
+
+## 归档单源轨迹与 BenchPreS 补入
 
 对 131 对已曝光归档请求核对实际输入变化，33 对是单条来源的增删或用法调整，均来自 RPEval。两条补入后 Match 提升且保护指标未退的记录属于同一来源组。BenchPreS 债务合并题随后直接对照：补回一条客观表达偏好，Strong Gate 三条旧稿与三条新增稿的该偏好均为 0/3，总 AAR 均为 6/9，MR 均为 0/6，完整度由 5.00 降至 4.67。本次 21 次请求均成功，37,611 Token，无重发。当前三基准示范库的直接证据仍不足，旧强方法继续作为基底。[轨迹审计](implementation/reports/qamc_contextual_match_v2_20261112/residual_trace_v1/TRACE_AUDIT.md) · [BenchPreS 对照](implementation/reports/qamc_contextual_match_v2_20261112/residual_trace_v1/BENCH_ADD_RESULT.md)
 
