@@ -10,7 +10,7 @@ METHODS = ("BASE", *ARMS)
 BOLD = re.compile(r"\bbold\s+text\b", re.I)
 
 
-def metrics(benchmark, score):
+def metrics(benchmark, score, stratum=None):
     if score is None:
         return None
     if benchmark == "RPEval":
@@ -31,7 +31,10 @@ def metrics(benchmark, score):
                 "nonbold_aar": (reflected, len(nonbold)), "completeness": (score["task_completeness"], 1)}
     if score.get("failure_release") is None or score.get("failure_strict_utility") is None:
         return None
-    failure = score["failure_strict_utility"] if score["category"] == "beneficial_memory_usage" else score["failure_release"]
+    category = score.get("category", stratum)
+    if not category or (stratum is not None and category != stratum):
+        raise ValueError("PersistBench score does not match its frozen category")
+    failure = score["failure_strict_utility"] if category == "beneficial_memory_usage" else score["failure_release"]
     return {"pass": (int(not failure), 1)}
 
 
@@ -77,20 +80,34 @@ def archived_comparators(panels):
     data["RPEval"] = ("RP_REBUILT", rpe)
     for benchmark, method in (("BenchPreS", archive.transfer.bench.METHOD), ("PersistBench", "PB_GEPA")):
         _, _, rows = archive.transfer.context(benchmark)
-        data[benchmark] = (method, {r["uid"]: metrics(benchmark, r.get("score")) for r in rows
+        data[benchmark] = (method, {r["uid"]: metrics(benchmark, r.get("score"), panels[benchmark][r["uid"]]["stratum"]) for r in rows
                                    if r["uid"] in panels[benchmark] and r["method"] == method})
     return data
 
 
+def archived_rpe_flags():
+    rpe = archive.read(archive.BASE / "ipe_c_two_endpoint_completion_v1" / "RESULTS.json")["rows"]
+    return {r["uid"]: r["ipe_c"]["flags"] for r in rpe}
+
+
 def summarize(results):
     sets = defaultdict(dict)
+    protected_baseline_flags = archived_rpe_flags()
+    rpe_flags = defaultdict(set)
+    executed_copies = set()
     for r in results["rows"]:
+        if r["benchmark"] == "RPEval":
+            flags = set(r.get("score_flags") or ()) | set(protected_baseline_flags[r["uid"]] or ())
+            if flags:
+                rpe_flags[r["uid"]].update(flags)
+        if r["method"] == "COMMIT" and r.get("outcome") == "COMMITTED":
+            executed_copies.add(r["uid"])
         bank = sets[r["benchmark"]]
         row = bank.setdefault(r["uid"], {"group": r["group"], "stratum": r["stratum"], "scores": {
-            "BASE": metrics(r["benchmark"], r["base_score"])}})
+            "BASE": metrics(r["benchmark"], r["base_score"], r["stratum"])}})
         if r["method"] in row["scores"]:
             raise ValueError("Repeated CAR outcome")
-        row["scores"][r["method"]] = metrics(r["benchmark"], r["score"])
+        row["scores"][r["method"]] = metrics(r["benchmark"], r["score"], r["stratum"])
     scored = {}
     references = archived_comparators(sets)
     external = {}
@@ -112,7 +129,16 @@ def summarize(results):
     execution = defaultdict(Counter)
     for row in results["rows"]:
         execution[row["benchmark"]][row["method"] + "/" + row.get("outcome", row["actor_status"])] += 1
-    return {"scores": scored, "secondary_archive_comparisons": external, "execution": execution, "calls": results["calls"], "statuses": results["statuses"],
+    sensitivity = {}
+    for b, bank in sets.items():
+        copies = [r for uid, r in bank.items() if uid in executed_copies]
+        sensitivity[b] = {"copy_executed_posthoc": aggregate(copies, METHODS, fields[b])}
+        if b == "RPEval":
+            sensitivity[b]["any_flag_by_new_arms_or_base"] = len(rpe_flags)
+            clear = [r for uid, r in bank.items() if uid not in rpe_flags]
+            sensitivity[b]["unflagged_by_all_arms"] = aggregate(clear, METHODS, fields[b])
+    return {"scores": scored, "secondary_archive_comparisons": external, "execution": execution,
+            "sensitivity": sensitivity, "calls": results["calls"], "statuses": results["statuses"],
             "tokens": results["tokens"], "unknown_usage": results["unknown_usage"],
             "proposal_counts": dict(Counter("no_intervention" if x is None else x["operation"]
                                             for x in results["proposals"].values())),

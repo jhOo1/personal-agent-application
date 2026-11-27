@@ -1,0 +1,50 @@
+{
+  "BenchPreS": {
+    "absent_opportunity_request": 2,
+    "actions_with_source_support": 5,
+    "assigned": 8,
+    "cited_source_positions": 7,
+    "copy_commits": 1,
+    "copy_from_D": 1,
+    "donor_wire_differs_from_both_endpoints": 5,
+    "proposal_contract_failed": 1,
+    "proposed_action": 5,
+    "reached_matched_control_packet": 5,
+    "registered_distinct_donor": 5,
+    "unique_donor_answer_available": 5
+  },
+  "PersistBench": {
+    "absent_opportunity_request": 1,
+    "actions_with_source_support": 7,
+    "assigned": 8,
+    "cited_source_positions": 16,
+    "copy_commits": 1,
+    "copy_from_D": 1,
+    "donor_wire_differs_from_both_endpoints": 7,
+    "proposed_action": 7,
+    "reached_matched_control_packet": 7,
+    "registered_distinct_donor": 7,
+    "unique_donor_answer_available": 7
+  },
+  "RPEval": {
+    "actions_with_source_support": 11,
+    "assigned": 12,
+    "available_label_A": 47,
+    "available_label_B": 6,
+    "available_label_C": 2,
+    "cited_label_A": 9,
+    "cited_label_B": 3,
+    "cited_label_C": 2,
+    "cited_source_positions": 14,
+    "copy_commits": 4,
+    "copy_from_D": 2,
+    "copy_from_F": 1,
+    "copy_from_H": 1,
+    "donor_wire_differs_from_both_endpoints": 11,
+    "proposal_contract_failed": 1,
+    "proposed_action": 11,
+    "reached_matched_control_packet": 11,
+    "registered_distinct_donor": 11,
+    "unique_donor_answer_available": 11
+  }
+}

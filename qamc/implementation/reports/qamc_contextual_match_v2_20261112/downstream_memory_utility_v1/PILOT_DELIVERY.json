@@ -1,0 +1,49 @@
+{
+  "BenchPreS": {
+    "assigned": 8,
+    "controller_requested_COMMIT": 1,
+    "controller_requested_SELECT": 4,
+    "distinct_donor": 5,
+    "donor_present": 5,
+    "from_action_donor": 1,
+    "literal_guard_present": 0,
+    "no_final_packet": 3,
+    "nontrivial_commit": 1,
+    "proposal_cites_original_source": 5,
+    "proposed_action": 5,
+    "shared_controller_packet": 5,
+    "strong_fallback_equals_endpoint": 0
+  },
+  "PersistBench": {
+    "assigned": 8,
+    "controller_requested_COMMIT": 2,
+    "controller_requested_SELECT": 5,
+    "distinct_donor": 7,
+    "donor_present": 7,
+    "from_action_donor": 1,
+    "literal_guard_present": 0,
+    "no_final_packet": 1,
+    "nontrivial_commit": 1,
+    "proposal_cites_original_source": 7,
+    "proposed_action": 7,
+    "requested_commit_missing_from_actual_output": 1,
+    "shared_controller_packet": 7,
+    "strong_fallback_equals_endpoint": 7
+  },
+  "RPEval": {
+    "assigned": 12,
+    "controller_requested_COMMIT": 5,
+    "controller_requested_SELECT": 6,
+    "distinct_donor": 11,
+    "donor_present": 11,
+    "from_action_donor": 2,
+    "literal_guard_present": 0,
+    "no_final_packet": 1,
+    "nontrivial_commit": 4,
+    "proposal_cites_original_source": 11,
+    "proposed_action": 11,
+    "requested_commit_missing_from_actual_output": 1,
+    "shared_controller_packet": 11,
+    "strong_fallback_equals_endpoint": 11
+  }
+}
