@@ -1,0 +1,229 @@
+{
+  "selected_pairs": {
+    "beneficial_memory_usage": {
+      "EMPTY": {
+        "tie": 1,
+        "unknown": 2,
+        "win": 4
+      },
+      "FULL": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "GROUP": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "RUBRIC": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "claude-sonnet-4-5-20250929": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "gpt-5.2": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "meta-llama_llama-4-maverick": {
+        "tie": 5,
+        "unknown": 2
+      },
+      "x-ai_grok-4.1-fast": {
+        "tie": 5,
+        "unknown": 2
+      }
+    },
+    "cross_domain": {
+      "EMPTY": {
+        "tie": 3,
+        "unknown": 1
+      },
+      "FULL": {
+        "tie": 1,
+        "unknown": 1,
+        "win": 2
+      },
+      "GROUP": {
+        "tie": 3,
+        "unknown": 1
+      },
+      "RUBRIC": {
+        "tie": 3,
+        "unknown": 1
+      },
+      "claude-sonnet-4-5-20250929": {
+        "tie": 1,
+        "unknown": 1,
+        "win": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "unknown": 1,
+        "win": 3
+      },
+      "gpt-5.2": {
+        "tie": 2,
+        "unknown": 1,
+        "win": 1
+      },
+      "meta-llama_llama-4-maverick": {
+        "tie": 2,
+        "unknown": 1,
+        "win": 1
+      },
+      "x-ai_grok-4.1-fast": {
+        "tie": 2,
+        "unknown": 1,
+        "win": 1
+      }
+    },
+    "sycophancy": {
+      "EMPTY": {
+        "tie": 2
+      },
+      "FULL": {
+        "tie": 2
+      },
+      "GROUP": {
+        "tie": 2
+      },
+      "RUBRIC": {
+        "tie": 2
+      },
+      "claude-sonnet-4-5-20250929": {
+        "tie": 1,
+        "win": 1
+      },
+      "google_gemini-3.1-pro-preview": {
+        "win": 2
+      },
+      "gpt-5.2": {
+        "tie": 2
+      },
+      "meta-llama_llama-4-maverick": {
+        "win": 2
+      },
+      "x-ai_grok-4.1-fast": {
+        "win": 2
+      }
+    }
+  },
+  "states": {
+    "beneficial_memory_usage": {
+      "EMPTY": {
+        "fail": 6,
+        "pass": 1
+      },
+      "FULL": {
+        "pass": 6,
+        "unknown": 1
+      },
+      "GROUP": {
+        "pass": 6,
+        "unknown": 1
+      },
+      "RUBRIC": {
+        "pass": 7
+      },
+      "SELECTED": {
+        "pass": 5,
+        "unknown": 2
+      },
+      "claude-sonnet-4-5-20250929": {
+        "pass": 7
+      },
+      "google_gemini-3.1-pro-preview": {
+        "pass": 7
+      },
+      "gpt-5.2": {
+        "pass": 7
+      },
+      "meta-llama_llama-4-maverick": {
+        "fail": 1,
+        "pass": 6
+      },
+      "x-ai_grok-4.1-fast": {
+        "pass": 7
+      }
+    },
+    "cross_domain": {
+      "EMPTY": {
+        "pass": 3,
+        "unknown": 1
+      },
+      "FULL": {
+        "fail": 2,
+        "pass": 2
+      },
+      "GROUP": {
+        "pass": 3,
+        "unknown": 1
+      },
+      "RUBRIC": {
+        "pass": 3,
+        "unknown": 1
+      },
+      "SELECTED": {
+        "pass": 3,
+        "unknown": 1
+      },
+      "claude-sonnet-4-5-20250929": {
+        "fail": 2,
+        "pass": 2
+      },
+      "google_gemini-3.1-pro-preview": {
+        "fail": 4
+      },
+      "gpt-5.2": {
+        "fail": 1,
+        "pass": 3
+      },
+      "meta-llama_llama-4-maverick": {
+        "fail": 1,
+        "pass": 3
+      },
+      "x-ai_grok-4.1-fast": {
+        "fail": 1,
+        "pass": 3
+      }
+    },
+    "sycophancy": {
+      "EMPTY": {
+        "pass": 2
+      },
+      "FULL": {
+        "pass": 2
+      },
+      "GROUP": {
+        "pass": 2
+      },
+      "RUBRIC": {
+        "pass": 2
+      },
+      "SELECTED": {
+        "pass": 2
+      },
+      "claude-sonnet-4-5-20250929": {
+        "fail": 1,
+        "pass": 1
+      },
+      "google_gemini-3.1-pro-preview": {
+        "fail": 2
+      },
+      "gpt-5.2": {
+        "pass": 2
+      },
+      "meta-llama_llama-4-maverick": {
+        "fail": 2
+      },
+      "x-ai_grok-4.1-fast": {
+        "fail": 2
+      }
+    }
+  }
+}
