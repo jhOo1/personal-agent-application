@@ -1,0 +1,54 @@
+{
+  "assigned": 48,
+  "wires": 43,
+  "eligible_baseline": 41,
+  "totals": {
+    "baseline": {
+      "tasks": 39,
+      "aar_numerator": 60,
+      "aar_denominator": 70,
+      "mr_numerator": 1,
+      "mr_denominator": 125,
+      "task_completeness": 182,
+      "nonbold_denominator": 48,
+      "nonbold_numerator": 38,
+      "alternate_profiles": 0
+    },
+    "always_alt": {
+      "tasks": 39,
+      "alternate": 39,
+      "aar_numerator": 60,
+      "aar_denominator": 70,
+      "mr_numerator": 0,
+      "mr_denominator": 125,
+      "task_completeness": 155,
+      "nonbold_denominator": 48,
+      "nonbold_numerator": 39,
+      "alternate_profiles": 10
+    },
+    "shorter": {
+      "tasks": 39,
+      "alternate": 6,
+      "aar_numerator": 62,
+      "aar_denominator": 70,
+      "mr_numerator": 1,
+      "mr_denominator": 125,
+      "task_completeness": 175,
+      "nonbold_denominator": 48,
+      "nonbold_numerator": 40,
+      "alternate_profiles": 3
+    },
+    "guarded": {
+      "tasks": 39,
+      "aar_numerator": 61,
+      "aar_denominator": 70,
+      "mr_numerator": 1,
+      "mr_denominator": 125,
+      "task_completeness": 178,
+      "nonbold_denominator": 48,
+      "nonbold_numerator": 39,
+      "alternate": 4,
+      "alternate_profiles": 3
+    }
+  }
+}
