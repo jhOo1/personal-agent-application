@@ -1,0 +1,26 @@
+{
+  "totals": {
+    "tasks": 83,
+    "positions": 513,
+    "initial": 311,
+    "oracle": 334,
+    "protected": 330,
+    "opportunity": 15,
+    "protected_opportunity": 12,
+    "all_severity_protected": 320,
+    "all_severity_opportunity": 6,
+    "exact": 2,
+    "protected_exact": 2
+  },
+  "protected_gain_groups": 8,
+  "gains_by_group_descending": [
+    7,
+    4,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1
+  ]
+}
