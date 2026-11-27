@@ -19,7 +19,7 @@ def single_change(left, right):
                 return "insert", i
     return None
 
-def main():
+def backgrounds():
     rows = json.loads((BASE / "rpeval_formal_multi_coverage_v1/RESULT_ROWS.json").read_text())
     groups = defaultdict(list)
     for row in rows:
@@ -32,6 +32,10 @@ def main():
         policy = body.pop("preference_use_policy")
         assert [p["memory_id"] for p in policy] == [s["memory_id"] for s in sources]
         groups[key([wire, system, user["role"], body])].append((row["uid"], sources, policy))
+    return groups
+
+def main():
+    groups = backgrounds()
     counts = Counter()
     kinds = defaultdict(set)
     print("Available answers / task payload groups", sum(map(len,groups.values())), len(groups))
