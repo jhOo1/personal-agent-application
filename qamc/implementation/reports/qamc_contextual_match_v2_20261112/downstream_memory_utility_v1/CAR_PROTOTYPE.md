@@ -29,3 +29,13 @@ While freezing, establish both the score-level thresholds and the opportunity-le
 ```sh
 python3 -m unittest discover -s . -p test_action_commit.py
 ```
+
+## Actor exposure wire acceptance
+
+A read-only replay used 296 archived RP requests from RPEval, 43 Strong Gate requests from BenchPreS, and 60 PB_RUBRIC requests from PersistBench. All reconstructed the exact previously exposed request and produced an empty-history request with the same task, settings and static prompt. BenchPreS Strong Gate's archived exposure is its selected subset. The adapter verifies those sources against the full frozen task list and can use the original list to make a new exposure. The replay checked wire structure only. It establishes no answer reusability or model behavior.
+
+- RPEval can reuse the existing per-source A/B/C policy channel. It has no free-text action field.
+- BenchPreS can reuse original source text plus the existing bounded per-source guidance, with the visible position recomputed after exposure.
+- PersistBench's pinned PB_RUBRIC renderer has a history slot inside the system template and an unchanged query. It has no free-text usage channel. In the strict frozen arm, the controller's proposal can condition the history exposure and downstream comparison but cannot directly instruct that Actor. Prompts rendered with different histories will differ only through the native history slot. Claims of the same direct generation guidance on all three would require a separate interface intervention.
+
+The private replay requires the original execution workspace and pinned author checkout. It emits only aggregate counts and performs zero requests. The archive contains the adapter and audit entry point. [Exposure adapter](exposure_wires.py) · [Replay](audit_exposure_wires.py)
