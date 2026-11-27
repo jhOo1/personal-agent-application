@@ -1,0 +1,32 @@
+{
+  "model_calls": 0,
+  "travel": {
+    "sources_before": 1,
+    "sources_after": 0,
+    "actor_request_sha256": "69310fe47b2456be4da891d753ada9375918153eede26c5d7e3edc62504ca8e9",
+    "ablated_request_sha256": "775458e16a158466e86ce13722c644620a0d6bc6a7deaa797208291defdf05f7",
+    "same_as_author_empty": false,
+    "exact_actor_archive": null,
+    "actor_model": "qwen3.8-flash",
+    "actor_max_tokens": 8192,
+    "author_empty_max_tokens": 4096,
+    "searched_sqlite_journals": 1393,
+    "old_ratings": {
+      "PB_FULL": 4,
+      "PB_GEPA": 4,
+      "PB_RUBRIC": 1,
+      "PB_NO_MEMORY": 1,
+      "PB_FILTER_NATIVE": 4,
+      "PB_FILTER_COMMON": 4,
+      "MEMADAPTER_FULL": 4
+    },
+    "selected_rating": 4
+  },
+  "chapter": {
+    "selected_sources": 1,
+    "same_as_author_empty": false,
+    "actor_request_verified": true,
+    "selected_rating": 4,
+    "author_empty_rating": 4
+  }
+}
