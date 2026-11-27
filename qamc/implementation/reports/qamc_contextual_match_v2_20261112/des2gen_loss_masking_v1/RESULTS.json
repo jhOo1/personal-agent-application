@@ -1,0 +1,120 @@
+{
+  "cases": [
+    {
+      "development_case": "explicit/044",
+      "full": {
+        "match": {
+          "matched": 3,
+          "positions": 5
+        },
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 0,
+        "flagged": false
+      },
+      "masked": {
+        "match": {
+          "matched": 3,
+          "positions": 5
+        },
+        "OPB": 2,
+        "UPB": 1,
+        "FM": 0,
+        "flagged": true
+      }
+    },
+    {
+      "development_case": "implicit/077",
+      "full": {
+        "match": {
+          "matched": 5,
+          "positions": 9
+        },
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 1,
+        "flagged": false
+      },
+      "masked": {
+        "match": {
+          "matched": 6,
+          "positions": 9
+        },
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 0,
+        "flagged": false
+      }
+    },
+    {
+      "development_case": "implicit/078",
+      "full": {
+        "match": {
+          "matched": 2,
+          "positions": 6
+        },
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 1,
+        "flagged": false
+      },
+      "masked": {
+        "match": {
+          "matched": 2,
+          "positions": 6
+        },
+        "OPB": 2,
+        "UPB": 1,
+        "FM": 1,
+        "flagged": false
+      }
+    },
+    {
+      "development_case": "4203f7b6afcbdade5e1d",
+      "full": {
+        "match": {
+          "matched": 4,
+          "positions": 8
+        },
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 1,
+        "flagged": false
+      },
+      "masked": {
+        "match": {
+          "matched": 5,
+          "positions": 8
+        },
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 0,
+        "flagged": false
+      }
+    }
+  ],
+  "common": {
+    "full": {
+      "match": 14,
+      "positions": 28,
+      "OPB": 7,
+      "UPB": 3,
+      "FM": 3
+    },
+    "masked": {
+      "match": 16,
+      "positions": 28,
+      "OPB": 8,
+      "UPB": 3,
+      "FM": 1
+    }
+  },
+  "cost": {
+    "requests": 16,
+    "statuses": {
+      "OK": 16
+    },
+    "tokens": 72626,
+    "unknown_usage": 0
+  }
+}
