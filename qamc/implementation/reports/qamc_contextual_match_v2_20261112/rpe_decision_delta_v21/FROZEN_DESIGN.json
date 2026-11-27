@@ -1,0 +1,17 @@
+{
+  "assigned": 24,
+  "base_parent": "0906dc20a15abad58474ae7773257abaaa02f61129a1cdbd7e4294c3ff947e33",
+  "v1_choices": "3e425a1f696896e6c73cf1ada6230d2b3ad961b2e7d121686f5681672da33c95",
+  "binding_sha256": "e25e3032d355638b52c0b7ab88773cd583d83b0a59a0df544fbf719fca0346a0",
+  "inference_sha256": "eb99f8286d5fc97d0e173c74643a064c3a50da1b05d0fc494151da10d8548b98",
+  "caps": {
+    "DecisionEdit": 48,
+    "SingleDetailJudge": 48
+  },
+  "code_sha256": {
+    "delta.py": "0803c47ccebd22e66fa641afa83a158ad840326749c7662eaf0129554d9c93fa",
+    "run_delta.py": "0f35cd8a93cc7af2d5af01c56610a16076b417a952bf9705a120cb922bda37ee",
+    "run.sh": "2267eefb2e0d469095410298393366669cfcf57dce66cfa47a966b7c717d5462",
+    "PROTOCOL.md": "339c58c9d25312a4fbbb065e8d3672cb354cdad52835f82c5ab3b66f9b64b9c9"
+  }
+}
