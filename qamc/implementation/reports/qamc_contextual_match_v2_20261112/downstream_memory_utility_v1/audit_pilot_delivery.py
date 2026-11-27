@@ -42,6 +42,8 @@ def inspect(results, cards, manifest):
             raise ValueError("Strong fallback changed")
         proposal = packet["opportunity"]
         outcome["shared_controller_packet"] += 1
+        outcome["literal_guard_present"] += bool(packet["protected_literals"])
+        outcome["strong_fallback_equals_endpoint"] += rendered[packet["fallback"]] in (rendered["T"], rendered["H"])
         if proposal is not None:
             outcome["proposed_action"] += 1
             outcome["proposal_cites_original_source"] += bool(proposal["evidence"])
