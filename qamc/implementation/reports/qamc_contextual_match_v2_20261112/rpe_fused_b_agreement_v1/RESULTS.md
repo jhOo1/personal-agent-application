@@ -47,3 +47,7 @@ IPE_C, 12 tasks: candidate 22, contemporary original 17, archived comparator 44 
 RPR_PAPER_FULL, 12 tasks: candidate 22, contemporary original 17, archived comparator 23 of 67.
 
 The observed wins occurred on implicit/000, implicit/075 .
+
+## Apply the change only when IPE-C actually opens history
+
+Exact-pair subset only: 6 of 12 open. Archived IPE-C 44, same-route contemporary original 43, same-route narrow veto 44 of 67. Closed branches reuse their exact old answer.

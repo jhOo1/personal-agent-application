@@ -68,3 +68,14 @@ for name in ("IPE_C","RPR_PAPER_FULL"):
     common=[(u,a,b,score_by_uid[u]["scores"][name]["grade"]["match"]) for u,_,a,b in comparisons if (score_by_uid[u]["scores"][name]["grade"] or {}).get("match")]
     print(f"{name}, {len(common)} tasks: candidate {sum(x[1] for x in common)}, contemporary original {sum(x[2] for x in common)}, archived comparator {sum(x[3]['matched'] for x in common)} of {sum(x[3]['positions'] for x in common)}.")
 print("\nThe observed wins occurred on", ", ".join(u.split("/")[-2]+"/"+u.split("/")[-1] for u,d,_,_ in comparisons if d>0), ".")
+print("\n## Apply the change only when IPE-C actually opens history\n")
+mixed=Counter()
+for u,_,candidate,base_draw in comparisons:
+    row=score_by_uid[u]
+    grade=row["scores"]["IPE_C"]["grade"] or {}
+    if not grade.get("match"):continue
+    incumbent=grade["match"]["matched"]
+    opens="C" in ranks_by_uid[u]["policies"]["IPE_ONLY"]["policy"]
+    mixed.update(tasks=1,open=int(opens),positions=grade["match"]["positions"],original=incumbent,
+                 variant=(candidate if opens else incumbent),control=(base_draw if opens else incumbent))
+print(f"Exact-pair subset only: {mixed['open']} of {mixed['tasks']} open. Archived IPE-C {mixed['original']}, same-route contemporary original {mixed['control']}, same-route narrow veto {mixed['variant']} of {mixed['positions']}. Closed branches reuse their exact old answer.")
