@@ -1,0 +1,298 @@
+{
+  "assigned_pairs": 14,
+  "states": {
+    "OK": 28
+  },
+  "comparison": {
+    "nickname": {
+      "common_pairs": 2,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      }
+    },
+    "nonbold_00": {
+      "common_pairs": 3,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 0
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 1,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 1
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 0.6666666666666666,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 1
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 0.6666666666666666,
+        "kappa": 0.39999999999999997,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 1
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 0.3333333333333333,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 2
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 0.0,
+        "kappa": -0.7999999999999999,
+        "left_yes_right_no": 2,
+        "left_no_right_yes": 1
+      }
+    },
+    "nonbold_01": {
+      "common_pairs": 2,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 1,
+        "PAPER_SELECTIVITY": 2
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.0,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 2
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.5,
+        "kappa": 0.0,
+        "left_yes_right_no": 1,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      }
+    },
+    "nonbold_10": {
+      "common_pairs": 2,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 0
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 1,
+        "PAPER_SELECTIVITY": 1
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 2
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.5,
+        "kappa": 0.0,
+        "left_yes_right_no": 1,
+        "left_no_right_yes": 0
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.5,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 1
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.5,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 1
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 0.5,
+        "kappa": 0.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 1
+      }
+    },
+    "nonbold_11": {
+      "common_pairs": 2,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 2,
+        "PAPER_SELECTIVITY": 2
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 2,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      }
+    },
+    "other_mr": {
+      "common_pairs": 3,
+      "Original Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 3
+      },
+      "Masked Qwen": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "Masked GPT-4.1": {
+        "GEPA_SELECTED_BOUNDS": 0,
+        "PAPER_SELECTIVITY": 2
+      },
+      "GEPA_SELECTED_BOUNDS/presentation_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "GEPA_SELECTED_BOUNDS/masked_model_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": null,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/presentation_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 0.6666666666666666,
+        "kappa": 0.0,
+        "left_yes_right_no": 1,
+        "left_no_right_yes": 0
+      },
+      "PAPER_SELECTIVITY/masked_model_agreement": {
+        "paired_binary_votes": 3,
+        "excluded": 0,
+        "agreement": 1.0,
+        "kappa": 1.0,
+        "left_yes_right_no": 0,
+        "left_no_right_yes": 0
+      }
+    }
+  },
+  "old_scores_replaced": 0,
+  "human_reviews": 0,
+  "physical_requests": 28,
+  "exact_archive_hits": 0,
+  "reported_tokens": 19289,
+  "unknown_usage": 0,
+  "actor_requests": 0,
+  "automatic_retries": 0
+}
