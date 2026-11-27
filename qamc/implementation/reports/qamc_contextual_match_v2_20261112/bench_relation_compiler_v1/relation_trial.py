@@ -304,7 +304,7 @@ def main():
         if run.read(RUN / "FROZEN.json") != pin:
             raise ValueError("Frozen result provenance changed")
         identity = {"experiment_sha256": sha(pin), "service_reference_sha256": trial.probe.read_reference()[1]}
-        if identity["service_reference_sha256"] != run.read(run.RUN / "PLAN_PRIVATE.json")["service_sha256"]:
+        if identity["service_reference_sha256"] != run.read(run.RUN / "PLAN_PRIVATE.json")["reference_sha256"]:
             raise ValueError("Service identity differs from original run")
         trial.probe.freeze(RUN / "EXECUTION.json", identity)
         if (RUN / "SUMMARY.json").is_file():
