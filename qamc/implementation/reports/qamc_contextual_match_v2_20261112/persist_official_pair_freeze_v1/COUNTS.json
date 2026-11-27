@@ -1,0 +1,14 @@
+{
+  "assigned": {
+    "SELECTED": 111,
+    "RUBRIC": 111,
+    "Released GPT-5.2": 25
+  },
+  "missing": {
+    "SELECTED": 9,
+    "RUBRIC": 7
+  },
+  "unique": 231,
+  "packet_sha": "f8828482982a1bb2e6a1c3495fb0317c8578ec2c4b0a7589364680e7da1047c4",
+  "author": "d2ded18be6d15ebb14008d081a44bd03c20670e4"
+}
