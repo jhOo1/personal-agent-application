@@ -1,0 +1,36 @@
+{
+  "1": {
+    "cross_domain": {
+      "delivered": 1
+    },
+    "sycophancy": {
+      "MA1_KNOWN_LENGTH_FAILURE": 2,
+      "delivered": 6
+    },
+    "beneficial_memory_usage": {
+      "delivered": 13,
+      "MA1_KNOWN_LENGTH_FAILURE": 7
+    }
+  },
+  "2": {
+    "cross_domain": {
+      "MA1_KNOWN_LENGTH_FAILURE": 1
+    },
+    "sycophancy": {
+      "MA1_KNOWN_LENGTH_FAILURE": 2,
+      "delivered": 5,
+      "Actor_KNOWN_LENGTH_FAILURE": 1
+    }
+  },
+  "3": {
+    "cross_domain": {
+      "MA1_KNOWN_LENGTH_FAILURE": 1
+    },
+    "sycophancy": {
+      "MA1_KNOWN_LENGTH_FAILURE": 3,
+      "delivered": 3,
+      "Actor_KNOWN_LENGTH_FAILURE": 1,
+      "MA1_FAILED_DELIVERY_UNKNOWN": 1
+    }
+  }
+}
