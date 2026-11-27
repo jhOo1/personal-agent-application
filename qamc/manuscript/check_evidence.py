@@ -261,7 +261,14 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     require(sentence in paper, True, "Single-preference common scores")
     require(bounds["RPR_PAPER_FULL"]["possible_net_match"], [1, 1], "All-assigned RP difference")
     require(bounds["MEMADAPTER_FULL"]["possible_net_match"], [-1, 5], "All-assigned MemAdapter bounds")
-    return 18 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    ceiling = json.loads((root / "shared_history_activation_v1" / "PARENT_HEADROOM.json").read_text())
+    strata = ("all_A", "B_only", "contains_C")
+    for key, metric, expected in (("all", "possible_extra_match", [43, 12, 6]),
+                                  ("neither_endpoint_flagged", "possible_extra_match", [37, 2, 6]),
+                                  ("neither_endpoint_flagged", "groups_with_any_headroom", [6, 1, 1])):
+        require([ceiling[s][key][metric] for s in strata], expected, "Saved endpoint opportunity")
+    require("37, two, and six positions across six, one, and one source groups" in paper, True, "Endpoint ceiling prose")
+    return 22 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
