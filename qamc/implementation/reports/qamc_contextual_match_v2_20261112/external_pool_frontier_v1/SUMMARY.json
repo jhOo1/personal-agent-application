@@ -1,0 +1,164 @@
+{
+  "fixed_methods": {
+    "BenchPreS/DES2GEN_FULL": {
+      "alternative": 30,
+      "common": 25,
+      "incumbent": 37,
+      "losses": 7,
+      "primary_difference": -7,
+      "ties": 18,
+      "units": 43
+    },
+    "BenchPreS/GEPA_SELECTED_BOUNDS": {
+      "alternative": 38,
+      "common": 26,
+      "incumbent": 38,
+      "primary_difference": 0,
+      "ties": 26,
+      "units": 44
+    },
+    "BenchPreS/MEMADAPTER_FULL": {
+      "alternative": 23,
+      "common": 24,
+      "incumbent": 34,
+      "losses": 12,
+      "primary_difference": -11,
+      "ties": 11,
+      "units": 40,
+      "wins": 1
+    },
+    "BenchPreS/PAPER_SELECTIVITY": {
+      "alternative": 32,
+      "common": 25,
+      "incumbent": 36,
+      "losses": 5,
+      "primary_difference": -4,
+      "ties": 19,
+      "units": 42,
+      "wins": 1
+    },
+    "BenchPreS/RPR_PAPER_FULL": {
+      "alternative": 27,
+      "common": 26,
+      "incumbent": 38,
+      "losses": 11,
+      "primary_difference": -11,
+      "ties": 15,
+      "units": 44
+    },
+    "PersistBench/GEPA_SELECTED_BOUNDS": {
+      "alternative": 35,
+      "common": 42,
+      "incumbent": 38,
+      "losses": 3,
+      "primary_difference": -3,
+      "ties": 39,
+      "units": 42
+    },
+    "PersistBench/PB_GEPA": {
+      "alternative": 34,
+      "common": 41,
+      "incumbent": 37,
+      "losses": 3,
+      "primary_difference": -3,
+      "ties": 38,
+      "units": 41
+    },
+    "PersistBench/PB_NO_MEMORY": {
+      "alternative": 25,
+      "common": 42,
+      "incumbent": 38,
+      "losses": 16,
+      "primary_difference": -13,
+      "ties": 23,
+      "units": 42,
+      "wins": 3
+    },
+    "PersistBench/PB_RUBRIC": {
+      "alternative": 38,
+      "common": 42,
+      "incumbent": 38,
+      "primary_difference": 0,
+      "ties": 42,
+      "units": 42
+    },
+    "PersistBench/RPR_PAPER_FULL": {
+      "alternative": 28,
+      "common": 42,
+      "incumbent": 38,
+      "losses": 10,
+      "primary_difference": -10,
+      "ties": 32,
+      "units": 42
+    },
+    "RPEval/DES2GEN_FULL": {
+      "alternative": 64,
+      "common": 23,
+      "incumbent": 63,
+      "losses": 4,
+      "primary_difference": 1,
+      "ties": 15,
+      "units": 127,
+      "wins": 4
+    },
+    "RPEval/GEPA_SELECTED_BOUNDS": {
+      "alternative": 66,
+      "common": 24,
+      "incumbent": 66,
+      "losses": 5,
+      "primary_difference": 0,
+      "ties": 16,
+      "units": 130,
+      "wins": 3
+    },
+    "RPEval/MEMADAPTER_FULL": {
+      "alternative": 59,
+      "common": 23,
+      "incumbent": 62,
+      "losses": 3,
+      "primary_difference": -3,
+      "ties": 18,
+      "units": 123,
+      "wins": 2
+    },
+    "RPEval/RPR_PAPER_FULL": {
+      "alternative": 70,
+      "common": 24,
+      "incumbent": 66,
+      "losses": 2,
+      "primary_difference": 4,
+      "ties": 20,
+      "units": 130,
+      "wins": 2
+    }
+  },
+  "protected_envelope": {
+    "BenchPreS": {
+      "additional_gain_groups": 1,
+      "assigned": 26,
+      "combined_gain_beyond_revision_oracle": 1,
+      "external_oracle_gain": 1,
+      "external_winning_groups": 1,
+      "unflagged_external_gain": 1,
+      "unflagged_winning_groups": 1
+    },
+    "PersistBench": {
+      "additional_gain_groups": 2,
+      "assigned": 42,
+      "combined_gain_beyond_revision_oracle": 2,
+      "external_oracle_gain": 3,
+      "external_winning_groups": 3,
+      "unflagged_external_gain": 3,
+      "unflagged_winning_groups": 3
+    },
+    "RPEval": {
+      "additional_gain_groups": 3,
+      "assigned": 24,
+      "combined_gain_beyond_revision_oracle": 9,
+      "external_oracle_gain": 11,
+      "external_winning_groups": 4,
+      "unflagged_external_gain": 11,
+      "unflagged_winning_groups": 4
+    }
+  }
+}
