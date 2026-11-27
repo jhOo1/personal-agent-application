@@ -1,0 +1,62 @@
+{
+  "matching_C_multiplicity": {
+    "assignments": 21,
+    "metrics": {
+      "conflicts": {
+        "actual": 1,
+        "equal_count": 6,
+        "maximum": 3,
+        "mean_fraction": "13/7",
+        "minimum": 1,
+        "strictly_better_count": 0
+      },
+      "joint": {
+        "actual": 9,
+        "equal_count": 21,
+        "maximum": 9,
+        "mean_fraction": "9",
+        "minimum": 9,
+        "strictly_better_count": 0
+      },
+      "realized": {
+        "actual": 14,
+        "equal_count": 21,
+        "maximum": 14,
+        "mean_fraction": "14",
+        "minimum": 14,
+        "strictly_better_count": 0
+      }
+    }
+  },
+  "opened": 10,
+  "tasks": 12,
+  "unrestricted": {
+    "assignments": 66,
+    "metrics": {
+      "conflicts": {
+        "actual": 1,
+        "equal_count": 15,
+        "maximum": 5,
+        "mean_fraction": "7/3",
+        "minimum": 1,
+        "strictly_better_count": 0
+      },
+      "joint": {
+        "actual": 9,
+        "equal_count": 45,
+        "maximum": 11,
+        "mean_fraction": "28/3",
+        "minimum": 9,
+        "strictly_better_count": 21
+      },
+      "realized": {
+        "actual": 14,
+        "equal_count": 31,
+        "maximum": 15,
+        "mean_fraction": "41/3",
+        "minimum": 12,
+        "strictly_better_count": 8
+      }
+    }
+  }
+}
