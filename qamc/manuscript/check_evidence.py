@@ -249,7 +249,19 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
         expected.extend(values[arm]["matched"] for arm in ("FULL", "RP_K", "PB"))
         expected.extend(denoms)
     require(list(map(int, match.groups())) if match else None, expected, "Transferred selector")
-    return 12 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    folder = root / "single_external_roster_recovery_v1"
+    panel = json.loads((folder / "COMPARISON_SUMMARY.json").read_text())
+    bounds = json.loads((folder / "ALLOCATION.json").read_text())["v1_against"]
+    scores = panel["scores"]
+    for term in ("RPR_PAPER_FULL", "DES2GEN_FULL", "MEMADAPTER_FULL"):
+        require(scores[term], scores["Default"], "Single-preference comparator tie")
+    sentence = (f"On the {panel['strict_common']} tasks with complete strict scores, witnessed replacement "
+                f"achieved {scores['V1']}/{panel['strict_common']} Match; RP, Des2Gen, MemAdapter and "
+                f"ordinary selection each achieved {scores['Default']}/{panel['strict_common']}.")
+    require(sentence in paper, True, "Single-preference common scores")
+    require(bounds["RPR_PAPER_FULL"]["possible_net_match"], [1, 1], "All-assigned RP difference")
+    require(bounds["MEMADAPTER_FULL"]["possible_net_match"], [-1, 5], "All-assigned MemAdapter bounds")
+    return 18 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
