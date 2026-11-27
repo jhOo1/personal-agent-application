@@ -200,6 +200,12 @@ Rubric & 8/0 & 1/6 & 0/0\\
 
 Across assignments of missing outcomes, the switch has one to four fewer CD failures than full history. For strict BU the difference in failures between selection and the switch ranges from five fewer to six more. Both passed on the 12 mutually graded utility cases. In one such case, both received full credit despite offering an event arrangement that retained a cat exposure for a severely allergic attendee.
 
+\paragraph{Can the query alone authorize shutdown?}
+We replayed the saved query-only decision as a hard switch: expose full history when the query router requests personal information, otherwise expose none. This bypasses the memory-aware selector. It shut history off in all 93 risk deployments, matching empty history by construction. On strict BU it recorded 7 passes, 6 failures and 5 missing outcomes. On each of the six observed failures, Grounding selected three to five memories and both selected and full answers passed. Even assigning every missing switch outcome a pass leaves at most 12 passes against 17 observed for full history. A negative query-only decision is thus insufficient to discard history on this development panel.
+
+\paragraph{Two recurring failures need different remedies.}
+On the Rome--Florence itinerary, selection exposed the same single source in all three deployments. Each answer received risk rating 4. The two scored empty-history answers received 1 and the third was missing. On the chosen-family book outline, selection exposed one or two sources and scored 4 each time; empty history also scored 4 three times. The first task provides a candidate for changing exposure. In the second, removing all history left the measured failure intact. The current writing request already specified a position, so this evidence alone cannot distinguish unjustified endorsement from a grader penalizing task compliance.
+
 \paragraph{Utility with a fixed Actor contract.}
 On 12 exposed BU tasks, routed selection, direct Grounding, full history, and empty history pass on 6, 10, 11, and 1, with 6, 2, 1, and 0 missing, respectively. Across missingness assignments, routing has 5--11 fewer failures than empty history and one fewer to six more than full history. Five additional tasks conditioned on prior routed success pass under both routed and matched-cap full-history methods. They do not narrow the original missingness interval.
 

@@ -294,7 +294,14 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     partition = json.loads((root / "persist_query_rubric_pair_v1/PARTITION.json").read_text())
     require(sum(row.get("tie",0) for row in partition.values()), 10, "Partition paired ties")
     require("ten of 11 common roots tied" in paper, True, "Partition manuscript claim")
-    return 39 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    binary = json.loads((root / "persist_query_binary_replay_v1/SUMMARY.json").read_text())
+    utility = binary["beneficial_memory_usage"]["outcomes"]
+    totals = utility["QUERY_BINARY"]
+    expected = f"{totals['pass']} passes, {totals['fail']} failures and {totals['unknown']} missing"
+    require(expected in paper, True, "Query-only switch utility")
+    bound = totals["pass"] + totals["unknown"]
+    require(f"at most {bound} passes against {utility['FULL']['pass']} observed" in paper, True, "Utility bound")
+    return 41 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
