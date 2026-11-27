@@ -1,0 +1,18 @@
+{
+  "benchmark": "BenchPreS",
+  "purpose": "label-directed development diagnostic",
+  "original_wire_sha256": "72f07824cf425bcd154ab978c64325b0fd0be46154f49264e6aa38a995881373",
+  "add_wire_sha256": "de9789f859d8381b38742ccafa8f4d8ea5cf9171ad6c52a322e401cf0fabc0cc",
+  "case_sha256": "30125cf6d298cdae7d2133356bd61a3a1733e32645927184533200c9b4668330",
+  "baseline_draws_sha256": "97dd38233e3d67eaf8bf03a6e5dd343110adc4992c8c0519686c4473c105ba7c",
+  "source_delta_sha256": "02573f33226ca71ee6aa62e84e59e3213628731d17c46d2dd6f3d5dac5f244a9",
+  "target_position": 0,
+  "recorded_baseline_draws": 3,
+  "caps": {
+    "AddDraw0": 1,
+    "AddDraw1": 1,
+    "AddDraw2": 1,
+    "BenchAttrs": 30
+  },
+  "code_sha256": "cff9c71c06a0d74522c2c13a6b458fc6cc4a863989613f760974ab7747e85062"
+}

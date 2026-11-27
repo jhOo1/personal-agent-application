@@ -1,0 +1,25 @@
+# Actual single-source changes in the development archive
+
+The review after AMP proposed using scored execution pairs to compile demonstrations for a small intervention policy on top of the existing strong methods. This audit checks whether several directly relevant archives contain the needed teaching evidence. The unit is a pair of registered requests and their saved scores. Pairs may share a task, source group or reference answer. They are not an independent sample.
+
+The checker preserves the task, Actor model and settings, and the non-memory fields. Shared source IDs must bind to unchanged text, and source order must agree. It labels a difference ADD, REMOVE or REBIND only when it concerns one entry. Identical states are KEEP. Replacements of several sources are counted as composite. For the RPEval history-deletion control we specifically require the entire original policy to remain identical. Removing exposure there did not remove the existing A directive. It is an exposure diagnostic of the REMOVE action.
+
+| Archive | Candidate pairs | Single-source operations | Main score gains |
+| --- | ---: | --- | --- |
+| Empty vs complete evidence, three benchmarks | 16 | 0; 14 composite, 2 missing | — |
+| RPEval whole history vs per-source exposure | 12 | 5 REMOVE; 7 composite | 0; all 5 tied |
+| RPEval visible-C diagnostic | 8 | 8 REBIND | 3 gain, 1 loss, 4 tie |
+| RPEval source-local re-entry | 17 | 17 ADD | 4 gain, 3 loss, 10 tie |
+| RPEval hidden B diagnostic | 3 | 3 ADD | 0; all 3 tied |
+| PersistBench equal-cap utility | 26 | 0; 22 composite, 4 missing | — |
+| PersistBench equal-cap risk, two waves | 49 | 0; all 49 composite | — |
+
+Across these 131 linked request pairs, all 33 single-source operations occur in RPEval. This is a census of the named execution archives, not all project artifacts. The atomic classification is based on saved request structure. Among some archival rows the linkage is the stage manifest key rather than a separately stored request digest. The XML branch of the checker is limited to unambiguous one-item-per-line renderings and comparisons with an enclosing candidate view. Task/role/position integrity is checked separately when adding evidence to an archived request for a new experiment. Original grades are used as saved and are not independently recalibrated here.
+
+The two re-entry ADD pairs that raise Match without higher OPB, UPB or FM belong to the same conservative source group. One is the family drive whose old Judge flag limits the interpretation. They do not supply two independent positive demonstrations. The visible-C and hidden-B diagnostics used author labels offline to choose their interventions. In the prior matched resampling control, three visible-C gains over the archived B replies did not produce a net Match gain over fresh unchanged B replies. The one clear output improvement was a family-outing instruction to switch destinations rather than queue. Keep it as a behavior observation. [Visible-C control](../native_residual_v1/RPE_VISIBLE_C_RESULTS.md) · [Source-local re-entry](../source_local_reentry_v1/READOUT.md)
+
+An earlier trajectory study already optimized rule text against real scored outputs and then appended the rules to the native Actor. Its RPEval search gain reversed by source group and BenchPreS completeness declined. The current candidate would compile demonstrable changes to the original memory view while preserving the Actor. A prior paired-example study changed example presentation, with equal aggregate Match and worse misses in the paired arm. There is a difference in executable intervention and selection objective, while success remains unverified. [Earlier trajectory optimization](../native_residual_v1/TRAJECTORY_RESULTS.md) · [Paired examples](../paired_behavior_icl_v1/READOUT.md) · [DSPy paper](https://arxiv.org/abs/2310.03714) · [DSPy example search implementation](https://github.com/stanfordnlp/dspy/blob/main/dspy/teleprompt/random_search.py)
+
+Rather than bootstrap a program from only these data, the next evidence is an isolated source-exposure check on the audited BenchPreS debt-consolidation task. It restores the original omitted objective-expression source to Strong Gate and preserves the semantic mapping of its existing guidance when the positional index shifts. Three previously registered unmodified Strong Gate draws stay as the comparison. This acquisition tests whether a successful demonstration exists on that task. The subsequent comparison of compiled and ordinary demonstrations must use different source groups and keep separate comparisons for each benchmark. [Frozen acquisition](BENCH_ADD.md) · [Audit counts](TRACE_COUNTS.json)
+
+The census ran with zero model requests. From the restored research checkout, `bash reports/qamc_contextual_match_v2_20261112/residual_trace_v1/run.sh audit` replays the counts. The public archive contains method code, manifests' hashes and aggregates. The source data, raw requests and responses used to recompute these counts remain private. No sealed cases were used.

@@ -1,0 +1,107 @@
+{
+  "added_model_calls": 0,
+  "reports": [
+    {
+      "archive": "fixed_actor_exposure",
+      "counts": {
+        "BenchPreS": {
+          "COMPOSITE": 4,
+          "candidate_pairs": 4
+        },
+        "PersistBench": {
+          "COMPOSITE": 4,
+          "candidate_pairs": 6,
+          "incomplete_score": 2
+        },
+        "RPEval": {
+          "COMPOSITE": 6,
+          "candidate_pairs": 6
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    },
+    {
+      "archive": "rpe_mixed_exposure",
+      "counts": {
+        "RPEval": {
+          "COMPOSITE": 7,
+          "REMOVE": 5,
+          "REMOVE/score_tie": 5,
+          "candidate_pairs": 12
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    },
+    {
+      "archive": "rpe_visible_C_diagnostic",
+      "counts": {
+        "RPEval": {
+          "REBIND": 8,
+          "REBIND/protected_gain": 3,
+          "REBIND/score_gain": 3,
+          "REBIND/score_loss": 1,
+          "REBIND/score_tie": 4,
+          "candidate_pairs": 8
+        }
+      },
+      "uses_author_guided_diagnostic_arm": true
+    },
+    {
+      "archive": "rpe_single_source_reentry",
+      "counts": {
+        "RPEval": {
+          "ADD": 17,
+          "ADD/protected_gain": 2,
+          "ADD/protected_gain_groups_with_id": 1,
+          "ADD/score_gain": 4,
+          "ADD/score_loss": 3,
+          "ADD/score_tie": 10,
+          "candidate_pairs": 17
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    },
+    {
+      "archive": "rpe_hidden_B_diagnostic",
+      "counts": {
+        "RPEval": {
+          "ADD": 3,
+          "ADD/score_tie": 3,
+          "candidate_pairs": 3
+        }
+      },
+      "uses_author_guided_diagnostic_arm": true
+    },
+    {
+      "archive": "persist_equal_cap_utility",
+      "counts": {
+        "PersistBench": {
+          "COMPOSITE": 22,
+          "candidate_pairs": 26,
+          "incomplete_score": 4
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    },
+    {
+      "archive": "persist_equal_cap_risk_wave1",
+      "counts": {
+        "PersistBench": {
+          "COMPOSITE": 24,
+          "candidate_pairs": 24
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    },
+    {
+      "archive": "persist_equal_cap_risk_wave2",
+      "counts": {
+        "PersistBench": {
+          "COMPOSITE": 25,
+          "candidate_pairs": 25
+        }
+      },
+      "uses_author_guided_diagnostic_arm": false
+    }
+  ]
+}

@@ -1,6 +1,10 @@
 # QAMC 当前判断与下一次机制对照
 
-## 最新结算 · AMP
+## 最新结算 · 归档单源轨迹与 BenchPreS 补入
+
+对 131 对已曝光归档请求核对实际输入变化，33 对是单条来源的增删或用法调整，均来自 RPEval。两条补入后 Match 提升且保护指标未退的记录属于同一来源组。BenchPreS 债务合并题随后直接对照：补回一条客观表达偏好，Strong Gate 三条旧稿与三条新增稿的该偏好均为 0/3，总 AAR 均为 6/9，MR 均为 0/6，完整度由 5.00 降至 4.67。本次 21 次请求均成功，37,611 Token，无重发。当前三基准示范库的直接证据仍不足，旧强方法继续作为基底。[轨迹审计](implementation/reports/qamc_contextual_match_v2_20261112/residual_trace_v1/TRACE_AUDIT.md) · [BenchPreS 对照](implementation/reports/qamc_contextual_match_v2_20261112/residual_trace_v1/BENCH_ADD_RESULT.md)
+
+## AMP 结算
 
 AMP 把允许记忆影响决策和允许原文进入 Actor 分开。21 道已曝光题、18 个来源组中，只有 5 道的 RAW/AMP 请求实际改变了原文曝光。RPEval 九道同题上三个新组均为 31/46，IPE-C 35/46。BenchPreS 没有形成有效投影对照，AMP 与强 Gate 两道共同题的 AAR 为 1/5 对 4/5。PersistBench 四道 RAW/AMP/PB_RUBRIC 同题均通过，两道严格有益使用题均在共享授权校验阶段缺失。当前 AMP 不晋级，保留已有强方法和真实失分。本轮共 164 次真实请求，报告 583,007 Token，一次长度失败，无重发。适配评分和已曝光病例限制如前。[完整结算](implementation/reports/qamc_contextual_match_v2_20261112/decision_release_v1/READOUT.md)
 
