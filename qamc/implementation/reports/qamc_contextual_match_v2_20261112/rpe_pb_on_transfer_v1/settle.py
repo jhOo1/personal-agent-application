@@ -45,7 +45,8 @@ def report():
                 if subset=="common_with_archive":cells["ARCHIVE"]=archived
                 if all(v is not None for v in cells.values()):pairs[uid]=cells
             keys=(*ARMS,"ARCHIVE") if subset=="common_with_archive" else ARMS
-            results[subset]={a:dict(sum((v[a] for v in pairs.values()),Counter())) for a in keys}
+            results[subset]={a:{field:sum(v[a][field] for v in pairs.values())
+                                for field in ("tasks","positions","matched","OPB","UPB","FM")} for a in keys}
             results[subset]["uids"]=sorted(pairs)
         out["draws"][rep]=results
         ledger=read_stage["ledger"]+draw["ledger"]

@@ -1,0 +1,399 @@
+{
+  "assigned": 12,
+  "draws": {
+    "0": {
+      "assigned": {
+        "FULL": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 43,
+          "OPB": 21,
+          "UPB": 11,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 44,
+          "OPB": 18,
+          "UPB": 11,
+          "FM": 3
+        },
+        "PB": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 43,
+          "OPB": 17,
+          "UPB": 14,
+          "FM": 3
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/045",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/094",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      },
+      "changed": {
+        "FULL": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 37,
+          "OPB": 18,
+          "UPB": 7,
+          "FM": 1
+        },
+        "RP_K": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 38,
+          "OPB": 15,
+          "UPB": 7,
+          "FM": 0
+        },
+        "PB": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 37,
+          "OPB": 14,
+          "UPB": 10,
+          "FM": 0
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/094",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094"
+        ]
+      },
+      "PB_differs_from_RP_K": {
+        "FULL": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 18,
+          "OPB": 6,
+          "UPB": 3,
+          "FM": 1
+        },
+        "RP_K": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 19,
+          "OPB": 5,
+          "UPB": 2,
+          "FM": 0
+        },
+        "PB": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 18,
+          "OPB": 4,
+          "UPB": 5,
+          "FM": 0
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/025"
+        ]
+      },
+      "common_with_archive": {
+        "FULL": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 40,
+          "OPB": 21,
+          "UPB": 10,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 41,
+          "OPB": 18,
+          "UPB": 10,
+          "FM": 3
+        },
+        "PB": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 40,
+          "OPB": 17,
+          "UPB": 13,
+          "FM": 3
+        },
+        "ARCHIVE": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 41,
+          "OPB": 19,
+          "UPB": 12,
+          "FM": 4
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/045",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      },
+      "no_grade_flags": {
+        "FULL": {
+          "tasks": 7,
+          "positions": 48,
+          "matched": 25,
+          "OPB": 16,
+          "UPB": 6,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 7,
+          "positions": 48,
+          "matched": 26,
+          "OPB": 13,
+          "UPB": 7,
+          "FM": 3
+        },
+        "PB": {
+          "tasks": 7,
+          "positions": 48,
+          "matched": 25,
+          "OPB": 12,
+          "UPB": 9,
+          "FM": 3
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      }
+    },
+    "1": {
+      "assigned": {
+        "FULL": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 40,
+          "OPB": 21,
+          "UPB": 10,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 42,
+          "OPB": 22,
+          "UPB": 11,
+          "FM": 6
+        },
+        "PB": {
+          "tasks": 12,
+          "positions": 75,
+          "matched": 40,
+          "OPB": 22,
+          "UPB": 13,
+          "FM": 5
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/045",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/094",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      },
+      "changed": {
+        "FULL": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 34,
+          "OPB": 18,
+          "UPB": 6,
+          "FM": 1
+        },
+        "RP_K": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 36,
+          "OPB": 19,
+          "UPB": 7,
+          "FM": 3
+        },
+        "PB": {
+          "tasks": 10,
+          "positions": 63,
+          "matched": 34,
+          "OPB": 19,
+          "UPB": 9,
+          "FM": 2
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/094",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094"
+        ]
+      },
+      "PB_differs_from_RP_K": {
+        "FULL": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 18,
+          "OPB": 5,
+          "UPB": 4,
+          "FM": 0
+        },
+        "RP_K": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 20,
+          "OPB": 6,
+          "UPB": 1,
+          "FM": 1
+        },
+        "PB": {
+          "tasks": 4,
+          "positions": 29,
+          "matched": 18,
+          "OPB": 6,
+          "UPB": 3,
+          "FM": 0
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/025"
+        ]
+      },
+      "common_with_archive": {
+        "FULL": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 37,
+          "OPB": 21,
+          "UPB": 9,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 40,
+          "OPB": 22,
+          "UPB": 9,
+          "FM": 6
+        },
+        "PB": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 38,
+          "OPB": 22,
+          "UPB": 11,
+          "FM": 5
+        },
+        "ARCHIVE": {
+          "tasks": 11,
+          "positions": 71,
+          "matched": 41,
+          "OPB": 19,
+          "UPB": 12,
+          "FM": 4
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/045",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/024",
+          "rpeval/formal_multi_v1/implicit/025",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      },
+      "no_grade_flags": {
+        "FULL": {
+          "tasks": 8,
+          "positions": 56,
+          "matched": 28,
+          "OPB": 16,
+          "UPB": 8,
+          "FM": 4
+        },
+        "RP_K": {
+          "tasks": 8,
+          "positions": 56,
+          "matched": 32,
+          "OPB": 17,
+          "UPB": 6,
+          "FM": 5
+        },
+        "PB": {
+          "tasks": 8,
+          "positions": 56,
+          "matched": 29,
+          "OPB": 18,
+          "UPB": 7,
+          "FM": 5
+        },
+        "uids": [
+          "rpeval/formal_multi_v1/explicit/000",
+          "rpeval/formal_multi_v1/explicit/073",
+          "rpeval/formal_multi_v1/explicit/074",
+          "rpeval/formal_multi_v1/explicit/114",
+          "rpeval/formal_multi_v1/explicit/129",
+          "rpeval/formal_multi_v1/explicit/142",
+          "rpeval/formal_multi_v1/implicit/094",
+          "rpeval/formal_multi_v1/implicit/119"
+        ]
+      }
+    }
+  },
+  "receipts": {
+    "OK": 120
+  },
+  "reported_tokens": 255782,
+  "unknown_usage": 0
+}
