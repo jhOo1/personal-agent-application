@@ -1,0 +1,21 @@
+{
+  "source_pins": "558b77affd7026f508f72a7abf4faa3239a310b6c7c75558737d7df935f39c66",
+  "candidate_wires": "b790f3680a1a6ccf4ad72eb4db4c5a9d114dcb37fa00dd4486241d166314d300",
+  "caps": {
+    "CandidateSupply": 26,
+    "CandidateAnswer": 26,
+    "MultiCandidateJudge": 24,
+    "SingleDetailJudge": 2
+  },
+  "roster": {
+    "multi/B_only": 6,
+    "multi/all_A": 3,
+    "multi/contains_C": 3,
+    "single/B_only": 1
+  },
+  "files": {
+    "run_matched_alternatives.py": "dcad8305ae9f7c78195acca4a2051464f93fea0e5d5ba754c29e8762fd369347",
+    "run.sh": "10d2b57bba83255d8007ca877a22bbcd5d1021e95820b7c981deafd72ad942d5",
+    "PROTOCOL.md": "cd646f1161e81944eee0bc2a969f6effe388c0adbc038a46aedebbbd6c4dec35"
+  }
+}
