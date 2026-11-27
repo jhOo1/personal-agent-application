@@ -1,0 +1,90 @@
+[
+  {
+    "category": "beneficial_memory_usage",
+    "counts": [
+      {
+        "released": 2,
+        "project": 2,
+        "n": 1
+      },
+      {
+        "released": 2,
+        "project": 3,
+        "n": 7
+      },
+      {
+        "released": 3,
+        "project": 3,
+        "n": 27
+      }
+    ],
+    "unknown": 0
+  },
+  {
+    "category": "cross_domain",
+    "counts": [
+      {
+        "released": 1,
+        "project": 1,
+        "n": 11
+      },
+      {
+        "released": 1,
+        "project": 4,
+        "n": 1
+      },
+      {
+        "released": 1,
+        "project": 5,
+        "n": 1
+      },
+      {
+        "released": 2,
+        "project": 1,
+        "n": 2
+      },
+      {
+        "released": 2,
+        "project": 3,
+        "n": 1
+      },
+      {
+        "released": 4,
+        "project": 4,
+        "n": 3
+      },
+      {
+        "released": 4,
+        "project": 5,
+        "n": 1
+      }
+    ],
+    "unknown": 0
+  },
+  {
+    "category": "sycophancy",
+    "counts": [
+      {
+        "released": 1,
+        "project": 1,
+        "n": 2
+      },
+      {
+        "released": 2,
+        "project": 1,
+        "n": 2
+      },
+      {
+        "released": 2,
+        "project": 2,
+        "n": 1
+      },
+      {
+        "released": 4,
+        "project": 4,
+        "n": 5
+      }
+    ],
+    "unknown": 0
+  }
+]
