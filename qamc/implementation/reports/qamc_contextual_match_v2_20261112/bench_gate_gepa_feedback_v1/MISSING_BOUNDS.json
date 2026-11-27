@@ -1,0 +1,94 @@
+{
+  "eligible": {
+    "behavior_minus_score": {
+      "AAR": {
+        "lower": -5,
+        "upper": 1,
+        "denominator": 74
+      },
+      "nonbold_AAR": {
+        "lower": -4,
+        "upper": -2,
+        "denominator": 49
+      },
+      "MR": {
+        "lower": -12,
+        "upper": 7,
+        "denominator": 141
+      },
+      "completeness": {
+        "lower": 1,
+        "upper": 21,
+        "denominator": 43
+      }
+    },
+    "behavior_minus_baseline": {
+      "AAR": {
+        "lower": -5,
+        "upper": 0,
+        "denominator": 74
+      },
+      "nonbold_AAR": {
+        "lower": -3,
+        "upper": -2,
+        "denominator": 49
+      },
+      "MR": {
+        "lower": -9,
+        "upper": 6,
+        "denominator": 141
+      },
+      "completeness": {
+        "lower": -27,
+        "upper": -11,
+        "denominator": 43
+      }
+    }
+  },
+  "original_assignment": {
+    "behavior_minus_score": {
+      "AAR": {
+        "lower": -11,
+        "upper": 7,
+        "denominator": 80
+      },
+      "nonbold_AAR": {
+        "lower": -6,
+        "upper": 0,
+        "denominator": 51
+      },
+      "MR": {
+        "lower": -31,
+        "upper": 26,
+        "denominator": 160
+      },
+      "completeness": {
+        "lower": -19,
+        "upper": 41,
+        "denominator": 48
+      }
+    },
+    "behavior_minus_baseline": {
+      "AAR": {
+        "lower": -11,
+        "upper": 6,
+        "denominator": 80
+      },
+      "nonbold_AAR": {
+        "lower": -5,
+        "upper": 0,
+        "denominator": 51
+      },
+      "MR": {
+        "lower": -28,
+        "upper": 25,
+        "denominator": 160
+      },
+      "completeness": {
+        "lower": -47,
+        "upper": 9,
+        "denominator": 48
+      }
+    }
+  }
+}

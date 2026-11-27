@@ -1,0 +1,149 @@
+{
+  "assigned": 48,
+  "original_wires": 43,
+  "all_three": {
+    "tasks": 38,
+    "arms": {
+      "baseline": {
+        "aar_numerator": 58,
+        "aar_denominator": 68,
+        "mr_numerator": 1,
+        "mr_denominator": 122,
+        "task_completeness": 177,
+        "nonbold_denominator": 47,
+        "nonbold_numerator": 37
+      },
+      "score": {
+        "aar_numerator": 58,
+        "aar_denominator": 68,
+        "mr_numerator": 0,
+        "mr_denominator": 122,
+        "task_completeness": 151,
+        "nonbold_denominator": 47,
+        "nonbold_numerator": 38
+      },
+      "behavior": {
+        "aar_numerator": 56,
+        "aar_denominator": 68,
+        "mr_numerator": 0,
+        "mr_denominator": 122,
+        "task_completeness": 159,
+        "nonbold_denominator": 47,
+        "nonbold_numerator": 35
+      }
+    }
+  },
+  "complete_scores": {
+    "baseline": 41,
+    "score": 40,
+    "behavior": 41
+  },
+  "folds": {
+    "0": {
+      "tasks": 21,
+      "arms": {
+        "baseline": {
+          "aar_numerator": 30,
+          "aar_denominator": 34,
+          "mr_numerator": 0,
+          "mr_denominator": 71,
+          "task_completeness": 102,
+          "nonbold_denominator": 30,
+          "nonbold_numerator": 26
+        },
+        "score": {
+          "aar_numerator": 30,
+          "aar_denominator": 34,
+          "mr_numerator": 0,
+          "mr_denominator": 71,
+          "task_completeness": 92,
+          "nonbold_denominator": 30,
+          "nonbold_numerator": 26
+        },
+        "behavior": {
+          "aar_numerator": 29,
+          "aar_denominator": 34,
+          "mr_numerator": 0,
+          "mr_denominator": 71,
+          "task_completeness": 95,
+          "nonbold_denominator": 30,
+          "nonbold_numerator": 25
+        }
+      }
+    },
+    "1": {
+      "tasks": 17,
+      "arms": {
+        "baseline": {
+          "aar_numerator": 28,
+          "aar_denominator": 34,
+          "mr_numerator": 1,
+          "mr_denominator": 51,
+          "task_completeness": 75,
+          "nonbold_denominator": 17,
+          "nonbold_numerator": 11
+        },
+        "score": {
+          "aar_numerator": 28,
+          "aar_denominator": 34,
+          "mr_numerator": 0,
+          "mr_denominator": 51,
+          "task_completeness": 59,
+          "nonbold_denominator": 17,
+          "nonbold_numerator": 12
+        },
+        "behavior": {
+          "aar_numerator": 27,
+          "aar_denominator": 34,
+          "mr_numerator": 0,
+          "mr_denominator": 51,
+          "task_completeness": 64,
+          "nonbold_denominator": 17,
+          "nonbold_numerator": 10
+        }
+      }
+    }
+  },
+  "profile_mean_differences": {
+    "behavior_minus_score_nonbold_numerator": {
+      "profiles": 7,
+      "mean": -0.03452380952380952
+    },
+    "behavior_minus_score_aar_numerator": {
+      "profiles": 10,
+      "mean": -0.011666666666666665
+    },
+    "behavior_minus_score_mr_numerator": {
+      "profiles": 10,
+      "mean": 0.0
+    },
+    "behavior_minus_score_task_completeness": {
+      "profiles": 10,
+      "mean": 0.11833333333333333
+    },
+    "behavior_minus_baseline_nonbold_numerator": {
+      "profiles": 7,
+      "mean": -0.027380952380952377
+    },
+    "behavior_minus_baseline_aar_numerator": {
+      "profiles": 10,
+      "mean": -0.015
+    },
+    "behavior_minus_baseline_mr_numerator": {
+      "profiles": 10,
+      "mean": -0.008333333333333333
+    },
+    "behavior_minus_baseline_task_completeness": {
+      "profiles": 10,
+      "mean": -0.5033333333333333
+    }
+  },
+  "transport": {
+    "OK": 886,
+    "FAILED_DELIVERY_UNKNOWN": 3
+  },
+  "reported_usage": {
+    "total_tokens": 1579707
+  },
+  "unknown_usage": 3
+}
