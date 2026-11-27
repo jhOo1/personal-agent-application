@@ -1,0 +1,42 @@
+[
+  {
+    "aar_gain_max": 0,
+    "mr_change_min": 0,
+    "completeness_change_max": 0,
+    "potential_protected_gain": false,
+    "receipts": {
+      "OK": 5,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    }
+  },
+  {
+    "aar_gain_max": 0,
+    "mr_change_min": 1,
+    "completeness_change_max": 0,
+    "potential_protected_gain": false,
+    "receipts": {
+      "OK": 5,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    }
+  },
+  {
+    "aar_gain_max": 1,
+    "mr_change_min": 0,
+    "completeness_change_max": 0,
+    "potential_protected_gain": true,
+    "receipts": {
+      "FAILED_DELIVERY_UNKNOWN": 2,
+      "OK": 4
+    }
+  },
+  {
+    "aar_gain_max": 0,
+    "mr_change_min": 0,
+    "completeness_change_max": 2,
+    "potential_protected_gain": false,
+    "receipts": {
+      "OK": 5,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    }
+  }
+]
