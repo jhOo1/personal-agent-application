@@ -1,0 +1,3 @@
+# Measurement replication of header edits
+
+One contemporaneous draw of each previously submitted completeness wire for both versions of all six edits; also repeat every attribute wire explicitly describing concise or brief responses on those tasks. No outcome-dependent choice among these fields. Fixed previous answers, model and scoring messages; balanced alternating arm order by sorted task, same stage per field, separate registration and no retries. Report grade changes within identical wires and new paired direction; keep all pre-existing scores unchanged. This conditional, small-panel measurement cannot estimate general judge reliability. No Actor, sealed source or promotion decision.

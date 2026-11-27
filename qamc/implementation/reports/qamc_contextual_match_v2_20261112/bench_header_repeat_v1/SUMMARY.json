@@ -1,0 +1,77 @@
+{
+  "stats": {
+    "brevity": {
+      "valid_wires": 4,
+      "within_wire_changes": 1,
+      "complete_pairs": 2,
+      "original_net_edit": 1,
+      "replicate_net_edit": 0,
+      "identical_pair_difference": 1
+    },
+    "completeness": {
+      "valid_wires": 12,
+      "within_wire_changes": 4,
+      "complete_pairs": 6,
+      "original_net_edit": -2,
+      "replicate_net_edit": 2,
+      "identical_pair_difference": 3
+    }
+  },
+  "paired_changes": [
+    {
+      "case": 3,
+      "kind": "brevity",
+      "original": 1,
+      "replicate": 0
+    },
+    {
+      "case": 4,
+      "kind": "brevity",
+      "original": 0,
+      "replicate": 0
+    },
+    {
+      "case": 1,
+      "kind": "completeness",
+      "original": 0,
+      "replicate": 0
+    },
+    {
+      "case": 2,
+      "kind": "completeness",
+      "original": -1,
+      "replicate": 1
+    },
+    {
+      "case": 3,
+      "kind": "completeness",
+      "original": 0,
+      "replicate": 0
+    },
+    {
+      "case": 4,
+      "kind": "completeness",
+      "original": 0,
+      "replicate": 1
+    },
+    {
+      "case": 5,
+      "kind": "completeness",
+      "original": -1,
+      "replicate": 0
+    },
+    {
+      "case": 6,
+      "kind": "completeness",
+      "original": 0,
+      "replicate": 0
+    }
+  ],
+  "requests": 16,
+  "transport": {
+    "OK": 16
+  },
+  "tokens": 11342,
+  "unknown_usage": 0,
+  "retries": 0
+}
