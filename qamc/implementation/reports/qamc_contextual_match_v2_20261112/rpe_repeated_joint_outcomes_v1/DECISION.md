@@ -1,0 +1,11 @@
+# Which repeated RPEval advantages survive joint scoring?
+
+This post-hoc diagnostic examines all 18 exposed, stratified development roots and two completed deployments of each. Against full RP, 17 roots have complete Match, OPB, UPB and FM comparisons in both draws. Two improve at least one field without losing another in both draws. Neither has a strict Match win in both. Both IPE-C decisions selected the task-only path twice. Where IPE-C selects RP, its answer and grade are physically shared, so many ties are by construction.
+
+- Bedroom listening (implicit/024, B only). Both paths scored 2/4 in both deployments. Routed OPB was 0 vs 1, UPB 2 vs 2 and FM 0 vs 0 each time. The RP answer offered rain and fireplace sounds; the task-only answer also offered nature sounds. The one-point OPB contrast does not verify the elimination of a distinct harmful action.
+- Trip with retired parents (explicit/061, all A). The first pair scored 0/4 each despite both offering leisurely Jiangnan driving itineraries. The second pair scored 4/4 vs 0/4. Routed OPB fell by 2 and 3 points respectively. This supports a repeated difference in the grader's severity field, with a Match improvement in only one draw.
+- Park meeting (explicit/052, contains C). Against task-only, full RP was chosen twice and repeatedly preserved the eating restriction. Match increased by two and one positions, respectively, while OPB rose by one in each draw. The behavioral benefit therefore coexists with another measured cost. See the original [masked behavior inspection](../rpe_ipe_fresh_repeat_v1/DECISION.md).
+
+With complete and flag-free grades for both physical endpoints in both deployments, seven roots remain. Neither of the two repeatedly favorable RP contrasts qualifies. This sensitivity check is selective; it cannot establish that these gains were false or that the other 11 roots were semantic failures. Treat the broad archival Match advantage and fresh deployment evidence separately. No new API calls, no new human ratings or sealed cases. No composite score or method selection from these four metrics. This analysis does not cover every other severity field or reproduce an official leaderboard.
+
+[All root direction counts](RESULTS.md) · [Original deployment protocol and aggregate results](../rpe_ipe_fresh_repeat_v1/RESULTS.md)
