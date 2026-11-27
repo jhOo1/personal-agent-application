@@ -1,0 +1,62 @@
+{
+  "new_request_upper_bound": 638,
+  "positions_per_arm": 111,
+  "stages": {
+    "Matched1": {
+      "archived_by_stage": {
+        "Actor": 43,
+        "Judge": 43,
+        "Route": 19,
+        "Select": 19
+      },
+      "archived_requests": 124,
+      "old_unsuccessful_attempts": 0,
+      "positions": 19
+    },
+    "Matched2": {
+      "archived_by_stage": {
+        "Actor": 44,
+        "Judge": 44,
+        "Route": 19,
+        "Select": 19
+      },
+      "archived_requests": 126,
+      "old_unsuccessful_attempts": 0,
+      "positions": 19
+    },
+    "Matched3": {
+      "archived_by_stage": {
+        "Actor": 20,
+        "Judge": 19,
+        "Route": 19,
+        "Select": 19
+      },
+      "archived_requests": 77,
+      "old_unsuccessful_attempts": 1,
+      "positions": 19
+    },
+    "Remaining1": {
+      "archived_by_stage": {
+        "Actor": 48,
+        "Judge": 46,
+        "Route": 28,
+        "Select": 23
+      },
+      "archived_requests": 145,
+      "old_unsuccessful_attempts": 7,
+      "positions": 30
+    },
+    "Remaining2": {
+      "archived_by_stage": {},
+      "archived_requests": 0,
+      "old_unsuccessful_attempts": 0,
+      "positions": 12
+    },
+    "Remaining3": {
+      "archived_by_stage": {},
+      "archived_requests": 0,
+      "old_unsuccessful_attempts": 0,
+      "positions": 12
+    }
+  }
+}
