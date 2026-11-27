@@ -2,12 +2,13 @@
 from collections import Counter, defaultdict
 import json
 
+from action_commit import parse_controller_json
 from qamc.common import sha
 
 from run_car import ARMS, RUN, preflight, probe
 
 
-def inspect(results, cards, manifest):
+def inspect(results, cards, manifest, receipts=None):
     by_uid = {c["root"]["uid"]: c for c in cards}
     inputs = defaultdict(dict)
     for job in manifest["units"]:
@@ -54,6 +55,22 @@ def inspect(results, cards, manifest):
         if len(state) != 1:
             raise ValueError("Expected one COMMIT outcome slot per task")
         row = state[0]
+        if receipts is not None:
+            rec, raw = receipts[uid, "COMMIT"]
+            if not rec or rec["request_sha256"] != sha(wires["COMMIT"]):
+                raise ValueError("Cannot trace the delivery of the copy-only control")
+            if rec["status"] == "OK":
+                try:
+                    program = parse_controller_json(raw)
+                except (ValueError, TypeError):
+                    program = None
+                mode = program.get("mode") if isinstance(program, dict) else None
+                if mode in ("COMMIT", "SELECT"):
+                    outcome[f"controller_requested_{mode}"] += 1
+                else:
+                    outcome["controller_invalid_or_unknown_mode"] += 1
+                if mode == "COMMIT" and row.get("outcome") != "COMMITTED":
+                    outcome["requested_commit_missing_from_actual_output"] += 1
         if row.get("outcome") != "COMMITTED":
             continue
         outcome["nontrivial_commit"] += 1
@@ -69,5 +86,7 @@ if __name__ == "__main__":
         raise ValueError("Frozen delivery audit does not match the experiment")
     results = probe.read(RUN / "RESULTS.json")
     path = RUN / "Final_MANIFEST.json"
-    print(json.dumps(inspect(results, cards, probe.read(path) if path.exists() else {"units": []}),
+    probe.RUN = probe.OUT = RUN
+    print(json.dumps(inspect(results, cards, probe.read(path) if path.exists() else {"units": []},
+                             probe.stage_receipts("Final")),
                      indent=2, sort_keys=True))
