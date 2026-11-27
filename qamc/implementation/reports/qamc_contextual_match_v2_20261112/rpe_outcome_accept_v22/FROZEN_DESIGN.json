@@ -1,0 +1,13 @@
+{
+  "assigned": 24,
+  "parent_pin_sha256": "bf3a1ebd723d950d4a06859d280a237e0987808df52fbdfeec5c7395a66f2a34",
+  "parent_locked_answers_sha256": "f7906553f8ffdde0235b6f46c4d17bd855d413fb26093a7a2993837bad6ed6e8",
+  "entries_sha256": "69535b42758c5924fec322df38addc4219aa3629125e4050888e4015dd515a58",
+  "jobs_sha256": "c2196310c2e6725419774eeab92730d953d731630fce976aa77babcc7ed22cdf",
+  "physical_cap": 68,
+  "code_sha256": {
+    "acceptance.py": "444e6ddf94bfa03fd38a28e75cd280f9c31d904449c076dfc43f9d8e71082799",
+    "PROTOCOL.md": "6cce9ba267db88a1a37e7b29df091180eab262f001749939c51b383b89bb5506",
+    "run.sh": "981d6d006cab629aec073503de3d9554b954b5fc4492e9d2805ca319892c2108"
+  }
+}
