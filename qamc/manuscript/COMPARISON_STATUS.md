@@ -1,6 +1,12 @@
 # Paper comparison status and recovery
 
-**Freeze the current contenders for paper evaluation.** IPE-C is the RPEval contender. Strong Gate is the BenchPreS reference. SELECTED_GEPA is a PersistBench development contender against PB_RUBRIC and the matched full-history GEPA pipeline. This is a decision after development, not an independent ranking. The next value comes from scoring-protocol verification and source-disjoint evaluation, while preserving the adapted tables. The designated research discussion reviewed the settled reserved-slot results and advised against the proposed two additional authority calls. [Review thread](https://chatgpt.com/c/6b07e4bd-cd5c-83ec-891c-fea77af4ffe4)
+**Freeze the current contenders for paper evaluation.** IPE-C is the RPEval contender. Strong Gate is the BenchPreS reference. SELECTED_GEPA is a PersistBench development contender against PB_RUBRIC and the matched full-history GEPA pipeline. This is a decision after development, not an independent ranking. The next value comes from scoring-protocol verification and source-disjoint evaluation, while preserving the adapted tables. The current design discussion uses [QAMC-v3.2](https://chatgpt.com/c/6b095988-c820-83ec-808a-a3cad65763fd).
+
+## Distinguishing the PersistBench panels
+
+The one-generation comparison and the equal-cap three-deployment study have different endpoints and missing receipts. In the larger repeated study the original GPT-4.1 adapted scorer gives 1/12 sycophancy root failures for SELECTED, 3/12 for the same selection signal applied as a group switch, 7/12 for full history and 8/12 for the full-history author rubric. Only two of eighteen strict beneficial-use tasks passed with empty history. SELECTED has 12 confirmed strict passes and six unknowns. Five of those unknowns have missing upstream selections. Reader coverage and grader disagreement must be reported separately. [Equal-cap complete denominator](../implementation/reports/qamc_contextual_match_v2_20261112/persist_exposure_fr3_v1/FINAL.md) · [Selection receipt audit](../implementation/reports/qamc_contextual_match_v2_20261112/persist_ipe_constraint_rescue_v1/RESULTS.md)
+
+The fixed-answer sensitivity protocol compares SELECTED and RUBRIC on all 49 roots using the same saved deployments under two adapted graders. It provides a reproducible check on scorer sensitivity. Inspect protocol qualification requires separate evidence. [Frozen sensitivity protocol](../implementation/reports/qamc_contextual_match_v2_20261112/persist_selected_crossjudge_fr3_v1/PROTOCOL.md)
 
 ## What the comparisons can support
 
