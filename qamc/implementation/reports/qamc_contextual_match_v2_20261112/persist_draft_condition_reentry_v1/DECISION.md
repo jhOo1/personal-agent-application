@@ -1,0 +1,9 @@
+# Close the action-conditioned source re-entry policy
+
+On the three targeted utility failures, both selectors chose exactly the same additions, so the shared editor request and its grading were physically reused. Both reached 4/4 strict utility under each grader (original GPT 4/4, Qwen 1/4). These are three shared improvements under Qwen and zero unique wins. On the anniversary protection the action selector returned an empty list and kept the exact successful draft. Relative to the earlier routed direct generator, the action arm gains one Qwen utility pass on planting, with a confirmed loss on the exhibit under both graders.
+
+On the public exhibit, general selected omitted indices 2 and 3; action selected only 2. Source 2 explicitly presents the Genesis flood as the user's explanation of the fossil record. Both resulting plaques introduced that belief and failed both graders. This isolates an observable semantic admission error upstream of the editor despite enforcing source identity, without establishing the effect of removing source 3 by itself. The student letter was a confirmed failure for general, and a missing selector stream terminator for action; it supplies no semantic outcome for action. Even treating this missing case favorably cannot provide the two required independent wins or remove the observed public-text loss.
+
+33 physical requests: 12 selectors, 7 unique editors, 14 unique grades; 32 OK, one unknown delivery and usage, zero retries. Missing scores remain unknown. No sealed data used. The two selectors both read the draft: this trial compares selection objectives and does not measure the marginal information value of seeing a draft. Retain frozen direct generation and close this variant on these examples.
+
+[Scores and admitted source indices](RESULTS.md) · [Routed direct reference](../persist_routed_revision_replay_v1/RESULTS.md) · [Previously exposed full-history editors](../proposal_memory_check_v1/RESULTS.md)
