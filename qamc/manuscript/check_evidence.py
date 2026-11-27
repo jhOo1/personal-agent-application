@@ -268,7 +268,13 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
                                   ("neither_endpoint_flagged", "groups_with_any_headroom", [6, 1, 1])):
         require([ceiling[s][key][metric] for s in strata], expected, "Saved endpoint opportunity")
     require("37, two, and six positions across six, one, and one source groups" in paper, True, "Endpoint ceiling prose")
-    return 22 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
+    settled = list(markdown_rows((root / "shared_history_activation_v1/RESULTS.md").read_text()))
+    total = next(r for r in settled if r[0] == "Total")
+    require(total[1:], ["17","56/95","56/95","66/95"], "Common activation RPEval")
+    require(f"both scored {total[2]} Match, compared with {total[4]} for IPE-C" in paper, True, "Activation prose")
+    require(next(r for r in settled if r[0] == "Sycophancy")[1:4], ["3/3/0","3/3/0","6/0/0"], "Shared risk outcome")
+    require(next(r for r in settled if r[0] == "Strict beneficial use")[1:4], ["6/0/0","6/0/0","3/0/3"], "Shared utility outcome")
+    return 26 + len(checked) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
 
 
 if __name__ == "__main__":
