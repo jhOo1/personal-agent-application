@@ -1,0 +1,188 @@
+{
+  "opportunities": {
+    "0b00d0a0": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 3,
+        "completeness": 5,
+        "nonbold": 1,
+        "nonbold_denominator": 2,
+        "positions": 2,
+        "primary": 1
+      },
+      "methods": [
+        "DES2GEN_FULL",
+        "MEMADAPTER_FULL",
+        "PAPER_SELECTIVITY",
+        "RPR_PAPER_FULL"
+      ],
+      "missed_attributes": [
+        "responses written from a neutral perspective."
+      ]
+    },
+    "2d6ba4ff": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 2,
+        "completeness": 5,
+        "nonbold": 2,
+        "nonbold_denominator": 3,
+        "positions": 3,
+        "primary": 2
+      },
+      "methods": [
+        "RPR_PAPER_FULL"
+      ],
+      "missed_attributes": [
+        "responses written as an objective information provider."
+      ]
+    },
+    "43a1728d": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 2,
+        "completeness": 5,
+        "nonbold": 2,
+        "nonbold_denominator": 3,
+        "positions": 3,
+        "primary": 2
+      },
+      "methods": [
+        "MEMADAPTER_FULL"
+      ],
+      "missed_attributes": [
+        "responses written as an objective information provider."
+      ]
+    },
+    "46978467": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 4,
+        "completeness": 4,
+        "nonbold": 1,
+        "nonbold_denominator": 1,
+        "positions": 1,
+        "primary": 1
+      },
+      "methods": [
+        "DES2GEN_FULL",
+        "RPR_PAPER_FULL"
+      ],
+      "missed_attributes": []
+    },
+    "bbaec000": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 3,
+        "completeness": 4,
+        "nonbold": 1,
+        "nonbold_denominator": 1,
+        "positions": 2,
+        "primary": 2
+      },
+      "methods": [
+        "DES2GEN_FULL",
+        "PAPER_SELECTIVITY"
+      ],
+      "missed_attributes": []
+    },
+    "bfcfd277": {
+      "gate": {
+        "MR": 0,
+        "MR_denominator": 2,
+        "completeness": 5,
+        "nonbold": 2,
+        "nonbold_denominator": 3,
+        "positions": 3,
+        "primary": 2
+      },
+      "methods": [
+        "PAPER_SELECTIVITY"
+      ],
+      "missed_attributes": [
+        "responses written as an objective information provider."
+      ]
+    }
+  },
+  "pairs": {
+    "DES2GEN_FULL": {
+      "counts": {
+        "joint_both": 14,
+        "joint_external_only": 3,
+        "joint_gate_only": 13,
+        "joint_neither": 10,
+        "nonbold_required_both": 11,
+        "nonbold_required_external_only": 5,
+        "nonbold_required_gate_only": 8,
+        "nonbold_required_neither": 7,
+        "paired": 40,
+        "unpaired": 8
+      },
+      "external_only_profiles": 3,
+      "external_only_public_prefixes": [
+        "0b00d0a0",
+        "46978467",
+        "bbaec000"
+      ]
+    },
+    "MEMADAPTER_FULL": {
+      "counts": {
+        "joint_both": 9,
+        "joint_external_only": 2,
+        "joint_gate_only": 17,
+        "joint_neither": 11,
+        "nonbold_required_both": 8,
+        "nonbold_required_external_only": 3,
+        "nonbold_required_gate_only": 9,
+        "nonbold_required_neither": 9,
+        "paired": 39,
+        "unpaired": 9
+      },
+      "external_only_profiles": 2,
+      "external_only_public_prefixes": [
+        "0b00d0a0",
+        "43a1728d"
+      ]
+    },
+    "PAPER_SELECTIVITY": {
+      "counts": {
+        "joint_both": 14,
+        "joint_external_only": 3,
+        "joint_gate_only": 13,
+        "joint_neither": 10,
+        "nonbold_required_both": 9,
+        "nonbold_required_external_only": 3,
+        "nonbold_required_gate_only": 9,
+        "nonbold_required_neither": 9,
+        "paired": 40,
+        "unpaired": 8
+      },
+      "external_only_profiles": 3,
+      "external_only_public_prefixes": [
+        "0b00d0a0",
+        "bbaec000",
+        "bfcfd277"
+      ]
+    },
+    "RPR_PAPER_FULL": {
+      "counts": {
+        "joint_both": 14,
+        "joint_external_only": 3,
+        "joint_gate_only": 14,
+        "joint_neither": 10,
+        "nonbold_required_both": 12,
+        "nonbold_required_external_only": 3,
+        "nonbold_required_gate_only": 7,
+        "nonbold_required_neither": 9,
+        "paired": 41,
+        "unpaired": 7
+      },
+      "external_only_profiles": 3,
+      "external_only_public_prefixes": [
+        "0b00d0a0",
+        "2d6ba4ff",
+        "46978467"
+      ]
+    }
+  }
+}
