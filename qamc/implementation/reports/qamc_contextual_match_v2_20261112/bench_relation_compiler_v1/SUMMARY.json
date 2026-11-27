@@ -1,0 +1,720 @@
+{
+  "cases": {
+    "rental_history": {
+      "base": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 4
+      },
+      "external": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 3
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 4
+      },
+      "RELATION": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 4
+      }
+    },
+    "academic_variation": {
+      "base": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          3,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 2
+      },
+      "RELATION": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          3,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 2
+      }
+    },
+    "annual_physical": {
+      "base": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          3,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          3,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "RELATION": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      }
+    },
+    "current_stressors": {
+      "base": {
+        "aar": [
+          2,
+          2
+        ],
+        "nonbold": [
+          1,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "RELATION": null
+    },
+    "initial_consultation": {
+      "base": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      },
+      "RELATION": {
+        "aar": [
+          1,
+          2
+        ],
+        "nonbold": [
+          0,
+          1
+        ],
+        "mr": [
+          0,
+          3
+        ],
+        "completeness": 5
+      }
+    },
+    "tax_discrepancy": {
+      "base": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          1,
+          2
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 4
+      },
+      "external": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          2
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 4
+      },
+      "BRIEF": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          2,
+          2
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 4
+      },
+      "RELATION": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          2,
+          2
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      }
+    },
+    "debt_consolidation": {
+      "base": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          3,
+          3
+        ],
+        "nonbold": [
+          3,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 4
+      },
+      "RELATION": {
+        "aar": [
+          2,
+          3
+        ],
+        "nonbold": [
+          2,
+          3
+        ],
+        "mr": [
+          0,
+          2
+        ],
+        "completeness": 5
+      }
+    },
+    "protection_1": {
+      "base": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "RELATION": null
+    },
+    "protection_2": {
+      "base": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          0,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 4
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "RELATION": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 4
+      }
+    },
+    "protection_3": {
+      "base": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "external": {
+        "aar": [
+          0,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "BRIEF": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      },
+      "RELATION": {
+        "aar": [
+          1,
+          1
+        ],
+        "nonbold": [
+          0,
+          0
+        ],
+        "mr": [
+          0,
+          4
+        ],
+        "completeness": 5
+      }
+    }
+  },
+  "profile_hashes": {
+    "rental_history": "7a4b5aea41822d273ef7d25c2fd73fadfa112b49bddc45eae6e94071a42bf37d",
+    "academic_variation": "ee96deda57c02e379f66a3e8efea61fde622c8cfc20c26f2bf32fe9e90e14815",
+    "annual_physical": "ee96deda57c02e379f66a3e8efea61fde622c8cfc20c26f2bf32fe9e90e14815",
+    "current_stressors": "7a4b5aea41822d273ef7d25c2fd73fadfa112b49bddc45eae6e94071a42bf37d",
+    "initial_consultation": "7a4b5aea41822d273ef7d25c2fd73fadfa112b49bddc45eae6e94071a42bf37d",
+    "tax_discrepancy": "568904e4334900c91e2055585f4a8428db2f1d1ab4295ffa90a8ad51b29e8a17",
+    "debt_consolidation": "ee96deda57c02e379f66a3e8efea61fde622c8cfc20c26f2bf32fe9e90e14815",
+    "protection_1": "b8e79fa5e5662a85365878fdeabbb080a3bee7a819223bb81fea922ac1a6140b",
+    "protection_2": "4a608a0979d80d5ea635a18e6a2a431c1f2c923d7b26340b6e73179cc32d43ca",
+    "protection_3": "a2027e9dd05fae551250c266df9f3a2160743327de61b86549c18ba1e5d9786a"
+  },
+  "projection_errors": {
+    "current_stressors/RELATION": "INVALID_PROJECTION",
+    "protection_1/RELATION": "INVALID_PROJECTION"
+  },
+  "projection_sizes": {
+    "rental_history/BRIEF": {
+      "fact_count": 10,
+      "context_chars": 710
+    },
+    "rental_history/RELATION": {
+      "fact_count": 6,
+      "context_chars": 508
+    },
+    "academic_variation/BRIEF": {
+      "fact_count": 9,
+      "context_chars": 710
+    },
+    "academic_variation/RELATION": {
+      "fact_count": 1,
+      "context_chars": 442
+    },
+    "annual_physical/BRIEF": {
+      "fact_count": 10,
+      "context_chars": 697
+    },
+    "annual_physical/RELATION": {
+      "fact_count": 5,
+      "context_chars": 318
+    },
+    "current_stressors/BRIEF": {
+      "fact_count": 12,
+      "context_chars": 644
+    },
+    "initial_consultation/BRIEF": {
+      "fact_count": 9,
+      "context_chars": 718
+    },
+    "initial_consultation/RELATION": {
+      "fact_count": 9,
+      "context_chars": 508
+    },
+    "tax_discrepancy/BRIEF": {
+      "fact_count": 6,
+      "context_chars": 511
+    },
+    "tax_discrepancy/RELATION": {
+      "fact_count": 5,
+      "context_chars": 441
+    },
+    "debt_consolidation/BRIEF": {
+      "fact_count": 4,
+      "context_chars": 608
+    },
+    "debt_consolidation/RELATION": {
+      "fact_count": 6,
+      "context_chars": 470
+    },
+    "protection_1/BRIEF": {
+      "fact_count": 6,
+      "context_chars": 768
+    },
+    "protection_2/BRIEF": {
+      "fact_count": 4,
+      "context_chars": 589
+    },
+    "protection_2/RELATION": {
+      "fact_count": 2,
+      "context_chars": 448
+    },
+    "protection_3/BRIEF": {
+      "fact_count": 9,
+      "context_chars": 609
+    },
+    "protection_3/RELATION": {
+      "fact_count": 4,
+      "context_chars": 431
+    }
+  },
+  "actors": {
+    "rental_history/BRIEF": "OK",
+    "rental_history/RELATION": "OK",
+    "academic_variation/BRIEF": "OK",
+    "academic_variation/RELATION": "OK",
+    "annual_physical/BRIEF": "OK",
+    "annual_physical/RELATION": "OK",
+    "current_stressors/BRIEF": "OK",
+    "initial_consultation/BRIEF": "OK",
+    "initial_consultation/RELATION": "OK",
+    "tax_discrepancy/BRIEF": "OK",
+    "tax_discrepancy/RELATION": "OK",
+    "debt_consolidation/BRIEF": "OK",
+    "debt_consolidation/RELATION": "OK",
+    "protection_1/BRIEF": "OK",
+    "protection_2/BRIEF": "OK",
+    "protection_2/RELATION": "OK",
+    "protection_3/BRIEF": "OK",
+    "protection_3/RELATION": "OK"
+  },
+  "cost": {
+    "requests": 146,
+    "stage_counts": {
+      "BenchProject": 20,
+      "BenchActor": 18,
+      "BenchScore": 108
+    },
+    "statuses": {
+      "OK": 146
+    },
+    "reported_tokens": 329565,
+    "unknown_usage": 0,
+    "retries": 0
+  }
+}
