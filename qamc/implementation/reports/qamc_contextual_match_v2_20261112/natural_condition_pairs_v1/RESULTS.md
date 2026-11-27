@@ -1,0 +1,15 @@
+# Can a change in memory change the primary recommendation?
+
+We searched all 295 successful archived RP reconstruction Actor answers in the formal multi-preference development archive, including ones without usable Judge scores. Holding Query, context, facts, system message and model settings identical gave 50 distinct background payloads and 803 unordered same-background pairs. None differed by just one insertion, deletion or substitution of a whole source record while preserving the remaining record sequence and IDs. Ignoring IDs and presentation order yielded 60 pairs one source-text multiset edit apart. In 20 of them, from 16 distinct task payloads, unchanged text also retained its predicted policy as a multiset. Fourteen additional pairs had identical text multisets. A payload group here is not a certified independent source root.
+
+Three inspected examples from the 20 show what this archive can supply for development:
+
+| Exposed explicit variants | Source difference, RP prediction | Actual decision in archived RP outputs |
+|---|---|---|
+| 123 and 129, route to a music class | 129 adds strong noise intolerance, predicted C | 123 prioritizes proximity or direct transit. 129 prioritizes private sound-insulated studios away from noisy streets and calls ahead about noise. This changes the venue screening criterion. Neither answer establishes how the user would select an actual second studio once a named one failed. |
+| 103 and 094, healthier takeout | 094 adds rejection of cold/raw foods, predicted C | 103 includes cold dressed dishes among preferred cooking methods. 094 explicitly excludes that option and specifies hot food across sides, proteins and late meals. This is an observable removal and replacement across the plan. The 094 strict Match field is missing, so this pair supplies behavior evidence only. |
+| 053 and 055, relaxing audio with a partner | 055 adds gentle evening relaxation, predicted C | Both already lead with nature sounds and recommend gentle music, meditation and quiet listening. More or different suggestions do not establish a change to the main choice; the task itself already licenses quiet listening. |
+
+The two observed changes occur in the strong RP endpoint itself. They do not show any improvement over RP, and one answer per variant plus source reordering prevents causal attribution. The archived scores have different denominators across variants. Do not subtract them as a treatment effect. The retained question for algorithm development is whether a proposed generator can recover a missing primary action **relative to the strong endpoint**, while leaving an already sufficient decision intact. These cases separate an actual change in the primary rule from simply adding alternatives. The older [targeted two-state trial](../native_residual_v1/RPE_CONTINGENCY_RESULTS.md) remains a negative control. No new calls or sealed cases.
+
+Reproduce using `python3 check.py` after restoring the private formal-coverage RESULT_ROWS.json. The script emits exact variant IDs and counts, not raw memory texts.
