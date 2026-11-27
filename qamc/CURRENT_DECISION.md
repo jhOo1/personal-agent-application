@@ -1,5 +1,11 @@
 # QAMC 当前判断与下一次机制对照
 
+## 当前研发口径与 RPEval 盲选
+
+最新 qamc-v3 讨论将三个基准的真实失分拆开。RPEval 的偏好适用性与作用强度要分开测。BenchPreS 以交际情境和正式交付为条件，核验适用表达是否真正进入成稿。PersistBench 分别量化跨域、迎合与严格有益使用，三者是回答级结果。三个基准共享“当前任务约束 → 历史是否和怎样进入决策 → 实际交付”的研究问题，各自保留作者定义和强对照。允许对已曝光开发来源做定向优化。论文主张限定在实测基准和可比协议内，封存数据和当前题参考答案始终与推理隔离。
+
+RPEval 开发观察已经改变当前优先级。单候选继续使用 17/22 的归档 RP 路径，多候选继续使用 IPE-C。同一批 RP、Des2Gen、MemAdapter 成稿有 21/22 的事后 Match 上界，普通盲选为 17/22，固定两个外部适配各 18/22。冻结模型臂使用同样的候选池，独立结算。弃用普通盲选作为当前替代方案。完整分数、争议、预算及恢复命令均已归档。[同题结果](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/DIRECT_READOUT.md) · [奖励模型协议与恢复](implementation/reports/qamc_contextual_match_v2_20261112/rpe_heterogeneous_reward_v1/LOCAL_RUNTIME.md)
+
 ## 最新结算 · RPEval 候选数量分支与 BenchPreS 专用简化
 
 RPEval 新增一个可运行的开发基线。原候选只有一条时使用原 RP 历史路径，多个候选时保留 IPE-C。单偏好共同 22 题由 15/22 到 17/22，重建 RP 同为 17/22，Des2Gen 与 MemAdapter 各 18/22。多偏好 295 个可恢复路由完全相同。全部来自归档重放，未新增调用。[路由和评分边界](implementation/reports/qamc_contextual_match_v2_20261112/rpe_cardinality_route_v1/READOUT.md)
