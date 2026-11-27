@@ -1,5 +1,11 @@
 # QAMC 当前判断与下一次机制对照
 
+## 最新结算 · CAR 与三基准开发范围
+
+CAR 的三基准开发对照已结算，停止扩展当前候选。RPEval 11 道共同有效题上，IPE-C 44/55，整稿选择 25/55，自由修订及 CAR 各 28/55。相对 IPE-C，CAR 对完整分配的缺失上下界为 −18 到 −12 个 Match 位置。BenchPreS 的四道共同题上，三种新控制都多落实一个适用属性，同时 MR 从 0/13 变成 3/13，平均完整度从 4.75 变成 4.00。PersistBench 的七道共同题逐题同结果，四组均通过 6/7。六次实际拼接与所有失败已留档。原三基准强方法、封存边界和既有成绩保留。[完整报告](implementation/reports/qamc_contextual_match_v2_20261112/downstream_memory_utility_v1/PILOT_READOUT.md)
+
+下一阶段以这三个 Benchmark 的原生任务特征和真实失分做定向优化，论文性能主张限定在此范围。允许同一决策流程按基准使用不同的适配参数。RPEval 分开看是否应用及作用强度。BenchPreS 保护文书事实，再检验是否在合适的交际位置落实表达偏好。PersistBench 按任务分别检验跨域、迎合和有益使用。三者的作者评测单位各自保留。分类只有导致可复查的输入暴露或终答行为变化才值得进入对照。开发病例与最终评分隔离，模型判断和发布指标分别核验。
+
 ## RPEval 共同 Actor 的发布权重 MemGate
 
 在冻结的 300 道多偏好开发题上，发布版 MemGate 和 IPE-C 使用同一个 RP Actor。276 道共享题，MemGate Match 816/1,477，IPE-C 953/1,477。全 A 为 252/512 对 397/512，仅 B 任务为 163/282 对 148/282，含 C 为 401/683 对 408/683。314 次真实新增请求全部传输成功，621,510 Token，最终 284 个 MemGate Match 有效。结论适用于发布英文编码器直接筛选中文历史的配置。[同 Actor 结算](implementation/reports/qamc_contextual_match_v2_20261112/rpe_memgate_matched_actor_v1/READOUT.md)
