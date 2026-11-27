@@ -2,6 +2,7 @@
 from collections import Counter, defaultdict
 from pathlib import Path
 import json
+import sys
 
 base = Path(__file__).resolve().parent.parent
 rows = json.loads((base / "ipe_c_two_endpoint_completion_v1/RESULTS.json").read_text())["rows"]
@@ -23,6 +24,8 @@ def policy_sets(rp, des):
 
 counts = defaultdict(Counter)
 by_root = Counter()
+label_audit = defaultdict(Counter)
+audit_requested = sys.argv[1:] == ["--audit-labels"]
 for row in rows:
     if row["old_route"] != "REUSE_RP":
         continue
@@ -47,4 +50,22 @@ for row in rows:
             c[name+"_"+k] += g[k]
     if switch:
         by_root[row["source_group"]] += second["match"]["matched"]-first["match"]["matched"]
-print(json.dumps({"history_on": counts, "switch_group_net": Counter("win" if v>0 else "loss" if v<0 else "tie" for v in by_root.values())},indent=2))
+        if audit_requested:
+            source_ids = [s["memory_id"] for s in json.loads(rp["actor_request"]["messages"][-1]["content"])["source_evidence"]]
+            assert source_ids == [f"M{i}" for i in range(len(row["labels"]))]
+            authors = dict(zip(source_ids, row["labels"]))
+            dropped = Counter(authors[k] for k in allowed - proposed)
+            label_audit["newly_suppressed"].update(dropped)
+            label_audit["still_apply"].update(authors[k] for k in proposed)
+            label_audit["already_ignored"].update(authors[k] for k in set(authors) - allowed)
+            group = label_audit["only_A_removed" if not (dropped["B"] or dropped["C"]) else "B_or_C_removed"]
+            group["tasks"] += 1
+            group["positions"] += len(authors)
+            group["Match_delta"] += second["match"]["matched"] - first["match"]["matched"]
+            for field in ("OPB", "UPB", "FM"):
+                group[field+"_delta"] += second[field] - first[field]
+if audit_requested:
+    assert sum(sum(label_audit[k].values()) for k in ("newly_suppressed","still_apply","already_ignored")) == counts["switch"]["positions"]
+    print(json.dumps(label_audit, indent=2))
+else:
+    print(json.dumps({"history_on": counts, "switch_group_net": Counter("win" if v>0 else "loss" if v<0 else "tie" for v in by_root.values())},indent=2))

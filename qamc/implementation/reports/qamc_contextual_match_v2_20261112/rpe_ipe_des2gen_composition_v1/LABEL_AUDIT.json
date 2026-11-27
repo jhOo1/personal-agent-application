@@ -1,0 +1,31 @@
+{
+  "newly_suppressed": {
+    "A": 83,
+    "B": 1
+  },
+  "still_apply": {
+    "C": 48,
+    "A": 37,
+    "B": 22
+  },
+  "already_ignored": {
+    "A": 75,
+    "B": 1
+  },
+  "only_A_removed": {
+    "tasks": 43,
+    "positions": 259,
+    "Match_delta": -5,
+    "OPB_delta": 23,
+    "UPB_delta": -13,
+    "FM_delta": 7
+  },
+  "B_or_C_removed": {
+    "tasks": 1,
+    "positions": 8,
+    "Match_delta": 2,
+    "OPB_delta": 0,
+    "UPB_delta": 0,
+    "FM_delta": 0
+  }
+}
