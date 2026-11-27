@@ -1,0 +1,508 @@
+{
+  "source_file_hashes": {
+    "scores": "a79a6845727340b2b371af88309d85d6bf0d6e3dd027cd0e9689d0b82bec65d4",
+    "choice": "6ebfc82f9a7f70354dcaadfebf0f7aaa56ee5ef119373aac5d308a9201fbaa5f",
+    "task": "99e9fbcd6a1e0c37d373245ccee5d5ba6a847db65f43249f6fd2120e4d4a4cb0",
+    "cohort": "1d3bc2ea6c28ee44cf11ce410068e4246771e7f84a51de044a4fa86e7d5bc7b6"
+  },
+  "train_size_range": [
+    201,
+    215
+  ],
+  "modes": {
+    "task": {
+      "neighbor": 216
+    },
+    "conditional": {
+      "neighbor": 216
+    },
+    "row_only": {
+      "exact": 214,
+      "neighbor": 2
+    }
+  },
+  "cards": {
+    "all": {
+      "empty": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 0,
+        "Match": 696,
+        "Match_n": 216,
+        "OPB": 65,
+        "OPB_n": 216,
+        "UPB": 396,
+        "UPB_n": 216,
+        "FM": 206,
+        "FM_n": 216
+      },
+      "full": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 216,
+        "Match": 645,
+        "Match_n": 216,
+        "OPB": 314,
+        "OPB_n": 216,
+        "UPB": 156,
+        "UPB_n": 216,
+        "FM": 45,
+        "FM_n": 216
+      },
+      "IPE-C": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 100,
+        "Match": 765,
+        "Match_n": 216,
+        "OPB": 206,
+        "OPB_n": 216,
+        "UPB": 168,
+        "UPB_n": 216,
+        "FM": 42,
+        "FM_n": 216
+      },
+      "global": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 0,
+        "Match": 696,
+        "Match_n": 216,
+        "OPB": 65,
+        "OPB_n": 216,
+        "UPB": 396,
+        "UPB_n": 216,
+        "FM": 206,
+        "FM_n": 216
+      },
+      "task": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 91,
+        "Match": 666,
+        "Match_n": 216,
+        "OPB": 201,
+        "OPB_n": 216,
+        "UPB": 285,
+        "UPB_n": 216,
+        "FM": 138,
+        "FM_n": 216
+      },
+      "conditional": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 72,
+        "Match": 729,
+        "Match_n": 216,
+        "OPB": 166,
+        "OPB_n": 216,
+        "UPB": 254,
+        "UPB_n": 216,
+        "FM": 106,
+        "FM_n": 216
+      },
+      "row_only": {
+        "tasks": 216,
+        "positions": 1142,
+        "open": 93,
+        "Match": 718,
+        "Match_n": 216,
+        "OPB": 159,
+        "OPB_n": 216,
+        "UPB": 282,
+        "UPB_n": 216,
+        "FM": 118,
+        "FM_n": 216
+      }
+    },
+    "contains C": {
+      "empty": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 0,
+        "Match": 230,
+        "Match_n": 86,
+        "OPB": 32,
+        "OPB_n": 86,
+        "UPB": 284,
+        "UPB_n": 86,
+        "FM": 191,
+        "FM_n": 86
+      },
+      "full": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 86,
+        "Match": 322,
+        "Match_n": 86,
+        "OPB": 141,
+        "OPB_n": 86,
+        "UPB": 72,
+        "UPB_n": 86,
+        "FM": 24,
+        "FM_n": 86
+      },
+      "IPE-C": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 85,
+        "Match": 322,
+        "Match_n": 86,
+        "OPB": 141,
+        "OPB_n": 86,
+        "UPB": 72,
+        "UPB_n": 86,
+        "FM": 26,
+        "FM_n": 86
+      },
+      "global": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 0,
+        "Match": 230,
+        "Match_n": 86,
+        "OPB": 32,
+        "OPB_n": 86,
+        "UPB": 284,
+        "UPB_n": 86,
+        "FM": 191,
+        "FM_n": 86
+      },
+      "task": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 41,
+        "Match": 268,
+        "Match_n": 86,
+        "OPB": 92,
+        "OPB_n": 86,
+        "UPB": 186,
+        "UPB_n": 86,
+        "FM": 118,
+        "FM_n": 86
+      },
+      "conditional": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 59,
+        "Match": 288,
+        "Match_n": 86,
+        "OPB": 104,
+        "OPB_n": 86,
+        "UPB": 149,
+        "UPB_n": 86,
+        "FM": 90,
+        "FM_n": 86
+      },
+      "row_only": {
+        "tasks": 86,
+        "positions": 529,
+        "open": 42,
+        "Match": 283,
+        "Match_n": 86,
+        "OPB": 86,
+        "OPB_n": 86,
+        "UPB": 181,
+        "UPB_n": 86,
+        "FM": 107,
+        "FM_n": 86
+      }
+    },
+    "unflagged": {
+      "empty": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 0,
+        "Match": 547,
+        "Match_n": 152,
+        "OPB": 33,
+        "OPB_n": 152,
+        "UPB": 232,
+        "UPB_n": 152,
+        "FM": 143,
+        "FM_n": 152
+      },
+      "full": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 152,
+        "Match": 490,
+        "Match_n": 152,
+        "OPB": 219,
+        "OPB_n": 152,
+        "UPB": 71,
+        "UPB_n": 152,
+        "FM": 36,
+        "FM_n": 152
+      },
+      "IPE-C": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 65,
+        "Match": 586,
+        "Match_n": 152,
+        "OPB": 148,
+        "OPB_n": 152,
+        "UPB": 74,
+        "UPB_n": 152,
+        "FM": 35,
+        "FM_n": 152
+      },
+      "global": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 0,
+        "Match": 547,
+        "Match_n": 152,
+        "OPB": 33,
+        "OPB_n": 152,
+        "UPB": 232,
+        "UPB_n": 152,
+        "FM": 143,
+        "FM_n": 152
+      },
+      "task": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 60,
+        "Match": 517,
+        "Match_n": 152,
+        "OPB": 134,
+        "OPB_n": 152,
+        "UPB": 157,
+        "UPB_n": 152,
+        "FM": 96,
+        "FM_n": 152
+      },
+      "conditional": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 48,
+        "Match": 567,
+        "Match_n": 152,
+        "OPB": 113,
+        "OPB_n": 152,
+        "UPB": 129,
+        "UPB_n": 152,
+        "FM": 73,
+        "FM_n": 152
+      },
+      "row_only": {
+        "tasks": 152,
+        "positions": 834,
+        "open": 66,
+        "Match": 570,
+        "Match_n": 152,
+        "OPB": 95,
+        "OPB_n": 152,
+        "UPB": 151,
+        "UPB_n": 152,
+        "FM": 81,
+        "FM_n": 152
+      }
+    },
+    "B without C": {
+      "empty": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 0,
+        "Match": 97,
+        "Match_n": 32,
+        "OPB": 10,
+        "OPB_n": 32,
+        "UPB": 71,
+        "UPB_n": 32,
+        "FM": 8,
+        "FM_n": 32
+      },
+      "full": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 32,
+        "Match": 101,
+        "Match_n": 32,
+        "OPB": 23,
+        "OPB_n": 32,
+        "UPB": 53,
+        "UPB_n": 32,
+        "FM": 0,
+        "FM_n": 32
+      },
+      "IPE-C": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 6,
+        "Match": 100,
+        "Match_n": 32,
+        "OPB": 13,
+        "OPB_n": 32,
+        "UPB": 64,
+        "UPB_n": 32,
+        "FM": 7,
+        "FM_n": 32
+      },
+      "global": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 0,
+        "Match": 97,
+        "Match_n": 32,
+        "OPB": 10,
+        "OPB_n": 32,
+        "UPB": 71,
+        "UPB_n": 32,
+        "FM": 8,
+        "FM_n": 32
+      },
+      "task": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 10,
+        "Match": 103,
+        "Match_n": 32,
+        "OPB": 15,
+        "OPB_n": 32,
+        "UPB": 64,
+        "UPB_n": 32,
+        "FM": 6,
+        "FM_n": 32
+      },
+      "conditional": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 5,
+        "Match": 99,
+        "Match_n": 32,
+        "OPB": 13,
+        "OPB_n": 32,
+        "UPB": 65,
+        "UPB_n": 32,
+        "FM": 7,
+        "FM_n": 32
+      },
+      "row_only": {
+        "tasks": 32,
+        "positions": 181,
+        "open": 15,
+        "Match": 101,
+        "Match_n": 32,
+        "OPB": 17,
+        "OPB_n": 32,
+        "UPB": 60,
+        "UPB_n": 32,
+        "FM": 3,
+        "FM_n": 32
+      }
+    },
+    "all A": {
+      "empty": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 0,
+        "Match": 369,
+        "Match_n": 98,
+        "OPB": 23,
+        "OPB_n": 98,
+        "UPB": 41,
+        "UPB_n": 98,
+        "FM": 7,
+        "FM_n": 98
+      },
+      "full": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 98,
+        "Match": 222,
+        "Match_n": 98,
+        "OPB": 150,
+        "OPB_n": 98,
+        "UPB": 31,
+        "UPB_n": 98,
+        "FM": 21,
+        "FM_n": 98
+      },
+      "IPE-C": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 9,
+        "Match": 343,
+        "Match_n": 98,
+        "OPB": 52,
+        "OPB_n": 98,
+        "UPB": 32,
+        "UPB_n": 98,
+        "FM": 9,
+        "FM_n": 98
+      },
+      "global": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 0,
+        "Match": 369,
+        "Match_n": 98,
+        "OPB": 23,
+        "OPB_n": 98,
+        "UPB": 41,
+        "UPB_n": 98,
+        "FM": 7,
+        "FM_n": 98
+      },
+      "task": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 40,
+        "Match": 295,
+        "Match_n": 98,
+        "OPB": 94,
+        "OPB_n": 98,
+        "UPB": 35,
+        "UPB_n": 98,
+        "FM": 14,
+        "FM_n": 98
+      },
+      "conditional": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 8,
+        "Match": 342,
+        "Match_n": 98,
+        "OPB": 49,
+        "OPB_n": 98,
+        "UPB": 40,
+        "UPB_n": 98,
+        "FM": 9,
+        "FM_n": 98
+      },
+      "row_only": {
+        "tasks": 98,
+        "positions": 432,
+        "open": 36,
+        "Match": 334,
+        "Match_n": 98,
+        "OPB": 56,
+        "OPB_n": 98,
+        "UPB": 41,
+        "UPB_n": 98,
+        "FM": 8,
+        "FM_n": 98
+      }
+    }
+  },
+  "paired": {
+    "conditional vs task": {
+      "win": 29,
+      "tie": 180,
+      "loss": 7
+    },
+    "conditional vs IPE-C": {
+      "tie": 194,
+      "loss": 21,
+      "win": 1
+    },
+    "IPE-C vs task": {
+      "win": 47,
+      "tie": 164,
+      "loss": 5
+    }
+  }
+}
