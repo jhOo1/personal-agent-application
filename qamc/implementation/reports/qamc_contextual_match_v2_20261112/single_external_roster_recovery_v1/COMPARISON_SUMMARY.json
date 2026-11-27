@@ -1,0 +1,76 @@
+{
+  "allocated": 20,
+  "triples": 16,
+  "strict_common": 15,
+  "scores": {
+    "RPR_PAPER_FULL": 13,
+    "DES2GEN_FULL": 13,
+    "MEMADAPTER_FULL": 13,
+    "V1": 14,
+    "Default": 13
+  },
+  "choices": {
+    "Default": {
+      "VALID": 16
+    },
+    "V1": {
+      "KEEP": 12,
+      "SWITCH": 4
+    }
+  },
+  "requests": 88,
+  "statuses": {
+    "OK": 88
+  },
+  "reported_tokens": 294868,
+  "severity": {
+    "RPR_PAPER_FULL": {
+      "OPB": 0,
+      "UPB": 1,
+      "FM": 6
+    },
+    "DES2GEN_FULL": {
+      "OPB": 3,
+      "UPB": 0,
+      "FM": 8
+    },
+    "MEMADAPTER_FULL": {
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 9
+    },
+    "V1": {
+      "OPB": 1,
+      "UPB": 1,
+      "FM": 7
+    },
+    "Default": {
+      "OPB": 4,
+      "UPB": 0,
+      "FM": 10
+    }
+  },
+  "paired_v1": {
+    "RPR_PAPER_FULL": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 14
+    },
+    "DES2GEN_FULL": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 14
+    },
+    "MEMADAPTER_FULL": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 14
+    },
+    "Default": {
+      "wins": 1,
+      "losses": 0,
+      "ties": 14
+    }
+  },
+  "unknown_usage": 0
+}

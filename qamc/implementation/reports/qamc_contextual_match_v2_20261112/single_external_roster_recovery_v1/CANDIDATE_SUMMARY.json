@@ -1,0 +1,21 @@
+{
+  "stage_counts": {
+    "Stage1": {
+      "valid": 20
+    },
+    "Stage2": {
+      "missing": 4,
+      "valid": 16
+    },
+    "Stage3": {
+      "valid": 16
+    }
+  },
+  "requests": 56,
+  "reported_tokens": 218855,
+  "unknown_usage": 4,
+  "statuses": {
+    "OK": 52,
+    "FAILED_DELIVERY_UNKNOWN": 4
+  }
+}

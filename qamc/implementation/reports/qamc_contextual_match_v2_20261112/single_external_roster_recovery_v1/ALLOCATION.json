@@ -1,0 +1,57 @@
+{
+  "scope": "all allocated development sources, frozen fallback when unavailable",
+  "v1_against": {
+    "DES2GEN_FULL": {
+      "assigned": 20,
+      "observations": {
+        "different_score_unknown": 1,
+        "different_tie": 14,
+        "different_win": 2,
+        "same_candidate": 3
+      },
+      "possible_net_match": [
+        1,
+        2
+      ]
+    },
+    "Default": {
+      "assigned": 20,
+      "observations": {
+        "different_score_unknown": 1,
+        "different_tie": 11,
+        "different_win": 1,
+        "same_candidate": 7
+      },
+      "possible_net_match": [
+        1,
+        2
+      ]
+    },
+    "MEMADAPTER_FULL": {
+      "assigned": 20,
+      "observations": {
+        "comparator_candidate_missing": 4,
+        "different_score_unknown": 5,
+        "different_tie": 13,
+        "different_win": 1,
+        "same_candidate": 1
+      },
+      "possible_net_match": [
+        -1,
+        5
+      ]
+    },
+    "RPR_PAPER_FULL": {
+      "assigned": 20,
+      "observations": {
+        "different_tie": 3,
+        "different_win": 1,
+        "same_candidate": 16
+      },
+      "possible_net_match": [
+        1,
+        1
+      ]
+    }
+  }
+}
