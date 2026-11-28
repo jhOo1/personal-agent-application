@@ -1,9 +1,9 @@
 """Summarize the frozen fit comparison from private receipts without making model calls."""
 from argparse import ArgumentParser
 from collections import Counter, defaultdict
-from pathlib import Path
 import json
 
+from paired_macro import pairwise
 from summarize_reassembly import aligned, bounds, measure
 from trial import RUN, POLICIES
 
@@ -79,6 +79,12 @@ def main():
         assert values['BASE'] is not None
         for key in (card['domain'], card['domain']+'/'+card['stratum']):
             groups[key].append((card, rows, values))
+    # Validate every available grade against its own fixed boundaries, even if another arm is missing.
+    for domain in ('RPEval', 'BenchPreS', 'PersistBench'):
+        for _, _, values in groups[domain]:
+            for method in active:
+                if values[method] is not None:
+                    assert aligned(values, ('BASE', method))
     summary = {}
     for name, entries in groups.items():
         common = [(c, r, v) for c, r, v in entries if aligned(v, methods)]
@@ -103,7 +109,8 @@ def main():
                 stages=Counter(row['unit']['stage'] for row in ledger),
                 tokens=sum((row.get('usage') or {}).get('total_tokens') or 0 for row in ledger),
                 unknown_usage=sum((row.get('usage') or {}).get('total_tokens') is None for row in ledger))
-    print(json.dumps(dict(cost=cost, scores=summary, search_macro=macro(summary, methods)), indent=2))
+    print(json.dumps(dict(cost=cost, scores=summary, search_macro=macro(summary, methods),
+                          pairwise_macro=pairwise(groups, methods, aligned)), indent=2))
 
 
 if __name__ == '__main__':
