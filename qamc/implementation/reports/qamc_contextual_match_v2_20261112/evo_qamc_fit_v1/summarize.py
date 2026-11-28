@@ -1,6 +1,7 @@
 """Summarize the frozen fit comparison from private receipts without making model calls."""
 from argparse import ArgumentParser
 from collections import Counter, defaultdict
+from pathlib import Path
 import json
 
 from paired_macro import pairwise
@@ -57,6 +58,7 @@ def main():
     cli.add_argument('--task-only', action='store_true')
     cli.add_argument('--crossover', action='store_true')
     cli.add_argument('--selected-planning',action='store_true')
+    cli.add_argument('--mutation-result', action='append', type=Path, default=[])
     options = cli.parse_args()
     plan = json.loads((RUN/'private/FROZEN.json').read_text())
     result = json.loads((RUN/'RESULTS.json').read_text())
@@ -76,6 +78,13 @@ def main():
         result['rows'].extend(extra['rows'])
         result['ledger'].extend(extra['ledger'])
         methods += ('SELECTED_GENERIC','SELECTED_TASK_ACTIONS')
+    for path in options.mutation_result:
+        extra=json.loads(path.read_text())
+        result['rows'].extend(extra['rows'])
+        result['ledger'].extend(extra['ledger'])
+        arms=tuple(sorted({row['method'] for row in extra['rows']}))
+        assert not (set(arms)&set(methods)), 'Mutation names already in this comparison'
+        methods+=arms
     active = methods[1:]
     outcomes = {(row['uid'], row['method']): row for row in result['rows']}
     assert len(outcomes) == len(result['rows']) == len(plan['rows']) * len(active)
