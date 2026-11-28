@@ -10,7 +10,7 @@ def read(path):
     return json.loads(path.read_text())
 
 
-def main():
+def qualify():
     matrix = read(HERE.parent/'paired_regret_policy_v1/MATRIX.json')
     assert matrix['exposed_only']
     fitted = read(PANEL)
@@ -45,11 +45,16 @@ def main():
             if state=='source_disjoint_candidate':
                 groups[k].add(group)
     assert sum(totals[k]['common_archive'] for k in banks)==296
-    print(json.dumps(dict(observed_development_only=True,fit_tasks=len(fitted),
+    audit=dict(observed_development_only=True,fit_tasks=len(fitted),
                           source_disjoint_qualified=len(eligible),
                           candidate_audit_sha256=sha(sorted(eligible,key=lambda r:r['uid'])),
                           strata={k:{**v,'qualified_source_groups':len(groups[k])}
-                                  for k,v in sorted(totals.items())}),indent=2))
+                                  for k,v in sorted(totals.items())})
+    return eligible,banks,audit
+
+
+def main():
+    print(json.dumps(qualify()[2],indent=2))
 
 
 if __name__=='__main__':

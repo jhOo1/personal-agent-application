@@ -26,6 +26,7 @@ case "${1:-}" in
   selected-rpe-stage) entry=selected_rpe_stage.py; shift ;;
   factorial) entry=factorial.py; shift ;;
   expansion-audit) entry=expansion_inventory.py; shift ;;
+  expansion-run) entry=expansion_run.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
   mutation-audit) entry=mutation_audit.py; shift ;;
