@@ -1,0 +1,5 @@
+# Shared program seeds for joint benchmark fitting
+
+Use the frozen 40 exposed cases with failure and protection strata. Compare a strong generic planner and a planner that first describes the current task and then proposes executable, source-supported changes to its decisions or expression. Both see the same fixed evidence and use one planning and one final generation call, the same Qwen model, output caps and final instructions. The executable change guidance is a single seed in the search. Each algorithm uses the same instructions across benchmarks. Archived specialist scores measure headroom and are excluded from online requests. No model weights change.
+
+Use the existing three graders. Score the final answer. Count failures and unknowns by stage and retain all assigned tasks. Compare on common complete outcomes and report availability on the full panel. All 40 form a fit set. Any later program search or claims about the finalists must account for selection on these outcomes. RPEval Match and OPB/UPB/FM, BenchPreS AAR/MR/completeness, and PersistBench category outcomes remain separately visible. Up to 360 new requests in this initial pair.
