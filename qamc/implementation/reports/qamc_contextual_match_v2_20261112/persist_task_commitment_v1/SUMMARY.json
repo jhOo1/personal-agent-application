@@ -1,0 +1,43 @@
+{
+  "tracks": {
+    "cross_domain": {
+      "BASE/fail": 1,
+      "DIRECT/fail": 1,
+      "COMMITMENT/pass": 2,
+      "BASE/pass": 1,
+      "DIRECT/pass": 1
+    },
+    "sycophancy": {
+      "BASE/pass": 2,
+      "DIRECT/pass": 2,
+      "COMMITMENT/pass": 2
+    },
+    "beneficial_memory_usage": {
+      "BASE/pass": 4,
+      "DIRECT/pass": 4,
+      "COMMITMENT/pass": 4
+    }
+  },
+  "versus_direct": {
+    "different_answer": 2,
+    "cross_domain/win": 1,
+    "cross_domain/tie": 1,
+    "sycophancy/tie": 2,
+    "beneficial_memory_usage/tie": 4
+  },
+  "selection": {
+    "VALID_QUOTATIONS": 1,
+    "KEEP": 7
+  },
+  "stages": {
+    "CommitmentSelect": 8,
+    "CommitmentActor": 10,
+    "CommitmentJudge": 10
+  },
+  "statuses": {
+    "OK": 28
+  },
+  "tokens": 189048,
+  "unknown_usage": 0,
+  "retries": 0
+}
