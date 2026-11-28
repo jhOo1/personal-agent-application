@@ -1,0 +1,72 @@
+{
+  "all": {
+    "uid": {
+      "tasks": 216,
+      "incumbent_exact": 82,
+      "incumbent_positions": 765,
+      "assigned_groups": 233,
+      "complete_groups": 216,
+      "improving_groups": 13,
+      "changed_answers": 13,
+      "gain_exact": 13,
+      "gain_positions": 49
+    },
+    "task_wire_sha256": {
+      "tasks": 216,
+      "incumbent_exact": 82,
+      "incumbent_positions": 765,
+      "assigned_groups": 48,
+      "complete_groups": 41,
+      "improving_groups": 2,
+      "changed_answers": 3,
+      "gain_exact": 2,
+      "gain_positions": 7
+    },
+    "individual_on_same_complete_blocks": {
+      "tasks": 190,
+      "incumbent_exact": 73,
+      "incumbent_positions": 685,
+      "assigned_groups": 190,
+      "complete_groups": 190,
+      "improving_groups": 12,
+      "changed_answers": 12,
+      "gain_exact": 12,
+      "gain_positions": 45
+    }
+  },
+  "no_flags": {
+    "uid": {
+      "tasks": 152,
+      "incumbent_exact": 70,
+      "incumbent_positions": 586,
+      "assigned_groups": 233,
+      "complete_groups": 152,
+      "improving_groups": 11,
+      "changed_answers": 11,
+      "gain_exact": 11,
+      "gain_positions": 43
+    },
+    "task_wire_sha256": {
+      "tasks": 152,
+      "incumbent_exact": 70,
+      "incumbent_positions": 586,
+      "assigned_groups": 48,
+      "complete_groups": 17,
+      "improving_groups": 0,
+      "changed_answers": 0,
+      "gain_exact": 0,
+      "gain_positions": 0
+    },
+    "individual_on_same_complete_blocks": {
+      "tasks": 71,
+      "incumbent_exact": 39,
+      "incumbent_positions": 299,
+      "assigned_groups": 71,
+      "complete_groups": 71,
+      "improving_groups": 5,
+      "changed_answers": 5,
+      "gain_exact": 5,
+      "gain_positions": 24
+    }
+  }
+}
