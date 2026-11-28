@@ -65,3 +65,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [三基准同来源片段保护与隔离](implementation/reports/qamc_contextual_match_v2_20261112/protected_clause_exposure_v1/RESULTS.md)结算。五题真正触发，原生适配分无净胜。RPEval 同题 13/24→12/24；两道实际触发的 PersistBench 风险题同分失败，且罗马行程的评分理由误报了已消失的分手内容，其他私人细节仍真实存在。BenchPreS 与严格有益使用沿用原稿，不能用于证明真实修改时的保护性。不再扩大此片段隔离规则。
 
 [基于当前任务条件的备选动作对照](implementation/reports/qamc_contextual_match_v2_20261112/task_condition_branches_v1/RESULTS.md)已结算。十二题五触发，两臂共享同一候选和 Actor 可见历史。要求保留条件分支使 RPEval Match 13/24→12/24、BenchPreS 完整度 10/10→9/10；PersistBench 只触发两道严格有益使用且均持平。项目模板、公园聚会和全部 PersistBench 风险根沿用旧稿，因此该触发器未覆盖原来的错误决定。停止扩大，保持各基准强参照。
+
+[归档无历史答复引文与局部修订](implementation/reports/qamc_contextual_match_v2_20261112/foil_anchored_decision_repair_v1/RESULTS.md)完成。引文版改 4/12 道，普通复核改 11/12。RPEval 与 IPE-C 同为 8/23，BenchPreS AAR 由 Strong Gate 的 4/5 降至 3/5，PersistBench 各类别与 PB_RUBRIC 持平。野餐人数、项目生命周期两个关键错例沿用原稿。没有一道主分超过原强稿，关闭该修订规则。保留二主一边界和原三基准档案。
