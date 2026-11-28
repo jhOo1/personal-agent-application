@@ -1,0 +1,342 @@
+{
+  "summary": {
+    "RPEval": {
+      "common": 16,
+      "paired_native": {
+        "BASE": {
+          "primary": 50,
+          "positions": 96,
+          "OPB": 18,
+          "UPB": 19,
+          "FM": 3
+        },
+        "SCOPE": {
+          "primary": 44,
+          "positions": 96,
+          "OPB": 25,
+          "UPB": 17,
+          "FM": 8
+        },
+        "OPT_GATE": {
+          "primary": 45,
+          "positions": 96,
+          "OPB": 23,
+          "UPB": 16,
+          "FM": 8
+        },
+        "JCC_KEEP": {
+          "primary": 48,
+          "positions": 96,
+          "OPB": 20,
+          "UPB": 16,
+          "FM": 9
+        },
+        "JCC": {
+          "primary": 48,
+          "positions": 96,
+          "OPB": 20,
+          "UPB": 16,
+          "FM": 9
+        }
+      },
+      "available": {
+        "BASE": 16,
+        "SCOPE": 16,
+        "OPT_GATE": 16,
+        "JCC_KEEP": 16,
+        "JCC": 16
+      },
+      "jcc_vs_gate": {
+        "tie": 14,
+        "loss": 1,
+        "win": 1
+      }
+    },
+    "BenchPreS": {
+      "common": 12,
+      "paired_native": {
+        "BASE": {
+          "primary": 17,
+          "positions": 23,
+          "MR": 1,
+          "MR_denominator": 37,
+          "completeness": 59,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "SCOPE": {
+          "primary": 14,
+          "positions": 23,
+          "MR": 5,
+          "MR_denominator": 37,
+          "completeness": 58,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "OPT_GATE": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 0,
+          "MR_denominator": 37,
+          "completeness": 57,
+          "nonbold": 12,
+          "nonbold_denominator": 16
+        },
+        "JCC_KEEP": {
+          "primary": 14,
+          "positions": 23,
+          "MR": 0,
+          "MR_denominator": 37,
+          "completeness": 59,
+          "nonbold": 12,
+          "nonbold_denominator": 16
+        },
+        "JCC": {
+          "primary": 14,
+          "positions": 23,
+          "MR": 0,
+          "MR_denominator": 37,
+          "completeness": 59,
+          "nonbold": 12,
+          "nonbold_denominator": 16
+        }
+      },
+      "available": {
+        "BASE": 12,
+        "SCOPE": 12,
+        "OPT_GATE": 12,
+        "JCC_KEEP": 12,
+        "JCC": 12
+      },
+      "jcc_vs_gate": {
+        "tie": 11,
+        "win": 1
+      }
+    },
+    "PersistBench": {
+      "common": 12,
+      "paired_native": {
+        "BASE": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 12
+        },
+        "SCOPE": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        },
+        "OPT_GATE": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        },
+        "JCC_KEEP": {
+          "primary": 11,
+          "strict_pass": 11,
+          "positions": 12
+        },
+        "JCC": {
+          "primary": 11,
+          "strict_pass": 11,
+          "positions": 12
+        }
+      },
+      "available": {
+        "BASE": 12,
+        "SCOPE": 12,
+        "OPT_GATE": 12,
+        "JCC_KEEP": 12,
+        "JCC": 12
+      },
+      "jcc_vs_gate": {
+        "tie": 11,
+        "win": 1
+      }
+    },
+    "PersistBench/sycophancy": {
+      "common": 4,
+      "paired_native": {
+        "BASE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "SCOPE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "OPT_GATE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "JCC_KEEP": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "JCC": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        }
+      },
+      "available": {
+        "BASE": 4,
+        "SCOPE": 4,
+        "OPT_GATE": 4,
+        "JCC_KEEP": 4,
+        "JCC": 4
+      },
+      "jcc_vs_gate": {
+        "tie": 3,
+        "win": 1
+      }
+    },
+    "PersistBench/cross_domain": {
+      "common": 4,
+      "paired_native": {
+        "BASE": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "SCOPE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "OPT_GATE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "JCC_KEEP": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "JCC": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      },
+      "available": {
+        "BASE": 4,
+        "SCOPE": 4,
+        "OPT_GATE": 4,
+        "JCC_KEEP": 4,
+        "JCC": 4
+      },
+      "jcc_vs_gate": {
+        "tie": 4
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "common": 4,
+      "paired_native": {
+        "BASE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SCOPE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "OPT_GATE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "JCC_KEEP": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "JCC": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      },
+      "available": {
+        "BASE": 4,
+        "SCOPE": 4,
+        "OPT_GATE": 4,
+        "JCC_KEEP": 4,
+        "JCC": 4
+      },
+      "jcc_vs_gate": {
+        "tie": 4
+      }
+    }
+  },
+  "macro": {
+    "parts": {
+      "BASE": {
+        "RPEval": 0.5208333333333334,
+        "BenchPreS": 0.8970900248074161,
+        "BenchPreS_without_completeness": 0.8560517038777908,
+        "PersistBench": 0.75
+      },
+      "SCOPE": {
+        "RPEval": 0.4583333333333333,
+        "BenchPreS": 0.8106312834573703,
+        "BenchPreS_without_completeness": 0.736780258519389,
+        "PersistBench": 0.8333333333333334
+      },
+      "OPT_GATE": {
+        "RPEval": 0.46875,
+        "BenchPreS": 0.8342391304347826,
+        "BenchPreS_without_completeness": 0.7826086956521738,
+        "PersistBench": 0.8333333333333334
+      },
+      "JCC_KEEP": {
+        "RPEval": 0.5,
+        "BenchPreS": 0.86262077294686,
+        "BenchPreS_without_completeness": 0.8043478260869565,
+        "PersistBench": 0.9166666666666666
+      },
+      "JCC": {
+        "RPEval": 0.5,
+        "BenchPreS": 0.86262077294686,
+        "BenchPreS_without_completeness": 0.8043478260869565,
+        "PersistBench": 0.9166666666666666
+      }
+    },
+    "common_macro": {
+      "BASE": 0.7226411193802499,
+      "SCOPE": 0.700765983374679,
+      "OPT_GATE": 0.7121074879227054,
+      "JCC_KEEP": 0.7597624798711755,
+      "JCC": 0.7597624798711755
+    },
+    "reference": "GENERIC",
+    "gains": {}
+  },
+  "dispatch": {
+    "Control": 80,
+    "Actor": 26,
+    "RPEvalJudge": 6,
+    "BenchAttrs": 60,
+    "PersistNative": 10
+  },
+  "transport": {
+    "OK": 182
+  },
+  "actions": {
+    "RPEval:KEEP": 16,
+    "BenchPreS:KEEP": 12,
+    "PersistBench:KEEP": 12
+  },
+  "structure": {
+    "OK": 120
+  },
+  "reported_tokens": 613778,
+  "unknown_usage": 0
+}
