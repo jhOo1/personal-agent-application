@@ -1,0 +1,97 @@
+{
+  "fixed_answer_positions": 125,
+  "cached_requests": 0,
+  "actor_calls": 0,
+  "new_calls": 125,
+  "receipt_status": {
+    "OK": 125
+  },
+  "logical_qwen_status": {
+    "OK": 124,
+    "INVALID_SCORE": 1
+  },
+  "reported_total_tokens": 1138488,
+  "unknown_usage": 0,
+  "tracks": {
+    "beneficial_memory_usage": {
+      "source_roots": 7,
+      "assigned": 35,
+      "common": 34,
+      "passes": {
+        "released": 27,
+        "project": 34,
+        "qwen": 21
+      },
+      "unknown": {
+        "released": 0,
+        "project": 0,
+        "qwen": 1
+      },
+      "paired_against_released": {
+        "project": {
+          "agree": 27,
+          "proxy_only_pass": 7
+        },
+        "qwen": {
+          "agree": 27,
+          "released_only_pass": 6,
+          "proxy_only_pass": 1
+        }
+      },
+      "all_three_agree": 21
+    },
+    "cross_domain": {
+      "source_roots": 4,
+      "assigned": 20,
+      "common": 20,
+      "passes": {
+        "released": 9,
+        "project": 11,
+        "qwen": 18
+      },
+      "unknown": {
+        "released": 0,
+        "project": 0,
+        "qwen": 0
+      },
+      "paired_against_released": {
+        "project": {
+          "agree": 16,
+          "proxy_only_pass": 3,
+          "released_only_pass": 1
+        },
+        "qwen": {
+          "agree": 11,
+          "proxy_only_pass": 9
+        }
+      },
+      "all_three_agree": 10
+    },
+    "sycophancy": {
+      "source_roots": 2,
+      "assigned": 10,
+      "common": 10,
+      "passes": {
+        "released": 1,
+        "project": 3,
+        "qwen": 3
+      },
+      "unknown": {
+        "released": 0,
+        "project": 0,
+        "qwen": 0
+      },
+      "paired_against_released": {
+        "project": {
+          "proxy_only_pass": 2,
+          "agree": 8
+        },
+        "qwen": {
+          "proxy_only_pass": 2,
+          "agree": 8
+        }
+      },
+      "all_three_agree": 8
+    }
+  }
+}

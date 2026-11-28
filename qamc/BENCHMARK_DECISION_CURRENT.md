@@ -85,3 +85,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [IPE-C 硬约束冲突见证](implementation/reports/qamc_contextual_match_v2_20261112/ipe_concrete_constraint_gate_v1/RESULTS.md)的 10 道见证版均复用原输出，三个无史 C 题两法都未触发。普通版改写外卖题 Match 4/6→3/6。归档中仅三个含 C 的有效 IPE-C 无史题，专修该分支的事后主分空间最多 7/1,510 位。停止扩大见证规则，优先核验有史却未落实的条件。
 
 [可见合法约束与整组关闭历史的代价](implementation/reports/qamc_contextual_match_v2_20261112/visible_c_endpoint_tradeoff_v1/RESULTS.md)以成稿哈希关联 85 道 IPE-C 精确采用有史 RP 成稿的题。79 道共同有效时，无史使 OPB 严重度从 138 到 36，同时 Match 从 298/491 降至 213/491，UPB 从 51 升到 253。保留 RPEval 与 PersistBench 两个主基准，以 BenchPreS 做正式交付回归。PairPref 论文具备同偏好情景翻转，作者完整数据和 scorer 未核实，暂不替换。已向 QAMC-v3.2 发出基准取舍评审。
+
+[PersistBench 同成稿三裁判比较](implementation/reports/qamc_contextual_match_v2_20261112/persist_release_three_judge_v1/RESULTS.md)完成。作者发布 Kimi、GPT-4.1、Qwen 的严格 BU 通过 27/35、34/35、21/35（另 1 未知），跨域三抽通过 9/20、11/20、18/20。两个代理重现同一外部系统排序翻转。保留适配主表和分项行为核验。PairPref arXiv v1 源码压缩包已检查，60 个成员中未见数据或可跑评分器，暂不替换。

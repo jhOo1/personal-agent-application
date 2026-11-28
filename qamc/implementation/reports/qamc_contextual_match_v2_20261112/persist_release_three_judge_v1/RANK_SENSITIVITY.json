@@ -1,0 +1,231 @@
+{
+  "beneficial_memory_usage": {
+    "complete_sources_all_models": 6,
+    "allocated_sources": 7,
+    "passes": {
+      "released": {
+        "claude-sonnet-4-5-20250929": 5,
+        "google_gemini-3.1-pro-preview": 6,
+        "gpt-5.2": 4,
+        "meta-llama_llama-4-maverick": 2,
+        "x-ai_grok-4.1-fast": 6
+      },
+      "project": {
+        "claude-sonnet-4-5-20250929": 6,
+        "google_gemini-3.1-pro-preview": 6,
+        "gpt-5.2": 6,
+        "meta-llama_llama-4-maverick": 5,
+        "x-ai_grok-4.1-fast": 6
+      },
+      "qwen": {
+        "claude-sonnet-4-5-20250929": 4,
+        "google_gemini-3.1-pro-preview": 6,
+        "gpt-5.2": 1,
+        "meta-llama_llama-4-maverick": 2,
+        "x-ai_grok-4.1-fast": 4
+      }
+    },
+    "rank_changes": {
+      "project": {
+        "strict_reversals": [],
+        "released_strict_to_tie": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "google_gemini-3.1-pro-preview"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "gpt-5.2"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ],
+          [
+            "google_gemini-3.1-pro-preview",
+            "gpt-5.2"
+          ],
+          [
+            "gpt-5.2",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_tie_to_strict": []
+      },
+      "qwen": {
+        "strict_reversals": [
+          [
+            "gpt-5.2",
+            "meta-llama_llama-4-maverick"
+          ]
+        ],
+        "released_strict_to_tie": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_tie_to_strict": [
+          [
+            "google_gemini-3.1-pro-preview",
+            "x-ai_grok-4.1-fast"
+          ]
+        ]
+      }
+    }
+  },
+  "cross_domain": {
+    "complete_sources_all_models": 4,
+    "allocated_sources": 4,
+    "passes": {
+      "released": {
+        "claude-sonnet-4-5-20250929": 2,
+        "google_gemini-3.1-pro-preview": 0,
+        "gpt-5.2": 4,
+        "meta-llama_llama-4-maverick": 2,
+        "x-ai_grok-4.1-fast": 1
+      },
+      "project": {
+        "claude-sonnet-4-5-20250929": 2,
+        "google_gemini-3.1-pro-preview": 0,
+        "gpt-5.2": 3,
+        "meta-llama_llama-4-maverick": 3,
+        "x-ai_grok-4.1-fast": 3
+      },
+      "qwen": {
+        "claude-sonnet-4-5-20250929": 3,
+        "google_gemini-3.1-pro-preview": 3,
+        "gpt-5.2": 4,
+        "meta-llama_llama-4-maverick": 4,
+        "x-ai_grok-4.1-fast": 4
+      }
+    },
+    "rank_changes": {
+      "project": {
+        "strict_reversals": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_strict_to_tie": [
+          [
+            "gpt-5.2",
+            "meta-llama_llama-4-maverick"
+          ],
+          [
+            "gpt-5.2",
+            "x-ai_grok-4.1-fast"
+          ],
+          [
+            "meta-llama_llama-4-maverick",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_tie_to_strict": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "meta-llama_llama-4-maverick"
+          ]
+        ]
+      },
+      "qwen": {
+        "strict_reversals": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_strict_to_tie": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "google_gemini-3.1-pro-preview"
+          ],
+          [
+            "gpt-5.2",
+            "meta-llama_llama-4-maverick"
+          ],
+          [
+            "gpt-5.2",
+            "x-ai_grok-4.1-fast"
+          ],
+          [
+            "meta-llama_llama-4-maverick",
+            "x-ai_grok-4.1-fast"
+          ]
+        ],
+        "released_tie_to_strict": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "meta-llama_llama-4-maverick"
+          ]
+        ]
+      }
+    }
+  },
+  "sycophancy": {
+    "complete_sources_all_models": 2,
+    "allocated_sources": 2,
+    "passes": {
+      "released": {
+        "claude-sonnet-4-5-20250929": 0,
+        "google_gemini-3.1-pro-preview": 0,
+        "gpt-5.2": 1,
+        "meta-llama_llama-4-maverick": 0,
+        "x-ai_grok-4.1-fast": 0
+      },
+      "project": {
+        "claude-sonnet-4-5-20250929": 1,
+        "google_gemini-3.1-pro-preview": 0,
+        "gpt-5.2": 2,
+        "meta-llama_llama-4-maverick": 0,
+        "x-ai_grok-4.1-fast": 0
+      },
+      "qwen": {
+        "claude-sonnet-4-5-20250929": 1,
+        "google_gemini-3.1-pro-preview": 0,
+        "gpt-5.2": 2,
+        "meta-llama_llama-4-maverick": 0,
+        "x-ai_grok-4.1-fast": 0
+      }
+    },
+    "rank_changes": {
+      "project": {
+        "strict_reversals": [],
+        "released_strict_to_tie": [],
+        "released_tie_to_strict": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "google_gemini-3.1-pro-preview"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "meta-llama_llama-4-maverick"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ]
+        ]
+      },
+      "qwen": {
+        "strict_reversals": [],
+        "released_strict_to_tie": [],
+        "released_tie_to_strict": [
+          [
+            "claude-sonnet-4-5-20250929",
+            "google_gemini-3.1-pro-preview"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "meta-llama_llama-4-maverick"
+          ],
+          [
+            "claude-sonnet-4-5-20250929",
+            "x-ai_grok-4.1-fast"
+          ]
+        ]
+      }
+    }
+  }
+}
