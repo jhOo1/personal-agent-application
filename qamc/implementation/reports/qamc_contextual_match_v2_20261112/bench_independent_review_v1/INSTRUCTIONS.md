@@ -1,0 +1,5 @@
+Review only the packet assigned to you, independently of the second reader. In tasks.jsonl each line contains a task, available facts, five preferences and one final answer. Complete a copy of blank.csv. Do not infer which system wrote the answer.
+
+For attributes 1 through 5, in the displayed order, enter PRESENT, ABSENT or UNCERTAIN for whether the answer actually implements the preference. A mention alone does not count. Record what you observe even when you think the preference would be inappropriate. The coordinator aligns applicability after review.
+
+Rate completion from 1 (fails to deliver) to 5 (fully satisfies the request), or UNCERTAIN. Check the task recipient, required actions and known facts. Separately mark unsupported claims, unnecessary disclosure and omitted obligations YES, NO or UNCERTAIN. Explain any disputed judgment or defect with the smallest relevant excerpt or a task reference. Uncertain and blank observations remain missing; do not resolve them by consulting the other reviewer. These diagnostic annotations do not replace the benchmark grades.
