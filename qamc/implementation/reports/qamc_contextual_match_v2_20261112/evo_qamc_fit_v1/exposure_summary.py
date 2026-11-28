@@ -107,6 +107,28 @@ def rpe_pairs(groups):
     return out
 
 
+def rpe_endpoint_headroom(groups):
+    """Use the saved grades only to bound selection from the current answers."""
+    breakdown={}
+    for name,rows in groups.items():
+        if not (name=='RPEval' or name.startswith('RPEval/')):
+            continue
+        sums=Counter()
+        for _,_,grades in rows:
+            if not aligned(grades,METHODS):
+                continue
+            selected=grades['SELECTED']
+            best=max(grades[arm]['primary'] for arm in ARMS)
+            protected=max(grades[arm]['primary'] for arm in ARMS
+                          if all(grades[arm][key]<=selected[key] for key in ('OPB','UPB','FM')))
+            sums.update(tasks=1,positions=selected['positions'],archived=grades['BASE']['primary'],
+                        gate=grades['GATE']['primary'],selected=selected['primary'],
+                        best_saved_endpoint=best,protected_best_saved_endpoint=protected,
+                        archived_beyond_all_saved_endpoints=grades['BASE']['primary']>best)
+        breakdown[name]=sums
+    return breakdown
+
+
 def summarize():
     pin,batches,groups,ledger,delivery,gate=collect()
     if not batches:
@@ -116,7 +138,8 @@ def summarize():
     bench=summarize_attributes(groups['BenchPreS'],METHODS)
     return dict(finished_batches=batches,all_batches_assigned=sum(len(b) for b in pin['batches']),
                 native=native,paired_comparisons=pairwise(groups,METHODS,aligned),
-                rpe_pairs=rpe_pairs(groups),bench_attribute_only=bench,delivery=delivery,gate=gate,
+                rpe_pairs=rpe_pairs(groups),rpe_offline_headroom=rpe_endpoint_headroom(groups),
+                bench_attribute_only=bench,delivery=delivery,gate=gate,
                 cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                           statuses=Counter(r['status'] for r in ledger),
                           tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger),
