@@ -56,6 +56,7 @@ def main():
     cli.add_argument('--external', action='store_true')
     cli.add_argument('--task-only', action='store_true')
     cli.add_argument('--crossover', action='store_true')
+    cli.add_argument('--selected-planning',action='store_true')
     options = cli.parse_args()
     plan = json.loads((RUN/'private/FROZEN.json').read_text())
     result = json.loads((RUN/'RESULTS.json').read_text())
@@ -70,6 +71,11 @@ def main():
             result['rows'].extend(extra['rows'])
             result['ledger'].extend(extra['ledger'])
             methods += (method,)
+    if options.selected_planning:
+        extra = json.loads((RUN.with_name(RUN.name+'_selected_planning')/'COMBINED.json').read_text())
+        result['rows'].extend(extra['rows'])
+        result['ledger'].extend(extra['ledger'])
+        methods += ('SELECTED_GENERIC','SELECTED_TASK_ACTIONS')
     active = methods[1:]
     outcomes = {(row['uid'], row['method']): row for row in result['rows']}
     assert len(outcomes) == len(result['rows']) == len(plan['rows']) * len(active)

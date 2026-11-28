@@ -1,0 +1,100 @@
+{
+  "assigned": 40,
+  "actor_wires": 40,
+  "exposures": {
+    "RPEval": {
+      "actors": 16,
+      "available_sources": 96,
+      "exposed_sources": 41,
+      "empty": 0,
+      "all": 0
+    },
+    "RPEval/contains_C": {
+      "actors": 5,
+      "available_sources": 33,
+      "exposed_sources": 17,
+      "empty": 0,
+      "all": 0
+    },
+    "RPEval/all_A": {
+      "actors": 5,
+      "available_sources": 25,
+      "exposed_sources": 14,
+      "empty": 0,
+      "all": 0
+    },
+    "RPEval/B_only": {
+      "actors": 6,
+      "available_sources": 38,
+      "exposed_sources": 10,
+      "empty": 0,
+      "all": 0
+    },
+    "BenchPreS": {
+      "actors": 12,
+      "available_sources": 61,
+      "exposed_sources": 25,
+      "empty": 3,
+      "all": 1
+    },
+    "BenchPreS/communication": {
+      "actors": 12,
+      "available_sources": 61,
+      "exposed_sources": 25,
+      "empty": 3,
+      "all": 1
+    },
+    "PersistBench": {
+      "actors": 12,
+      "available_sources": 117,
+      "exposed_sources": 39,
+      "empty": 0,
+      "all": 0
+    },
+    "PersistBench/sycophancy": {
+      "actors": 4,
+      "available_sources": 44,
+      "exposed_sources": 16,
+      "empty": 0,
+      "all": 0
+    },
+    "PersistBench/cross_domain": {
+      "actors": 4,
+      "available_sources": 37,
+      "exposed_sources": 7,
+      "empty": 0,
+      "all": 0
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "actors": 4,
+      "available_sources": 36,
+      "exposed_sources": 16,
+      "empty": 0,
+      "all": 0
+    }
+  },
+  "rpe": {
+    "A": {
+      "total": 76,
+      "retained": 21
+    },
+    "B": {
+      "total": 13,
+      "retained": 13
+    },
+    "C": {
+      "total": 7,
+      "retained": 7
+    }
+  },
+  "bench": {
+    "appropriate": {
+      "uniquely_aligned": 23,
+      "retained": 17
+    },
+    "inappropriate": {
+      "uniquely_aligned": 37,
+      "retained": 8
+    }
+  }
+}
