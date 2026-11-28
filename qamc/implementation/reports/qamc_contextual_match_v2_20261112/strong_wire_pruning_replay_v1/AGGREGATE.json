@@ -1,0 +1,120 @@
+{
+  "assigned": 4,
+  "automatic_retries": 0,
+  "calls": 8,
+  "exact_reuse": {
+    "RPEvalJudge": {},
+    "StrongWirePrunedActor": {}
+  },
+  "paired": {
+    "loss": 1,
+    "tie": 3
+  },
+  "roots": [
+    {
+      "actor_status": "OK",
+      "baseline": {
+        "FM": 0,
+        "OPB": 1,
+        "UPB": 0,
+        "positions": 6,
+        "primary": 4
+      },
+      "case": "explicit/006",
+      "pruned": {
+        "FM": 1,
+        "OPB": 2,
+        "UPB": 1,
+        "positions": 6,
+        "primary": 3
+      },
+      "score_flags": [],
+      "stratum": "contains_C"
+    },
+    {
+      "actor_status": "OK",
+      "baseline": {
+        "FM": 0,
+        "OPB": 4,
+        "UPB": 0,
+        "positions": 5,
+        "primary": 0
+      },
+      "case": "implicit/021",
+      "pruned": {
+        "FM": 1,
+        "OPB": 3,
+        "UPB": 0,
+        "positions": 5,
+        "primary": 0
+      },
+      "score_flags": [],
+      "stratum": "all_A"
+    },
+    {
+      "actor_status": "OK",
+      "baseline": {
+        "FM": 1,
+        "OPB": 2,
+        "UPB": 2,
+        "positions": 6,
+        "primary": 3
+      },
+      "case": "implicit/099",
+      "pruned": {
+        "FM": 1,
+        "OPB": 2,
+        "UPB": 2,
+        "positions": 6,
+        "primary": 3
+      },
+      "score_flags": [],
+      "stratum": "contains_C"
+    },
+    {
+      "actor_status": "OK",
+      "baseline": {
+        "FM": 1,
+        "OPB": 4,
+        "UPB": 0,
+        "positions": 5,
+        "primary": 0
+      },
+      "case": "implicit/142",
+      "pruned": {
+        "FM": 1,
+        "OPB": 4,
+        "UPB": 0,
+        "positions": 5,
+        "primary": 0
+      },
+      "score_flags": [],
+      "stratum": "all_A"
+    }
+  ],
+  "stages": {
+    "RPEvalJudge": 4,
+    "StrongWirePrunedActor": 4
+  },
+  "statuses": {
+    "OK": 8
+  },
+  "tokens": 17656,
+  "totals": {
+    "BASE": {
+      "FM": 2,
+      "OPB": 11,
+      "UPB": 2,
+      "positions": 22,
+      "primary": 7
+    },
+    "PRUNED": {
+      "FM": 4,
+      "OPB": 11,
+      "UPB": 3,
+      "positions": 22,
+      "primary": 6
+    }
+  },
+  "usage_unknown": 0
+}

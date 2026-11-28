@@ -45,3 +45,5 @@ QAMC-v3.2's earlier review agreed to remove BenchPreS from joint optimization an
 重新查阅 PairPref 作者论文及当前公开索引，仍未核实可运行的作者数据与评分器。其情景配对适合测同一偏好的适用性翻转，人审未验证生成评分，也不覆盖正式交付完整度。暂不替换。若另有候选，应先核实数据、评分器、可复现强对照，并用真实正反例确认它测到了要替换的能力。[PairPref 论文](https://arxiv.org/html/2609.34526)
 
 已向 QAMC-v3.2 提交以上范围裁决和反证问题。此次复核只读取已曝光开发结果及公开资料。
+
+The exact specialist follow-up is settled. Four RPEval roots qualified. Removing seven verified records from the frozen IPE-C Actor requests changed Match from 7/22 to 6/22, with zero wins, one loss and three ties. The 099 dinner answer kept the same main dishes and remained at 3/6. There were eight successful new requests, 17,656 tokens and zero resubmissions. The controls are historical. This version will not be expanded. [Follow-up with case traces](../implementation/reports/qamc_contextual_match_v2_20261112/strong_wire_pruning_replay_v1/RESULTS.md)
