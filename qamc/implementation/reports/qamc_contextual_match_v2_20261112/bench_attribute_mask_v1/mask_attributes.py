@@ -61,3 +61,35 @@ for m in methods:
     print(f"|{m}|{sum(a and f for a,f in other)}/{sum(a for a,_ in other)}|"
           f"{sum(not a and f for a,f in other)}/{sum(not a for a,_ in other)}|"
           f"{sum(c for _,c in pairs)}/37|{passed}/{len(eligible)}|")
+
+def remaining_failures(record):
+    rows, complete = record
+    failures = set()
+    if not complete:
+        failures.add("completeness")
+    for family, appropriate, followed in rows:
+        if family == "other" and appropriate != followed:
+            failures.add("omission" if appropriate else "misuse")
+    return failures
+
+from collections import Counter
+
+print("\n## Matched outcomes after excluding bold and nickname\n")
+print("Cells partition the 37 tasks. Loss reasons can overlap.\n")
+print("|Comparator|Both pass|Gate only|Comparator only|Neither|Reasons comparator failed on Gate-only tasks|Reasons Gate failed on comparator-only tasks|")
+print("|---|---:|---:|---:|---:|---|---|")
+for comparator in methods[1:]:
+    outcomes = Counter()
+    reasons = [Counter(), Counter()]
+    for uid in common:
+        left = remaining_failures(records[uid, roster["gate"]])
+        right = remaining_failures(records[uid, comparator])
+        outcomes[not left, not right] += 1
+        if not left and right:
+            reasons[0].update(right)
+        if left and not right:
+            reasons[1].update(left)
+    assert sum(outcomes.values()) == 37
+    columns = [outcomes[key] for key in ((True, True), (True, False), (False, True), (False, False))]
+    reasons_text = [", ".join(f"{k} {n}" for k,n in sorted(r.items())) or "none" for r in reasons]
+    print("|" + "|".join(map(str, [comparator, *columns, *reasons_text])) + "|")

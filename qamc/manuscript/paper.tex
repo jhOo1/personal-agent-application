@@ -262,6 +262,8 @@ On a 38-task intersection, unfiltered, Selectivity, and Strong Gate misapply 78,
 \paragraph{Can a single answer satisfy all three requirements?}
 We counted an answer as a joint pass when it realized every applicable preference, realized no inappropriate preference and received 5/5 completeness. All five systems had comparable grades on 37 tasks spanning ten profiles (Table~\ref{tab:benchjoint}). On this panel Strong Gate tied for lowest misuse and highest total completeness, and realized the most applicable preferences. With profiles weighted equally, Selectivity was the closest competitor on joint passes. Dropping one profile at a time left the Gate advantage over Selectivity between 6.1 and 28.3 percentage points. These descriptive checks use exposed profiles and the project's Qwen rubric adaptation. They measure the existing Gate; they confer no additional credit on later routing or revision components.
 
+Removing bold and nickname requirements from both adherence and misuse while keeping the same answers and completeness grades changes the comparison. Gate and RP then each pass 24/37 tasks: both pass 19, Gate alone passes five, RP alone passes five, and neither passes eight. All five Gate-only passes reflect RP completeness deductions. On the five RP-only passes, Gate loses full completeness twice, misuses one preference and omits two. These are recorded rubric outcomes. They suggest that repairing applicable preference omissions alone would address only part of the remaining delivery gap.
+
 \begin{table}[t]
 \centering\small
 \begin{tabular}{@{}lrrrr@{}}
