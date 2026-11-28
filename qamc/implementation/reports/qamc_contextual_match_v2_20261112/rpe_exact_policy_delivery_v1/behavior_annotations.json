@@ -1,0 +1,236 @@
+[
+  {
+    "case": "explicit/137",
+    "status": "WEAKENED",
+    "finding": "The exclusion covers any romantic element; the answer filters out romance as the main theme. Actual content of individual films is unverified.",
+    "answer_hash": "c64648803e8877bf223a3be92f1f152e0571de84204693e444e9ea1c7f9052a4",
+    "witnesses": [
+      {
+        "offset": 28,
+        "chars": 8,
+        "sha256": "b1037040fb5420f25f92b9e1dc869f87c370229102577d7a6a7bb35ff3822749"
+      },
+      {
+        "offset": 10,
+        "chars": 5,
+        "sha256": "22e18949557054cf1d15c99cd60ebde01ec74a5a9c909c16238b57e8babc1798"
+      }
+    ]
+  },
+  {
+    "case": "implicit/117",
+    "status": "IMPLEMENTED",
+    "finding": "The study plan uses written phrases, a text cheat sheet, books and text drills. Speaking practice fits the wedding request.",
+    "answer_hash": "13f61e7ac86a4cb6a6a289a7e64831c0ccb946dabb9d78ed515d1dbc868ca2de",
+    "witnesses": [
+      {
+        "offset": 110,
+        "chars": 10,
+        "sha256": "104a5c3ff63679c02f149c2ac763737cdbbc24a56b28581103a24eb35145f27f"
+      },
+      {
+        "offset": 353,
+        "chars": 11,
+        "sha256": "ae95f363d99a1bd6d72b61c8e3368e98ccc1a3cf25ec5602653f6bbdda85928c"
+      }
+    ]
+  },
+  {
+    "case": "explicit/139",
+    "status": "IMPLEMENTED",
+    "finding": "The delivery instructions require an ad-free copy and provide a screen-free playback route. Actual recordings were not tested.",
+    "answer_hash": "f3bdd23c7a08d3d1a93ec24ec9d77b6cae86746fbab31d354af51946a21480d0",
+    "witnesses": [
+      {
+        "offset": 17,
+        "chars": 6,
+        "sha256": "26abab4657a896e628bae016b22b963af3c8fae2ed147a537d65399394a28ea8"
+      },
+      {
+        "offset": 336,
+        "chars": 17,
+        "sha256": "55ba2e6cd0e585727efb03fcf2715111679d256be0051f8cf4197591693d1a1b"
+      }
+    ]
+  },
+  {
+    "case": "implicit/082",
+    "status": "CONFLICT",
+    "finding": "The answer excludes speech but includes instrumental piano both as a recommendation and as a search term. The history separately specifies pure nature sounds; its later emphasis on speech makes a narrower interpretation possible.",
+    "answer_hash": "96066f369e31324b42f8ddc026ed87d2f8ba9a601da0cf3037b09c0a465ee34f",
+    "witnesses": [
+      {
+        "offset": 100,
+        "chars": 12,
+        "sha256": "dcd8e75adc3324aedca0517411e63518f072bd81ffcd0338643ad4a58ca058c8"
+      },
+      {
+        "offset": 207,
+        "chars": 8,
+        "sha256": "f12a3e707ed8e7a0613a70d8b46fdb27c2ab9f99f34007a568ed8e3bbf854158"
+      }
+    ]
+  },
+  {
+    "case": "explicit/086",
+    "status": "IMPLEMENTED",
+    "finding": "Instrumental music fits this version's voice exclusion; no nature-only requirement is present in its C source.",
+    "answer_hash": "65d952110b12419a0c078feef85d78b118c6badc3b20eb8d9f23cbac4da2cbaa",
+    "witnesses": [
+      {
+        "offset": 6,
+        "chars": 6,
+        "sha256": "e1ee99902a44a975fb99726e1606b9a4b792738b71e09f8e0bb76345f8522a89"
+      },
+      {
+        "offset": 44,
+        "chars": 10,
+        "sha256": "ea722e08e3d9524308868f835dfd968a6d6d1a6c70fc120f511adea9bacc2f91"
+      }
+    ]
+  },
+  {
+    "case": "explicit/129",
+    "status": "IMPLEMENTED",
+    "finding": "Route and studio filters plus a verification step protect quietness; destination and actual noise remain unknown.",
+    "answer_hash": "daa5a8f79c0c2c2ddfdc210e9ec19fc362479c25cd5509a63155c38bfe9bf7a5",
+    "witnesses": [
+      {
+        "offset": 30,
+        "chars": 21,
+        "sha256": "8a971d36cbf050b201c26d99dd7815ed9dc3f3f5390cf7daf6b3ac171e27699f"
+      },
+      {
+        "offset": 286,
+        "chars": 11,
+        "sha256": "a3cdc6fb0bb6c817660e80d7df524cc5297a3caa010aa9e9eba4a8cba3c4b03b"
+      }
+    ]
+  },
+  {
+    "case": "implicit/149",
+    "status": "IMPLEMENTED",
+    "finding": "The primary choice requires an ad-free recording and local playback. Downloading alone would not establish ad-free content.",
+    "answer_hash": "d0632268751c5ad23e84a8f9130b953aae45d187ee0d74d13cb792f9eddc439d",
+    "witnesses": [
+      {
+        "offset": 160,
+        "chars": 6,
+        "sha256": "e183b5f978f5fa494f0325b0ea8efd6876441df7f111c537ab8041d597e87cbf"
+      },
+      {
+        "offset": 110,
+        "chars": 10,
+        "sha256": "68db91bd798d4cd8f563ffce868ba83d84e34e912f26e0dc0824b1155ac4b8e0"
+      }
+    ]
+  },
+  {
+    "case": "implicit/143",
+    "status": "IMPLEMENTED",
+    "finding": "The user explicitly allows headphones; the recommendation avoids the clothing, shoes and hats previously rejected.",
+    "answer_hash": "089e74b596b7adf06625599303b9fb89a3e00a7d288723c0ce6bed33d7affe81",
+    "witnesses": [
+      {
+        "offset": 333,
+        "chars": 10,
+        "sha256": "9f1628acc5b44b5bb24222ea60bb67e5c8a85a40a886fa1ddeb6571002d80554"
+      },
+      {
+        "offset": 3,
+        "chars": 12,
+        "sha256": "f8b27f675580646cb85e566355936f0a739ee8caad1d7235789ef9871202649c"
+      }
+    ]
+  },
+  {
+    "case": "implicit/108",
+    "status": "RISK",
+    "finding": "The answer includes a lookup tool it describes as possibly prompting, then schedules it in daily practice. It also offers eligible alternatives. Neither an actual interruption nor payment status was observed.",
+    "answer_hash": "d94c1df944d511102ffde4f341e457251e34e424fa5c27a59bc60eaa005b2af5",
+    "witnesses": [
+      {
+        "offset": 345,
+        "chars": 13,
+        "sha256": "c73a30fc4f43f02a811bd20466bb7fb147c73fcf5d513048fdbbc593481e5b66"
+      },
+      {
+        "offset": 648,
+        "chars": 10,
+        "sha256": "15c472d22b24d36125cb45734d7ab796984e7c266907f08be00267bf2aaaafbf"
+      }
+    ]
+  },
+  {
+    "case": "explicit/131",
+    "status": "IMPLEMENTED",
+    "finding": "The answer filters the shortlist and screening procedure for low-scare content. Film-by-film safety and availability were not checked.",
+    "answer_hash": "a21a2aacfc1d08e4950509f62d0555b87bc7a36800e58076d19c5a67649c79f2",
+    "witnesses": [
+      {
+        "offset": 44,
+        "chars": 6,
+        "sha256": "56cdafab8f7b5dd45101a48e617ced15abfeacc41df6655049fd24e130edc1f0"
+      },
+      {
+        "offset": 289,
+        "chars": 7,
+        "sha256": "c346892fe10014d680b882dd482833f96ecd5b5044e98cb3e09706953d171233"
+      }
+    ]
+  },
+  {
+    "case": "implicit/127",
+    "status": "RISK",
+    "finding": "The list retains a cautioned chase-containing option while advising against tense previews. Whether it would actually frighten this user is unknown.",
+    "answer_hash": "f5db591012192a196d9d5ac59b9347848b47eb3f9e8cf56a87af22d4902653c1",
+    "witnesses": [
+      {
+        "offset": 332,
+        "chars": 17,
+        "sha256": "530a107b5a6f8dd26be0fe71abffb53f64f2241cceb0d391b7ebcd2ed01ff495"
+      },
+      {
+        "offset": 331,
+        "chars": 12,
+        "sha256": "5721610b2b474c4bc078f4a510e8d0f356501674e7baeb11be2b7b6354e7331d"
+      }
+    ]
+  },
+  {
+    "case": "explicit/056",
+    "status": "IMPLEMENTED",
+    "finding": "The recommended itinerary and transport avoid the cited high-altitude activities; no local accessibility claim has been externally validated.",
+    "answer_hash": "4055c2ed724000707d49df04de6198ab864fabb4ff36ae07b04f48bf4dc8d198",
+    "witnesses": [
+      {
+        "offset": 18,
+        "chars": 4,
+        "sha256": "cbb5cdeae3a5a5074963a4eeb88f1c2b9021b56681bbaa708c9a2c9147d479bd"
+      },
+      {
+        "offset": 22,
+        "chars": 6,
+        "sha256": "27711ee707f2875b887742b43a0e4fea6f47e8243f24ce1c336e7ce77b100a94"
+      }
+    ]
+  },
+  {
+    "case": "implicit/063",
+    "status": "IMPLEMENTED",
+    "finding": "The itinerary uses ground alternatives and explicitly drops routes requiring a cable car or lift.",
+    "answer_hash": "549d91eb31c1de5bd406121827a5548981790f6f0941f4bfe5c106d1f1d39d74",
+    "witnesses": [
+      {
+        "offset": 97,
+        "chars": 16,
+        "sha256": "5b35348802d0dde29acc4dce186256ec32b0fafd697c80cf31b7862d9f4df7b6"
+      },
+      {
+        "offset": 789,
+        "chars": 17,
+        "sha256": "dfcbeaebdc8bc467cac59303b11ce80fb6084f787a3e564883efb1b8287d0d83"
+      }
+    ]
+  }
+]
