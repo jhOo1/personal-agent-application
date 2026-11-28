@@ -46,18 +46,44 @@ def collect():
     return pin,finished,groups,ledger,delivery
 
 
+def native_totals(rows, methods):
+    scores = {method: Counter() for method in methods}
+    for _, _, values in rows:
+        for method in methods:
+            scores[method].update(values[method])
+    return dict(common=len(rows), metrics=scores)
+
+
+def rpe_sensitivity(groups):
+    """Reuse the recorded judge flags without changing the primary results."""
+    results = {}
+    for opponent in ('BASE', 'PLAN_SELECTED', 'DIRECT'):
+        methods = ('SCOPE', opponent)
+        for name, rows in groups.items():
+            if not (name == 'RPEval' or name.startswith('RPEval/')):
+                continue
+            common = [row for row in rows if aligned(row[2], ('BASE', *methods))]
+            unflagged = []
+            for card, receipts, values in common:
+                flags = [card['base_flags'] if method == 'BASE'
+                         else receipts[method].get('score_flags') for method in methods]
+                if all(flag == [] for flag in flags):
+                    unflagged.append((card, receipts, values))
+            results.setdefault(opponent, {})[name] = dict(
+                primary=native_totals(common, methods),
+                without_known_flags=native_totals(unflagged, methods),
+                excluded_from_sensitivity=len(common)-len(unflagged))
+    return results
+
+
 def summarize():
     pin,finished,groups,ledger,delivery=collect()
     if not finished:
         raise SystemExit('No batch result has settled')
     native={}
     for key,rows in groups.items():
-        common=[values for _,_,values in rows if aligned(values,METHODS)]
-        counts={a:Counter() for a in METHODS}
-        for values in common:
-            for a in METHODS:
-                counts[a].update(values[a])
-        native[key]=dict(assigned=len(rows),common=len(common),metrics=counts)
+        common=[row for row in rows if aligned(row[2],METHODS)]
+        native[key]=dict(assigned=len(rows),**native_totals(common,METHODS))
     by_rpe=defaultdict(list)
     for c,_,values in groups['RPEval']:
         by_rpe[c['group']].append(values)
@@ -77,6 +103,7 @@ def summarize():
             ties=sum(r['net_match']==0 for r in scored))
     return dict(finished_batches=finished,all_batches_assigned=sum(len(b) for b in pin['batches']),
                 native=native,paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=group_support,
+                rpe_judge_sensitivity=rpe_sensitivity(groups),
                 delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                     statuses=Counter(r['status'] for r in ledger),
                     tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger),
