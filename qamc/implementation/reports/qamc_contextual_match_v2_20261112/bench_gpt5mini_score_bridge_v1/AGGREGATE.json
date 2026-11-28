@@ -1,0 +1,18 @@
+{
+  "canary_pass": false,
+  "exact_reuse": {
+    "GPT5MiniCanary": {}
+  },
+  "logical_outcomes": {
+    "FAILED_DELIVERY_UNKNOWN": 2,
+    "NOT_DISPATCHED": 26
+  },
+  "physical": 2,
+  "reported_tokens": 0,
+  "retries": 0,
+  "totals": {},
+  "transport_statuses": {
+    "FAILED_DELIVERY_UNKNOWN": 2
+  },
+  "usage_unknown": 2
+}

@@ -1,0 +1,669 @@
+{
+  "cases": [
+    {
+      "case": "pa_transfer_20261109/12a39042622bc3e41711",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 3,
+          "positions": 5,
+          "severity": {
+            "FB": 2,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 3,
+            "UPB": 2,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": true,
+          "matched": 3,
+          "positions": 5,
+          "severity": {
+            "FB": 0,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 1,
+            "VG": 1
+          },
+          "status": "INCONSISTENT_MACRO"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 3,
+          "positions": 5,
+          "severity": {
+            "FB": 2,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 3,
+            "UPB": 2,
+            "VG": 2
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "implicit/020",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": true,
+          "matched": 6,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 1,
+            "LF": 0,
+            "RII": 1,
+            "UPB": 1,
+            "VG": 2
+          },
+          "status": "INCONSISTENT_MACRO"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 6,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 4,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": true,
+          "matched": 6,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 1,
+            "LF": 0,
+            "RII": 1,
+            "UPB": 1,
+            "VG": 2
+          },
+          "status": "INCONSISTENT_MACRO"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "implicit/024",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 2,
+          "positions": 4,
+          "severity": {
+            "FB": 1,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 1,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 2,
+          "positions": 4,
+          "severity": {
+            "FB": 1,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 1,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 2,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 4,
+            "VG": 1
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/036",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": true,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 1,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 0,
+            "VG": 1
+          },
+          "status": "INVALID_MICRO"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": true,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 1,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 0,
+            "VG": 1
+          },
+          "status": "INVALID_MICRO"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 1,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 1,
+            "UPB": 4,
+            "VG": 1
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "implicit/098",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 2,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 1,
+            "UPB": 2,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 2,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 1,
+            "UPB": 2,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 0,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 3
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/052",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 4,
+          "positions": 6,
+          "severity": {
+            "FB": 4,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 4,
+          "positions": 6,
+          "severity": {
+            "FB": 4,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 2,
+          "positions": 6,
+          "severity": {
+            "FB": 2,
+            "Judge": 3,
+            "LF": 2,
+            "RII": 2,
+            "UPB": 3,
+            "VG": 2
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/008",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 5,
+          "positions": 7,
+          "severity": {
+            "FB": 3,
+            "Judge": 3,
+            "LF": 1,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 5,
+          "positions": 7,
+          "severity": {
+            "FB": 3,
+            "Judge": 3,
+            "LF": 1,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 2,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 1,
+            "RII": 2,
+            "UPB": 4,
+            "VG": 2
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "implicit/123",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 2,
+          "positions": 5,
+          "severity": {
+            "FB": 1,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 1,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 2,
+          "positions": 5,
+          "severity": {
+            "FB": 1,
+            "Judge": 2,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 1,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 2,
+          "positions": 5,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 4,
+            "VG": 2
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/146",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 2
+          },
+          "status": "INVALID_MICRO"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 3,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 2
+          },
+          "status": "INVALID_MICRO"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 2
+          },
+          "status": "INVALID_MICRO"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/065",
+      "common_valid_with_original_rules": true,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": 0,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 5,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 2
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": 0,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 5,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": 0,
+          "positions": 6,
+          "severity": {
+            "FB": 0,
+            "Judge": 5,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 2
+          },
+          "status": "OK"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "implicit/047",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": null,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 3
+          },
+          "status": "INVALID_MICRO"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": null,
+          "positions": 7,
+          "severity": {
+            "FB": 3,
+            "Judge": 3,
+            "LF": 0,
+            "RII": 2,
+            "UPB": 0,
+            "VG": 2
+          },
+          "status": "INVALID_MICRO"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": null,
+          "positions": 7,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 3
+          },
+          "status": "INVALID_MICRO"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    },
+    {
+      "case": "explicit/061",
+      "common_valid_with_original_rules": false,
+      "fraction_normalized": {
+        "IPE_C": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 3
+          },
+          "status": "INVALID_MICRO"
+        },
+        "RPR_PAPER_FULL": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 4,
+            "VG": 1
+          },
+          "status": "INVALID_MICRO"
+        },
+        "TASK_ONLY": {
+          "macro": false,
+          "matched": null,
+          "positions": 4,
+          "severity": {
+            "FB": 0,
+            "Judge": 4,
+            "LF": 0,
+            "RII": 0,
+            "UPB": 5,
+            "VG": 3
+          },
+          "status": "INVALID_MICRO"
+        }
+      },
+      "raw_status": {
+        "RPR_PAPER_FULL": "INVALID_JSON",
+        "TASK_ONLY": "INVALID_JSON"
+      }
+    }
+  ],
+  "contracts": {
+    "INCONSISTENT_MACRO": 2,
+    "INVALID_MICRO": 7,
+    "OK": 15
+  },
+  "new_calls": 0,
+  "paired": {
+    "IPE_C": {
+      "adapted_exact": 1,
+      "adapted_match": 23,
+      "figure_exact": 0,
+      "figure_match": 15,
+      "positions": 34,
+      "tasks": 6
+    },
+    "RPR_PAPER_FULL": {
+      "adapted_exact": 1,
+      "adapted_match": 23,
+      "figure_exact": 0,
+      "figure_match": 15,
+      "positions": 34,
+      "tasks": 6
+    },
+    "TASK_ONLY": {
+      "adapted_exact": 1,
+      "adapted_match": 17,
+      "figure_exact": 0,
+      "figure_match": 8,
+      "positions": 34,
+      "tasks": 6
+    }
+  },
+  "raw_contract": {
+    "INVALID_JSON": 24
+  },
+  "raw_paired": {},
+  "syntax_normalization": {
+    "INCONSISTENT_MACRO": 2,
+    "INVALID_MICRO": 7,
+    "OK": 15
+  }
+}

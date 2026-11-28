@@ -1,0 +1,736 @@
+{
+  "assigned": 12,
+  "cases": [
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          }
+        }
+      },
+      "case": "pa_transfer_20261109/12a39042622bc3e41711",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "B_only"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 7,
+            "positions": 7
+          }
+        }
+      },
+      "case": "implicit/020",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "B_only"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 1,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 1,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 0,
+          "RII": 1,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        }
+      },
+      "case": "implicit/024",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "B_only"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 2,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 2,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 4
+          }
+        }
+      },
+      "case": "explicit/036",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "B_only"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 1,
+          "Judge": 2,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 6
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 1,
+          "Judge": 2,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 2,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 6
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "Judge": 3,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 3,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 6
+          }
+        }
+      },
+      "case": "implicit/098",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 1,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 4,
+            "positions": 6
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 1,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 4,
+            "positions": 6
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 4,
+          "Judge": 4,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 4,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 6
+          }
+        }
+      },
+      "case": "explicit/052",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 1,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 5,
+            "positions": 7
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 1,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 5,
+            "positions": 7
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 4,
+          "Judge": 4,
+          "OPB": 0,
+          "RII": 3,
+          "UPB": 5,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 7
+          }
+        }
+      },
+      "case": "explicit/008",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 1,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 2,
+          "OPB": 1,
+          "RII": 2,
+          "UPB": 1,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 3,
+            "positions": 5
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 2,
+          "Judge": 3,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 3,
+          "VG": 1,
+          "full_match": 0,
+          "match": {
+            "matched": 2,
+            "positions": 5
+          }
+        }
+      },
+      "case": "implicit/123",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 1,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 1,
+          "full_match": 1,
+          "match": {
+            "matched": 4,
+            "positions": 4
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 4,
+          "OPB": 4,
+          "RII": 3,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 1,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 1,
+          "full_match": 1,
+          "match": {
+            "matched": 4,
+            "positions": 4
+          }
+        }
+      },
+      "case": "explicit/146",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "all_A"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 6,
+            "positions": 6
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 6,
+            "positions": 6
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 0,
+          "OPB": 0,
+          "RII": 0,
+          "UPB": 0,
+          "VG": 0,
+          "full_match": 1,
+          "match": {
+            "matched": 6,
+            "positions": 6
+          }
+        }
+      },
+      "case": "explicit/065",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "all_A"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 0,
+          "Judge": 4,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 4,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 7
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 1,
+          "Judge": 5,
+          "OPB": 5,
+          "RII": 3,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 7
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "Judge": 4,
+          "OPB": 0,
+          "RII": 2,
+          "UPB": 4,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 7
+          }
+        }
+      },
+      "case": "implicit/047",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "all_A"
+    },
+    {
+      "adapted": {
+        "IPE_C": {
+          "FM": 1,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          }
+        },
+        "RPR_PAPER_FULL": {
+          "FM": 0,
+          "Judge": 3,
+          "OPB": 2,
+          "RII": 3,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          }
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "Judge": 3,
+          "OPB": 3,
+          "RII": 2,
+          "UPB": 0,
+          "VG": 2,
+          "full_match": 0,
+          "match": {
+            "matched": 0,
+            "positions": 4
+          }
+        }
+      },
+      "case": "explicit/061",
+      "common_valid": false,
+      "grades": {
+        "IPE_C": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "RPR_PAPER_FULL": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        },
+        "TASK_ONLY": {
+          "matched": null,
+          "status": "INVALID_JSON"
+        }
+      },
+      "stratum": "all_A"
+    }
+  ],
+  "common": {},
+  "contracts": {
+    "INVALID_JSON": 24
+  },
+  "physical": 24,
+  "retries": 0,
+  "tokens": 38975,
+  "transport": {
+    "OK": 24
+  },
+  "unknown_usage": 0
+}

@@ -1,0 +1,5 @@
+# BenchPreS model-only diagnostic bridge to GPT-5-mini
+
+BenchPreS Appendix E reports human agreement for GPT-5-mini and DeepSeek-R1. It motivates checking the alias here as a sensitivity diagnostic. Use the same 14 exposed fixed-answer pairs and exact masked rating messages already scored by GPT-4.1 and Qwen. Switch only the model field; keep the original generation settings and budget. Include both Strong Gate and paper Selectivity in each pair. Tests apply to the masked audit, not the official BenchPreS scorer or a substitute human truth. Preserve all original scores.
+
+Use a request-hash rule independent of score to nominate one entire two-answer pair for qualification. If both new responses yield the required valid yes/no judgment, score the remaining 26 cells. If either fails or is uncertain, do not dispatch the remainder or resend failed cells. Any accepted reasoning setting or alias designation alone cannot certify backend weights. Record successful/failed/unknown usage and report comparison on the common complete denominator with the original failure inventory. New actor requests, benchmark additions, sealed access and score replacements are all zero.
