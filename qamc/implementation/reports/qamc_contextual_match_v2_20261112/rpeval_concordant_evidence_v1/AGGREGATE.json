@@ -1,0 +1,500 @@
+{
+  "assigned": 8,
+  "calls": 30,
+  "coverage": {
+    "B_only/different_equal_count": 1,
+    "B_only/verified_history_on": 9,
+    "all_A/different_equal_count": 2,
+    "all_A/verified_history_on": 10,
+    "contains_C/different_equal_count": 23,
+    "contains_C/verified_history_on": 118
+  },
+  "paired": {
+    "IPE_C": {
+      "loss": 1,
+      "tie": 6
+    },
+    "RANKED": {
+      "loss": 1,
+      "tie": 6
+    }
+  },
+  "retention": {
+    "CONCORDANT": {
+      "A": 14,
+      "B": 7,
+      "C": 7
+    },
+    "IPE_C": {
+      "A": 39,
+      "B": 7,
+      "C": 7
+    },
+    "RANKED": {
+      "A": 21,
+      "C": 7
+    }
+  },
+  "retries": 0,
+  "reuse": {
+    "ConcordantEvidenceActor": {
+      "OK": 1
+    },
+    "RPEvalJudge": {
+      "OK": 1
+    }
+  },
+  "rows": [
+    {
+      "case": "implicit/021",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [],
+        "RANKED": [
+          "BIAS_FIELDS_INCOMPATIBLE"
+        ]
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "A": 3
+        },
+        "RANKED": {
+          "A": 3
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 0,
+          "positions": 5
+        },
+        "IPE_C": {
+          "matched": 0,
+          "positions": 5
+        },
+        "RANKED": {
+          "matched": 0,
+          "positions": 5
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 1525,
+        "IPE_C": 2418,
+        "RANKED": 1534
+      },
+      "stratum": "all_A",
+      "valid": true
+    },
+    {
+      "case": "pa_transfer_20261109/f9f5dc9d527b54635d4f",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [],
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "A": 6
+        },
+        "RANKED": {
+          "A": 6
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 0,
+          "positions": 7
+        },
+        "IPE_C": {
+          "matched": 0,
+          "positions": 7
+        },
+        "RANKED": {
+          "matched": 0,
+          "positions": 7
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 2768,
+        "IPE_C": 3237,
+        "RANKED": 2806
+      },
+      "stratum": "all_A",
+      "valid": true
+    },
+    {
+      "case": "explicit/043",
+      "flags": {
+        "CONCORDANT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "IPE_C": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "RANKED": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "B": 1
+        },
+        "RANKED": {
+          "A": 1
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 4,
+          "positions": 5
+        },
+        "IPE_C": {
+          "matched": 4,
+          "positions": 5
+        },
+        "RANKED": {
+          "matched": 4,
+          "positions": 5
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 52,
+        "IPE_C": 225,
+        "RANKED": 53
+      },
+      "stratum": "B_only",
+      "valid": true
+    },
+    {
+      "case": "implicit/077",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [],
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "B": 2,
+          "C": 1
+        },
+        "RANKED": {
+          "A": 2,
+          "C": 1
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 9
+        },
+        "IPE_C": {
+          "matched": 6,
+          "positions": 9
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 9
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 1313,
+        "IPE_C": 3976,
+        "RANKED": 1338
+      },
+      "stratum": "contains_C",
+      "valid": true
+    },
+    {
+      "case": "implicit/132",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [],
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "A": 2,
+          "B": 1,
+          "C": 1
+        },
+        "RANKED": {
+          "A": 3,
+          "C": 1
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 8
+        },
+        "IPE_C": {
+          "matched": 5,
+          "positions": 8
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 8
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 1910,
+        "IPE_C": 3656,
+        "RANKED": 1760
+      },
+      "stratum": "contains_C",
+      "valid": true
+    },
+    {
+      "case": "explicit/017",
+      "flags": {
+        "CONCORDANT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "IPE_C": null,
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "B": 1,
+          "C": 1
+        },
+        "RANKED": {
+          "A": 1,
+          "C": 1
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 2,
+          "positions": 4
+        },
+        "IPE_C": null,
+        "RANKED": null
+      },
+      "source_chars": {
+        "CONCORDANT": 110,
+        "IPE_C": 209,
+        "RANKED": 108
+      },
+      "stratum": "contains_C",
+      "valid": false
+    },
+    {
+      "case": "implicit/010",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "A": 3,
+          "B": 1,
+          "C": 2
+        },
+        "RANKED": {
+          "A": 4,
+          "C": 2
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 7
+        },
+        "IPE_C": {
+          "matched": 5,
+          "positions": 7
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 7
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 2870,
+        "IPE_C": 3369,
+        "RANKED": 2814
+      },
+      "stratum": "contains_C",
+      "valid": true
+    },
+    {
+      "case": "implicit/038",
+      "flags": {
+        "CONCORDANT": [],
+        "IPE_C": [],
+        "RANKED": []
+      },
+      "retained_label_counts": {
+        "CONCORDANT": {
+          "B": 1,
+          "C": 2
+        },
+        "RANKED": {
+          "A": 1,
+          "C": 2
+        }
+      },
+      "scores": {
+        "CONCORDANT": {
+          "matched": 4,
+          "positions": 8
+        },
+        "IPE_C": {
+          "matched": 4,
+          "positions": 8
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 8
+        }
+      },
+      "source_chars": {
+        "CONCORDANT": 1441,
+        "IPE_C": 3697,
+        "RANKED": 1322
+      },
+      "stratum": "contains_C",
+      "valid": true
+    }
+  ],
+  "tokens": 73246,
+  "totals": {
+    "B_only": {
+      "CONCORDANT": {
+        "FM": 0,
+        "OPB": 0,
+        "UPB": 1,
+        "match": 4,
+        "positions": 5,
+        "tasks": 1
+      },
+      "IPE_C": {
+        "FM": 0,
+        "OPB": 0,
+        "UPB": 1,
+        "match": 4,
+        "positions": 5,
+        "tasks": 1
+      },
+      "RANKED": {
+        "FM": 0,
+        "OPB": 1,
+        "UPB": 0,
+        "match": 4,
+        "positions": 5,
+        "tasks": 1
+      }
+    },
+    "all": {
+      "CONCORDANT": {
+        "FM": 3,
+        "OPB": 15,
+        "UPB": 3,
+        "match": 23,
+        "positions": 49,
+        "tasks": 7
+      },
+      "IPE_C": {
+        "FM": 1,
+        "OPB": 16,
+        "UPB": 4,
+        "match": 24,
+        "positions": 49,
+        "tasks": 7
+      },
+      "RANKED": {
+        "FM": 2,
+        "OPB": 15,
+        "UPB": 5,
+        "match": 24,
+        "positions": 49,
+        "tasks": 7
+      }
+    },
+    "all_A": {
+      "CONCORDANT": {
+        "FM": 1,
+        "OPB": 6,
+        "UPB": 0,
+        "match": 0,
+        "positions": 12,
+        "tasks": 2
+      },
+      "IPE_C": {
+        "FM": 1,
+        "OPB": 9,
+        "UPB": 0,
+        "match": 0,
+        "positions": 12,
+        "tasks": 2
+      },
+      "RANKED": {
+        "FM": 1,
+        "OPB": 6,
+        "UPB": 3,
+        "match": 0,
+        "positions": 12,
+        "tasks": 2
+      }
+    },
+    "contains_C": {
+      "CONCORDANT": {
+        "FM": 2,
+        "OPB": 9,
+        "UPB": 2,
+        "match": 19,
+        "positions": 32,
+        "tasks": 4
+      },
+      "IPE_C": {
+        "FM": 0,
+        "OPB": 7,
+        "UPB": 3,
+        "match": 20,
+        "positions": 32,
+        "tasks": 4
+      },
+      "RANKED": {
+        "FM": 1,
+        "OPB": 8,
+        "UPB": 2,
+        "match": 20,
+        "positions": 32,
+        "tasks": 4
+      }
+    },
+    "unflagged": {
+      "CONCORDANT": {
+        "FM": 3,
+        "OPB": 10,
+        "UPB": 2,
+        "match": 14,
+        "positions": 32,
+        "tasks": 4
+      },
+      "IPE_C": {
+        "FM": 1,
+        "OPB": 10,
+        "UPB": 2,
+        "match": 15,
+        "positions": 32,
+        "tasks": 4
+      },
+      "RANKED": {
+        "FM": 1,
+        "OPB": 9,
+        "UPB": 2,
+        "match": 15,
+        "positions": 32,
+        "tasks": 4
+      }
+    }
+  },
+  "transport": {
+    "OK": 30
+  },
+  "unknown_usage": 0
+}
