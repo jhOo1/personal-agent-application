@@ -1,0 +1,33 @@
+{
+  "RPEval": {
+    "assigned": 8,
+    "candidate_sources": 37,
+    "literal_seen": 25,
+    "all_seen": 5,
+    "direct/seen": 4,
+    "direct/A": 7,
+    "task_only_strong_draft": 3,
+    "none_seen": 3,
+    "direct/not_seen": 3,
+    "conflict/not_seen": 1,
+    "conflict/A": 1
+  },
+  "BenchPreS": {
+    "assigned": 8,
+    "candidate_sources": 41,
+    "literal_seen": 14,
+    "part_seen": 8,
+    "direct/not_seen": 6,
+    "direct/inappropriate": 6,
+    "conflict/not_seen": 2,
+    "conflict/inappropriate": 2
+  },
+  "PersistBench": {
+    "assigned": 8,
+    "candidate_sources": 76,
+    "literal_seen": 76,
+    "all_seen": 8,
+    "direct/seen": 2,
+    "direct/unknown": 2
+  }
+}

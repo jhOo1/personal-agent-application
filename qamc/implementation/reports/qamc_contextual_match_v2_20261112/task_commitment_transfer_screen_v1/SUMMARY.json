@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "RPEval": {
+      "assigned": 8,
+      "KEEP": 7,
+      "direct_removes": 7,
+      "anchors_different_from_direct": 0,
+      "same_removal": 1,
+      "VALID_QUOTATIONS": 1
+    },
+    "BenchPreS": {
+      "assigned": 8,
+      "KEEP": 6,
+      "direct_removes": 6,
+      "anchors_different_from_direct": 0,
+      "same_removal": 2,
+      "VALID_QUOTATIONS": 2
+    },
+    "PersistBench": {
+      "assigned": 8,
+      "KEEP": 8,
+      "direct_removes": 2,
+      "anchors_different_from_direct": 0,
+      "same_removal": 0
+    }
+  },
+  "physical": {
+    "OK": 24
+  },
+  "tokens": 90035,
+  "usage_unknown": 0,
+  "retries": 0
+}
