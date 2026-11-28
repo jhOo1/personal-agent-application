@@ -63,3 +63,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [PersistBench 选择器历史消息角色对照](implementation/reports/qamc_contextual_match_v2_20261112/persist_selector_role_transport_v1/RESULTS.md)已结算。七个双臂有效选择中三题改变准入；没有双裁判共同风险净胜。助手消息在霸王龙展牌题放行私人信念并影响展牌，用户消息在纪念日晚餐题漏掉原来正确使用的伴侣菜品偏好。原选择器和全史提醒强对照继续保留，不扩大角色切换路线。三条解析失败和一条 Actor 交付未知分开计入。
 
 [三基准同来源片段保护与隔离](implementation/reports/qamc_contextual_match_v2_20261112/protected_clause_exposure_v1/RESULTS.md)结算。五题真正触发，原生适配分无净胜。RPEval 同题 13/24→12/24；两道实际触发的 PersistBench 风险题同分失败，且罗马行程的评分理由误报了已消失的分手内容，其他私人细节仍真实存在。BenchPreS 与严格有益使用沿用原稿，不能用于证明真实修改时的保护性。不再扩大此片段隔离规则。
+
+[基于当前任务条件的备选动作对照](implementation/reports/qamc_contextual_match_v2_20261112/task_condition_branches_v1/RESULTS.md)已结算。十二题五触发，两臂共享同一候选和 Actor 可见历史。要求保留条件分支使 RPEval Match 13/24→12/24、BenchPreS 完整度 10/10→9/10；PersistBench 只触发两道严格有益使用且均持平。项目模板、公园聚会和全部 PersistBench 风险根沿用旧稿，因此该触发器未覆盖原来的错误决定。停止扩大，保持各基准强参照。
