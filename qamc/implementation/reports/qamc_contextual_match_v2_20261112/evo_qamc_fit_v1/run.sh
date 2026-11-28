@@ -52,6 +52,7 @@ case "${1:-}" in
   task-message-pairs) entry=task_message_boundary_pairs.py; shift ;;
   task-message-replay) entry=task_message_boundary_replay.py; shift ;;
   profile-evidence-restoration) entry=profile_evidence_restoration.py; shift ;;
+  profile-evidence-audit) entry=profile_evidence_audit.py; shift ;;
   blind-behavior-packet) entry=blind_behavior_packet.py; shift ;;
   blind-behavior-readout) entry=blind_behavior_readout.py; shift ;;
 
