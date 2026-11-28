@@ -18,7 +18,7 @@ Against the matched generic plan, the task-action plan gains 8.32 percentage poi
 
 ## Mechanism decisions
 
-- RPEval advanced from 33 to 35 matching positions with the action plan, both below IPE-C's 46. Both score 0/25 on the common all-A slice. The main observable failure concerns influence before answer generation. [RPEval cases and scoring flags](RPE_STAGE.md)
+- RPEval advanced from 33 to 35 matching positions with the action plan, both below IPE-C's 46. Both score 0/25 on the common all-A slice. Both steps see full history. The endpoint scores alone cannot locate where the error first appeared. [RPEval cases and scoring flags](RPE_STAGE.md)
 - BenchPreS realizes four more appropriate preferences with action plans and adds nine more misuses versus generic. Completeness stays 52/60 for both, seven points below Gate. In the tax discrepancy example, action raises AAR from 0 to 1, adds one misuse, and lowers completeness from 4 to 3. The answer is longer. This supports checking expression and required delivery together. Better AAR alone does not make the behavior a Pareto improvement.
 - PersistBench improves three paired tasks against generic. On the companion-dog aesthetic case both scores remain 4 and both formulations still treat an uncertain adult coat as disqualifying. All four strict beneficial-use examples pass under all methods. These are single deployments, so the risk result cannot be pooled with the repeated-risk protocol.
 
