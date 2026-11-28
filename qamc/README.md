@@ -3,6 +3,8 @@
 
 **新环境从[研究交接](HANDOFF.md)开始，再查[证据索引](EVIDENCE_INDEX.md)。**
 
+**当前范围与研究优先级见[基准去留决定](BENCHMARK_DECISION_CURRENT.md)。**
+
 QAMC 研究在候选记忆固定的条件下，何时使用历史、历史应影响哪个决定，以及怎样同时减少误用与漏用。当前主要评估 RPEval、BenchPreS 和 PersistBench。开发结果和发布协议可比的确认结果分开记录。
 
 | 研究阶段 | 方法与结论 |
