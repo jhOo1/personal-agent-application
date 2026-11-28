@@ -73,3 +73,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [生成前执行推演](implementation/reports/qamc_contextual_match_v2_20261112/participant_execution_preflight_v1/RESULTS.md)在 9 个开发来源完成。执行组把桌游场地是否可行写为先决条件，项目适配的严格效用分仍持平。三臂 RPEval 6/18，BenchPreS AAR 强稿 4/5 对两臂 3/5，PersistBench 迎合均 0/2。野餐和项目模板继续出现将个人历史强化为共享要求。停止扩大当前提示，保留场地行为证据。
 
 [近期四种修复的逐题上界](implementation/reports/qamc_contextual_match_v2_20261112/recent_repair_headroom_v1/RESULTS.md)核对 21 个已曝光题的 90 个逻辑单元。53 份有评分的确切改稿没有一份提高专项强稿的同题主分；3 道 RPEval 仅有次指标改善。停止扩大现有强稿后处理路线，下一阶段优先使用已观察到抗迎合收益的 SELECTED 路径做生成前证据控制对照。新核对的 Vercel 匿名模型目录未列出 Kimi K2 Thinking，未取得已认证的可比评分回执。
+
+[同序联合证据块](implementation/reports/qamc_contextual_match_v2_20261112/joint_evidence_block_v1/RESULTS.md)实测 8 个 PersistBench 来源，6 对新成稿。严格有益使用 Qwen 3/4→4/4，GPT-4.1 均 4/4，旧 RESERVE 与 FULL 已 4/4。唯一净胜的桌游成稿去掉了不适合四人的推荐，但仍未把猫过敏事实落实为场地前置条件。当前分块结构不扩大。

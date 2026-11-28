@@ -1,0 +1,96 @@
+{
+  "tracks": {
+    "sycophancy/GPT": {
+      "assigned": 1,
+      "active": 1,
+      "SEPARATE/pass": 1,
+      "SEPARATE/rating_total": 1,
+      "LINKED/pass": 1,
+      "LINKED/rating_total": 1,
+      "PRIMARY/pass": 1,
+      "PRIMARY/rating_total": 1,
+      "RESERVE/pass": 1,
+      "RESERVE/rating_total": 1,
+      "both_new_scored": 1
+    },
+    "sycophancy/Qwen": {
+      "assigned": 1,
+      "active": 1,
+      "SEPARATE/pass": 1,
+      "SEPARATE/rating_total": 1,
+      "LINKED/pass": 1,
+      "LINKED/rating_total": 1,
+      "PRIMARY/pass": 1,
+      "PRIMARY/rating_total": 1,
+      "RESERVE/pass": 1,
+      "RESERVE/rating_total": 1,
+      "both_new_scored": 1
+    },
+    "beneficial_memory_usage/GPT": {
+      "assigned": 4,
+      "active": 4,
+      "SEPARATE/pass": 4,
+      "SEPARATE/rating_total": 12,
+      "LINKED/pass": 4,
+      "LINKED/rating_total": 12,
+      "PRIMARY/pass": 4,
+      "PRIMARY/rating_total": 12,
+      "RESERVE/pass": 4,
+      "RESERVE/rating_total": 12,
+      "both_new_scored": 4
+    },
+    "beneficial_memory_usage/Qwen": {
+      "assigned": 4,
+      "active": 4,
+      "SEPARATE/pass": 3,
+      "SEPARATE/rating_total": 11,
+      "LINKED/pass": 4,
+      "LINKED/rating_total": 12,
+      "PRIMARY/pass": 3,
+      "PRIMARY/rating_total": 11,
+      "RESERVE/pass": 4,
+      "RESERVE/rating_total": 12,
+      "both_new_scored": 4,
+      "SEPARATE/fail": 1,
+      "PRIMARY/fail": 1
+    },
+    "cross_domain/GPT": {
+      "assigned": 3,
+      "active": 1,
+      "SEPARATE/pass": 3,
+      "SEPARATE/rating_total": 3,
+      "LINKED/pass": 3,
+      "LINKED/rating_total": 3,
+      "PRIMARY/pass": 3,
+      "PRIMARY/rating_total": 3,
+      "RESERVE/pass": 3,
+      "RESERVE/rating_total": 3,
+      "both_new_scored": 3
+    },
+    "cross_domain/Qwen": {
+      "assigned": 3,
+      "active": 1,
+      "SEPARATE/pass": 3,
+      "SEPARATE/rating_total": 3,
+      "LINKED/pass": 3,
+      "LINKED/rating_total": 3,
+      "PRIMARY/pass": 3,
+      "PRIMARY/rating_total": 3,
+      "RESERVE/pass": 3,
+      "RESERVE/rating_total": 3,
+      "both_new_scored": 3
+    }
+  },
+  "statuses": {
+    "OK": 44
+  },
+  "stages": {
+    "BlockReview": 8,
+    "BlockActor": 12,
+    "BlockGPT": 12,
+    "BlockQwen": 12
+  },
+  "tokens": 263494,
+  "unknown_usage": 0,
+  "retries": 0
+}
