@@ -37,14 +37,27 @@ def three_domain_utility(sections, arm):
                 PersistBench=sum(t['primary']/t['positions'] for t in persist)/3)
 
 
+def interaction_bounds(values, positions):
+    """Bound (D selected - D off) - (Q selected - Q off) on one root."""
+    positive = (values[2], values[1])
+    negative = (values[3], values[0])
+    low = sum(v["primary"] if v is not None else 0 for v in positive) - sum(
+        v["primary"] if v is not None else positions for v in negative)
+    high = sum(v["primary"] if v is not None else positions for v in positive) - sum(
+        v["primary"] if v is not None else 0 for v in negative)
+    return low, high
+
+
 def readout(roster, rows, ledger):
     prior = summarize(roster,rows,ledger)
     table = {(r['uid'],r['method']):r for r in rows}
     outcomes = defaultdict(lambda:dict(assigned=0,matched=0,unflagged=0,
                 wins=0,losses=0,ties=0, old=Counter(), new=Counter(),
                 clean_old=Counter(), clean_new=Counter(), lower_bound=0, upper_bound=0))
-    exposure_interaction = defaultdict(lambda:dict(matched=0,unflagged=0,
-                                            positions=0,model_history_difference=Counter()))
+    exposure_interaction = defaultdict(lambda:dict(
+        assigned=0, assigned_positions=0, matched=0, unflagged=0, positions=0,
+        primary_lower_bound=0, primary_upper_bound=0,
+        model_history_difference=Counter(), unflagged_history_difference=Counter()))
     for item in roster:
         card = item['card']
         domain,stratum,uid = (card[k] for k in ('domain','stratum','uid'))
@@ -83,22 +96,30 @@ def readout(roster, rows, ledger):
         for interface in INTERFACES:
             arms = [f'{model}/{interface}/{exposure}' for model in MODELS
                     for exposure in ('SELECTED','OFF')]
-            q_s,q_o,d_s,d_o = [values[arm] for arm in arms]
-            if any(val is None for val in (q_s,q_o,d_s,d_o)):
-                continue
-            if len({(v['positions'],v.get('MR_denominator')) for v in (q_s,q_o,d_s,d_o)}) != 1:
+            measures = ('primary','OPB','UPB','FM','MR','completeness','nonbold','strict_pass')
+            four = [values[arm] for arm in arms]
+            low, high = interaction_bounds(four, size)
+            matched = all(v is not None for v in four)
+            clean = matched and domain == 'RPEval' and all(refs[a].get('score_flags') == [] for a in arms)
+            if matched and len({(v["positions"], v.get("MR_denominator")) for v in four}) != 1:
                 raise ValueError('Exposure interaction denominators differ')
+            delta = {}
+            if matched:
+                q_s,q_o,d_s,d_o = four
+                delta = {key: d_s[key]-d_o[key]-q_s[key]+q_o[key] for key in measures if key in q_s}
             for group in keys:
                 c = exposure_interaction[interface,group]
-                c['matched'] += 1
-                c['positions'] += size
-                for measure in ('primary','OPB','UPB','FM','MR','completeness','nonbold','strict_pass'):
-                    if measure not in q_s:
-                        continue
-                    c['model_history_difference'][measure] += (
-                        d_s[measure]-d_o[measure]-q_s[measure]+q_o[measure])
-                if domain == 'RPEval' and all(refs[a].get('score_flags') == [] for a in arms):
+                c['assigned'] += 1
+                c['assigned_positions'] += size
+                c['primary_lower_bound'] += low
+                c['primary_upper_bound'] += high
+                if matched:
+                    c['matched'] += 1
+                    c['positions'] += size
+                    c['model_history_difference'].update(delta)
+                if clean:
                     c['unflagged'] += 1
+                    c['unflagged_history_difference'].update(delta)
     parts = {arm:three_domain_utility(prior['sections'],arm) for arm in ('BASE',*ARMS)}
     average = {arm:sum(v.values())/3 for arm,v in parts.items() if v}
     return {**prior,
