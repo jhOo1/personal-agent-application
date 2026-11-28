@@ -1,0 +1,48 @@
+{
+  "new_model_calls": 0,
+  "retained_c_positions": 107,
+  "retained_c_questions": 87,
+  "ipe_c_exact_rp_questions": 85,
+  "ipe_c_exact_rp_visible_c_positions": 105,
+  "skipped": {
+    "missing_pair": 6
+  },
+  "paired": {
+    "questions": 79,
+    "positions": 491,
+    "ipe_match": 298,
+    "no_history_match": 213,
+    "wins": 3,
+    "losses": 52,
+    "ties": 24,
+    "oracle_gain": 6,
+    "ipe_OPB": 138,
+    "no_history_OPB": 36,
+    "ipe_UPB": 51,
+    "no_history_UPB": 253,
+    "ipe_FM": 14,
+    "no_history_FM": 178,
+    "groups": 32,
+    "groups_net_win": 1,
+    "groups_net_loss": 22
+  },
+  "paired_without_flags": {
+    "questions": 50,
+    "positions": 348,
+    "ipe_match": 207,
+    "no_history_match": 144,
+    "wins": 3,
+    "losses": 37,
+    "ties": 10,
+    "oracle_gain": 6,
+    "ipe_OPB": 94,
+    "no_history_OPB": 18,
+    "ipe_UPB": 20,
+    "no_history_UPB": 168,
+    "ipe_FM": 12,
+    "no_history_FM": 119,
+    "groups": 24,
+    "groups_net_win": 1,
+    "groups_net_loss": 18
+  }
+}

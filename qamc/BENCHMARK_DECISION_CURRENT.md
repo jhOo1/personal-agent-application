@@ -83,3 +83,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [RPEval 嵌套历史的终答四格](implementation/reports/qamc_contextual_match_v2_20261112/nested_answer_exposure_factorial_v1/RESULTS.md)验证 6 个曝光来源。三个含 C 来源加入新增记录后实质保护外卖过敏、零购置乐器、无香和冷色照明，Match 无史 7/20→仅新增 11/20、仅共享 8/20→全史 12/20，仍低于 IPE-C 13/20。三个仅新增 B 的来源各臂 9/17。隔离共享历史没有独立优势，保留行为诊断，不将同题历史差分用于部署。
 
 [IPE-C 硬约束冲突见证](implementation/reports/qamc_contextual_match_v2_20261112/ipe_concrete_constraint_gate_v1/RESULTS.md)的 10 道见证版均复用原输出，三个无史 C 题两法都未触发。普通版改写外卖题 Match 4/6→3/6。归档中仅三个含 C 的有效 IPE-C 无史题，专修该分支的事后主分空间最多 7/1,510 位。停止扩大见证规则，优先核验有史却未落实的条件。
+
+[可见合法约束与整组关闭历史的代价](implementation/reports/qamc_contextual_match_v2_20261112/visible_c_endpoint_tradeoff_v1/RESULTS.md)以成稿哈希关联 85 道 IPE-C 精确采用有史 RP 成稿的题。79 道共同有效时，无史使 OPB 严重度从 138 到 36，同时 Match 从 298/491 降至 213/491，UPB 从 51 升到 253。保留 RPEval 与 PersistBench 两个主基准，以 BenchPreS 做正式交付回归。PairPref 论文具备同偏好情景翻转，作者完整数据和 scorer 未核实，暂不替换。已向 QAMC-v3.2 发出基准取舍评审。
