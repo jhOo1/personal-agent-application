@@ -40,6 +40,10 @@ case "${1:-}" in
   first-pass-iteration) entry=first_pass_iteration.py; shift ;;
   first-pass-frontier) entry=first_pass_frontier.py; shift ;;
   no-history-grade-audit) entry=no_history_grade_audit.py; shift ;;
+  backbone-inventory) entry=backbone_interface_inputs.py; shift ;;
+  backbone-interface) entry=backbone_interface.py; shift ;;
+
+
 
 
 
