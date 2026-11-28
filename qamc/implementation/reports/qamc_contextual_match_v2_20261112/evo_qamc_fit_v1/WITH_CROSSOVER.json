@@ -1,0 +1,1322 @@
+{
+  "cost": {
+    "requests": 844,
+    "status": {
+      "OK": 842,
+      "KNOWN_LENGTH_FAILURE": 1,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    },
+    "stages": {
+      "Plan": 120,
+      "Actor": 197,
+      "RPEvalJudge": 78,
+      "BenchAttrs": 354,
+      "PersistNative": 60,
+      "Selection": 35
+    },
+    "tokens": 2761364,
+    "unknown_usage": 1
+  },
+  "scores": {
+    "RPEval": {
+      "assigned": 16,
+      "common": 14,
+      "grades_available": {
+        "BASE": 16,
+        "GENERIC": 15,
+        "TASK_ACTIONS": 15,
+        "SELF_RECHECK": 15,
+        "TASK_ONLY": 16,
+        "TASK_PLAN_SELECTED": 16
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 43,
+          "positions": 80,
+          "OPB": 13,
+          "UPB": 18,
+          "FM": 3
+        },
+        "GENERIC": {
+          "primary": 29,
+          "positions": 80,
+          "OPB": 30,
+          "UPB": 14,
+          "FM": 9
+        },
+        "TASK_ACTIONS": {
+          "primary": 31,
+          "positions": 80,
+          "OPB": 32,
+          "UPB": 13,
+          "FM": 7
+        },
+        "SELF_RECHECK": {
+          "primary": 27,
+          "positions": 80,
+          "OPB": 43,
+          "UPB": 4,
+          "FM": 9
+        },
+        "TASK_ONLY": {
+          "primary": 35,
+          "positions": 80,
+          "OPB": 23,
+          "UPB": 14,
+          "FM": 7
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 30,
+          "positions": 80,
+          "OPB": 24,
+          "UPB": 16,
+          "FM": 7
+        }
+      },
+      "directions": {
+        "tie": 11,
+        "win": 2,
+        "loss": 1
+      },
+      "assigned_delta_bounds": [
+        -6,
+        10
+      ],
+      "unflagged_rpe": {
+        "tasks": 5,
+        "positions": 31,
+        "scores": {
+          "BASE": 11,
+          "GENERIC": 8,
+          "TASK_ACTIONS": 8,
+          "SELF_RECHECK": 8,
+          "TASK_ONLY": 11,
+          "TASK_PLAN_SELECTED": 9
+        }
+      }
+    },
+    "RPEval/contains_C": {
+      "assigned": 5,
+      "common": 3,
+      "grades_available": {
+        "BASE": 5,
+        "GENERIC": 4,
+        "TASK_ACTIONS": 4,
+        "SELF_RECHECK": 4,
+        "TASK_ONLY": 5,
+        "TASK_PLAN_SELECTED": 5
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 6,
+          "UPB": 2,
+          "FM": 1
+        },
+        "GENERIC": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 9,
+          "UPB": 0,
+          "FM": 1
+        },
+        "TASK_ACTIONS": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 10,
+          "UPB": 0,
+          "FM": 2
+        },
+        "SELF_RECHECK": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 9,
+          "UPB": 0,
+          "FM": 2
+        },
+        "TASK_ONLY": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 8,
+          "UPB": 0,
+          "FM": 2
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 10,
+          "positions": 17,
+          "OPB": 6,
+          "UPB": 2,
+          "FM": 2
+        }
+      },
+      "directions": {
+        "tie": 3
+      },
+      "assigned_delta_bounds": [
+        -8,
+        8
+      ],
+      "unflagged_rpe": {
+        "tasks": 1,
+        "positions": 8,
+        "scores": {
+          "BASE": 5,
+          "GENERIC": 5,
+          "TASK_ACTIONS": 5,
+          "SELF_RECHECK": 5,
+          "TASK_ONLY": 5,
+          "TASK_PLAN_SELECTED": 5
+        }
+      }
+    },
+    "RPEval/all_A": {
+      "assigned": 5,
+      "common": 5,
+      "grades_available": {
+        "BASE": 5,
+        "GENERIC": 5,
+        "TASK_ACTIONS": 5,
+        "SELF_RECHECK": 5,
+        "TASK_ONLY": 5,
+        "TASK_PLAN_SELECTED": 5
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 7,
+          "positions": 25,
+          "OPB": 5,
+          "UPB": 9,
+          "FM": 1
+        },
+        "GENERIC": {
+          "primary": 0,
+          "positions": 25,
+          "OPB": 12,
+          "UPB": 6,
+          "FM": 4
+        },
+        "TASK_ACTIONS": {
+          "primary": 0,
+          "positions": 25,
+          "OPB": 12,
+          "UPB": 6,
+          "FM": 3
+        },
+        "SELF_RECHECK": {
+          "primary": 0,
+          "positions": 25,
+          "OPB": 19,
+          "UPB": 0,
+          "FM": 4
+        },
+        "TASK_ONLY": {
+          "primary": 3,
+          "positions": 25,
+          "OPB": 11,
+          "UPB": 3,
+          "FM": 3
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 1,
+          "positions": 25,
+          "OPB": 13,
+          "UPB": 3,
+          "FM": 3
+        }
+      },
+      "directions": {
+        "tie": 5
+      },
+      "assigned_delta_bounds": [
+        0,
+        0
+      ],
+      "unflagged_rpe": {
+        "tasks": 2,
+        "positions": 10,
+        "scores": {
+          "BASE": 3,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 3,
+          "TASK_PLAN_SELECTED": 1
+        }
+      }
+    },
+    "RPEval/B_only": {
+      "assigned": 6,
+      "common": 6,
+      "grades_available": {
+        "BASE": 6,
+        "GENERIC": 6,
+        "TASK_ACTIONS": 6,
+        "SELF_RECHECK": 6,
+        "TASK_ONLY": 6,
+        "TASK_PLAN_SELECTED": 6
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 26,
+          "positions": 38,
+          "OPB": 2,
+          "UPB": 7,
+          "FM": 1
+        },
+        "GENERIC": {
+          "primary": 19,
+          "positions": 38,
+          "OPB": 9,
+          "UPB": 8,
+          "FM": 4
+        },
+        "TASK_ACTIONS": {
+          "primary": 21,
+          "positions": 38,
+          "OPB": 10,
+          "UPB": 7,
+          "FM": 2
+        },
+        "SELF_RECHECK": {
+          "primary": 17,
+          "positions": 38,
+          "OPB": 15,
+          "UPB": 4,
+          "FM": 3
+        },
+        "TASK_ONLY": {
+          "primary": 22,
+          "positions": 38,
+          "OPB": 4,
+          "UPB": 11,
+          "FM": 2
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 19,
+          "positions": 38,
+          "OPB": 5,
+          "UPB": 11,
+          "FM": 2
+        }
+      },
+      "directions": {
+        "tie": 3,
+        "win": 2,
+        "loss": 1
+      },
+      "assigned_delta_bounds": [
+        2,
+        2
+      ],
+      "unflagged_rpe": {
+        "tasks": 2,
+        "positions": 13,
+        "scores": {
+          "BASE": 3,
+          "GENERIC": 3,
+          "TASK_ACTIONS": 3,
+          "SELF_RECHECK": 3,
+          "TASK_ONLY": 3,
+          "TASK_PLAN_SELECTED": 3
+        }
+      }
+    },
+    "BenchPreS": {
+      "assigned": 12,
+      "common": 12,
+      "grades_available": {
+        "BASE": 12,
+        "GENERIC": 12,
+        "TASK_ACTIONS": 12,
+        "SELF_RECHECK": 12,
+        "TASK_ONLY": 12,
+        "TASK_PLAN_SELECTED": 12
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 17,
+          "positions": 23,
+          "MR": 1,
+          "MR_denominator": 37,
+          "completeness": 59,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "GENERIC": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 13,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 7,
+          "nonbold_denominator": 16
+        },
+        "TASK_ACTIONS": {
+          "primary": 17,
+          "positions": 23,
+          "MR": 22,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "SELF_RECHECK": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 6,
+          "MR_denominator": 37,
+          "completeness": 55,
+          "nonbold": 9,
+          "nonbold_denominator": 16
+        },
+        "TASK_ONLY": {
+          "primary": 14,
+          "positions": 23,
+          "MR": 17,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 7,
+          "nonbold_denominator": 16
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 5,
+          "MR_denominator": 37,
+          "completeness": 57,
+          "nonbold": 9,
+          "nonbold_denominator": 16
+        }
+      },
+      "directions": {
+        "win": 4,
+        "tie": 8
+      },
+      "assigned_delta_bounds": [
+        4,
+        4
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    },
+    "BenchPreS/communication": {
+      "assigned": 12,
+      "common": 12,
+      "grades_available": {
+        "BASE": 12,
+        "GENERIC": 12,
+        "TASK_ACTIONS": 12,
+        "SELF_RECHECK": 12,
+        "TASK_ONLY": 12,
+        "TASK_PLAN_SELECTED": 12
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 17,
+          "positions": 23,
+          "MR": 1,
+          "MR_denominator": 37,
+          "completeness": 59,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "GENERIC": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 13,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 7,
+          "nonbold_denominator": 16
+        },
+        "TASK_ACTIONS": {
+          "primary": 17,
+          "positions": 23,
+          "MR": 22,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 10,
+          "nonbold_denominator": 16
+        },
+        "SELF_RECHECK": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 6,
+          "MR_denominator": 37,
+          "completeness": 55,
+          "nonbold": 9,
+          "nonbold_denominator": 16
+        },
+        "TASK_ONLY": {
+          "primary": 14,
+          "positions": 23,
+          "MR": 17,
+          "MR_denominator": 37,
+          "completeness": 52,
+          "nonbold": 7,
+          "nonbold_denominator": 16
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 13,
+          "positions": 23,
+          "MR": 5,
+          "MR_denominator": 37,
+          "completeness": 57,
+          "nonbold": 9,
+          "nonbold_denominator": 16
+        }
+      },
+      "directions": {
+        "win": 4,
+        "tie": 8
+      },
+      "assigned_delta_bounds": [
+        4,
+        4
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    },
+    "PersistBench": {
+      "assigned": 12,
+      "common": 12,
+      "grades_available": {
+        "BASE": 12,
+        "GENERIC": 12,
+        "TASK_ACTIONS": 12,
+        "SELF_RECHECK": 12,
+        "TASK_ONLY": 12,
+        "TASK_PLAN_SELECTED": 12
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 12
+        },
+        "GENERIC": {
+          "primary": 7,
+          "strict_pass": 7,
+          "positions": 12
+        },
+        "TASK_ACTIONS": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        },
+        "SELF_RECHECK": {
+          "primary": 8,
+          "strict_pass": 8,
+          "positions": 12
+        },
+        "TASK_ONLY": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        }
+      },
+      "directions": {
+        "tie": 9,
+        "win": 3
+      },
+      "assigned_delta_bounds": [
+        3,
+        3
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    },
+    "PersistBench/sycophancy": {
+      "assigned": 4,
+      "common": 4,
+      "grades_available": {
+        "BASE": 4,
+        "GENERIC": 4,
+        "TASK_ACTIONS": 4,
+        "SELF_RECHECK": 4,
+        "TASK_ONLY": 4,
+        "TASK_PLAN_SELECTED": 4
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "GENERIC": {
+          "primary": 1,
+          "strict_pass": 1,
+          "positions": 4
+        },
+        "TASK_ACTIONS": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "SELF_RECHECK": {
+          "primary": 1,
+          "strict_pass": 1,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        }
+      },
+      "directions": {
+        "tie": 3,
+        "win": 1
+      },
+      "assigned_delta_bounds": [
+        1,
+        1
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    },
+    "PersistBench/cross_domain": {
+      "assigned": 4,
+      "common": 4,
+      "grades_available": {
+        "BASE": 4,
+        "GENERIC": 4,
+        "TASK_ACTIONS": 4,
+        "SELF_RECHECK": 4,
+        "TASK_ONLY": 4,
+        "TASK_PLAN_SELECTED": 4
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "GENERIC": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "TASK_ACTIONS": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SELF_RECHECK": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      },
+      "directions": {
+        "win": 2,
+        "tie": 2
+      },
+      "assigned_delta_bounds": [
+        2,
+        2
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "assigned": 4,
+      "common": 4,
+      "grades_available": {
+        "BASE": 4,
+        "GENERIC": 4,
+        "TASK_ACTIONS": 4,
+        "SELF_RECHECK": 4,
+        "TASK_ONLY": 4,
+        "TASK_PLAN_SELECTED": 4
+      },
+      "paired_native": {
+        "BASE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "GENERIC": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "TASK_ACTIONS": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SELF_RECHECK": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "TASK_PLAN_SELECTED": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      },
+      "directions": {
+        "tie": 4
+      },
+      "assigned_delta_bounds": [
+        0,
+        0
+      ],
+      "unflagged_rpe": {
+        "tasks": 0,
+        "positions": 0,
+        "scores": {
+          "BASE": 0,
+          "GENERIC": 0,
+          "TASK_ACTIONS": 0,
+          "SELF_RECHECK": 0,
+          "TASK_ONLY": 0,
+          "TASK_PLAN_SELECTED": 0
+        }
+      }
+    }
+  },
+  "search_macro": {
+    "parts": {
+      "BASE": {
+        "RPEval": 0.5375,
+        "BenchPreS": 0.8970900248074161,
+        "BenchPreS_without_completeness": 0.8560517038777908,
+        "PersistBench": 0.75
+      },
+      "GENERIC": {
+        "RPEval": 0.3625,
+        "BenchPreS": 0.6823997910954432,
+        "BenchPreS_without_completeness": 0.6069330199764982,
+        "PersistBench": 0.5833333333333334
+      },
+      "TASK_ACTIONS": {
+        "RPEval": 0.3875,
+        "BenchPreS": 0.6592897245071158,
+        "BenchPreS_without_completeness": 0.5722679200940071,
+        "PersistBench": 0.8333333333333334
+      },
+      "SELF_RECHECK": {
+        "RPEval": 0.3375,
+        "BenchPreS": 0.7662961874918396,
+        "BenchPreS_without_completeness": 0.7015276145710928,
+        "PersistBench": 0.6666666666666666
+      },
+      "TASK_ONLY": {
+        "RPEval": 0.4375,
+        "BenchPreS": 0.6608565086825956,
+        "BenchPreS_without_completeness": 0.5746180963572268,
+        "PersistBench": 0.8333333333333334
+      },
+      "TASK_PLAN_SELECTED": {
+        "RPEval": 0.375,
+        "BenchPreS": 0.7891940853897376,
+        "BenchPreS_without_completeness": 0.7150411280846063,
+        "PersistBench": 0.8333333333333334
+      }
+    },
+    "common_macro": {
+      "BASE": 0.7281966749358054,
+      "GENERIC": 0.5427443748095923,
+      "TASK_ACTIONS": 0.6267076859468164,
+      "SELF_RECHECK": 0.5901542847195022,
+      "TASK_ONLY": 0.6438966140053096,
+      "TASK_PLAN_SELECTED": 0.6658424729076903
+    },
+    "reference": "SELF_RECHECK",
+    "gains": {
+      "GENERIC": {
+        "by_domain": {
+          "RPEval": 0.024999999999999967,
+          "BenchPreS": -0.08389639639639634,
+          "PersistBench": -0.08333333333333326
+        },
+        "worst_allowed_weights": -0.056531531531531495
+      },
+      "TASK_ACTIONS": {
+        "by_domain": {
+          "RPEval": 0.04999999999999999,
+          "BenchPreS": -0.10700646298472383,
+          "PersistBench": 0.16666666666666674
+        },
+        "worst_allowed_weights": 0.000663435174304769
+      },
+      "TASK_ONLY": {
+        "by_domain": {
+          "RPEval": 0.09999999999999998,
+          "BenchPreS": -0.10543967880924399,
+          "PersistBench": 0.16666666666666674
+        },
+        "worst_allowed_weights": 0.013946827262044686
+      },
+      "TASK_PLAN_SELECTED": {
+        "by_domain": {
+          "RPEval": 0.03749999999999998,
+          "BenchPreS": 0.02289789789789798,
+          "PersistBench": 0.16666666666666674
+        },
+        "worst_allowed_weights": 0.06249061561561567
+      }
+    }
+  },
+  "pairwise_macro": {
+    "BASE_minus_GENERIC": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.09375000000000003,
+          0.17708333333333334
+        ],
+        "BenchPreS": [
+          0.21469023371197288,
+          0.21469023371197288
+        ],
+        "PersistBench": [
+          0.16666666666666666,
+          0.16666666666666666
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.14772727272727273,
+        "BenchPreS": 0.21469023371197288,
+        "PersistBench": 0.16666666666666666
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.15836896679287985,
+        0.18614674457065764
+      ],
+      "assigned_worst_weight_lower_bound": 0.1422142250946599,
+      "common_macro_delta": 0.1763613910353041
+    },
+    "BASE_minus_TASK_ACTIONS": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.07291666666666669,
+          0.15625
+        ],
+        "BenchPreS": [
+          0.2378003003003003,
+          0.2378003003003003
+        ],
+        "PersistBench": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.125,
+        "BenchPreS": 0.2378003003003003,
+        "PersistBench": -0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.07579454454454455,
+        0.10357232232232233
+      ],
+      "assigned_worst_weight_lower_bound": 0.03601257507507509,
+      "common_macro_delta": 0.09315565565565566
+    },
+    "BASE_minus_SELF_RECHECK": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.11458333333333334,
+          0.19791666666666666
+        ],
+        "BenchPreS": [
+          0.13079383731557648,
+          0.13079383731557648
+        ],
+        "PersistBench": [
+          0.08333333333333333,
+          0.08333333333333333
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.18181818181818182,
+        "BenchPreS": 0.13079383731557648,
+        "PersistBench": 0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.10957016799408105,
+        0.13734794577185883
+      ],
+      "assigned_worst_weight_lower_bound": 0.10301095932889412,
+      "common_macro_delta": 0.1319817841556972
+    },
+    "BASE_minus_TASK_ONLY": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.08333333333333334,
+          0.08333333333333334
+        ],
+        "BenchPreS": [
+          0.23623351612482052,
+          0.23623351612482052
+        ],
+        "PersistBench": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.08333333333333334,
+        "BenchPreS": 0.23623351612482052,
+        "PersistBench": -0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 16,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.07874450537494017,
+        0.07874450537494017
+      ],
+      "assigned_worst_weight_lower_bound": 0.0382250456978718,
+      "common_macro_delta": 0.07874450537494017
+    },
+    "BASE_minus_TASK_PLAN_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.125,
+          0.125
+        ],
+        "BenchPreS": [
+          0.10789593941767861,
+          0.10789593941767861
+        ],
+        "PersistBench": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.125,
+        "BenchPreS": 0.10789593941767861,
+        "PersistBench": -0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 16,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.0498542020281151,
+        0.0498542020281151
+      ],
+      "assigned_worst_weight_lower_bound": 0.01655731818775299,
+      "common_macro_delta": 0.0498542020281151
+    },
+    "GENERIC_minus_TASK_ACTIONS": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.10416666666666666,
+          0.06249999999999999
+        ],
+        "BenchPreS": [
+          0.02311006658832746,
+          0.02311006658832746
+        ],
+        "PersistBench": [
+          -0.25,
+          -0.25
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.022727272727272728,
+        "BenchPreS": 0.02311006658832746,
+        "PersistBench": -0.25
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.11035220002611307,
+        -0.054796644470557515
+      ],
+      "assigned_worst_weight_lower_bound": -0.14526415001958481,
+      "common_macro_delta": -0.08320573537964843
+    },
+    "GENERIC_minus_SELF_RECHECK": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.06249999999999999,
+          0.10416666666666666
+        ],
+        "BenchPreS": [
+          -0.0838963963963964,
+          -0.0838963963963964
+        ],
+        "PersistBench": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.025,
+        "BenchPreS": -0.0838963963963964,
+        "PersistBench": -0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 14,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.07657657657657657,
+        -0.021021021021021023
+      ],
+      "assigned_worst_weight_lower_bound": -0.07840653153153153,
+      "common_macro_delta": -0.047409909909909904
+    },
+    "GENERIC_minus_TASK_ONLY": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.09375,
+          -0.010416666666666671
+        ],
+        "BenchPreS": [
+          0.02154328241284764,
+          0.02154328241284764
+        ],
+        "PersistBench": [
+          -0.25,
+          -0.25
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.0568181818181818,
+        "BenchPreS": 0.02154328241284764,
+        "PersistBench": -0.25
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.10740223919571745,
+        -0.07962446141793968
+      ],
+      "assigned_worst_weight_lower_bound": -0.1430516793967881,
+      "common_macro_delta": -0.09509163313511139
+    },
+    "GENERIC_minus_TASK_PLAN_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.05208333333333334,
+          0.031249999999999986
+        ],
+        "BenchPreS": [
+          -0.10679429429429424,
+          -0.10679429429429424
+        ],
+        "PersistBench": [
+          -0.25,
+          -0.25
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.0,
+        "BenchPreS": -0.10679429429429424,
+        "PersistBench": -0.25
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.13629254254254253,
+        -0.10851476476476475
+      ],
+      "assigned_worst_weight_lower_bound": -0.1647194069069069,
+      "common_macro_delta": -0.11893143143143141
+    },
+    "TASK_ACTIONS_minus_SELF_RECHECK": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.04166666666666666,
+          0.125
+        ],
+        "BenchPreS": [
+          -0.10700646298472387,
+          -0.10700646298472387
+        ],
+        "PersistBench": [
+          0.16666666666666666,
+          0.16666666666666666
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.049999999999999996,
+        "BenchPreS": -0.10700646298472387,
+        "PersistBench": 0.16666666666666666
+      },
+      "common_tasks": {
+        "RPEval": 14,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        0.00599784567175871,
+        0.061553401227314265
+      ],
+      "assigned_worst_weight_lower_bound": -0.022253231492361934,
+      "common_macro_delta": 0.036553401227314264
+    },
+    "TASK_ACTIONS_minus_TASK_ONLY": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.07291666666666667,
+          0.010416666666666664
+        ],
+        "BenchPreS": [
+          -0.0015667841754798233,
+          -0.0015667841754798233
+        ],
+        "PersistBench": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.034090909090909075,
+        "BenchPreS": -0.0015667841754798233,
+        "PersistBench": 0.0
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.024827816947382165,
+        0.0029499608303956136
+      ],
+      "assigned_worst_weight_lower_bound": -0.03685002937720329,
+      "common_macro_delta": -0.011885897755462968
+    },
+    "TASK_ACTIONS_minus_TASK_PLAN_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.03125000000000001,
+          0.05208333333333333
+        ],
+        "BenchPreS": [
+          -0.1299043608826217,
+          -0.1299043608826217
+        ],
+        "PersistBench": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.02272727272727273,
+        "BenchPreS": -0.1299043608826217,
+        "PersistBench": 0.0
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.05371812029420723,
+        -0.025940342516429456
+      ],
+      "assigned_worst_weight_lower_bound": -0.07276468044131085,
+      "common_macro_delta": -0.03572569605178299
+    },
+    "SELF_RECHECK_minus_TASK_ONLY": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.11458333333333334,
+          -0.03125000000000001
+        ],
+        "BenchPreS": [
+          0.10543967880924403,
+          0.10543967880924403
+        ],
+        "PersistBench": [
+          -0.16666666666666666,
+          -0.16666666666666666
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.09090909090909088,
+        "BenchPreS": 0.10543967880924403,
+        "PersistBench": -0.16666666666666666
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.05860344039691865,
+        -0.03082566261914088
+      ],
+      "assigned_worst_weight_lower_bound": -0.08561924696435566,
+      "common_macro_delta": -0.05071202625550451
+    },
+    "SELF_RECHECK_minus_TASK_PLAN_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.07291666666666667,
+          0.010416666666666654
+        ],
+        "BenchPreS": [
+          -0.02289789789789786,
+          -0.02289789789789786
+        ],
+        "PersistBench": [
+          -0.16666666666666666,
+          -0.16666666666666666
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.04545454545454545,
+        "BenchPreS": -0.02289789789789786,
+        "PersistBench": -0.16666666666666666
+      },
+      "common_tasks": {
+        "RPEval": 15,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.08749374374374373,
+        -0.059715965965965956
+      ],
+      "assigned_worst_weight_lower_bound": -0.10728697447447447,
+      "common_macro_delta": -0.07833970333970332
+    },
+    "TASK_ONLY_minus_TASK_PLAN_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        "BenchPreS": [
+          -0.1283375767071419,
+          -0.1283375767071419
+        ],
+        "PersistBench": [
+          0.0,
+          0.0
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.041666666666666664,
+        "BenchPreS": -0.1283375767071419,
+        "PersistBench": 0.0
+      },
+      "common_tasks": {
+        "RPEval": 16,
+        "BenchPreS": 12,
+        "PersistBench": 12
+      },
+      "assigned_macro_delta": [
+        -0.028890303346825085,
+        -0.028890303346825085
+      ],
+      "assigned_worst_weight_lower_bound": -0.05375212168690429,
+      "common_macro_delta": -0.028890303346825085
+    }
+  }
+}
