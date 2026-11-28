@@ -451,6 +451,24 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
                                      ("no_known_flags", "3/4", " at three quarters")):
         a, b, c = counts(panel, threshold)
         phrases.append(f"{a}, {b} and {c}{ending}")
+    default_probe = root / "decision_default_support_v1"
+    generated = json.loads((default_probe / "AGGREGATE.json").read_text())["totals"]
+    archived = json.loads((default_probe / "ENDPOINT_AUDIT.json").read_text())
+    archived_totals = archived["totals"]
+    observed = [generated[k]["primary"] for k in ("ARCHIVE", "DIRECT", "SUPPORTED_DEFAULT")]
+    phrases.append(f"scored {observed[0]}, {observed[1]}, and {observed[2]} of "
+                   f"{generated['ARCHIVE']['positions']} positions")
+    a, b = (next(r for r in archived["rows"] if r["case"] == case)["scores"]
+            for case in ("implicit/094", "implicit/142"))
+
+    def position_score(row, method):
+        return f"{row[method]['primary']}/{row[method]['positions']}"
+
+    phrases.append(f"{position_score(a, 'TASK_ONLY')} and {position_score(b, 'TASK_ONLY')}, "
+                   f"versus {position_score(a, 'IPE_C')} and {position_score(b, 'IPE_C')} with IPE-C")
+    phrases.append(f"changes Match from {position_score(archived_totals, 'IPE_C')} to "
+                   f"{position_score(archived_totals, 'TASK_ONLY')} and increases underuse severity "
+                   f"from {archived_totals['IPE_C']['UPB']} to {archived_totals['TASK_ONLY']['UPB']}")
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(joint_rows) + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))

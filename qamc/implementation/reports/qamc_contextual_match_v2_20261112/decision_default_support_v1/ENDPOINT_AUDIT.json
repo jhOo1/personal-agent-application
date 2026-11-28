@@ -1,0 +1,233 @@
+{
+  "new_model_calls": 0,
+  "protected_archival_oracle_gain": 9,
+  "rows": [
+    {
+      "case": "explicit/006",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {},
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 1,
+          "OPB": 3,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 3
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "TASK_ONLY": {
+          "FM": 3,
+          "OPB": 0,
+          "UPB": 4,
+          "positions": 6,
+          "primary": 2
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "case": "explicit/047",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {},
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "TASK_ONLY": {
+          "FM": 4,
+          "OPB": 0,
+          "UPB": 5,
+          "positions": 6,
+          "primary": 2
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "case": "explicit/116",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {},
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 0,
+          "OPB": 3,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 1,
+          "positions": 6,
+          "primary": 4
+        },
+        "TASK_ONLY": {
+          "FM": 5,
+          "OPB": 0,
+          "UPB": 5,
+          "positions": 6,
+          "primary": 2
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "case": "implicit/094",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {
+        "TASK_ONLY": 4
+      },
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 0,
+          "OPB": 3,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 0
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 0
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 4
+        }
+      },
+      "stratum": "all_A"
+    },
+    {
+      "case": "implicit/099",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {},
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 1,
+          "OPB": 2,
+          "UPB": 2,
+          "positions": 6,
+          "primary": 3
+        },
+        "IPE_C": {
+          "FM": 1,
+          "OPB": 2,
+          "UPB": 2,
+          "positions": 6,
+          "primary": 3
+        },
+        "TASK_ONLY": {
+          "FM": 3,
+          "OPB": 0,
+          "UPB": 4,
+          "positions": 6,
+          "primary": 2
+        }
+      },
+      "stratum": "contains_C"
+    },
+    {
+      "case": "implicit/142",
+      "flagged": {
+        "GEPA_SELECTED_BOUNDS": [],
+        "IPE_C": [],
+        "TASK_ONLY": []
+      },
+      "protected_gains": {
+        "TASK_ONLY": 5
+      },
+      "scores": {
+        "GEPA_SELECTED_BOUNDS": {
+          "FM": 1,
+          "OPB": 5,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 0
+        },
+        "IPE_C": {
+          "FM": 1,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 0
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 5
+        }
+      },
+      "stratum": "all_A"
+    }
+  ],
+  "totals": {
+    "GEPA_SELECTED_BOUNDS": {
+      "FM": 3,
+      "OPB": 18,
+      "UPB": 2,
+      "positions": 33,
+      "primary": 14
+    },
+    "IPE_C": {
+      "FM": 2,
+      "OPB": 13,
+      "UPB": 3,
+      "positions": 33,
+      "primary": 15
+    },
+    "TASK_ONLY": {
+      "FM": 15,
+      "OPB": 0,
+      "UPB": 18,
+      "positions": 33,
+      "primary": 17
+    }
+  }
+}
