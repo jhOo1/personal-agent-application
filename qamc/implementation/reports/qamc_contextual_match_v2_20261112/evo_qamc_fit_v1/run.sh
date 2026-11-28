@@ -67,6 +67,7 @@ case "${1:-}" in
 
 
   exposure-summary) entry=exposure_summary.py; shift ;;
+  exposure-protected-headroom) entry=protected_endpoint_headroom.py; shift ;;
   expansion-audit-requests) entry=expansion_audit.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
