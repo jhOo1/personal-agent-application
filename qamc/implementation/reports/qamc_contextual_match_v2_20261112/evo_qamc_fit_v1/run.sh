@@ -34,6 +34,10 @@ case "${1:-}" in
   joint-context-headroom) entry=joint_context_headroom.py; shift ;;
   pinned-actor-transfer) entry=pinned_actor_transfer.py; shift ;;
   pinned-transfer-readout) entry=pinned_transfer_readout.py; shift ;;
+  first-pass-inventory) entry=first_pass_inputs.py; shift ;;
+  first-pass-fit) entry=first_pass_fit.py; shift ;;
+
+
 
 
 
