@@ -1,5 +1,9 @@
 # QAMC 当前判断与下一次机制对照
 
+## 三基准拟合集的首批实测
+
+40 道已曝光开发题，冻结两臂同预算规划与生成，以及作者 Self-ReCheck 统一外部适配。先测普通规划与逐决策落实建议，再补外部对照。已有专项分用于衡量余量。详见[配置](implementation/reports/qamc_contextual_match_v2_20261112/evo_qamc_fit_v1/PROTOCOL.md)和[计分与恢复入口](implementation/reports/qamc_contextual_match_v2_20261112/evo_qamc_fit_v1/SEARCH_OBJECTIVES.md)。
+
 ## 三基准均衡开发与 49 根外部方法对照
 
 保留三项进行联合开发。296 道归档同题表明整组路由与 Gate 的长处不同。已冻结 40 道有提升空间及保护项的开发题；后续统一方法与跨基准可部署外法同题比较，专项参照保留。此前“二主一边界”描述已有论文证据范围。[三项同题表与拟合集](implementation/reports/qamc_contextual_match_v2_20261112/benchmark_balance_audit_v1/READOUT.md)
