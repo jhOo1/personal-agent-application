@@ -1,0 +1,74 @@
+{
+  "observed_development_only": true,
+  "fit_tasks": 40,
+  "source_disjoint_qualified": 162,
+  "candidate_audit_sha256": "4d154161a01b742a833472216958d126a9cc00421cd5049a12d317904fed5a1e",
+  "strata": {
+    "BenchPreS": {
+      "common_archive": 26,
+      "fit_group_other_task": 14,
+      "fit_task_in_matrix": 8,
+      "source_disjoint_candidate": 4,
+      "qualified_source_groups": 1
+    },
+    "BenchPreS/communication": {
+      "common_archive": 26,
+      "fit_group_other_task": 14,
+      "fit_task_in_matrix": 8,
+      "source_disjoint_candidate": 4,
+      "qualified_source_groups": 1
+    },
+    "PersistBench": {
+      "common_archive": 42,
+      "source_disjoint_candidate": 32,
+      "fit_task_in_matrix": 10,
+      "qualified_source_groups": 32
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "common_archive": 18,
+      "source_disjoint_candidate": 14,
+      "fit_task_in_matrix": 4,
+      "qualified_source_groups": 14
+    },
+    "PersistBench/cross_domain": {
+      "common_archive": 15,
+      "source_disjoint_candidate": 12,
+      "fit_task_in_matrix": 3,
+      "qualified_source_groups": 12
+    },
+    "PersistBench/sycophancy": {
+      "common_archive": 9,
+      "fit_task_in_matrix": 3,
+      "source_disjoint_candidate": 6,
+      "qualified_source_groups": 6
+    },
+    "RPEval": {
+      "common_archive": 228,
+      "source_disjoint_candidate": 126,
+      "fit_task_in_matrix": 12,
+      "fit_group_other_task": 90,
+      "qualified_source_groups": 28
+    },
+    "RPEval/B_only": {
+      "common_archive": 36,
+      "source_disjoint_candidate": 15,
+      "fit_group_other_task": 15,
+      "fit_task_in_matrix": 6,
+      "qualified_source_groups": 9
+    },
+    "RPEval/all_A": {
+      "common_archive": 102,
+      "source_disjoint_candidate": 59,
+      "fit_group_other_task": 39,
+      "fit_task_in_matrix": 4,
+      "qualified_source_groups": 26
+    },
+    "RPEval/contains_C": {
+      "common_archive": 90,
+      "source_disjoint_candidate": 52,
+      "fit_task_in_matrix": 2,
+      "fit_group_other_task": 36,
+      "qualified_source_groups": 20
+    }
+  }
+}
