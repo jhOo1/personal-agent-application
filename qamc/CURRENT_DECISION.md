@@ -1,5 +1,11 @@
 # QAMC 当前判断与下一次机制对照
 
+## 42 个已曝光来源的重复部署
+
+两轮新生成均已结束。补齐的 24 根上，IPE-C / 完整 RP / 无史的 Match 分别为 90/87/82 与 95/75/88，每轮 139 位。此前 18 根中有一根一个评分字段无效；按 42 根里两次和归档都有效的 41 根、226 位比较，IPE-C 相对完整 RP 净增 1 位和 24 位。误用严重度两次均下降，漏用严重度两次均上升。IPE-C 保留为 RPEval 的开发基底，合法软偏好仍是具体本轮缺口。卧室软装题模型两次都清空历史，完整历史两次给出具体亮色点缀且 Match 更高。有明确中餐要求的晚餐题则两次正确打开。严格独立确认和同协议 SOTA 均未建立。[结果及案例](implementation/reports/qamc_contextual_match_v2_20261112/rpe_remaining_roots_deployment_v1/READOUT.md)
+
+拟议的 PersistBench 29 根 DeepSeek 非思考对照在配置检查后取消。网关接到显式关闭指令仍返回 23 个推理 Token；同提示开启时返回 24 个。此次只有 2 个合成请求，无新增 PersistBench 成绩。[核验结果](implementation/reports/qamc_contextual_match_v2_20261112/persist_nonthinking_qualification_v1/READOUT.md)
+
 ## 论文范围与研发优先级（开发结果可见后调整）
 
 保留三个基准的全部历史结果。下一阶段用 RPEval 与 PersistBench 主测“当前任务应向生成器开放哪些历史”，用 BenchPreS 检验该机制在正式交付中的表达边界。尚未证实同一选择器能在两项主测上领先。此处是研究资源分配决定，未更改任何已完成对照的分母。
