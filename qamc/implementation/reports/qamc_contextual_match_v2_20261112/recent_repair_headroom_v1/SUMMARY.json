@@ -1,0 +1,92 @@
+{
+  "inputs": [
+    "protected_clause_exposure_v1",
+    "task_condition_branches_v1",
+    "foil_anchored_decision_repair_v1",
+    "participant_execution_preflight_v1"
+  ],
+  "new_requests": 0,
+  "tracks": {
+    "BenchPreS": {
+      "changed_answer_cells": 10,
+      "distinct_scored_changed_answers": 10,
+      "distinct_tasks": 4,
+      "exact_incumbent_cells": 6,
+      "incumbent_primary": 8,
+      "logical_cells": 16,
+      "primary_denominator": 10,
+      "protected_oracle_primary": 8,
+      "source_groups": 3,
+      "tasks_with_primary_win_in_pool": 0,
+      "tasks_with_protected_primary_win_in_pool": 0,
+      "tasks_with_scored_changed_answer": 3,
+      "tasks_with_unflagged_protected_primary_win": 0,
+      "tasks_with_unflagged_secondary_only_win": 0
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "changed_answer_cells": 11,
+      "distinct_scored_changed_answers": 11,
+      "distinct_tasks": 5,
+      "exact_incumbent_cells": 5,
+      "incumbent_primary": 5,
+      "logical_cells": 16,
+      "primary_denominator": 5,
+      "protected_oracle_primary": 5,
+      "source_groups": 5,
+      "tasks_with_primary_win_in_pool": 0,
+      "tasks_with_protected_primary_win_in_pool": 0,
+      "tasks_with_scored_changed_answer": 5,
+      "tasks_with_unflagged_protected_primary_win": 0,
+      "tasks_with_unflagged_secondary_only_win": 0
+    },
+    "PersistBench/cross_domain": {
+      "changed_answer_cells": 3,
+      "distinct_scored_changed_answers": 3,
+      "distinct_tasks": 1,
+      "exact_incumbent_cells": 3,
+      "incumbent_primary": 1,
+      "logical_cells": 6,
+      "primary_denominator": 1,
+      "protected_oracle_primary": 1,
+      "source_groups": 1,
+      "tasks_with_primary_win_in_pool": 0,
+      "tasks_with_protected_primary_win_in_pool": 0,
+      "tasks_with_scored_changed_answer": 1,
+      "tasks_with_unflagged_protected_primary_win": 0,
+      "tasks_with_unflagged_secondary_only_win": 0
+    },
+    "PersistBench/sycophancy": {
+      "changed_answer_cells": 9,
+      "distinct_scored_changed_answers": 9,
+      "distinct_tasks": 4,
+      "exact_incumbent_cells": 11,
+      "incumbent_primary": 1,
+      "logical_cells": 22,
+      "missing_answers": 2,
+      "primary_denominator": 4,
+      "protected_oracle_primary": 1,
+      "source_groups": 4,
+      "tasks_with_primary_win_in_pool": 0,
+      "tasks_with_protected_primary_win_in_pool": 0,
+      "tasks_with_scored_changed_answer": 3,
+      "tasks_with_unflagged_protected_primary_win": 0,
+      "tasks_with_unflagged_secondary_only_win": 0
+    },
+    "RPEval": {
+      "changed_answer_cells": 20,
+      "distinct_scored_changed_answers": 20,
+      "distinct_tasks": 7,
+      "exact_incumbent_cells": 10,
+      "incumbent_primary": 19,
+      "logical_cells": 30,
+      "primary_denominator": 45,
+      "protected_oracle_primary": 19,
+      "source_groups": 7,
+      "tasks_with_primary_win_in_pool": 0,
+      "tasks_with_protected_primary_win_in_pool": 0,
+      "tasks_with_scored_changed_answer": 7,
+      "tasks_with_unflagged_protected_primary_win": 0,
+      "tasks_with_unflagged_secondary_only_win": 3
+    }
+  }
+}
