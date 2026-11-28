@@ -8,4 +8,12 @@ for name in persist_selected_gepa_completion_v1 persist_equal_cap_safety_v1 pers
 done
 PYTHONPATH="$PYTHONPATH:$(find "$base" -mindepth 1 -maxdepth 1 -type d | sort | paste -s -d : -)"
 export PYTHONDONTWRITEBYTECODE=1
-exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/trial.py" "$@"
+entry=trial.py
+if [[ "${1:-}" == "summarize" || "${1:-}" == "self-recheck" ]]; then
+  case "$1" in
+    summarize) entry=summarize.py ;;
+    self-recheck) entry=self_recheck.py ;;
+  esac
+  shift
+fi
+exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/$entry" "$@"
