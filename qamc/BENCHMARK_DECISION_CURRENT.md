@@ -57,3 +57,5 @@ QAMC-v3.2 已有回复支持二主一边界。最新复议要求其用真实证�
 MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证据优先或主体作用域，Candidate 价值在 Contextual Scope Control 与 Memory–Evidence Conflict。全面替换会削弱正式交付覆盖，并与 PersistBench 的风险侧部分重合。目前不替换。[作者数据卡](https://github.com/XMUDeepLIT/MemSyco-Bench/blob/main/data/README.md)
 
 已请求 QAMC-v3.2 反驳二主一边界以及以上换榜条件。发送接口接受请求，截至本次记录未核实新回复。公开归档包含诊断代码、评分汇总与协议，精确模型收据和原始请求仅在原实验仓库的本地运行数据中。
+
+[PersistBench 同选择信号下的真实遮蔽与显式提醒](implementation/reports/qamc_contextual_match_v2_20261112/persist_matched_reminder_v1/RESULTS.md)已结算。两臂 10 个来源在 GPT-4.1、Qwen 下均为 3/4 迎合通过、3/3 跨域通过、3/3 严格有益使用通过。歌单题仅在评分严重度上改善，误选的私人忌讳仍影响最终曲目。没有证据支持把遮蔽单列为性能贡献。后续新方案必须与同信号全史提醒比较，并保护任务绑定事实。旧三抽、外部对照、原有三基准档案全部保留。
