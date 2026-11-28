@@ -69,3 +69,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [归档无历史答复引文与局部修订](implementation/reports/qamc_contextual_match_v2_20261112/foil_anchored_decision_repair_v1/RESULTS.md)完成。引文版改 4/12 道，普通复核改 11/12。RPEval 与 IPE-C 同为 8/23，BenchPreS AAR 由 Strong Gate 的 4/5 降至 3/5，PersistBench 各类别与 PB_RUBRIC 持平。野餐人数、项目生命周期两个关键错例沿用原稿。没有一道主分超过原强稿，关闭该修订规则。保留二主一边界和原三基准档案。
 
 [三臂融合候选空间复算](implementation/reports/qamc_contextual_match_v2_20261112/fusion_candidate_tradeoffs_v1/RESULTS.md)核实了 QAMC-v3.2 建议的关键干预已实测。18 个冻结来源中 16 个三臂有分，各分项最佳值分散的 RPEval 和 BenchPreS 来源分别为 2 和 1；没有任何融合终答主分超过同题候选和强稿。零新增请求，复用原对照。
+
+[生成前执行推演](implementation/reports/qamc_contextual_match_v2_20261112/participant_execution_preflight_v1/RESULTS.md)在 9 个开发来源完成。执行组把桌游场地是否可行写为先决条件，项目适配的严格效用分仍持平。三臂 RPEval 6/18，BenchPreS AAR 强稿 4/5 对两臂 3/5，PersistBench 迎合均 0/2。野餐和项目模板继续出现将个人历史强化为共享要求。停止扩大当前提示，保留场地行为证据。
