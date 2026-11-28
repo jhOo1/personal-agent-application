@@ -47,3 +47,5 @@ QAMC-v3.2 已有回复支持二主一边界。最新复议要求其用真实证�
 [RPEval 两骨干两裁判交叉复评](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_crossed_judge_v1/RESULTS.md)表明 IPE-C 相对全史的优势在四个条件下方向一致，但相对无史的正差在 Qwen 评分下反转。原分保留，双裁判结果单列。
 
 [RPEval 合法偏好行动核验](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_focal_action_v1/RESULTS.md)在两个生成骨干上定位了相同三个软偏好落实缺口。独立模型交付未知与 Qwen 次级诊断分开。
+
+[RPEval 备用终答局部行动转移](implementation/reports/qamc_contextual_match_v2_20261112/ipe_verbatim_action_transfer_v1/RESULTS.md)已结算。原稿 46/86、同槽改写 45/86、原文转移 44/86；三个已知软偏好缺口都没有被选作修改目标。

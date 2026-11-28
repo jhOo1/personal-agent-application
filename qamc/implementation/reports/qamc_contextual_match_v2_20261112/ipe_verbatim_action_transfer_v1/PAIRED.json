@@ -1,0 +1,113 @@
+{
+  "ALL/BASE": {
+    "assigned": 22,
+    "positions": 86,
+    "donor_match": 44,
+    "reference_match": 46,
+    "tie": 15,
+    "unknown": 5,
+    "loss": 2
+  },
+  "all_A/BASE": {
+    "assigned": 8,
+    "positions": 23,
+    "donor_match": 8,
+    "reference_match": 8,
+    "tie": 6,
+    "unknown": 2
+  },
+  "ALL/FREE": {
+    "assigned": 22,
+    "positions": 86,
+    "donor_match": 44,
+    "reference_match": 45,
+    "tie": 14,
+    "same_output": 0,
+    "unknown": 5,
+    "loss": 2,
+    "win": 1
+  },
+  "all_A/FREE": {
+    "assigned": 8,
+    "positions": 23,
+    "donor_match": 8,
+    "reference_match": 8,
+    "tie": 6,
+    "same_output": 0,
+    "unknown": 2
+  },
+  "ALL/ALTERNATE": {
+    "assigned": 22,
+    "positions": 86,
+    "donor_match": 44,
+    "reference_match": 35,
+    "tie": 8,
+    "unknown": 5,
+    "win": 6,
+    "loss": 3
+  },
+  "all_A/ALTERNATE": {
+    "assigned": 8,
+    "positions": 23,
+    "donor_match": 8,
+    "reference_match": 3,
+    "tie": 4,
+    "unknown": 2,
+    "win": 2
+  },
+  "contains_C/BASE": {
+    "assigned": 7,
+    "unknown": 2,
+    "positions": 30,
+    "donor_match": 20,
+    "reference_match": 20,
+    "tie": 5
+  },
+  "contains_C/FREE": {
+    "assigned": 7,
+    "unknown": 2,
+    "positions": 30,
+    "donor_match": 20,
+    "reference_match": 20,
+    "tie": 5,
+    "same_output": 0
+  },
+  "contains_C/ALTERNATE": {
+    "assigned": 7,
+    "unknown": 2,
+    "positions": 30,
+    "donor_match": 20,
+    "reference_match": 12,
+    "win": 4,
+    "tie": 1
+  },
+  "B_only/BASE": {
+    "assigned": 7,
+    "positions": 33,
+    "donor_match": 16,
+    "reference_match": 18,
+    "loss": 2,
+    "tie": 4,
+    "unknown": 1
+  },
+  "B_only/FREE": {
+    "assigned": 7,
+    "positions": 33,
+    "donor_match": 16,
+    "reference_match": 17,
+    "loss": 2,
+    "same_output": 0,
+    "tie": 3,
+    "unknown": 1,
+    "win": 1
+  },
+  "B_only/ALTERNATE": {
+    "assigned": 7,
+    "positions": 33,
+    "donor_match": 16,
+    "reference_match": 20,
+    "loss": 3,
+    "tie": 3,
+    "unknown": 1
+  }
+}

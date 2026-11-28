@@ -1,0 +1,217 @@
+{
+  "assigned": 22,
+  "status": {
+    "REPLACE": 17,
+    "INVALID_PROPOSAL": 5
+  },
+  "metrics": {
+    "ALL/BASE": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 46,
+      "OPB": 17,
+      "OPB_valid": 17,
+      "UPB": 25,
+      "UPB_valid": 17,
+      "FM": 4,
+      "FM_valid": 17
+    },
+    "ALL/FREE": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 45,
+      "OPB": 13,
+      "OPB_valid": 17,
+      "UPB": 29,
+      "UPB_valid": 17,
+      "FM": 4,
+      "FM_valid": 17
+    },
+    "ALL/DONOR": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 44,
+      "OPB": 15,
+      "OPB_valid": 17,
+      "UPB": 23,
+      "UPB_valid": 17,
+      "FM": 5,
+      "FM_valid": 17
+    },
+    "all_A/BASE": {
+      "tasks": 6,
+      "positions": 23,
+      "match": 8,
+      "OPB": 5,
+      "OPB_valid": 6,
+      "UPB": 7,
+      "UPB_valid": 6,
+      "FM": 1,
+      "FM_valid": 6
+    },
+    "all_A/FREE": {
+      "tasks": 6,
+      "positions": 23,
+      "match": 8,
+      "OPB": 2,
+      "OPB_valid": 6,
+      "UPB": 10,
+      "UPB_valid": 6,
+      "FM": 1,
+      "FM_valid": 6
+    },
+    "all_A/DONOR": {
+      "tasks": 6,
+      "positions": 23,
+      "match": 8,
+      "OPB": 5,
+      "OPB_valid": 6,
+      "UPB": 5,
+      "UPB_valid": 6,
+      "FM": 3,
+      "FM_valid": 6
+    },
+    "REPLACED/BASE": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 46,
+      "OPB": 17,
+      "OPB_valid": 17,
+      "UPB": 25,
+      "UPB_valid": 17,
+      "FM": 4,
+      "FM_valid": 17
+    },
+    "REPLACED/FREE": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 45,
+      "OPB": 13,
+      "OPB_valid": 17,
+      "UPB": 29,
+      "UPB_valid": 17,
+      "FM": 4,
+      "FM_valid": 17
+    },
+    "REPLACED/DONOR": {
+      "tasks": 17,
+      "positions": 86,
+      "match": 44,
+      "OPB": 15,
+      "OPB_valid": 17,
+      "UPB": 23,
+      "UPB_valid": 17,
+      "FM": 5,
+      "FM_valid": 17
+    },
+    "contains_C/BASE": {
+      "tasks": 5,
+      "positions": 30,
+      "match": 20,
+      "OPB": 9,
+      "OPB_valid": 5,
+      "UPB": 4,
+      "UPB_valid": 5,
+      "FM": 2,
+      "FM_valid": 5
+    },
+    "contains_C/FREE": {
+      "tasks": 5,
+      "positions": 30,
+      "match": 20,
+      "OPB": 8,
+      "OPB_valid": 5,
+      "UPB": 4,
+      "UPB_valid": 5,
+      "FM": 2,
+      "FM_valid": 5
+    },
+    "contains_C/DONOR": {
+      "tasks": 5,
+      "positions": 30,
+      "match": 20,
+      "OPB": 8,
+      "OPB_valid": 5,
+      "UPB": 3,
+      "UPB_valid": 5,
+      "FM": 1,
+      "FM_valid": 5
+    },
+    "B_only/BASE": {
+      "tasks": 6,
+      "positions": 33,
+      "match": 18,
+      "OPB": 3,
+      "OPB_valid": 6,
+      "UPB": 14,
+      "UPB_valid": 6,
+      "FM": 1,
+      "FM_valid": 6
+    },
+    "B_only/FREE": {
+      "tasks": 6,
+      "positions": 33,
+      "match": 17,
+      "OPB": 3,
+      "OPB_valid": 6,
+      "UPB": 15,
+      "UPB_valid": 6,
+      "FM": 1,
+      "FM_valid": 6
+    },
+    "B_only/DONOR": {
+      "tasks": 6,
+      "positions": 33,
+      "match": 16,
+      "OPB": 2,
+      "OPB_valid": 6,
+      "UPB": 15,
+      "UPB_valid": 6,
+      "FM": 1,
+      "FM_valid": 6
+    },
+    "UNFLAGGED/BASE": {
+      "tasks": 7,
+      "positions": 33,
+      "match": 24,
+      "OPB": 4,
+      "OPB_valid": 7,
+      "UPB": 6,
+      "UPB_valid": 7,
+      "FM": 1,
+      "FM_valid": 7
+    },
+    "UNFLAGGED/FREE": {
+      "tasks": 7,
+      "positions": 33,
+      "match": 24,
+      "OPB": 4,
+      "OPB_valid": 7,
+      "UPB": 6,
+      "UPB_valid": 7,
+      "FM": 1,
+      "FM_valid": 7
+    },
+    "UNFLAGGED/DONOR": {
+      "tasks": 7,
+      "positions": 33,
+      "match": 23,
+      "OPB": 3,
+      "OPB_valid": 7,
+      "UPB": 7,
+      "UPB_valid": 7,
+      "FM": 1,
+      "FM_valid": 7
+    }
+  },
+  "stages": {
+    "TransferAction": 22,
+    "TransferNative": 34
+  },
+  "physical": {
+    "OK": 56
+  },
+  "tokens": 325692,
+  "unknown_usage": 0,
+  "retries": 0
+}
