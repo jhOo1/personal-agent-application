@@ -1,0 +1,13 @@
+{
+  "assigned": 40,
+  "contracts": {
+    "RPEval_original_sources": 96,
+    "RPEval_selected_sources": 41,
+    "changed_only_evidence": 39,
+    "BenchPreS_original_sources": 61,
+    "BenchPreS_selected_sources": 25,
+    "exact_reuse": 1,
+    "PersistBench_original_sources": 117,
+    "PersistBench_selected_sources": 39
+  }
+}

@@ -20,6 +20,7 @@ case "${1:-}" in
   task-only) entry=task_only.py; shift ;;
   task-only-audit) entry=task_only_audit.py; shift ;;
   crossover) entry=crossover.py; shift ;;
+  crossover-audit) entry=crossover_audit.py; shift ;;
   selected-planning) entry=selected_planning.py; shift ;;
 esac
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/$entry" "$@"
