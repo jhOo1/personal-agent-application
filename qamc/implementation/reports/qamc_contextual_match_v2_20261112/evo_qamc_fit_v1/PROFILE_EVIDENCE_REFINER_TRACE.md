@@ -13,3 +13,9 @@ Initial independent receipt reconstruction found 16 usable profiles and 63 verif
 These are operator-read examples rather than independent human judgments or benchmark scores. The first example shows that exact quotes can retain context lost in a profile. The benefits and engineering examples show that exact provenance alone cannot establish applicability. Final paired answers will test these competing effects.
 
 The [protocol](PROFILE_EVIDENCE_RESTORATION_PROTOCOL.md) remains fixed. The independent command `bash run.sh profile-evidence-audit <private-run-directory>` reconstructs the count and verifies the actor's quote-only difference once both arms are registered. It does not call any model or expose raw texts.
+
+## Dispatch and first resolved case
+
+All 17 issued refiners eventually returned. One BenchPreS refinement failed its contract because a submitted quote was absent from the identified source. Preserve that case as invalid with no new Actors. The exact-wire audit verified 16 Actor pairs (32 distinct requests): the same task, profile points, source IDs and Actor settings, with only the quotation field added. This includes 7 RPEval, 3 BenchPreS and 6 PersistBench pairs. The empty-history case continues to reuse the same archive.
+
+The completed café drafts both make the requester's preference for quiet and a latte a reason to prioritize venues. The quote arm even includes suitability for work or reading among search terms. In this case, restoring the work-related source condition does not undo the broad claim made in the shared profile. The tests continue to score both answers without changing the original grading contract.
