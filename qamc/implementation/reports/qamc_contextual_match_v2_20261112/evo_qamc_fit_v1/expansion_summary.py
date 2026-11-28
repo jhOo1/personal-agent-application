@@ -5,7 +5,8 @@ import json
 from summarize import metrics
 from summarize_reassembly import aligned
 from paired_macro import pairwise
-from trial import sha
+from rpe_use_bounds import paired_degree_bounds
+from trial import HERE,sha
 from expansion_run import ARMS,OUT,read
 
 METHODS=('BASE',*ARMS)
@@ -76,6 +77,17 @@ def rpe_sensitivity(groups):
     return results
 
 
+def rpe_degree_bounds(rows):
+    endpoint=HERE.parent/'ipe_c_two_endpoint_completion_v1'/'RESULTS.json'
+    labels={r['uid']:r['labels'] for r in read(endpoint)['rows']}
+    out={}
+    for opponent in ('BASE','PLAN_SELECTED','DIRECT'):
+        paired=[row for row in rows if aligned(row[2], ('BASE','SCOPE',opponent))]
+        out[opponent]={label:paired_degree_bounds(paired,'SCOPE',opponent,label,labels)
+                       for label in ('B','C')}
+    return out
+
+
 def summarize():
     pin,finished,groups,ledger,delivery=collect()
     if not finished:
@@ -104,6 +116,7 @@ def summarize():
     return dict(finished_batches=finished,all_batches_assigned=sum(len(b) for b in pin['batches']),
                 native=native,paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=group_support,
                 rpe_judge_sensitivity=rpe_sensitivity(groups),
+                rpe_use_degree_bounds=rpe_degree_bounds(groups['RPEval']),
                 delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                     statuses=Counter(r['status'] for r in ledger),
                     tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger),
