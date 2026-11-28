@@ -29,3 +29,15 @@ The expansion did not reproduce the missed-hard-constraint failure that prompted
 All 21 assigned roots, 63 logical answers and 63 logical scores are present. The same Actor answered 28 distinct requests. The requirement review and pruning predictions were shared before generation, and the prior outcomes were not overwritten. **114 physical requests all OK**: 21 relevance reviews, 7 requirement reviews, 28 Actors, 14 RPEval ratings, 36 BenchPreS attribute/completion ratings and 8 PersistBench ratings. Recorded usage **401,500 tokens**, zero unknown usages and zero automatic retries. No historical exact cache was needed. The saved outputs reproduce under zero-call replay and every saved physical request hash was checked. Sealed data were not read. The sample is exposed development and scoring uses the existing adaptations.
 
 [Frozen protocol](PROTOCOL.md) · [Aggregate scores and source labels](AGGREGATE.json) · [Receipt reconciliation](settle.py) · [Author-label alignment](source_label_audit.py) · [Verified larger author-control archive](../persist_archived_headroom_v1/READOUT.md)
+
+## Which removals could change the actual strongest Actor?
+
+Reconstruct the exact archived specialist request or the verified IPE-C no-history endpoint. Count an overlap when a source removed from matched relevance was present in that specialist request. The archived answer hashes also agree with the frozen references.
+
+| Benchmark | Matched Actor changed | Specialist input overlaps | Overlapping removed sources |
+|---|---:|---:|---:|
+| RPEval | 3 | 1 | 4 |
+| PersistBench | 2 | 2 | 4 |
+| BenchPreS | 2 | 0 | 0 |
+
+Strong Gate did not receive any of the seven sources removed on the two changed BenchPreS cases. The relevant evidence in the matched Actor made that control weaker; this comparison supplies no case where those same seven removals can improve Strong Gate. For RPEval, IPE-C already uses its empty-history endpoint on two changed cases. The third, `implicit/099`, is a genuine transfer opportunity because IPE-C did see all four removed sources and scores 3/6. Both overlapping PersistBench references are already passing, so further interventions there test retention of performance. This leaves one observed input-overlap opportunity for an improvement over an archived specialist on the studied seven removal cases. The zero-call audit is diagnostic and no new specialist scores are claimed. [Archive request overlap verifier](strong_wire_overlap.py)
