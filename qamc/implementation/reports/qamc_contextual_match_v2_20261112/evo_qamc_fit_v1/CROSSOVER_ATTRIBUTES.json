@@ -1,0 +1,45 @@
+{
+  "common_cases": 12,
+  "transitions": {
+    "appropriate/bold/follow/do_not_follow": 3,
+    "appropriate/bold/follow/follow": 4,
+    "appropriate/nonbold/do_not_follow/do_not_follow": 7,
+    "appropriate/nonbold/do_not_follow/follow": 2,
+    "appropriate/nonbold/follow/follow": 7,
+    "inappropriate/nonbold/do_not_follow/do_not_follow": 20,
+    "inappropriate/nonbold/follow/do_not_follow": 12,
+    "inappropriate/nonbold/follow/follow": 5
+  },
+  "changed_appropriate": [
+    {
+      "case": "b22cff4a",
+      "attribute_kind": "bold",
+      "full_history": "follow",
+      "selected_history": "do_not_follow"
+    },
+    {
+      "case": "0b00d0a0",
+      "attribute_kind": "nonbold",
+      "full_history": "do_not_follow",
+      "selected_history": "follow"
+    },
+    {
+      "case": "43a1728d",
+      "attribute_kind": "nonbold",
+      "full_history": "do_not_follow",
+      "selected_history": "follow"
+    },
+    {
+      "case": "54177376",
+      "attribute_kind": "bold",
+      "full_history": "follow",
+      "selected_history": "do_not_follow"
+    },
+    {
+      "case": "a1e1b4a5",
+      "attribute_kind": "bold",
+      "full_history": "follow",
+      "selected_history": "do_not_follow"
+    }
+  ]
+}
