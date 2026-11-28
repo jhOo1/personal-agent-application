@@ -50,6 +50,8 @@ case "${1:-}" in
   decision-quarantined-synthesis) entry=decision_quarantined_synthesis.py; shift ;;
   branch-constraint-repair) entry=../branch_constraint_repair_v1/trial.py; shift ;;
   branch-constraint-report) entry=../branch_constraint_repair_v1/summarize.py; shift ;;
+  current-commitment-gate) entry=../current_commitment_gate_v1/trial.py; shift ;;
+  current-commitment-report) entry=../current_commitment_gate_v1/settle.py; shift ;;
   task-message-boundary) entry=task_message_boundary.py; shift ;;
   task-message-pairs) entry=task_message_boundary_pairs.py; shift ;;
   task-message-replay) entry=task_message_boundary_replay.py; shift ;;
