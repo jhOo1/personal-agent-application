@@ -33,3 +33,15 @@ Two subsequent comparisons rule out expanding the current implementations. On si
 The concrete design target is a mixed task where an applicable constraint and an inapplicable personal preference can change different decisions. The RPEval picnic trace shows the requester's small-group habit narrowing the whole group's headcount. The shared dining-room task shows why necessary restrictions on wall art and fabric must still change the proposal. On PersistBench, a plan that acknowledges a severe cat allergy still fails the practical venue requirement if the main arrangement leaves the attendee exposed. That distinction warrants checking actual behavior on the saved strict beneficial-use pairs alongside the existing scores before promoting a new method. Any automated blind judgment is separate from the benchmark grade and from human review.
 
 QAMC-v3.2's earlier review agreed to remove BenchPreS from joint optimization and retain the two primary evidence roles. The renewed scope question included the negative synthesis and quote results and asked whether PersistBench's author-protocol barrier warrants reversing the performance priority or qualifying a replacement. This is a development priority and manuscript scope decision made after observing development results. No new benchmark, model evaluation, score change or sealed-set access was part of the review.
+
+## 21 根对照后的范围复核
+
+在共用 Actor 的已曝光扩展面板，移除来源后 RPEval Match 从 29/60 到 30/60，低于归档 IPE-C 的 32/60。BenchPreS AAR 保持 4/6，MR 从 8/14 到 5/14，仍落后 Strong Gate 的 AAR 5/6 和 MR 0/14。PersistBench 通过数从 4/6 到 5/6，PB_RUBRIC 为 6/6。评分沿用项目适配。114 次请求均成功，共 401,500 Token。[原始分母和结算](../implementation/reports/qamc_contextual_match_v2_20261112/participant_requirement_expansion_v1/RESULTS.md)
+
+七个删源事件中，归档强 Actor 实际收到拟删来源的只有三个。两道 PersistBench 强答已通过。两道受干预的 BenchPreS Strong Gate 答案都没有收到对应拟删来源。RPEval 的双人晚餐题 `implicit/099` 是一个可测切口：归档强稿确实收到了拟删来源并得 3/6，匹配 Actor 对照由 3/6 到 4/6。这个观察支持对归档强 Actor 做固定其余输入的干预，它没有检验对强稿本身的有效性。[请求重叠审计](../implementation/reports/qamc_contextual_match_v2_20261112/participant_requirement_expansion_v1/strong_wire_overlap.py)
+
+两次重生成中 IPE-C 对 RP 的净增分别为 1 位和 24 位，误用两次下降，漏用两次上升。PersistBench 的任务路由在 12 个迎合来源上对公开 Self-ReCheck 适配有收益，严格有益使用仍有裁判分歧与缺失。两者值得保留为主比较和风险/有益使用验证。BenchPreS 固定证据实验的 38 个同题上，反馈优化与 Strong Gate 的 AAR 同为 58/68，完整度总分从 177 到 151。将 BenchPreS 留在报告中作为正式表达与交付的边界，停止用统一删源规则反复调它。[RPEval 重生成](../CURRENT_DECISION.md) · [PersistBench 外部对照](../implementation/reports/qamc_contextual_match_v2_20261112/persist_public_self_recheck_v1/READOUT.md) · [BenchPreS 固定证据结果](../implementation/reports/qamc_contextual_match_v2_20261112/bench_gate_gepa_feedback_v1/FINAL.md)
+
+重新查阅 PairPref 作者论文及当前公开索引，仍未核实可运行的作者数据与评分器。其情景配对适合测同一偏好的适用性翻转，人审未验证生成评分，也不覆盖正式交付完整度。暂不替换。若另有候选，应先核实数据、评分器、可复现强对照，并用真实正反例确认它测到了要替换的能力。[PairPref 论文](https://arxiv.org/html/2609.34526)
+
+已向 QAMC-v3.2 提交以上范围裁决和反证问题。此次复核只读取已曝光开发结果及公开资料。
