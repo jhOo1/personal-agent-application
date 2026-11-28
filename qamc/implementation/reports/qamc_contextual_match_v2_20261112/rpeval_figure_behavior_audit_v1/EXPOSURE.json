@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "answer_verified": true,
+      "case": "explicit/146",
+      "fact_records": 0,
+      "figure_upb": 5,
+      "policy_records": 0,
+      "source_records": 0
+    },
+    {
+      "answer_verified": true,
+      "case": "explicit/065",
+      "fact_records": 0,
+      "figure_upb": 5,
+      "policy_records": 0,
+      "source_records": 0
+    },
+    {
+      "answer_verified": true,
+      "case": "implicit/047",
+      "fact_records": 0,
+      "figure_upb": 5,
+      "policy_records": 0,
+      "source_records": 0
+    },
+    {
+      "answer_verified": true,
+      "case": "explicit/061",
+      "fact_records": 0,
+      "figure_upb": 5,
+      "policy_records": 0,
+      "source_records": 0
+    }
+  ],
+  "new_model_requests": 0
+}

@@ -469,6 +469,24 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     phrases.append(f"changes Match from {position_score(archived_totals, 'IPE_C')} to "
                    f"{position_score(archived_totals, 'TASK_ONLY')} and increases underuse severity "
                    f"from {archived_totals['IPE_C']['UPB']} to {archived_totals['TASK_ONLY']['UPB']}")
+    figure_report = root / "rpeval_figure14_judge_v1"
+    initial = json.loads((figure_report / "RAW_AGGREGATE.json").read_text())
+    syntax_checked = json.loads((figure_report / "SYNTAX_DIAGNOSTIC.json").read_text())
+    format_checked = json.loads((figure_report / "FORMAT_CONTROL.json").read_text())
+    figure_order = ("IPE_C", "RPR_PAPER_FULL", "TASK_ONLY")
+    before = [format_checked["common"][method]["adapted_match"] for method in figure_order]
+    after = [format_checked["common"][method]["figure_match"] for method in figure_order]
+    traces = json.loads((root / "rpeval_figure_behavior_audit_v1" / "AGGREGATE.json").read_text())["behavior_counts"]
+    zero, full = (traces["all_A/" + method] for method in ("TASK_ONLY", "RPR_PAPER_FULL"))
+    phrases.extend([
+        f"invalid JSON on all {initial['contracts']['INVALID_JSON']} calls",
+        f"leaves {syntax_checked['contracts']['OK']} valid cells",
+        f"yields {format_checked['contracts']['OK']} valid cells",
+        f"from {before[0]}, {before[1]}, and {before[2]} to {after[0]}, {after[1]}, and {after[2]} of "
+        f"{format_checked['common']['IPE_C']['positions']} positions",
+        f"{zero['A/SOFT']} of {sum(zero.values())} author-A positions in these task-only answers, "
+        f"compared with {full['A/SOFT']} of {sum(full.values())} with full history",
+    ])
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(joint_rows) + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))

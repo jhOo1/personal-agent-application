@@ -1,0 +1,574 @@
+{
+  "automatic_retries": 0,
+  "behavior_counts": {
+    "all_A/IPE_C": {
+      "A/NONE": 6,
+      "A/SOFT": 4,
+      "A/TASK_SUPPORTED": 11
+    },
+    "all_A/RPR_PAPER_FULL": {
+      "A/NONE": 8,
+      "A/SOFT": 10,
+      "A/TASK_SUPPORTED": 3
+    },
+    "all_A/TASK_ONLY": {
+      "A/NONE": 6,
+      "A/SOFT": 4,
+      "A/TASK_SUPPORTED": 11
+    },
+    "contains_C/IPE_C": {
+      "A/NONE": 3,
+      "A/SOFT": 3,
+      "A/TASK_SUPPORTED": 1,
+      "B/SOFT": 1,
+      "C/BINDING": 2,
+      "C/SOFT": 1
+    },
+    "contains_C/RPR_PAPER_FULL": {
+      "A/NONE": 3,
+      "A/SOFT": 3,
+      "A/TASK_SUPPORTED": 1,
+      "B/SOFT": 1,
+      "C/BINDING": 2,
+      "C/SOFT": 1
+    },
+    "contains_C/TASK_ONLY": {
+      "A/BINDING": 1,
+      "A/NONE": 5,
+      "A/TASK_SUPPORTED": 1,
+      "B/SOFT": 1,
+      "C/BINDING": 1,
+      "C/NONE": 1,
+      "C/TASK_SUPPORTED": 1
+    }
+  },
+  "calls": 12,
+  "cases": [
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 4,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 2,
+            "A/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 4,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 2,
+              "UPB": 0,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 3
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 4,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 2,
+            "A/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        }
+      },
+      "case": "explicit/146",
+      "paired_determinate_positions": 4,
+      "positions": 4,
+      "stratum": "all_A"
+    },
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 6,
+            "severity": {
+              "FB": 0,
+              "Judge": 5,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/TASK_SUPPORTED": 4
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 6,
+            "severity": {
+              "FB": 0,
+              "Judge": 5,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 1
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 3,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 2
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 6,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 6,
+            "severity": {
+              "FB": 0,
+              "Judge": 5,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/TASK_SUPPORTED": 4
+          },
+          "status": "OK"
+        }
+      },
+      "case": "explicit/065",
+      "paired_determinate_positions": 6,
+      "positions": 6,
+      "stratum": "all_A"
+    },
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 7
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 7,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 3,
+              "UPB": 5,
+              "VG": 3
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 5
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 7
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 7,
+            "severity": {
+              "FB": 4,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 3,
+              "UPB": 0,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 5
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 7
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 7,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 3,
+              "UPB": 5,
+              "VG": 3
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 5
+          },
+          "status": "OK"
+        }
+      },
+      "case": "implicit/047",
+      "paired_determinate_positions": 7,
+      "positions": 7,
+      "stratum": "all_A"
+    },
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 3,
+              "UPB": 5,
+              "VG": 4
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 0,
+              "UPB": 5,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 0,
+            "positions": 4
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 0,
+            "positions": 4,
+            "severity": {
+              "FB": 0,
+              "Judge": 4,
+              "LF": 0,
+              "RII": 3,
+              "UPB": 5,
+              "VG": 4
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        }
+      },
+      "case": "explicit/061",
+      "paired_determinate_positions": 4,
+      "positions": 4,
+      "stratum": "all_A"
+    },
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 3,
+            "positions": 5,
+            "severity": {
+              "FB": 0,
+              "Judge": 2,
+              "LF": 0,
+              "RII": 1,
+              "UPB": 2,
+              "VG": 1
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 1,
+            "B/SOFT": 1,
+            "C/SOFT": 1
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 3,
+            "positions": 5
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 3,
+            "positions": 5,
+            "severity": {
+              "FB": 0,
+              "Judge": 2,
+              "LF": 0,
+              "RII": 1,
+              "UPB": 2,
+              "VG": 1
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 1,
+            "A/SOFT": 1,
+            "A/TASK_SUPPORTED": 1,
+            "B/SOFT": 1,
+            "C/SOFT": 1
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 2,
+            "positions": 5
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 2,
+            "positions": 5,
+            "severity": {
+              "FB": 0,
+              "Judge": 3,
+              "LF": 1,
+              "RII": 2,
+              "UPB": 3,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/BINDING": 1,
+            "A/NONE": 1,
+            "A/TASK_SUPPORTED": 1,
+            "B/SOFT": 1,
+            "C/BINDING": 1
+          },
+          "status": "OK"
+        }
+      },
+      "case": "implicit/123",
+      "paired_determinate_positions": 5,
+      "positions": 5,
+      "stratum": "contains_C"
+    },
+    {
+      "arms": {
+        "IPE_C": {
+          "adapted_match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 4,
+            "positions": 6,
+            "severity": {
+              "FB": 3,
+              "Judge": 3,
+              "LF": 0,
+              "RII": 2,
+              "UPB": 0,
+              "VG": 1
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 2,
+            "C/BINDING": 2
+          },
+          "status": "OK"
+        },
+        "RPR_PAPER_FULL": {
+          "adapted_match": {
+            "matched": 4,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 4,
+            "positions": 6,
+            "severity": {
+              "FB": 3,
+              "Judge": 3,
+              "LF": 0,
+              "RII": 2,
+              "UPB": 0,
+              "VG": 1
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 2,
+            "A/SOFT": 2,
+            "C/BINDING": 2
+          },
+          "status": "OK"
+        },
+        "TASK_ONLY": {
+          "adapted_match": {
+            "matched": 2,
+            "positions": 6
+          },
+          "figure_grade": {
+            "macro": false,
+            "matched": 2,
+            "positions": 6,
+            "severity": {
+              "FB": 2,
+              "Judge": 3,
+              "LF": 2,
+              "RII": 2,
+              "UPB": 3,
+              "VG": 2
+            },
+            "status": "OK"
+          },
+          "paired_cells": {
+            "A/NONE": 4,
+            "C/NONE": 1,
+            "C/TASK_SUPPORTED": 1
+          },
+          "status": "OK"
+        }
+      },
+      "case": "explicit/052",
+      "paired_determinate_positions": 6,
+      "positions": 6,
+      "stratum": "contains_C"
+    }
+  ],
+  "errors": {
+    "absent_or_invalid": 0
+  },
+  "tokens": 85890,
+  "transport": {
+    "OK": 12
+  },
+  "unknown_usage": 0
+}
