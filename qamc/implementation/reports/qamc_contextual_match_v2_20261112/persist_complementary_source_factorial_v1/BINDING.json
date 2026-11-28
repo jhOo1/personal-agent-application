@@ -1,0 +1,10 @@
+{
+  "verified_new_conditions": 12,
+  "verified_reused_both_conditions": 4,
+  "per_intervention": {
+    "NONE": 4,
+    "FIRST": 4,
+    "SECOND": 4
+  },
+  "cached_actor_conditions": 0
+}

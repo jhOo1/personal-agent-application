@@ -1,0 +1,128 @@
+{
+  "cells": [
+    {
+      "uid": "persistbench/3776469a39baf2df0418",
+      "cell": "NONE",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/3776469a39baf2df0418",
+      "cell": "FIRST",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/3776469a39baf2df0418",
+      "cell": "SECOND",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 3
+    },
+    {
+      "uid": "persistbench/dbcf603fc3b52d91814d",
+      "cell": "NONE",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/dbcf603fc3b52d91814d",
+      "cell": "FIRST",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/dbcf603fc3b52d91814d",
+      "cell": "SECOND",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/125d165e8d13bed4482a",
+      "cell": "NONE",
+      "status": "OK",
+      "GPT": 2,
+      "Qwen": 1
+    },
+    {
+      "uid": "persistbench/125d165e8d13bed4482a",
+      "cell": "FIRST",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/125d165e8d13bed4482a",
+      "cell": "SECOND",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 3
+    },
+    {
+      "uid": "persistbench/40a9b9649983f89a0484",
+      "cell": "NONE",
+      "status": "OK",
+      "GPT": 2,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/40a9b9649983f89a0484",
+      "cell": "FIRST",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/40a9b9649983f89a0484",
+      "cell": "SECOND",
+      "status": "OK",
+      "GPT": 3,
+      "Qwen": 2
+    },
+    {
+      "uid": "persistbench/3776469a39baf2df0418",
+      "cell": "BOTH",
+      "status": "OK_ARCHIVE",
+      "GPT": 3,
+      "Qwen": 3
+    },
+    {
+      "uid": "persistbench/dbcf603fc3b52d91814d",
+      "cell": "BOTH",
+      "status": "OK_ARCHIVE",
+      "GPT": 3,
+      "Qwen": 3
+    },
+    {
+      "uid": "persistbench/125d165e8d13bed4482a",
+      "cell": "BOTH",
+      "status": "OK_ARCHIVE",
+      "GPT": 3,
+      "Qwen": 3
+    },
+    {
+      "uid": "persistbench/40a9b9649983f89a0484",
+      "cell": "BOTH",
+      "status": "OK_ARCHIVE",
+      "GPT": 3,
+      "Qwen": 3
+    }
+  ],
+  "calls": 36,
+  "status": {
+    "OK": 36
+  },
+  "stages": {
+    "Actor": 12,
+    "GPT": 12,
+    "Qwen": 12
+  },
+  "tokens": 182569,
+  "unknown_usage": 0,
+  "retries": 0
+}

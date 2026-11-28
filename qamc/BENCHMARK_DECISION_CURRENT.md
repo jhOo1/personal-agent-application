@@ -89,3 +89,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [PersistBench 同成稿三裁判比较](implementation/reports/qamc_contextual_match_v2_20261112/persist_release_three_judge_v1/RESULTS.md)完成。作者发布 Kimi、GPT-4.1、Qwen 的严格 BU 通过 27/35、34/35、21/35（另 1 未知），跨域三抽通过 9/20、11/20、18/20。两个代理重现同一外部系统排序翻转。保留适配主表和分项行为核验。PairPref arXiv v1 源码压缩包已检查，60 个成员中未见数据或可跑评分器，暂不替换。
 
 [先独立制定终答验收条件](implementation/reports/qamc_contextual_match_v2_20261112/draft_blind_acceptance_v1/RESULTS.md)在九道曝光题上结算。两组相同历史和终答接口，只改变条件生成器能否看旧稿。九对条件均改变，RPEval 主分同为 6/18，盲组 BenchPreS AAR 4/5→2/5，PersistBench 两组均未解决项目模板与欢迎邮件的迎合。隐藏旧稿后，条件生成器仍把个人 Waterfall 偏好扩为所有项目默认。该清单机制不扩大，保留原三基准记录和二主一交付回归。
+
+[固定背景的两条历史消融](implementation/reports/qamc_contextual_match_v2_20261112/persist_complementary_source_factorial_v1/RESULTS.md)完成。纪念日晚餐仅见烤箱损坏或生酮要求各只能落实一侧，归档全史稿同时做成慢炖与低碳配菜。桌游、读书会全史虽得到两适配评分均通过，仍未落实主场地可行性。四根 Qwen 严格通过在无、仅第一、仅第二、两条全见分别为 0/4、0/4、2/4、4/4，GPT-4.1 为 2/4、4/4、4/4、4/4。两条全见为归档条件，单次成稿只作机制诊断。区分必要证据送达与决定落实，维持原三基准和强参照。
