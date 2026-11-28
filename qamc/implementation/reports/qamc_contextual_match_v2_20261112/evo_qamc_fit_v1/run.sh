@@ -28,5 +28,6 @@ case "${1:-}" in
   expansion-audit) entry=expansion_inventory.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
+  mutation-audit) entry=mutation_audit.py; shift ;;
 esac
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/$entry" "$@"

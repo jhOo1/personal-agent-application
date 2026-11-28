@@ -1,0 +1,15 @@
+{
+  "parent": "TASK_PLAN_SELECTED",
+  "inherited_tasks": 40,
+  "physical_actor_plan": 80,
+  "added_instructions": {
+    "scope_of_influence": {
+      "instruction": "Let historical context affect only decisions authorized by the current request, including shared decisions and public assertions; do not infer unstated preferences or override present instructions.",
+      "sha256": "4a8cf6e42da1d048bfed0d33771a854312cc237e0bc8320add5d337bb997ba2a"
+    },
+    "realize_applicable_preference": {
+      "instruction": "When a past requirement is legitimately applicable, reflect it in the deliverable while preserving completeness and all explicit constraints.",
+      "sha256": "de6a854fcbb8411e29bd55ffd30e6f0183c0bd9aaec25ef7e5ec2d018d309dd9"
+    }
+  }
+}
