@@ -32,3 +32,16 @@ Read every second-batch all-arm common task on which Scope loses Match against t
 | implicit/085, easy family dinners | 4/6 → 3/6 | Both use easy home cooking, and Scope explicitly proposes one-pot dishes in the family's style. Both Judge explanations acknowledge the C requirement was implemented. The lower score alone gives no evidence that the C requirement was lost. |
 
 None of these rows had a flag from the current automated heuristic. The manual audit still finds explicit ordinal errors in two of them. The actionable difference is whether the Actor preserves the concrete scope and force of a source it already sees.
+
+## Where the IPE-C gap sits
+
+Join the same 80 all-arm common tasks to the exact archived IPE-C route and scores. Every row also has both archived endpoint Match grades. IPE-C uses the RP endpoint when its IPE rank puts at least one source at C, and the task-only endpoint otherwise. The route was fixed before this expansion. It is an archived prediction, not an author label.
+
+| Archived IPE-C decision | Tasks / positions | Always-Task | Always-Memory (RP) | IPE-C | Direct | Parent | Scope |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Suppress all history | 36 / 156 | 119 | 95 | 119 | 46 | 65 | 72 |
+| Use RP history endpoint | 44 / 251 | 115 | 134 | 134 | 134 | 133 | 131 |
+
+Of the 50 Match positions that separate IPE-C and Scope, 47 occur where the archived IPE-C predicts no memory is needed. These 47 are all on the 31 all-A tasks in that route. The new shared selector leaves evidence in 29 of all 36 tasks on IPE-C's task-only path. Of the 44 tasks where IPE-C selects history, none has empty evidence in the three new arms. This result favors evaluating history activation before further refining within-history scope, because a narrow last-step edit cannot remove exposure to unused context. The comparison is observational: it also changes the generation input and pipeline. A future intervention should compare visibility against matched current-only and full-history controls before attributing the 47-point gap to exposure.
+
+There is a cost to copying the old switch literally. Four all-A tasks where IPE-C chooses history still get 0/17 in all four compared approaches, while the saved task-only endpoint attains 17/17. On the five B-only tasks where IPE-C withholds history, Direct gets 21/31 against IPE-C's 15/31; suppressing more indiscriminately could miss actual value. Preserve both observations when designing a shared selector. The changed scope strength remains relevant on tasks that genuinely need C evidence.
