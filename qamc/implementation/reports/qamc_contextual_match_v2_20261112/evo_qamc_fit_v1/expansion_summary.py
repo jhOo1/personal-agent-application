@@ -11,6 +11,7 @@ from trial import HERE,sha
 from expansion_run import ARMS,OUT,read
 
 METHODS=('BASE',*ARMS)
+ARCHIVE_EMPTY_ROUTES=('NEW_DRAFT','REUSE_DRAFT','REUSE_ORIGINAL_TASK_ONLY_STATE')
 
 
 def collect():
@@ -80,15 +81,45 @@ def rpe_sensitivity(groups):
     return results
 
 
-def rpe_degree_bounds(rows):
-    endpoint=HERE.parent/'ipe_c_two_endpoint_completion_v1'/'RESULTS.json'
-    labels={r['uid']:r['labels'] for r in read(endpoint)['rows']}
+def rpe_degree_bounds(rows,endpoints):
+    labels={uid:r['labels'] for uid,r in endpoints.items()}
     out={}
     for opponent in ('BASE','PLAN_SELECTED','DIRECT'):
         paired=[row for row in rows if aligned(row[2], ('BASE','SCOPE',opponent))]
         out[opponent]={label:paired_degree_bounds(paired,'SCOPE',opponent,label,labels)
                        for label in ('B','C')}
     return out
+
+
+def rpe_activation_slice(rows,endpoints):
+    """Compare on the archived prediction of whether to reveal history."""
+    outcomes=defaultdict(Counter)
+    for card,receipts,values in rows:
+        if not aligned(values,METHODS):
+            continue
+        archived=endpoints[card['uid']]
+        assert archived['ipe_c']['grade']==card['base_score']
+        old_route=archived['old_route']
+        if old_route=='REUSE_RP':
+            route='IPE_RETAIN'
+        elif old_route in ARCHIVE_EMPTY_ROUTES:
+            route='IPE_CLEAR'
+        else:
+            raise ValueError('Valid IPE-C comparison lacks a known activation route')
+        positions=values['BASE']['positions']
+        controls={name:archived['controls'][name]['grade'].get('match')
+                  for name in ('TASK_ONLY','RPR_PAPER_FULL')}
+        for key in (route,f"{route}/{card['stratum']}"):
+            rates=outcomes[key]
+            rates.update(tasks=1,positions=positions,
+                         fresh_empty_history=receipts['SCOPE']['selected_sources']==0)
+            rates.update({method:values[method]['primary'] for method in METHODS})
+            if all(controls.values()):
+                assert all(control['positions']==positions for control in controls.values())
+                rates.update(both_archived_endpoints_tasks=1,both_archived_endpoints_positions=positions)
+                rates.update({name:control['matched'] for name,control in controls.items()})
+                rates.update({f'both_endpoints_{method}':values[method]['primary'] for method in METHODS})
+    return outcomes
 
 
 def rpe_group_support(entries):
@@ -133,11 +164,14 @@ def summarize():
             pairs[opponent]=native_totals(paired,methods)
         scope_pairs[key]=pairs
     frozen_assignment=Counter(card['domain'] for batch in pin['batches'] for card in batch)
+    endpoint=HERE.parent/'ipe_c_two_endpoint_completion_v1'/'RESULTS.json'
+    endpoints={row['uid']:row for row in read(endpoint)['rows']}
     return dict(finished_batches=finished,all_batches_assigned=sum(len(b) for b in pin['batches']),
                 frozen_assignment=frozen_assignment,native=native,scope_native_pairs=scope_pairs,
                 paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=rpe_group_support(groups['RPEval']),
                 rpe_judge_sensitivity=rpe_sensitivity(groups),
-                rpe_use_degree_bounds=rpe_degree_bounds(groups['RPEval']),
+                rpe_use_degree_bounds=rpe_degree_bounds(groups['RPEval'],endpoints),
+                rpe_archived_activation_slice=rpe_activation_slice(groups['RPEval'],endpoints),
                 bench_attribute_only=summarize_attributes(groups['BenchPreS'],METHODS),
                 delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                     statuses=Counter(r['status'] for r in ledger),
