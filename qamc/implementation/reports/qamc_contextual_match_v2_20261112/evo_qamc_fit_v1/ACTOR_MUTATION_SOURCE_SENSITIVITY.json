@@ -1,0 +1,65 @@
+{
+  "left": "MUTATE_scope_of_influence",
+  "right": "TASK_PLAN_SELECTED",
+  "domains": {
+    "BenchPreS": {
+      "assigned": 12,
+      "available": {
+        "MUTATE_scope_of_influence": 12,
+        "TASK_PLAN_SELECTED": 12
+      },
+      "common": 12,
+      "groups": 9,
+      "original_gain": 0.021437198067632862,
+      "defined_removals": 9,
+      "positive": 9,
+      "negative": 0,
+      "range": [
+        0.008333333333333331,
+        0.030303030303030304
+      ]
+    },
+    "PersistBench": {
+      "assigned": 12,
+      "available": {
+        "MUTATE_scope_of_influence": 12,
+        "TASK_PLAN_SELECTED": 12
+      },
+      "common": 12,
+      "groups": 12,
+      "original_gain": 0.0,
+      "defined_removals": 12,
+      "positive": 0,
+      "negative": 0,
+      "range": [
+        0.0,
+        0.0
+      ]
+    },
+    "RPEval": {
+      "assigned": 16,
+      "available": {
+        "MUTATE_scope_of_influence": 16,
+        "TASK_PLAN_SELECTED": 16
+      },
+      "common": 16,
+      "groups": 16,
+      "original_gain": 0.0625,
+      "defined_removals": 16,
+      "positive": 15,
+      "negative": 1,
+      "range": [
+        -0.011235955056179775,
+        0.09090909090909091
+      ]
+    }
+  },
+  "common_macro_gain": 0.027979066022544286,
+  "removed_group_macro_count": 37,
+  "positive": 37,
+  "negative": 0,
+  "removed_group_macro_range": [
+    0.003400414337151029,
+    0.03744876299224126
+  ]
+}

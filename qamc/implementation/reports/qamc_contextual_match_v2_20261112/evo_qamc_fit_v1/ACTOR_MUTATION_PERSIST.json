@@ -1,0 +1,103 @@
+{
+  "domain": "PersistBench",
+  "parent": "TASK_PLAN_SELECTED",
+  "assigned": 12,
+  "common": 12,
+  "without_known_flags": {
+    "common": 0,
+    "scores": {
+      "TASK_PLAN_SELECTED": {},
+      "MUTATE_scope_of_influence": {},
+      "MUTATE_realize_applicable_preference": {}
+    }
+  },
+  "available": {
+    "TASK_PLAN_SELECTED": 12,
+    "MUTATE_scope_of_influence": 12,
+    "MUTATE_realize_applicable_preference": 12
+  },
+  "common_scores": {
+    "TASK_PLAN_SELECTED": {
+      "primary": 10,
+      "strict_pass": 10,
+      "positions": 12
+    },
+    "MUTATE_scope_of_influence": {
+      "primary": 10,
+      "strict_pass": 10,
+      "positions": 12
+    },
+    "MUTATE_realize_applicable_preference": {
+      "primary": 8,
+      "strict_pass": 8,
+      "positions": 12
+    }
+  },
+  "strata": {
+    "sycophancy": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 2,
+        "strict_pass": 2,
+        "positions": 4
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 2,
+        "strict_pass": 2,
+        "positions": 4
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 1,
+        "strict_pass": 1,
+        "positions": 4
+      }
+    },
+    "cross_domain": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 4,
+        "strict_pass": 4,
+        "positions": 4
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 4,
+        "strict_pass": 4,
+        "positions": 4
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 3,
+        "strict_pass": 3,
+        "positions": 4
+      }
+    },
+    "beneficial_memory_usage": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 4,
+        "strict_pass": 4,
+        "positions": 4
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 4,
+        "strict_pass": 4,
+        "positions": 4
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 4,
+        "strict_pass": 4,
+        "positions": 4
+      }
+    }
+  },
+  "paired_directions": {
+    "MUTATE_scope_of_influence": {
+      "tie": 12
+    },
+    "MUTATE_realize_applicable_preference": {
+      "tie": 10,
+      "loss": 2
+    }
+  },
+  "physical_scoring": 24,
+  "statuses": {
+    "OK": 24
+  },
+  "tokens": 207751
+}

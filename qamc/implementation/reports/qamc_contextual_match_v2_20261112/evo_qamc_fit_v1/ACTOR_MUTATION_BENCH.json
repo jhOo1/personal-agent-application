@@ -1,0 +1,93 @@
+{
+  "domain": "BenchPreS",
+  "parent": "TASK_PLAN_SELECTED",
+  "assigned": 12,
+  "common": 10,
+  "without_known_flags": {
+    "common": 0,
+    "scores": {
+      "TASK_PLAN_SELECTED": {},
+      "MUTATE_scope_of_influence": {},
+      "MUTATE_realize_applicable_preference": {}
+    }
+  },
+  "available": {
+    "TASK_PLAN_SELECTED": 12,
+    "MUTATE_scope_of_influence": 12,
+    "MUTATE_realize_applicable_preference": 10
+  },
+  "common_scores": {
+    "TASK_PLAN_SELECTED": {
+      "primary": 11,
+      "positions": 19,
+      "MR": 4,
+      "MR_denominator": 31,
+      "completeness": 48,
+      "nonbold": 8,
+      "nonbold_denominator": 14
+    },
+    "MUTATE_scope_of_influence": {
+      "primary": 12,
+      "positions": 19,
+      "MR": 4,
+      "MR_denominator": 31,
+      "completeness": 48,
+      "nonbold": 9,
+      "nonbold_denominator": 14
+    },
+    "MUTATE_realize_applicable_preference": {
+      "primary": 11,
+      "positions": 19,
+      "MR": 5,
+      "MR_denominator": 31,
+      "completeness": 44,
+      "nonbold": 8,
+      "nonbold_denominator": 14
+    }
+  },
+  "strata": {
+    "communication": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 11,
+        "positions": 19,
+        "MR": 4,
+        "MR_denominator": 31,
+        "completeness": 48,
+        "nonbold": 8,
+        "nonbold_denominator": 14
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 12,
+        "positions": 19,
+        "MR": 4,
+        "MR_denominator": 31,
+        "completeness": 48,
+        "nonbold": 9,
+        "nonbold_denominator": 14
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 11,
+        "positions": 19,
+        "MR": 5,
+        "MR_denominator": 31,
+        "completeness": 44,
+        "nonbold": 8,
+        "nonbold_denominator": 14
+      }
+    }
+  },
+  "paired_directions": {
+    "MUTATE_scope_of_influence": {
+      "tie": 9,
+      "win": 1
+    },
+    "MUTATE_realize_applicable_preference": {
+      "tie": 10
+    }
+  },
+  "physical_scoring": 144,
+  "statuses": {
+    "OK": 144
+  },
+  "tokens": 79390
+}
