@@ -1,0 +1,141 @@
+{
+  "table": {
+    "all_A": {
+      "allocation": {
+        "assigned": 9,
+        "exposure_changed": 1,
+        "common": 9
+      },
+      "TOP": {
+        "matched": 9,
+        "positions": 36,
+        "OPB": 21,
+        "UPB": 3,
+        "FM": 3
+      },
+      "unflagged/TOP": {
+        "matched": 9,
+        "positions": 28,
+        "OPB": 17,
+        "UPB": 0,
+        "FM": 3
+      },
+      "COVER": {
+        "matched": 9,
+        "positions": 36,
+        "OPB": 21,
+        "UPB": 3,
+        "FM": 3
+      },
+      "unflagged/COVER": {
+        "matched": 9,
+        "positions": 28,
+        "OPB": 17,
+        "UPB": 0,
+        "FM": 3
+      },
+      "IPE-C": {
+        "matched": 30,
+        "positions": 36,
+        "OPB": 6,
+        "UPB": 0,
+        "FM": 2
+      },
+      "unflagged/IPE-C": {
+        "matched": 22,
+        "positions": 28,
+        "OPB": 6,
+        "UPB": 0,
+        "FM": 2
+      },
+      "RP": {
+        "matched": 24,
+        "positions": 36,
+        "OPB": 10,
+        "UPB": 2,
+        "FM": 2
+      },
+      "unflagged/RP": {
+        "matched": 18,
+        "positions": 28,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      }
+    },
+    "B_expanded": {
+      "allocation": {
+        "assigned": 9,
+        "exposure_changed": 1,
+        "common": 9
+      },
+      "TOP": {
+        "matched": 31,
+        "positions": 51,
+        "OPB": 8,
+        "UPB": 13,
+        "FM": 1
+      },
+      "COVER": {
+        "matched": 31,
+        "positions": 51,
+        "OPB": 7,
+        "UPB": 15,
+        "FM": 1
+      },
+      "IPE-C": {
+        "matched": 31,
+        "positions": 51,
+        "OPB": 3,
+        "UPB": 19,
+        "FM": 2
+      },
+      "RP": {
+        "matched": 30,
+        "positions": 51,
+        "OPB": 5,
+        "UPB": 17,
+        "FM": 0
+      },
+      "unflagged/TOP": {
+        "matched": 1,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 4,
+        "FM": 0
+      },
+      "unflagged/COVER": {
+        "matched": 1,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 4,
+        "FM": 0
+      },
+      "unflagged/IPE-C": {
+        "matched": 1,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 4,
+        "FM": 0
+      },
+      "unflagged/RP": {
+        "matched": 1,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 4,
+        "FM": 0
+      }
+    }
+  },
+  "statuses": {
+    "OK": 56
+  },
+  "stages": {
+    "SoftCoveragePlan": 18,
+    "SoftCoverageActor": 19,
+    "RPEvalJudge": 19
+  },
+  "tokens": 134095,
+  "unknown_usage": 0,
+  "retries": 0
+}

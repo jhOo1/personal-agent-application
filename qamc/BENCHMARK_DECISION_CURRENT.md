@@ -77,3 +77,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [同序联合证据块](implementation/reports/qamc_contextual_match_v2_20261112/joint_evidence_block_v1/RESULTS.md)实测 8 个 PersistBench 来源，6 对新成稿。严格有益使用 Qwen 3/4→4/4，GPT-4.1 均 4/4，旧 RESERVE 与 FULL 已 4/4。唯一净胜的桌游成稿去掉了不适合四人的推荐，但仍未把猫过敏事实落实为场地前置条件。当前分块结构不扩大。
 
 [桌游人数与场地前提的固定成稿对照](implementation/reports/qamc_contextual_match_v2_20261112/board_game_action_factorial_v2/RESULTS.md)在同一归档稿分别修复两项行动。不论只修游戏、只修场地还是全修，Qwen 都是 2→3；GPT-4.1 全部为 3。Qwen 的通过不能验证两个问题都已解决。它也无法唯一解释上一轮联合块的分差。6 个新评分、0 Actor，原评分保留。
+
+[RPEval 同数量软偏好决策覆盖](implementation/reports/qamc_contextual_match_v2_20261112/soft_decision_coverage_v1/RESULTS.md)在 9 个成对来源组结算。覆盖不同段落与普通前两名逐题 Match 全平，两个选材变化来自同一个同事聚餐来源。两臂全 A 均 9/36，IPE-C 30/36；新增 B 均 31/51，与 IPE-C 一致。规划器在全 A 两臂各送入 14 条作者 A。关闭本次扩展准入，保留原 IPE-C。

@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "all_A/TOP/selected_labels": {
+      "A": 14
+    },
+    "all_A/COVER/selected_labels": {
+      "A": 14
+    },
+    "all_A/COVER_vs_TOP": {
+      "tie": 9,
+      "unflagged_tie": 8
+    },
+    "all_A/COVER_vs_IPE-C": {
+      "tie": 4,
+      "unflagged_tie": 4,
+      "loss": 5,
+      "unflagged_loss": 4
+    },
+    "B_expanded/TOP/selected_labels": {
+      "A": 11,
+      "B": 6
+    },
+    "B_expanded/COVER/selected_labels": {
+      "A": 10,
+      "B": 7
+    },
+    "B_expanded/COVER_vs_TOP": {
+      "tie": 9,
+      "unflagged_tie": 2
+    },
+    "B_expanded/COVER_vs_IPE-C": {
+      "win": 2,
+      "loss": 2,
+      "tie": 5,
+      "unflagged_tie": 2
+    }
+  },
+  "changed_admission": [
+    {
+      "case": "063",
+      "track": "all_A",
+      "TOP": {
+        "admitted": [
+          "A",
+          "A"
+        ],
+        "match": {
+          "matched": 0,
+          "positions": 4
+        },
+        "flags": [],
+        "bias": {
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 1
+        }
+      },
+      "COVER": {
+        "admitted": [
+          "A",
+          "A"
+        ],
+        "match": {
+          "matched": 0,
+          "positions": 4
+        },
+        "flags": [],
+        "bias": {
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 1
+        }
+      }
+    },
+    {
+      "case": "067",
+      "track": "B_expanded",
+      "TOP": {
+        "admitted": [
+          "A",
+          "A"
+        ],
+        "match": {
+          "matched": 3,
+          "positions": 5
+        },
+        "flags": [],
+        "bias": {
+          "OPB": 2,
+          "UPB": 0,
+          "FM": 0
+        }
+      },
+      "COVER": {
+        "admitted": [
+          "A",
+          "B"
+        ],
+        "match": {
+          "matched": 3,
+          "positions": 5
+        },
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "bias": {
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        }
+      }
+    }
+  ]
+}
