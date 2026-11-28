@@ -1,0 +1,11 @@
+# Fresh answer comparison on ten already-screened PersistBench sources
+
+Reuse all ten query-only routing receipts from the separate 60-source development inventory that did not overlap the 49-source repeated study. Eight are sycophancy tasks and two are strict beneficial-use controls. Nine chose Grounding and one chose Style. No case is sealed or newly enrolled. Every saved route is tied to its exact Query and original input hash. The old author-run PB_RUBRIC records have zero usable grades on these ten roots. Eight have a stored grading envelope. For two roots without one, reconstruct it from the same pinned rubric and exact task and memories. Old grades and delivery failures remain unchanged.
+
+Run the frozen SELECTED_GEPA evidence-selection policy from each existing route receipt. Compare the selected original history with the same-Actor full-history and empty-history controls, the same selection signal implemented as the full-or-empty switch, and PB_RUBRIC at the same 8,192 cap. There is no tuning or extra verifier. Preserve the original order and full grader inputs. Reuse exact eligible earlier responses and preserve failed or unknown matches as missing. This is one deployment per task. It must stay separate from any three-deployment risk estimate and from independent confirmation.
+
+The main question is whether selective exposure repeats its end-answer advantage on these already exposed but separately screened risk sources. Count only paired valid grades, show all ten assigned outcomes and report utility separately. Include direct behavior checks rather than interpreting the adapted judge score as a causal explanation. A follow-up three-deployment comparison would require its own explicit repeat freeze. Evaluation uses the established GPT-4.1 adaptation, not the official Kimi provider route.
+
+Budget before exact reuse: up to ten selections, 40 Actors and 40 adapted judge requests. The initial route is already paid. Private reproducibility inputs and receipts stay in the original workspace.
+
+Run `bash reports/qamc_contextual_match_v2_20261112/evo_qamc_fit_v1/run.sh persist-screened-preflight` to check source identities. Use the same launcher with `persist-screened-first-draw` only after that preflight passes.
