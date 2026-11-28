@@ -30,6 +30,7 @@ case "${1:-}" in
   expansion-summary) entry=expansion_summary.py; shift ;;
   expansion-persist-peer) entry=expansion_persist_peer.py; shift ;;
   exposure-controls) entry=exposure_controls.py; shift ;;
+  exposure-summary) entry=exposure_summary.py; shift ;;
   expansion-audit-requests) entry=expansion_audit.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
