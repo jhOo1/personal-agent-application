@@ -1,0 +1,810 @@
+{
+  "experiment": {
+    "automatic_retries": 0,
+    "cohorts": {
+      "BenchPreS": {
+        "OPEN_CHOICE_GUARD.answers": 4,
+        "OPEN_CHOICE_GUARD.valid_scores": 4,
+        "PARTICIPANT_VETO.answers": 4,
+        "PARTICIPANT_VETO.valid_scores": 4,
+        "RELEVANCE.answers": 4,
+        "RELEVANCE.valid_scores": 4,
+        "assigned": 4,
+        "first_review_OK": 4,
+        "invalid_participant_quotes": 0,
+        "removed_sources": 7,
+        "requirements_NOT_NEEDED": 2,
+        "requirements_OK": 2,
+        "restored_sources": 0,
+        "roots_with_removal": 2,
+        "roots_with_restoration": 0
+      },
+      "PersistBench": {
+        "OPEN_CHOICE_GUARD.answers": 6,
+        "OPEN_CHOICE_GUARD.valid_scores": 6,
+        "PARTICIPANT_VETO.answers": 6,
+        "PARTICIPANT_VETO.valid_scores": 6,
+        "RELEVANCE.answers": 6,
+        "RELEVANCE.valid_scores": 6,
+        "assigned": 6,
+        "first_review_OK": 6,
+        "invalid_participant_quotes": 0,
+        "removed_sources": 4,
+        "requirements_NOT_NEEDED": 4,
+        "requirements_OK": 2,
+        "restored_sources": 0,
+        "roots_with_removal": 2,
+        "roots_with_restoration": 0
+      },
+      "RPEval": {
+        "OPEN_CHOICE_GUARD.answers": 11,
+        "OPEN_CHOICE_GUARD.valid_scores": 11,
+        "PARTICIPANT_VETO.answers": 11,
+        "PARTICIPANT_VETO.valid_scores": 11,
+        "RELEVANCE.answers": 11,
+        "RELEVANCE.valid_scores": 11,
+        "assigned": 11,
+        "first_review_OK": 11,
+        "invalid_participant_quotes": 0,
+        "removed_sources": 8,
+        "requirements_NOT_NEEDED": 8,
+        "requirements_OK": 3,
+        "restored_sources": 0,
+        "roots_with_removal": 3,
+        "roots_with_restoration": 0
+      }
+    },
+    "comparisons": {
+      "BenchPreS": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 4,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "MR": 0,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 2,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 5
+            },
+            "OPEN_CHOICE_GUARD": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "PARTICIPANT_VETO": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "RELEVANCE": {
+              "MR": 8,
+              "MR_denominator": 14,
+              "completeness": 19,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            }
+          },
+          "n": 4
+        },
+        "veto_vs_relevance": {
+          "tie": 4
+        }
+      },
+      "BenchPreS/communication": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 4,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "MR": 0,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 2,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 5
+            },
+            "OPEN_CHOICE_GUARD": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "PARTICIPANT_VETO": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "RELEVANCE": {
+              "MR": 8,
+              "MR_denominator": 14,
+              "completeness": 19,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            }
+          },
+          "n": 4
+        },
+        "veto_vs_relevance": {
+          "tie": 4
+        }
+      },
+      "BenchPreS/no_known_flags": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 4,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "MR": 0,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 2,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 5
+            },
+            "OPEN_CHOICE_GUARD": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "PARTICIPANT_VETO": {
+              "MR": 5,
+              "MR_denominator": 14,
+              "completeness": 20,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            },
+            "RELEVANCE": {
+              "MR": 8,
+              "MR_denominator": 14,
+              "completeness": 19,
+              "nonbold": 1,
+              "nonbold_denominator": 3,
+              "positions": 6,
+              "primary": 4
+            }
+          },
+          "n": 4
+        },
+        "veto_vs_relevance": {
+          "tie": 4
+        }
+      },
+      "BenchPreS/removed": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 2,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "MR": 0,
+              "MR_denominator": 7,
+              "completeness": 10,
+              "nonbold": 0,
+              "nonbold_denominator": 1,
+              "positions": 3,
+              "primary": 2
+            },
+            "OPEN_CHOICE_GUARD": {
+              "MR": 0,
+              "MR_denominator": 7,
+              "completeness": 10,
+              "nonbold": 0,
+              "nonbold_denominator": 1,
+              "positions": 3,
+              "primary": 2
+            },
+            "PARTICIPANT_VETO": {
+              "MR": 0,
+              "MR_denominator": 7,
+              "completeness": 10,
+              "nonbold": 0,
+              "nonbold_denominator": 1,
+              "positions": 3,
+              "primary": 2
+            },
+            "RELEVANCE": {
+              "MR": 3,
+              "MR_denominator": 7,
+              "completeness": 9,
+              "nonbold": 0,
+              "nonbold_denominator": 1,
+              "positions": 3,
+              "primary": 2
+            }
+          },
+          "n": 2
+        },
+        "veto_vs_relevance": {
+          "tie": 2
+        }
+      },
+      "PersistBench": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 6,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 6,
+              "primary": 6,
+              "strict_pass": 6
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 6,
+              "primary": 5,
+              "strict_pass": 5
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 6,
+              "primary": 5,
+              "strict_pass": 5
+            },
+            "RELEVANCE": {
+              "positions": 6,
+              "primary": 4,
+              "strict_pass": 4
+            }
+          },
+          "n": 6
+        },
+        "veto_vs_relevance": {
+          "tie": 5,
+          "win": 1
+        }
+      },
+      "PersistBench/beneficial_memory_usage": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 2,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "RELEVANCE": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            }
+          },
+          "n": 2
+        },
+        "veto_vs_relevance": {
+          "tie": 2
+        }
+      },
+      "PersistBench/cross_domain": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 2,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            },
+            "RELEVANCE": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            }
+          },
+          "n": 2
+        },
+        "veto_vs_relevance": {
+          "tie": 2
+        }
+      },
+      "PersistBench/no_known_flags": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 6,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 6,
+              "primary": 6,
+              "strict_pass": 6
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 6,
+              "primary": 5,
+              "strict_pass": 5
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 6,
+              "primary": 5,
+              "strict_pass": 5
+            },
+            "RELEVANCE": {
+              "positions": 6,
+              "primary": 4,
+              "strict_pass": 4
+            }
+          },
+          "n": 6
+        },
+        "veto_vs_relevance": {
+          "tie": 5,
+          "win": 1
+        }
+      },
+      "PersistBench/removed": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 2,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            },
+            "RELEVANCE": {
+              "positions": 2,
+              "primary": 0,
+              "strict_pass": 0
+            }
+          },
+          "n": 2
+        },
+        "veto_vs_relevance": {
+          "tie": 1,
+          "win": 1
+        }
+      },
+      "PersistBench/sycophancy": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 2,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "OPEN_CHOICE_GUARD": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "PARTICIPANT_VETO": {
+              "positions": 2,
+              "primary": 2,
+              "strict_pass": 2
+            },
+            "RELEVANCE": {
+              "positions": 2,
+              "primary": 1,
+              "strict_pass": 1
+            }
+          },
+          "n": 2
+        },
+        "veto_vs_relevance": {
+          "tie": 1,
+          "win": 1
+        }
+      },
+      "RPEval": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 11,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 5,
+              "OPB": 7,
+              "UPB": 17,
+              "positions": 60,
+              "primary": 32
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 6,
+              "OPB": 24,
+              "UPB": 8,
+              "positions": 60,
+              "primary": 30
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 6,
+              "OPB": 24,
+              "UPB": 8,
+              "positions": 60,
+              "primary": 30
+            },
+            "RELEVANCE": {
+              "FM": 6,
+              "OPB": 25,
+              "UPB": 8,
+              "positions": 60,
+              "primary": 29
+            }
+          },
+          "n": 11
+        },
+        "veto_vs_relevance": {
+          "tie": 10,
+          "win": 1
+        }
+      },
+      "RPEval/B_only": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 4,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 3,
+              "OPB": 3,
+              "UPB": 10,
+              "positions": 28,
+              "primary": 10
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 3,
+              "OPB": 9,
+              "UPB": 5,
+              "positions": 28,
+              "primary": 14
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 3,
+              "OPB": 9,
+              "UPB": 5,
+              "positions": 28,
+              "primary": 14
+            },
+            "RELEVANCE": {
+              "FM": 3,
+              "OPB": 11,
+              "UPB": 3,
+              "positions": 28,
+              "primary": 14
+            }
+          },
+          "n": 4
+        },
+        "veto_vs_relevance": {
+          "tie": 4
+        }
+      },
+      "RPEval/all_A": {
+        "all_allocated_primary_delta_bound": [
+          0,
+          0
+        ],
+        "assigned": 3,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 0,
+              "OPB": 0,
+              "UPB": 0,
+              "positions": 9,
+              "primary": 9
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 1,
+              "OPB": 5,
+              "UPB": 3,
+              "positions": 9,
+              "primary": 0
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 1,
+              "OPB": 5,
+              "UPB": 3,
+              "positions": 9,
+              "primary": 0
+            },
+            "RELEVANCE": {
+              "FM": 1,
+              "OPB": 5,
+              "UPB": 3,
+              "positions": 9,
+              "primary": 0
+            }
+          },
+          "n": 3
+        },
+        "veto_vs_relevance": {
+          "tie": 3
+        }
+      },
+      "RPEval/contains_C": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 4,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 2,
+              "OPB": 4,
+              "UPB": 7,
+              "positions": 23,
+              "primary": 13
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 2,
+              "OPB": 10,
+              "UPB": 0,
+              "positions": 23,
+              "primary": 16
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 2,
+              "OPB": 10,
+              "UPB": 0,
+              "positions": 23,
+              "primary": 16
+            },
+            "RELEVANCE": {
+              "FM": 2,
+              "OPB": 9,
+              "UPB": 2,
+              "positions": 23,
+              "primary": 15
+            }
+          },
+          "n": 4
+        },
+        "veto_vs_relevance": {
+          "tie": 3,
+          "win": 1
+        }
+      },
+      "RPEval/no_known_flags": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 9,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 5,
+              "OPB": 7,
+              "UPB": 16,
+              "positions": 52,
+              "primary": 25
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 6,
+              "OPB": 22,
+              "UPB": 5,
+              "positions": 52,
+              "primary": 27
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 6,
+              "OPB": 22,
+              "UPB": 5,
+              "positions": 52,
+              "primary": 27
+            },
+            "RELEVANCE": {
+              "FM": 6,
+              "OPB": 23,
+              "UPB": 5,
+              "positions": 52,
+              "primary": 26
+            }
+          },
+          "n": 9
+        },
+        "veto_vs_relevance": {
+          "tie": 8,
+          "win": 1
+        }
+      },
+      "RPEval/removed": {
+        "all_allocated_primary_delta_bound": [
+          1,
+          1
+        ],
+        "assigned": 3,
+        "common": {
+          "metrics": {
+            "BASE": {
+              "FM": 3,
+              "OPB": 3,
+              "UPB": 8,
+              "positions": 21,
+              "primary": 8
+            },
+            "OPEN_CHOICE_GUARD": {
+              "FM": 3,
+              "OPB": 7,
+              "UPB": 2,
+              "positions": 21,
+              "primary": 13
+            },
+            "PARTICIPANT_VETO": {
+              "FM": 3,
+              "OPB": 7,
+              "UPB": 2,
+              "positions": 21,
+              "primary": 13
+            },
+            "RELEVANCE": {
+              "FM": 3,
+              "OPB": 8,
+              "UPB": 2,
+              "positions": 21,
+              "primary": 12
+            }
+          },
+          "n": 3
+        },
+        "veto_vs_relevance": {
+          "tie": 2,
+          "win": 1
+        }
+      }
+    },
+    "exact_reuse": {
+      "BenchAttrs": {},
+      "ExpansionActor": {},
+      "ExpansionRelevance": {},
+      "ExpansionRequirement": {},
+      "PersistNative": {},
+      "RPEvalJudge": {}
+    },
+    "physical": 114,
+    "reported_tokens": 401500,
+    "stages": {
+      "BenchAttrs": 36,
+      "ExpansionActor": 28,
+      "ExpansionRelevance": 21,
+      "ExpansionRequirement": 7,
+      "PersistNative": 8,
+      "RPEvalJudge": 14
+    },
+    "statuses": {
+      "OK": 114
+    },
+    "usage_unknown": 0
+  },
+  "source_labels": {
+    "counts": {
+      "BenchPreS": {
+        "labelled_records": 20,
+        "original_candidates/False": 14,
+        "original_candidates/True": 6,
+        "outside_relevance/False": 2,
+        "removed/False": 7,
+        "retained_relevance/False": 12,
+        "retained_relevance/True": 6,
+        "roots": 4,
+        "still_removed/False": 7,
+        "unknown_label_records": 0,
+        "visible_after_veto/False": 5,
+        "visible_after_veto/True": 6
+      },
+      "PersistBench": {
+        "labelled_records": 0,
+        "original_candidates/UNKNOWN": 46,
+        "outside_relevance/UNKNOWN": 22,
+        "removed/UNKNOWN": 4,
+        "retained_relevance/UNKNOWN": 24,
+        "roots": 6,
+        "still_removed/UNKNOWN": 4,
+        "unknown_label_records": 46,
+        "visible_after_veto/UNKNOWN": 20
+      },
+      "RPEval": {
+        "labelled_records": 60,
+        "original_candidates/A": 45,
+        "original_candidates/B": 9,
+        "original_candidates/C": 6,
+        "outside_relevance/A": 24,
+        "removed/A": 8,
+        "retained_relevance/A": 21,
+        "retained_relevance/B": 9,
+        "retained_relevance/C": 6,
+        "roots": 11,
+        "still_removed/A": 8,
+        "unknown_label_records": 0,
+        "visible_after_veto/A": 13,
+        "visible_after_veto/B": 9,
+        "visible_after_veto/C": 6
+      }
+    },
+    "preflight_only": false,
+    "restoration_roots": {}
+  }
+}
