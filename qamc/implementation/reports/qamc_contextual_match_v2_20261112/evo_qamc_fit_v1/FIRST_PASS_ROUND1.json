@@ -1,0 +1,1697 @@
+{
+  "rollups": {
+    "OPT_GATE": {
+      "RPEval": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 11,
+            "positions": 29,
+            "OPB": 8,
+            "UPB": 4,
+            "FM": 1
+          },
+          "SCOPE": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "SEED": {
+            "primary": 9,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 6,
+            "FM": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 2,
+            "FM": 2
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 3,
+            "FM": 2
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 11,
+            "positions": 15,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 11,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 1
+          },
+          "SEED": {
+            "primary": 9,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 9,
+            "positions": 15,
+            "OPB": 3,
+            "UPB": 2,
+            "FM": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 9,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 1
+          }
+        }
+      },
+      "RPEval/all_A": {
+        "assigned": 2,
+        "common": 2,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 5,
+            "UPB": 4,
+            "FM": 1
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "SEED": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "RPEval/B_only": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 1,
+        "metrics": {
+          "BASE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SEED": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SEED": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          }
+        }
+      },
+      "RPEval/contains_C": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 1,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 1
+          },
+          "SEED": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 1,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 1,
+            "FM": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 1
+          },
+          "SEED": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 1,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 1,
+            "FM": 1
+          }
+        }
+      },
+      "PersistBench": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 4
+          },
+          "SCOPE": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "SEED": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "GENERIC_SEARCH": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/sycophancy": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SCOPE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SEED": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/cross_domain": {
+        "assigned": 2,
+        "common": 2,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 2
+          },
+          "SCOPE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "SEED": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "GENERIC_SEARCH": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/beneficial_memory_usage": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SCOPE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SEED": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "BenchPreS": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 5,
+            "MR": 1,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "SCOPE": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "SEED": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "GENERIC_SEARCH": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 19,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      }
+    },
+    "JCC": {
+      "RPEval": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 11,
+            "positions": 29,
+            "OPB": 8,
+            "UPB": 4,
+            "FM": 1
+          },
+          "SCOPE": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "SEED": {
+            "primary": 9,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 7,
+            "FM": 4
+          },
+          "GENERIC_SEARCH": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 11,
+            "positions": 15,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 10,
+            "positions": 15,
+            "OPB": 1,
+            "UPB": 3,
+            "FM": 3
+          },
+          "SEED": {
+            "primary": 9,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 4,
+            "FM": 3
+          },
+          "GENERIC_SEARCH": {
+            "primary": 8,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 5,
+            "FM": 4
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 8,
+            "positions": 15,
+            "OPB": 2,
+            "UPB": 5,
+            "FM": 4
+          }
+        }
+      },
+      "RPEval/all_A": {
+        "assigned": 2,
+        "common": 2,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 5,
+            "UPB": 4,
+            "FM": 1
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "SEED": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 7,
+            "positions": 14,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "RPEval/B_only": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 1,
+        "metrics": {
+          "BASE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SEED": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 7,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SEED": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "GENERIC_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 5,
+            "positions": 7,
+            "OPB": 0,
+            "UPB": 2,
+            "FM": 0
+          }
+        }
+      },
+      "RPEval/contains_C": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 1,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 1,
+            "UPB": 3,
+            "FM": 3
+          },
+          "SEED": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 2,
+            "FM": 3
+          },
+          "GENERIC_SEARCH": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 4
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 4
+          }
+        },
+        "unflagged": {
+          "BASE": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 3,
+            "UPB": 0,
+            "FM": 0
+          },
+          "SCOPE": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 1,
+            "UPB": 3,
+            "FM": 3
+          },
+          "SEED": {
+            "primary": 4,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 2,
+            "FM": 3
+          },
+          "GENERIC_SEARCH": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 4
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 3,
+            "positions": 8,
+            "OPB": 2,
+            "UPB": 3,
+            "FM": 4
+          }
+        }
+      },
+      "PersistBench": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 4
+          },
+          "SCOPE": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "SEED": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "GENERIC_SEARCH": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/sycophancy": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SCOPE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SEED": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/cross_domain": {
+        "assigned": 2,
+        "common": 2,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 2
+          },
+          "SCOPE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "SEED": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "GENERIC_SEARCH": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "PersistBench/beneficial_memory_usage": {
+        "assigned": 1,
+        "common": 1,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SCOPE": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "SEED": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "GENERIC_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 1
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      },
+      "BenchPreS": {
+        "assigned": 4,
+        "common": 4,
+        "clean": 0,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 5,
+            "MR": 1,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "SCOPE": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "SEED": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "GENERIC_SEARCH": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "CRITERIA_SEARCH": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 17,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          }
+        },
+        "unflagged": {
+          "BASE": {},
+          "SCOPE": {},
+          "SEED": {},
+          "GENERIC_SEARCH": {},
+          "CRITERIA_SEARCH": {}
+        }
+      }
+    }
+  },
+  "coverage": {
+    "RPEval/OPT_GATE/BASE": 4,
+    "RPEval/OPT_GATE/SCOPE": 4,
+    "RPEval/OPT_GATE/SEED": 4,
+    "RPEval/OPT_GATE/GENERIC_SEARCH": 4,
+    "RPEval/OPT_GATE/CRITERIA_SEARCH": 4,
+    "RPEval/JCC/BASE": 4,
+    "RPEval/JCC/SCOPE": 4,
+    "RPEval/JCC/SEED": 4,
+    "RPEval/JCC/GENERIC_SEARCH": 4,
+    "RPEval/JCC/CRITERIA_SEARCH": 4,
+    "PersistBench/OPT_GATE/BASE": 4,
+    "PersistBench/OPT_GATE/SCOPE": 4,
+    "PersistBench/OPT_GATE/SEED": 4,
+    "PersistBench/OPT_GATE/GENERIC_SEARCH": 4,
+    "PersistBench/OPT_GATE/CRITERIA_SEARCH": 4,
+    "PersistBench/JCC/BASE": 4,
+    "PersistBench/JCC/SCOPE": 4,
+    "PersistBench/JCC/SEED": 4,
+    "PersistBench/JCC/GENERIC_SEARCH": 4,
+    "PersistBench/JCC/CRITERIA_SEARCH": 4,
+    "BenchPreS/OPT_GATE/BASE": 4,
+    "BenchPreS/OPT_GATE/SCOPE": 4,
+    "BenchPreS/OPT_GATE/SEED": 4,
+    "BenchPreS/OPT_GATE/GENERIC_SEARCH": 4,
+    "BenchPreS/OPT_GATE/CRITERIA_SEARCH": 4,
+    "BenchPreS/JCC/BASE": 4,
+    "BenchPreS/JCC/SCOPE": 4,
+    "BenchPreS/JCC/SEED": 4,
+    "BenchPreS/JCC/GENERIC_SEARCH": 4,
+    "BenchPreS/JCC/CRITERIA_SEARCH": 4
+  },
+  "physical": {
+    "Propose": 2,
+    "Actor": 51,
+    "RPEvalJudge": 15,
+    "BenchAttrs": 90,
+    "PersistNative": 18
+  },
+  "status": {
+    "OK": 176
+  },
+  "tokens": 689879,
+  "unknown_usage": 0,
+  "pairwise_scope": {
+    "OPT_GATE": {
+      "SEED": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 3,
+          "parent": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "candidate": {
+            "primary": 9,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 6,
+            "FM": 1
+          },
+          "clean_parent": {
+            "primary": 18,
+            "positions": 22,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 1
+          },
+          "clean_candidate": {
+            "primary": 9,
+            "positions": 22,
+            "OPB": 6,
+            "UPB": 3,
+            "FM": 1
+          },
+          "direction": {
+            "loss": 2,
+            "tie": 2
+          },
+          "minimum": -9,
+          "maximum": -9
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "GENERIC_SEARCH": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 4,
+          "parent": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "candidate": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 2,
+            "FM": 2
+          },
+          "clean_parent": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "clean_candidate": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 2,
+            "FM": 2
+          },
+          "direction": {
+            "loss": 2,
+            "tie": 1,
+            "win": 1
+          },
+          "minimum": -2,
+          "maximum": -2
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "CRITERIA_SEARCH": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 4,
+          "parent": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "candidate": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 3,
+            "FM": 2
+          },
+          "clean_parent": {
+            "primary": 18,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 0,
+            "FM": 2
+          },
+          "clean_candidate": {
+            "primary": 16,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 3,
+            "FM": 2
+          },
+          "direction": {
+            "loss": 2,
+            "tie": 1,
+            "win": 1
+          },
+          "minimum": -2,
+          "maximum": -2
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 1,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 19,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      }
+    },
+    "JCC": {
+      "SEED": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 3,
+          "parent": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "candidate": {
+            "primary": 9,
+            "positions": 29,
+            "OPB": 6,
+            "UPB": 7,
+            "FM": 4
+          },
+          "clean_parent": {
+            "primary": 17,
+            "positions": 22,
+            "OPB": 1,
+            "UPB": 3,
+            "FM": 3
+          },
+          "clean_candidate": {
+            "primary": 9,
+            "positions": 22,
+            "OPB": 6,
+            "UPB": 4,
+            "FM": 4
+          },
+          "direction": {
+            "loss": 2,
+            "win": 1,
+            "tie": 1
+          },
+          "minimum": -8,
+          "maximum": -8
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "GENERIC_SEARCH": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 4,
+          "parent": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "candidate": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          },
+          "clean_parent": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "clean_candidate": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          },
+          "direction": {
+            "loss": 2,
+            "tie": 1,
+            "win": 1
+          },
+          "minimum": -2,
+          "maximum": -2
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "CRITERIA_SEARCH": {
+        "RPEval": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 4,
+          "parent": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "candidate": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          },
+          "clean_parent": {
+            "primary": 17,
+            "positions": 29,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          },
+          "clean_candidate": {
+            "primary": 15,
+            "positions": 29,
+            "OPB": 5,
+            "UPB": 5,
+            "FM": 5
+          },
+          "direction": {
+            "loss": 2,
+            "tie": 1,
+            "win": 1
+          },
+          "minimum": -2,
+          "maximum": -2
+        },
+        "PersistBench": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "candidate": {
+            "primary": 4,
+            "strict_pass": 4,
+            "positions": 4
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        },
+        "BenchPreS": {
+          "assigned": 4,
+          "common": 4,
+          "clean": 0,
+          "parent": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 20,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "candidate": {
+            "primary": 2,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 15,
+            "completeness": 17,
+            "nonbold": 1,
+            "nonbold_denominator": 2
+          },
+          "clean_parent": {},
+          "clean_candidate": {},
+          "direction": {
+            "tie": 4
+          },
+          "minimum": 0,
+          "maximum": 0
+        }
+      }
+    }
+  },
+  "common_macro": {
+    "OPT_GATE": {
+      "domain_utilities": {
+        "BASE": {
+          "RPEval": 0.3793103448275862,
+          "BenchPreS": 0.9111111111111111,
+          "PersistBench": 0.8333333333333334
+        },
+        "SCOPE": {
+          "RPEval": 0.6206896551724138,
+          "BenchPreS": 0.7333333333333334,
+          "PersistBench": 1.0
+        },
+        "SEED": {
+          "RPEval": 0.3103448275862069,
+          "BenchPreS": 0.7333333333333334,
+          "PersistBench": 1.0
+        },
+        "GENERIC_SEARCH": {
+          "RPEval": 0.5517241379310345,
+          "BenchPreS": 0.7333333333333334,
+          "PersistBench": 1.0
+        },
+        "CRITERIA_SEARCH": {
+          "RPEval": 0.5517241379310345,
+          "BenchPreS": 0.7125,
+          "PersistBench": 1.0
+        }
+      },
+      "overall": {
+        "BASE": 0.707918263090677,
+        "SCOPE": 0.7846743295019157,
+        "SEED": 0.6812260536398468,
+        "GENERIC_SEARCH": 0.7616858237547893,
+        "CRITERIA_SEARCH": 0.7547413793103449
+      }
+    },
+    "JCC": {
+      "domain_utilities": {
+        "BASE": {
+          "RPEval": 0.3793103448275862,
+          "BenchPreS": 0.9111111111111111,
+          "PersistBench": 0.8333333333333334
+        },
+        "SCOPE": {
+          "RPEval": 0.5862068965517241,
+          "BenchPreS": 0.7999999999999999,
+          "PersistBench": 1.0
+        },
+        "SEED": {
+          "RPEval": 0.3103448275862069,
+          "BenchPreS": 0.7999999999999999,
+          "PersistBench": 1.0
+        },
+        "GENERIC_SEARCH": {
+          "RPEval": 0.5172413793103449,
+          "BenchPreS": 0.7999999999999999,
+          "PersistBench": 1.0
+        },
+        "CRITERIA_SEARCH": {
+          "RPEval": 0.5172413793103449,
+          "BenchPreS": 0.7374999999999999,
+          "PersistBench": 1.0
+        }
+      },
+      "overall": {
+        "BASE": 0.707918263090677,
+        "SCOPE": 0.7954022988505747,
+        "SEED": 0.7034482758620689,
+        "GENERIC_SEARCH": 0.7724137931034484,
+        "CRITERIA_SEARCH": 0.751580459770115
+      }
+    }
+  }
+}

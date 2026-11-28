@@ -15,3 +15,11 @@ Reserve a candidate only when its actual task behavior supports the scores, incl
 Run `run.sh first-pass-fit freeze|run|report`. `run.sh first-pass-inventory` audits the later source-disjoint development roster without dispatch. The frozen initial round caps generation at 72 Actor calls and 2 proposals before exact deduplication, plus project scoring. The independent resume namespace ends in `_whole_actor_search_v1`. No automatic failed/unknown retries, and no additional selection or plan requests.
 
 [Pinned transfer result](PINNED_ACTOR_TRANSFER_RESULTS.md) · [Fit runner](first_pass_fit.py) · [Full seed and search instructions](first_pass_policy.py)
+
+## Matched second fit round
+
+The second round reads settled real outputs from the same quick panel. Each optimizer receives the same three comparable outputs per feedback task from Scope, ordinary search and criteria search under exactly the same selected-history payload. Select up to two fit groups per benchmark, preferring entries without known RPEval score conflicts and then the largest primary metric disagreement; ties are broken by fixed UID hash. Both optimizers see the same prior complete prompts. One receives flattened runs and the other receives explicitly matched runs. Each receives one proposal with the same output cap. The original seed scores are reused, and the two new system contracts each run under both fixed evidence modes for at most 48 new Actor positions. RPEval disagreement flags remain visible. This is further reuse of the fit panel, not new-case evidence.
+
+The proposal runner stops before issuing requests if the earlier round is unsettled or cannot supply common usable feedback in all three benchmarks. A rejected first-round branch cannot be silently repaired or assigned an extra search call. The local preflight and recovery command is `run.sh first-pass-iteration freeze|run|report`. The second-stage output directory suffix is `_whole_actor_search_r2`.
+
+This experiment adapts the idea of optimizing from scored rollout feedback. It is a matched two-branch custom search; it does not execute the [published GEPA package](https://github.com/gepa-ai/gepa). Public whole-Actor prompts are reviewed general instructions. The seven initial pairs and the exact per-case inference material remain private.

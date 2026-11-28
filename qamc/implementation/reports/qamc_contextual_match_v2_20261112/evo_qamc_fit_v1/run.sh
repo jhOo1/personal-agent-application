@@ -36,6 +36,10 @@ case "${1:-}" in
   pinned-transfer-readout) entry=pinned_transfer_readout.py; shift ;;
   first-pass-inventory) entry=first_pass_inputs.py; shift ;;
   first-pass-fit) entry=first_pass_fit.py; shift ;;
+  first-pass-readout) entry=first_pass_readout.py; shift ;;
+  first-pass-iteration) entry=first_pass_iteration.py; shift ;;
+
+
 
 
 
