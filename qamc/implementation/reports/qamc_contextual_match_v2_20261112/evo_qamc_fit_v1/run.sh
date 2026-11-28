@@ -11,6 +11,7 @@ export PYTHONDONTWRITEBYTECODE=1
 entry=trial.py
 case "${1:-}" in
   summarize) entry=summarize.py; shift ;;
+  feedback) entry=feedback.py; shift ;;
   self-recheck) entry=self_recheck.py; shift ;;
   task-only) entry=task_only.py; shift ;;
 esac
