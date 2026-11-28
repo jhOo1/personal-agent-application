@@ -1,0 +1,321 @@
+{
+  "domains": {
+    "RPEval": {
+      "assigned_tasks": 16,
+      "common_tasks": 12,
+      "common_strata": {
+        "contains_C": 3,
+        "all_A": 3,
+        "B_only": 6
+      },
+      "availability": {
+        "GENERIC": 15,
+        "TASK_ACTIONS": 15,
+        "SELECTED_GENERIC": 14,
+        "SELECTED_TASK_ACTIONS": 14
+      },
+      "common_native": {
+        "GENERIC": {
+          "primary": 29,
+          "positions": 69,
+          "OPB": 23,
+          "UPB": 11,
+          "FM": 6
+        },
+        "TASK_ACTIONS": {
+          "primary": 31,
+          "positions": 69,
+          "OPB": 28,
+          "UPB": 10,
+          "FM": 6
+        },
+        "SELECTED_GENERIC": {
+          "primary": 27,
+          "positions": 69,
+          "OPB": 26,
+          "UPB": 10,
+          "FM": 5
+        },
+        "SELECTED_TASK_ACTIONS": {
+          "primary": 29,
+          "positions": 69,
+          "OPB": 27,
+          "UPB": 7,
+          "FM": 5
+        }
+      },
+      "common_effects": {
+        "actions_on_full_history": [
+          0.028985507246376815,
+          0.028985507246376815
+        ],
+        "actions_on_selected_history": [
+          0.02898550724637681,
+          0.02898550724637681
+        ],
+        "selection_on_generic": [
+          -0.028985507246376815,
+          -0.028985507246376815
+        ],
+        "selection_on_actions": [
+          -0.02898550724637683,
+          -0.02898550724637683
+        ],
+        "interaction": [
+          0.0,
+          0.0
+        ]
+      },
+      "assigned_bounds": {
+        "actions_on_full_history": [
+          -0.06250000000000001,
+          0.10416666666666666
+        ],
+        "actions_on_selected_history": [
+          -0.14583333333333337,
+          0.13541666666666666
+        ],
+        "selection_on_generic": [
+          -0.09375,
+          0.14583333333333334
+        ],
+        "selection_on_actions": [
+          -0.10416666666666663,
+          0.10416666666666664
+        ],
+        "interaction": [
+          -0.25,
+          0.1979166666666666
+        ]
+      }
+    },
+    "BenchPreS": {
+      "assigned_tasks": 12,
+      "common_tasks": 11,
+      "common_strata": {
+        "communication": 11
+      },
+      "availability": {
+        "GENERIC": 12,
+        "TASK_ACTIONS": 12,
+        "SELECTED_GENERIC": 11,
+        "SELECTED_TASK_ACTIONS": 12
+      },
+      "common_native": {
+        "GENERIC": {
+          "primary": 11,
+          "positions": 20,
+          "MR": 13,
+          "MR_denominator": 35,
+          "completeness": 48,
+          "nonbold": 6,
+          "nonbold_denominator": 14
+        },
+        "TASK_ACTIONS": {
+          "primary": 14,
+          "positions": 20,
+          "MR": 21,
+          "MR_denominator": 35,
+          "completeness": 48,
+          "nonbold": 8,
+          "nonbold_denominator": 14
+        },
+        "SELECTED_GENERIC": {
+          "primary": 13,
+          "positions": 20,
+          "MR": 4,
+          "MR_denominator": 35,
+          "completeness": 51,
+          "nonbold": 10,
+          "nonbold_denominator": 14
+        },
+        "SELECTED_TASK_ACTIONS": {
+          "primary": 10,
+          "positions": 20,
+          "MR": 7,
+          "MR_denominator": 35,
+          "completeness": 51,
+          "nonbold": 7,
+          "nonbold_denominator": 14
+        }
+      },
+      "common_effects": {
+        "actions_on_full_history": [
+          -0.02619047619047614,
+          -0.02619047619047614
+        ],
+        "actions_on_selected_history": [
+          -0.07857142857142857,
+          -0.07857142857142857
+        ],
+        "selection_on_generic": [
+          0.14177489177489183,
+          0.14177489177489183
+        ],
+        "selection_on_actions": [
+          0.0893939393939394,
+          0.0893939393939394
+        ],
+        "interaction": [
+          -0.052380952380952375,
+          -0.052380952380952375
+        ]
+      },
+      "assigned_bounds": {
+        "actions_on_full_history": [
+          -0.02311006658832747,
+          -0.02311006658832747
+        ],
+        "actions_on_selected_history": [
+          -0.0774497323410367,
+          0.011824324324324335
+        ],
+        "selection_on_generic": [
+          0.06306306306306306,
+          0.1523371197284241
+        ],
+        "selection_on_actions": [
+          0.09799745397571484,
+          0.09799745397571484
+        ],
+        "interaction": [
+          -0.05433966575270921,
+          0.0349343909126518
+        ]
+      }
+    },
+    "PersistBench": {
+      "assigned_tasks": 12,
+      "common_tasks": 12,
+      "common_strata": {
+        "sycophancy": 4,
+        "cross_domain": 4,
+        "beneficial_memory_usage": 4
+      },
+      "availability": {
+        "GENERIC": 12,
+        "TASK_ACTIONS": 12,
+        "SELECTED_GENERIC": 12,
+        "SELECTED_TASK_ACTIONS": 12
+      },
+      "common_native": {
+        "GENERIC": {
+          "primary": 7,
+          "strict_pass": 7,
+          "positions": 12
+        },
+        "TASK_ACTIONS": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 12
+        },
+        "SELECTED_GENERIC": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 12
+        },
+        "SELECTED_TASK_ACTIONS": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 12
+        }
+      },
+      "common_effects": {
+        "actions_on_full_history": [
+          0.25,
+          0.25
+        ],
+        "actions_on_selected_history": [
+          0.0,
+          0.0
+        ],
+        "selection_on_generic": [
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "selection_on_actions": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ],
+        "interaction": [
+          -0.25,
+          -0.25
+        ]
+      },
+      "assigned_bounds": {
+        "actions_on_full_history": [
+          0.25,
+          0.25
+        ],
+        "actions_on_selected_history": [
+          0.0,
+          0.0
+        ],
+        "selection_on_generic": [
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "selection_on_actions": [
+          -0.08333333333333333,
+          -0.08333333333333333
+        ],
+        "interaction": [
+          -0.25,
+          -0.25
+        ]
+      }
+    }
+  },
+  "macro": {
+    "actions_on_full_history": {
+      "common_effects": [
+        0.08426501035196689,
+        0.08426501035196689
+      ],
+      "assigned_bounds": [
+        0.05479664447055751,
+        0.11035220002611307
+      ]
+    },
+    "actions_on_selected_history": {
+      "common_effects": [
+        -0.01652864044168392,
+        -0.01652864044168392
+      ],
+      "assigned_bounds": [
+        -0.07442768855812336,
+        0.04908033033033033
+      ]
+    },
+    "selection_on_generic": {
+      "common_effects": [
+        0.09315201706506056,
+        0.09315201706506056
+      ],
+      "assigned_bounds": [
+        0.04532657657657657,
+        0.15494570657614137
+      ]
+    },
+    "selection_on_actions": {
+      "common_effects": [
+        -0.0076416337285902525,
+        -0.0076416337285902525
+      ],
+      "assigned_bounds": [
+        -0.02983418200809504,
+        0.03961026243634939
+      ]
+    },
+    "interaction": {
+      "common_effects": [
+        -0.10079365079365078,
+        -0.10079365079365078
+      ],
+      "assigned_bounds": [
+        -0.1847798885842364,
+        -0.005716314140227201
+      ]
+    }
+  }
+}

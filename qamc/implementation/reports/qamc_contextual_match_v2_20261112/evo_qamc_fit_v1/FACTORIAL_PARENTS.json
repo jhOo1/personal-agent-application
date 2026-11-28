@@ -1,0 +1,141 @@
+{
+  "common": {
+    "RPEval": 12,
+    "BenchPreS": 11,
+    "PersistBench": 12
+  },
+  "common_macro": {
+    "GENERIC": 0.5589277871886568,
+    "SELECTED_GENERIC": 0.6520798042537174,
+    "SELECTED_TASK_ACTIONS": 0.6355511638120334,
+    "SELF_RECHECK": 0.6012861534600665,
+    "TASK_ACTIONS": 0.6431927975406236,
+    "TASK_ONLY": 0.6647531212748604,
+    "TASK_PLAN_SELECTED": 0.6851151264194743
+  },
+  "frontier": [
+    "TASK_PLAN_SELECTED",
+    "TASK_ONLY",
+    "SELECTED_GENERIC",
+    "TASK_ACTIONS",
+    "SELECTED_TASK_ACTIONS",
+    "SELF_RECHECK",
+    "GENERIC"
+  ],
+  "best_balanced_parent": "TASK_PLAN_SELECTED",
+  "best_by_objective": {
+    "RPEval": "TASK_ONLY",
+    "BenchPreS": "SELECTED_GENERIC",
+    "PersistBench": "TASK_PLAN_SELECTED",
+    "rpe_less_opb": "TASK_ONLY",
+    "rpe_less_upb": "SELF_RECHECK",
+    "rpe_less_fm": "SELECTED_GENERIC",
+    "bench_appropriate": "TASK_ACTIONS",
+    "bench_less_misuse": "SELECTED_GENERIC",
+    "bench_completeness": "TASK_PLAN_SELECTED",
+    "persist_utility": "TASK_PLAN_SELECTED",
+    "persist_less_cross_domain": "TASK_PLAN_SELECTED",
+    "persist_less_sycophancy": "TASK_PLAN_SELECTED"
+  },
+  "dominated_by": {},
+  "objectives": {
+    "GENERIC": {
+      "RPEval": 0.42028985507246375,
+      "BenchPreS": 0.6731601731601732,
+      "PersistBench": 0.5833333333333334,
+      "rpe_less_opb": -23,
+      "rpe_less_upb": -11,
+      "rpe_less_fm": -6,
+      "bench_appropriate": 11,
+      "bench_less_misuse": -13,
+      "bench_completeness": 48,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 2,
+      "persist_less_sycophancy": 1
+    },
+    "SELECTED_GENERIC": {
+      "RPEval": 0.391304347826087,
+      "BenchPreS": 0.814935064935065,
+      "PersistBench": 0.75,
+      "rpe_less_opb": -26,
+      "rpe_less_upb": -10,
+      "rpe_less_fm": -5,
+      "bench_appropriate": 13,
+      "bench_less_misuse": -4,
+      "bench_completeness": 51,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 1
+    },
+    "SELECTED_TASK_ACTIONS": {
+      "RPEval": 0.42028985507246375,
+      "BenchPreS": 0.7363636363636363,
+      "PersistBench": 0.75,
+      "rpe_less_opb": -27,
+      "rpe_less_upb": -7,
+      "rpe_less_fm": -5,
+      "bench_appropriate": 10,
+      "bench_less_misuse": -7,
+      "bench_completeness": 51,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 1
+    },
+    "SELF_RECHECK": {
+      "RPEval": 0.391304347826087,
+      "BenchPreS": 0.7458874458874458,
+      "PersistBench": 0.6666666666666666,
+      "rpe_less_opb": -35,
+      "rpe_less_upb": -4,
+      "rpe_less_fm": -7,
+      "bench_appropriate": 10,
+      "bench_less_misuse": -6,
+      "bench_completeness": 51,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 3,
+      "persist_less_sycophancy": 1
+    },
+    "TASK_ACTIONS": {
+      "RPEval": 0.4492753623188406,
+      "BenchPreS": 0.646969696969697,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -28,
+      "rpe_less_upb": -10,
+      "rpe_less_fm": -6,
+      "bench_appropriate": 14,
+      "bench_less_misuse": -21,
+      "bench_completeness": 48,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    },
+    "TASK_ONLY": {
+      "RPEval": 0.5072463768115942,
+      "BenchPreS": 0.6536796536796536,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -18,
+      "rpe_less_upb": -11,
+      "rpe_less_fm": -6,
+      "bench_appropriate": 12,
+      "bench_less_misuse": -16,
+      "bench_completeness": 47,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    },
+    "TASK_PLAN_SELECTED": {
+      "RPEval": 0.43478260869565216,
+      "BenchPreS": 0.7872294372294372,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -19,
+      "rpe_less_upb": -13,
+      "rpe_less_fm": -6,
+      "bench_appropriate": 11,
+      "bench_less_misuse": -5,
+      "bench_completeness": 53,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    }
+  }
+}

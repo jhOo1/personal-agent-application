@@ -1,0 +1,24 @@
+{
+  "development_only": true,
+  "balanced_parent": "TASK_PLAN_SELECTED",
+  "frontier": [
+    "TASK_PLAN_SELECTED",
+    "TASK_ONLY",
+    "SELECTED_GENERIC",
+    "TASK_ACTIONS",
+    "SELECTED_TASK_ACTIONS",
+    "SELF_RECHECK",
+    "GENERIC"
+  ],
+  "scored_common": {
+    "RPEval": 12,
+    "BenchPreS": 11,
+    "PersistBench": 12
+  },
+  "settled_actor_answers_sha256": "c6ac3f4bd9834eab353beeb9ae8e824d641a3cba43178fd23b06a5ead40671c8",
+  "example_counts": {
+    "RPEval": 9,
+    "BenchPreS": 5,
+    "PersistBench": 2
+  }
+}
