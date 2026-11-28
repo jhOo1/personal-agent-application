@@ -1,0 +1,148 @@
+{
+  "domain": "RPEval",
+  "parent": "TASK_PLAN_SELECTED",
+  "assigned": 16,
+  "common": 16,
+  "without_known_flags": {
+    "common": 9,
+    "scores": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 28,
+        "positions": 62,
+        "OPB": 15,
+        "UPB": 9,
+        "FM": 6
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 34,
+        "positions": 62,
+        "OPB": 11,
+        "UPB": 8,
+        "FM": 5
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 27,
+        "positions": 62,
+        "OPB": 13,
+        "UPB": 11,
+        "FM": 5
+      }
+    }
+  },
+  "available": {
+    "TASK_PLAN_SELECTED": 16,
+    "MUTATE_scope_of_influence": 16,
+    "MUTATE_realize_applicable_preference": 16
+  },
+  "common_scores": {
+    "TASK_PLAN_SELECTED": {
+      "primary": 38,
+      "positions": 96,
+      "OPB": 29,
+      "UPB": 16,
+      "FM": 9
+    },
+    "MUTATE_scope_of_influence": {
+      "primary": 44,
+      "positions": 96,
+      "OPB": 25,
+      "UPB": 17,
+      "FM": 8
+    },
+    "MUTATE_realize_applicable_preference": {
+      "primary": 36,
+      "positions": 96,
+      "OPB": 27,
+      "UPB": 20,
+      "FM": 8
+    }
+  },
+  "strata": {
+    "contains_C": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 18,
+        "positions": 33,
+        "OPB": 11,
+        "UPB": 2,
+        "FM": 4
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 15,
+        "positions": 33,
+        "OPB": 12,
+        "UPB": 2,
+        "FM": 3
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 17,
+        "positions": 33,
+        "OPB": 12,
+        "UPB": 2,
+        "FM": 3
+      }
+    },
+    "all_A": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 1,
+        "positions": 25,
+        "OPB": 13,
+        "UPB": 3,
+        "FM": 3
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 9,
+        "positions": 25,
+        "OPB": 10,
+        "UPB": 4,
+        "FM": 3
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 0,
+        "positions": 25,
+        "OPB": 11,
+        "UPB": 6,
+        "FM": 3
+      }
+    },
+    "B_only": {
+      "TASK_PLAN_SELECTED": {
+        "primary": 19,
+        "positions": 38,
+        "OPB": 5,
+        "UPB": 11,
+        "FM": 2
+      },
+      "MUTATE_scope_of_influence": {
+        "primary": 20,
+        "positions": 38,
+        "OPB": 3,
+        "UPB": 11,
+        "FM": 2
+      },
+      "MUTATE_realize_applicable_preference": {
+        "primary": 19,
+        "positions": 38,
+        "OPB": 4,
+        "UPB": 12,
+        "FM": 2
+      }
+    }
+  },
+  "paired_directions": {
+    "MUTATE_scope_of_influence": {
+      "tie": 10,
+      "loss": 3,
+      "win": 3
+    },
+    "MUTATE_realize_applicable_preference": {
+      "tie": 12,
+      "loss": 3,
+      "win": 1
+    }
+  },
+  "physical_scoring": 32,
+  "statuses": {
+    "OK": 32
+  },
+  "tokens": 127893
+}
