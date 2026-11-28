@@ -67,3 +67,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [基于当前任务条件的备选动作对照](implementation/reports/qamc_contextual_match_v2_20261112/task_condition_branches_v1/RESULTS.md)已结算。十二题五触发，两臂共享同一候选和 Actor 可见历史。要求保留条件分支使 RPEval Match 13/24→12/24、BenchPreS 完整度 10/10→9/10；PersistBench 只触发两道严格有益使用且均持平。项目模板、公园聚会和全部 PersistBench 风险根沿用旧稿，因此该触发器未覆盖原来的错误决定。停止扩大，保持各基准强参照。
 
 [归档无历史答复引文与局部修订](implementation/reports/qamc_contextual_match_v2_20261112/foil_anchored_decision_repair_v1/RESULTS.md)完成。引文版改 4/12 道，普通复核改 11/12。RPEval 与 IPE-C 同为 8/23，BenchPreS AAR 由 Strong Gate 的 4/5 降至 3/5，PersistBench 各类别与 PB_RUBRIC 持平。野餐人数、项目生命周期两个关键错例沿用原稿。没有一道主分超过原强稿，关闭该修订规则。保留二主一边界和原三基准档案。
+
+[三臂融合候选空间复算](implementation/reports/qamc_contextual_match_v2_20261112/fusion_candidate_tradeoffs_v1/RESULTS.md)核实了 QAMC-v3.2 建议的关键干预已实测。18 个冻结来源中 16 个三臂有分，各分项最佳值分散的 RPEval 和 BenchPreS 来源分别为 2 和 1；没有任何融合终答主分超过同题候选和强稿。零新增请求，复用原对照。
