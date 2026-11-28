@@ -439,6 +439,18 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
                     f"an expected {equal[2]} matches",
                     "nine recommendations implement that preference, one weakens it, one conflicts",
                     "two leave an unresolved risk"])
+    attainment = json.loads((root / "rpe_task_attainment_v1/RESULTS.json").read_text())
+    def counts(panel, threshold, denominator=False):
+        row = attainment[panel]["at_least"][threshold]
+        suffix = f"/{attainment[panel]['tasks']}" if denominator else ""
+        return [f"{row[key]}{suffix}" for key in ("IPE_C", "TASK_ONLY", "RPR_PAPER_FULL")]
+
+    a, b, c = counts("common", "1/2", True)
+    phrases.append(f"{a} tasks with IPE-C, {b} with empty history and {c} with full RP")
+    for panel, threshold, ending in (("common", "3/4", "."), ("no_known_flags", "1/2", " at half"),
+                                     ("no_known_flags", "3/4", " at three quarters")):
+        a, b, c = counts(panel, threshold)
+        phrases.append(f"{a}, {b} and {c}{ending}")
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(joint_rows) + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))

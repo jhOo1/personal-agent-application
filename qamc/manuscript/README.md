@@ -51,7 +51,7 @@ cp "$build_dir/paper.pdf" ./paper.pdf
 
 The [comparison and recovery status](COMPARISON_STATUS.md) records the strongest available references, official scorer gaps, and the next reproducible evaluations.
 
-The RPEval whole-answer breakdown uses [paired transitions](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_exact_tradeoff_v1/README.md). The [mixed-task bounds and grader input audit](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_mixed_error_bounds_v1/README.md) support the Chengdu example and explain which error attributions are identifiable.
+The RPEval whole-answer breakdown uses the [task attainment distribution](../implementation/reports/qamc_contextual_match_v2_20261112/rpe_task_attainment_v1/README.md) and [paired transitions](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_exact_tradeoff_v1/README.md). The [mixed-task bounds and grader input audit](../implementation/reports/qamc_contextual_match_v2_20261112/ipe_mixed_error_bounds_v1/README.md) support the Chengdu example and explain which error attributions are identifiable.
 
 The fixed-draft revision table compares ordinary post-draft revision with direct generation under the same archived query switch. The [revision trial](../implementation/reports/qamc_contextual_match_v2_20261112/proposal_memory_check_v1/RESULTS.md) reports every rating from both review prompts. The [routing replay](../implementation/reports/qamc_contextual_match_v2_20261112/persist_routed_revision_replay_v1/RESULTS.md) supplies the task-level assignments and endpoint ratings used to reproduce the table. All six sources were exposed during development.
 
