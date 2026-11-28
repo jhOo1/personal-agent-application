@@ -30,5 +30,6 @@ case "${1:-}" in
   actor-mutation) entry=mutate_actor.py; shift ;;
   mutation-audit) entry=mutation_audit.py; shift ;;
   mutation-stage) entry=mutation_stage.py; shift ;;
+  source-sensitivity) entry=source_group_sensitivity.py; shift ;;
 esac
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/$entry" "$@"
