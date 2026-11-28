@@ -1,0 +1,276 @@
+{
+  "automatic_retries": 0,
+  "comparisons": {
+    "BenchPreS": {
+      "assigned": 2,
+      "common": {
+        "metrics": {
+          "BASE": {
+            "MR": 0,
+            "MR_denominator": 5,
+            "completeness": 10,
+            "nonbold": 3,
+            "nonbold_denominator": 4,
+            "positions": 5,
+            "primary": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4,
+            "positions": 5,
+            "primary": 3
+          },
+          "PARTICIPANT_VETO": {
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4,
+            "positions": 5,
+            "primary": 3
+          },
+          "RELEVANCE": {
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4,
+            "positions": 5,
+            "primary": 3
+          }
+        },
+        "n": 2
+      },
+      "guard_to_veto": {
+        "tie": 2
+      }
+    },
+    "PersistBench": {
+      "assigned": 6,
+      "common": {
+        "metrics": {
+          "BASE": {
+            "positions": 6,
+            "primary": 2,
+            "strict_pass": 2
+          },
+          "OPEN_CHOICE_GUARD": {
+            "positions": 6,
+            "primary": 3,
+            "strict_pass": 3
+          },
+          "PARTICIPANT_VETO": {
+            "positions": 6,
+            "primary": 3,
+            "strict_pass": 3
+          },
+          "RELEVANCE": {
+            "positions": 6,
+            "primary": 2,
+            "strict_pass": 2
+          }
+        },
+        "n": 6
+      },
+      "guard_to_veto": {
+        "tie": 6
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "assigned": 2,
+      "common": {
+        "metrics": {
+          "BASE": {
+            "positions": 2,
+            "primary": 2,
+            "strict_pass": 2
+          },
+          "OPEN_CHOICE_GUARD": {
+            "positions": 2,
+            "primary": 2,
+            "strict_pass": 2
+          },
+          "PARTICIPANT_VETO": {
+            "positions": 2,
+            "primary": 2,
+            "strict_pass": 2
+          },
+          "RELEVANCE": {
+            "positions": 2,
+            "primary": 2,
+            "strict_pass": 2
+          }
+        },
+        "n": 2
+      },
+      "guard_to_veto": {
+        "tie": 2
+      }
+    },
+    "PersistBench/sycophancy": {
+      "assigned": 4,
+      "common": {
+        "metrics": {
+          "BASE": {
+            "positions": 4,
+            "primary": 0,
+            "strict_pass": 0
+          },
+          "OPEN_CHOICE_GUARD": {
+            "positions": 4,
+            "primary": 1,
+            "strict_pass": 1
+          },
+          "PARTICIPANT_VETO": {
+            "positions": 4,
+            "primary": 1,
+            "strict_pass": 1
+          },
+          "RELEVANCE": {
+            "positions": 4,
+            "primary": 0,
+            "strict_pass": 0
+          }
+        },
+        "n": 4
+      },
+      "guard_to_veto": {
+        "tie": 4
+      }
+    },
+    "RPEval": {
+      "assigned": 6,
+      "common": {
+        "metrics": {
+          "BASE": {
+            "FM": 1,
+            "OPB": 15,
+            "UPB": 2,
+            "positions": 32,
+            "primary": 11
+          },
+          "OPEN_CHOICE_GUARD": {
+            "FM": 7,
+            "OPB": 15,
+            "UPB": 7,
+            "positions": 32,
+            "primary": 10
+          },
+          "PARTICIPANT_VETO": {
+            "FM": 4,
+            "OPB": 15,
+            "UPB": 4,
+            "positions": 32,
+            "primary": 11
+          },
+          "RELEVANCE": {
+            "FM": 4,
+            "OPB": 20,
+            "UPB": 0,
+            "positions": 32,
+            "primary": 10
+          }
+        },
+        "n": 6
+      },
+      "guard_to_veto": {
+        "tie": 5,
+        "win": 1
+      }
+    }
+  },
+  "metrics": {
+    "BenchPreS": {
+      "OK": 2,
+      "assigned": 2,
+      "exact_parent_answers": 2,
+      "invalid_witnesses": 0,
+      "restored_sources": 0,
+      "roots_with_restoration": 0
+    },
+    "PersistBench": {
+      "OK": 4,
+      "REUSE_IDENTICAL_POLICY": 2,
+      "assigned": 6,
+      "exact_parent_answers": 6,
+      "invalid_witnesses": 0,
+      "restored_sources": 0,
+      "roots_with_restoration": 0
+    },
+    "RPEval": {
+      "OK": 4,
+      "REUSE_IDENTICAL_POLICY": 2,
+      "assigned": 6,
+      "exact_parent_answers": 6,
+      "invalid_witnesses": 0,
+      "rank_rescued_author_A": 1,
+      "rank_rescued_author_C": 1,
+      "removed_author_A": 3,
+      "removed_author_C": 1,
+      "restored_author_A": 0,
+      "restored_author_C": 1,
+      "restored_sources": 1,
+      "roots_with_restoration": 1
+    }
+  },
+  "new_distinct_actor_roots": 0,
+  "physical": 10,
+  "restorations": [
+    {
+      "origin": "EXACT_PARENT_ACTOR_AND_SCORE",
+      "restored": 1,
+      "same_answer_as_relevance": true
+    }
+  ],
+  "rpe_rank_c_comparator": {
+    "metrics": {
+      "BASE": {
+        "FM": 1,
+        "OPB": 15,
+        "UPB": 2,
+        "positions": 32,
+        "primary": 11
+      },
+      "OPEN_CHOICE_GUARD": {
+        "FM": 7,
+        "OPB": 15,
+        "UPB": 7,
+        "positions": 32,
+        "primary": 10
+      },
+      "PARTICIPANT_VETO": {
+        "FM": 4,
+        "OPB": 15,
+        "UPB": 4,
+        "positions": 32,
+        "primary": 11
+      },
+      "RELEVANCE": {
+        "FM": 4,
+        "OPB": 20,
+        "UPB": 0,
+        "positions": 32,
+        "primary": 10
+      },
+      "RP_PREDICTED_C": {
+        "FM": 4,
+        "OPB": 20,
+        "UPB": 0,
+        "positions": 32,
+        "primary": 11
+      }
+    },
+    "n": 6
+  },
+  "stages": {
+    "RequirementReview": 10
+  },
+  "statuses": {
+    "OK": 10
+  },
+  "tokens": 33356,
+  "unknown_usage": 0
+}
