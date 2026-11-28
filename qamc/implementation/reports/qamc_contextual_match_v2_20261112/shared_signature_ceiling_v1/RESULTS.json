@@ -1,0 +1,123 @@
+{
+  "bit": {
+    "joint": {
+      "BenchPreS+PersistBench": {
+        "feasible": false,
+        "gain": null,
+        "shared_across_domains": 1,
+        "signatures": 2
+      },
+      "BenchPreS+PersistBench+RPEval": {
+        "feasible": false,
+        "gain": null,
+        "shared_across_domains": 2,
+        "signatures": 2
+      },
+      "BenchPreS+RPEval": {
+        "feasible": false,
+        "gain": null,
+        "shared_across_domains": 1,
+        "signatures": 2
+      },
+      "PersistBench+RPEval": {
+        "feasible": false,
+        "gain": null,
+        "shared_across_domains": 2,
+        "signatures": 2
+      }
+    },
+    "solo": {
+      "BenchPreS": {
+        "feasible": true,
+        "gain": 0,
+        "shared_across_domains": 0,
+        "signatures": 1
+      },
+      "PersistBench": {
+        "feasible": false,
+        "gain": null,
+        "shared_across_domains": 0,
+        "signatures": 2
+      },
+      "RPEval": {
+        "feasible": true,
+        "gain": 0,
+        "shared_across_domains": 0,
+        "signatures": 2
+      }
+    }
+  },
+  "complete": {
+    "joint": {
+      "BenchPreS+PersistBench": {
+        "conditional_max_gains": {
+          "BenchPreS": 0,
+          "PersistBench": 3
+        },
+        "conditional_maxima_simultaneous": true,
+        "feasible": true,
+        "gain": null,
+        "individual_optima_simultaneous": true,
+        "shared_across_domains": 0,
+        "signatures": 61
+      },
+      "BenchPreS+PersistBench+RPEval": {
+        "conditional_max_gains": {
+          "BenchPreS": 0,
+          "PersistBench": 3,
+          "RPEval": 61
+        },
+        "conditional_maxima_simultaneous": true,
+        "feasible": true,
+        "gain": null,
+        "individual_optima_simultaneous": false,
+        "shared_across_domains": 5,
+        "signatures": 238
+      },
+      "BenchPreS+RPEval": {
+        "conditional_max_gains": {
+          "BenchPreS": 0,
+          "RPEval": 61
+        },
+        "conditional_maxima_simultaneous": true,
+        "feasible": true,
+        "gain": null,
+        "individual_optima_simultaneous": false,
+        "shared_across_domains": 3,
+        "signatures": 198
+      },
+      "PersistBench+RPEval": {
+        "conditional_max_gains": {
+          "PersistBench": 3,
+          "RPEval": 71
+        },
+        "conditional_maxima_simultaneous": true,
+        "feasible": true,
+        "gain": null,
+        "individual_optima_simultaneous": true,
+        "shared_across_domains": 2,
+        "signatures": 222
+      }
+    },
+    "solo": {
+      "BenchPreS": {
+        "feasible": true,
+        "gain": 0,
+        "shared_across_domains": 0,
+        "signatures": 19
+      },
+      "PersistBench": {
+        "feasible": true,
+        "gain": 3,
+        "shared_across_domains": 0,
+        "signatures": 42
+      },
+      "RPEval": {
+        "feasible": true,
+        "gain": 71,
+        "shared_across_domains": 0,
+        "signatures": 182
+      }
+    }
+  }
+}
