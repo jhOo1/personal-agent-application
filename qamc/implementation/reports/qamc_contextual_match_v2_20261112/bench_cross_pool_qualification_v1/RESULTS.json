@@ -1,0 +1,54 @@
+{
+  "tasks": 26,
+  "references": [
+    "DES2GEN_FULL",
+    "MEMADAPTER_FULL",
+    "PAPER_SELECTIVITY"
+  ],
+  "counts": {
+    "old": 38,
+    "positions": 44,
+    "unrealized": 6,
+    "unrestricted_added": 2,
+    "added": 1,
+    "unresolved_extra": 0
+  },
+  "qualified": {
+    "43a1728d": [
+      [
+        "MEMADAPTER_FULL",
+        1
+      ]
+    ]
+  },
+  "improvements": [
+    {
+      "task": "3fdc728f",
+      "method": "PAPER_SELECTIVITY",
+      "differences": {
+        "primary": 1,
+        "MR": 0,
+        "nonbold": 1,
+        "completeness": -1
+      }
+    },
+    {
+      "task": "43a1728d",
+      "method": "MEMADAPTER_FULL",
+      "differences": {
+        "primary": 1,
+        "MR": 0,
+        "nonbold": 1,
+        "completeness": 0
+      }
+    }
+  ],
+  "missing": {
+    "MEMADAPTER_FULL": 2,
+    "MEMADAPTER_FULL_residual_positions": 0,
+    "PAPER_SELECTIVITY": 1,
+    "PAPER_SELECTIVITY_residual_positions": 0,
+    "DES2GEN_FULL": 1,
+    "DES2GEN_FULL_residual_positions": 0
+  }
+}
