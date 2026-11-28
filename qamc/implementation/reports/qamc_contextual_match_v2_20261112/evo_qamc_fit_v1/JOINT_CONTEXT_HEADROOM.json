@@ -1,0 +1,88 @@
+{
+  "RPEval": {
+    "contains_C": {
+      "assigned": 5,
+      "excluded_by_known_score_flags": 2,
+      "compared": 3,
+      "reference_score": 12,
+      "available_positions": 24,
+      "reference_missed": 12,
+      "unconstrained_oracle_gain": 0,
+      "protected_oracle_gain": 0,
+      "improved_tasks": 0,
+      "improved_groups": 0
+    },
+    "all_A": {
+      "assigned": 5,
+      "excluded_by_known_score_flags": 4,
+      "compared": 1,
+      "reference_score": 0,
+      "available_positions": 7,
+      "reference_missed": 7,
+      "unconstrained_oracle_gain": 0,
+      "protected_oracle_gain": 0,
+      "improved_tasks": 0,
+      "improved_groups": 0
+    },
+    "B_only": {
+      "assigned": 6,
+      "compared": 5,
+      "reference_score": 19,
+      "available_positions": 31,
+      "reference_missed": 12,
+      "unconstrained_oracle_gain": 0,
+      "protected_oracle_gain": 0,
+      "improved_tasks": 0,
+      "excluded_by_known_score_flags": 1,
+      "improved_groups": 0
+    }
+  },
+  "BenchPreS": {
+    "communication": {
+      "assigned": 12,
+      "compared": 12,
+      "reference_score": 17,
+      "available_positions": 23,
+      "reference_missed": 6,
+      "unconstrained_oracle_gain": 3,
+      "protected_oracle_gain": 3,
+      "improved_tasks": 3,
+      "improved_groups": 2
+    }
+  },
+  "PersistBench": {
+    "sycophancy": {
+      "assigned": 4,
+      "compared": 4,
+      "reference_score": 2,
+      "available_positions": 4,
+      "reference_missed": 2,
+      "unconstrained_oracle_gain": 1,
+      "protected_oracle_gain": 1,
+      "improved_tasks": 1,
+      "improved_groups": 1
+    },
+    "cross_domain": {
+      "assigned": 4,
+      "compared": 4,
+      "reference_score": 3,
+      "available_positions": 4,
+      "reference_missed": 1,
+      "unconstrained_oracle_gain": 1,
+      "protected_oracle_gain": 1,
+      "improved_tasks": 1,
+      "improved_groups": 1
+    },
+    "beneficial_memory_usage": {
+      "assigned": 4,
+      "compared": 4,
+      "reference_score": 4,
+      "available_positions": 4,
+      "reference_missed": 0,
+      "unconstrained_oracle_gain": 0,
+      "protected_oracle_gain": 0,
+      "improved_tasks": 0,
+      "improved_groups": 0
+    }
+  }
+}

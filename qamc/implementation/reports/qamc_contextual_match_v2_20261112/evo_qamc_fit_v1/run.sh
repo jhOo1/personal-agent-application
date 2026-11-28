@@ -31,6 +31,10 @@ case "${1:-}" in
   expansion-persist-peer) entry=expansion_persist_peer.py; shift ;;
   exposure-controls) entry=exposure_controls.py; shift ;;
   joint-context) entry=joint_context.py; shift ;;
+  joint-context-headroom) entry=joint_context_headroom.py; shift ;;
+  pinned-actor-transfer) entry=pinned_actor_transfer.py; shift ;;
+
+
 
   exposure-summary) entry=exposure_summary.py; shift ;;
   expansion-audit-requests) entry=expansion_audit.py; shift ;;

@@ -1,0 +1,19 @@
+# Pinned Actor transfer
+
+This test asks whether the source-selection lift on the 40-task joint-context development panel survives when both selectors feed a stronger, already available generation contract. The Scope comparison already ran. The new pair uses the same cached selection decisions as that comparison, with no new selector calls. No plan switch, new tuning, per-task score routing, source rewriting or benchmark addition is involved.
+
+| Domain | New fixed generation envelope | Strong pipeline reference |
+|---|---|---|
+| RPEval | Exact RP Actor, projecting the existing source-indexed preference policy along with raw history | Archived IPE-C, which sometimes routes to a task-only request |
+| BenchPreS | Strong Gate Actor, original fixed facts, archived raw selected sources and their position-indexed use guidance | Archived Strong Gate |
+| PersistBench | PB_RUBRIC Actor with just the original memory block replaced | Archived PB_RUBRIC |
+
+Each projection uses the original source order. It keeps original use-policy values or notes for retained sources. A BenchPreS source lacking an archived note makes that pair unavailable. Notes are free text, so the projection guarantees source and note indexing and checks full removed literals; it cannot certify the absence of every semantic paraphrase or influence already present in task facts. The same table is evaluated for all assigned tasks regardless of availability. Report recovery and true extra generation only for unique strict requests, and stop short of substituting a new prompt for missing inputs.
+
+The principal comparison is PIN_JCC versus PIN_GATE, on common valid cases against the same archive scorer. Also report the corresponding matched Scope pair and the historical strongest baseline on the same intersection. Preserve RPEval Match and OPB/UPB/FM, A/B/C task strata and a sensitivity view removing all known score-conflict flags on matched methods. Preserve BenchPreS AAR, non-bold AAR, MR and completeness. PersistBench reports the pass rates by category and strict beneficial use. Old scores and flags remain as saved. The short three-domain fit and historical Scope and specialist archives do not qualify as an independent or simultaneous randomized evaluation. The pinned evaluation is a mechanism test, not a deployed benchmark-keyed mixture. BenchPreS/PersistBench graders are frozen project adapters rather than the official release settings.
+
+The prior JCC inventory is an important stopping comparison. With all three new outputs and the specialist present and no known RPEval flag, there were 9 RPEval questions and 62 positions. Neither protected nor unconstrained best-of-saved outputs improves on the specialist there despite 31 unmatched positions. Protected best-of-saved outputs add 3/23 AAR positions across 2 BenchPreS profiles, and two PersistBench passes in two source groups. These are optimistic fit-set bounds with Gold confined to analysis, not executable improvements. A positive transfer decision needs observable multiple-root behavior in addition to better scores. A score-only reversal on the previously disputed audio example, or loss of legitimate task constraints or strict useful history, is not transferable evidence.
+
+Use the existing physical dispatcher, exact cache identity and exposed fit namespace. Archive use is by request bytes, service compatibility and unambiguous saved answer only. A previously failed or unknown exact attempt is not silently reissued. The fit and exposure results remain untouched. Recovery: `run.sh pinned-actor-transfer inventory|freeze|run|report`. Inventory, freeze and report emit no model requests.
+
+[Original joint fit](JOINT_CONTEXT_FIT.md) · [Stored-output headroom](JOINT_CONTEXT_HEADROOM.json) · [Pinned transfer runner](pinned_actor_transfer.py)
