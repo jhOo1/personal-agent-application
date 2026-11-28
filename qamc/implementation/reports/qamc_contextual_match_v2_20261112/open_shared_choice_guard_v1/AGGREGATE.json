@@ -1,0 +1,733 @@
+{
+  "qualified": true,
+  "audits": {
+    "RPEval": {
+      "assigned": 6,
+      "valid_review": 6,
+      "invalid_open_default_spans": 0,
+      "changed_request": 4,
+      "removed_sources": 4
+    },
+    "PersistBench": {
+      "assigned": 6,
+      "valid_review": 6,
+      "invalid_open_default_spans": 0,
+      "changed_request": 4,
+      "removed_sources": 10
+    },
+    "BenchPreS": {
+      "assigned": 2,
+      "valid_review": 2,
+      "invalid_open_default_spans": 0,
+      "changed_request": 2,
+      "removed_sources": 3
+    }
+  },
+  "delivered": {
+    "RPEval": {
+      "RELEVANCE.answers": 6,
+      "RELEVANCE.scores": 6,
+      "OPEN_CHOICE_GUARD.answers": 6,
+      "OPEN_CHOICE_GUARD.scores": 6
+    },
+    "PersistBench": {
+      "RELEVANCE.answers": 6,
+      "RELEVANCE.scores": 6,
+      "OPEN_CHOICE_GUARD.answers": 6,
+      "OPEN_CHOICE_GUARD.scores": 6
+    },
+    "BenchPreS": {
+      "RELEVANCE.answers": 2,
+      "RELEVANCE.scores": 2,
+      "OPEN_CHOICE_GUARD.answers": 2,
+      "OPEN_CHOICE_GUARD.scores": 2
+    }
+  },
+  "exact_reuse": {
+    "OpenChoiceReview": {},
+    "OpenChoiceActor": {
+      "OK": 7
+    },
+    "RPEvalJudge": {
+      "OK": 3
+    },
+    "BenchAttrs": {},
+    "PersistNative": {
+      "OK": 4
+    }
+  },
+  "comparisons": {
+    "RPEval": {
+      "assigned": 6,
+      "directions": {
+        "tie": 4,
+        "win": 1,
+        "loss": 1
+      },
+      "matched_arms": {
+        "n": 6,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 10,
+            "positions": 32,
+            "OPB": 20,
+            "UPB": 0,
+            "FM": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 10,
+            "positions": 32,
+            "OPB": 15,
+            "UPB": 7,
+            "FM": 7
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 6,
+        "metrics": {
+          "BASE": {
+            "primary": 11,
+            "positions": 32,
+            "OPB": 15,
+            "UPB": 2,
+            "FM": 1
+          },
+          "RELEVANCE": {
+            "primary": 10,
+            "positions": 32,
+            "OPB": 20,
+            "UPB": 0,
+            "FM": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 10,
+            "positions": 32,
+            "OPB": 15,
+            "UPB": 7,
+            "FM": 7
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "RPEval/all_A": {
+      "assigned": 3,
+      "directions": {
+        "tie": 3
+      },
+      "matched_arms": {
+        "n": 3,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 14,
+            "UPB": 0,
+            "FM": 3
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 9,
+            "UPB": 4,
+            "FM": 3
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 3,
+        "metrics": {
+          "BASE": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 12,
+            "UPB": 0,
+            "FM": 1
+          },
+          "RELEVANCE": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 14,
+            "UPB": 0,
+            "FM": 3
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 0,
+            "positions": 14,
+            "OPB": 9,
+            "UPB": 4,
+            "FM": 3
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "RPEval/changed": {
+      "assigned": 4,
+      "directions": {
+        "tie": 2,
+        "win": 1,
+        "loss": 1
+      },
+      "matched_arms": {
+        "n": 4,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 7,
+            "positions": 22,
+            "OPB": 13,
+            "UPB": 0,
+            "FM": 3
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 7,
+            "positions": 22,
+            "OPB": 8,
+            "UPB": 7,
+            "FM": 6
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 4,
+        "metrics": {
+          "BASE": {
+            "primary": 8,
+            "positions": 22,
+            "OPB": 10,
+            "UPB": 0,
+            "FM": 1
+          },
+          "RELEVANCE": {
+            "primary": 7,
+            "positions": 22,
+            "OPB": 13,
+            "UPB": 0,
+            "FM": 3
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 7,
+            "positions": 22,
+            "OPB": 8,
+            "UPB": 7,
+            "FM": 6
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "RPEval/contains_C": {
+      "assigned": 2,
+      "directions": {
+        "win": 1,
+        "loss": 1
+      },
+      "matched_arms": {
+        "n": 2,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 7,
+            "positions": 12,
+            "OPB": 4,
+            "UPB": 0,
+            "FM": 1
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 7,
+            "positions": 12,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 8,
+            "positions": 12,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 0
+          },
+          "RELEVANCE": {
+            "primary": 7,
+            "positions": 12,
+            "OPB": 4,
+            "UPB": 0,
+            "FM": 1
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 7,
+            "positions": 12,
+            "OPB": 4,
+            "UPB": 3,
+            "FM": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "RPEval/B_only": {
+      "assigned": 1,
+      "directions": {
+        "tie": 1
+      },
+      "matched_arms": {
+        "n": 1,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 6,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 0
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 6,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 0
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 1,
+        "metrics": {
+          "BASE": {
+            "primary": 3,
+            "positions": 6,
+            "OPB": 1,
+            "UPB": 2,
+            "FM": 0
+          },
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 6,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 0
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 6,
+            "OPB": 2,
+            "UPB": 0,
+            "FM": 0
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "PersistBench": {
+      "assigned": 6,
+      "directions": {
+        "win": 1,
+        "tie": 5
+      },
+      "matched_arms": {
+        "n": 6,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 6
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 6
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 6,
+        "metrics": {
+          "BASE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 6
+          },
+          "RELEVANCE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 6
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 6
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        1,
+        1
+      ]
+    },
+    "PersistBench/sycophancy": {
+      "assigned": 4,
+      "directions": {
+        "win": 1,
+        "tie": 3
+      },
+      "matched_arms": {
+        "n": 4,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 4,
+        "metrics": {
+          "BASE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "RELEVANCE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        1,
+        1
+      ]
+    },
+    "PersistBench/changed": {
+      "assigned": 4,
+      "directions": {
+        "win": 1,
+        "tie": 3
+      },
+      "matched_arms": {
+        "n": 4,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 4,
+        "metrics": {
+          "BASE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "RELEVANCE": {
+            "primary": 0,
+            "strict_pass": 0,
+            "positions": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 1,
+            "strict_pass": 1,
+            "positions": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        1,
+        1
+      ]
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "assigned": 2,
+      "directions": {
+        "tie": 2
+      },
+      "matched_arms": {
+        "n": 2,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "RELEVANCE": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 2,
+            "strict_pass": 2,
+            "positions": 2
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "BenchPreS": {
+      "assigned": 2,
+      "directions": {
+        "tie": 2
+      },
+      "matched_arms": {
+        "n": 2,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 5,
+            "completeness": 10,
+            "nonbold": 3,
+            "nonbold_denominator": 4
+          },
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "BenchPreS/communication": {
+      "assigned": 2,
+      "directions": {
+        "tie": 2
+      },
+      "matched_arms": {
+        "n": 2,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 5,
+            "completeness": 10,
+            "nonbold": 3,
+            "nonbold_denominator": 4
+          },
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    },
+    "BenchPreS/changed": {
+      "assigned": 2,
+      "directions": {
+        "tie": 2
+      },
+      "matched_arms": {
+        "n": 2,
+        "metrics": {
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "incl_archived": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 4,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 5,
+            "completeness": 10,
+            "nonbold": 3,
+            "nonbold_denominator": 4
+          },
+          "RELEVANCE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 7,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "OPEN_CHOICE_GUARD": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 2,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "assigned_delta_bound": [
+        0,
+        0
+      ]
+    }
+  },
+  "physical_calls": 68,
+  "stages": {
+    "OpenChoiceReview": 14,
+    "OpenChoiceActor": 17,
+    "RPEvalJudge": 7,
+    "BenchAttrs": 24,
+    "PersistNative": 6
+  },
+  "statuses": {
+    "OK": 68
+  },
+  "reported_tokens": 252745,
+  "unknown_usage": 0,
+  "automatic_retries": 0
+}
