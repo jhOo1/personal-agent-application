@@ -1,0 +1,22 @@
+{
+  "development_only": true,
+  "balanced_parent": "TASK_PLAN_SELECTED",
+  "frontier": [
+    "TASK_PLAN_SELECTED",
+    "TASK_ONLY",
+    "TASK_ACTIONS",
+    "SELF_RECHECK",
+    "GENERIC"
+  ],
+  "scored_common": {
+    "RPEval": 14,
+    "BenchPreS": 12,
+    "PersistBench": 12
+  },
+  "settled_actor_answers_sha256": "cc6051df306d28bdedb30bc44a34d2030580f302e189a8d5e69194ba4bfda38b",
+  "example_counts": {
+    "RPEval": 6,
+    "BenchPreS": 3,
+    "PersistBench": 2
+  }
+}
