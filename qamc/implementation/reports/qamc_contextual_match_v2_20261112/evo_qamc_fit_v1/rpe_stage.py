@@ -1,4 +1,5 @@
 """Replay the complete RPEval scoring stage before the other benchmark calls finish."""
+from argparse import ArgumentParser
 from collections import Counter
 import json
 
@@ -6,6 +7,7 @@ from qamc_rpeval_terminal_judge_sensitivity import inspect
 from summarize import metrics
 from summarize_reassembly import aligned
 from trial import CAP, POLICIES, HERE, RUN, archive, engine, probe, sha
+from baselines import rpe
 
 METHODS = ('BASE',*POLICIES)
 
@@ -24,7 +26,7 @@ def ready():
             all(r['status']!='PENDING_DELIVERY_UNKNOWN' for r in receipts))
 
 
-def replay():
+def replay(include_private=False):
     plan = read(RUN/'private/FROZEN.json')
     cards = {c['uid']:c for c in plan['rows'] if c['domain']=='RPEval'}
     actors = {}
@@ -59,6 +61,9 @@ def replay():
     coverage = Counter()
     scores = {k:{a:Counter() for a in METHODS} for k in ('all','all_A','B_only','contains_C','without_known_flags')}
     count = Counter()
+    direction = {k:{a:Counter() for a in POLICIES} for k in scores}
+    private = []
+    baselines = rpe() if include_private else {}
     for uid,card in cards.items():
         buckets = ('all',card['stratum'])
         values = {'BASE':metrics(card,card['base_score'])}
@@ -67,19 +72,35 @@ def replay():
             coverage[arm] += values[arm] is not None
         if not aligned(values,METHODS):
             continue
+        if include_private and any(values[a]['primary']!=values['BASE']['primary'] for a in POLICIES):
+            summary = dict(uid=uid,group=card['group'],stratum=card['stratum'],task=card['payload']['task'],
+                           histories=card['payload']['source_evidence'],baseline=baselines[uid]['base_answer'],
+                           answers={a:actors[uid,a] for a in POLICIES},metrics=values,
+                           score_flags={'BASE':card['base_flags'],**{a:flags.get((uid,a)) for a in POLICIES}},
+                           judge_reason={a:outputs[uid,a]['score'].get('Judge') for a in POLICIES})
+            private.append(summary)
         if card['base_flags']==[] and all(flags.get((uid,a))==[] for a in POLICIES):
             buckets += ('without_known_flags',)
         for bucket in buckets:
             count[bucket] += 1
             for arm in METHODS:
                 scores[bucket][arm].update(values[arm])
-    return dict(assigned=len(cards),native_scores=scores,common=count,valid_by_arm=coverage,
+            for arm in POLICIES:
+                delta = values[arm]['primary'] - values['BASE']['primary']
+                direction[bucket][arm]['wins' if delta>0 else 'losses' if delta<0 else 'ties'] += 1
+    if include_private:
+        path = RUN/'private/RPE_SCORE_CONTRASTS.json'
+        path.write_text(json.dumps(private,ensure_ascii=False,indent=2))
+    return dict(assigned=len(cards),native_scores=scores,common=count,valid_by_arm=coverage,paired_vs_ipe_c=direction,
                 physical_score_requests=len(ledger),status=Counter(x['status'] for x in ledger),
                 reported_tokens=sum((x.get('usage') or {}).get('total_tokens') or 0 for x in ledger),
                 usage_unknown=sum((x.get('usage') or {}).get('total_tokens') is None for x in ledger))
 
 
 if __name__=='__main__':
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument('--private',action='store_true')
+    args = parser.parse_args()
     if not ready():
         raise SystemExit('RPEval score stage is not terminal yet')
-    print(json.dumps(replay(),indent=2))
+    print(json.dumps(replay(args.private),indent=2))

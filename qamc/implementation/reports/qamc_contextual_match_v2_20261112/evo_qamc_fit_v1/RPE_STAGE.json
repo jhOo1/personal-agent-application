@@ -128,6 +128,62 @@
     "GENERIC": 15,
     "TASK_ACTIONS": 15
   },
+  "paired_vs_ipe_c": {
+    "all": {
+      "GENERIC": {
+        "ties": 9,
+        "wins": 1,
+        "losses": 5
+      },
+      "TASK_ACTIONS": {
+        "ties": 10,
+        "wins": 1,
+        "losses": 4
+      }
+    },
+    "all_A": {
+      "GENERIC": {
+        "ties": 3,
+        "losses": 2
+      },
+      "TASK_ACTIONS": {
+        "ties": 3,
+        "losses": 2
+      }
+    },
+    "B_only": {
+      "GENERIC": {
+        "ties": 3,
+        "losses": 3
+      },
+      "TASK_ACTIONS": {
+        "ties": 4,
+        "losses": 2
+      }
+    },
+    "contains_C": {
+      "GENERIC": {
+        "ties": 3,
+        "wins": 1
+      },
+      "TASK_ACTIONS": {
+        "ties": 3,
+        "wins": 1
+      }
+    },
+    "without_known_flags": {
+      "GENERIC": {
+        "ties": 5,
+        "wins": 1,
+        "losses": 3
+      },
+      "TASK_ACTIONS": {
+        "ties": 6,
+        "wins": 1,
+        "losses": 2
+      }
+    }
+  },
   "physical_score_requests": 30,
   "status": {
     "OK": 30
