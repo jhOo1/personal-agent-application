@@ -18,7 +18,7 @@ RPE_PAIRS=(('OFF','SELECTED'),('FULL','SELECTED'),('GATE','SELECTED'),('GATE','B
 def route_result(decision,endpoints):
     if not decision or decision['decision'] is None:
         return dict(score=None,actor_status='GATE_UNAVAILABLE')
-    return endpoints[decision['decision']]
+    return {**endpoints[decision['decision']],'exposure':decision['decision']}
 
 
 def collect():
@@ -133,6 +133,28 @@ def rpe_endpoint_headroom(groups):
     return breakdown
 
 
+def rpe_gate_actions(groups):
+    """Measure regret within the actual frozen exposure choice."""
+    tables={}
+    for name,rows in groups.items():
+        if not (name=='RPEval' or name.startswith('RPEval/')):
+            continue
+        summaries=defaultdict(Counter)
+        for _,receipts,grades in rows:
+            if not aligned(grades,METHODS):
+                continue
+            action=receipts['GATE']['exposure']
+            assert grades['GATE']==grades[action]
+            actual=grades['GATE']['primary']
+            maximum=max(grades[arm]['primary'] for arm in ARMS)
+            table=summaries[action]
+            table.update(tasks=1,positions=grades['BASE']['positions'],missed_maximum=actual<maximum,
+                         endpoint_regret=maximum-actual)
+            table.update({arm:grades[arm]['primary'] for arm in METHODS})
+        tables[name]=summaries
+    return tables
+
+
 def summarize():
     pin,batches,groups,ledger,delivery,gate=collect()
     if not batches:
@@ -143,6 +165,7 @@ def summarize():
     return dict(finished_batches=batches,all_batches_assigned=sum(len(b) for b in pin['batches']),
                 native=native,paired_comparisons=pairwise(groups,METHODS,aligned),
                 rpe_pairs=rpe_pairs(groups),rpe_offline_headroom=rpe_endpoint_headroom(groups),
+                rpe_gate_actions=rpe_gate_actions(groups),
                 bench_attribute_only=bench,delivery=delivery,gate=gate,
                 cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                           statuses=Counter(r['status'] for r in ledger),
