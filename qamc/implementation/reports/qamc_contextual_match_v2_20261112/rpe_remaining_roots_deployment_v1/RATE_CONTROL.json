@@ -1,0 +1,26 @@
+[
+  {
+    "deployment": 1,
+    "paired": 24,
+    "full": 11,
+    "positions": 139,
+    "actual": 90,
+    "assignment_count": 2496144,
+    "at_least_actual": 355966,
+    "mean": 84.29166666666667,
+    "min": 71,
+    "max": 98
+  },
+  {
+    "deployment": 2,
+    "paired": 24,
+    "full": 11,
+    "positions": 139,
+    "actual": 95,
+    "assignment_count": 2496144,
+    "at_least_actual": 28798,
+    "mean": 82.04166666666667,
+    "min": 64,
+    "max": 99
+  }
+]

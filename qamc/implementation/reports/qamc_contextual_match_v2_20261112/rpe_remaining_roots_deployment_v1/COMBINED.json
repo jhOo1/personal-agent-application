@@ -1,0 +1,330 @@
+{
+  "assigned": 42,
+  "common": 41,
+  "tables": {
+    "0/all/IPE_C": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 130,
+      "exact": 10,
+      "OPB": 45,
+      "UPB": 45,
+      "FM": 11
+    },
+    "0/B_only/IPE_C": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 19,
+      "exact": 0,
+      "OPB": 3,
+      "UPB": 18,
+      "FM": 0
+    },
+    "0/all/FULL": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 125,
+      "exact": 9,
+      "OPB": 58,
+      "UPB": 33,
+      "FM": 13
+    },
+    "0/B_only/FULL": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 19,
+      "exact": 0,
+      "OPB": 4,
+      "UPB": 17,
+      "FM": 0
+    },
+    "0/all/EMPTY": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 111,
+      "exact": 10,
+      "OPB": 16,
+      "UPB": 93,
+      "FM": 41
+    },
+    "0/B_only/EMPTY": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 17,
+      "exact": 0,
+      "OPB": 2,
+      "UPB": 21,
+      "FM": 1
+    },
+    "1/all/IPE_C": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 126,
+      "exact": 10,
+      "OPB": 41,
+      "UPB": 49,
+      "FM": 9
+    },
+    "1/B_only/IPE_C": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 21,
+      "exact": 1,
+      "OPB": 3,
+      "UPB": 16,
+      "FM": 1
+    },
+    "1/all/FULL": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 125,
+      "exact": 9,
+      "OPB": 58,
+      "UPB": 36,
+      "FM": 9
+    },
+    "1/B_only/FULL": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 20,
+      "exact": 1,
+      "OPB": 7,
+      "UPB": 14,
+      "FM": 0
+    },
+    "1/all/EMPTY": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 114,
+      "exact": 11,
+      "OPB": 16,
+      "UPB": 88,
+      "FM": 45
+    },
+    "1/B_only/EMPTY": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 20,
+      "exact": 1,
+      "OPB": 2,
+      "UPB": 17,
+      "FM": 2
+    },
+    "2/all/IPE_C": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 139,
+      "exact": 13,
+      "OPB": 37,
+      "UPB": 45,
+      "FM": 15
+    },
+    "2/B_only/IPE_C": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 16,
+      "exact": 0,
+      "OPB": 3,
+      "UPB": 22,
+      "FM": 2
+    },
+    "2/all/FULL": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 115,
+      "exact": 7,
+      "OPB": 61,
+      "UPB": 38,
+      "FM": 11
+    },
+    "2/B_only/FULL": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 17,
+      "exact": 0,
+      "OPB": 6,
+      "UPB": 19,
+      "FM": 1
+    },
+    "2/all/EMPTY": {
+      "roots": 41,
+      "positions": 226,
+      "matched": 120,
+      "exact": 12,
+      "OPB": 16,
+      "UPB": 87,
+      "FM": 42
+    },
+    "2/B_only/EMPTY": {
+      "roots": 8,
+      "positions": 38,
+      "matched": 16,
+      "exact": 0,
+      "OPB": 3,
+      "UPB": 21,
+      "FM": 2
+    },
+    "0/contains_C/IPE_C": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 69,
+      "exact": 0,
+      "OPB": 30,
+      "UPB": 16,
+      "FM": 8
+    },
+    "0/contains_C/FULL": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 69,
+      "exact": 0,
+      "OPB": 30,
+      "UPB": 16,
+      "FM": 8
+    },
+    "0/contains_C/EMPTY": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 51,
+      "exact": 0,
+      "OPB": 6,
+      "UPB": 57,
+      "FM": 37
+    },
+    "1/contains_C/IPE_C": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 69,
+      "exact": 0,
+      "OPB": 27,
+      "UPB": 16,
+      "FM": 5
+    },
+    "1/contains_C/FULL": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 69,
+      "exact": 0,
+      "OPB": 27,
+      "UPB": 16,
+      "FM": 5
+    },
+    "1/contains_C/EMPTY": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 54,
+      "exact": 0,
+      "OPB": 7,
+      "UPB": 54,
+      "FM": 41
+    },
+    "2/contains_C/IPE_C": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 73,
+      "exact": 1,
+      "OPB": 27,
+      "UPB": 13,
+      "FM": 9
+    },
+    "2/contains_C/FULL": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 75,
+      "exact": 1,
+      "OPB": 28,
+      "UPB": 12,
+      "FM": 8
+    },
+    "2/contains_C/EMPTY": {
+      "roots": 17,
+      "positions": 119,
+      "matched": 54,
+      "exact": 0,
+      "OPB": 8,
+      "UPB": 53,
+      "FM": 36
+    },
+    "0/all_A/IPE_C": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 42,
+      "exact": 10,
+      "OPB": 12,
+      "UPB": 11,
+      "FM": 3
+    },
+    "0/all_A/FULL": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 37,
+      "exact": 9,
+      "OPB": 24,
+      "UPB": 0,
+      "FM": 5
+    },
+    "0/all_A/EMPTY": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 43,
+      "exact": 10,
+      "OPB": 8,
+      "UPB": 15,
+      "FM": 3
+    },
+    "1/all_A/IPE_C": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 36,
+      "exact": 9,
+      "OPB": 11,
+      "UPB": 17,
+      "FM": 3
+    },
+    "1/all_A/FULL": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 36,
+      "exact": 8,
+      "OPB": 24,
+      "UPB": 6,
+      "FM": 4
+    },
+    "1/all_A/EMPTY": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 40,
+      "exact": 10,
+      "OPB": 7,
+      "UPB": 17,
+      "FM": 2
+    },
+    "2/all_A/IPE_C": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 50,
+      "exact": 12,
+      "OPB": 7,
+      "UPB": 10,
+      "FM": 4
+    },
+    "2/all_A/FULL": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 23,
+      "exact": 6,
+      "OPB": 27,
+      "UPB": 7,
+      "FM": 2
+    },
+    "2/all_A/EMPTY": {
+      "roots": 16,
+      "positions": 69,
+      "matched": 50,
+      "exact": 12,
+      "OPB": 5,
+      "UPB": 13,
+      "FM": 4
+    }
+  }
+}

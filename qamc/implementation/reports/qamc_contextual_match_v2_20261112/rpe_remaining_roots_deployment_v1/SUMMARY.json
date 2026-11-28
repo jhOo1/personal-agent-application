@@ -1,0 +1,445 @@
+{
+  "settled_fresh_waves": 2,
+  "statuses": {
+    "OK": 288
+  },
+  "reported_tokens": 1181167,
+  "unknown_usage": 0,
+  "tables": {
+    "archive/all": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 93,
+        "exact": 9,
+        "OPB": 20,
+        "UPB": 25,
+        "FM": 7
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 80,
+        "exact": 8,
+        "OPB": 5,
+        "UPB": 52,
+        "FM": 23
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 88,
+        "exact": 8,
+        "OPB": 26,
+        "UPB": 21,
+        "FM": 9
+      }
+    },
+    "archive/joint": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 93,
+        "exact": 9,
+        "OPB": 20,
+        "UPB": 25,
+        "FM": 7
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 80,
+        "exact": 8,
+        "OPB": 5,
+        "UPB": 52,
+        "FM": 23
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 88,
+        "exact": 8,
+        "OPB": 26,
+        "UPB": 21,
+        "FM": 9
+      }
+    },
+    "archive/B_only": {
+      "IPE_C": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 6,
+        "exact": 0,
+        "OPB": 1,
+        "UPB": 8,
+        "FM": 0
+      },
+      "TASK_ONLY": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 6,
+        "exact": 0,
+        "OPB": 1,
+        "UPB": 8,
+        "FM": 0
+      },
+      "RP_FULL": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 6,
+        "exact": 0,
+        "OPB": 1,
+        "UPB": 8,
+        "FM": 0
+      }
+    },
+    "archive/all_A": {
+      "IPE_C": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 40,
+        "exact": 9,
+        "OPB": 0,
+        "UPB": 4,
+        "FM": 0
+      },
+      "TASK_ONLY": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 37,
+        "exact": 8,
+        "OPB": 0,
+        "UPB": 8,
+        "FM": 0
+      },
+      "RP_FULL": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 35,
+        "exact": 8,
+        "OPB": 6,
+        "UPB": 0,
+        "FM": 2
+      }
+    },
+    "archive/contains_C": {
+      "IPE_C": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 47,
+        "exact": 0,
+        "OPB": 19,
+        "UPB": 13,
+        "FM": 7
+      },
+      "TASK_ONLY": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 37,
+        "exact": 0,
+        "OPB": 4,
+        "UPB": 36,
+        "FM": 23
+      },
+      "RP_FULL": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 47,
+        "exact": 0,
+        "OPB": 19,
+        "UPB": 13,
+        "FM": 7
+      }
+    },
+    "1/all": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 90,
+        "exact": 9,
+        "OPB": 19,
+        "UPB": 20,
+        "FM": 6
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 82,
+        "exact": 9,
+        "OPB": 9,
+        "UPB": 43,
+        "FM": 28
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 87,
+        "exact": 8,
+        "OPB": 24,
+        "UPB": 21,
+        "FM": 5
+      }
+    },
+    "1/joint": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 90,
+        "exact": 9,
+        "OPB": 19,
+        "UPB": 20,
+        "FM": 6
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 82,
+        "exact": 9,
+        "OPB": 9,
+        "UPB": 43,
+        "FM": 28
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 87,
+        "exact": 8,
+        "OPB": 24,
+        "UPB": 21,
+        "FM": 5
+      }
+    },
+    "1/B_only": {
+      "IPE_C": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 9,
+        "exact": 1,
+        "OPB": 1,
+        "UPB": 5,
+        "FM": 1
+      },
+      "TASK_ONLY": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 9,
+        "exact": 1,
+        "OPB": 1,
+        "UPB": 5,
+        "FM": 1
+      },
+      "RP_FULL": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 8,
+        "exact": 1,
+        "OPB": 1,
+        "UPB": 6,
+        "FM": 0
+      }
+    },
+    "1/all_A": {
+      "IPE_C": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 34,
+        "exact": 8,
+        "OPB": 3,
+        "UPB": 3,
+        "FM": 1
+      },
+      "TASK_ONLY": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 34,
+        "exact": 8,
+        "OPB": 3,
+        "UPB": 3,
+        "FM": 1
+      },
+      "RP_FULL": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 32,
+        "exact": 7,
+        "OPB": 8,
+        "UPB": 3,
+        "FM": 1
+      }
+    },
+    "1/contains_C": {
+      "IPE_C": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 47,
+        "exact": 0,
+        "OPB": 15,
+        "UPB": 12,
+        "FM": 4
+      },
+      "TASK_ONLY": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 39,
+        "exact": 0,
+        "OPB": 5,
+        "UPB": 35,
+        "FM": 26
+      },
+      "RP_FULL": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 47,
+        "exact": 0,
+        "OPB": 15,
+        "UPB": 12,
+        "FM": 4
+      }
+    },
+    "2/all": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 95,
+        "exact": 10,
+        "OPB": 19,
+        "UPB": 19,
+        "FM": 7
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 88,
+        "exact": 10,
+        "OPB": 5,
+        "UPB": 42,
+        "FM": 22
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 75,
+        "exact": 5,
+        "OPB": 30,
+        "UPB": 23,
+        "FM": 6
+      }
+    },
+    "2/joint": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 95,
+        "exact": 10,
+        "OPB": 19,
+        "UPB": 19,
+        "FM": 7
+      },
+      "TASK_ONLY": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 88,
+        "exact": 10,
+        "OPB": 5,
+        "UPB": 42,
+        "FM": 22
+      },
+      "RP_FULL": {
+        "tasks": 24,
+        "positions": 139,
+        "matched": 75,
+        "exact": 5,
+        "OPB": 30,
+        "UPB": 23,
+        "FM": 6
+      }
+    },
+    "2/B_only": {
+      "IPE_C": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 5,
+        "exact": 0,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 1
+      },
+      "TASK_ONLY": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 5,
+        "exact": 0,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 1
+      },
+      "RP_FULL": {
+        "tasks": 3,
+        "positions": 14,
+        "matched": 6,
+        "exact": 0,
+        "OPB": 2,
+        "UPB": 7,
+        "FM": 0
+      }
+    },
+    "2/all_A": {
+      "IPE_C": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 44,
+        "exact": 10,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "TASK_ONLY": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 44,
+        "exact": 10,
+        "OPB": 0,
+        "UPB": 0,
+        "FM": 0
+      },
+      "RP_FULL": {
+        "tasks": 10,
+        "positions": 44,
+        "matched": 21,
+        "exact": 5,
+        "OPB": 9,
+        "UPB": 7,
+        "FM": 1
+      }
+    },
+    "2/contains_C": {
+      "IPE_C": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 46,
+        "exact": 0,
+        "OPB": 18,
+        "UPB": 10,
+        "FM": 6
+      },
+      "TASK_ONLY": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 39,
+        "exact": 0,
+        "OPB": 4,
+        "UPB": 33,
+        "FM": 21
+      },
+      "RP_FULL": {
+        "tasks": 11,
+        "positions": 81,
+        "matched": 48,
+        "exact": 0,
+        "OPB": 19,
+        "UPB": 9,
+        "FM": 5
+      }
+    }
+  }
+}
