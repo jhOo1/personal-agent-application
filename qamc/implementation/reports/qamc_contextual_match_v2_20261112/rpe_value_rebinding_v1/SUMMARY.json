@@ -1,0 +1,172 @@
+{
+  "assigned": 24,
+  "actions": {
+    "GENERIC": {
+      "KEEP": 4,
+      "REPLACED": 19,
+      "INVALID": 1
+    },
+    "VALUE": {
+      "KEEP": 9,
+      "REPLACED": 6,
+      "INVALID": 9
+    }
+  },
+  "tables": {
+    "all": {
+      "IPE_C": {
+        "tasks": 24,
+        "positions": 139,
+        "match": 90,
+        "whole": 9,
+        "OPB": 19,
+        "UPB": 20,
+        "FM": 6
+      },
+      "GENERIC": {
+        "tasks": 24,
+        "positions": 139,
+        "match": 83,
+        "whole": 6,
+        "OPB": 26,
+        "UPB": 27,
+        "FM": 5
+      },
+      "VALUE": {
+        "tasks": 24,
+        "positions": 139,
+        "match": 79,
+        "whole": 7,
+        "OPB": 20,
+        "UPB": 27,
+        "FM": 7
+      }
+    },
+    "all_A": {
+      "IPE_C": {
+        "tasks": 10,
+        "positions": 44,
+        "match": 34,
+        "whole": 8,
+        "OPB": 3,
+        "UPB": 3,
+        "FM": 1
+      },
+      "GENERIC": {
+        "tasks": 10,
+        "positions": 44,
+        "match": 29,
+        "whole": 6,
+        "OPB": 6,
+        "UPB": 8,
+        "FM": 0
+      },
+      "VALUE": {
+        "tasks": 10,
+        "positions": 44,
+        "match": 28,
+        "whole": 7,
+        "OPB": 4,
+        "UPB": 6,
+        "FM": 1
+      }
+    },
+    "B_only": {
+      "IPE_C": {
+        "tasks": 3,
+        "positions": 14,
+        "match": 9,
+        "whole": 1,
+        "OPB": 1,
+        "UPB": 5,
+        "FM": 1
+      },
+      "GENERIC": {
+        "tasks": 3,
+        "positions": 14,
+        "match": 5,
+        "whole": 0,
+        "OPB": 1,
+        "UPB": 8,
+        "FM": 0
+      },
+      "VALUE": {
+        "tasks": 3,
+        "positions": 14,
+        "match": 5,
+        "whole": 0,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 1
+      }
+    },
+    "contains_C": {
+      "IPE_C": {
+        "tasks": 11,
+        "positions": 81,
+        "match": 47,
+        "whole": 0,
+        "OPB": 15,
+        "UPB": 12,
+        "FM": 4
+      },
+      "GENERIC": {
+        "tasks": 11,
+        "positions": 81,
+        "match": 49,
+        "whole": 0,
+        "OPB": 19,
+        "UPB": 11,
+        "FM": 5
+      },
+      "VALUE": {
+        "tasks": 11,
+        "positions": 81,
+        "match": 46,
+        "whole": 0,
+        "OPB": 15,
+        "UPB": 12,
+        "FM": 5
+      }
+    },
+    "flag_free": {
+      "IPE_C": {
+        "tasks": 16,
+        "positions": 97,
+        "match": 65,
+        "whole": 7,
+        "OPB": 13,
+        "UPB": 12,
+        "FM": 5
+      },
+      "GENERIC": {
+        "tasks": 16,
+        "positions": 97,
+        "match": 59,
+        "whole": 5,
+        "OPB": 19,
+        "UPB": 14,
+        "FM": 4
+      },
+      "VALUE": {
+        "tasks": 16,
+        "positions": 97,
+        "match": 61,
+        "whole": 6,
+        "OPB": 12,
+        "UPB": 16,
+        "FM": 5
+      }
+    }
+  },
+  "physical": {
+    "Edit": 48,
+    "Judge": 25
+  },
+  "statuses": {
+    "OK": 73
+  },
+  "reported_tokens": 281065,
+  "unknown_usage": 0,
+  "retries": 0
+}
