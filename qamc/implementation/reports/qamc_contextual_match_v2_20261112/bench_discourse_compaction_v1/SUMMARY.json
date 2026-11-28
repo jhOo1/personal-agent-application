@@ -1,0 +1,71 @@
+{
+  "common": {
+    "n": 8,
+    "metrics": {
+      "BASE": {
+        "primary": 11,
+        "positions": 15,
+        "MR": 0,
+        "MR_denominator": 25,
+        "completeness": 37,
+        "nonbold": 4,
+        "nonbold_denominator": 8
+      },
+      "REWRITE": {
+        "primary": 13,
+        "positions": 15,
+        "MR": 0,
+        "MR_denominator": 25,
+        "completeness": 35,
+        "nonbold": 6,
+        "nonbold_denominator": 8
+      },
+      "DELETE": {
+        "primary": 11,
+        "positions": 15,
+        "MR": 0,
+        "MR_denominator": 25,
+        "completeness": 37,
+        "nonbold": 4,
+        "nonbold_denominator": 8
+      }
+    }
+  },
+  "words": {
+    "REWRITE": 536,
+    "DELETE": 572,
+    "BASE": 585
+  },
+  "changed": {
+    "REWRITE": 6,
+    "DELETE": 2
+  },
+  "target": {
+    "miss/BASE/valid": 4,
+    "miss/BASE/follow": 0,
+    "miss/REWRITE/valid": 4,
+    "miss/REWRITE/follow": 2,
+    "miss/DELETE/valid": 4,
+    "miss/DELETE/follow": 0,
+    "fulfilled/BASE/valid": 2,
+    "fulfilled/BASE/follow": 2,
+    "fulfilled/REWRITE/valid": 2,
+    "fulfilled/REWRITE/follow": 2,
+    "fulfilled/DELETE/valid": 2,
+    "fulfilled/DELETE/follow": 2
+  },
+  "contracts": {
+    "OK": 6,
+    "NOT_ELIGIBLE": 2
+  },
+  "stages": {
+    "DiscourseProposal": 6,
+    "BenchAttrs": 48
+  },
+  "statuses": {
+    "OK": 54
+  },
+  "tokens": 32678,
+  "unknown_usage": 0,
+  "retries": 0
+}
