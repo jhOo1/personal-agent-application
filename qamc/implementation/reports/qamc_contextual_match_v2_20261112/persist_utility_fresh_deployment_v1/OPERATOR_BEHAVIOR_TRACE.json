@@ -1,0 +1,25 @@
+{
+  "independent_reviewers": 0,
+  "new_model_calls": 0,
+  "paired_full_then_selected": {
+    "MET/MET": 4,
+    "MITIGATION_ONLY/CONDITIONAL_ALTERNATIVE": 1,
+    "MITIGATION_ONLY/OMITTED": 1
+  },
+  "source_groups": 6,
+  "states": {
+    "FULL/MET": 4,
+    "FULL/MITIGATION_ONLY": 2,
+    "FULL/all_target_sources_delivered": 6,
+    "FULL/not_met_with_adapted_GPT_pass": 2,
+    "FULL/not_met_with_adapted_Qwen_pass": 2,
+    "FULL/not_met_with_all_sources_delivered": 2,
+    "SELECTED/CONDITIONAL_ALTERNATIVE": 1,
+    "SELECTED/MET": 4,
+    "SELECTED/OMITTED": 1,
+    "SELECTED/all_target_sources_delivered": 5,
+    "SELECTED/not_met_with_adapted_GPT_pass": 2,
+    "SELECTED/not_met_with_adapted_Qwen_pass": 1,
+    "SELECTED/not_met_with_all_sources_delivered": 1
+  }
+}

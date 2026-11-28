@@ -1,0 +1,15 @@
+# Six fresh utility pairs and the earliest actionable gap
+
+An execution-side diagnostic on six previously exposed sources drawn from the 18-root fresh paired deployment. I targeted food, participation and task feasibility conditions, including known cases. I recorded six case criteria from task cards before reading the anonymous drafts. The method mapping and old grades were opened after the judgments were saved. Prior project context made some examples recognizable. This is a single operator's diagnostic, not the independent review or a representative screen. The separate independent review packets remain unchanged.
+
+| Concrete task | What the compared final answers actually do | Evidence stage |
+| --- | --- | --- |
+| Low-fat pet food, birthday restaurant, seafood-free dinner, stovetop anniversary dish | The compared drafts in each of the four pairs realize the chosen feasibility criterion. Some give different menus or options. For the restaurant the location is unknown; both propose checking accessibility and the companion's dietary needs. | Both methods received all reviewed sources on these four roots. This is case-level protection under a limited criterion. |
+| Game gathering | SELECTED gives playable options and color-accessibility guidance, while omitting the host's cat and the participant's severe allergy. FULL notices both facts, but its main home-hosting mitigation relies on isolating the cat and cleaning; a different location is only optional. | The SELECTED answer lacks two critical sources. The full answer shows those inputs alone do not produce a safely specified primary venue. The adapted GPT-4.1 grade passes both; Qwen grades FULL 3 and SELECTED 2. |
+| Book-club invitation | Both drafts propose weekdays and vegan food. SELECTED asks about an alternative venue; FULL reassures the group it will plan around the allergy at home. Neither commits to an alternative or makes the primary venue conditional on a validated arrangement. | Both received all five reviewed sources. Both adapted graders pass both. This exposes a realization gap even with full source coverage; it does not count as a protected win. |
+
+Each arm meets the selected criteria on four of the six roots. The remaining two are different forms of unresolved participant constraints. Raising history allowance can address exposure for the game gathering and still leave the same primary venue choice unfixed. Conversely, further evidence selection alone has no source omission to recover in the book-club case.
+
+For a subsequent development intervention, require an observable change in the primary recommendation, with timing, menu and other already-correct conditions protected. Mentioning the constraint or listing a merely optional equivalent does not establish the targeted repair. A new multi-domain method still needs new generated answers, equal-budget controls and external baseline comparisons. This check makes zero new model requests and does not edit any benchmark score.
+
+[Scoped aggregate](OPERATOR_BEHAVIOR_TRACE.json) · [Receipt recomputation](operator_review_replay.py) · [Independent-review protocol](BLIND_FRESH_UTILITY.md)
