@@ -66,22 +66,26 @@ def replay(cards, jobs, selected, domains, strict):
 
 def main():
     parser = ArgumentParser(description=__doc__)
-    parser.add_argument("--rpe-only", action="store_true")
+    scope = parser.add_mutually_exclusive_group()
+    scope.add_argument("--rpe-only", action="store_true")
+    scope.add_argument("--domain", choices=("RPEval", "BenchPreS", "PersistBench"))
     args = parser.parse_args()
     pin, cards, jobs, selected = prepare()
     if pin != read(PRIVATE / "FROZEN.json"):
         raise ValueError("Original freeze no longer matches")
-    domains = {"RPEval"} if args.rpe_only else {"RPEval", "BenchPreS", "PersistBench"}
-    rows = replay(cards, jobs, selected, domains, strict=not args.rpe_only)
+    domain = "RPEval" if args.rpe_only else args.domain
+    strict = domain is None
+    domains = {"RPEval", "BenchPreS", "PersistBench"} if strict else {domain}
+    rows = replay(cards, jobs, selected, domains, strict=strict)
     group_scores = groups({uid: c for uid, c in cards.items() if c["domain"] in domains},
                           {"rows": [r for r in rows if r["benchmark"] in domains]})
-    if not args.rpe_only:
+    if strict:
         saved = read(PRIVATE / "RESULTS.json")
         keys = ("uid", "method", "actor_status", "actor_request_sha256", "answer", "score", "score_flags")
         normalize = lambda records: sorted([r[k] for k in keys] for r in records)
         if normalize(rows) != normalize(saved["rows"]):
             raise ValueError("Read-only reconstruction disagrees with saved scores")
-    print(json.dumps({"verified_settled": not args.rpe_only,
+    print(json.dumps({"verified_settled": strict,
                       "parsed_grades": dict(Counter(row["benchmark"] for row in rows if row["score"] is not None)),
                       "metric_valid_grades": dict(Counter(row["benchmark"] for row in rows
                           if metrics(cards[row["uid"]], row["score"]) is not None)),
