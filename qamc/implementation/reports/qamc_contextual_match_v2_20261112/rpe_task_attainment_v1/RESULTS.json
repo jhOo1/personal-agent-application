@@ -1,0 +1,252 @@
+{
+  "common": {
+    "tasks": 274,
+    "at_least": {
+      "0": {
+        "IPE_C": 274,
+        "TASK_ONLY": 274,
+        "RPR_PAPER_FULL": 274
+      },
+      "1/8": {
+        "IPE_C": 245,
+        "TASK_ONLY": 250,
+        "RPR_PAPER_FULL": 220
+      },
+      "1/7": {
+        "IPE_C": 243,
+        "TASK_ONLY": 248,
+        "RPR_PAPER_FULL": 220
+      },
+      "1/6": {
+        "IPE_C": 243,
+        "TASK_ONLY": 248,
+        "RPR_PAPER_FULL": 217
+      },
+      "1/5": {
+        "IPE_C": 241,
+        "TASK_ONLY": 246,
+        "RPR_PAPER_FULL": 214
+      },
+      "1/4": {
+        "IPE_C": 237,
+        "TASK_ONLY": 242,
+        "RPR_PAPER_FULL": 210
+      },
+      "2/7": {
+        "IPE_C": 235,
+        "TASK_ONLY": 235,
+        "RPR_PAPER_FULL": 208
+      },
+      "3/10": {
+        "IPE_C": 235,
+        "TASK_ONLY": 228,
+        "RPR_PAPER_FULL": 207
+      },
+      "1/3": {
+        "IPE_C": 233,
+        "TASK_ONLY": 226,
+        "RPR_PAPER_FULL": 205
+      },
+      "3/8": {
+        "IPE_C": 226,
+        "TASK_ONLY": 201,
+        "RPR_PAPER_FULL": 200
+      },
+      "2/5": {
+        "IPE_C": 225,
+        "TASK_ONLY": 195,
+        "RPR_PAPER_FULL": 199
+      },
+      "3/7": {
+        "IPE_C": 221,
+        "TASK_ONLY": 181,
+        "RPR_PAPER_FULL": 197
+      },
+      "4/9": {
+        "IPE_C": 220,
+        "TASK_ONLY": 173,
+        "RPR_PAPER_FULL": 196
+      },
+      "1/2": {
+        "IPE_C": 220,
+        "TASK_ONLY": 171,
+        "RPR_PAPER_FULL": 196
+      },
+      "5/9": {
+        "IPE_C": 195,
+        "TASK_ONLY": 143,
+        "RPR_PAPER_FULL": 172
+      },
+      "4/7": {
+        "IPE_C": 194,
+        "TASK_ONLY": 139,
+        "RPR_PAPER_FULL": 171
+      },
+      "3/5": {
+        "IPE_C": 184,
+        "TASK_ONLY": 133,
+        "RPR_PAPER_FULL": 160
+      },
+      "5/8": {
+        "IPE_C": 164,
+        "TASK_ONLY": 123,
+        "RPR_PAPER_FULL": 138
+      },
+      "2/3": {
+        "IPE_C": 155,
+        "TASK_ONLY": 121,
+        "RPR_PAPER_FULL": 129
+      },
+      "5/7": {
+        "IPE_C": 120,
+        "TASK_ONLY": 111,
+        "RPR_PAPER_FULL": 92
+      },
+      "3/4": {
+        "IPE_C": 104,
+        "TASK_ONLY": 107,
+        "RPR_PAPER_FULL": 76
+      },
+      "4/5": {
+        "IPE_C": 100,
+        "TASK_ONLY": 107,
+        "RPR_PAPER_FULL": 72
+      },
+      "6/7": {
+        "IPE_C": 96,
+        "TASK_ONLY": 103,
+        "RPR_PAPER_FULL": 68
+      },
+      "7/8": {
+        "IPE_C": 95,
+        "TASK_ONLY": 103,
+        "RPR_PAPER_FULL": 66
+      },
+      "9/10": {
+        "IPE_C": 95,
+        "TASK_ONLY": 103,
+        "RPR_PAPER_FULL": 64
+      },
+      "1": {
+        "IPE_C": 95,
+        "TASK_ONLY": 103,
+        "RPR_PAPER_FULL": 64
+      }
+    }
+  },
+  "no_known_flags": {
+    "tasks": 184,
+    "at_least": {
+      "0": {
+        "IPE_C": 184,
+        "TASK_ONLY": 184,
+        "RPR_PAPER_FULL": 184
+      },
+      "1/7": {
+        "IPE_C": 169,
+        "TASK_ONLY": 176,
+        "RPR_PAPER_FULL": 150
+      },
+      "1/6": {
+        "IPE_C": 169,
+        "TASK_ONLY": 176,
+        "RPR_PAPER_FULL": 147
+      },
+      "1/5": {
+        "IPE_C": 167,
+        "TASK_ONLY": 174,
+        "RPR_PAPER_FULL": 144
+      },
+      "1/4": {
+        "IPE_C": 163,
+        "TASK_ONLY": 170,
+        "RPR_PAPER_FULL": 140
+      },
+      "2/7": {
+        "IPE_C": 161,
+        "TASK_ONLY": 163,
+        "RPR_PAPER_FULL": 138
+      },
+      "3/10": {
+        "IPE_C": 161,
+        "TASK_ONLY": 158,
+        "RPR_PAPER_FULL": 138
+      },
+      "1/3": {
+        "IPE_C": 159,
+        "TASK_ONLY": 156,
+        "RPR_PAPER_FULL": 136
+      },
+      "3/8": {
+        "IPE_C": 154,
+        "TASK_ONLY": 140,
+        "RPR_PAPER_FULL": 132
+      },
+      "2/5": {
+        "IPE_C": 153,
+        "TASK_ONLY": 134,
+        "RPR_PAPER_FULL": 131
+      },
+      "3/7": {
+        "IPE_C": 151,
+        "TASK_ONLY": 128,
+        "RPR_PAPER_FULL": 129
+      },
+      "4/9": {
+        "IPE_C": 151,
+        "TASK_ONLY": 121,
+        "RPR_PAPER_FULL": 128
+      },
+      "1/2": {
+        "IPE_C": 151,
+        "TASK_ONLY": 119,
+        "RPR_PAPER_FULL": 128
+      },
+      "5/9": {
+        "IPE_C": 138,
+        "TASK_ONLY": 107,
+        "RPR_PAPER_FULL": 116
+      },
+      "4/7": {
+        "IPE_C": 137,
+        "TASK_ONLY": 103,
+        "RPR_PAPER_FULL": 115
+      },
+      "3/5": {
+        "IPE_C": 127,
+        "TASK_ONLY": 98,
+        "RPR_PAPER_FULL": 104
+      },
+      "5/8": {
+        "IPE_C": 122,
+        "TASK_ONLY": 97,
+        "RPR_PAPER_FULL": 99
+      },
+      "2/3": {
+        "IPE_C": 113,
+        "TASK_ONLY": 95,
+        "RPR_PAPER_FULL": 90
+      },
+      "5/7": {
+        "IPE_C": 95,
+        "TASK_ONLY": 91,
+        "RPR_PAPER_FULL": 72
+      },
+      "3/4": {
+        "IPE_C": 85,
+        "TASK_ONLY": 90,
+        "RPR_PAPER_FULL": 62
+      },
+      "9/10": {
+        "IPE_C": 81,
+        "TASK_ONLY": 90,
+        "RPR_PAPER_FULL": 58
+      },
+      "1": {
+        "IPE_C": 81,
+        "TASK_ONLY": 90,
+        "RPR_PAPER_FULL": 58
+      }
+    }
+  }
+}
