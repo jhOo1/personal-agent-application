@@ -22,5 +22,6 @@ case "${1:-}" in
   crossover) entry=crossover.py; shift ;;
   crossover-audit) entry=crossover_audit.py; shift ;;
   selected-planning) entry=selected_planning.py; shift ;;
+  factorial) entry=factorial.py; shift ;;
 esac
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/evo_qamc_fit_v1/$entry" "$@"
