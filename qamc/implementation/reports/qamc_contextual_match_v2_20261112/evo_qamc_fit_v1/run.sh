@@ -47,6 +47,7 @@ case "${1:-}" in
   backbone-receipt-replay) entry=backbone_receipt_replay.py; shift ;;
   use-only-qualification) entry=use_only_qualification.py; shift ;;
   auxiliary-fact-probe) entry=auxiliary_fact_probe.py; shift ;;
+  decision-quarantined-synthesis) entry=decision_quarantined_synthesis.py; shift ;;
   blind-behavior-packet) entry=blind_behavior_packet.py; shift ;;
   blind-behavior-readout) entry=blind_behavior_readout.py; shift ;;
 
