@@ -36,3 +36,7 @@ QAMC-v3.2 建议补齐两格。在 Self-ReCheck 已选出的相同原文子集�
 仅在选中集合完全等于原输入时复用首轮实际终答和评分，保留既有失败。原生评分继续依据完整原始位置，筛掉的来源不能从分母消失。先完成统一外法、任务先行和组合，再推进筛选后规划。开发任务、原评分和已曝光边界沿用。
 
 命令为 `bash run.sh selected-planning freeze`、`bash run.sh selected-planning check` 和 `bash run.sh selected-planning run`。结算加汇总开关 `--selected-planning`。
+
+## 确定下一代父候选
+
+`python select_parents.py <已结算的 SUMMARY.json>` 在共同有效题上比较统一方法，输出综合分领先者及各项保护指标领先者，剔除被另一方法全面支配的候选。专项参考组合留在结果表，用于衡量差距。选择某个父候选用于研发不等于证明可部署优势。仍需核对全分配区间、评分旗标及真实终答差异；空切片不产生跨基准排名。

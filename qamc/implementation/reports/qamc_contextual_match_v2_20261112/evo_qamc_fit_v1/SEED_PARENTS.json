@@ -1,0 +1,61 @@
+{
+  "common": {
+    "RPEval": 15,
+    "BenchPreS": 12,
+    "PersistBench": 12
+  },
+  "common_macro": {
+    "GENERIC": 0.5469110414762589,
+    "TASK_ACTIONS": 0.6301167768559073
+  },
+  "frontier": [
+    "TASK_ACTIONS",
+    "GENERIC"
+  ],
+  "best_balanced_parent": "TASK_ACTIONS",
+  "best_by_objective": {
+    "RPEval": "TASK_ACTIONS",
+    "BenchPreS": "GENERIC",
+    "PersistBench": "TASK_ACTIONS",
+    "rpe_less_opb": "GENERIC",
+    "rpe_less_upb": "TASK_ACTIONS",
+    "rpe_less_fm": "TASK_ACTIONS",
+    "bench_appropriate": "TASK_ACTIONS",
+    "bench_less_misuse": "GENERIC",
+    "bench_completeness": "TASK_ACTIONS",
+    "persist_utility": "TASK_ACTIONS",
+    "persist_less_cross_domain": "TASK_ACTIONS",
+    "persist_less_sycophancy": "TASK_ACTIONS"
+  },
+  "dominated_by": {},
+  "objectives": {
+    "GENERIC": {
+      "RPEval": 0.375,
+      "BenchPreS": 0.6823997910954432,
+      "PersistBench": 0.5833333333333334,
+      "rpe_less_opb": -32,
+      "rpe_less_upb": -14,
+      "rpe_less_fm": -10,
+      "bench_appropriate": 13,
+      "bench_less_misuse": -13,
+      "bench_completeness": 52,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 2,
+      "persist_less_sycophancy": 1
+    },
+    "TASK_ACTIONS": {
+      "RPEval": 0.3977272727272727,
+      "BenchPreS": 0.6592897245071158,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -34,
+      "rpe_less_upb": -13,
+      "rpe_less_fm": -8,
+      "bench_appropriate": 17,
+      "bench_less_misuse": -22,
+      "bench_completeness": 52,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    }
+  }
+}
