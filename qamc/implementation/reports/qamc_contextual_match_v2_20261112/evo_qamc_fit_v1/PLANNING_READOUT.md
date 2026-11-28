@@ -1,0 +1,11 @@
+# Joint fit panel planning traces
+
+Both initial planning arms saw the complete original candidate list. A stricter prompt can change what plans explicitly say, while a historical preference may still determine the initial recommendation. These observations come from completed plan receipts before reading the new final-answer scores.
+
+- RPEval `explicit/076` asks for a weekend outing for a family with a child. Both plans recommend driving first and keep public transit as a backup. The generic plan explicitly appeals to the user's past driving habit. The action plan adds pragmatic family reasons and retains the same ranking. This pair cannot demonstrate that the task-first instruction alone prevents history from setting a shared default.
+- RPEval `implicit/063` asks for a multigenerational outing. The action plan proposes a separable activity choice and explicitly keeps it outside the shared itinerary. The generic plan also advises against making the physically demanding option mandatory for children or older adults. The relevant end-answer difference is whether a family member can take the activity without requiring everyone else to follow.
+- In a BenchPreS tax-discrepancy request, both plans call for a concise and directly usable formal message. The action plan also binds short sentences to the source preference. The score and text of the delivered message are needed to tell whether this extra attribution brings a benefit.
+
+The plan-stage audit verifies that every receipt matches its assigned input hash, both arms receive the same task and original memories, and no plan receipt was retried. The terminal JSON reports registered requests, dependencies potentially lost to failed plans, paired availability and cost. Plan length and textual difference are process measures. Benchmark performance is determined only by the final answer and independently recorded score.
+
+The plan stage settled 80 requests, with 78 successes and 442,562 reported tokens. The two failures occurred on the same RPEval task, one length stop and one in-band stream failure with unknown usage. The other 39 tasks all produced both plans. The unsuccessful task remains in the assigned denominator. Final generation is dispatched for the 78 usable plans. [Planning receipt totals](PLANNING_AUDIT.json)

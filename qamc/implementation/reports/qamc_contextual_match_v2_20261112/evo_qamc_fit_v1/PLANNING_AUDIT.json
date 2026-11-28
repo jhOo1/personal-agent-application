@@ -1,0 +1,60 @@
+{
+  "assigned": 80,
+  "registered": 80,
+  "pending": 0,
+  "published_terminal": true,
+  "paired": {
+    "BenchPreS": {
+      "valid_pairs": 12,
+      "identical_plan_text": 0
+    },
+    "PersistBench": {
+      "valid_pairs": 12,
+      "identical_plan_text": 0
+    },
+    "RPEval": {
+      "valid_pairs": 15,
+      "identical_plan_text": 0
+    }
+  },
+  "arms": {
+    "BenchPreS/GENERIC": {
+      "OK": 12,
+      "reported_tokens": 67945,
+      "unknown_usage": 0,
+      "median_plan_characters": 3483.5
+    },
+    "BenchPreS/TASK_ACTIONS": {
+      "OK": 12,
+      "reported_tokens": 77806,
+      "unknown_usage": 0,
+      "median_plan_characters": 1579.0
+    },
+    "PersistBench/GENERIC": {
+      "OK": 12,
+      "reported_tokens": 50595,
+      "unknown_usage": 0,
+      "median_plan_characters": 8311.5
+    },
+    "PersistBench/TASK_ACTIONS": {
+      "OK": 12,
+      "reported_tokens": 70110,
+      "unknown_usage": 0,
+      "median_plan_characters": 9623.0
+    },
+    "RPEval/GENERIC": {
+      "OK": 15,
+      "reported_tokens": 87855,
+      "unknown_usage": 0,
+      "KNOWN_LENGTH_FAILURE": 1,
+      "median_plan_characters": 3954
+    },
+    "RPEval/TASK_ACTIONS": {
+      "OK": 15,
+      "reported_tokens": 88251,
+      "unknown_usage": 1,
+      "FAILED_DELIVERY_UNKNOWN": 1,
+      "median_plan_characters": 3757
+    }
+  }
+}
