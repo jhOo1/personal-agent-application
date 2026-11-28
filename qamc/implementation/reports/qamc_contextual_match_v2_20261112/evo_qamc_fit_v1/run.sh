@@ -44,6 +44,7 @@ case "${1:-}" in
   backbone-interface) entry=backbone_interface.py; shift ;;
   backbone-interface-readout) entry=backbone_interface_readout.py; shift ;;
   backbone-behavior-snapshot) entry=backbone_behavior_snapshot.py; shift ;;
+  backbone-receipt-replay) entry=backbone_receipt_replay.py; shift ;;
   blind-behavior-packet) entry=blind_behavior_packet.py; shift ;;
   blind-behavior-readout) entry=blind_behavior_readout.py; shift ;;
 
