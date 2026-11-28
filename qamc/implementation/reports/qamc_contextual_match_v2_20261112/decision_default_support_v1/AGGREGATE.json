@@ -1,0 +1,239 @@
+{
+  "assigned": 6,
+  "automatic_retries": 0,
+  "common": 6,
+  "exact_reuse": {
+    "DefaultSupportActor": {},
+    "RPEvalJudge": {}
+  },
+  "excluded": [],
+  "paired": {
+    "ARCHIVE": {
+      "tie": 5,
+      "win": 1
+    },
+    "DIRECT": {
+      "tie": 5,
+      "win": 1
+    }
+  },
+  "physical_calls": 24,
+  "rows": [
+    {
+      "case": "implicit/094",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 0,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 0
+        },
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 0
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 1,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 4,
+          "primary": 0
+        }
+      },
+      "new_flags": {
+        "DIRECT": [],
+        "SUPPORTED_DEFAULT": []
+      }
+    },
+    {
+      "case": "implicit/142",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 1,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 0
+        },
+        "DIRECT": {
+          "FM": 1,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 0
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 1,
+          "OPB": 4,
+          "UPB": 0,
+          "positions": 5,
+          "primary": 0
+        }
+      },
+      "new_flags": {
+        "DIRECT": [],
+        "SUPPORTED_DEFAULT": []
+      }
+    },
+    {
+      "case": "explicit/116",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 1,
+          "positions": 6,
+          "primary": 4
+        },
+        "DIRECT": {
+          "FM": 1,
+          "OPB": 2,
+          "UPB": 1,
+          "positions": 6,
+          "primary": 4
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        }
+      },
+      "new_flags": {
+        "DIRECT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "SUPPORTED_DEFAULT": []
+      }
+    },
+    {
+      "case": "explicit/047",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "positions": 6,
+          "primary": 4
+        }
+      },
+      "new_flags": {
+        "DIRECT": [],
+        "SUPPORTED_DEFAULT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      }
+    },
+    {
+      "case": "implicit/099",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 1,
+          "OPB": 2,
+          "UPB": 2,
+          "positions": 6,
+          "primary": 3
+        },
+        "DIRECT": {
+          "FM": 2,
+          "OPB": 1,
+          "UPB": 3,
+          "positions": 6,
+          "primary": 3
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "positions": 6,
+          "primary": 4
+        }
+      },
+      "new_flags": {
+        "DIRECT": [],
+        "SUPPORTED_DEFAULT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      }
+    },
+    {
+      "case": "explicit/006",
+      "metrics": {
+        "ARCHIVE": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        },
+        "DIRECT": {
+          "FM": 1,
+          "OPB": 1,
+          "UPB": 1,
+          "positions": 6,
+          "primary": 4
+        },
+        "SUPPORTED_DEFAULT": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "positions": 6,
+          "primary": 4
+        }
+      },
+      "new_flags": {
+        "DIRECT": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "SUPPORTED_DEFAULT": []
+      }
+    }
+  ],
+  "statuses": {
+    "OK": 24
+  },
+  "tokens": 54613,
+  "totals": {
+    "ARCHIVE": {
+      "FM": 2,
+      "OPB": 13,
+      "UPB": 3,
+      "positions": 33,
+      "primary": 15
+    },
+    "DIRECT": {
+      "FM": 5,
+      "OPB": 14,
+      "UPB": 5,
+      "positions": 33,
+      "primary": 15
+    },
+    "SUPPORTED_DEFAULT": {
+      "FM": 2,
+      "OPB": 13,
+      "UPB": 4,
+      "positions": 33,
+      "primary": 16
+    }
+  },
+  "usage_unknown": 0
+}
