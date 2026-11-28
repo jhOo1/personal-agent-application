@@ -54,6 +54,7 @@ case "${1:-}" in
   profile-evidence-restoration) entry=profile_evidence_restoration.py; shift ;;
   profile-evidence-audit) entry=profile_evidence_audit.py; shift ;;
   profile-evidence-label-audit) entry=profile_evidence_label_audit.py; shift ;;
+  profile-evidence-replay) entry=profile_evidence_replay.py; shift ;;
   blind-behavior-packet) entry=blind_behavior_packet.py; shift ;;
   blind-behavior-readout) entry=blind_behavior_readout.py; shift ;;
 
