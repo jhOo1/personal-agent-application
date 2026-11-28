@@ -18,6 +18,7 @@ case "${1:-}" in
   external-delivery-stage) entry=external_delivery_stage.py; shift ;;
   self-recheck) entry=self_recheck.py; shift ;;
   task-only) entry=task_only.py; shift ;;
+  task-only-audit) entry=task_only_audit.py; shift ;;
   crossover) entry=crossover.py; shift ;;
   selected-planning) entry=selected_planning.py; shift ;;
 esac

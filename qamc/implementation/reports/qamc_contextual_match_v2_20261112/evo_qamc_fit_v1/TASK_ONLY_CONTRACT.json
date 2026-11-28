@@ -1,0 +1,8 @@
+{
+  "assigned": 40,
+  "planning_requests_verified": 40,
+  "plan_receipt_status": {
+    "OK": 40
+  },
+  "actor_requests_verified": 40
+}
