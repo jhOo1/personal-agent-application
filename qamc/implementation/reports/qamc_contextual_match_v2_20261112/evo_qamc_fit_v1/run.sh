@@ -54,6 +54,7 @@ case "${1:-}" in
   current-commitment-report) entry=../current_commitment_gate_v1/settle.py; shift ;;
   persist-screened-preflight) entry=../persist_screened_roots_extension_v1/verify_screened.py; shift ;;
   persist-screened-first-draw) entry=../persist_screened_roots_extension_v1/first_draw.py; shift ;;
+  persist-screened-report) entry=../persist_screened_roots_extension_v1/readout.py; shift ;;
   task-message-boundary) entry=task_message_boundary.py; shift ;;
   task-message-pairs) entry=task_message_boundary_pairs.py; shift ;;
   task-message-replay) entry=task_message_boundary_replay.py; shift ;;
