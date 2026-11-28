@@ -44,7 +44,7 @@ def macro(summary, methods):
     ref = 'SELF_RECHECK' if 'SELF_RECHECK' in methods else 'GENERIC'
     gains = {}
     if ref in combined:
-        for arm in ('TASK_ACTIONS', 'GENERIC'):
+        for arm in methods[1:]:
             if arm != ref and arm in combined:
                 changes = {d: domain_scores[arm][d]-domain_scores[ref][d] for d in domains}
                 gains[arm] = dict(by_domain=changes, worst_allowed_weights=(sum(changes.values())+min(changes.values()))/4)
@@ -54,15 +54,20 @@ def macro(summary, methods):
 def main():
     cli = ArgumentParser(description=__doc__)
     cli.add_argument('--external', action='store_true')
-    external = cli.parse_args().external
+    cli.add_argument('--task-only', action='store_true')
+    options = cli.parse_args()
     plan = json.loads((RUN/'private/FROZEN.json').read_text())
     result = json.loads((RUN/'RESULTS.json').read_text())
     methods = SEEDS
-    if external:
-        extra = json.loads((RUN.with_name(RUN.name+'_self_recheck')/'RESULTS.json').read_text())
-        result['rows'].extend(extra['rows'])
-        result['ledger'].extend(extra['ledger'])
-        methods += ('SELF_RECHECK',)
+    for enabled, suffix, method in (
+        (options.external, '_self_recheck', 'SELF_RECHECK'),
+        (options.task_only, '_task_only', 'TASK_ONLY'),
+    ):
+        if enabled:
+            extra = json.loads((RUN.with_name(RUN.name+suffix)/'RESULTS.json').read_text())
+            result['rows'].extend(extra['rows'])
+            result['ledger'].extend(extra['ledger'])
+            methods += (method,)
     active = methods[1:]
     outcomes = {(row['uid'], row['method']): row for row in result['rows']}
     assert len(outcomes) == len(result['rows']) == len(plan['rows']) * len(active)
