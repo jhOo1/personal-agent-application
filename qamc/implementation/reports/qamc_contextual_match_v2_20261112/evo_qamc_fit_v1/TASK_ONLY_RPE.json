@@ -1,0 +1,169 @@
+{
+  "assigned": 16,
+  "common": {
+    "all": 15,
+    "contains_C": 4,
+    "unflagged": 7,
+    "all_A": 5,
+    "B_only": 6
+  },
+  "paired": {
+    "all": {
+      "BASE": {
+        "primary": 46,
+        "positions": 88,
+        "OPB": 15,
+        "UPB": 19,
+        "FM": 3
+      },
+      "GENERIC": {
+        "primary": 33,
+        "positions": 88,
+        "OPB": 32,
+        "UPB": 14,
+        "FM": 10
+      },
+      "TASK_ACTIONS": {
+        "primary": 35,
+        "positions": 88,
+        "OPB": 34,
+        "UPB": 13,
+        "FM": 8
+      },
+      "TASK_ONLY": {
+        "primary": 38,
+        "positions": 88,
+        "OPB": 24,
+        "UPB": 16,
+        "FM": 8
+      }
+    },
+    "all_A": {
+      "BASE": {
+        "primary": 7,
+        "positions": 25,
+        "OPB": 5,
+        "UPB": 9,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 0,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 4
+      },
+      "TASK_ACTIONS": {
+        "primary": 0,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 3
+      },
+      "TASK_ONLY": {
+        "primary": 3,
+        "positions": 25,
+        "OPB": 11,
+        "UPB": 3,
+        "FM": 3
+      }
+    },
+    "B_only": {
+      "BASE": {
+        "primary": 26,
+        "positions": 38,
+        "OPB": 2,
+        "UPB": 7,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 19,
+        "positions": 38,
+        "OPB": 9,
+        "UPB": 8,
+        "FM": 4
+      },
+      "TASK_ACTIONS": {
+        "primary": 21,
+        "positions": 38,
+        "OPB": 10,
+        "UPB": 7,
+        "FM": 2
+      },
+      "TASK_ONLY": {
+        "primary": 22,
+        "positions": 38,
+        "OPB": 4,
+        "UPB": 11,
+        "FM": 2
+      }
+    },
+    "contains_C": {
+      "BASE": {
+        "primary": 13,
+        "positions": 25,
+        "OPB": 8,
+        "UPB": 3,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 14,
+        "positions": 25,
+        "OPB": 11,
+        "UPB": 0,
+        "FM": 2
+      },
+      "TASK_ACTIONS": {
+        "primary": 14,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 0,
+        "FM": 3
+      },
+      "TASK_ONLY": {
+        "primary": 13,
+        "positions": 25,
+        "OPB": 9,
+        "UPB": 2,
+        "FM": 3
+      }
+    },
+    "unflagged": {
+      "BASE": {
+        "primary": 17,
+        "positions": 44,
+        "OPB": 12,
+        "UPB": 8,
+        "FM": 3
+      },
+      "GENERIC": {
+        "primary": 15,
+        "positions": 44,
+        "OPB": 17,
+        "UPB": 5,
+        "FM": 6
+      },
+      "TASK_ACTIONS": {
+        "primary": 15,
+        "positions": 44,
+        "OPB": 18,
+        "UPB": 5,
+        "FM": 6
+      },
+      "TASK_ONLY": {
+        "primary": 17,
+        "positions": 44,
+        "OPB": 12,
+        "UPB": 8,
+        "FM": 5
+      }
+    }
+  },
+  "successful_actors": 16,
+  "usable_direct_grades": 16,
+  "physical_scoring": 16,
+  "status": {
+    "OK": 16
+  },
+  "reported_tokens": 63551
+}
