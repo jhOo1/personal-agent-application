@@ -16,6 +16,12 @@ Consider reducing BenchPreS to a secondary guardrail if the paper's central clai
 
 PairPref free generation is the first replacement to qualify for a claim about contextual reversal. The preference and request stay fixed while the situation changes, and the generated pair is scored for matched preference use and task fit. Its published procedure excludes answers that hedge with both branches. Qualify downloadable author data and scorer reproducibility, group by target preference, report coverage before hedging exclusions, and run the external comparator under identical rules. No released runnable data or scorer was verified in this check. PairPref does not directly substitute for a third-party-expression evaluation. Poor scores on an existing track and better scores on a replacement are insufficient grounds for removing a track.
 
+## Joint review and PairPref asset check
+
+QAMC-v3.2 independently agreed that the zero-flip audit warrants excluding BenchPreS from a direct test of contextual reversal while retaining its formal-delivery track. The PairPref authors name the evaluation file and the 1,227-pair export in Appendix B. The arXiv source archive was downloaded and its 60 member names examined. It did not contain a JSONL, CSV, Python file or ZIP. Searches for an author distribution of the named export or a runnable scorer did not yield a verified source. The authors also state in Appendix H that their human audit did not annotate freely generated answers. These facts leave the applicability design promising and the replacement unqualified.
+
+If the assets become available, compare the author's stronger Mitigate prompt (not just plain full-history generation) on the same cases and evaluator. Keep the author's retained-pair results alongside total assigned coverage, with the frequency of the hedging exclusion and a missingness sensitivity. The reported mitigation comparison is separate from the default table, and model substitutions require new protocol-matched results.
+
 ## Evidence
 
 - [Matched exposure results](EXPOSURE_FINAL.md)
