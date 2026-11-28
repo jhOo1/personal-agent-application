@@ -18,6 +18,7 @@ original = {(r["uid"],r["repeat"]):r for r in load(runs/"persist_exposure_fr3_v1
 fresh_dir = runs/"persist_utility_fresh_deployment_v1/private"
 route, selector, actors = [records(s) for s in ("Route","Select","Actor")]
 decisions = {}
+count_only = {}
 for uid, rep in original:
     if rep != 1:
         continue
@@ -39,6 +40,7 @@ for uid, rep in original:
     else:
         primary = prior(2)
     decisions[uid] = use_reserve(primary,reserve)
+    count_only[uid] = bool(primary and reserve and len(reserve)>len(primary))
 assert len(decisions) == 49
 grades = {(r["uid"],r["repeat"]):r for r in load(runs/"persist_selected_crossjudge_fr3_v1/private/RESULTS.json")["rows"] if r["arm"]=="SELECTED"}
 fresh = {r["uid"]:r for r in load(fresh_dir/"SETTLED.json")["rows"] if r["arm"]=="SELECTED"}
@@ -61,4 +63,19 @@ for uid, changed in decisions.items():
         if changed:
             a,b = outcome(earlier),outcome(later)
             counts["switch_" + ("unknown" if None in (a,b) else "tie" if a==b else "win" if a else "loss")] += 1
-print(json.dumps(dict(assigned=49,switches=sorted(switches),tables=tables),indent=2))
+if "--count-control" in sys.argv:
+    extra = []
+    for uid in sorted(decisions):
+        if count_only[uid] == decisions[uid]:
+            continue
+        assert count_only[uid]
+        earlier = grades[uid,1]
+        latest = fresh.get(uid)
+        primary = ({"GPT": latest["GPT"], "Qwen":latest["Qwen"]} if latest else
+                   {"GPT":grades[uid,2]["old"], "Qwen":grades[uid,2]["qwen"]})
+        extra.append(dict(track=cases[uid]["category"], primary=primary,
+                          reserve={"GPT":earlier["old"],"Qwen":earlier["qwen"]}))
+    print(json.dumps(dict(assigned=len(decisions), nested_changes=sum(decisions.values()),
+                          count_changes=sum(count_only.values()), extra=extra),indent=2))
+else:
+    print(json.dumps(dict(assigned=49,switches=sorted(switches),tables=tables),indent=2))
