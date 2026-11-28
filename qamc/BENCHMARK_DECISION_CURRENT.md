@@ -79,3 +79,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [桌游人数与场地前提的固定成稿对照](implementation/reports/qamc_contextual_match_v2_20261112/board_game_action_factorial_v2/RESULTS.md)在同一归档稿分别修复两项行动。不论只修游戏、只修场地还是全修，Qwen 都是 2→3；GPT-4.1 全部为 3。Qwen 的通过不能验证两个问题都已解决。它也无法唯一解释上一轮联合块的分差。6 个新评分、0 Actor，原评分保留。
 
 [RPEval 同数量软偏好决策覆盖](implementation/reports/qamc_contextual_match_v2_20261112/soft_decision_coverage_v1/RESULTS.md)在 9 个成对来源组结算。覆盖不同段落与普通前两名逐题 Match 全平，两个选材变化来自同一个同事聚餐来源。两臂全 A 均 9/36，IPE-C 30/36；新增 B 均 31/51，与 IPE-C 一致。规划器在全 A 两臂各送入 14 条作者 A。关闭本次扩展准入，保留原 IPE-C。
+
+[RPEval 嵌套历史的终答四格](implementation/reports/qamc_contextual_match_v2_20261112/nested_answer_exposure_factorial_v1/RESULTS.md)验证 6 个曝光来源。三个含 C 来源加入新增记录后实质保护外卖过敏、零购置乐器、无香和冷色照明，Match 无史 7/20→仅新增 11/20、仅共享 8/20→全史 12/20，仍低于 IPE-C 13/20。三个仅新增 B 的来源各臂 9/17。隔离共享历史没有独立优势，保留行为诊断，不将同题历史差分用于部署。

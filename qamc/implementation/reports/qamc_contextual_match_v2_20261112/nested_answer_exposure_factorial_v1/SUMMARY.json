@@ -1,0 +1,538 @@
+{
+  "table": {
+    "soft": {
+      "coverage": {
+        "assigned": 3,
+        "STRIPPED/scored": 3,
+        "SHARED/scored": 3,
+        "ADDED/scored": 3,
+        "FULL/scored": 3,
+        "IPE_C/scored": 3,
+        "RPR_PAPER_FULL/scored": 3,
+        "four_cells": 3,
+        "four_cells_unflagged": 2
+      },
+      "STRIPPED": {
+        "matched": 9,
+        "positions": 17,
+        "OPB": 2,
+        "UPB": 7,
+        "FM": 3
+      },
+      "unflagged/STRIPPED": {
+        "matched": 6,
+        "positions": 12,
+        "OPB": 1,
+        "UPB": 5,
+        "FM": 2
+      },
+      "SHARED": {
+        "matched": 9,
+        "positions": 17,
+        "OPB": 6,
+        "UPB": 2,
+        "FM": 2
+      },
+      "unflagged/SHARED": {
+        "matched": 6,
+        "positions": 12,
+        "OPB": 4,
+        "UPB": 1,
+        "FM": 1
+      },
+      "ADDED": {
+        "matched": 9,
+        "positions": 17,
+        "OPB": 4,
+        "UPB": 3,
+        "FM": 2
+      },
+      "unflagged/ADDED": {
+        "matched": 6,
+        "positions": 12,
+        "OPB": 2,
+        "UPB": 3,
+        "FM": 2
+      },
+      "FULL": {
+        "matched": 9,
+        "positions": 17,
+        "OPB": 5,
+        "UPB": 3,
+        "FM": 2
+      },
+      "unflagged/FULL": {
+        "matched": 6,
+        "positions": 12,
+        "OPB": 3,
+        "UPB": 3,
+        "FM": 1
+      },
+      "ADDED_vs_STRIPPED": {
+        "tie": 3
+      },
+      "FULL_vs_SHARED": {
+        "tie": 3
+      },
+      "ADDED_vs_FULL": {
+        "tie": 3
+      },
+      "ADDED_vs_IPE_C": {
+        "tie": 3
+      }
+    },
+    "hard": {
+      "coverage": {
+        "assigned": 3,
+        "STRIPPED/scored": 3,
+        "SHARED/scored": 3,
+        "ADDED/scored": 3,
+        "FULL/scored": 3,
+        "IPE_C/scored": 3,
+        "RPR_PAPER_FULL/scored": 3,
+        "four_cells": 3,
+        "four_cells_unflagged": 3
+      },
+      "STRIPPED": {
+        "matched": 7,
+        "positions": 20,
+        "OPB": 3,
+        "UPB": 11,
+        "FM": 9
+      },
+      "unflagged/STRIPPED": {
+        "matched": 7,
+        "positions": 20,
+        "OPB": 3,
+        "UPB": 11,
+        "FM": 9
+      },
+      "SHARED": {
+        "matched": 8,
+        "positions": 20,
+        "OPB": 5,
+        "UPB": 9,
+        "FM": 9
+      },
+      "unflagged/SHARED": {
+        "matched": 8,
+        "positions": 20,
+        "OPB": 5,
+        "UPB": 9,
+        "FM": 9
+      },
+      "ADDED": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      },
+      "unflagged/ADDED": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      },
+      "FULL": {
+        "matched": 12,
+        "positions": 20,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      },
+      "unflagged/FULL": {
+        "matched": 12,
+        "positions": 20,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      },
+      "ADDED_vs_STRIPPED": {
+        "win": 3
+      },
+      "FULL_vs_SHARED": {
+        "win": 3
+      },
+      "ADDED_vs_FULL": {
+        "tie": 2,
+        "loss": 1
+      },
+      "ADDED_vs_IPE_C": {
+        "loss": 2,
+        "tie": 1
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": "formal_multi_v1/explicit/067",
+      "stratum": "soft",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 4,
+        "ADDED": 1,
+        "FULL": 5
+      },
+      "STRIPPED": {
+        "matched": 2,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 1,
+        "flags": []
+      },
+      "SHARED": {
+        "matched": 2,
+        "positions": 5,
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "ADDED": {
+        "matched": 2,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 1,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 2,
+        "positions": 5,
+        "OPB": 2,
+        "UPB": 1,
+        "FM": 1,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 2,
+        "positions": 5,
+        "OPB": 0,
+        "UPB": 3,
+        "FM": 0,
+        "flags": []
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 0,
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      }
+    },
+    {
+      "case": "formal_multi_v1/explicit/003",
+      "stratum": "soft",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 4,
+        "ADDED": 3,
+        "FULL": 7
+      },
+      "STRIPPED": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 1,
+        "flags": []
+      },
+      "SHARED": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 1,
+        "UPB": 1,
+        "FM": 0,
+        "flags": []
+      },
+      "ADDED": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 0,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 1,
+        "flags": []
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 4,
+        "positions": 7,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 0,
+        "flags": []
+      }
+    },
+    {
+      "case": "formal_multi_v1/explicit/112",
+      "stratum": "soft",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 3,
+        "ADDED": 2,
+        "FULL": 5
+      },
+      "STRIPPED": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 1,
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      },
+      "SHARED": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 2,
+        "UPB": 1,
+        "FM": 1,
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      },
+      "ADDED": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 0,
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 3,
+        "positions": 5,
+        "OPB": 1,
+        "UPB": 2,
+        "FM": 0,
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ]
+      }
+    },
+    {
+      "case": "formal_multi_v1/explicit/006",
+      "stratum": "hard",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 3,
+        "ADDED": 3,
+        "FULL": 6
+      },
+      "STRIPPED": {
+        "matched": 2,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 3,
+        "FM": 2,
+        "flags": []
+      },
+      "SHARED": {
+        "matched": 2,
+        "positions": 6,
+        "OPB": 2,
+        "UPB": 3,
+        "FM": 3,
+        "flags": []
+      },
+      "ADDED": {
+        "matched": 3,
+        "positions": 6,
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 3,
+        "positions": 6,
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      }
+    },
+    {
+      "case": "formal_multi_v1/explicit/014",
+      "stratum": "hard",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 5,
+        "ADDED": 3,
+        "FULL": 8
+      },
+      "STRIPPED": {
+        "matched": 3,
+        "positions": 8,
+        "OPB": 2,
+        "UPB": 3,
+        "FM": 3,
+        "flags": []
+      },
+      "SHARED": {
+        "matched": 4,
+        "positions": 8,
+        "OPB": 2,
+        "UPB": 2,
+        "FM": 3,
+        "flags": []
+      },
+      "ADDED": {
+        "matched": 4,
+        "positions": 8,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 5,
+        "positions": 8,
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 1,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 5,
+        "positions": 8,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 5,
+        "positions": 8,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      }
+    },
+    {
+      "case": "formal_multi_v1/explicit/047",
+      "stratum": "hard",
+      "evidence_counts": {
+        "STRIPPED": 0,
+        "SHARED": 4,
+        "ADDED": 2,
+        "FULL": 6
+      },
+      "STRIPPED": {
+        "matched": 2,
+        "positions": 6,
+        "OPB": 0,
+        "UPB": 5,
+        "FM": 4,
+        "flags": []
+      },
+      "SHARED": {
+        "matched": 2,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 4,
+        "FM": 3,
+        "flags": []
+      },
+      "ADDED": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 2,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "FULL": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 3,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "IPE_C": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      },
+      "RPR_PAPER_FULL": {
+        "matched": 4,
+        "positions": 6,
+        "OPB": 1,
+        "UPB": 0,
+        "FM": 0,
+        "flags": []
+      }
+    }
+  ],
+  "statuses": {
+    "OK": 48
+  },
+  "stages": {
+    "NestedAnswerActor": 24,
+    "RPEvalJudge": 24
+  },
+  "tokens": 200740,
+  "unknown_usage": 0,
+  "retries": 0
+}
