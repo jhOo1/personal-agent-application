@@ -8,7 +8,7 @@ TRACKS = ('cross_domain','sycophancy','beneficial_memory_usage')
 
 
 def pairs():
-    contrasts = {}
+    contrasts = {f"versus-archived-specialist/{arm}": ("BASE", arm) for arm in ARMS}
     for interface in INTERFACES:
         for source in ('SELECTED','OFF'):
             contrasts[f'D-minus-Q/{interface}/{source}'] = (
@@ -62,6 +62,7 @@ def readout(roster, rows, ledger):
         card = item['card']
         domain,stratum,uid = (card[k] for k in ('domain','stratum','uid'))
         refs = {arm:table[uid,arm] for arm in ARMS}
+        refs["BASE"] = {"score": card["base_score"], "score_flags": card["base_flags"]}
         values = {arm:metrics(card,row['score']) for arm,row in refs.items()}
         size = metrics(card,card['base_score'])['positions']
         keys = [domain,domain+'/'+stratum]

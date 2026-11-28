@@ -81,15 +81,19 @@ def main():
     pin, roster, jobs, cache, scores, _ = prepare()
     domains = ("RPEval",) if args.rpe_only else ("RPEval", "BenchPreS", "PersistBench")
     rows = replay(pin, roster, jobs, cache, scores, domains)
+    ledger = []
     if args.verify_settled:
         terminal = read(OUT / "RESULTS.json")
         fields = ("uid", "method", "actor_status", "answer", "score", "score_flags")
         records = lambda group: sorted([r[k] for k in fields] for r in group)
         if records(rows) != records(terminal["rows"]):
             raise ValueError("Independent receipt replay disagrees with the settlement")
-    stats = readout(roster, rows, [])
+        ledger = terminal["ledger"]
+    stats = readout(roster, rows, ledger)
     stats = {"replayed_domains": domains, "terminal_verified": args.verify_settled,
              "new_model_calls": 0, "sections": stats["sections"],
+             "dispatches": stats["dispatches"], "transport": stats["transport"],
+             "reported_tokens": stats["tokens"], "unknown_usage": stats["unknown_usage"],
              "pairs": stats["pairwise"], "history_model_score_difference": stats["history_model_score_difference"]}
     print(json.dumps(stats, indent=2))
 
