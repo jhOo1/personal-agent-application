@@ -1,0 +1,87 @@
+"""Report settled expansion batches on their common and fully assigned denominators."""
+from collections import Counter,defaultdict
+import json
+
+from summarize import metrics
+from summarize_reassembly import aligned
+from paired_macro import pairwise
+from trial import sha
+from expansion_run import ARMS,OUT,read
+
+METHODS=('BASE',*ARMS)
+
+
+def collect():
+    pin=read(OUT/'private/FROZEN.json')
+    groups=defaultdict(list)
+    finished=[]
+    ledger=[]
+    delivery=defaultdict(Counter)
+    for index,batch in enumerate(pin['batches'],1):
+        path=OUT/f'batch_{index}'/'RESULTS.json'
+        if not path.exists():
+            continue
+        result=read(path)
+        finished.append(index)
+        ledger.extend(result['ledger'])
+        outcomes={(r['uid'],r['method']):r for r in result['rows']}
+        assert len(outcomes)==len(result['rows'])==len(batch)*len(ARMS)
+        for c in batch:
+            uid=c['uid']
+            moved={a:outcomes[uid,a] for a in ARMS}
+            grades={'BASE':c['base_score'],**{a:r['score'] for a,r in moved.items()}}
+            values={a:metrics(c,s) for a,s in grades.items()}
+            assert values['BASE']
+            for a,row in moved.items():
+                delivery[a][row['actor_status']]+=1
+                delivery[a]['grade_available']+=values[a] is not None
+                if values[a] is not None:
+                    assert aligned(values,('BASE',a))
+            if c['domain']=='RPEval':
+                for a,score in grades.items():
+                    if values[a] and score.get('full_match') is not None:
+                        values[a]['full_match']=int(score['full_match'])
+            for key in (c['domain'],f"{c['domain']}/{c['stratum']}"):
+                groups[key].append((c,moved,values))
+    return pin,finished,groups,ledger,delivery
+
+
+def summarize():
+    pin,finished,groups,ledger,delivery=collect()
+    if not finished:
+        raise SystemExit('No batch result has settled')
+    native={}
+    for key,rows in groups.items():
+        common=[values for _,_,values in rows if aligned(values,METHODS)]
+        counts={a:Counter() for a in METHODS}
+        for values in common:
+            for a in METHODS:
+                counts[a].update(values[a])
+        native[key]=dict(assigned=len(rows),common=len(common),metrics=counts)
+    by_rpe=defaultdict(list)
+    for c,_,values in groups['RPEval']:
+        by_rpe[c['group']].append(values)
+    group_support={}
+    for opponent in ('PLAN_SELECTED','DIRECT'):
+        rows=[]
+        group_order=sorted(by_rpe,key=lambda g:sha(['public_source_group_order',g]))
+        for i,group in enumerate(group_order,1):
+            cells=[v for v in by_rpe[group] if aligned(v,('BASE',opponent,'SCOPE'))]
+            pos=sum(v['BASE']['positions'] for v in cells)
+            delta=sum(v['SCOPE']['primary']-v[opponent]['primary'] for v in cells)
+            rows.append(dict(group=i,assigned=len(by_rpe[group]),common=len(cells),positions=pos,net_match=delta))
+        scored=[r for r in rows if r['positions']]
+        group_support[opponent]=dict(groups=rows,group_equal_delta=(
+            sum(r['net_match']/r['positions'] for r in scored)/len(scored) if scored else None),
+            wins=sum(r['net_match']>0 for r in scored),losses=sum(r['net_match']<0 for r in scored),
+            ties=sum(r['net_match']==0 for r in scored))
+    return dict(finished_batches=finished,all_batches_assigned=sum(len(b) for b in pin['batches']),
+                native=native,paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=group_support,
+                delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
+                    statuses=Counter(r['status'] for r in ledger),
+                    tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger),
+                    unknown_usage=sum((r.get('usage') or {}).get('total_tokens') is None for r in ledger)))
+
+
+if __name__=='__main__':
+    print(json.dumps(summarize(),indent=2))

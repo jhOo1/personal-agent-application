@@ -27,6 +27,7 @@ case "${1:-}" in
   factorial) entry=factorial.py; shift ;;
   expansion-audit) entry=expansion_inventory.py; shift ;;
   expansion-run) entry=expansion_run.py; shift ;;
+  expansion-summary) entry=expansion_summary.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
   mutation-audit) entry=mutation_audit.py; shift ;;
