@@ -81,3 +81,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [RPEval 同数量软偏好决策覆盖](implementation/reports/qamc_contextual_match_v2_20261112/soft_decision_coverage_v1/RESULTS.md)在 9 个成对来源组结算。覆盖不同段落与普通前两名逐题 Match 全平，两个选材变化来自同一个同事聚餐来源。两臂全 A 均 9/36，IPE-C 30/36；新增 B 均 31/51，与 IPE-C 一致。规划器在全 A 两臂各送入 14 条作者 A。关闭本次扩展准入，保留原 IPE-C。
 
 [RPEval 嵌套历史的终答四格](implementation/reports/qamc_contextual_match_v2_20261112/nested_answer_exposure_factorial_v1/RESULTS.md)验证 6 个曝光来源。三个含 C 来源加入新增记录后实质保护外卖过敏、零购置乐器、无香和冷色照明，Match 无史 7/20→仅新增 11/20、仅共享 8/20→全史 12/20，仍低于 IPE-C 13/20。三个仅新增 B 的来源各臂 9/17。隔离共享历史没有独立优势，保留行为诊断，不将同题历史差分用于部署。
+
+[IPE-C 硬约束冲突见证](implementation/reports/qamc_contextual_match_v2_20261112/ipe_concrete_constraint_gate_v1/RESULTS.md)的 10 道见证版均复用原输出，三个无史 C 题两法都未触发。普通版改写外卖题 Match 4/6→3/6。归档中仅三个含 C 的有效 IPE-C 无史题，专修该分支的事后主分空间最多 7/1,510 位。停止扩大见证规则，优先核验有史却未落实的条件。

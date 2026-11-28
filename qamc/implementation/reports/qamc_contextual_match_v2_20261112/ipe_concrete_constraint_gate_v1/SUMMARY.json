@@ -1,0 +1,585 @@
+{
+  "table": {
+    "off_C": {
+      "coverage": {
+        "assigned": 3,
+        "GENERAL/triggered": 0,
+        "GENERAL/invalid": 0,
+        "GENERAL/scored": 3,
+        "WITNESSED/triggered": 0,
+        "WITNESSED/invalid": 0,
+        "WITNESSED/scored": 3,
+        "IPE-C/scored": 3,
+        "common": 3,
+        "common_unflagged": 2
+      },
+      "GENERAL": {
+        "matched": 6,
+        "positions": 13,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 4
+      },
+      "unflagged/GENERAL": {
+        "matched": 4,
+        "positions": 10,
+        "OPB": 1,
+        "UPB": 7,
+        "FM": 3
+      },
+      "WITNESSED": {
+        "matched": 6,
+        "positions": 13,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 4
+      },
+      "unflagged/WITNESSED": {
+        "matched": 4,
+        "positions": 10,
+        "OPB": 1,
+        "UPB": 7,
+        "FM": 3
+      },
+      "IPE-C": {
+        "matched": 6,
+        "positions": 13,
+        "OPB": 1,
+        "UPB": 9,
+        "FM": 4
+      },
+      "unflagged/IPE-C": {
+        "matched": 4,
+        "positions": 10,
+        "OPB": 1,
+        "UPB": 7,
+        "FM": 3
+      }
+    },
+    "on_C": {
+      "coverage": {
+        "assigned": 3,
+        "GENERAL/triggered": 1,
+        "GENERAL/invalid": 0,
+        "GENERAL/scored": 3,
+        "WITNESSED/triggered": 0,
+        "WITNESSED/invalid": 0,
+        "WITNESSED/scored": 3,
+        "IPE-C/scored": 3,
+        "common": 3,
+        "common_unflagged": 3
+      },
+      "GENERAL": {
+        "matched": 10,
+        "positions": 20,
+        "OPB": 6,
+        "UPB": 1,
+        "FM": 1
+      },
+      "unflagged/GENERAL": {
+        "matched": 10,
+        "positions": 20,
+        "OPB": 6,
+        "UPB": 1,
+        "FM": 1
+      },
+      "WITNESSED": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 4,
+        "UPB": 1,
+        "FM": 0
+      },
+      "unflagged/WITNESSED": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 4,
+        "UPB": 1,
+        "FM": 0
+      },
+      "IPE-C": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 4,
+        "UPB": 1,
+        "FM": 0
+      },
+      "unflagged/IPE-C": {
+        "matched": 11,
+        "positions": 20,
+        "OPB": 4,
+        "UPB": 1,
+        "FM": 0
+      }
+    },
+    "all_A": {
+      "coverage": {
+        "assigned": 4,
+        "GENERAL/triggered": 1,
+        "GENERAL/invalid": 1,
+        "GENERAL/scored": 3,
+        "WITNESSED/triggered": 0,
+        "WITNESSED/invalid": 0,
+        "WITNESSED/scored": 4,
+        "IPE-C/scored": 4,
+        "common": 3,
+        "common_unflagged": 3
+      },
+      "GENERAL": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 1
+      },
+      "unflagged/GENERAL": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 1
+      },
+      "WITNESSED": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 0
+      },
+      "unflagged/WITNESSED": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 0
+      },
+      "IPE-C": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 0
+      },
+      "unflagged/IPE-C": {
+        "matched": 6,
+        "positions": 10,
+        "OPB": 4,
+        "UPB": 0,
+        "FM": 0
+      }
+    }
+  },
+  "cases": [
+    {
+      "case": [
+        "implicit",
+        "115"
+      ],
+      "track": "off_C",
+      "GENERAL": {
+        "score": {
+          "matched": 1,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 2
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 1,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 2
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 1,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 4,
+          "FM": 2
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "implicit",
+        "117"
+      ],
+      "track": "off_C",
+      "GENERAL": {
+        "score": {
+          "matched": 2,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1
+        },
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 2,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1
+        },
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 2,
+          "positions": 3,
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1
+        },
+        "flags": [
+          "MATCH_CONFLICTS_WITH_BIAS"
+        ],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "implicit",
+        "148"
+      ],
+      "track": "off_C",
+      "GENERAL": {
+        "score": {
+          "matched": 3,
+          "positions": 7,
+          "OPB": 1,
+          "UPB": 3,
+          "FM": 1
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 3,
+          "positions": 7,
+          "OPB": 1,
+          "UPB": 3,
+          "FM": 1
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 3,
+          "positions": 7,
+          "OPB": 1,
+          "UPB": 3,
+          "FM": 1
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "006"
+      ],
+      "track": "on_C",
+      "GENERAL": {
+        "score": {
+          "matched": 3,
+          "positions": 6,
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1
+        },
+        "flags": [],
+        "selected_count": 2
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 4,
+          "positions": 6,
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 4,
+          "positions": 6,
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "047"
+      ],
+      "track": "on_C",
+      "GENERAL": {
+        "score": {
+          "matched": 4,
+          "positions": 6,
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 4,
+          "positions": 6,
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 4,
+          "positions": 6,
+          "OPB": 1,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "056"
+      ],
+      "track": "on_C",
+      "GENERAL": {
+        "score": {
+          "matched": 3,
+          "positions": 8,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 3,
+          "positions": 8,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 3,
+          "positions": 8,
+          "OPB": 2,
+          "UPB": 1,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "015"
+      ],
+      "track": "all_A",
+      "GENERAL": {
+        "score": {
+          "matched": 2,
+          "positions": 2,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 2,
+          "positions": 2,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 2,
+          "positions": 2,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "120"
+      ],
+      "track": "all_A",
+      "GENERAL": {
+        "score": null,
+        "flags": null,
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 5,
+          "positions": 5,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 5,
+          "positions": 5,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "explicit",
+        "063"
+      ],
+      "track": "all_A",
+      "GENERAL": {
+        "score": {
+          "matched": 4,
+          "positions": 4,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 4,
+          "positions": 4,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 4,
+          "positions": 4,
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    },
+    {
+      "case": [
+        "implicit",
+        "094"
+      ],
+      "track": "all_A",
+      "GENERAL": {
+        "score": {
+          "matched": 0,
+          "positions": 4,
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 1
+        },
+        "flags": [],
+        "selected_count": 1
+      },
+      "WITNESSED": {
+        "score": {
+          "matched": 0,
+          "positions": 4,
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      },
+      "IPE-C": {
+        "score": {
+          "matched": 0,
+          "positions": 4,
+          "OPB": 4,
+          "UPB": 0,
+          "FM": 0
+        },
+        "flags": [],
+        "selected_count": 0
+      }
+    }
+  ],
+  "statuses": {
+    "OK": 24
+  },
+  "stages": {
+    "ConcreteGate": 20,
+    "ConcreteActor": 2,
+    "RPEvalJudge": 2
+  },
+  "tokens": 87791,
+  "unknown_usage": 0,
+  "retries": 0
+}
