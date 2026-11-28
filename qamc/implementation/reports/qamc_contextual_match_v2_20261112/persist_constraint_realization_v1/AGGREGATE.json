@@ -1,0 +1,335 @@
+{
+  "archive": {
+    "ConstraintActor": {},
+    "GPT": {},
+    "Qwen": {}
+  },
+  "pairs": {
+    "GPT": {
+      "FRESH_CONDITIONAL/RESTORED_CONDITIONAL": {
+        "tie": 3,
+        "win": 1
+      },
+      "FRESH_DIRECT/FRESH_CONDITIONAL": {
+        "loss": 1,
+        "tie": 3
+      },
+      "FRESH_DIRECT/RESTORED_DIRECT": {
+        "tie": 4
+      },
+      "RESTORED_DIRECT/RESTORED_CONDITIONAL": {
+        "tie": 4
+      }
+    },
+    "Qwen": {
+      "FRESH_CONDITIONAL/RESTORED_CONDITIONAL": {
+        "tie": 2,
+        "unknown": 1,
+        "win": 1
+      },
+      "FRESH_DIRECT/FRESH_CONDITIONAL": {
+        "loss": 1,
+        "tie": 3
+      },
+      "FRESH_DIRECT/RESTORED_DIRECT": {
+        "tie": 3,
+        "win": 1
+      },
+      "RESTORED_DIRECT/RESTORED_CONDITIONAL": {
+        "tie": 3,
+        "unknown": 1
+      }
+    }
+  },
+  "per_case": [
+    {
+      "added_sources": 2,
+      "case": "3776469a",
+      "ratings": {
+        "FRESH_CONDITIONAL": {
+          "GPT": {
+            "rating": 2,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "FRESH_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "RESTORED_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": null,
+            "status": "INVALID_SCORE"
+          }
+        },
+        "RESTORED_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        }
+      },
+      "reference": {
+        "FULL": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "RUBRIC": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "SELECTED": {
+          "GPT": 3,
+          "Qwen": 2
+        }
+      }
+    },
+    {
+      "added_sources": 1,
+      "case": "7b03625e",
+      "ratings": {
+        "FRESH_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "FRESH_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        },
+        "RESTORED_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        },
+        "RESTORED_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        }
+      },
+      "reference": {
+        "FULL": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "RUBRIC": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "SELECTED": {
+          "GPT": 3,
+          "Qwen": 2
+        }
+      }
+    },
+    {
+      "added_sources": 0,
+      "case": "ef273934",
+      "ratings": {
+        "FRESH_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "FRESH_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "RESTORED_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        },
+        "RESTORED_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 2,
+            "status": "OK"
+          }
+        }
+      },
+      "reference": {
+        "FULL": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "RUBRIC": {
+          "GPT": 3,
+          "Qwen": 2
+        },
+        "SELECTED": {
+          "GPT": 3,
+          "Qwen": 2
+        }
+      }
+    },
+    {
+      "added_sources": 0,
+      "case": "dbcf603f",
+      "ratings": {
+        "FRESH_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        },
+        "FRESH_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        },
+        "RESTORED_CONDITIONAL": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        },
+        "RESTORED_DIRECT": {
+          "GPT": {
+            "rating": 3,
+            "status": "OK"
+          },
+          "Qwen": {
+            "rating": 3,
+            "status": "OK"
+          }
+        }
+      },
+      "reference": {
+        "FULL": {
+          "GPT": 3,
+          "Qwen": 3
+        },
+        "RUBRIC": {
+          "GPT": 3,
+          "Qwen": 2
+        },
+        "SELECTED": {
+          "GPT": 3,
+          "Qwen": 3
+        }
+      }
+    }
+  ],
+  "requests": 36,
+  "retries": 0,
+  "source_groups": 4,
+  "stages": {
+    "ConstraintActor": 12,
+    "GPT": 12,
+    "Qwen": 12
+  },
+  "statuses": {
+    "OK": 36
+  },
+  "strict": {
+    "GPT": {
+      "FRESH_CONDITIONAL": {
+        "fail": 1,
+        "pass": 3
+      },
+      "FRESH_DIRECT": {
+        "pass": 4
+      },
+      "RESTORED_CONDITIONAL": {
+        "pass": 4
+      },
+      "RESTORED_DIRECT": {
+        "pass": 4
+      }
+    },
+    "Qwen": {
+      "FRESH_CONDITIONAL": {
+        "fail": 3,
+        "pass": 1
+      },
+      "FRESH_DIRECT": {
+        "fail": 2,
+        "pass": 2
+      },
+      "RESTORED_CONDITIONAL": {
+        "fail": 1,
+        "pass": 2,
+        "unknown": 1
+      },
+      "RESTORED_DIRECT": {
+        "fail": 1,
+        "pass": 3
+      }
+    }
+  },
+  "tokens": 223305,
+  "unknown_usage": 0
+}
