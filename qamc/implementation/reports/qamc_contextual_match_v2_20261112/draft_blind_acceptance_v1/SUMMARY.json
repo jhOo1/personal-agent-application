@@ -1,0 +1,205 @@
+{
+  "plans": {
+    "DRAFT_BLIND/ANCHORED_TESTS": 9,
+    "ORDINARY/ANCHORED_TESTS": 9
+  },
+  "results": {
+    "BenchPreS": {
+      "BASE": {
+        "aar_denominator": 5,
+        "aar_numerator": 4,
+        "mr_denominator": 5,
+        "mr_numerator": 0,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 3,
+        "task_completeness": 10
+      },
+      "DRAFT_BLIND": {
+        "aar_denominator": 5,
+        "aar_numerator": 2,
+        "mr_denominator": 5,
+        "mr_numerator": 1,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 2,
+        "task_completeness": 9
+      },
+      "ORDINARY": {
+        "aar_denominator": 5,
+        "aar_numerator": 4,
+        "mr_denominator": 5,
+        "mr_numerator": 1,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 3,
+        "task_completeness": 10
+      },
+      "coverage": {
+        "BASE/scored": 2,
+        "DRAFT_BLIND/scored": 2,
+        "ORDINARY/scored": 2,
+        "assigned": 2,
+        "common": 2,
+        "common_unflagged": 2
+      },
+      "unflagged/BASE": {
+        "aar_denominator": 5,
+        "aar_numerator": 4,
+        "mr_denominator": 5,
+        "mr_numerator": 0,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 3,
+        "task_completeness": 10
+      },
+      "unflagged/DRAFT_BLIND": {
+        "aar_denominator": 5,
+        "aar_numerator": 2,
+        "mr_denominator": 5,
+        "mr_numerator": 1,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 2,
+        "task_completeness": 9
+      },
+      "unflagged/ORDINARY": {
+        "aar_denominator": 5,
+        "aar_numerator": 4,
+        "mr_denominator": 5,
+        "mr_numerator": 1,
+        "nonbold_denominator": 4,
+        "nonbold_numerator": 3,
+        "task_completeness": 10
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "BASE": {
+        "pass": 2,
+        "rating": 6
+      },
+      "DRAFT_BLIND": {
+        "pass": 2,
+        "rating": 6
+      },
+      "ORDINARY": {
+        "pass": 2,
+        "rating": 6
+      },
+      "coverage": {
+        "BASE/scored": 2,
+        "DRAFT_BLIND/scored": 2,
+        "ORDINARY/scored": 2,
+        "assigned": 2,
+        "common": 2,
+        "common_unflagged": 2
+      },
+      "unflagged/BASE": {
+        "pass": 2,
+        "rating": 6
+      },
+      "unflagged/DRAFT_BLIND": {
+        "pass": 2,
+        "rating": 6
+      },
+      "unflagged/ORDINARY": {
+        "pass": 2,
+        "rating": 6
+      }
+    },
+    "PersistBench/sycophancy": {
+      "BASE": {
+        "pass": 0,
+        "rating": 8
+      },
+      "DRAFT_BLIND": {
+        "pass": 0,
+        "rating": 8
+      },
+      "ORDINARY": {
+        "pass": 0,
+        "rating": 8
+      },
+      "coverage": {
+        "BASE/scored": 2,
+        "DRAFT_BLIND/scored": 2,
+        "ORDINARY/scored": 2,
+        "assigned": 2,
+        "common": 2,
+        "common_unflagged": 2
+      },
+      "unflagged/BASE": {
+        "pass": 0,
+        "rating": 8
+      },
+      "unflagged/DRAFT_BLIND": {
+        "pass": 0,
+        "rating": 8
+      },
+      "unflagged/ORDINARY": {
+        "pass": 0,
+        "rating": 8
+      }
+    },
+    "RPEval": {
+      "BASE": {
+        "FM": 1,
+        "OPB": 5,
+        "UPB": 4,
+        "matched": 6,
+        "positions": 18
+      },
+      "DRAFT_BLIND": {
+        "FM": 1,
+        "OPB": 8,
+        "UPB": 3,
+        "matched": 6,
+        "positions": 18
+      },
+      "ORDINARY": {
+        "FM": 2,
+        "OPB": 7,
+        "UPB": 3,
+        "matched": 6,
+        "positions": 18
+      },
+      "coverage": {
+        "BASE/scored": 3,
+        "DRAFT_BLIND/scored": 3,
+        "ORDINARY/scored": 3,
+        "assigned": 3,
+        "common": 3,
+        "common_unflagged": 2
+      },
+      "unflagged/BASE": {
+        "FM": 1,
+        "OPB": 4,
+        "UPB": 3,
+        "matched": 2,
+        "positions": 12
+      },
+      "unflagged/DRAFT_BLIND": {
+        "FM": 1,
+        "OPB": 6,
+        "UPB": 3,
+        "matched": 2,
+        "positions": 12
+      },
+      "unflagged/ORDINARY": {
+        "FM": 2,
+        "OPB": 5,
+        "UPB": 3,
+        "matched": 2,
+        "positions": 12
+      }
+    }
+  },
+  "retries": 0,
+  "stages": {
+    "BenchAttrs": 18,
+    "ExecutionActor": 18,
+    "ExecutionReview": 18,
+    "PersistNative": 8,
+    "RPEvalJudge": 6
+  },
+  "statuses": {
+    "OK": 68
+  },
+  "tokens": 289642,
+  "unknown_usage": 0
+}

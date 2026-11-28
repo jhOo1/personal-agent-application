@@ -1,0 +1,18 @@
+{
+  "verified_review_wires": 18,
+  "verified_actor_wires": 18,
+  "paired_test_outputs": 9,
+  "paired_identical_tests": 0,
+  "test_counts_by_arm": {
+    "ORDINARY": {
+      "3": 9
+    },
+    "DRAFT_BLIND": {
+      "3": 9
+    }
+  },
+  "review_outputs_with_repeated_source": {
+    "ORDINARY": 0,
+    "DRAFT_BLIND": 1
+  }
+}
