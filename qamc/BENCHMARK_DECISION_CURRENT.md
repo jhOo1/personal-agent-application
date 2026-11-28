@@ -35,3 +35,5 @@ DQS 已实测，候选隔离仅触发 1 个来源且没有改变原生主分。R
 QAMC-v3.2 已有回复支持二主一边界。最新复议要求其用真实证据挑战换榜、单主与融合方案。对话状态与实验评分分别记录。
 
 [同候选前提提交对照](implementation/reports/qamc_contextual_match_v2_20261112/feasibility_commit_v1/RESULTS.md)已结算。守卫与模型自由选择在八个来源的终答均逐字相同，不晋级，不改基准分工。
+
+[PersistBench 等量备用证据实测](implementation/reports/qamc_contextual_match_v2_20261112/persist_reserve_exposure_v1/RESULTS.md)得到一个对原先选择的 Qwen 严格效用净胜，GPT-4.1 持平，未达到扩大门槛。
