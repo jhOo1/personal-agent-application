@@ -55,6 +55,7 @@ def main():
     cli = ArgumentParser(description=__doc__)
     cli.add_argument('--external', action='store_true')
     cli.add_argument('--task-only', action='store_true')
+    cli.add_argument('--crossover', action='store_true')
     options = cli.parse_args()
     plan = json.loads((RUN/'private/FROZEN.json').read_text())
     result = json.loads((RUN/'RESULTS.json').read_text())
@@ -62,6 +63,7 @@ def main():
     for enabled, suffix, method in (
         (options.external, '_self_recheck', 'SELF_RECHECK'),
         (options.task_only, '_task_only', 'TASK_ONLY'),
+        (options.crossover, '_crossover', 'TASK_PLAN_SELECTED'),
     ):
         if enabled:
             extra = json.loads((RUN.with_name(RUN.name+suffix)/'RESULTS.json').read_text())
