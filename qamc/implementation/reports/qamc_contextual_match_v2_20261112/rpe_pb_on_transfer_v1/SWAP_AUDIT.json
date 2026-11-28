@@ -1,0 +1,72 @@
+{
+  "rpeval/formal_multi_v1/explicit/073": {
+    "tags": "AAACBBAAA",
+    "added_index_1based": 6,
+    "removed_index_1based": 3,
+    "draws": [
+      {
+        "PB": {
+          "match": "5/9",
+          "OPB": 1,
+          "UPB": 2,
+          "flags": []
+        },
+        "RP_K": {
+          "match": "6/9",
+          "OPB": 1,
+          "UPB": 1,
+          "flags": []
+        }
+      },
+      {
+        "PB": {
+          "match": "5/9",
+          "OPB": 1,
+          "UPB": 2,
+          "flags": []
+        },
+        "RP_K": {
+          "match": "6/9",
+          "OPB": 1,
+          "UPB": 1,
+          "flags": []
+        }
+      }
+    ]
+  },
+  "rpeval/formal_multi_v1/explicit/000": {
+    "tags": "ABCAAABAA",
+    "added_index_1based": 7,
+    "removed_index_1based": 1,
+    "draws": [
+      {
+        "PB": {
+          "match": "6/9",
+          "OPB": 1,
+          "UPB": 1,
+          "flags": []
+        },
+        "RP_K": {
+          "match": "6/9",
+          "OPB": 2,
+          "UPB": 0,
+          "flags": []
+        }
+      },
+      {
+        "PB": {
+          "match": "6/9",
+          "OPB": 2,
+          "UPB": 0,
+          "flags": []
+        },
+        "RP_K": {
+          "match": "6/9",
+          "OPB": 2,
+          "UPB": 0,
+          "flags": []
+        }
+      }
+    ]
+  }
+}
