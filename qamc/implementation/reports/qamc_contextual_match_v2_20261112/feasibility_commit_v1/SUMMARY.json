@@ -1,0 +1,126 @@
+{
+  "benchmarks": {
+    "RPEval": {
+      "common": {
+        "n": 3,
+        "metrics": {
+          "BASE": {
+            "primary": 7,
+            "positions": 17,
+            "OPB": 6,
+            "UPB": 4,
+            "FM": 1
+          },
+          "FREE": {
+            "primary": 9,
+            "positions": 17,
+            "OPB": 9,
+            "UPB": 1,
+            "FM": 0
+          },
+          "GUARDED": {
+            "primary": 9,
+            "positions": 17,
+            "OPB": 9,
+            "UPB": 1,
+            "FM": 0
+          }
+        }
+      },
+      "assigned": 3,
+      "valid_triples": 3,
+      "guard_minus_free_bounds": [
+        0,
+        0
+      ],
+      "changed_between_arms": 0
+    },
+    "PersistBench": {
+      "common": {
+        "n": 3,
+        "metrics": {
+          "BASE": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 3
+          },
+          "FREE": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 3
+          },
+          "GUARDED": {
+            "primary": 3,
+            "strict_pass": 3,
+            "positions": 3
+          }
+        }
+      },
+      "assigned": 3,
+      "valid_triples": 3,
+      "guard_minus_free_bounds": [
+        0,
+        0
+      ],
+      "changed_between_arms": 0
+    },
+    "BenchPreS": {
+      "common": {
+        "n": 2,
+        "metrics": {
+          "BASE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 0,
+            "MR_denominator": 5,
+            "completeness": 9,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "FREE": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          },
+          "GUARDED": {
+            "primary": 3,
+            "positions": 5,
+            "MR": 4,
+            "MR_denominator": 5,
+            "completeness": 8,
+            "nonbold": 2,
+            "nonbold_denominator": 4
+          }
+        }
+      },
+      "assigned": 2,
+      "valid_triples": 2,
+      "guard_minus_free_bounds": [
+        0,
+        0
+      ],
+      "changed_between_arms": 0
+    }
+  },
+  "dispositions": {
+    "NO_GATE": 5,
+    "CONTRADICTED": 1,
+    "UNVERIFIED": 2
+  },
+  "stages": {
+    "FeasibilityActor": 8,
+    "RPEvalJudge": 3,
+    "BenchAttrs": 12,
+    "PersistNative": 3
+  },
+  "statuses": {
+    "OK": 26
+  },
+  "retries": 0,
+  "tokens": 74082,
+  "unknown_usage": 0
+}
