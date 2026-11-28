@@ -23,7 +23,9 @@ PersistBench 继续从已冻结的 SELECTED_GEPA 出发。Query 路由决定使�
 QAMC-v3.2 建议先使用固定旧成稿做盲态行为验证。建议的面板为 RPEval 12 组（全 A、仅 B、含 C 各四）和 PersistBench 12 组（跨域、迎合、严格有益各四），由公开开发库存按来源资格和固定哈希选取。RPEval 复用同题 RP 有史及无史成稿，按存档路由映射 IPE-C。PersistBench 保留 FULL、GROUP、SELECTED、EMPTY 同 Actor 各真实部署，风险三抽，效用一抽。审阅时隐藏方法身份、原分、裁判理由和曝光状态，先冻结需要核对的实际行为，再观察终答。它检验已存分数是否对应实际任务变化。当前未执行该面板，也没有独立人工审阅。现有零调用检查与执行侧看过的例子都不能充当盲态结果。
 
 
-优先分开解决同协议比较和效用保护。官方评分用已校验并冻结的固定成稿包，先查验 Kimi K2 Thinking 的实际 Google Vertex 路由和 scorer，再对同题强 Rubric 与候选统一评分。在路由核验成功前，适配分保持适配身份，不重复 dispatch 已失败或交付未知的位置。缺失原成稿不会通过重评分恢复。
+优先分开解决评分可比性和效用保护。Google Cloud 公布原托管 Kimi K2 Thinking 模型 2026-10-21 退役，按原 ID 的官方冻结路线无法恢复。保留已校验的固定成稿包。若获得可验证的同检查点 API，可按原评分提示与抽次重评，结果注明跨供应商协议差异，并与原作者分及旧适配分分表。缺失原成稿不会通过重评分恢复。[Google 退役表](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models?hl=en) · [原协议与备用路线核验](../native_judge_provider_viability_v1/READOUT.md)
+
+同 18 个严格 BU 来源的另一次真实重采样中，SELECTED 与 FULL 都返回 18 份；GPT-4.1 下各通过 18 份，Qwen 下 SELECTED 通过 14、失败 3、未知 1，FULL 通过 18。旧部署的六个未知仍保留。该重复结果把问题从第一批交付缺失推进到真实的评分与行为保护差异，仍不能认证严格 BU 非劣。[新部署 BU 对照](../persist_utility_fresh_deployment_v1/RESULTS.md)
 
 若新增生成，重点是严格有益使用和非空混合历史；只在同预算、同 Actor、同选择信号下检验候选与整组、全史强参照的行为差异，并保留空史作解释性控制。全史、空史和已结算五臂已有可复用成稿，先核验精确请求和来源分母。不能把开发拟合收益写成独立确认。原三基准开发和封存记录完整保留。本次取舍复核没有增加评测调用。
 
