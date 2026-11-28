@@ -11,7 +11,7 @@ from raw_replay import recover
 from readout import verify
 from verify_screened import prepare
 
-RUN = FIRST.with_name("persist_screened_fixed_exposure_repeats_v1")
+RUN = FIRST.with_name("persist_screened_fixed_exposure_repeats_v2")
 OUT = RUN / "private"
 WAVES = (2, 3)
 
@@ -52,7 +52,7 @@ def prepare_repeat():
            "service_reference_sha256": roster["config_hash"],
            "judge_envelopes": {k: sha(v) for k, v in envelopes.items() if k in first},
            "jobs": [[u, a, sha(v)] for (u, a), v in jobs.items()],
-           "logical": [[u, a, k] for (u, a), k in mapping.items()], "waves": list(WAVES)}
+           "logical": [[u, a, list(k) if k is not None else None] for (u, a), k in mapping.items()], "waves": list(WAVES)}
     score = judge_wire({u: r["case"] for u, r in items.items()}, items, judge, envelopes)
     return pin, first, mapping, jobs, score
 
