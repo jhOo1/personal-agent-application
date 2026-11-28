@@ -43,3 +43,5 @@ QAMC-v3.2 已有回复支持二主一边界。最新复议要求其用真实证�
 [当前选择保护三基准筛查](implementation/reports/qamc_contextual_match_v2_20261112/task_commitment_transfer_screen_v1/RESULTS.md)完成，每基准 8 个来源。三条触发均与普通复核相同，强稿均未收到对应历史。停止这一通用过滤分支。
 
 [BenchPreS 整句压缩与完整度对照](implementation/reports/qamc_contextual_match_v2_20261112/bench_discourse_compaction_v1/RESULTS.md)已结算。删句主分持平，全文改写多实现两个偏好却损失两分完整度，保留 Strong Gate。
+
+[RPEval 两骨干两裁判交叉复评](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_crossed_judge_v1/RESULTS.md)表明 IPE-C 相对全史的优势在四个条件下方向一致，但相对无史的正差在 Qwen 评分下反转。原分保留，双裁判结果单列。

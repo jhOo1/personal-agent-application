@@ -1,0 +1,165 @@
+{
+  "roster": {
+    "common": 22
+  },
+  "pairs": {
+    "QWEN/always_task/GPT": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 9,
+      "percentage_points": 7.83,
+      "wlt": {
+        "tie": 17,
+        "win": 5
+      },
+      "exploratory_95_percentile": [
+        1.83,
+        14.75
+      ]
+    },
+    "QWEN/always_task/QWEN": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": -5,
+      "percentage_points": -4.35,
+      "wlt": {
+        "tie": 18,
+        "loss": 4
+      },
+      "exploratory_95_percentile": [
+        -9.0,
+        -0.84
+      ]
+    },
+    "QWEN/always_memory/GPT": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 11,
+      "percentage_points": 9.57,
+      "wlt": {
+        "win": 4,
+        "tie": 17,
+        "loss": 1
+      },
+      "exploratory_95_percentile": [
+        -0.79,
+        22.69
+      ]
+    },
+    "QWEN/always_memory/QWEN": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 22,
+      "percentage_points": 19.13,
+      "wlt": {
+        "win": 9,
+        "tie": 10,
+        "loss": 3
+      },
+      "exploratory_95_percentile": [
+        5.93,
+        34.58
+      ]
+    },
+    "GPT/always_task/GPT": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 9,
+      "percentage_points": 7.83,
+      "wlt": {
+        "tie": 16,
+        "win": 6
+      },
+      "exploratory_95_percentile": [
+        2.68,
+        13.64
+      ]
+    },
+    "GPT/always_task/QWEN": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": -7,
+      "percentage_points": -6.09,
+      "wlt": {
+        "tie": 15,
+        "loss": 4,
+        "win": 3
+      },
+      "exploratory_95_percentile": [
+        -16.54,
+        2.63
+      ]
+    },
+    "GPT/always_memory/GPT": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 19,
+      "percentage_points": 16.52,
+      "wlt": {
+        "win": 6,
+        "loss": 3,
+        "tie": 13
+      },
+      "exploratory_95_percentile": [
+        1.74,
+        34.86
+      ]
+    },
+    "GPT/always_memory/QWEN": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 14,
+      "percentage_points": 12.17,
+      "wlt": {
+        "win": 9,
+        "tie": 13
+      },
+      "exploratory_95_percentile": [
+        5.31,
+        20.54
+      ]
+    },
+    "generator_gap_interaction": {
+      "roots": 22,
+      "positions": 115,
+      "net_positions": 9,
+      "percentage_points": 7.83,
+      "wlt": {
+        "tie": 8,
+        "loss": 9,
+        "win": 5
+      },
+      "exploratory_95_percentile": [
+        -9.4,
+        27.87
+      ]
+    }
+  },
+  "judge_agreement_on_paired_direction": {
+    "QWEN/always_task": {
+      "GPT_tie/Qwen_tie": 14,
+      "GPT_win/Qwen_loss": 1,
+      "GPT_win/Qwen_tie": 4,
+      "GPT_tie/Qwen_loss": 3
+    },
+    "QWEN/always_memory": {
+      "GPT_win/Qwen_win": 4,
+      "GPT_tie/Qwen_tie": 10,
+      "GPT_tie/Qwen_loss": 3,
+      "GPT_tie/Qwen_win": 4,
+      "GPT_loss/Qwen_win": 1
+    },
+    "GPT/always_task": {
+      "GPT_tie/Qwen_tie": 15,
+      "GPT_win/Qwen_loss": 3,
+      "GPT_win/Qwen_win": 3,
+      "GPT_tie/Qwen_loss": 1
+    },
+    "GPT/always_memory": {
+      "GPT_win/Qwen_win": 6,
+      "GPT_loss/Qwen_tie": 3,
+      "GPT_tie/Qwen_tie": 10,
+      "GPT_tie/Qwen_win": 3
+    }
+  }
+}
