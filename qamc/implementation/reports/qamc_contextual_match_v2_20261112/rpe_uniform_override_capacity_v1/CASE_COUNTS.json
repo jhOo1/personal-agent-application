@@ -1,0 +1,11 @@
+{
+  "eligible_wins": 5,
+  "all_A_positions": 24,
+  "source_group_sizes": [
+    1,
+    1,
+    3
+  ],
+  "distinct_empty_answers": 3,
+  "distinct_history_answers": 5
+}
