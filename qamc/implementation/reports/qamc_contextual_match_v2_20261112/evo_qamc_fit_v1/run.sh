@@ -42,6 +42,8 @@ case "${1:-}" in
   no-history-grade-audit) entry=no_history_grade_audit.py; shift ;;
   backbone-inventory) entry=backbone_interface_inputs.py; shift ;;
   backbone-interface) entry=backbone_interface.py; shift ;;
+  backbone-interface-readout) entry=backbone_interface_readout.py; shift ;;
+
 
 
 
