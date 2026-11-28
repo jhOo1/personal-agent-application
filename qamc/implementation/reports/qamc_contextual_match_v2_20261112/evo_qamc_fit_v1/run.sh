@@ -28,6 +28,7 @@ case "${1:-}" in
   expansion-audit) entry=expansion_inventory.py; shift ;;
   expansion-run) entry=expansion_run.py; shift ;;
   expansion-summary) entry=expansion_summary.py; shift ;;
+  expansion-persist-peer) entry=expansion_persist_peer.py; shift ;;
   expansion-audit-requests) entry=expansion_audit.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;
   actor-mutation) entry=mutate_actor.py; shift ;;
