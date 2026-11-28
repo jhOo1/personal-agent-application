@@ -4,7 +4,7 @@ from collections import Counter,defaultdict
 import json
 
 from expansion_run import OUT,read
-from trial import sha
+from trial import HERE,sha
 
 
 def manifest(directory,stage):
@@ -17,6 +17,42 @@ def manifest(directory,stage):
         assert key not in found
         found[key]=entry['request']
     return found
+
+
+def exposure_counts(cards, selected):
+    """Count selected original sources, using author labels only in this audit."""
+    endpoint=HERE.parent/'ipe_c_two_endpoint_completion_v1'/'RESULTS.json'
+    labels={r['uid']:r['labels'] for r in read(endpoint)['rows']}
+    exposure=defaultdict(Counter)
+    rpe=defaultdict(Counter)
+    bench=defaultdict(Counter)
+    for uid,card in cards.items():
+        domain=card['domain']
+        sources=card['payload']['source_evidence']
+        chosen=selected.get(uid)
+        keys=(domain, f"{domain}/{card['stratum']}")
+        for key in keys:
+            exposure[key].update(assigned=1, manifest_available=chosen is not None)
+        if chosen is None:
+            continue
+        ids={s['memory_id'] for s in chosen}
+        for key in keys:
+            exposure[key].update(candidate_sources=len(sources),actor_sources=len(ids),
+                                 empty_selection=not ids)
+        if domain=='RPEval':
+            assert [s['memory_id'] for s in sources]==[f'M{i}' for i in range(len(sources))]
+            for source,label in zip(sources,labels[uid],strict=True):
+                rpe[label].update(candidate=1,actor=source['memory_id'] in ids)
+        elif domain=='BenchPreS':
+            for score in card['base_score']['decisions']:
+                key='appropriate' if score['appropriate'] else 'inappropriate'
+                preference=score['preference'].strip()
+                matches=[s['memory_id'] for s in sources if preference and preference in s['text']]
+                if len(matches)==1:
+                    bench[key].update(uniquely_aligned=1,actor=matches[0] in ids)
+                else:
+                    bench[key].update(unresolved=1)
+    return dict(by_task_slice=exposure,rpe_author_labels=rpe,bench_literal_links=bench)
 
 
 def audit(index):
@@ -70,7 +106,7 @@ def audit(index):
     return dict(index=index,assigned=len(cards),distinct_upstream_requests=distinct,verified_physical_manifests={
                     'Plan':len(plan),'Select':len(select),'Actor':len(actor)},
                 scope_parent_exact_input_pairs=sum(key[1]=='SCOPE' for key in actor),
-                verified_receipts=counts)
+                verified_receipts=counts, evidence_exposure=exposure_counts(cards,selected))
 
 
 if __name__=='__main__':
