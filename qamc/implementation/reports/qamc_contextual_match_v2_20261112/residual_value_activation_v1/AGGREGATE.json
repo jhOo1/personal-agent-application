@@ -1,0 +1,792 @@
+{
+  "archive": {},
+  "calls": 28,
+  "choices": {
+    "DIRECT": {
+      "IPE_C": 13,
+      "TASK_ONLY": 1
+    },
+    "RESIDUAL": {
+      "IPE_C": 12,
+      "TASK_ONLY": 2
+    }
+  },
+  "pairwise": {
+    "DIRECT/loss": 1,
+    "DIRECT/tie": 11,
+    "DIRECT/win": 1,
+    "IPE_C/tie": 12,
+    "IPE_C/win": 1
+  },
+  "retries": 0,
+  "router_status": {
+    "GROUNDED_WITNESS": 12,
+    "OK": 16
+  },
+  "rows": [
+    {
+      "case": "implicit/041",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "OPB": 2,
+          "UPB": 2,
+          "match": 3,
+          "positions": 6
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "C",
+      "unflagged": true
+    },
+    {
+      "case": "explicit/132",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 4,
+          "positions": 5
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 4,
+          "positions": 5
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 4,
+          "positions": 5
+        },
+        "TASK_ONLY": {
+          "FM": 2,
+          "OPB": 1,
+          "UPB": 2,
+          "match": 4,
+          "positions": 5
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "C",
+      "unflagged": false
+    },
+    {
+      "case": "implicit/074",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 0,
+          "match": 4,
+          "positions": 6
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 4,
+          "positions": 6
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "C",
+      "unflagged": true
+    },
+    {
+      "case": "explicit/056",
+      "common_valid": false,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {},
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "C",
+      "unflagged": false
+    },
+    {
+      "case": "implicit/077",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 6,
+          "positions": 9
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 6,
+          "positions": 9
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 6,
+          "positions": 9
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 4,
+          "positions": 9
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "C",
+      "unflagged": true
+    },
+    {
+      "case": "explicit/055",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "TASK_ONLY"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 3,
+          "match": 2,
+          "positions": 5
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 3,
+          "match": 2,
+          "positions": 5
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 3,
+          "match": 2,
+          "positions": 5
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 3,
+          "match": 2,
+          "positions": 5
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "OK"
+      },
+      "stratum": "B",
+      "unflagged": true
+    },
+    {
+      "case": "pa_transfer_20261109/f9f5dc9d527b54635d4f",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "TASK_ONLY"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 1,
+          "OPB": 5,
+          "UPB": 0,
+          "match": 0,
+          "positions": 7
+        },
+        "IPE_C": {
+          "FM": 1,
+          "OPB": 5,
+          "UPB": 0,
+          "match": 0,
+          "positions": 7
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 7,
+          "positions": 7
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 7,
+          "positions": 7
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "OK"
+      },
+      "stratum": "A",
+      "unflagged": true
+    },
+    {
+      "case": "explicit/043",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 5
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 5
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 5
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 5
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "B",
+      "unflagged": false
+    },
+    {
+      "case": "implicit/021",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "TASK_ONLY",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 5,
+          "positions": 5
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 4,
+          "UPB": 0,
+          "match": 0,
+          "positions": 5
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 4,
+          "UPB": 0,
+          "match": 0,
+          "positions": 5
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 5,
+          "positions": 5
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "A",
+      "unflagged": true
+    },
+    {
+      "case": "implicit/024",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "match": 2,
+          "positions": 4
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "match": 2,
+          "positions": 4
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "match": 2,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 2,
+          "match": 2,
+          "positions": 4
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "B",
+      "unflagged": false
+    },
+    {
+      "case": "implicit/102",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 3,
+          "positions": 3
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 3,
+          "positions": 3
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 0,
+          "match": 3,
+          "positions": 3
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 4,
+          "match": 0,
+          "positions": 3
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "A",
+      "unflagged": false
+    },
+    {
+      "case": "pa_transfer_20261109/c8142c5a837b3a5c0bba",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 1,
+          "OPB": 3,
+          "UPB": 0,
+          "match": 0,
+          "positions": 4
+        },
+        "IPE_C": {
+          "FM": 1,
+          "OPB": 3,
+          "UPB": 0,
+          "match": 0,
+          "positions": 4
+        },
+        "RESIDUAL": {
+          "FM": 1,
+          "OPB": 3,
+          "UPB": 0,
+          "match": 0,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 4,
+          "match": 0,
+          "positions": 4
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "A",
+      "unflagged": false
+    },
+    {
+      "case": "explicit/036",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 2,
+          "positions": 4
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 2,
+          "positions": 4
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 2,
+          "UPB": 0,
+          "match": 2,
+          "positions": 4
+        },
+        "TASK_ONLY": {
+          "FM": 0,
+          "OPB": 1,
+          "UPB": 2,
+          "match": 2,
+          "positions": 4
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "B",
+      "unflagged": false
+    },
+    {
+      "case": "implicit/078",
+      "common_valid": true,
+      "routes": {
+        "DIRECT": "IPE_C",
+        "RESIDUAL": "IPE_C"
+      },
+      "scores": {
+        "DIRECT": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 6
+        },
+        "IPE_C": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 6
+        },
+        "RESIDUAL": {
+          "FM": 0,
+          "OPB": 0,
+          "UPB": 1,
+          "match": 4,
+          "positions": 6
+        },
+        "TASK_ONLY": {
+          "FM": 1,
+          "OPB": 0,
+          "UPB": 4,
+          "match": 2,
+          "positions": 6
+        }
+      },
+      "statuses": {
+        "DIRECT": "OK",
+        "RESIDUAL": "GROUNDED_WITNESS"
+      },
+      "stratum": "B",
+      "unflagged": true
+    }
+  ],
+  "tokens": 89322,
+  "totals": {
+    "A": {
+      "DIRECT": {
+        "FM": 2,
+        "OPB": 8,
+        "UPB": 0,
+        "match": 8,
+        "positions": 19,
+        "tasks": 4
+      },
+      "IPE_C": {
+        "FM": 2,
+        "OPB": 12,
+        "UPB": 0,
+        "match": 3,
+        "positions": 19,
+        "tasks": 4
+      },
+      "RESIDUAL": {
+        "FM": 1,
+        "OPB": 7,
+        "UPB": 0,
+        "match": 10,
+        "positions": 19,
+        "tasks": 4
+      },
+      "TASK_ONLY": {
+        "FM": 0,
+        "OPB": 0,
+        "UPB": 8,
+        "match": 12,
+        "positions": 19,
+        "tasks": 4
+      }
+    },
+    "B": {
+      "DIRECT": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 7,
+        "match": 14,
+        "positions": 24,
+        "tasks": 5
+      },
+      "IPE_C": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 7,
+        "match": 14,
+        "positions": 24,
+        "tasks": 5
+      },
+      "RESIDUAL": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 7,
+        "match": 14,
+        "positions": 24,
+        "tasks": 5
+      },
+      "TASK_ONLY": {
+        "FM": 1,
+        "OPB": 1,
+        "UPB": 12,
+        "match": 12,
+        "positions": 24,
+        "tasks": 5
+      }
+    },
+    "C": {
+      "DIRECT": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 2,
+        "match": 18,
+        "positions": 26,
+        "tasks": 4
+      },
+      "IPE_C": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 2,
+        "match": 18,
+        "positions": 26,
+        "tasks": 4
+      },
+      "RESIDUAL": {
+        "FM": 0,
+        "OPB": 3,
+        "UPB": 2,
+        "match": 18,
+        "positions": 26,
+        "tasks": 4
+      },
+      "TASK_ONLY": {
+        "FM": 5,
+        "OPB": 3,
+        "UPB": 8,
+        "match": 15,
+        "positions": 26,
+        "tasks": 4
+      }
+    },
+    "all": {
+      "DIRECT": {
+        "FM": 2,
+        "OPB": 14,
+        "UPB": 9,
+        "match": 40,
+        "positions": 69,
+        "tasks": 13
+      },
+      "IPE_C": {
+        "FM": 2,
+        "OPB": 18,
+        "UPB": 9,
+        "match": 35,
+        "positions": 69,
+        "tasks": 13
+      },
+      "RESIDUAL": {
+        "FM": 1,
+        "OPB": 13,
+        "UPB": 9,
+        "match": 42,
+        "positions": 69,
+        "tasks": 13
+      },
+      "TASK_ONLY": {
+        "FM": 6,
+        "OPB": 4,
+        "UPB": 28,
+        "match": 39,
+        "positions": 69,
+        "tasks": 13
+      }
+    },
+    "unflagged": {
+      "DIRECT": {
+        "FM": 1,
+        "OPB": 8,
+        "UPB": 6,
+        "match": 25,
+        "positions": 44,
+        "tasks": 7
+      },
+      "IPE_C": {
+        "FM": 1,
+        "OPB": 12,
+        "UPB": 6,
+        "match": 20,
+        "positions": 44,
+        "tasks": 7
+      },
+      "RESIDUAL": {
+        "FM": 0,
+        "OPB": 7,
+        "UPB": 6,
+        "match": 27,
+        "positions": 44,
+        "tasks": 7
+      },
+      "TASK_ONLY": {
+        "FM": 4,
+        "OPB": 2,
+        "UPB": 13,
+        "match": 27,
+        "positions": 44,
+        "tasks": 7
+      }
+    }
+  },
+  "transport_status": {
+    "OK": 28
+  },
+  "unknown_usage": 0
+}
