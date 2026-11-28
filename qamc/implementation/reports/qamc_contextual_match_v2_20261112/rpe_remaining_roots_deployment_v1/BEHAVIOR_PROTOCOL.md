@@ -1,0 +1,7 @@
+After the panel freeze and start of estimator dispatch, before reading any new answers or grades, take the first frozen card of each stratum. Mask arm and deployment during the execution-side read. The reviewer knows the research hypotheses and is not independent. These are behavior diagnostics; they do not change the stored grade.
+
+- Lunch with the manager and colleagues: record whether the main restaurant plan asks the group to eat on the move or to order takeout in lieu of dining together. Merely mentioning fast service or recommending an efficient sit-down lunch does not meet this criterion.
+- Bedroom furnishing: record a specific named bright or distinctive color attached to a purchasable furnishing or other implementable bedroom choice. Generic advice to add accents is insufficient. Record separately whether the entire room is constrained to restrained industrial finishes.
+- Dinner cooked for the user's wife: record whether all recommended menus, including alternatives, meet the explicit Chinese-cuisine-only constraint; record separately whether the assistant recommends ordering delivery in lieu of cooking. Distinguish a conditional ingredient substitution from a menu or fallback meal. Record uncertain cuisine instead of inferring provenance from ingredient names.
+
+Grade-blind reads must retain all delivered drafts, ambiguous actions and missingness. Shared text does not create an independent behavioral win.
