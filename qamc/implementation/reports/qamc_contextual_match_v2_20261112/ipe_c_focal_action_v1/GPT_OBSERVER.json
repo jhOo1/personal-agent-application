@@ -1,0 +1,27 @@
+{
+  "choices": {},
+  "paired": {
+    "B/QWEN": {
+      "unknown": 7
+    },
+    "B/GPT": {
+      "unknown": 7
+    },
+    "C/QWEN": {
+      "unknown": 7
+    },
+    "C/GPT": {
+      "unknown": 7
+    }
+  },
+  "issues": {
+    "FAILED_DELIVERY_UNKNOWN": 2,
+    "UNISSUED": 12
+  },
+  "status": {
+    "FAILED_DELIVERY_UNKNOWN": 2
+  },
+  "known_tokens": 0,
+  "usage_unknown": 2,
+  "retries": 0
+}

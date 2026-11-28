@@ -1,0 +1,88 @@
+{
+  "paired": {
+    "B/QWEN": {
+      "assigned": 5,
+      "ABSENT -> DELIVERED": 2,
+      "MENTION_ONLY -> DELIVERED": 1,
+      "DELIVERED -> DELIVERED": 2
+    },
+    "B/GPT": {
+      "assigned": 5,
+      "ABSENT -> DELIVERED": 1,
+      "MENTION_ONLY -> DELIVERED": 2,
+      "DELIVERED -> DELIVERED": 2
+    },
+    "C/QWEN": {
+      "assigned": 7,
+      "VIOLATED -> DELIVERED": 4,
+      "MENTION_ONLY -> DELIVERED": 1,
+      "ABSENT -> DELIVERED": 1,
+      "DELIVERED -> DELIVERED": 1
+    },
+    "C/GPT": {
+      "assigned": 7,
+      "VIOLATED -> DELIVERED": 6,
+      "VIOLATED -> MENTION_ONLY": 1
+    }
+  },
+  "states": {
+    "B/QWEN/Task": {
+      "ABSENT": 2,
+      "MENTION_ONLY": 1,
+      "DELIVERED": 2
+    },
+    "B/QWEN/History": {
+      "DELIVERED": 5
+    },
+    "B/QWEN/IPE_C": {
+      "ABSENT": 2,
+      "MENTION_ONLY": 1,
+      "DELIVERED": 2
+    },
+    "B/GPT/Task": {
+      "ABSENT": 1,
+      "MENTION_ONLY": 2,
+      "DELIVERED": 2
+    },
+    "B/GPT/History": {
+      "DELIVERED": 5
+    },
+    "B/GPT/IPE_C": {
+      "ABSENT": 1,
+      "MENTION_ONLY": 2,
+      "DELIVERED": 2
+    },
+    "C/QWEN/Task": {
+      "VIOLATED": 4,
+      "MENTION_ONLY": 1,
+      "ABSENT": 1,
+      "DELIVERED": 1
+    },
+    "C/QWEN/History": {
+      "DELIVERED": 7
+    },
+    "C/QWEN/IPE_C": {
+      "DELIVERED": 7
+    },
+    "C/GPT/Task": {
+      "VIOLATED": 7
+    },
+    "C/GPT/History": {
+      "DELIVERED": 6,
+      "MENTION_ONLY": 1
+    },
+    "C/GPT/IPE_C": {
+      "DELIVERED": 6,
+      "MENTION_ONLY": 1
+    }
+  },
+  "parser": {
+    "OK": 12
+  },
+  "physical": {
+    "OK": 12
+  },
+  "tokens": 56417,
+  "unknown_usage": 0,
+  "retries": 0
+}
