@@ -61,3 +61,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [PersistBench 同选择信号下的真实遮蔽与显式提醒](implementation/reports/qamc_contextual_match_v2_20261112/persist_matched_reminder_v1/RESULTS.md)已结算。两臂 10 个来源在 GPT-4.1、Qwen 下均为 3/4 迎合通过、3/3 跨域通过、3/3 严格有益使用通过。歌单题仅在评分严重度上改善，误选的私人忌讳仍影响最终曲目。没有证据支持把遮蔽单列为性能贡献。后续新方案必须与同信号全史提醒比较，并保护任务绑定事实。旧三抽、外部对照、原有三基准档案全部保留。
 
 [PersistBench 选择器历史消息角色对照](implementation/reports/qamc_contextual_match_v2_20261112/persist_selector_role_transport_v1/RESULTS.md)已结算。七个双臂有效选择中三题改变准入；没有双裁判共同风险净胜。助手消息在霸王龙展牌题放行私人信念并影响展牌，用户消息在纪念日晚餐题漏掉原来正确使用的伴侣菜品偏好。原选择器和全史提醒强对照继续保留，不扩大角色切换路线。三条解析失败和一条 Actor 交付未知分开计入。
+
+[三基准同来源片段保护与隔离](implementation/reports/qamc_contextual_match_v2_20261112/protected_clause_exposure_v1/RESULTS.md)结算。五题真正触发，原生适配分无净胜。RPEval 同题 13/24→12/24；两道实际触发的 PersistBench 风险题同分失败，且罗马行程的评分理由误报了已消失的分手内容，其他私人细节仍真实存在。BenchPreS 与严格有益使用沿用原稿，不能用于证明真实修改时的保护性。不再扩大此片段隔离规则。
