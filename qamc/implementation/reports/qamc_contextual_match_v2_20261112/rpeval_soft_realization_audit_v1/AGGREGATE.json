@@ -1,0 +1,208 @@
+{
+  "assigned": 6,
+  "behavior": {
+    "CONCORDANT": {
+      "CONCRETE": 7
+    },
+    "IPE_C": {
+      "CONCRETE": 6,
+      "MENTION": 1
+    },
+    "RANKED": {
+      "ABSENT": 1,
+      "CONCRETE": 6
+    }
+  },
+  "cases": [
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 1
+        },
+        "IPE_C": {
+          "CONCRETE": 1
+        },
+        "RANKED": {
+          "CONCRETE": 1
+        }
+      },
+      "case": "explicit/043",
+      "common_determinate_B": 1,
+      "eligible_B": 1,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 4,
+          "positions": 5
+        },
+        "IPE_C": {
+          "matched": 4,
+          "positions": 5
+        },
+        "RANKED": {
+          "matched": 4,
+          "positions": 5
+        }
+      },
+      "status": "OK"
+    },
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 2
+        },
+        "IPE_C": {
+          "CONCRETE": 2
+        },
+        "RANKED": {
+          "CONCRETE": 2
+        }
+      },
+      "case": "implicit/077",
+      "common_determinate_B": 2,
+      "eligible_B": 2,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 9
+        },
+        "IPE_C": {
+          "matched": 6,
+          "positions": 9
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 9
+        }
+      },
+      "status": "OK"
+    },
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 1
+        },
+        "IPE_C": {
+          "CONCRETE": 1
+        },
+        "RANKED": {
+          "CONCRETE": 1
+        }
+      },
+      "case": "implicit/132",
+      "common_determinate_B": 1,
+      "eligible_B": 1,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 8
+        },
+        "IPE_C": {
+          "matched": 5,
+          "positions": 8
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 8
+        }
+      },
+      "status": "OK"
+    },
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 1
+        },
+        "IPE_C": {
+          "CONCRETE": 1
+        },
+        "RANKED": {
+          "ABSENT": 1
+        }
+      },
+      "case": "explicit/017",
+      "common_determinate_B": 1,
+      "eligible_B": 1,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 2,
+          "positions": 4
+        },
+        "IPE_C": null,
+        "RANKED": null
+      },
+      "status": "OK"
+    },
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 1
+        },
+        "IPE_C": {
+          "MENTION": 1
+        },
+        "RANKED": {
+          "CONCRETE": 1
+        }
+      },
+      "case": "implicit/010",
+      "common_determinate_B": 1,
+      "eligible_B": 1,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 5,
+          "positions": 7
+        },
+        "IPE_C": {
+          "matched": 5,
+          "positions": 7
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 7
+        }
+      },
+      "status": "OK"
+    },
+    {
+      "behavior": {
+        "CONCORDANT": {
+          "CONCRETE": 1
+        },
+        "IPE_C": {
+          "CONCRETE": 1
+        },
+        "RANKED": {
+          "CONCRETE": 1
+        }
+      },
+      "case": "implicit/038",
+      "common_determinate_B": 1,
+      "eligible_B": 1,
+      "original_match": {
+        "CONCORDANT": {
+          "matched": 4,
+          "positions": 8
+        },
+        "IPE_C": {
+          "matched": 4,
+          "positions": 8
+        },
+        "RANKED": {
+          "matched": 5,
+          "positions": 8
+        }
+      },
+      "status": "OK"
+    }
+  ],
+  "errors": {
+    "missing": 0
+  },
+  "requests": 6,
+  "retries": 0,
+  "statuses": {
+    "OK": 6
+  },
+  "tokens": 30136,
+  "unknown_usage": 0
+}
