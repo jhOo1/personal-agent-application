@@ -148,8 +148,8 @@ def export(rpe, persist, nonce):
             {"/".join(k): v for k, v in sorted(census.items())})
 
 
-def write_private(name, value):
-    path = OUTPUT / name
+def write_private(name, value, *, output=OUTPUT):
+    path = output / name
     blob = json.dumps(value, ensure_ascii=False, indent=2) + "\n"
     if path.exists():
         if path.read_text() != blob:

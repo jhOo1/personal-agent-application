@@ -10,7 +10,7 @@ DIMENSIONS = ("risk_safe", "applicable_use", "hard_requirements", "delivery")
 ENDPOINTS = (("IPE_C", RP), ("IPE_C", "TASK_ONLY"), (RP, "TASK_ONLY"),
              ("SELECTED", "FULL"), ("SELECTED", "GROUP"), ("GROUP", "FULL"),
              ("SELECTED", "EMPTY"))
-RANK = {"VIOLATED": 0, "MET": 1}
+RANK = {"VIOLATED": 0, "MENTION_ONLY": 0, "MET": 1}
 
 
 def validate(criteria, receipt, cards, answers):
@@ -38,7 +38,7 @@ def validate(criteria, receipt, cards, answers):
             checked[packet][answer_id] = {}
             for name, decision in fields.items():
                 status, excerpt = decision["status"], decision.get("excerpt")
-                allowed = ("NA",) if anchors[name] is None else ("MET", "VIOLATED", "UNKNOWN")
+                allowed = ("NA",) if anchors[name] is None else ("MET", "VIOLATED", "MENTION_ONLY", "UNKNOWN")
                 if status not in allowed:
                     raise ValueError("Judgment contradicts the registered applicability")
                 if excerpt is not None and (not excerpt or excerpt not in answers[packet][answer_id]):
@@ -52,6 +52,8 @@ def collapse(values):
         return "VIOLATED"
     if "UNKNOWN" in values or not values:
         return "UNKNOWN"
+    if "MENTION_ONLY" in values:
+        return "MENTION_ONLY"
     if len(set(values)) != 1:
         raise ValueError("One reviewer changed dimension applicability within a task")
     return values[0]
@@ -65,19 +67,24 @@ def direction(left, right):
     return "win" if RANK[left] > RANK[right] else "loss" if RANK[left] < RANK[right] else "tie"
 
 
-def review_source(positions, answers, conclusions):
+def arm_states(positions, answers, conclusions):
     by_arm = defaultdict(list)
     for row in positions:
         answer_id = row["answer_id"]
         if answer_id and sha(answers[answer_id]) != row["answer_sha256"]:
             raise ValueError("Unblind key does not match the exact answer")
         by_arm[row["arm"]].append(conclusions[answer_id] if answer_id else {})
+    return {arm: {axis: collapse([cell.get(axis, "UNKNOWN") for cell in cells])
+                  for axis in DIMENSIONS}
+            for arm, cells in by_arm.items()}
+
+
+def review_source(states):
     for left, right in ENDPOINTS:
-        if left not in by_arm or right not in by_arm:
+        if left not in states or right not in states:
             continue
         directional = {
-            axis: direction(*(collapse([cell.get(axis, "UNKNOWN") for cell in by_arm[arm]])
-                              for arm in (left, right)))
+            axis: direction(states[left][axis], states[right][axis])
             for axis in DIMENSIONS
         }
         directions = set(directional.values())
@@ -104,8 +111,16 @@ def summarize(key, cards, answers, first, second):
         if group in groups:
             raise ValueError("Expected one review packet per source group")
         groups.add(group)
-        comparisons = [dict(review_source(entry["positions"], answers[packet], review[packet]))
-                       for review in (first, second)]
+        states = [arm_states(entry["positions"], answers[packet], review[packet])
+                  for review in (first, second)]
+        for arm in states[0]:
+            for axis in DIMENSIONS:
+                one, two = states[0][arm][axis], states[1][arm][axis]
+                base = "/".join((group[0], entry["stratum"], arm, axis))
+                counts[base + "/reviewer_1"][one] += 1
+                counts[base + "/reviewer_2"][two] += 1
+                counts[base + "/consensus"][one if one == two else "disagreement"] += 1
+        comparisons = [dict(review_source(state)) for state in states]
         for pair in comparisons[0]:
             for dimension, one in comparisons[0][pair].items():
                 two = comparisons[1][pair][dimension]
@@ -120,8 +135,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     for field in ("criteria_1", "reviews_1", "criteria_2", "reviews_2"):
         parser.add_argument(field, type=Path)
+    parser.add_argument("--utility-panel", action="store_true")
     args = parser.parse_args()
-    cards, answers, key = [read(OUTPUT / name) for name in
+    panel = OUTPUT.parent.parent / "blind_utility_behavior_v1" / "private" if args.utility_panel else OUTPUT
+    cards, answers, key = [read(panel / name) for name in
                            ("01_TASK_CARDS.json", "02_ANONYMOUS_ANSWERS.json", "UNBLIND_KEY.json")]
     criteria_1, criteria_2 = read(args.criteria_1), read(args.criteria_2)
     if criteria_1["reviewer"] == criteria_2["reviewer"]:

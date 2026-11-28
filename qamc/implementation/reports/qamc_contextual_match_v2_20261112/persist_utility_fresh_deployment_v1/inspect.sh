@@ -8,4 +8,12 @@ for name in persist_selected_gepa_completion_v1 persist_equal_cap_safety_v1 pers
 done
 PYTHONPATH="$PYTHONPATH:$(find "$base" -mindepth 1 -maxdepth 1 -type d | sort | paste -s -d : -)"
 export PYTHONDONTWRITEBYTECODE=1
+if [[ "${1:-}" == exposure-recurrence ]]; then
+  shift
+  exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/persist_utility_fresh_deployment_v1/exposure_recurrence.py" "$@"
+fi
+if [[ "${1:-}" == blind-review ]]; then
+  shift
+  exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/persist_utility_fresh_deployment_v1/build_utility_review.py" "$@"
+fi
 exec "${QAMC_PYTHON:-../qamc/.venv/bin/python}" "$base/persist_utility_fresh_deployment_v1/inspect_answers.py" "$@"

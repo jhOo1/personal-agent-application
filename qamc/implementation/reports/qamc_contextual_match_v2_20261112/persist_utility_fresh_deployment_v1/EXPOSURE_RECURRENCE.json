@@ -1,0 +1,150 @@
+{
+  "nested_selection_pairs": {
+    "beneficial_memory_usage/gpt": {
+      "larger_nested_keep_empty_vs_first/tie": 12,
+      "larger_nested_keep_empty_vs_first/unknown": 1,
+      "larger_nested_keep_empty_vs_second/tie": 12,
+      "larger_nested_keep_empty_vs_second/unknown": 1,
+      "larger_nested_vs_first/tie": 12,
+      "larger_nested_vs_first/unknown": 1,
+      "larger_nested_vs_second/tie": 12,
+      "larger_nested_vs_second/unknown": 1
+    },
+    "beneficial_memory_usage/qwen": {
+      "larger_nested_keep_empty_vs_first/tie": 12,
+      "larger_nested_keep_empty_vs_first/unknown": 1,
+      "larger_nested_keep_empty_vs_second/loss": 1,
+      "larger_nested_keep_empty_vs_second/tie": 7,
+      "larger_nested_keep_empty_vs_second/unknown": 2,
+      "larger_nested_keep_empty_vs_second/win": 3,
+      "larger_nested_vs_first/tie": 12,
+      "larger_nested_vs_first/unknown": 1,
+      "larger_nested_vs_second/loss": 1,
+      "larger_nested_vs_second/tie": 7,
+      "larger_nested_vs_second/unknown": 2,
+      "larger_nested_vs_second/win": 3
+    },
+    "cross_domain/gpt": {
+      "larger_nested_keep_empty_vs_first/tie": 19,
+      "larger_nested_keep_empty_vs_second/tie": 19,
+      "larger_nested_vs_first/tie": 19,
+      "larger_nested_vs_second/tie": 19
+    },
+    "sycophancy/gpt": {
+      "larger_nested_keep_empty_vs_first/tie": 12,
+      "larger_nested_keep_empty_vs_second/tie": 12,
+      "larger_nested_vs_first/tie": 12,
+      "larger_nested_vs_second/tie": 12
+    }
+  },
+  "nested_selection_replay": {
+    "beneficial_memory_usage/gpt": {
+      "first/pass": 12,
+      "first/unknown": 1,
+      "larger_nested/pass": 12,
+      "larger_nested/unknown": 1,
+      "larger_nested_keep_empty/pass": 12,
+      "larger_nested_keep_empty/unknown": 1,
+      "second/pass": 13
+    },
+    "beneficial_memory_usage/qwen": {
+      "first/fail": 1,
+      "first/pass": 11,
+      "first/unknown": 1,
+      "larger_nested/fail": 1,
+      "larger_nested/pass": 11,
+      "larger_nested/unknown": 1,
+      "larger_nested_keep_empty/fail": 1,
+      "larger_nested_keep_empty/pass": 11,
+      "larger_nested_keep_empty/unknown": 1,
+      "second/fail": 3,
+      "second/pass": 9,
+      "second/unknown": 1
+    },
+    "cross_domain/gpt": {
+      "first/fail": 1,
+      "first/pass": 18,
+      "larger_nested/fail": 1,
+      "larger_nested/pass": 18,
+      "larger_nested_keep_empty/fail": 1,
+      "larger_nested_keep_empty/pass": 18,
+      "second/fail": 1,
+      "second/pass": 18
+    },
+    "sycophancy/gpt": {
+      "first/fail": 1,
+      "first/pass": 11,
+      "larger_nested/fail": 1,
+      "larger_nested/pass": 11,
+      "larger_nested_keep_empty/fail": 1,
+      "larger_nested_keep_empty/pass": 11,
+      "second/fail": 1,
+      "second/pass": 11
+    }
+  },
+  "new_model_calls": 0,
+  "strict_utility_qwen_transitions": {
+    "changed_ordered_history": {
+      "pass_to_fail": 2,
+      "pass_to_pass": 5,
+      "pass_to_unknown": 1
+    },
+    "same_ordered_history": {
+      "fail_to_pass": 1,
+      "pass_to_fail": 1,
+      "pass_to_pass": 2,
+      "unknown_to_pass": 1
+    }
+  },
+  "tracks": {
+    "beneficial_memory_usage": {
+      "empty_first": 0,
+      "empty_second": 0,
+      "known": 13,
+      "reopens_from_first_empty": 0,
+      "reopens_from_second_empty": 0,
+      "roots": 18,
+      "same_members": 5,
+      "same_ordered_history": 5,
+      "selection_unknown": 5,
+      "union_adds_to_first": 6,
+      "union_adds_to_second": 6,
+      "union_changes_first": 4,
+      "union_changes_second": 4,
+      "union_is_full": 0,
+      "union_is_new_relative_to_both": 0
+    },
+    "cross_domain": {
+      "empty_first": 13,
+      "empty_second": 12,
+      "known": 19,
+      "reopens_from_first_empty": 1,
+      "reopens_from_second_empty": 0,
+      "roots": 19,
+      "same_members": 15,
+      "same_ordered_history": 15,
+      "union_adds_to_first": 1,
+      "union_adds_to_second": 3,
+      "union_changes_first": 1,
+      "union_changes_second": 3,
+      "union_is_full": 0,
+      "union_is_new_relative_to_both": 0
+    },
+    "sycophancy": {
+      "empty_first": 9,
+      "empty_second": 8,
+      "known": 12,
+      "reopens_from_first_empty": 1,
+      "reopens_from_second_empty": 0,
+      "roots": 12,
+      "same_members": 9,
+      "same_ordered_history": 9,
+      "union_adds_to_first": 3,
+      "union_adds_to_second": 1,
+      "union_changes_first": 2,
+      "union_changes_second": 1,
+      "union_is_full": 0,
+      "union_is_new_relative_to_both": 0
+    }
+  }
+}

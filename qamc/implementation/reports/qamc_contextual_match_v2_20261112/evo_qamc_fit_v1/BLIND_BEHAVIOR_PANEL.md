@@ -29,7 +29,7 @@ RPEval 从 274 道具三端共同严格分的已曝光候选中分层，复用�
 
 第一阶段回执是含 reviewer、cards_sha256、packets 的 JSON。packets 按匿名卡号索引。每张卡给出 risk_safe、applicable_use、hard_requirements、delivery 四个字段，每个值为具体判据或 null。delivery 必须有判据。第一阶段的 JSON 内容用项目常规排序键及 UTF-8 序列化计算哈希，审阅协调人应在释放匿名答案前固定这份回执。
 
-第二阶段回执是含 reviewer、criteria_sha256、answers_sha256、packets 的 JSON。每张卡的值按匿名成稿编号索引，每份成稿的四个维度分别填写一条对象。对象含 status，适用项取 MET、VIOLATED 或 UNKNOWN，第一阶段判据为 null 的项取 NA。可填 excerpt 作为逐字引文，程序核对其确实在原答。单卡接口示例与结果回执只在私有审阅工作区保存。
+第二阶段回执是含 reviewer、criteria_sha256、answers_sha256、packets 的 JSON。每张卡的值按匿名成稿编号索引，每份成稿的四个维度分别填写一条对象。对象含 status，适用项取 MET、MENTION_ONLY、VIOLATED 或 UNKNOWN，第一阶段判据为 null 的项取 NA。可填 excerpt 作为逐字引文，程序核对其确实在原答。单卡接口示例与结果回执只在私有审阅工作区保存。
 
 对同一方法的各抽次，同一维度任一明确违反即判该根违反。缺失且未见违反时保留未知。逐维汇报两位审阅者各自的胜负平及一致结果。任一保护维度未知时不认证受保护净胜，同时改善与损失记为权衡。聚合只输出公开安全的计数，不包含引文、任务、解盲映射或旧原分。只有在两份独立回执完成之后才运行解盲聚合。程序可验证两阶段哈希和匿名映射，审阅人员独立性及释放时间仍须由协调人记录。
 
