@@ -8,11 +8,15 @@ from trial import HERE,sha
 
 
 def manifest(directory,stage):
-    file=directory/'private'/f'{stage}_MANIFEST.json'
-    if not file.exists():
+    name=f'{stage}_MANIFEST.json'
+    paths=[path for path in (directory/'private'/name,directory/name) if path.exists()]
+    if not paths:
         return {}
+    units=read(paths[0])['units']
+    if len(paths)==2 and read(paths[1])['units']!=units:
+        raise ValueError(f'Conflicting manifests for {stage}')
     found={}
-    for entry in read(file)['units']:
+    for entry in units:
         key=entry['unit']['root_id'],entry['unit']['method']
         assert key not in found
         found[key]=entry['request']
