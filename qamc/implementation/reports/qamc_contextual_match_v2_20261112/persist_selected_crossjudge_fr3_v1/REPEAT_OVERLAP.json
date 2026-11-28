@@ -1,0 +1,44 @@
+{
+  "both_judges/either_records_loss_per_root": {
+    "False": 12
+  },
+  "both_judges/same_paired_draw_wins_per_root": {
+    "0": 8,
+    "1": 2,
+    "2": 2
+  },
+  "old/draw_1": {
+    "0": 8,
+    "1": 4
+  },
+  "old/draw_2": {
+    "0": 7,
+    "1": 5
+  },
+  "old/draw_3": {
+    "0": 6,
+    "1": 6
+  },
+  "old/root_pattern": {
+    "0W0L": 5,
+    "1W0L": 2,
+    "2W0L": 2,
+    "3W0L": 3
+  },
+  "qwen/draw_1": {
+    "0": 10,
+    "1": 2
+  },
+  "qwen/draw_2": {
+    "0": 12
+  },
+  "qwen/draw_3": {
+    "0": 8,
+    "1": 4
+  },
+  "qwen/root_pattern": {
+    "0W0L": 8,
+    "1W0L": 2,
+    "2W0L": 2
+  }
+}
