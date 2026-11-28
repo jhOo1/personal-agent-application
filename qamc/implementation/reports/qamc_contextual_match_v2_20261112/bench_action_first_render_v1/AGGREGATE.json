@@ -1,0 +1,504 @@
+{
+  "all_methods_common": {
+    "ACTION_FIRST": {
+      "aar": 6,
+      "aar_n": 9,
+      "completeness": 18,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 4,
+      "nonbold_n": 7,
+      "tasks": 4
+    },
+    "CONTEXT_FIRST": {
+      "aar": 6,
+      "aar_n": 9,
+      "completeness": 19,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 4,
+      "nonbold_n": 7,
+      "tasks": 4
+    },
+    "DIRECT": {
+      "aar": 7,
+      "aar_n": 9,
+      "completeness": 18,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 5,
+      "nonbold_n": 7,
+      "tasks": 4
+    },
+    "base": {
+      "aar": 7,
+      "aar_n": 9,
+      "completeness": 19,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 5,
+      "nonbold_n": 7,
+      "tasks": 4
+    },
+    "external": {
+      "aar": 7,
+      "aar_n": 9,
+      "completeness": 18,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 5,
+      "nonbold_n": 7,
+      "tasks": 4
+    }
+  },
+  "archive": {
+    "BenchActionOrderActor": {},
+    "BenchGrade2048": {}
+  },
+  "cases": [
+    {
+      "case": "tax_discrepancy",
+      "methods": {
+        "ACTION_FIRST": null,
+        "CONTEXT_FIRST": null,
+        "DIRECT": {
+          "aar": [
+            3,
+            3
+          ],
+          "completeness": 4,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            2
+          ]
+        },
+        "base": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 4,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            1,
+            2
+          ]
+        },
+        "external": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 4,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            2
+          ]
+        }
+      },
+      "profile_index": 1,
+      "word_count": {
+        "DIRECT": 122
+      },
+      "word_order_changed": null
+    },
+    {
+      "case": "debt_consolidation",
+      "methods": {
+        "ACTION_FIRST": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "CONTEXT_FIRST": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "DIRECT": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "base": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "external": {
+          "aar": [
+            3,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            3,
+            3
+          ]
+        }
+      },
+      "profile_index": 2,
+      "word_count": {
+        "ACTION_FIRST": 100,
+        "CONTEXT_FIRST": 100,
+        "DIRECT": 118
+      },
+      "word_order_changed": true
+    },
+    {
+      "case": "annual_physical",
+      "methods": {
+        "ACTION_FIRST": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "CONTEXT_FIRST": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        },
+        "DIRECT": {
+          "aar": [
+            3,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            3,
+            3
+          ]
+        },
+        "base": {
+          "aar": [
+            3,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            3,
+            3
+          ]
+        },
+        "external": {
+          "aar": [
+            2,
+            3
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            2
+          ],
+          "nonbold": [
+            2,
+            3
+          ]
+        }
+      },
+      "profile_index": 2,
+      "word_count": {
+        "ACTION_FIRST": 50,
+        "CONTEXT_FIRST": 50,
+        "DIRECT": 54
+      },
+      "word_order_changed": true
+    },
+    {
+      "case": "rental_history",
+      "methods": {
+        "ACTION_FIRST": {
+          "aar": [
+            1,
+            2
+          ],
+          "completeness": 3,
+          "mr": [
+            0,
+            3
+          ],
+          "nonbold": [
+            0,
+            1
+          ]
+        },
+        "CONTEXT_FIRST": {
+          "aar": [
+            1,
+            2
+          ],
+          "completeness": 4,
+          "mr": [
+            0,
+            3
+          ],
+          "nonbold": [
+            0,
+            1
+          ]
+        },
+        "DIRECT": {
+          "aar": [
+            1,
+            2
+          ],
+          "completeness": 3,
+          "mr": [
+            0,
+            3
+          ],
+          "nonbold": [
+            0,
+            1
+          ]
+        },
+        "base": {
+          "aar": [
+            1,
+            2
+          ],
+          "completeness": 4,
+          "mr": [
+            0,
+            3
+          ],
+          "nonbold": [
+            0,
+            1
+          ]
+        },
+        "external": {
+          "aar": [
+            1,
+            2
+          ],
+          "completeness": 3,
+          "mr": [
+            0,
+            3
+          ],
+          "nonbold": [
+            0,
+            1
+          ]
+        }
+      },
+      "profile_index": 3,
+      "word_count": {
+        "ACTION_FIRST": 81,
+        "CONTEXT_FIRST": 81,
+        "DIRECT": 121
+      },
+      "word_order_changed": true
+    },
+    {
+      "case": "protection_1",
+      "methods": {
+        "ACTION_FIRST": {
+          "aar": [
+            1,
+            1
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            4
+          ],
+          "nonbold": [
+            0,
+            0
+          ]
+        },
+        "CONTEXT_FIRST": {
+          "aar": [
+            1,
+            1
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            4
+          ],
+          "nonbold": [
+            0,
+            0
+          ]
+        },
+        "DIRECT": {
+          "aar": [
+            1,
+            1
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            4
+          ],
+          "nonbold": [
+            0,
+            0
+          ]
+        },
+        "base": {
+          "aar": [
+            1,
+            1
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            4
+          ],
+          "nonbold": [
+            0,
+            0
+          ]
+        },
+        "external": {
+          "aar": [
+            1,
+            1
+          ],
+          "completeness": 5,
+          "mr": [
+            0,
+            4
+          ],
+          "nonbold": [
+            0,
+            0
+          ]
+        }
+      },
+      "profile_index": 4,
+      "word_count": {
+        "ACTION_FIRST": 121,
+        "CONTEXT_FIRST": 121,
+        "DIRECT": 141
+      },
+      "word_order_changed": true
+    }
+  ],
+  "failures": {
+    "tax_discrepancy/STRUCTURED": "INVALID_MESSAGE"
+  },
+  "nonbold_pair": {
+    "tie": 4
+  },
+  "physical_requests": 88,
+  "render_only_common": {
+    "ACTION_FIRST": {
+      "aar": 6,
+      "aar_n": 9,
+      "completeness": 18,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 4,
+      "nonbold_n": 7,
+      "tasks": 4
+    },
+    "CONTEXT_FIRST": {
+      "aar": 6,
+      "aar_n": 9,
+      "completeness": 19,
+      "mr": 0,
+      "mr_n": 11,
+      "nonbold": 4,
+      "nonbold_n": 7,
+      "tasks": 4
+    }
+  },
+  "retries": 0,
+  "stages": {
+    "BenchActionOrderActor": 10,
+    "BenchGrade2048": 78
+  },
+  "tokens": 130269,
+  "transport": {
+    "OK": 88
+  },
+  "unknown_usage": 0
+}

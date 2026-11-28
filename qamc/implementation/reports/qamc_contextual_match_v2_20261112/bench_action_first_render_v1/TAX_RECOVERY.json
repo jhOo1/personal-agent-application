@@ -1,0 +1,42 @@
+{
+  "archived_reused": 0,
+  "requests": 12,
+  "retries": 0,
+  "scores": {
+    "ACTION_FIRST": {
+      "aar": [
+        2,
+        3
+      ],
+      "completeness": 3,
+      "mr": [
+        0,
+        2
+      ],
+      "nonbold": [
+        1,
+        2
+      ]
+    },
+    "CONTEXT_FIRST": {
+      "aar": [
+        2,
+        3
+      ],
+      "completeness": 4,
+      "mr": [
+        0,
+        2
+      ],
+      "nonbold": [
+        1,
+        2
+      ]
+    }
+  },
+  "stage_status": {
+    "OK": 12
+  },
+  "tokens": 6581,
+  "unknown_usage": 0
+}
