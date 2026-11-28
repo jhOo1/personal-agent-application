@@ -1,0 +1,171 @@
+{
+  "tables": {
+    "IPE_C/all": {
+      "tasks": 216,
+      "changed": 0,
+      "matched": 765,
+      "positions": 1142,
+      "exact": 82,
+      "OPB": 206,
+      "UPB": 168,
+      "FM": 42
+    },
+    "IPE_C/C": {
+      "tasks": 86,
+      "changed": 0,
+      "matched": 322,
+      "positions": 529,
+      "exact": 0,
+      "OPB": 141,
+      "UPB": 72,
+      "FM": 26
+    },
+    "IPE_C/no_flags": {
+      "tasks": 152,
+      "changed": 0,
+      "matched": 586,
+      "positions": 834,
+      "exact": 70,
+      "OPB": 148,
+      "UPB": 74,
+      "FM": 35
+    },
+    "aligned/all": {
+      "tasks": 216,
+      "changed": 10,
+      "matched": 749,
+      "positions": 1142,
+      "exact": 81,
+      "OPB": 195,
+      "UPB": 194,
+      "FM": 58
+    },
+    "aligned/C": {
+      "tasks": 86,
+      "changed": 7,
+      "matched": 312,
+      "positions": 529,
+      "exact": 0,
+      "OPB": 130,
+      "UPB": 90,
+      "FM": 41
+    },
+    "aligned/no_flags": {
+      "tasks": 152,
+      "changed": 6,
+      "matched": 577,
+      "positions": 834,
+      "exact": 70,
+      "OPB": 142,
+      "UPB": 90,
+      "FM": 47
+    },
+    "rotated/all": {
+      "tasks": 216,
+      "changed": 40,
+      "matched": 732,
+      "positions": 1142,
+      "exact": 83,
+      "OPB": 165,
+      "UPB": 254,
+      "FM": 95
+    },
+    "rotated/C": {
+      "tasks": 86,
+      "changed": 35,
+      "matched": 290,
+      "positions": 529,
+      "exact": 1,
+      "OPB": 105,
+      "UPB": 150,
+      "FM": 78
+    },
+    "rotated/no_flags": {
+      "tasks": 152,
+      "changed": 25,
+      "matched": 563,
+      "positions": 834,
+      "exact": 72,
+      "OPB": 117,
+      "UPB": 134,
+      "FM": 70
+    },
+    "IPE_C/B": {
+      "tasks": 32,
+      "changed": 0,
+      "matched": 100,
+      "positions": 181,
+      "exact": 5,
+      "OPB": 13,
+      "UPB": 64,
+      "FM": 7
+    },
+    "aligned/B": {
+      "tasks": 32,
+      "changed": 2,
+      "matched": 98,
+      "positions": 181,
+      "exact": 5,
+      "OPB": 13,
+      "UPB": 67,
+      "FM": 8
+    },
+    "rotated/B": {
+      "tasks": 32,
+      "changed": 3,
+      "matched": 98,
+      "positions": 181,
+      "exact": 5,
+      "OPB": 12,
+      "UPB": 68,
+      "FM": 8
+    },
+    "IPE_C/A": {
+      "tasks": 98,
+      "changed": 0,
+      "matched": 343,
+      "positions": 432,
+      "exact": 77,
+      "OPB": 52,
+      "UPB": 32,
+      "FM": 9
+    },
+    "aligned/A": {
+      "tasks": 98,
+      "changed": 1,
+      "matched": 339,
+      "positions": 432,
+      "exact": 76,
+      "OPB": 52,
+      "UPB": 37,
+      "FM": 9
+    },
+    "rotated/A": {
+      "tasks": 98,
+      "changed": 2,
+      "matched": 344,
+      "positions": 432,
+      "exact": 77,
+      "OPB": 48,
+      "UPB": 36,
+      "FM": 9
+    }
+  },
+  "groups": {
+    "IPE_C": {
+      "wins": 0,
+      "losses": 0,
+      "ties": 42
+    },
+    "aligned": {
+      "wins": 0,
+      "losses": 6,
+      "ties": 36
+    },
+    "rotated": {
+      "wins": 1,
+      "losses": 14,
+      "ties": 27
+    }
+  }
+}
