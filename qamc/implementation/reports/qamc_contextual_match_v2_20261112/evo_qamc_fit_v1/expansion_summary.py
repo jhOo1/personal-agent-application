@@ -2,6 +2,7 @@
 from collections import Counter,defaultdict
 import json
 
+from bench_attribute_availability import summarize_attributes
 from summarize import metrics
 from summarize_reassembly import aligned
 from paired_macro import pairwise
@@ -137,6 +138,7 @@ def summarize():
                 paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=rpe_group_support(groups['RPEval']),
                 rpe_judge_sensitivity=rpe_sensitivity(groups),
                 rpe_use_degree_bounds=rpe_degree_bounds(groups['RPEval']),
+                bench_attribute_only=summarize_attributes(groups['BenchPreS'],METHODS),
                 delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
                     statuses=Counter(r['status'] for r in ledger),
                     tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger),
