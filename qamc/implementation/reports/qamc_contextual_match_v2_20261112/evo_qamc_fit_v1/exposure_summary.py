@@ -114,18 +114,22 @@ def rpe_endpoint_headroom(groups):
         if not (name=='RPEval' or name.startswith('RPEval/')):
             continue
         sums=Counter()
-        for _,_,grades in rows:
+        no_known_flags=Counter()
+        for card,receipts,grades in rows:
             if not aligned(grades,METHODS):
                 continue
             selected=grades['SELECTED']
             best=max(grades[arm]['primary'] for arm in ARMS)
             protected=max(grades[arm]['primary'] for arm in ARMS
                           if all(grades[arm][key]<=selected[key] for key in ('OPB','UPB','FM')))
-            sums.update(tasks=1,positions=selected['positions'],archived=grades['BASE']['primary'],
-                        gate=grades['GATE']['primary'],selected=selected['primary'],
+            fields=dict(tasks=1,positions=selected['positions'],archived=grades['BASE']['primary'],
+                        gate=grades['GATE']['primary'],selected=selected['primary'],off=grades['OFF']['primary'],
                         best_saved_endpoint=best,protected_best_saved_endpoint=protected,
                         archived_beyond_all_saved_endpoints=grades['BASE']['primary']>best)
-        breakdown[name]=sums
+            sums.update(fields)
+            if card['base_flags']==[] and all(receipts[arm].get('score_flags')==[] for arm in ARMS):
+                no_known_flags.update(fields)
+        breakdown[name]=dict(all_arm_common=sums,without_known_flags=no_known_flags)
     return breakdown
 
 
