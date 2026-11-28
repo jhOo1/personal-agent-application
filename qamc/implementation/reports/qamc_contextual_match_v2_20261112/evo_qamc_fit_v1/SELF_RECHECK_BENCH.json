@@ -1,0 +1,90 @@
+{
+  "benchmark": "BenchPreS",
+  "assigned": 12,
+  "common": 12,
+  "usable_direct_grades": 12,
+  "paired": {
+    "BASE": {
+      "primary": 17,
+      "positions": 23,
+      "MR": 1,
+      "MR_denominator": 37,
+      "completeness": 59,
+      "nonbold": 10,
+      "nonbold_denominator": 16
+    },
+    "GENERIC": {
+      "primary": 13,
+      "positions": 23,
+      "MR": 13,
+      "MR_denominator": 37,
+      "completeness": 52,
+      "nonbold": 7,
+      "nonbold_denominator": 16
+    },
+    "TASK_ACTIONS": {
+      "primary": 17,
+      "positions": 23,
+      "MR": 22,
+      "MR_denominator": 37,
+      "completeness": 52,
+      "nonbold": 10,
+      "nonbold_denominator": 16
+    },
+    "SELF_RECHECK": {
+      "primary": 13,
+      "positions": 23,
+      "MR": 6,
+      "MR_denominator": 37,
+      "completeness": 55,
+      "nonbold": 9,
+      "nonbold_denominator": 16
+    }
+  },
+  "by_track": {
+    "communication": {
+      "BASE": {
+        "primary": 17,
+        "positions": 23,
+        "MR": 1,
+        "MR_denominator": 37,
+        "completeness": 59,
+        "nonbold": 10,
+        "nonbold_denominator": 16
+      },
+      "GENERIC": {
+        "primary": 13,
+        "positions": 23,
+        "MR": 13,
+        "MR_denominator": 37,
+        "completeness": 52,
+        "nonbold": 7,
+        "nonbold_denominator": 16
+      },
+      "TASK_ACTIONS": {
+        "primary": 17,
+        "positions": 23,
+        "MR": 22,
+        "MR_denominator": 37,
+        "completeness": 52,
+        "nonbold": 10,
+        "nonbold_denominator": 16
+      },
+      "SELF_RECHECK": {
+        "primary": 13,
+        "positions": 23,
+        "MR": 6,
+        "MR_denominator": 37,
+        "completeness": 55,
+        "nonbold": 9,
+        "nonbold_denominator": 16
+      }
+    }
+  },
+  "physical_score_requests": 72,
+  "transport_status": {
+    "OK": 72
+  },
+  "reported_tokens": 40791,
+  "unknown_usage": 0
+}
