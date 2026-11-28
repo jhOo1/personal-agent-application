@@ -33,6 +33,8 @@ case "${1:-}" in
   joint-context) entry=joint_context.py; shift ;;
   joint-context-headroom) entry=joint_context_headroom.py; shift ;;
   pinned-actor-transfer) entry=pinned_actor_transfer.py; shift ;;
+  pinned-transfer-readout) entry=pinned_transfer_readout.py; shift ;;
+
 
 
 

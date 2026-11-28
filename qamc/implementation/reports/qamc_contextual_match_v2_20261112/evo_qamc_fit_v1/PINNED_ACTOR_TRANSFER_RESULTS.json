@@ -1,0 +1,658 @@
+{
+  "domains": {
+    "RPEval": {
+      "assigned": 16,
+      "common": 12,
+      "unflagged": 6,
+      "values": {
+        "STRONG": {
+          "primary": 37,
+          "positions": 71,
+          "OPB": 11,
+          "UPB": 18,
+          "FM": 2
+        },
+        "SCOPE_GATE": {
+          "primary": 32,
+          "positions": 71,
+          "OPB": 18,
+          "UPB": 15,
+          "FM": 6
+        },
+        "SCOPE_JCC": {
+          "primary": 35,
+          "positions": 71,
+          "OPB": 15,
+          "UPB": 15,
+          "FM": 7
+        },
+        "PIN_GATE": {
+          "primary": 23,
+          "positions": 71,
+          "OPB": 26,
+          "UPB": 12,
+          "FM": 4
+        },
+        "PIN_JCC": {
+          "primary": 23,
+          "positions": 71,
+          "OPB": 23,
+          "UPB": 13,
+          "FM": 7
+        }
+      },
+      "clean": {
+        "STRONG": {
+          "primary": 21,
+          "positions": 40,
+          "OPB": 8,
+          "UPB": 7,
+          "FM": 2
+        },
+        "SCOPE_GATE": {
+          "primary": 19,
+          "positions": 40,
+          "OPB": 9,
+          "UPB": 7,
+          "FM": 4
+        },
+        "SCOPE_JCC": {
+          "primary": 18,
+          "positions": 40,
+          "OPB": 8,
+          "UPB": 10,
+          "FM": 6
+        },
+        "PIN_GATE": {
+          "primary": 16,
+          "positions": 40,
+          "OPB": 13,
+          "UPB": 5,
+          "FM": 2
+        },
+        "PIN_JCC": {
+          "primary": 16,
+          "positions": 40,
+          "OPB": 12,
+          "UPB": 6,
+          "FM": 5
+        }
+      },
+      "status": {
+        "OK": 26,
+        "AMBIGUOUS_EXACT_ARCHIVE": 6
+      },
+      "paired": {
+        "tie": 12
+      }
+    },
+    "RPEval/contains_C": {
+      "assigned": 5,
+      "common": 4,
+      "unflagged": 2,
+      "values": {
+        "STRONG": {
+          "primary": 14,
+          "positions": 25,
+          "OPB": 9,
+          "UPB": 2,
+          "FM": 1
+        },
+        "SCOPE_GATE": {
+          "primary": 12,
+          "positions": 25,
+          "OPB": 10,
+          "UPB": 1,
+          "FM": 2
+        },
+        "SCOPE_JCC": {
+          "primary": 11,
+          "positions": 25,
+          "OPB": 9,
+          "UPB": 4,
+          "FM": 4
+        },
+        "PIN_GATE": {
+          "primary": 11,
+          "positions": 25,
+          "OPB": 10,
+          "UPB": 1,
+          "FM": 2
+        },
+        "PIN_JCC": {
+          "primary": 11,
+          "positions": 25,
+          "OPB": 9,
+          "UPB": 4,
+          "FM": 5
+        }
+      },
+      "clean": {
+        "STRONG": {
+          "primary": 9,
+          "positions": 16,
+          "OPB": 6,
+          "UPB": 0,
+          "FM": 1
+        },
+        "SCOPE_GATE": {
+          "primary": 7,
+          "positions": 16,
+          "OPB": 6,
+          "UPB": 0,
+          "FM": 2
+        },
+        "SCOPE_JCC": {
+          "primary": 6,
+          "positions": 16,
+          "OPB": 5,
+          "UPB": 3,
+          "FM": 4
+        },
+        "PIN_GATE": {
+          "primary": 6,
+          "positions": 16,
+          "OPB": 7,
+          "UPB": 0,
+          "FM": 2
+        },
+        "PIN_JCC": {
+          "primary": 6,
+          "positions": 16,
+          "OPB": 6,
+          "UPB": 3,
+          "FM": 5
+        }
+      },
+      "status": {
+        "OK": 10
+      },
+      "paired": {
+        "tie": 4
+      }
+    },
+    "RPEval/all_A": {
+      "assigned": 5,
+      "common": 3,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 4,
+          "positions": 15,
+          "OPB": 0,
+          "UPB": 9,
+          "FM": 0
+        },
+        "SCOPE_GATE": {
+          "primary": 7,
+          "positions": 15,
+          "OPB": 5,
+          "UPB": 3,
+          "FM": 2
+        },
+        "SCOPE_JCC": {
+          "primary": 11,
+          "positions": 15,
+          "OPB": 3,
+          "UPB": 0,
+          "FM": 1
+        },
+        "PIN_GATE": {
+          "primary": 0,
+          "positions": 15,
+          "OPB": 10,
+          "UPB": 3,
+          "FM": 2
+        },
+        "PIN_JCC": {
+          "primary": 0,
+          "positions": 15,
+          "OPB": 8,
+          "UPB": 3,
+          "FM": 2
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 6,
+        "AMBIGUOUS_EXACT_ARCHIVE": 4
+      },
+      "paired": {
+        "tie": 3
+      }
+    },
+    "RPEval/B_only": {
+      "assigned": 6,
+      "common": 5,
+      "unflagged": 4,
+      "values": {
+        "STRONG": {
+          "primary": 19,
+          "positions": 31,
+          "OPB": 2,
+          "UPB": 7,
+          "FM": 1
+        },
+        "SCOPE_GATE": {
+          "primary": 13,
+          "positions": 31,
+          "OPB": 3,
+          "UPB": 11,
+          "FM": 2
+        },
+        "SCOPE_JCC": {
+          "primary": 13,
+          "positions": 31,
+          "OPB": 3,
+          "UPB": 11,
+          "FM": 2
+        },
+        "PIN_GATE": {
+          "primary": 12,
+          "positions": 31,
+          "OPB": 6,
+          "UPB": 8,
+          "FM": 0
+        },
+        "PIN_JCC": {
+          "primary": 12,
+          "positions": 31,
+          "OPB": 6,
+          "UPB": 6,
+          "FM": 0
+        }
+      },
+      "clean": {
+        "STRONG": {
+          "primary": 12,
+          "positions": 24,
+          "OPB": 2,
+          "UPB": 7,
+          "FM": 1
+        },
+        "SCOPE_GATE": {
+          "primary": 12,
+          "positions": 24,
+          "OPB": 3,
+          "UPB": 7,
+          "FM": 2
+        },
+        "SCOPE_JCC": {
+          "primary": 12,
+          "positions": 24,
+          "OPB": 3,
+          "UPB": 7,
+          "FM": 2
+        },
+        "PIN_GATE": {
+          "primary": 10,
+          "positions": 24,
+          "OPB": 6,
+          "UPB": 5,
+          "FM": 0
+        },
+        "PIN_JCC": {
+          "primary": 10,
+          "positions": 24,
+          "OPB": 6,
+          "UPB": 3,
+          "FM": 0
+        }
+      },
+      "status": {
+        "OK": 10,
+        "AMBIGUOUS_EXACT_ARCHIVE": 2
+      },
+      "paired": {
+        "tie": 5
+      }
+    },
+    "BenchPreS": {
+      "assigned": 12,
+      "common": 11,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 16,
+          "positions": 22,
+          "MR": 1,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        },
+        "SCOPE_GATE": {
+          "primary": 12,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 52,
+          "nonbold": 11,
+          "nonbold_denominator": 15
+        },
+        "SCOPE_JCC": {
+          "primary": 13,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 11,
+          "nonbold_denominator": 15
+        },
+        "PIN_GATE": {
+          "primary": 10,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        },
+        "PIN_JCC": {
+          "primary": 11,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 24
+      },
+      "paired": {
+        "tie": 10,
+        "win": 1
+      }
+    },
+    "BenchPreS/communication": {
+      "assigned": 12,
+      "common": 11,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 16,
+          "positions": 22,
+          "MR": 1,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        },
+        "SCOPE_GATE": {
+          "primary": 12,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 52,
+          "nonbold": 11,
+          "nonbold_denominator": 15
+        },
+        "SCOPE_JCC": {
+          "primary": 13,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 11,
+          "nonbold_denominator": 15
+        },
+        "PIN_GATE": {
+          "primary": 10,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        },
+        "PIN_JCC": {
+          "primary": 11,
+          "positions": 22,
+          "MR": 0,
+          "MR_denominator": 33,
+          "completeness": 54,
+          "nonbold": 9,
+          "nonbold_denominator": 15
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 24
+      },
+      "paired": {
+        "tie": 10,
+        "win": 1
+      }
+    },
+    "PersistBench": {
+      "assigned": 12,
+      "common": 11,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 8,
+          "strict_pass": 8,
+          "positions": 11
+        },
+        "SCOPE_GATE": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 11
+        },
+        "SCOPE_JCC": {
+          "primary": 10,
+          "strict_pass": 10,
+          "positions": 11
+        },
+        "PIN_GATE": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 11
+        },
+        "PIN_JCC": {
+          "primary": 9,
+          "strict_pass": 9,
+          "positions": 11
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 22,
+        "KNOWN_LENGTH_FAILURE": 2
+      },
+      "paired": {
+        "tie": 11
+      }
+    },
+    "PersistBench/sycophancy": {
+      "assigned": 4,
+      "common": 4,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "SCOPE_GATE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "SCOPE_JCC": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "PIN_GATE": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "PIN_JCC": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 8
+      },
+      "paired": {
+        "tie": 4
+      }
+    },
+    "PersistBench/cross_domain": {
+      "assigned": 4,
+      "common": 3,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 3
+        },
+        "SCOPE_GATE": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 3
+        },
+        "SCOPE_JCC": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 3
+        },
+        "PIN_GATE": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 3
+        },
+        "PIN_JCC": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 3
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 6,
+        "KNOWN_LENGTH_FAILURE": 2
+      },
+      "paired": {
+        "tie": 3
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "assigned": 4,
+      "common": 4,
+      "unflagged": 0,
+      "values": {
+        "STRONG": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SCOPE_GATE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SCOPE_JCC": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "PIN_GATE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "PIN_JCC": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      },
+      "clean": {},
+      "status": {
+        "OK": 8
+      },
+      "paired": {
+        "tie": 4
+      }
+    }
+  },
+  "dispatch": {
+    "Actor": 40,
+    "RPEvalJudge": 17,
+    "BenchAttrs": 66,
+    "PersistNative": 17
+  },
+  "statuses": {
+    "OK": 138,
+    "KNOWN_LENGTH_FAILURE": 2
+  },
+  "tokens": 521557,
+  "unknown_usage": 0,
+  "common_utility_components": {
+    "STRONG": {
+      "RPEval": 0.5211267605633803,
+      "BenchPreS": 0.8914141414141414,
+      "PersistBench": 0.7222222222222222
+    },
+    "SCOPE_GATE": {
+      "RPEval": 0.4507042253521127,
+      "BenchPreS": 0.8257575757575758,
+      "PersistBench": 0.8333333333333334
+    },
+    "SCOPE_JCC": {
+      "RPEval": 0.49295774647887325,
+      "BenchPreS": 0.8560606060606061,
+      "PersistBench": 0.9166666666666666
+    },
+    "PIN_GATE": {
+      "RPEval": 0.323943661971831,
+      "BenchPreS": 0.8106060606060606,
+      "PersistBench": 0.8333333333333334
+    },
+    "PIN_JCC": {
+      "RPEval": 0.323943661971831,
+      "BenchPreS": 0.8257575757575758,
+      "PersistBench": 0.8333333333333334
+    }
+  },
+  "common_macro": {
+    "STRONG": 0.7115877080665812,
+    "SCOPE_GATE": 0.7032650448143406,
+    "SCOPE_JCC": 0.755228339735382,
+    "PIN_GATE": 0.655961018637075,
+    "PIN_JCC": 0.6610115236875801
+  },
+  "pinned_delta_by_domain": {
+    "RPEval": 0.0,
+    "BenchPreS": 0.015151515151515249,
+    "PersistBench": 0.0
+  },
+  "pinned_delta_worst_double_weight": 0.0037878787878788123,
+  "missing_bounds_pinned_primary_delta": {
+    "RPEval": {
+      "min": -25,
+      "max": 25,
+      "assigned_positions": 96
+    },
+    "BenchPreS": {
+      "min": 1,
+      "max": 2,
+      "assigned_positions": 23
+    },
+    "PersistBench": {
+      "min": -1,
+      "max": 1,
+      "assigned_positions": 12
+    }
+  }
+}
