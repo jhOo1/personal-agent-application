@@ -22,6 +22,7 @@ case "${1:-}" in
   crossover) entry=crossover.py; shift ;;
   crossover-audit) entry=crossover_audit.py; shift ;;
   selected-planning) entry=selected_planning.py; shift ;;
+  selected-planning-audit) entry=selected_planning_audit.py; shift ;;
   factorial) entry=factorial.py; shift ;;
   expansion-audit) entry=expansion_inventory.py; shift ;;
 esac

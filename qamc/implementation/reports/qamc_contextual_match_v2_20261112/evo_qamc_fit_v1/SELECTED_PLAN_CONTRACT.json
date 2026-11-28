@@ -1,0 +1,12 @@
+{
+  "assigned_tasks": 40,
+  "filtered_tasks": 39,
+  "exact_task_reuse": 1,
+  "missing_selected": 0,
+  "verified_plan_requests": 78,
+  "plan_receipts": {
+    "KNOWN_LENGTH_FAILURE": 2,
+    "OK": 76
+  },
+  "verified_actor_requests": 76
+}
