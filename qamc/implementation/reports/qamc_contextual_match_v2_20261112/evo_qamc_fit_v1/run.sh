@@ -50,6 +50,7 @@ case "${1:-}" in
   decision-quarantined-synthesis) entry=decision_quarantined_synthesis.py; shift ;;
   task-message-boundary) entry=task_message_boundary.py; shift ;;
   task-message-pairs) entry=task_message_boundary_pairs.py; shift ;;
+  task-message-replay) entry=task_message_boundary_replay.py; shift ;;
   blind-behavior-packet) entry=blind_behavior_packet.py; shift ;;
   blind-behavior-readout) entry=blind_behavior_readout.py; shift ;;
 
