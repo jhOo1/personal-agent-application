@@ -23,6 +23,7 @@ case "${1:-}" in
   crossover-audit) entry=crossover_audit.py; shift ;;
   selected-planning) entry=selected_planning.py; shift ;;
   selected-planning-audit) entry=selected_planning_audit.py; shift ;;
+  selected-rpe-stage) entry=selected_rpe_stage.py; shift ;;
   factorial) entry=factorial.py; shift ;;
   expansion-audit) entry=expansion_inventory.py; shift ;;
   evolution-feedback) entry=evolution_feedback.py; shift ;;

@@ -1,0 +1,253 @@
+{
+  "assigned": 16,
+  "common": {
+    "all": 12,
+    "contains_C": 3,
+    "unflagged": 3,
+    "all_A": 3,
+    "B_only": 6
+  },
+  "paired": {
+    "all": {
+      "BASE": {
+        "primary": 39,
+        "positions": 69,
+        "OPB": 8,
+        "UPB": 18,
+        "FM": 2
+      },
+      "GENERIC": {
+        "primary": 29,
+        "positions": 69,
+        "OPB": 23,
+        "UPB": 11,
+        "FM": 6
+      },
+      "TASK_ACTIONS": {
+        "primary": 31,
+        "positions": 69,
+        "OPB": 28,
+        "UPB": 10,
+        "FM": 6
+      },
+      "SELECTED_GENERIC": {
+        "primary": 27,
+        "positions": 69,
+        "OPB": 26,
+        "UPB": 10,
+        "FM": 5
+      },
+      "SELECTED_TASK_ACTIONS": {
+        "primary": 29,
+        "positions": 69,
+        "OPB": 27,
+        "UPB": 7,
+        "FM": 5
+      }
+    },
+    "all_A": {
+      "BASE": {
+        "primary": 3,
+        "positions": 14,
+        "OPB": 0,
+        "UPB": 9,
+        "FM": 0
+      },
+      "GENERIC": {
+        "primary": 0,
+        "positions": 14,
+        "OPB": 5,
+        "UPB": 3,
+        "FM": 1
+      },
+      "TASK_ACTIONS": {
+        "primary": 0,
+        "positions": 14,
+        "OPB": 8,
+        "UPB": 3,
+        "FM": 2
+      },
+      "SELECTED_GENERIC": {
+        "primary": 0,
+        "positions": 14,
+        "OPB": 9,
+        "UPB": 3,
+        "FM": 2
+      },
+      "SELECTED_TASK_ACTIONS": {
+        "primary": 1,
+        "positions": 14,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 2
+      }
+    },
+    "B_only": {
+      "BASE": {
+        "primary": 26,
+        "positions": 38,
+        "OPB": 2,
+        "UPB": 7,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 19,
+        "positions": 38,
+        "OPB": 9,
+        "UPB": 8,
+        "FM": 4
+      },
+      "TASK_ACTIONS": {
+        "primary": 21,
+        "positions": 38,
+        "OPB": 10,
+        "UPB": 7,
+        "FM": 2
+      },
+      "SELECTED_GENERIC": {
+        "primary": 17,
+        "positions": 38,
+        "OPB": 9,
+        "UPB": 7,
+        "FM": 1
+      },
+      "SELECTED_TASK_ACTIONS": {
+        "primary": 20,
+        "positions": 38,
+        "OPB": 9,
+        "UPB": 6,
+        "FM": 2
+      }
+    },
+    "contains_C": {
+      "BASE": {
+        "primary": 10,
+        "positions": 17,
+        "OPB": 6,
+        "UPB": 2,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 10,
+        "positions": 17,
+        "OPB": 9,
+        "UPB": 0,
+        "FM": 1
+      },
+      "TASK_ACTIONS": {
+        "primary": 10,
+        "positions": 17,
+        "OPB": 10,
+        "UPB": 0,
+        "FM": 2
+      },
+      "SELECTED_GENERIC": {
+        "primary": 10,
+        "positions": 17,
+        "OPB": 8,
+        "UPB": 0,
+        "FM": 2
+      },
+      "SELECTED_TASK_ACTIONS": {
+        "primary": 8,
+        "positions": 17,
+        "OPB": 9,
+        "UPB": 1,
+        "FM": 1
+      }
+    },
+    "unflagged": {
+      "BASE": {
+        "primary": 8,
+        "positions": 21,
+        "OPB": 3,
+        "UPB": 7,
+        "FM": 2
+      },
+      "GENERIC": {
+        "primary": 8,
+        "positions": 21,
+        "OPB": 6,
+        "UPB": 5,
+        "FM": 2
+      },
+      "TASK_ACTIONS": {
+        "primary": 8,
+        "positions": 21,
+        "OPB": 8,
+        "UPB": 5,
+        "FM": 2
+      },
+      "SELECTED_GENERIC": {
+        "primary": 8,
+        "positions": 21,
+        "OPB": 5,
+        "UPB": 5,
+        "FM": 1
+      },
+      "SELECTED_TASK_ACTIONS": {
+        "primary": 6,
+        "positions": 21,
+        "OPB": 8,
+        "UPB": 3,
+        "FM": 2
+      }
+    }
+  },
+  "common_effects": {
+    "actions_on_full_history": [
+      0.028985507246376815,
+      0.028985507246376815
+    ],
+    "actions_on_selected_history": [
+      0.02898550724637681,
+      0.02898550724637681
+    ],
+    "selection_on_generic": [
+      -0.028985507246376815,
+      -0.028985507246376815
+    ],
+    "selection_on_actions": [
+      -0.02898550724637683,
+      -0.02898550724637683
+    ],
+    "interaction": [
+      0.0,
+      0.0
+    ]
+  },
+  "assigned_effect_bounds": {
+    "actions_on_full_history": [
+      -0.06250000000000001,
+      0.10416666666666666
+    ],
+    "actions_on_selected_history": [
+      -0.14583333333333337,
+      0.13541666666666666
+    ],
+    "selection_on_generic": [
+      -0.09375,
+      0.14583333333333334
+    ],
+    "selection_on_actions": [
+      -0.10416666666666663,
+      0.10416666666666664
+    ],
+    "interaction": [
+      -0.25,
+      0.1979166666666666
+    ]
+  },
+  "native_score_coverage": {
+    "GENERIC": 15,
+    "TASK_ACTIONS": 15,
+    "SELECTED_GENERIC": 14,
+    "SELECTED_TASK_ACTIONS": 14
+  },
+  "physical_scoring": 30,
+  "transport": {
+    "OK": 29,
+    "FAILED_DELIVERY_UNKNOWN": 1
+  },
+  "reported_tokens": 113040
+}
