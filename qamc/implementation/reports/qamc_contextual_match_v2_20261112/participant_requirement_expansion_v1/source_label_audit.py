@@ -62,9 +62,21 @@ def audit(preflight=False):
         restored = set(audit_row.get("restored", []))
         if restored - removed:
             raise ValueError("A record outside the guard removals was restored")
-        for key, ids in (("removed", removed), ("restored", restored), ("still_removed", removed - restored)):
-            for mid in ids:
-                summary[f"{key}/{by_id.get(mid, 'UNKNOWN')}"] += 1
+        if audit_row and "retain" not in audit_row:
+            summary["unusable_relevance_reviews"] += 1
+        if "retain" in audit_row:
+            ids = {s["memory_id"] for s in task_packet(card)["source_evidence"]}
+            retained = set(audit_row["retain"])
+            compiled = set(audit_row["guard"]) | restored
+            if not compiled <= retained <= ids or set(audit_row["guard"]) != retained - removed:
+                raise ValueError("Recorded evidence policies are inconsistent")
+            transitions = (("original_candidates", ids), ("outside_relevance", ids - retained),
+                           ("retained_relevance", retained), ("removed", removed),
+                           ("restored", restored), ("still_removed", removed - restored),
+                           ("visible_after_veto", compiled))
+            for key, members in transitions:
+                for mid in members:
+                    summary[f"{key}/{by_id.get(mid, 'UNKNOWN')}"] += 1
         if restored:
             restorations[benchmark] += 1
     return {"preflight_only": preflight, "counts": counts, "restoration_roots": restorations}
