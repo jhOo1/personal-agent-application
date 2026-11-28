@@ -49,3 +49,11 @@ QAMC-v3.2 已有回复支持二主一边界。最新复议要求其用真实证�
 [RPEval 合法偏好行动核验](implementation/reports/qamc_contextual_match_v2_20261112/ipe_c_focal_action_v1/RESULTS.md)在两个生成骨干上定位了相同三个软偏好落实缺口。独立模型交付未知与 Qwen 次级诊断分开。
 
 [RPEval 备用终答局部行动转移](implementation/reports/qamc_contextual_match_v2_20261112/ipe_verbatim_action_transfer_v1/RESULTS.md)已结算。原稿 46/86、同槽改写 45/86、原文转移 44/86；三个已知软偏好缺口都没有被选作修改目标。
+
+[RPEval 合法软偏好同位置干预](implementation/reports/qamc_contextual_match_v2_20261112/ipe_soft_action_oracle_v1/RESULTS.md)复用两种 Actor 的原答，人工分别补入符合记忆或同样具体的一般行动。只有卧室配色在 Qwen 评分下相对一般行动有独特 Match 净胜，GPT-4.1 无此提升。不把诊断当作自动算法成绩，不再扩大同类局部编辑。
+
+重新检查替代项。PairPref 固定偏好与请求、改变场景，1,227 对同时支持选择和自由生成，能直接补上适用性翻转；本次仍未核实作者全数据和可运行评分发布，维持候选身份。[论文](https://arxiv.org/abs/2609.34526) · [作者 Mitigate 对照](https://arxiv.org/html/2609.34526v1#A6.SS6)
+
+MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证据优先或主体作用域，Candidate 价值在 Contextual Scope Control 与 Memory–Evidence Conflict。全面替换会削弱正式交付覆盖，并与 PersistBench 的风险侧部分重合。目前不替换。[作者数据卡](https://github.com/XMUDeepLIT/MemSyco-Bench/blob/main/data/README.md)
+
+已请求 QAMC-v3.2 反驳二主一边界以及以上换榜条件。发送接口接受请求，截至本次记录未核实新回复。公开归档包含诊断代码、评分汇总与协议，精确模型收据和原始请求仅在原实验仓库的本地运行数据中。

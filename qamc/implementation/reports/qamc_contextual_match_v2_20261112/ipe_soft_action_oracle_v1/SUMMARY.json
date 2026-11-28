@@ -1,0 +1,490 @@
+{
+  "metrics": {
+    "GPT/GPT/BASE": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 11,
+      "OPB": 0,
+      "UPB": 6,
+      "FM": 1
+    },
+    "GPT/GPT/SOURCE_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 11,
+      "OPB": 0,
+      "UPB": 6,
+      "FM": 0
+    },
+    "GPT/GPT/GENERIC_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 11,
+      "OPB": 0,
+      "UPB": 6,
+      "FM": 0
+    },
+    "GPT/QWEN/BASE": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 13,
+      "OPB": 2,
+      "UPB": 4,
+      "FM": 0
+    },
+    "GPT/QWEN/SOURCE_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 13,
+      "OPB": 2,
+      "UPB": 3,
+      "FM": 0
+    },
+    "GPT/QWEN/GENERIC_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 13,
+      "OPB": 2,
+      "UPB": 4,
+      "FM": 0
+    },
+    "QWEN/GPT/BASE": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 2,
+      "FM": 0
+    },
+    "QWEN/GPT/SOURCE_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 18,
+      "OPB": 0,
+      "UPB": 0,
+      "FM": 0
+    },
+    "QWEN/GPT/GENERIC_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 2,
+      "FM": 1
+    },
+    "QWEN/QWEN/BASE": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 13,
+      "OPB": 1,
+      "UPB": 4,
+      "FM": 0
+    },
+    "QWEN/QWEN/SOURCE_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 16,
+      "OPB": 0,
+      "UPB": 0,
+      "FM": 1
+    },
+    "QWEN/QWEN/GENERIC_SPECIFIC": {
+      "tasks": 3,
+      "positions": 18,
+      "Match": 14,
+      "OPB": 0,
+      "UPB": 3,
+      "FM": 1
+    }
+  },
+  "per_case": [
+    {
+      "root": "pa_transfer_20261109/12a39042622bc3e41711",
+      "grader": "GPT",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 2,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 1
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 2,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 2,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "pa_transfer_20261109/12a39042622bc3e41711",
+      "grader": "GPT",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 3,
+          "positions": 5,
+          "flags": [
+            "MATCH_CONFLICTS_WITH_BIAS"
+          ],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 3,
+          "positions": 5,
+          "flags": [
+            "MATCH_CONFLICTS_WITH_BIAS"
+          ],
+          "OPB": 1,
+          "UPB": 1,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 3,
+          "positions": 5,
+          "flags": [
+            "MATCH_CONFLICTS_WITH_BIAS"
+          ],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "pa_transfer_20261109/12a39042622bc3e41711",
+      "grader": "QWEN",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 3,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 5,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 3,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "pa_transfer_20261109/12a39042622bc3e41711",
+      "grader": "QWEN",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 3,
+          "positions": 5,
+          "flags": [
+            "MATCH_CONFLICTS_WITH_BIAS"
+          ],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 4,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 2,
+          "positions": 5,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 1
+        }
+      }
+    },
+    {
+      "root": "implicit/020",
+      "grader": "GPT",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/020",
+      "grader": "GPT",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/020",
+      "grader": "QWEN",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 7,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 1
+        }
+      }
+    },
+    {
+      "root": "implicit/020",
+      "grader": "QWEN",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 5,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 6,
+          "positions": 7,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 1
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 6,
+          "positions": 7,
+          "flags": [
+            "MATCH_CONFLICTS_WITH_BIAS"
+          ],
+          "OPB": 0,
+          "UPB": 1,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/043",
+      "grader": "GPT",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 2,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 2,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 2,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 3,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/043",
+      "grader": "GPT",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 3,
+          "positions": 6,
+          "flags": [],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 3,
+          "positions": 6,
+          "flags": [],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 3,
+          "positions": 6,
+          "flags": [],
+          "OPB": 1,
+          "UPB": 2,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/043",
+      "grader": "QWEN",
+      "generator": "GPT",
+      "metrics": {
+        "BASE": {
+          "match": 6,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 6,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 6,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      }
+    },
+    {
+      "root": "implicit/043",
+      "grader": "QWEN",
+      "generator": "QWEN",
+      "metrics": {
+        "BASE": {
+          "match": 5,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 2,
+          "FM": 0
+        },
+        "SOURCE_SPECIFIC": {
+          "match": 6,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        },
+        "GENERIC_SPECIFIC": {
+          "match": 6,
+          "positions": 6,
+          "flags": [],
+          "OPB": 0,
+          "UPB": 0,
+          "FM": 0
+        }
+      }
+    }
+  ],
+  "physical": {
+    "OK": 24
+  },
+  "tokens": 74281,
+  "unknown_usage": 0,
+  "retries": 0
+}
