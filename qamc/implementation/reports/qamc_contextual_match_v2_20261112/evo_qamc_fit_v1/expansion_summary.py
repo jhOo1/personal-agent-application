@@ -36,6 +36,8 @@ def collect():
             for a,row in moved.items():
                 delivery[a][row['actor_status']]+=1
                 delivery[a]['grade_available']+=values[a] is not None
+                if row['actor_status']=='OK' and values[a] is None:
+                    delivery[a]['successful_actor_without_usable_grade']+=1
                 if values[a] is not None:
                     assert aligned(values,('BASE',a))
             if c['domain']=='RPEval':
@@ -88,33 +90,51 @@ def rpe_degree_bounds(rows):
     return out
 
 
-def summarize():
-    pin,finished,groups,ledger,delivery=collect()
-    if not finished:
-        raise SystemExit('No batch result has settled')
-    native={}
-    for key,rows in groups.items():
-        common=[row for row in rows if aligned(row[2],METHODS)]
-        native[key]=dict(assigned=len(rows),**native_totals(common,METHODS))
+def rpe_group_support(entries):
     by_rpe=defaultdict(list)
-    for c,_,values in groups['RPEval']:
+    for c,_,values in entries:
         by_rpe[c['group']].append(values)
     group_support={}
-    for opponent in ('PLAN_SELECTED','DIRECT'):
+    group_order=sorted(by_rpe,key=lambda g:sha(['public_source_group_order',g]))
+    for opponent in ('BASE','PLAN_SELECTED','DIRECT'):
         rows=[]
-        group_order=sorted(by_rpe,key=lambda g:sha(['public_source_group_order',g]))
         for i,group in enumerate(group_order,1):
             cells=[v for v in by_rpe[group] if aligned(v,('BASE',opponent,'SCOPE'))]
             pos=sum(v['BASE']['positions'] for v in cells)
             delta=sum(v['SCOPE']['primary']-v[opponent]['primary'] for v in cells)
             rows.append(dict(group=i,assigned=len(by_rpe[group]),common=len(cells),positions=pos,net_match=delta))
         scored=[r for r in rows if r['positions']]
+        total_pos=sum(r['positions'] for r in scored)
+        net_match=sum(r['net_match'] for r in scored)
+        omitted=[(net_match-r['net_match'])/(total_pos-r['positions'])
+                 for r in scored if total_pos>r['positions']]
         group_support[opponent]=dict(groups=rows,group_equal_delta=(
             sum(r['net_match']/r['positions'] for r in scored)/len(scored) if scored else None),
+            omit_one_group_delta=[min(omitted),max(omitted)] if omitted else None,
             wins=sum(r['net_match']>0 for r in scored),losses=sum(r['net_match']<0 for r in scored),
             ties=sum(r['net_match']==0 for r in scored))
+    return group_support
+
+
+def summarize():
+    pin,finished,groups,ledger,delivery=collect()
+    if not finished:
+        raise SystemExit('No batch result has settled')
+    native={}
+    scope_pairs={}
+    for key,rows in groups.items():
+        common=[row for row in rows if aligned(row[2],METHODS)]
+        native[key]=dict(assigned=len(rows),**native_totals(common,METHODS))
+        pairs={}
+        for opponent in ('BASE','PLAN_SELECTED','DIRECT'):
+            methods=('SCOPE',opponent)
+            paired=[row for row in rows if aligned(row[2],('BASE',*methods))]
+            pairs[opponent]=native_totals(paired,methods)
+        scope_pairs[key]=pairs
+    frozen_assignment=Counter(card['domain'] for batch in pin['batches'] for card in batch)
     return dict(finished_batches=finished,all_batches_assigned=sum(len(b) for b in pin['batches']),
-                native=native,paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=group_support,
+                frozen_assignment=frozen_assignment,native=native,scope_native_pairs=scope_pairs,
+                paired_comparisons=pairwise(groups,METHODS,aligned),rpe_groups=rpe_group_support(groups['RPEval']),
                 rpe_judge_sensitivity=rpe_sensitivity(groups),
                 rpe_use_degree_bounds=rpe_degree_bounds(groups['RPEval']),
                 delivery=delivery,cost=dict(requests=len(ledger),stages=Counter(r['unit']['stage'] for r in ledger),
