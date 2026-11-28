@@ -1,0 +1,93 @@
+{
+  "rows_with_observed_B_no_C": 54,
+  "tables": {
+    "all/any": {
+      "tasks": 48,
+      "positions": 282,
+      "ipe": 148,
+      "full": 150,
+      "memgate": 163,
+      "full_minus_ipe": 2,
+      "memgate_minus_full": 13,
+      "beats_both": 3,
+      "loses_both": 3
+    },
+    "all/SUBSET": {
+      "tasks": 29,
+      "positions": 165,
+      "ipe": 90,
+      "full": 82,
+      "memgate": 95,
+      "full_minus_ipe": -8,
+      "memgate_minus_full": 13,
+      "beats_both": 3,
+      "loses_both": 3
+    },
+    "all/FULL": {
+      "tasks": 17,
+      "positions": 108,
+      "ipe": 55,
+      "full": 65,
+      "memgate": 65,
+      "full_minus_ipe": 10,
+      "memgate_minus_full": 0,
+      "beats_both": 0,
+      "loses_both": 0
+    },
+    "clean/any": {
+      "tasks": 23,
+      "positions": 147,
+      "ipe": 78,
+      "full": 70,
+      "memgate": 78,
+      "full_minus_ipe": -8,
+      "memgate_minus_full": 8,
+      "beats_both": 2,
+      "loses_both": 1
+    },
+    "clean/FULL": {
+      "tasks": 10,
+      "positions": 68,
+      "ipe": 39,
+      "full": 36,
+      "memgate": 36,
+      "full_minus_ipe": -3,
+      "memgate_minus_full": 0,
+      "beats_both": 0,
+      "loses_both": 0
+    },
+    "clean/SUBSET": {
+      "tasks": 12,
+      "positions": 74,
+      "ipe": 38,
+      "full": 33,
+      "memgate": 41,
+      "full_minus_ipe": -5,
+      "memgate_minus_full": 8,
+      "beats_both": 2,
+      "loses_both": 1
+    },
+    "all/EMPTY": {
+      "tasks": 2,
+      "positions": 9,
+      "ipe": 3,
+      "full": 3,
+      "memgate": 3,
+      "full_minus_ipe": 0,
+      "memgate_minus_full": 0,
+      "beats_both": 0,
+      "loses_both": 0
+    },
+    "clean/EMPTY": {
+      "tasks": 1,
+      "positions": 5,
+      "ipe": 1,
+      "full": 1,
+      "memgate": 1,
+      "full_minus_ipe": 0,
+      "memgate_minus_full": 0,
+      "beats_both": 0,
+      "loses_both": 0
+    }
+  }
+}
