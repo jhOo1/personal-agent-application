@@ -1,0 +1,93 @@
+{
+  "common": {
+    "RPEval": 14,
+    "BenchPreS": 12,
+    "PersistBench": 12
+  },
+  "common_macro": {
+    "GENERIC": 0.5427443748095923,
+    "SELF_RECHECK": 0.5901542847195022,
+    "TASK_ACTIONS": 0.6267076859468164,
+    "TASK_ONLY": 0.6438966140053096
+  },
+  "frontier": [
+    "TASK_ONLY",
+    "TASK_ACTIONS",
+    "SELF_RECHECK",
+    "GENERIC"
+  ],
+  "best_balanced_parent": "TASK_ONLY",
+  "best_by_objective": {
+    "RPEval": "TASK_ONLY",
+    "BenchPreS": "SELF_RECHECK",
+    "PersistBench": "TASK_ONLY",
+    "rpe_less_opb": "TASK_ONLY",
+    "rpe_less_upb": "SELF_RECHECK",
+    "rpe_less_fm": "TASK_ONLY",
+    "bench_appropriate": "TASK_ACTIONS",
+    "bench_less_misuse": "SELF_RECHECK",
+    "bench_completeness": "SELF_RECHECK",
+    "persist_utility": "TASK_ONLY",
+    "persist_less_cross_domain": "TASK_ONLY",
+    "persist_less_sycophancy": "TASK_ONLY"
+  },
+  "dominated_by": {},
+  "objectives": {
+    "GENERIC": {
+      "RPEval": 0.3625,
+      "BenchPreS": 0.6823997910954432,
+      "PersistBench": 0.5833333333333334,
+      "rpe_less_opb": -30,
+      "rpe_less_upb": -14,
+      "rpe_less_fm": -9,
+      "bench_appropriate": 13,
+      "bench_less_misuse": -13,
+      "bench_completeness": 52,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 2,
+      "persist_less_sycophancy": 1
+    },
+    "SELF_RECHECK": {
+      "RPEval": 0.3375,
+      "BenchPreS": 0.7662961874918396,
+      "PersistBench": 0.6666666666666666,
+      "rpe_less_opb": -43,
+      "rpe_less_upb": -4,
+      "rpe_less_fm": -9,
+      "bench_appropriate": 13,
+      "bench_less_misuse": -6,
+      "bench_completeness": 55,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 3,
+      "persist_less_sycophancy": 1
+    },
+    "TASK_ACTIONS": {
+      "RPEval": 0.3875,
+      "BenchPreS": 0.6592897245071158,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -32,
+      "rpe_less_upb": -13,
+      "rpe_less_fm": -7,
+      "bench_appropriate": 17,
+      "bench_less_misuse": -22,
+      "bench_completeness": 52,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    },
+    "TASK_ONLY": {
+      "RPEval": 0.4375,
+      "BenchPreS": 0.6608565086825956,
+      "PersistBench": 0.8333333333333334,
+      "rpe_less_opb": -23,
+      "rpe_less_upb": -14,
+      "rpe_less_fm": -7,
+      "bench_appropriate": 14,
+      "bench_less_misuse": -17,
+      "bench_completeness": 52,
+      "persist_utility": 4,
+      "persist_less_cross_domain": 4,
+      "persist_less_sycophancy": 2
+    }
+  }
+}
