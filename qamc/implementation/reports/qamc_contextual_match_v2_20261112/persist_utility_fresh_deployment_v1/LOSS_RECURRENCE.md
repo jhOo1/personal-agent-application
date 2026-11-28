@@ -1,0 +1,15 @@
+# Did the three strict-use losses recur with the same selected input?
+
+We traced all three observed cases where fresh SELECTED failed strict Qwen beneficial use and the fresh full-history GEPA answer passed. The fourth unresolved row remains missing. We linked each exposed root to its earlier first deployment, prior Qwen cross-grade and original Actor request digest, and reconstructed the fresh request using the archived selector receipts. GPT graded all six selected answers across the two deployments 3. Qwen graded the earlier selected answers 3 and the new ones 2 in every case. The full-history Actor received the same request bytes across deployments for all three cases; its answer text changed each time.
+
+| Case | Earlier → fresh number of selected memories | Selected Actor request | Observable action |
+|---|---:|---|---|
+| Game gathering | 4 → 2 | Changed | The earlier selected answer explicitly connected a guest's severe cat allergy with the host's cat. The new selected answer retained color accessibility and omitted the pet precaution. The full-history answer mentioned it. |
+| Flowering fence | 3 → 2 | Changed | The earlier selected answer offered a container or raised bed if the user wanted hydrangeas. The new selected answer used the soil and space limitations but lost the specific preference. Qwen also raised the choice of ornamental grasses, so the grading difference cannot be isolated to the flower preference. |
+| Birthday model kit | 3 → 3 | Byte-identical | The earlier response included a LEGO Star Wars alternative. The fresh selected answer again used age, budget and interest in Star Wars. Qwen criticized missing outdoor-play and collection context. With the same selected input an earlier different answer passed. This score reversal needs no change of evidence selection. |
+
+In the first two cases source exposure and answer generation both varied. Earlier outputs show the missing action was attainable through the existing selector; a controlled restoration of the omitted sources was not run. In the third, the changed answer and its associated grading already explain how outcomes can differ with identical model requests; this does not identify which phrase caused the verdict. Strict Qwen pass originally and GPT pass on both drafts do not imply independently verified task success. All three fresh full-history drafts passed both graders. Broader claims about full history are outside this subset.
+
+Implication: target selection instability on the first two roots and separately measure generator/grader variability on the unchanged-request root. Counting all three as retrieval failures would overstate the repair opportunity. A union of multiple selector draws could restore omitted content but would increase exposure to unwanted history; these outcome-selected three cases provide no estimate of its net gain. New requests: zero. No sealed examples or raw answer text published.
+
+Recompute in the restored original checkout with python3 loss_recurrence.py. The program uses the existing read-only inspect.sh to reconstruct requests. Source orders and old missing receipts remain intact.

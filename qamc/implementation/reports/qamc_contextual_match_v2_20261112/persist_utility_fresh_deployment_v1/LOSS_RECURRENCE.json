@@ -1,0 +1,62 @@
+[
+  {
+    "case": "3776469a",
+    "arms": {
+      "SELECTED": {
+        "same_request": false,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      },
+      "FULL": {
+        "same_request": true,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      }
+    },
+    "prior_selected_qwen": 3,
+    "prior_selected_count": 4,
+    "fresh_selected_count": 2
+  },
+  {
+    "case": "7b03625e",
+    "arms": {
+      "SELECTED": {
+        "same_request": false,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      },
+      "FULL": {
+        "same_request": true,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      }
+    },
+    "prior_selected_qwen": 3,
+    "prior_selected_count": 3,
+    "fresh_selected_count": 2
+  },
+  {
+    "case": "ef273934",
+    "arms": {
+      "SELECTED": {
+        "same_request": true,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      },
+      "FULL": {
+        "same_request": true,
+        "prior_status": "OK",
+        "prior_gpt": 3,
+        "same_answer": false
+      }
+    },
+    "prior_selected_qwen": 3,
+    "prior_selected_count": 3,
+    "fresh_selected_count": 3
+  }
+]
