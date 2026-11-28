@@ -1,0 +1,137 @@
+{
+  "assigned": 16,
+  "native_scores": {
+    "all": {
+      "BASE": {
+        "primary": 46,
+        "positions": 88,
+        "OPB": 15,
+        "UPB": 19,
+        "FM": 3
+      },
+      "GENERIC": {
+        "primary": 33,
+        "positions": 88,
+        "OPB": 32,
+        "UPB": 14,
+        "FM": 10
+      },
+      "TASK_ACTIONS": {
+        "primary": 35,
+        "positions": 88,
+        "OPB": 34,
+        "UPB": 13,
+        "FM": 8
+      }
+    },
+    "all_A": {
+      "BASE": {
+        "primary": 7,
+        "positions": 25,
+        "OPB": 5,
+        "UPB": 9,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 0,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 4
+      },
+      "TASK_ACTIONS": {
+        "primary": 0,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 6,
+        "FM": 3
+      }
+    },
+    "B_only": {
+      "BASE": {
+        "primary": 26,
+        "positions": 38,
+        "OPB": 2,
+        "UPB": 7,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 19,
+        "positions": 38,
+        "OPB": 9,
+        "UPB": 8,
+        "FM": 4
+      },
+      "TASK_ACTIONS": {
+        "primary": 21,
+        "positions": 38,
+        "OPB": 10,
+        "UPB": 7,
+        "FM": 2
+      }
+    },
+    "contains_C": {
+      "BASE": {
+        "primary": 13,
+        "positions": 25,
+        "OPB": 8,
+        "UPB": 3,
+        "FM": 1
+      },
+      "GENERIC": {
+        "primary": 14,
+        "positions": 25,
+        "OPB": 11,
+        "UPB": 0,
+        "FM": 2
+      },
+      "TASK_ACTIONS": {
+        "primary": 14,
+        "positions": 25,
+        "OPB": 12,
+        "UPB": 0,
+        "FM": 3
+      }
+    },
+    "without_known_flags": {
+      "BASE": {
+        "primary": 31,
+        "positions": 58,
+        "OPB": 12,
+        "UPB": 8,
+        "FM": 3
+      },
+      "GENERIC": {
+        "primary": 25,
+        "positions": 58,
+        "OPB": 19,
+        "UPB": 7,
+        "FM": 7
+      },
+      "TASK_ACTIONS": {
+        "primary": 26,
+        "positions": 58,
+        "OPB": 20,
+        "UPB": 6,
+        "FM": 6
+      }
+    }
+  },
+  "common": {
+    "all": 15,
+    "contains_C": 4,
+    "without_known_flags": 9,
+    "all_A": 5,
+    "B_only": 6
+  },
+  "valid_by_arm": {
+    "GENERIC": 15,
+    "TASK_ACTIONS": 15
+  },
+  "physical_score_requests": 30,
+  "status": {
+    "OK": 30
+  },
+  "reported_tokens": 127635,
+  "usage_unknown": 0
+}

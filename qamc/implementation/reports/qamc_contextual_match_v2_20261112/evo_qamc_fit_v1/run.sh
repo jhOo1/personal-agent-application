@@ -13,6 +13,7 @@ case "${1:-}" in
   summarize) entry=summarize.py; shift ;;
   feedback) entry=feedback.py; shift ;;
   audit-plans) entry=audit_plans.py; shift ;;
+  rpe-stage) entry=rpe_stage.py; shift ;;
   self-recheck) entry=self_recheck.py; shift ;;
   task-only) entry=task_only.py; shift ;;
 esac
