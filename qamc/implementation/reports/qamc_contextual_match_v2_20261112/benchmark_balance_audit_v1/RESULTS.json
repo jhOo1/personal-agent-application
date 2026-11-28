@@ -1,0 +1,35 @@
+{
+  "RPEval": {
+    "tasks": 228,
+    "positions": 1219,
+    "primary": {
+      "T": 742,
+      "H": 697,
+      "G": 549,
+      "IPE-C": 814,
+      "specialist": 814
+    }
+  },
+  "BenchPreS": {
+    "tasks": 26,
+    "positions": 44,
+    "primary": {
+      "T": 15,
+      "H": 27,
+      "G": 38,
+      "IPE-C": 15,
+      "specialist": 38
+    }
+  },
+  "PersistBench": {
+    "tasks": 42,
+    "positions": 42,
+    "primary": {
+      "T": 33,
+      "H": 28,
+      "G": 36,
+      "IPE-C": 32,
+      "specialist": 38
+    }
+  }
+}

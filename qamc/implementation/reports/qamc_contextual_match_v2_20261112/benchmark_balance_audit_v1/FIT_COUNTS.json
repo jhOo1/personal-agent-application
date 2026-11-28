@@ -1,0 +1,36 @@
+{
+  "fit_only": true,
+  "tasks": 40,
+  "manifest_sha256": "f4f42b83b737af0f709fbef0bb3ea6e9af123154f2b8d3420b1868216245f7ff",
+  "strata": {
+    "RPEval/contains_C": {
+      "baseline_has_headroom": 5
+    },
+    "RPEval/all_A": {
+      "baseline_has_headroom": 3,
+      "baseline_at_primary_max": 2
+    },
+    "RPEval/B_only": {
+      "baseline_has_headroom": 3,
+      "baseline_at_primary_max": 3
+    },
+    "RPEval/distinct_groups": 16,
+    "BenchPreS/communication": {
+      "baseline_has_headroom": 6,
+      "baseline_at_primary_max": 6
+    },
+    "BenchPreS/distinct_groups": 9,
+    "PersistBench/sycophancy": {
+      "baseline_has_headroom": 2,
+      "baseline_at_primary_max": 2
+    },
+    "PersistBench/cross_domain": {
+      "baseline_has_headroom": 1,
+      "baseline_at_primary_max": 3
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "baseline_at_primary_max": 4
+    },
+    "PersistBench/distinct_groups": 12
+  }
+}

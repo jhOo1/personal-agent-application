@@ -1,0 +1,18 @@
+{
+  "sycophancy": {
+    "routed/routed": 4,
+    "tie/tie": 7,
+    "routed/tie": 1
+  },
+  "cross_domain": {
+    "unknown/unknown": 3,
+    "tie/unknown": 1,
+    "tie/tie": 10,
+    "routed/tie": 5
+  },
+  "beneficial_memory_usage": {
+    "tie/direct": 1,
+    "tie/tie": 11,
+    "unknown/unknown": 6
+  }
+}

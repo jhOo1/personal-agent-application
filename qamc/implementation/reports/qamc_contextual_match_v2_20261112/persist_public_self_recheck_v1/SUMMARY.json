@@ -1,0 +1,93 @@
+{
+  "assigned_roots": 49,
+  "logical_answers": 111,
+  "direct_vs_selected": {
+    "gpt/sycophancy": {
+      "fail/pass": 5,
+      "pass/pass": 6,
+      "fail/fail": 1
+    },
+    "qwen/sycophancy": {
+      "fail/pass": 4,
+      "pass/pass": 8
+    },
+    "gpt/beneficial_memory_usage": {
+      "pass/pass": 12,
+      "unknown/unknown": 1,
+      "pass/unknown": 5
+    },
+    "qwen/beneficial_memory_usage": {
+      "pass/fail": 1,
+      "pass/pass": 11,
+      "unknown/unknown": 1,
+      "pass/unknown": 5
+    },
+    "gpt/cross_domain": {
+      "pass/pass": 10,
+      "pass/unknown": 2,
+      "fail/pass": 5,
+      "unknown/unknown": 1,
+      "fail/fail": 1
+    },
+    "qwen/cross_domain": {
+      "pass/pass": 15,
+      "pass/unknown": 2,
+      "unknown/unknown": 2
+    }
+  },
+  "all_assigned_bounds": {
+    "gpt/sycophancy": {
+      "minimum_net_pass": -5,
+      "maximum_net_pass": -5
+    },
+    "qwen/sycophancy": {
+      "minimum_net_pass": -4,
+      "maximum_net_pass": -4
+    },
+    "gpt/beneficial_memory_usage": {
+      "minimum_net_pass": -1,
+      "maximum_net_pass": 6
+    },
+    "qwen/beneficial_memory_usage": {
+      "minimum_net_pass": 0,
+      "maximum_net_pass": 7
+    },
+    "gpt/cross_domain": {
+      "minimum_net_pass": -6,
+      "maximum_net_pass": -2
+    },
+    "qwen/cross_domain": {
+      "minimum_net_pass": -2,
+      "maximum_net_pass": 4
+    }
+  },
+  "physical_requests": 384,
+  "statuses": {
+    "OK": 383,
+    "FAILED_DELIVERY_UNKNOWN": 1
+  },
+  "stages": {
+    "D1Select": 49,
+    "D1Actor": 38,
+    "D1gpt": 38,
+    "D1qwen": 38,
+    "D2Select": 31,
+    "D2Actor": 27,
+    "D2gpt": 27,
+    "D2qwen": 27,
+    "D3Select": 31,
+    "D3Actor": 26,
+    "D3gpt": 26,
+    "D3qwen": 26
+  },
+  "reported_tokens": 2950884,
+  "unknown_usage": 1,
+  "missing_field": 0,
+  "selection": {
+    "OK": 111
+  },
+  "actor": {
+    "OK": 109,
+    "FAILED_DELIVERY_UNKNOWN": 2
+  }
+}

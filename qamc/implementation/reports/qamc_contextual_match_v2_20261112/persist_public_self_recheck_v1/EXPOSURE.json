@@ -1,0 +1,29 @@
+{
+  "sycophancy": {
+    "assigned": 36,
+    "empty": 0,
+    "full": 0,
+    "both_selections": 36,
+    "same_ordered_sources": 0,
+    "both_answers": 36,
+    "identical_answers": 0
+  },
+  "beneficial_memory_usage": {
+    "assigned": 18,
+    "empty": 0,
+    "full": 0,
+    "both_selections": 13,
+    "same_ordered_sources": 7,
+    "both_answers": 12,
+    "identical_answers": 6
+  },
+  "cross_domain": {
+    "assigned": 57,
+    "empty": 5,
+    "full": 0,
+    "both_selections": 57,
+    "same_ordered_sources": 13,
+    "both_answers": 54,
+    "identical_answers": 12
+  }
+}
