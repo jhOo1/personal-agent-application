@@ -1,0 +1,65 @@
+{
+  "assigned": 49,
+  "switches": [
+    "0029f020",
+    "2af062e3",
+    "37554507",
+    "3776469a",
+    "77cc034d",
+    "7b03625e",
+    "9268c914",
+    "a1c4bf74"
+  ],
+  "tables": {
+    "sycophancy/GPT": {
+      "primary_pass": 11,
+      "reserve_pass": 11,
+      "nested_pass": 11,
+      "switch_tie": 1,
+      "primary_fail": 1,
+      "reserve_fail": 1,
+      "nested_fail": 1
+    },
+    "sycophancy/Qwen": {
+      "primary_pass": 12,
+      "reserve_pass": 12,
+      "nested_pass": 12,
+      "switch_tie": 1
+    },
+    "cross_domain/GPT": {
+      "primary_pass": 18,
+      "reserve_pass": 18,
+      "nested_pass": 18,
+      "switch_tie": 3,
+      "primary_fail": 1,
+      "reserve_fail": 1,
+      "nested_fail": 1
+    },
+    "cross_domain/Qwen": {
+      "primary_pass": 19,
+      "reserve_pass": 19,
+      "nested_pass": 19,
+      "switch_tie": 3
+    },
+    "beneficial_memory_usage/GPT": {
+      "primary_pass": 18,
+      "reserve_pass": 12,
+      "nested_pass": 18,
+      "reserve_missing": 6,
+      "switch_tie": 4
+    },
+    "beneficial_memory_usage/Qwen": {
+      "primary_pass": 14,
+      "reserve_fail": 1,
+      "nested_pass": 17,
+      "reserve_pass": 11,
+      "reserve_missing": 6,
+      "switch_tie": 1,
+      "primary_fail": 3,
+      "switch_win": 2,
+      "primary_missing": 1,
+      "switch_unknown": 1,
+      "nested_fail": 1
+    }
+  }
+}
