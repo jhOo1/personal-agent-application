@@ -75,3 +75,5 @@ MemSyco-Bench 公开 1,550 题及校验清单。若论文主张转为当前证�
 [近期四种修复的逐题上界](implementation/reports/qamc_contextual_match_v2_20261112/recent_repair_headroom_v1/RESULTS.md)核对 21 个已曝光题的 90 个逻辑单元。53 份有评分的确切改稿没有一份提高专项强稿的同题主分；3 道 RPEval 仅有次指标改善。停止扩大现有强稿后处理路线，下一阶段优先使用已观察到抗迎合收益的 SELECTED 路径做生成前证据控制对照。新核对的 Vercel 匿名模型目录未列出 Kimi K2 Thinking，未取得已认证的可比评分回执。
 
 [同序联合证据块](implementation/reports/qamc_contextual_match_v2_20261112/joint_evidence_block_v1/RESULTS.md)实测 8 个 PersistBench 来源，6 对新成稿。严格有益使用 Qwen 3/4→4/4，GPT-4.1 均 4/4，旧 RESERVE 与 FULL 已 4/4。唯一净胜的桌游成稿去掉了不适合四人的推荐，但仍未把猫过敏事实落实为场地前置条件。当前分块结构不扩大。
+
+[桌游人数与场地前提的固定成稿对照](implementation/reports/qamc_contextual_match_v2_20261112/board_game_action_factorial_v2/RESULTS.md)在同一归档稿分别修复两项行动。不论只修游戏、只修场地还是全修，Qwen 都是 2→3；GPT-4.1 全部为 3。Qwen 的通过不能验证两个问题都已解决。它也无法唯一解释上一轮联合块的分差。6 个新评分、0 Actor，原评分保留。

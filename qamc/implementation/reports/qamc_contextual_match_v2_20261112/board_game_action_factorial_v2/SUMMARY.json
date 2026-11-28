@@ -1,0 +1,62 @@
+{
+  "ratings": {
+    "GPT": {
+      "ORIGINAL": 3,
+      "LINKED_REFERENCE": 3,
+      "GAME": 3,
+      "VENUE": 3,
+      "BOTH": 3
+    },
+    "Qwen": {
+      "ORIGINAL": 2,
+      "LINKED_REFERENCE": 3,
+      "GAME": 3,
+      "VENUE": 3,
+      "BOTH": 3
+    }
+  },
+  "rows": [
+    {
+      "judge": "GPT",
+      "arm": "GAME",
+      "rating": 3,
+      "status": "OK"
+    },
+    {
+      "judge": "GPT",
+      "arm": "VENUE",
+      "rating": 3,
+      "status": "OK"
+    },
+    {
+      "judge": "GPT",
+      "arm": "BOTH",
+      "rating": 3,
+      "status": "OK"
+    },
+    {
+      "judge": "Qwen",
+      "arm": "GAME",
+      "rating": 3,
+      "status": "OK"
+    },
+    {
+      "judge": "Qwen",
+      "arm": "VENUE",
+      "rating": 3,
+      "status": "OK"
+    },
+    {
+      "judge": "Qwen",
+      "arm": "BOTH",
+      "rating": 3,
+      "status": "OK"
+    }
+  ],
+  "statuses": {
+    "OK": 6
+  },
+  "tokens": 26694,
+  "unknown_usage": 0,
+  "retries": 0
+}
