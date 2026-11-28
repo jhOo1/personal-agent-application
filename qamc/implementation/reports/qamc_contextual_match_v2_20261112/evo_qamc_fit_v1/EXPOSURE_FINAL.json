@@ -1,0 +1,2232 @@
+{
+  "finished_batches": [
+    1,
+    2,
+    3
+  ],
+  "all_batches_assigned": 162,
+  "native": {
+    "RPEval": {
+      "assigned": 126,
+      "common": 122,
+      "metrics": {
+        "BASE": {
+          "primary": 387,
+          "positions": 624,
+          "OPB": 127,
+          "UPB": 110,
+          "FM": 25
+        },
+        "OFF": {
+          "primary": 314,
+          "positions": 624,
+          "OPB": 62,
+          "UPB": 251,
+          "FM": 123
+        },
+        "SELECTED": {
+          "primary": 294,
+          "positions": 624,
+          "OPB": 176,
+          "UPB": 124,
+          "FM": 66
+        },
+        "FULL": {
+          "primary": 278,
+          "positions": 624,
+          "OPB": 171,
+          "UPB": 154,
+          "FM": 67
+        },
+        "GATE": {
+          "primary": 300,
+          "positions": 624,
+          "OPB": 148,
+          "UPB": 153,
+          "FM": 63
+        }
+      }
+    },
+    "RPEval/all_A": {
+      "assigned": 59,
+      "common": 57,
+      "metrics": {
+        "BASE": {
+          "primary": 165,
+          "positions": 236,
+          "OPB": 47,
+          "UPB": 28,
+          "FM": 7
+        },
+        "OFF": {
+          "primary": 151,
+          "positions": 236,
+          "OPB": 23,
+          "UPB": 56,
+          "FM": 8
+        },
+        "SELECTED": {
+          "primary": 80,
+          "positions": 236,
+          "OPB": 92,
+          "UPB": 38,
+          "FM": 23
+        },
+        "FULL": {
+          "primary": 74,
+          "positions": 236,
+          "OPB": 86,
+          "UPB": 58,
+          "FM": 21
+        },
+        "GATE": {
+          "primary": 94,
+          "positions": 236,
+          "OPB": 71,
+          "UPB": 55,
+          "FM": 18
+        }
+      }
+    },
+    "RPEval/IPE_CLEAR": {
+      "assigned": 65,
+      "common": 62,
+      "metrics": {
+        "BASE": {
+          "primary": 199,
+          "positions": 278,
+          "OPB": 27,
+          "UPB": 57,
+          "FM": 11
+        },
+        "OFF": {
+          "primary": 171,
+          "positions": 278,
+          "OPB": 22,
+          "UPB": 81,
+          "FM": 16
+        },
+        "SELECTED": {
+          "primary": 114,
+          "positions": 278,
+          "OPB": 83,
+          "UPB": 59,
+          "FM": 26
+        },
+        "FULL": {
+          "primary": 105,
+          "positions": 278,
+          "OPB": 77,
+          "UPB": 75,
+          "FM": 23
+        },
+        "GATE": {
+          "primary": 122,
+          "positions": 278,
+          "OPB": 62,
+          "UPB": 78,
+          "FM": 22
+        }
+      }
+    },
+    "RPEval/contains_C": {
+      "assigned": 52,
+      "common": 51,
+      "metrics": {
+        "BASE": {
+          "primary": 176,
+          "positions": 304,
+          "OPB": 76,
+          "UPB": 52,
+          "FM": 15
+        },
+        "OFF": {
+          "primary": 132,
+          "positions": 304,
+          "OPB": 33,
+          "UPB": 156,
+          "FM": 105
+        },
+        "SELECTED": {
+          "primary": 173,
+          "positions": 304,
+          "OPB": 72,
+          "UPB": 62,
+          "FM": 38
+        },
+        "FULL": {
+          "primary": 166,
+          "positions": 304,
+          "OPB": 74,
+          "UPB": 66,
+          "FM": 40
+        },
+        "GATE": {
+          "primary": 171,
+          "positions": 304,
+          "OPB": 68,
+          "UPB": 67,
+          "FM": 39
+        }
+      }
+    },
+    "RPEval/IPE_RETAIN": {
+      "assigned": 61,
+      "common": 60,
+      "metrics": {
+        "BASE": {
+          "primary": 188,
+          "positions": 346,
+          "OPB": 100,
+          "UPB": 53,
+          "FM": 14
+        },
+        "OFF": {
+          "primary": 143,
+          "positions": 346,
+          "OPB": 40,
+          "UPB": 170,
+          "FM": 107
+        },
+        "SELECTED": {
+          "primary": 180,
+          "positions": 346,
+          "OPB": 93,
+          "UPB": 65,
+          "FM": 40
+        },
+        "FULL": {
+          "primary": 173,
+          "positions": 346,
+          "OPB": 94,
+          "UPB": 79,
+          "FM": 44
+        },
+        "GATE": {
+          "primary": 178,
+          "positions": 346,
+          "OPB": 86,
+          "UPB": 75,
+          "FM": 41
+        }
+      }
+    },
+    "RPEval/B_only": {
+      "assigned": 15,
+      "common": 14,
+      "metrics": {
+        "BASE": {
+          "primary": 46,
+          "positions": 84,
+          "OPB": 4,
+          "UPB": 30,
+          "FM": 3
+        },
+        "OFF": {
+          "primary": 31,
+          "positions": 84,
+          "OPB": 6,
+          "UPB": 39,
+          "FM": 10
+        },
+        "SELECTED": {
+          "primary": 41,
+          "positions": 84,
+          "OPB": 12,
+          "UPB": 24,
+          "FM": 5
+        },
+        "FULL": {
+          "primary": 38,
+          "positions": 84,
+          "OPB": 11,
+          "UPB": 30,
+          "FM": 6
+        },
+        "GATE": {
+          "primary": 35,
+          "positions": 84,
+          "OPB": 9,
+          "UPB": 31,
+          "FM": 6
+        }
+      }
+    },
+    "PersistBench": {
+      "assigned": 32,
+      "common": 29,
+      "metrics": {
+        "BASE": {
+          "primary": 28,
+          "strict_pass": 28,
+          "positions": 29
+        },
+        "OFF": {
+          "primary": 17,
+          "strict_pass": 17,
+          "positions": 29
+        },
+        "SELECTED": {
+          "primary": 29,
+          "strict_pass": 29,
+          "positions": 29
+        },
+        "FULL": {
+          "primary": 26,
+          "strict_pass": 26,
+          "positions": 29
+        },
+        "GATE": {
+          "primary": 29,
+          "strict_pass": 29,
+          "positions": 29
+        }
+      }
+    },
+    "PersistBench/beneficial_memory_usage": {
+      "assigned": 14,
+      "common": 13,
+      "metrics": {
+        "BASE": {
+          "primary": 13,
+          "strict_pass": 13,
+          "positions": 13
+        },
+        "OFF": {
+          "primary": 1,
+          "strict_pass": 1,
+          "positions": 13
+        },
+        "SELECTED": {
+          "primary": 13,
+          "strict_pass": 13,
+          "positions": 13
+        },
+        "FULL": {
+          "primary": 13,
+          "strict_pass": 13,
+          "positions": 13
+        },
+        "GATE": {
+          "primary": 13,
+          "strict_pass": 13,
+          "positions": 13
+        }
+      }
+    },
+    "PersistBench/cross_domain": {
+      "assigned": 12,
+      "common": 12,
+      "metrics": {
+        "BASE": {
+          "primary": 12,
+          "strict_pass": 12,
+          "positions": 12
+        },
+        "OFF": {
+          "primary": 12,
+          "strict_pass": 12,
+          "positions": 12
+        },
+        "SELECTED": {
+          "primary": 12,
+          "strict_pass": 12,
+          "positions": 12
+        },
+        "FULL": {
+          "primary": 11,
+          "strict_pass": 11,
+          "positions": 12
+        },
+        "GATE": {
+          "primary": 12,
+          "strict_pass": 12,
+          "positions": 12
+        }
+      }
+    },
+    "PersistBench/sycophancy": {
+      "assigned": 6,
+      "common": 4,
+      "metrics": {
+        "BASE": {
+          "primary": 3,
+          "strict_pass": 3,
+          "positions": 4
+        },
+        "OFF": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "SELECTED": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        },
+        "FULL": {
+          "primary": 2,
+          "strict_pass": 2,
+          "positions": 4
+        },
+        "GATE": {
+          "primary": 4,
+          "strict_pass": 4,
+          "positions": 4
+        }
+      }
+    },
+    "BenchPreS": {
+      "assigned": 4,
+      "common": 3,
+      "metrics": {
+        "BASE": {
+          "primary": 3,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "OFF": {
+          "primary": 0,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "SELECTED": {
+          "primary": 1,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "FULL": {
+          "primary": 3,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "GATE": {
+          "primary": 0,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        }
+      }
+    },
+    "BenchPreS/communication": {
+      "assigned": 4,
+      "common": 3,
+      "metrics": {
+        "BASE": {
+          "primary": 3,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "OFF": {
+          "primary": 0,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "SELECTED": {
+          "primary": 1,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "FULL": {
+          "primary": 3,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        },
+        "GATE": {
+          "primary": 0,
+          "positions": 3,
+          "MR": 0,
+          "MR_denominator": 12,
+          "completeness": 15,
+          "nonbold": 0,
+          "nonbold_denominator": 0
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "BASE_minus_OFF": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.11093749999999991,
+          0.12031249999999992
+        ],
+        "BenchPreS": [
+          0.25,
+          0.5000000000000001
+        ],
+        "PersistBench": [
+          0.1746031746031746,
+          0.1984126984126984
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.11514195583596219,
+        "BenchPreS": 0.3333333333333333,
+        "PersistBench": 0.19658119658119655
+      },
+      "common_tasks": {
+        "RPEval": 124,
+        "BenchPreS": 3,
+        "PersistBench": 31
+      },
+      "assigned_macro_delta": [
+        0.1785135582010582,
+        0.27290839947089945
+      ],
+      "assigned_worst_weight_lower_bound": 0.16161954365079362,
+      "common_macro_delta": 0.21501882858349733
+    },
+    "BASE_minus_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.1421875,
+          0.15781250000000002
+        ],
+        "BenchPreS": [
+          0.16666666666666669,
+          0.41666666666666674
+        ],
+        "PersistBench": [
+          -0.1111111111111111,
+          -0.031746031746031744
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.14761904761904765,
+        "BenchPreS": 0.2222222222222222,
+        "PersistBench": -0.06666666666666667
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        0.06591435185185186,
+        0.18091104497354502
+      ],
+      "assigned_worst_weight_lower_bound": 0.021657986111111117,
+      "common_macro_delta": 0.10105820105820107
+    },
+    "BASE_minus_FULL": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.17656249999999998,
+          0.1796875
+        ],
+        "BenchPreS": [
+          0.08333333333333334,
+          0.08333333333333334
+        ],
+        "PersistBench": [
+          0.08333333333333333,
+          0.10714285714285714
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.17711598746081506,
+        "BenchPreS": 0.08333333333333334,
+        "PersistBench": 0.08333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 125,
+        "BenchPreS": 4,
+        "PersistBench": 31
+      },
+      "assigned_macro_delta": [
+        0.11440972222222222,
+        0.12338789682539682
+      ],
+      "assigned_worst_weight_lower_bound": 0.10664062499999999,
+      "common_macro_delta": 0.11459421804249391
+    },
+    "BASE_minus_GATE": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.12968749999999996,
+          0.1484375
+        ],
+        "BenchPreS": [
+          0.25,
+          0.5000000000000001
+        ],
+        "PersistBench": [
+          -0.1111111111111111,
+          -0.031746031746031744
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.13853503184713373,
+        "BenchPreS": 0.3333333333333333,
+        "PersistBench": -0.13333333333333333
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        0.08952546296296295,
+        0.2055638227513228
+      ],
+      "assigned_worst_weight_lower_bound": 0.039366319444444436,
+      "common_macro_delta": 0.11284501061571124
+    },
+    "OFF_minus_SELECTED": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.021874999999999978,
+          0.04687499999999998
+        ],
+        "BenchPreS": [
+          -0.33333333333333337,
+          0.16666666666666666
+        ],
+        "PersistBench": [
+          -0.30952380952380953,
+          -0.20634920634920634
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.031746031746031717,
+        "BenchPreS": -0.1111111111111111,
+        "PersistBench": -0.3076923076923077
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        -0.20699404761904763,
+        0.0023974867724867663
+      ],
+      "assigned_worst_weight_lower_bound": -0.23857886904761907,
+      "common_macro_delta": -0.12901912901912904
+    },
+    "OFF_minus_FULL": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.05624999999999996,
+          0.06875000000000002
+        ],
+        "BenchPreS": [
+          -0.41666666666666674,
+          -0.16666666666666669
+        ],
+        "PersistBench": [
+          -0.11507936507936509,
+          -0.06746031746031747
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.06309148264984227,
+        "BenchPreS": -0.3333333333333333,
+        "PersistBench": -0.11324786324786323
+      },
+      "common_tasks": {
+        "RPEval": 124,
+        "BenchPreS": 3,
+        "PersistBench": 31
+      },
+      "assigned_macro_delta": [
+        -0.1584986772486773,
+        -0.05512566137566138
+      ],
+      "assigned_worst_weight_lower_bound": -0.22304067460317467,
+      "common_macro_delta": -0.12782990464378477
+    },
+    "OFF_minus_GATE": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.009374999999999991,
+          0.037499999999999985
+        ],
+        "BenchPreS": [
+          -0.25,
+          0.25
+        ],
+        "PersistBench": [
+          -0.30952380952380953,
+          -0.20634920634920634
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.02229299363057325,
+        "BenchPreS": 0.0,
+        "PersistBench": -0.3076923076923077
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        -0.1833829365079365,
+        0.027050264550264547
+      ],
+      "assigned_worst_weight_lower_bound": -0.21491815476190476,
+      "common_macro_delta": -0.09513310468724483
+    },
+    "SELECTED_minus_FULL": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          0.01875000000000001,
+          0.03750000000000002
+        ],
+        "BenchPreS": [
+          -0.33333333333333337,
+          -0.08333333333333334
+        ],
+        "PersistBench": [
+          0.11507936507936509,
+          0.21825396825396823
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": 0.02539682539682541,
+        "BenchPreS": -0.2222222222222222,
+        "PersistBench": 0.1611111111111111
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        -0.06650132275132276,
+        0.057473544973544975
+      ],
+      "assigned_worst_weight_lower_bound": -0.1332093253968254,
+      "common_macro_delta": -0.011904761904761902
+    },
+    "SELECTED_minus_GATE": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.028124999999999997,
+          0.006249999999999999
+        ],
+        "BenchPreS": [
+          -0.16666666666666666,
+          0.33333333333333337
+        ],
+        "PersistBench": [
+          -0.07936507936507936,
+          0.07936507936507936
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.009615384615384612,
+        "BenchPreS": 0.1111111111111111,
+        "PersistBench": 0.0
+      },
+      "common_tasks": {
+        "RPEval": 122,
+        "BenchPreS": 3,
+        "PersistBench": 29
+      },
+      "assigned_macro_delta": [
+        -0.091385582010582,
+        0.1396494708994709
+      ],
+      "assigned_worst_weight_lower_bound": -0.11020585317460316,
+      "common_macro_delta": 0.033831908831908834
+    },
+    "FULL_minus_GATE": {
+      "assigned_domain_delta": {
+        "RPEval": [
+          -0.05000000000000001,
+          -0.028125000000000018
+        ],
+        "BenchPreS": [
+          0.16666666666666669,
+          0.41666666666666674
+        ],
+        "PersistBench": [
+          -0.21825396825396823,
+          -0.11507936507936509
+        ]
+      },
+      "common_domain_delta": {
+        "RPEval": -0.041401273885350316,
+        "BenchPreS": 0.3333333333333333,
+        "PersistBench": -0.2277777777777778
+      },
+      "common_tasks": {
+        "RPEval": 123,
+        "BenchPreS": 3,
+        "PersistBench": 30
+      },
+      "assigned_macro_delta": [
+        -0.03386243386243385,
+        0.09115410052910054
+      ],
+      "assigned_worst_weight_lower_bound": -0.07996031746031745,
+      "common_macro_delta": 0.021384760556735067
+    }
+  },
+  "rpe_pairs": {
+    "OFF_minus_SELECTED": {
+      "RPEval": {
+        "primary": {
+          "common": 123,
+          "metrics": {
+            "OFF": {
+              "primary": 318,
+              "positions": 630,
+              "OPB": 62,
+              "UPB": 254,
+              "FM": 125
+            },
+            "SELECTED": {
+              "primary": 298,
+              "positions": 630,
+              "OPB": 177,
+              "UPB": 125,
+              "FM": 66
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 77,
+          "metrics": {
+            "OFF": {
+              "primary": 246,
+              "positions": 426,
+              "OPB": 34,
+              "UPB": 139,
+              "FM": 88
+            },
+            "SELECTED": {
+              "primary": 234,
+              "positions": 426,
+              "OPB": 109,
+              "UPB": 59,
+              "FM": 50
+            }
+          }
+        },
+        "source_wins": 11,
+        "source_losses": 12,
+        "source_ties": 5
+      },
+      "RPEval/all_A": {
+        "primary": {
+          "common": 57,
+          "metrics": {
+            "OFF": {
+              "primary": 151,
+              "positions": 236,
+              "OPB": 23,
+              "UPB": 56,
+              "FM": 8
+            },
+            "SELECTED": {
+              "primary": 80,
+              "positions": 236,
+              "OPB": 92,
+              "UPB": 38,
+              "FM": 23
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 32,
+          "metrics": {
+            "OFF": {
+              "primary": 127,
+              "positions": 138,
+              "OPB": 9,
+              "UPB": 0,
+              "FM": 2
+            },
+            "SELECTED": {
+              "primary": 79,
+              "positions": 138,
+              "OPB": 44,
+              "UPB": 0,
+              "FM": 11
+            }
+          }
+        },
+        "source_wins": 11,
+        "source_losses": 0,
+        "source_ties": 15
+      },
+      "RPEval/IPE_CLEAR": {
+        "primary": {
+          "common": 62,
+          "metrics": {
+            "OFF": {
+              "primary": 171,
+              "positions": 278,
+              "OPB": 22,
+              "UPB": 81,
+              "FM": 16
+            },
+            "SELECTED": {
+              "primary": 114,
+              "positions": 278,
+              "OPB": 83,
+              "UPB": 59,
+              "FM": 26
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 37,
+          "metrics": {
+            "OFF": {
+              "primary": 142,
+              "positions": 172,
+              "OPB": 6,
+              "UPB": 22,
+              "FM": 8
+            },
+            "SELECTED": {
+              "primary": 102,
+              "positions": 172,
+              "OPB": 43,
+              "UPB": 14,
+              "FM": 15
+            }
+          }
+        },
+        "source_wins": 11,
+        "source_losses": 4,
+        "source_ties": 12
+      },
+      "RPEval/contains_C": {
+        "primary": {
+          "common": 52,
+          "metrics": {
+            "OFF": {
+              "primary": 136,
+              "positions": 310,
+              "OPB": 33,
+              "UPB": 159,
+              "FM": 107
+            },
+            "SELECTED": {
+              "primary": 177,
+              "positions": 310,
+              "OPB": 73,
+              "UPB": 63,
+              "FM": 38
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 36,
+          "metrics": {
+            "OFF": {
+              "primary": 97,
+              "positions": 233,
+              "OPB": 22,
+              "UPB": 114,
+              "FM": 79
+            },
+            "SELECTED": {
+              "primary": 129,
+              "positions": 233,
+              "OPB": 56,
+              "UPB": 43,
+              "FM": 34
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 17,
+        "source_ties": 3
+      },
+      "RPEval/IPE_RETAIN": {
+        "primary": {
+          "common": 61,
+          "metrics": {
+            "OFF": {
+              "primary": 147,
+              "positions": 352,
+              "OPB": 40,
+              "UPB": 173,
+              "FM": 109
+            },
+            "SELECTED": {
+              "primary": 184,
+              "positions": 352,
+              "OPB": 94,
+              "UPB": 66,
+              "FM": 40
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 40,
+          "metrics": {
+            "OFF": {
+              "primary": 104,
+              "positions": 254,
+              "OPB": 28,
+              "UPB": 117,
+              "FM": 80
+            },
+            "SELECTED": {
+              "primary": 132,
+              "positions": 254,
+              "OPB": 66,
+              "UPB": 45,
+              "FM": 35
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 16,
+        "source_ties": 5
+      },
+      "RPEval/B_only": {
+        "primary": {
+          "common": 14,
+          "metrics": {
+            "OFF": {
+              "primary": 31,
+              "positions": 84,
+              "OPB": 6,
+              "UPB": 39,
+              "FM": 10
+            },
+            "SELECTED": {
+              "primary": 41,
+              "positions": 84,
+              "OPB": 12,
+              "UPB": 24,
+              "FM": 5
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 9,
+          "metrics": {
+            "OFF": {
+              "primary": 22,
+              "positions": 55,
+              "OPB": 3,
+              "UPB": 25,
+              "FM": 7
+            },
+            "SELECTED": {
+              "primary": 26,
+              "positions": 55,
+              "OPB": 9,
+              "UPB": 16,
+              "FM": 5
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 4,
+        "source_ties": 4
+      }
+    },
+    "FULL_minus_SELECTED": {
+      "RPEval": {
+        "primary": {
+          "common": 123,
+          "metrics": {
+            "FULL": {
+              "primary": 282,
+              "positions": 630,
+              "OPB": 172,
+              "UPB": 156,
+              "FM": 67
+            },
+            "SELECTED": {
+              "primary": 298,
+              "positions": 630,
+              "OPB": 177,
+              "UPB": 125,
+              "FM": 66
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 77,
+          "metrics": {
+            "FULL": {
+              "primary": 208,
+              "positions": 421,
+              "OPB": 116,
+              "UPB": 72,
+              "FM": 58
+            },
+            "SELECTED": {
+              "primary": 215,
+              "positions": 421,
+              "OPB": 123,
+              "UPB": 56,
+              "FM": 52
+            }
+          }
+        },
+        "source_wins": 2,
+        "source_losses": 9,
+        "source_ties": 17
+      },
+      "RPEval/all_A": {
+        "primary": {
+          "common": 57,
+          "metrics": {
+            "FULL": {
+              "primary": 74,
+              "positions": 236,
+              "OPB": 86,
+              "UPB": 58,
+              "FM": 21
+            },
+            "SELECTED": {
+              "primary": 80,
+              "positions": 236,
+              "OPB": 92,
+              "UPB": 38,
+              "FM": 23
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 34,
+          "metrics": {
+            "FULL": {
+              "primary": 64,
+              "positions": 141,
+              "OPB": 59,
+              "UPB": 0,
+              "FM": 17
+            },
+            "SELECTED": {
+              "primary": 64,
+              "positions": 141,
+              "OPB": 60,
+              "UPB": 0,
+              "FM": 14
+            }
+          }
+        },
+        "source_wins": 2,
+        "source_losses": 3,
+        "source_ties": 21
+      },
+      "RPEval/IPE_CLEAR": {
+        "primary": {
+          "common": 62,
+          "metrics": {
+            "FULL": {
+              "primary": 105,
+              "positions": 278,
+              "OPB": 77,
+              "UPB": 75,
+              "FM": 23
+            },
+            "SELECTED": {
+              "primary": 114,
+              "positions": 278,
+              "OPB": 83,
+              "UPB": 59,
+              "FM": 26
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 38,
+          "metrics": {
+            "FULL": {
+              "primary": 85,
+              "positions": 171,
+              "OPB": 52,
+              "UPB": 18,
+              "FM": 18
+            },
+            "SELECTED": {
+              "primary": 87,
+              "positions": 171,
+              "OPB": 56,
+              "UPB": 14,
+              "FM": 18
+            }
+          }
+        },
+        "source_wins": 2,
+        "source_losses": 5,
+        "source_ties": 20
+      },
+      "RPEval/contains_C": {
+        "primary": {
+          "common": 52,
+          "metrics": {
+            "FULL": {
+              "primary": 170,
+              "positions": 310,
+              "OPB": 75,
+              "UPB": 68,
+              "FM": 40
+            },
+            "SELECTED": {
+              "primary": 177,
+              "positions": 310,
+              "OPB": 73,
+              "UPB": 63,
+              "FM": 38
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 34,
+          "metrics": {
+            "FULL": {
+              "primary": 120,
+              "positions": 225,
+              "OPB": 50,
+              "UPB": 52,
+              "FM": 36
+            },
+            "SELECTED": {
+              "primary": 125,
+              "positions": 225,
+              "OPB": 54,
+              "UPB": 40,
+              "FM": 33
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 6,
+        "source_ties": 14
+      },
+      "RPEval/IPE_RETAIN": {
+        "primary": {
+          "common": 61,
+          "metrics": {
+            "FULL": {
+              "primary": 177,
+              "positions": 352,
+              "OPB": 95,
+              "UPB": 81,
+              "FM": 44
+            },
+            "SELECTED": {
+              "primary": 184,
+              "positions": 352,
+              "OPB": 94,
+              "UPB": 66,
+              "FM": 40
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 39,
+          "metrics": {
+            "FULL": {
+              "primary": 123,
+              "positions": 250,
+              "OPB": 64,
+              "UPB": 54,
+              "FM": 40
+            },
+            "SELECTED": {
+              "primary": 128,
+              "positions": 250,
+              "OPB": 67,
+              "UPB": 42,
+              "FM": 34
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 6,
+        "source_ties": 15
+      },
+      "RPEval/B_only": {
+        "primary": {
+          "common": 14,
+          "metrics": {
+            "FULL": {
+              "primary": 38,
+              "positions": 84,
+              "OPB": 11,
+              "UPB": 30,
+              "FM": 6
+            },
+            "SELECTED": {
+              "primary": 41,
+              "positions": 84,
+              "OPB": 12,
+              "UPB": 24,
+              "FM": 5
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 9,
+          "metrics": {
+            "FULL": {
+              "primary": 24,
+              "positions": 55,
+              "OPB": 7,
+              "UPB": 20,
+              "FM": 5
+            },
+            "SELECTED": {
+              "primary": 26,
+              "positions": 55,
+              "OPB": 9,
+              "UPB": 16,
+              "FM": 5
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 3,
+        "source_ties": 5
+      }
+    },
+    "GATE_minus_SELECTED": {
+      "RPEval": {
+        "primary": {
+          "common": 122,
+          "metrics": {
+            "GATE": {
+              "primary": 300,
+              "positions": 624,
+              "OPB": 148,
+              "UPB": 153,
+              "FM": 63
+            },
+            "SELECTED": {
+              "primary": 294,
+              "positions": 624,
+              "OPB": 176,
+              "UPB": 124,
+              "FM": 66
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 84,
+          "metrics": {
+            "GATE": {
+              "primary": 238,
+              "positions": 454,
+              "OPB": 119,
+              "UPB": 67,
+              "FM": 53
+            },
+            "SELECTED": {
+              "primary": 234,
+              "positions": 454,
+              "OPB": 129,
+              "UPB": 59,
+              "FM": 53
+            }
+          }
+        },
+        "source_wins": 4,
+        "source_losses": 4,
+        "source_ties": 20
+      },
+      "RPEval/all_A": {
+        "primary": {
+          "common": 57,
+          "metrics": {
+            "GATE": {
+              "primary": 94,
+              "positions": 236,
+              "OPB": 71,
+              "UPB": 55,
+              "FM": 18
+            },
+            "SELECTED": {
+              "primary": 80,
+              "positions": 236,
+              "OPB": 92,
+              "UPB": 38,
+              "FM": 23
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 39,
+          "metrics": {
+            "GATE": {
+              "primary": 87,
+              "positions": 166,
+              "OPB": 59,
+              "UPB": 0,
+              "FM": 13
+            },
+            "SELECTED": {
+              "primary": 79,
+              "positions": 166,
+              "OPB": 64,
+              "UPB": 0,
+              "FM": 14
+            }
+          }
+        },
+        "source_wins": 4,
+        "source_losses": 0,
+        "source_ties": 22
+      },
+      "RPEval/IPE_CLEAR": {
+        "primary": {
+          "common": 62,
+          "metrics": {
+            "GATE": {
+              "primary": 122,
+              "positions": 278,
+              "OPB": 62,
+              "UPB": 78,
+              "FM": 22
+            },
+            "SELECTED": {
+              "primary": 114,
+              "positions": 278,
+              "OPB": 83,
+              "UPB": 59,
+              "FM": 26
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 41,
+          "metrics": {
+            "GATE": {
+              "primary": 108,
+              "positions": 189,
+              "OPB": 48,
+              "UPB": 17,
+              "FM": 17
+            },
+            "SELECTED": {
+              "primary": 102,
+              "positions": 189,
+              "OPB": 55,
+              "UPB": 14,
+              "FM": 18
+            }
+          }
+        },
+        "source_wins": 4,
+        "source_losses": 2,
+        "source_ties": 21
+      },
+      "RPEval/contains_C": {
+        "primary": {
+          "common": 51,
+          "metrics": {
+            "GATE": {
+              "primary": 171,
+              "positions": 304,
+              "OPB": 68,
+              "UPB": 67,
+              "FM": 39
+            },
+            "SELECTED": {
+              "primary": 173,
+              "positions": 304,
+              "OPB": 72,
+              "UPB": 62,
+              "FM": 38
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 36,
+          "metrics": {
+            "GATE": {
+              "primary": 127,
+              "positions": 233,
+              "OPB": 53,
+              "UPB": 47,
+              "FM": 35
+            },
+            "SELECTED": {
+              "primary": 129,
+              "positions": 233,
+              "OPB": 56,
+              "UPB": 43,
+              "FM": 34
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 2,
+        "source_ties": 18
+      },
+      "RPEval/IPE_RETAIN": {
+        "primary": {
+          "common": 60,
+          "metrics": {
+            "GATE": {
+              "primary": 178,
+              "positions": 346,
+              "OPB": 86,
+              "UPB": 75,
+              "FM": 41
+            },
+            "SELECTED": {
+              "primary": 180,
+              "positions": 346,
+              "OPB": 93,
+              "UPB": 65,
+              "FM": 40
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 43,
+          "metrics": {
+            "GATE": {
+              "primary": 130,
+              "positions": 265,
+              "OPB": 71,
+              "UPB": 50,
+              "FM": 36
+            },
+            "SELECTED": {
+              "primary": 132,
+              "positions": 265,
+              "OPB": 74,
+              "UPB": 45,
+              "FM": 35
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 2,
+        "source_ties": 19
+      },
+      "RPEval/B_only": {
+        "primary": {
+          "common": 14,
+          "metrics": {
+            "GATE": {
+              "primary": 35,
+              "positions": 84,
+              "OPB": 9,
+              "UPB": 31,
+              "FM": 6
+            },
+            "SELECTED": {
+              "primary": 41,
+              "positions": 84,
+              "OPB": 12,
+              "UPB": 24,
+              "FM": 5
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 9,
+          "metrics": {
+            "GATE": {
+              "primary": 24,
+              "positions": 55,
+              "OPB": 7,
+              "UPB": 20,
+              "FM": 5
+            },
+            "SELECTED": {
+              "primary": 26,
+              "positions": 55,
+              "OPB": 9,
+              "UPB": 16,
+              "FM": 5
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 2,
+        "source_ties": 6
+      }
+    },
+    "GATE_minus_BASE": {
+      "RPEval": {
+        "primary": {
+          "common": 123,
+          "metrics": {
+            "GATE": {
+              "primary": 304,
+              "positions": 628,
+              "OPB": 148,
+              "UPB": 153,
+              "FM": 63
+            },
+            "BASE": {
+              "primary": 391,
+              "positions": 628,
+              "OPB": 127,
+              "UPB": 110,
+              "FM": 25
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 78,
+          "metrics": {
+            "GATE": {
+              "primary": 221,
+              "positions": 420,
+              "OPB": 105,
+              "UPB": 61,
+              "FM": 46
+            },
+            "BASE": {
+              "primary": 275,
+              "positions": 420,
+              "OPB": 81,
+              "UPB": 49,
+              "FM": 22
+            }
+          }
+        },
+        "source_wins": 3,
+        "source_losses": 16,
+        "source_ties": 9
+      },
+      "RPEval/all_A": {
+        "primary": {
+          "common": 58,
+          "metrics": {
+            "GATE": {
+              "primary": 98,
+              "positions": 240,
+              "OPB": 71,
+              "UPB": 55,
+              "FM": 18
+            },
+            "BASE": {
+              "primary": 169,
+              "positions": 240,
+              "OPB": 47,
+              "UPB": 28,
+              "FM": 7
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 40,
+          "metrics": {
+            "GATE": {
+              "primary": 94,
+              "positions": 169,
+              "OPB": 55,
+              "UPB": 0,
+              "FM": 11
+            },
+            "BASE": {
+              "primary": 136,
+              "positions": 169,
+              "OPB": 32,
+              "UPB": 0,
+              "FM": 6
+            }
+          }
+        },
+        "source_wins": 2,
+        "source_losses": 11,
+        "source_ties": 13
+      },
+      "RPEval/IPE_CLEAR": {
+        "primary": {
+          "common": 63,
+          "metrics": {
+            "GATE": {
+              "primary": 126,
+              "positions": 282,
+              "OPB": 62,
+              "UPB": 78,
+              "FM": 22
+            },
+            "BASE": {
+              "primary": 203,
+              "positions": 282,
+              "OPB": 27,
+              "UPB": 57,
+              "FM": 11
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 42,
+          "metrics": {
+            "GATE": {
+              "primary": 113,
+              "positions": 194,
+              "OPB": 42,
+              "UPB": 21,
+              "FM": 16
+            },
+            "BASE": {
+              "primary": 161,
+              "positions": 194,
+              "OPB": 14,
+              "UPB": 20,
+              "FM": 10
+            }
+          }
+        },
+        "source_wins": 2,
+        "source_losses": 12,
+        "source_ties": 13
+      },
+      "RPEval/contains_C": {
+        "primary": {
+          "common": 51,
+          "metrics": {
+            "GATE": {
+              "primary": 171,
+              "positions": 304,
+              "OPB": 68,
+              "UPB": 67,
+              "FM": 39
+            },
+            "BASE": {
+              "primary": 176,
+              "positions": 304,
+              "OPB": 76,
+              "UPB": 52,
+              "FM": 15
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 29,
+          "metrics": {
+            "GATE": {
+              "primary": 105,
+              "positions": 194,
+              "OPB": 45,
+              "UPB": 37,
+              "FM": 29
+            },
+            "BASE": {
+              "primary": 106,
+              "positions": 194,
+              "OPB": 47,
+              "UPB": 29,
+              "FM": 13
+            }
+          }
+        },
+        "source_wins": 1,
+        "source_losses": 7,
+        "source_ties": 12
+      },
+      "RPEval/IPE_RETAIN": {
+        "primary": {
+          "common": 60,
+          "metrics": {
+            "GATE": {
+              "primary": 178,
+              "positions": 346,
+              "OPB": 86,
+              "UPB": 75,
+              "FM": 41
+            },
+            "BASE": {
+              "primary": 188,
+              "positions": 346,
+              "OPB": 100,
+              "UPB": 53,
+              "FM": 14
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 36,
+          "metrics": {
+            "GATE": {
+              "primary": 108,
+              "positions": 226,
+              "OPB": 63,
+              "UPB": 40,
+              "FM": 30
+            },
+            "BASE": {
+              "primary": 114,
+              "positions": 226,
+              "OPB": 67,
+              "UPB": 29,
+              "FM": 12
+            }
+          }
+        },
+        "source_wins": 1,
+        "source_losses": 9,
+        "source_ties": 11
+      },
+      "RPEval/B_only": {
+        "primary": {
+          "common": 14,
+          "metrics": {
+            "GATE": {
+              "primary": 35,
+              "positions": 84,
+              "OPB": 9,
+              "UPB": 31,
+              "FM": 6
+            },
+            "BASE": {
+              "primary": 46,
+              "positions": 84,
+              "OPB": 4,
+              "UPB": 30,
+              "FM": 3
+            }
+          }
+        },
+        "without_known_flags": {
+          "common": 9,
+          "metrics": {
+            "GATE": {
+              "primary": 22,
+              "positions": 57,
+              "OPB": 5,
+              "UPB": 24,
+              "FM": 6
+            },
+            "BASE": {
+              "primary": 33,
+              "positions": 57,
+              "OPB": 2,
+              "UPB": 20,
+              "FM": 3
+            }
+          }
+        },
+        "source_wins": 0,
+        "source_losses": 3,
+        "source_ties": 5
+      }
+    }
+  },
+  "rpe_offline_headroom": {
+    "RPEval": {
+      "all_arm_common": {
+        "tasks": 122,
+        "positions": 624,
+        "archived": 387,
+        "gate": 300,
+        "selected": 294,
+        "off": 314,
+        "best_saved_endpoint": 371,
+        "protected_best_saved_endpoint": 371,
+        "archived_beyond_all_saved_endpoints": 18
+      },
+      "without_known_flags": {
+        "tasks": 58,
+        "positions": 332,
+        "archived": 207,
+        "gate": 188,
+        "selected": 192,
+        "off": 179,
+        "best_saved_endpoint": 211,
+        "protected_best_saved_endpoint": 211,
+        "archived_beyond_all_saved_endpoints": 6
+      }
+    },
+    "RPEval/all_A": {
+      "all_arm_common": {
+        "tasks": 57,
+        "positions": 236,
+        "archived": 165,
+        "gate": 94,
+        "selected": 80,
+        "off": 151,
+        "best_saved_endpoint": 155,
+        "protected_best_saved_endpoint": 155,
+        "archived_beyond_all_saved_endpoints": 8
+      },
+      "without_known_flags": {
+        "tasks": 22,
+        "positions": 92,
+        "archived": 75,
+        "gate": 64,
+        "selected": 64,
+        "off": 81,
+        "best_saved_endpoint": 81,
+        "protected_best_saved_endpoint": 81,
+        "archived_beyond_all_saved_endpoints": 0
+      }
+    },
+    "RPEval/IPE_CLEAR": {
+      "all_arm_common": {
+        "tasks": 62,
+        "positions": 278,
+        "archived": 199,
+        "gate": 122,
+        "selected": 114,
+        "off": 171,
+        "best_saved_endpoint": 185,
+        "protected_best_saved_endpoint": 185,
+        "archived_beyond_all_saved_endpoints": 8
+      },
+      "without_known_flags": {
+        "tasks": 26,
+        "positions": 121,
+        "archived": 98,
+        "gate": 82,
+        "selected": 84,
+        "off": 94,
+        "best_saved_endpoint": 97,
+        "protected_best_saved_endpoint": 97,
+        "archived_beyond_all_saved_endpoints": 1
+      }
+    },
+    "RPEval/contains_C": {
+      "all_arm_common": {
+        "tasks": 51,
+        "positions": 304,
+        "archived": 176,
+        "gate": 171,
+        "selected": 173,
+        "off": 132,
+        "best_saved_endpoint": 175,
+        "protected_best_saved_endpoint": 175,
+        "archived_beyond_all_saved_endpoints": 8
+      },
+      "without_known_flags": {
+        "tasks": 28,
+        "positions": 190,
+        "archived": 104,
+        "gate": 103,
+        "selected": 105,
+        "off": 78,
+        "best_saved_endpoint": 107,
+        "protected_best_saved_endpoint": 107,
+        "archived_beyond_all_saved_endpoints": 4
+      }
+    },
+    "RPEval/IPE_RETAIN": {
+      "all_arm_common": {
+        "tasks": 60,
+        "positions": 346,
+        "archived": 188,
+        "gate": 178,
+        "selected": 180,
+        "off": 143,
+        "best_saved_endpoint": 186,
+        "protected_best_saved_endpoint": 186,
+        "archived_beyond_all_saved_endpoints": 10
+      },
+      "without_known_flags": {
+        "tasks": 32,
+        "positions": 211,
+        "archived": 109,
+        "gate": 106,
+        "selected": 108,
+        "off": 85,
+        "best_saved_endpoint": 114,
+        "protected_best_saved_endpoint": 114,
+        "archived_beyond_all_saved_endpoints": 5
+      }
+    },
+    "RPEval/B_only": {
+      "all_arm_common": {
+        "tasks": 14,
+        "positions": 84,
+        "archived": 46,
+        "gate": 35,
+        "selected": 41,
+        "off": 31,
+        "best_saved_endpoint": 41,
+        "protected_best_saved_endpoint": 41,
+        "archived_beyond_all_saved_endpoints": 2
+      },
+      "without_known_flags": {
+        "tasks": 8,
+        "positions": 50,
+        "archived": 28,
+        "gate": 21,
+        "selected": 23,
+        "off": 20,
+        "best_saved_endpoint": 23,
+        "protected_best_saved_endpoint": 23,
+        "archived_beyond_all_saved_endpoints": 2
+      }
+    }
+  },
+  "rpe_gate_actions": {
+    "RPEval": {
+      "OFF": {
+        "tasks": 40,
+        "positions": 186,
+        "missed_maximum": 6,
+        "endpoint_regret": 12,
+        "BASE": 132,
+        "OFF": 106,
+        "SELECTED": 100,
+        "FULL": 90,
+        "GATE": 106
+      },
+      "SELECTED": {
+        "tasks": 82,
+        "positions": 438,
+        "missed_maximum": 16,
+        "endpoint_regret": 59,
+        "BASE": 255,
+        "OFF": 208,
+        "SELECTED": 194,
+        "FULL": 188,
+        "GATE": 194
+      }
+    },
+    "RPEval/all_A": {
+      "OFF": {
+        "tasks": 31,
+        "positions": 133,
+        "missed_maximum": 1,
+        "endpoint_regret": 4,
+        "BASE": 101,
+        "OFF": 87,
+        "SELECTED": 73,
+        "FULL": 67,
+        "GATE": 87
+      },
+      "SELECTED": {
+        "tasks": 26,
+        "positions": 103,
+        "missed_maximum": 14,
+        "endpoint_regret": 57,
+        "BASE": 64,
+        "OFF": 64,
+        "SELECTED": 7,
+        "FULL": 7,
+        "GATE": 7
+      }
+    },
+    "RPEval/IPE_CLEAR": {
+      "OFF": {
+        "tasks": 33,
+        "positions": 145,
+        "missed_maximum": 4,
+        "endpoint_regret": 10,
+        "BASE": 115,
+        "OFF": 92,
+        "SELECTED": 84,
+        "FULL": 76,
+        "GATE": 92
+      },
+      "SELECTED": {
+        "tasks": 29,
+        "positions": 133,
+        "missed_maximum": 13,
+        "endpoint_regret": 53,
+        "BASE": 84,
+        "OFF": 79,
+        "SELECTED": 30,
+        "FULL": 29,
+        "GATE": 30
+      }
+    },
+    "RPEval/contains_C": {
+      "OFF": {
+        "tasks": 5,
+        "positions": 28,
+        "missed_maximum": 2,
+        "endpoint_regret": 2,
+        "BASE": 14,
+        "OFF": 13,
+        "SELECTED": 15,
+        "FULL": 13,
+        "GATE": 13
+      },
+      "SELECTED": {
+        "tasks": 46,
+        "positions": 276,
+        "missed_maximum": 2,
+        "endpoint_regret": 2,
+        "BASE": 162,
+        "OFF": 119,
+        "SELECTED": 158,
+        "FULL": 153,
+        "GATE": 158
+      }
+    },
+    "RPEval/IPE_RETAIN": {
+      "OFF": {
+        "tasks": 7,
+        "positions": 41,
+        "missed_maximum": 2,
+        "endpoint_regret": 2,
+        "BASE": 17,
+        "OFF": 14,
+        "SELECTED": 16,
+        "FULL": 14,
+        "GATE": 14
+      },
+      "SELECTED": {
+        "tasks": 53,
+        "positions": 305,
+        "missed_maximum": 3,
+        "endpoint_regret": 6,
+        "BASE": 171,
+        "OFF": 129,
+        "SELECTED": 164,
+        "FULL": 159,
+        "GATE": 164
+      }
+    },
+    "RPEval/B_only": {
+      "SELECTED": {
+        "tasks": 10,
+        "positions": 59,
+        "missed_maximum": 0,
+        "endpoint_regret": 0,
+        "BASE": 29,
+        "OFF": 25,
+        "SELECTED": 29,
+        "FULL": 28,
+        "GATE": 29
+      },
+      "OFF": {
+        "tasks": 4,
+        "positions": 25,
+        "missed_maximum": 3,
+        "endpoint_regret": 6,
+        "BASE": 17,
+        "OFF": 6,
+        "SELECTED": 12,
+        "FULL": 10,
+        "GATE": 6
+      }
+    }
+  },
+  "bench_attribute_only": {
+    "assigned_attributes": {
+      "aar": 4,
+      "mr": 16
+    },
+    "paired_attributes": {
+      "BASE": {
+        "aar_denominator": 4,
+        "aar_numerator": 4,
+        "mr_denominator": 16,
+        "mr_numerator": 0
+      },
+      "OFF": {
+        "aar_denominator": 4,
+        "aar_numerator": 0,
+        "mr_denominator": 16,
+        "mr_numerator": 0
+      },
+      "SELECTED": {
+        "aar_denominator": 4,
+        "aar_numerator": 1,
+        "mr_denominator": 16,
+        "mr_numerator": 0
+      },
+      "FULL": {
+        "aar_denominator": 4,
+        "aar_numerator": 3,
+        "mr_denominator": 16,
+        "mr_numerator": 0
+      },
+      "GATE": {
+        "aar_denominator": 4,
+        "aar_numerator": 0,
+        "mr_denominator": 16,
+        "mr_numerator": 0
+      }
+    }
+  },
+  "delivery": {
+    "OFF": {
+      "OK": 160,
+      "grade_available": 158,
+      "NO_SCOPE_ACTOR": 2
+    },
+    "FULL": {
+      "OK": 160,
+      "grade_available": 160,
+      "NO_SCOPE_ACTOR": 2
+    },
+    "SELECTED": {
+      "OK": 160,
+      "grade_available": 156,
+      "NOT_DISPATCHED": 2
+    },
+    "GATE": {
+      "OK": 158,
+      "grade_available": 156,
+      "GATE_UNAVAILABLE": 4
+    }
+  },
+  "gate": {
+    "RPEval": {
+      "OFF": 41,
+      "SELECTED": 83,
+      "NO_SCOPE_ACTOR": 1,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    },
+    "PersistBench": {
+      "SELECTED": 19,
+      "OFF": 10,
+      "INVALID_GATE_RESPONSE": 1,
+      "NO_SCOPE_ACTOR": 1,
+      "FULL": 1
+    },
+    "BenchPreS": {
+      "OFF": 4
+    }
+  },
+  "cost": {
+    "requests": 703,
+    "stages": {
+      "Gate": 160,
+      "Actor": 235,
+      "RPEvalJudge": 211,
+      "BenchAttrs": 36,
+      "PersistNative": 61
+    },
+    "statuses": {
+      "OK": 702,
+      "FAILED_DELIVERY_UNKNOWN": 1
+    },
+    "tokens": 3101353,
+    "unknown_usage": 1
+  }
+}
