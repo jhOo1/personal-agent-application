@@ -1,0 +1,279 @@
+{
+  "settled_rounds": 1,
+  "frontier": {
+    "OPT_GATE": {
+      "RPEval": {
+        "assigned": 4,
+        "baseline_positions": 29,
+        "baseline_primary": 18,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 12,
+        "oracle_gain": 7,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "RPEval/all_A": {
+        "assigned": 2,
+        "baseline_positions": 14,
+        "baseline_primary": 7,
+        "gradable_different_answer": 2,
+        "distinct_graded_answers": 6,
+        "oracle_gain": 7,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "RPEval/exclude_all_A_zero_visible_history": {
+        "assigned": 3,
+        "baseline_positions": 22,
+        "baseline_primary": 18,
+        "gradable_different_answer": 3,
+        "distinct_graded_answers": 9,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/B_only": {
+        "assigned": 1,
+        "baseline_positions": 7,
+        "baseline_primary": 7,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/contains_C": {
+        "assigned": 1,
+        "baseline_positions": 8,
+        "baseline_primary": 4,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench": {
+        "assigned": 4,
+        "baseline_positions": 4,
+        "baseline_primary": 4,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 12,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/sycophancy": {
+        "assigned": 1,
+        "baseline_positions": 1,
+        "baseline_primary": 1,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/cross_domain": {
+        "assigned": 2,
+        "baseline_positions": 2,
+        "baseline_primary": 2,
+        "gradable_different_answer": 2,
+        "distinct_graded_answers": 6,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/beneficial_memory_usage": {
+        "assigned": 1,
+        "baseline_positions": 1,
+        "baseline_primary": 1,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/all_A_zero_visible_history": {
+        "assigned": 1,
+        "baseline_positions": 7,
+        "baseline_primary": 0,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "scope_nonzero_opb": 1,
+        "round_answers_nonzero_opb": 0,
+        "maximum_match_spread": 7,
+        "oracle_gain": 7,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "BenchPreS": {
+        "assigned": 4,
+        "baseline_positions": 5,
+        "baseline_primary": 1,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 10,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "BenchPreS/communication": {
+        "assigned": 4,
+        "baseline_positions": 5,
+        "baseline_primary": 1,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 10,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      }
+    },
+    "JCC": {
+      "RPEval": {
+        "assigned": 4,
+        "baseline_positions": 29,
+        "baseline_primary": 17,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 12,
+        "oracle_gain": 8,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "RPEval/all_A": {
+        "assigned": 2,
+        "baseline_positions": 14,
+        "baseline_primary": 7,
+        "gradable_different_answer": 2,
+        "distinct_graded_answers": 6,
+        "oracle_gain": 7,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "RPEval/exclude_all_A_zero_visible_history": {
+        "assigned": 3,
+        "baseline_positions": 22,
+        "baseline_primary": 17,
+        "gradable_different_answer": 3,
+        "distinct_graded_answers": 9,
+        "oracle_gain": 1,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/B_only": {
+        "assigned": 1,
+        "baseline_positions": 7,
+        "baseline_primary": 7,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/contains_C": {
+        "assigned": 1,
+        "baseline_positions": 8,
+        "baseline_primary": 3,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 1,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench": {
+        "assigned": 4,
+        "baseline_positions": 4,
+        "baseline_primary": 4,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 12,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/sycophancy": {
+        "assigned": 1,
+        "baseline_positions": 1,
+        "baseline_primary": 1,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/cross_domain": {
+        "assigned": 2,
+        "baseline_positions": 2,
+        "baseline_primary": 2,
+        "gradable_different_answer": 2,
+        "distinct_graded_answers": 6,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "PersistBench/beneficial_memory_usage": {
+        "assigned": 1,
+        "baseline_positions": 1,
+        "baseline_primary": 1,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "RPEval/all_A_zero_visible_history": {
+        "assigned": 1,
+        "baseline_positions": 7,
+        "baseline_primary": 0,
+        "gradable_different_answer": 1,
+        "distinct_graded_answers": 3,
+        "scope_nonzero_opb": 1,
+        "round_answers_nonzero_opb": 0,
+        "maximum_match_spread": 7,
+        "oracle_gain": 7,
+        "protected_oracle_gain": 7,
+        "protected_no_known_flags_gain": 7,
+        "protected_no_known_flags_gain_tasks": 1
+      },
+      "BenchPreS": {
+        "assigned": 4,
+        "baseline_positions": 5,
+        "baseline_primary": 2,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 9,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      },
+      "BenchPreS/communication": {
+        "assigned": 4,
+        "baseline_positions": 5,
+        "baseline_primary": 2,
+        "gradable_different_answer": 4,
+        "distinct_graded_answers": 9,
+        "oracle_gain": 0,
+        "protected_oracle_gain": 0,
+        "protected_no_known_flags_gain": 0,
+        "protected_no_known_flags_gain_tasks": 0
+      }
+    }
+  }
+}

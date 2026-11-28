@@ -38,6 +38,10 @@ case "${1:-}" in
   first-pass-fit) entry=first_pass_fit.py; shift ;;
   first-pass-readout) entry=first_pass_readout.py; shift ;;
   first-pass-iteration) entry=first_pass_iteration.py; shift ;;
+  first-pass-frontier) entry=first_pass_frontier.py; shift ;;
+  no-history-grade-audit) entry=no_history_grade_audit.py; shift ;;
+
+
 
 
 
