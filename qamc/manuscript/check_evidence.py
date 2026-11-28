@@ -421,6 +421,24 @@ def check(root=REPORTS, manuscript=HERE / "paper.tex"):
     phrases.extend([f"between {low} and {high} percentage points",
                     f"On {sample[1]} paired draws", f"from {g0} to {g1} for Gate and from {s0} to {s1} for Selectivity",
                     f"Across all {limit[1]} assigned pairs", f"by {limit[2]} to {limit[3]} joint passes"])
+    residual = list(markdown_rows((root / "rpe_endpoint_residual_v1/RESULTS.md").read_text()))
+    c_row = next(r for r in residual if r[0] == "contains C")
+    bounds = list(markdown_rows((root / "rpe_endpoint_residual_v1/ATTRIBUTION.md").read_text()))
+    a_bound = next(r for r in bounds if r[:3] == ["all", "better saved score", "A"])
+    openings = list(markdown_rows((root / "rpe_neighbor_teacher_v1/EQUAL_OPENINGS.md").read_text()))
+    equal = next(r for r in openings if r[:2] == ["72", "IPE-C"])
+    neighbor = next(r for r in openings if r[:2] == ["72", "neighbor"])
+    notes = json.loads((root / "rpe_exact_policy_delivery_v1/behavior_annotations.json").read_text())
+    from collections import Counter
+    require(Counter(n["status"] for n in notes), {"IMPLEMENTED":9, "WEAKENED":1, "CONFLICT":1, "RISK":2},
+            "exact-policy reading")
+    phrases.extend([f"{c_row[1]} C-bearing tasks, {int(c_row[5])+int(c_row[6])} remain",
+                    f"{c_row[9]} mismatches forces at least {a_bound[4].split('–')[0]}",
+                    f"author-A positions across {a_bound[5]} tasks",
+                    f"opens {neighbor[0]} histories and scores {int(float(neighbor[2]))}/1,142",
+                    f"an expected {equal[2]} matches",
+                    "nine recommendations implement that preference, one weakens it, one conflicts",
+                    "two leave an unresolved risk"])
     for phrase in phrases:
         require(phrase in paper, True, phrase)
     return 60 + len(joint_rows) + len(revision) + len(checked) + len(phrases) + sum(map(len, (seen_strata, seen_external, seen_tracks, seen_risk_tracks, seen_metrics)))
