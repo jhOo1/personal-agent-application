@@ -14,6 +14,7 @@ case "${1:-}" in
   feedback) entry=feedback.py; shift ;;
   audit-plans) entry=audit_plans.py; shift ;;
   rpe-stage) entry=rpe_stage.py; shift ;;
+  external-rpe-stage) entry=external_rpe_stage.py; shift ;;
   self-recheck) entry=self_recheck.py; shift ;;
   task-only) entry=task_only.py; shift ;;
   crossover) entry=crossover.py; shift ;;
