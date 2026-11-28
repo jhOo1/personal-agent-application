@@ -10,7 +10,8 @@ from trial import HERE, RUN, archive, engine, probe, sha
 
 OUT = RUN.with_name(RUN.name+'_self_recheck')
 METHOD = 'SELF_RECHECK'
-RUNS = {'SELF_RECHECK':OUT, 'TASK_ONLY':RUN.with_name(RUN.name+'_task_only')}
+RUNS = {'SELF_RECHECK':OUT, 'TASK_ONLY':RUN.with_name(RUN.name+'_task_only'),
+        'TASK_PLAN_SELECTED':RUN.with_name(RUN.name+'_crossover')}
 
 
 def replay(method=METHOD):
@@ -46,15 +47,26 @@ def replay(method=METHOD):
     engine.grade_rpe(roots,rows,stage)
     labels = {r['uid']:r['labels'] for r in read(HERE.parent/'ipe_c_two_endpoint_completion_v1'/'RESULTS.json')['rows']}
     seeds = {(r['uid'],r['method']):r for r in read(RUN/'RESULTS.json')['rows']}
-    tally = {k:{a:Counter() for a in ('BASE','GENERIC','TASK_ACTIONS',method)}
+    comparators = ('GENERIC','TASK_ACTIONS')
+    if method=='TASK_PLAN_SELECTED':
+        seeds.update({(r['uid'],r['method']):r for r in read(RUNS['TASK_ONLY']/'RESULTS.json')['rows']})
+        comparators += ('TASK_ONLY',)
+    tally = {k:{a:Counter() for a in ('BASE',*comparators,method)}
              for k in ('all','all_A','B_only','contains_C','unflagged')}
     common=Counter()
+    fixed_plan={a:Counter() for a in ('TASK_ONLY',method)}
+    fixed_count=0
     for card,row in zip(cards,rows,strict=True):
         uid=card['uid']
-        companions = {a:seeds[uid,a] for a in ('GENERIC','TASK_ACTIONS')}
+        companions = {a:seeds[uid,a] for a in comparators}
         grades = {'BASE':card['base_score'],method:row['score']}
         grades.update({a:cell['score'] for a,cell in companions.items()})
         values = {a:metrics(card,grade) for a,grade in grades.items()}
+        if method=='TASK_PLAN_SELECTED' and values[method] is not None and values['TASK_ONLY'] is not None:
+            assert values[method]['positions']==values['TASK_ONLY']['positions']
+            fixed_count+=1
+            for arm in fixed_plan:
+                fixed_plan[arm].update(values[arm])
         if not all(values.values()):
             continue
         assert len({v['positions'] for v in values.values()})==1
@@ -67,11 +79,15 @@ def replay(method=METHOD):
             common[bucket]+=1
             for name,value in values.items():
                 tally[bucket][name].update(value)
-    return dict(assigned=len(cards),common=common,paired=tally,
+    report = dict(assigned=len(cards),common=common,paired=tally,
                 successful_actors=len(saved.keys() & {r['uid'] for r in cards}),
                 usable_direct_grades=sum(metrics(card,row['score']) is not None for card,row in zip(cards,rows,strict=True)),
                 physical_scoring=len(ledger),status=Counter(r['status'] for r in ledger),
                 reported_tokens=sum((r.get('usage') or {}).get('total_tokens') or 0 for r in ledger))
+
+    if method=='TASK_PLAN_SELECTED':
+        report['fixed_plan_pair']={'common':fixed_count,'scores':fixed_plan}
+    return report
 
 
 if __name__=='__main__':
