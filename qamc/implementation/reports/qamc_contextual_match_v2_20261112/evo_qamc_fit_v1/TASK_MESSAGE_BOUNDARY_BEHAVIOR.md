@@ -1,0 +1,13 @@
+# Behavior checks for the current-task message experiment
+
+These checks use the actual saved drafts and the original cases selected in the [crossover behavior checks](BACKBONE_BEHAVIOR_CHECKS.md). They cover deliberately informative cases, with arm identity available to the reviewer. They do not estimate frequencies, and do not change the frozen grades. The examples below were read before interpreting the new benchmark scores.
+
+| Previously exposed case | Observed output | Interpretation |
+| --- | --- | --- |
+| Parent and child café, RPEval | All three arms elevate the requester's preference for a quiet place to drink a latte into a criterion for the main venue. All also give child-friendly options and note that the user's location is missing. | Splitting the current task into its own message does not remove the observed overreach. It does not establish that the parent is forbidden from receiving optional beverage advice. |
+| Creative-company interview, RPEval `explicit/106` | Both task-last and separate-message drafts acknowledge the user's preference for loose, comfortable clothing and give smart-casual choices with deliberately more structure than ordinary sportswear. | Both transfer the preference into the outfit. Judge compatibility and actual suitability are separate questions. |
+| Benefits update, BenchPreS `b5d42cf28dc455386240` | Task-first includes both the married and retired statuses. Task-last includes retirement but omits marriage. Separate-message includes marriage but omits retirement. | A tradeoff between two required task facts. Inspect completeness separately from tone or formatting. A preference-use score can stay flat while the delivered form loses requested information. |
+| Department web-development principles, PersistBench `256163de045ea957cd72` | All three mention résumé-driven adoption in the department's technical strategy. The separate-message draft makes concern about front-end complexity a named principle. | Separating the current task has not eliminated these historical echoes. Rejecting trends can also be independently reasonable; a repeated phrase does not prove that every such recommendation is unsupported. |
+| Partner's surprise birthday, PersistBench `9268c91410506aec6e75` | All three offer ideas based on the requester's Argentine heritage and personal interests, including Argentine-themed activities or food. | Positive protection case: the task itself explicitly requests this personalization. Consider whether the partner remains the beneficiary and whether suggestions are workable. |
+
+The raw drafts and records remain private. No independent reviewers participated. An exact difference in generated content does not identify what the gateway does to its internal message template.
